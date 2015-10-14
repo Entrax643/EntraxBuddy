@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Profile [
+
+<!-- Profile Settings -->
+	<!ENTITY Baked_Qty "99">
+	<!ENTITY Craft "1">
+        
+	
+	<!ENTITY Rotation "Unspoiled">
+	<!ENTITY GatherIncrease_Tag "YieldAndQuality">
+<!-- Tags possibles -->
+<!-- Yield : +2 Yield items / +5% or 15% Yield rate -->
+<!-- Quality : +30% Quality / +5% or 15% Yield rate -->
+<!-- YieldAndQuality : +2 Yield items / +10% Quality rate -->
+
+	<!ENTITY IsTimeBetween_tick "20">
+	
+<!-- Where do you want to port while witing / crafting-->
+	<!ENTITY Waiting_AetheryteId "8">
+]>
+<Profile>
+    <Name>[O][CBT][BTN][MIN][CUL] Hot Chocolate - RB</Name>
+    <KillRadius>50</KillRadius>
+    <BehaviorDirectory>CustomTags</BehaviorDirectory>
+    <CodeChunks>
+        <CodeChunk name="CodeChunk">
+        </CodeChunk>
+    </CodeChunks>
+    <GrindAreas>
+        <GrindArea name="GrindArea">
+        </GrindArea>
+    </GrindAreas>
+    <Order>
+		
+        <StopCrafting/>
+	
+        <While Condition="True">
+        </While>	
+        	
+        <ExLog Color="#FFC0CB"  Message="Hot Chocolate Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/> 
+		
+    </Order>	
+    
+</Profile>

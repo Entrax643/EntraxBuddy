@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Profile [
+
+<!-- Profile Settings -->
+	<!ENTITY Baked_Qty "99">
+	<!ENTITY Craft "0">
+	
+<!-- Where do you want to port while witing / crafting-->
+	<!ENTITY Waiting_AetheryteId "8">
+]>
+<Profile>
+    <Name>[O][CBT][BTN][MIN][CUL] Baked Onion Soup 1.0 - RB</Name>
+    <KillRadius>50</KillRadius>
+    <BehaviorDirectory>CustomTags</BehaviorDirectory>
+    <CodeChunks>
+        <CodeChunk Name="CUL">
+		<![CDATA[ 
+			ff14bot.Managers.ChatManager.SendChat("/gs change 19");
+		]]>
+        </CodeChunk>
+        <CodeChunk name="MIN">
+		<![CDATA[
+			ff14bot.Managers.ChatManager.SendChat("/gs change 20");
+			await Buddy.Coroutines.Coroutine.Sleep(2000);
+			if(!Core.Player.HasAura(222))
+			{
+				var result = true;
+				if (MovementManager.IsFlying)
+				{
+					result = await CommonTasks.Land();
+					await Buddy.Coroutines.Coroutine.Sleep(1000);
+				}
+				
+				if (result && Core.Player.IsMounted)
+				{
+					await CommonTasks.StopAndDismount();
+					await Buddy.Coroutines.Coroutine.Sleep(1000);
+				}
+				
+				ff14bot.Managers.Actionmanager.DoAction(238, Core.Player);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
+			}
+		]]>
+        </CodeChunk>
+        <CodeChunk name="BTN">
+		<![CDATA[
+			ff14bot.Managers.ChatManager.SendChat("/gs change 21");
+			await Buddy.Coroutines.Coroutine.Sleep(2000);
+			if(!Core.Player.HasAura(221))
+			{
+				var result = true;
+
+				if (MovementManager.IsFlying)
+				{
+					result = await CommonTasks.Land();
+					await Buddy.Coroutines.Coroutine.Sleep(1000);
+				}
+				
+				if (result && Core.Player.IsMounted)
+				{
+					Actionmanager.Dismount();
+					await Buddy.Coroutines.Coroutine.Sleep(1000);
+				}
+				
+				ff14bot.Managers.Actionmanager.DoAction(221, Core.Player);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
+			}
+		]]>
+        </CodeChunk>
+        <CodeChunk Name="TrickTouch">
+		<![CDATA[
+			SpellData data;
+			if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) &&
+				Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null)) {
+				Actionmanager.DoAction("Precise Touch", null);
+			} else {
+				Actionmanager.DoAction("Basic Touch", null);
+			}
+			await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);
+			await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);
+
+			await Coroutine.Sleep(250);
+		]]>
+        </CodeChunk>
+        <CodeChunk Name="TrickTouch2">
+		<![CDATA[
+			SpellData data;
+			if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 95) 
+							{ 
+								Actionmanager.DoAction("Precise Touch", null);
+			} else {
+									if(Core.Player.CurrentCP > 95){
+										Actionmanager.DoAction("Basic Touch", null);
+									} else {
+										Actionmanager.DoAction("Hasty Touch", null);
+									}
+							}
+			await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);
+			await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);
+
+			await Coroutine.Sleep(250);
+		]]>
+        </CodeChunk>
+        <CodeChunk Name="Dismount">
+		<![CDATA[
+			ff14bot.Managers.Actionmanager.Dismount();
+		]]>
+        </CodeChunk>
+    </CodeChunks>
+    <Order>
+		
+        <StopCrafting/>
+	
+        <While Condition="(&Craft; != 0 and  ItemCount(12861) &lt; &Baked_Qty;) or (&Craft; == 0 and (ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) or ItemCount(12878) &lt; ((&Baked_Qty; - ItemCount(12861)) *3) or ItemCount(8) &lt; ((&Baked_Qty; - ItemCount(12861)) *3) or ItemCount(13) &lt; ((&Baked_Qty; - ItemCount(12861)) *3) or ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12861)) * 6.2 ) or ItemCount(7) &lt; ((&Baked_Qty; - ItemCount(12861)) * 4 ) or ItemCount(4751) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4772) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4850) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4753) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) or ItemCount(4764) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4777) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4778) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4825) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or  ItemCount(6149) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) or ItemCount(4837) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))))"> 
+              
+            <!-- Volcanic Rock Salt -->
+            <ExLog Color="#FFC0CB"  Message="Checking for Volcanic Rock Salt !"/>
+			
+            <If Condition="not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)))"> 
+                <ExLog Color="#FFC0CB"  Message="I'm done with Volcanic Rock Salt !"/>  
+            </If>			
+			
+            <If Condition="ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861))"> 
+                <ExLog Color="#FFC0CB"  Message="I don't have enough Volcanic Rock Salt !"/>  
+                <If Condition="not(IsTimeBetween(17,19))">
+                    <ExLog Color="#FFC0CB"  Message="I can't gather them because it's not between 5-8 PM !"/>
+                </If>  
+                <If Condition="IsTimeBetween(17,19)">
+                    <If Condition="not IsOnMap(137)">
+                        <TeleportTo Name="Wineport" AetheryteId="12" />
+                    </If>
+                    <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
+                        <RunCode Name="MIN"/>
+                    </If>
+                    <MoveTo XYZ="-94.77985, 44.19695, 560.4274"/>
+                    <WaitWhile Condition="Core.Player.CurrentGP &lt; 500" />				
+					
+                    <ExGather loops="1" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" DiscoverUnknowns="true" GatherIncrease="Yield">
+                        <GatherObjects>
+                            <GatherObject>Unspoiled Rocky Outcrop</GatherObject>
+                        </GatherObjects>
+                        <ItemNames>
+                            <ItemName>Volcanic Rock Salt</ItemName>
+                        </ItemNames>
+                        <GatherRotation>Unspoiled</GatherRotation>
+                        <HotSpots>
+                            <Hotspot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/> 
+                        </HotSpots>
+                    </ExGather>   
+					
+                </If>              
+            </If>
+			
+            <!-- Cyclops Onion -->
+            <ExLog Color="#FFC0CB"  Message="Checking for Cyclops Onion !"/>
+			
+            <If Condition="not(ItemCount(12878) &lt; ((&Baked_Qty; - ItemCount(12861)) * 3)) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))"> 
+                <ExLog Color="#FFC0CB"  Message="I'm done with Cyclops Onion !"/>   
+            </If>	
+			
+            <If Condition="ItemCount(12878) &lt; ((&Baked_Qty; - ItemCount(12861)) *3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I don't have enough Cyclops Onion !"/>
+                <If Condition="not IsOnMap(398)">
+                    <TeleportTo Name="Tailfeather" AetheryteId="76" />
+                </If>
+                <If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
+                    <RunCode Name="BTN"/>
+                </If>			
+					
+                <ExGather while="ItemCount(12878) &lt; ((&Baked_Qty; - ItemCount(12861)) * 3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <GatherObjects>
+                        <GatherObject>Lush Vegetation Patch</GatherObject>
+                    </GatherObjects>
+                    <ItemNames>
+                        <ItemName>Cyclops Onion</ItemName>
+                        <ItemName>Fire Crystal</ItemName>
+                    </ItemNames>
+                    <HotSpots>
+                        <Hotspot XYZ="682.9902, -23.20486, -107.5284" Radius="50"/>
+                        <Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+                        <Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/> 
+                    </HotSpots>
+                </ExGather> 
+				
+            </If>
+			
+            <!-- Fire Crystal -->
+            <ExLog Color="#FFC0CB"  Message="Checking for Fire Crystal !"/>
+			
+            <If Condition="not(ItemCount(8) &lt; ((&Baked_Qty;-ItemCount(12861)) * 3)) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))"> 
+                <ExLog Color="#FFC0CB"  Message="I'm done with Fire Crystal !"/>   
+            </If>	
+			
+            <If Condition="ItemCount(8) &lt; ((&Baked_Qty;-ItemCount(12861)) *3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I don't have enough Fire Crystal !"/>
+                <If Condition="not IsOnMap(398)">
+                    <TeleportTo Name="Tailfeather" AetheryteId="76" />
+                </If>
+                <If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
+                    <RunCode Name="BTN"/>
+                </If>			
+					
+                <ExGather while="ItemCount(8) &lt; ((&Baked_Qty;-ItemCount(12861)) * 3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <GatherObjects>
+                        <GatherObject>Lush Vegetation Patch</GatherObject>
+                    </GatherObjects>
+                    <ItemNames>
+                        <ItemName>Cyclops Onion</ItemName>
+                        <ItemName>Fire Crystal</ItemName>
+                    </ItemNames>
+                    <HotSpots>
+                        <Hotspot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+                        <Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+                        <Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/> 
+                    </HotSpots>
+                </ExGather> 
+				
+            </If>
+			
+            <!-- Water Crystal -->
+            <ExLog Color="#FFC0CB"  Message="Checking for Water Crystal !"/>
+			
+            <If Condition="not(ItemCount(13) &lt; ((&Baked_Qty; - ItemCount(12861)) * 3)) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))"> 
+                <ExLog Color="#FFC0CB"  Message="I'm done with Water Crystal !"/>   
+            </If>	
+			
+            <If Condition="ItemCount(13) &lt; ((&Baked_Qty; - ItemCount(12861)) *3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I don't have enough Water Crystal !"/>
+                <If Condition="not IsOnMap(401)">
+                    <TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
+                    <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
+                        <RunCode Name="MIN"/>
+                        <WaitTimer WaitTime="1"/>                                                 
+                    </If>  
+                    <ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" MountId="1" DismountAtDestination="false" /> 
+                </If>		
+					
+                <ExGather while="ItemCount(13) &lt; ((&Baked_Qty; - ItemCount(12861)) * 3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <GatherObjects>
+                        <GatherObject>Mineral Deposit</GatherObject>
+                    </GatherObjects>
+                    <ItemNames>
+                        <ItemName>Grade 5 Carbonized Matter</ItemName>
+                        <ItemName>Timeworn Dragonskin Map</ItemName>
+                        <ItemName>Water Crystal</ItemName>
+                    </ItemNames>
+                    <GatherRotation>RegularNode</GatherRotation>
+                    <GatherSpots>
+                        <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" />
+                        <IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149" />
+                        <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" />
+                        <IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471" />
+                        <IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633" />
+                        <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" />
+                        <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="533.8292, -110.3895, 448.9955" />
+                        <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" />
+                        <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />	
+                    </GatherSpots>
+                    <HotSpots>
+                        <Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+                        <Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+                        <Hotspot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
+                        <Hotspot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
+                    </HotSpots>
+                </ExGather>
+				
+            </If>
+			
+            <!-- Fire Shard -->
+            <ExLog Color="#FFC0CB"  Message="Checking for Fire Shard !"/>
+			
+            <If Condition="not(ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12861)) * 6.2 )) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I'm done with Fire Shard !"/>
+            </If>
+			
+            <If Condition="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12861)) * 6.2 ) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I don't have enough Fire Shard !"/>			
+                <If Condition="not IsOnMap(140)">
+                    <TeleportTo Name="Horizon" AetheryteId="17" />
+                </If>
+                <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
+                    <RunCode Name="MIN"/>
+                </If>
+				
+                <ExGather while="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12861)) * 6.2 ) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <GatherObjects>
+                        <GatherObject>Mineral Deposit</GatherObject>
+                    </GatherObjects>
+                    <ItemNames>
+                        <ItemName>Fire Shard</ItemName>
+                    </ItemNames>
+                    <HotSpots>
+                        <Hotspot XYZ="253.2534, 56.07324, 218.2655" Radius="250"/>
+                    </HotSpots>
+                </ExGather>
+
+            </If>	
+			
+            <!-- Water Shard -->
+            <ExLog Color="#FFC0CB"  Message="Checking for Water Shard !"/>
+			
+            <If Condition="not(ItemCount(7) &lt; ((&Baked_Qty; - ItemCount(12861)) * 4 )) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I'm done with Water Shard !"/>
+            </If>
+			
+            <If Condition="ItemCount(7) &lt; ((&Baked_Qty; - ItemCount(12861)) * 4 ) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                <ExLog Color="#FFC0CB"  Message="I don't have enough Water Shard !"/>			
+                <If Condition="not IsOnMap(140)">
+                    <TeleportTo Name="Horizon" AetheryteId="17" />
+                </If>
+                <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
+                    <RunCode Name="MIN"/>
+                </If>
+		
+                <ExGather while="ItemCount(7) &lt; ((&Baked_Qty; - ItemCount(12861)) * 4 ) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <GatherObjects>
+                        <GatherObject>Mineral Deposit</GatherObject>
+                    </GatherObjects>
+                    <ItemNames>
+                        <ItemName>Water Shard</ItemName>
+                    </ItemNames>
+                    <HotSpots>
+                        <Hotspot XYZ="253.2534, 56.07324, 218.2655" Radius="250"/>
+                    </HotSpots>
+                </ExGather>
+
+            </If>				
+		
+            <!-- PNJ Material -->	
+            <If Condition="(ItemCount(4751) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4772) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4850) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4753) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) or ItemCount(4764) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4777) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4778) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4825) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or  ItemCount(6149) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) or ItemCount(4837) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                	
+                <!-- Limsa -->
+                <If Condition="(ItemCount(4751) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4772) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4850) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4753) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) or ItemCount(4764) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))"> 
+					
+                    <If Condition="not IsOnMap(129)">                              
+                        <TeleportTo aetheryteId="8" />                        
+                    </If>
+                
+                    <!-- Engerrand -->
+                    <If Condition="ItemCount(4751) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4772) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4850) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) or ItemCount(4753) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) or ItemCount(4764) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+												
+                        <!-- Mineral Water -->
+                        <If Condition="ItemCount(4751) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))"> 
+                            <ExMoveTo XYZ="-131.6825, 18.2, 26.31079"/>
+						
+                            <While Condition="ItemCount(4751) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -98)"> 
+                                <BuyItem itemId="4751" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+							
+                            <While Condition="ItemCount(4751) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -49)"> 
+                                <BuyItem itemId="4751" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+							
+                            <While Condition="ItemCount(4751) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -19)"> 
+                                <BuyItem itemId="4751" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4751) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                                <BuyItem itemId="4751" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                                <BuyItem itemId="4751" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -8)"> 
+                                <BuyItem itemId="4751" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -7)"> 
+                                <BuyItem itemId="4751" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -6)"> 
+                                <BuyItem itemId="4751" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -5)"> 
+                                <BuyItem itemId="4751" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -4)"> 
+                                <BuyItem itemId="4751" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -3)"> 
+                                <BuyItem itemId="4751" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -2)"> 
+                                <BuyItem itemId="4751" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4751) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -1)"> 
+                                <BuyItem itemId="4751" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                        </If>
+						
+                        <!-- Chicken Egg -->
+                        <If Condition="ItemCount(4772) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))"> 
+                            <ExMoveTo XYZ="-131.6825, 18.2, 26.31079"/>
+						
+                            <While Condition="ItemCount(4772) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -98)"> 
+                                <BuyItem itemId="4772" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4772) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -49)"> 
+                                <BuyItem itemId="4772" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4772) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -19)"> 
+                                <BuyItem itemId="4772" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4772) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                                <BuyItem itemId="4772" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                                <BuyItem itemId="4772" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -8)"> 
+                                <BuyItem itemId="4772" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -7)"> 
+                                <BuyItem itemId="4772" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -6)"> 
+                                <BuyItem itemId="4772" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -5)"> 
+                                <BuyItem itemId="4772" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -4)"> 
+                                <BuyItem itemId="4772" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -3)"> 
+                                <BuyItem itemId="4772" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -2)"> 
+                                <BuyItem itemId="4772" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4772) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -1)"> 
+                                <BuyItem itemId="4772" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                        </If> 
+						
+                        <!-- Honey -->
+                        <If Condition="ItemCount(4850) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))"> 
+                            <ExMoveTo XYZ="-131.6825, 18.2, 26.31079"/>
+						
+                            <While Condition="ItemCount(4850) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -98)"> 
+                                <BuyItem itemId="4850" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4850) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -49)"> 
+                                <BuyItem itemId="4850" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4850) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -19)"> 
+                                <BuyItem itemId="4850" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4850) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                                <BuyItem itemId="4850" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                                <BuyItem itemId="4850" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -8)"> 
+                                <BuyItem itemId="4850" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -7)"> 
+                                <BuyItem itemId="4850" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -6)"> 
+                                <BuyItem itemId="4850" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -5)"> 
+                                <BuyItem itemId="4850" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>   
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -4)"> 
+                                <BuyItem itemId="4850" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -3)"> 
+                                <BuyItem itemId="4850" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -2)"> 
+                                <BuyItem itemId="4850" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                            <If Condition="ItemCount(4850) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -1)"> 
+                                <BuyItem itemId="4850" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </If>    
+						
+                        </If> 
+						
+                        <!-- Buffalo Milk -->
+                        <If Condition="ItemCount(4753) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9)"> 
+                            <ExMoveTo XYZ="-131.6825, 18.2, 26.31079"/>
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -98)"> 
+                                <BuyItem itemId="4753" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -49)"> 
+                                <BuyItem itemId="4753" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -19)"> 
+                                <BuyItem itemId="4753" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -9)"> 
+                                <BuyItem itemId="4753" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -8)"> 
+                                <BuyItem itemId="4753" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -7)"> 
+                                <BuyItem itemId="4753" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -6)"> 
+                                <BuyItem itemId="4753" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -5)"> 
+                                <BuyItem itemId="4753" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -4)"> 
+                                <BuyItem itemId="4753" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -3)"> 
+                                <BuyItem itemId="4753" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -2)"> 
+                                <BuyItem itemId="4753" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4753) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9) -1)"> 
+                                <BuyItem itemId="4753" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4753) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756) - (3 * ItemCount(4852))) / 9)"> 
+                                <BuyItem itemId="4753" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                        </If> 
+					
+                        <!-- Chicken Breast -->
+                        <If Condition="ItemCount(4764) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+                            <ExMoveTo XYZ="-131.6825, 18.2, 26.31079"/>
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -98)"> 
+                                <BuyItem itemId="4764" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -49)"> 
+                                <BuyItem itemId="4764" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -19)"> 
+                                <BuyItem itemId="4764" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -9)"> 
+                                <BuyItem itemId="4764" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -8)"> 
+                                <BuyItem itemId="4764" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -7)"> 
+                                <BuyItem itemId="4764" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -6)"> 
+                                <BuyItem itemId="4764" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -5)"> 
+                                <BuyItem itemId="4764" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -4)"> 
+                                <BuyItem itemId="4764" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -3)"> 
+                                <BuyItem itemId="4764" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -2)"> 
+                                <BuyItem itemId="4764" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4764) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -1)"> 
+                                <BuyItem itemId="4764" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4764) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+                                <BuyItem itemId="4764" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1001204" xyz="-131.6825, 18.2, 26.31079" />  
+                            </While>    
+						
+                        </If> 
+						
+                    </If>
+					
+                    <!-- Josy -->
+                    <If Condition="ItemCount(4777) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) or ItemCount(4778) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+                        <Travel To="128" />	
+					
+                        <!-- Wild Onion -->
+                        <If Condition="ItemCount(4777) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)">
+                            <ExMoveTo XYZ="-63.68365, 42.2999, -162.3582"/> 
+							
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -98)"> 
+                                <BuyItem itemId="4777" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -49)"> 
+                                <BuyItem itemId="4777" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+							
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -19)"> 
+                                <BuyItem itemId="4777" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -9)"> 
+                                <BuyItem itemId="4777" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -8)"> 
+                                <BuyItem itemId="4777" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -7)"> 
+                                <BuyItem itemId="4777" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -6)"> 
+                                <BuyItem itemId="4777" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -5)"> 
+                                <BuyItem itemId="4777" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -4)"> 
+                                <BuyItem itemId="4777" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -3)"> 
+                                <BuyItem itemId="4777" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -2)"> 
+                                <BuyItem itemId="4777" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+						
+                            <While Condition="ItemCount(4777) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -1)"> 
+                                <BuyItem itemId="4777" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>
+						
+                            <While Condition="ItemCount(4777) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+                                <BuyItem itemId="4777" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>
+						
+                        </If>       
+						
+                        <!-- Coerthan Carrot -->
+                        <If Condition="ItemCount(4778) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+                            <ExMoveTo XYZ="-63.68365, 42.2999, -162.3582"/>
+							
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -98)"> 
+                                <BuyItem itemId="4778" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -49)"> 
+                                <BuyItem itemId="4778" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+							
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -19)"> 
+                                <BuyItem itemId="4778" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -9)"> 
+                                <BuyItem itemId="4778" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While> 
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -8)"> 
+                                <BuyItem itemId="4778" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -7)"> 
+                                <BuyItem itemId="4778" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -6)"> 
+                                <BuyItem itemId="4778" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -5)"> 
+                                <BuyItem itemId="4778" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>   
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -4)"> 
+                                <BuyItem itemId="4778" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -3)"> 
+                                <BuyItem itemId="4778" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -2)"> 
+                                <BuyItem itemId="4778" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+					
+                            <While Condition="ItemCount(4778) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6) -1)"> 
+                                <BuyItem itemId="4778" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+					
+                            <While Condition="ItemCount(4778) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4867)) / 6)"> 
+                                <BuyItem itemId="4778" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1003249" xyz="-63.71506, 42.2999, -162.3639" />  
+                            </While>    
+					
+                        </If>  
+					
+                    </If>
+					
+                </If>
+				
+                <!-- Gridania -->
+                <If Condition="(ItemCount(4825) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))"> 
+					
+                    <If Condition="not IsOnMap(132)">                              
+                        <TeleportTo aetheryteId="2" /> 
+                        <Travel To="133" />                       
+                    </If>
+					
+                    <!-- Rye Flour -->
+                    <If Condition="ItemCount(4825) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))"> 
+                        <ExMoveTo XYZ="-89.19287, 7, -172.5541"/>
+						
+                        <While Condition="ItemCount(4825) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -98)"> 
+                            <BuyItem itemId="4825" itemCount="99" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(4825) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -49)"> 
+                            <BuyItem itemId="4825" itemCount="50" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(4825) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -19)"> 
+                            <BuyItem itemId="4825" itemCount="20" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(4825) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                            <BuyItem itemId="4825" itemCount="10" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </While> 
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                            <BuyItem itemId="4825" itemCount="9" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -8)"> 
+                            <BuyItem itemId="4825" itemCount="8" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -7)"> 
+                            <BuyItem itemId="4825" itemCount="7" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -6)"> 
+                            <BuyItem itemId="4825" itemCount="6" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -5)"> 
+                            <BuyItem itemId="4825" itemCount="5" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -4)"> 
+                            <BuyItem itemId="4825" itemCount="4" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>    
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -3)"> 
+                            <BuyItem itemId="4825" itemCount="3" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>    
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -2)"> 
+                            <BuyItem itemId="4825" itemCount="2" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>    
+						
+                        <If Condition="ItemCount(4825) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -1)"> 
+                            <BuyItem itemId="4825" itemCount="1" dialogOption="1" interactDistance="3.0" npcId="1000301" xyz="-87.09287, 7, -173.7541" />  
+                        </If>    
+						
+                    </If>
+						
+                </If>
+					
+                <!-- Sahagin Vendor -->
+                <If Condition="(ItemCount(6149) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) or ItemCount(4837) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))"> 
+					
+                    <If Condition="not IsOnMap(138)">                              
+                        <TeleportTo aetheryteId="14" />                  
+                    </If>
+					
+                    <!-- Night Milk -->
+                    <If Condition="ItemCount(6149) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 )"> 
+                        <ExMoveTo XYZ="-224.9631, -40.48583, 47.14457"/>
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -98)"> 
+                            <BuyItem itemId="6149" itemCount="99" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -49)"> 
+                            <BuyItem itemId="6149" itemCount="50" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+		
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -19)"> 
+                            <BuyItem itemId="6149" itemCount="20" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -9)"> 
+                            <BuyItem itemId="6149" itemCount="10" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -8)"> 
+                            <BuyItem itemId="6149" itemCount="9" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>   
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -7)"> 
+                            <BuyItem itemId="6149" itemCount="8" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>   
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -6)"> 
+                            <BuyItem itemId="6149" itemCount="7" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>   
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -5)"> 
+                            <BuyItem itemId="6149" itemCount="6" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>   
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -4)"> 
+                            <BuyItem itemId="6149" itemCount="5" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>    
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -3)"> 
+                            <BuyItem itemId="6149" itemCount="4" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>    
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -2)"> 
+                            <BuyItem itemId="6149" itemCount="3" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>    
+						
+                        <While Condition="ItemCount(6149) &lt; (((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 ) -1)"> 
+                            <BuyItem itemId="6149" itemCount="2" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>    
+						
+                        <While Condition="ItemCount(6149) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4756))*0.7 + 1 )"> 
+                            <BuyItem itemId="6149" itemCount="1" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While>    
+						
+                    </If>
+						
+                    <!-- Midland Basil -->
+                    <If Condition="ItemCount(4837) &lt; (&Baked_Qty; - ItemCount(12861) - ItemCount(4702))"> 
+                        <ExMoveTo XYZ="-224.9631, -40.48583, 47.14457"/>
+						
+                        <While Condition="ItemCount(4837) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -98)"> 
+                            <BuyItem itemId="4837" itemCount="99" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(4837) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -49)"> 
+                            <BuyItem itemId="4837" itemCount="50" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+													
+                        <While Condition="ItemCount(4837) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -19)"> 
+                            <BuyItem itemId="4837" itemCount="20" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+						
+                        <While Condition="ItemCount(4837) &lt; ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                            <BuyItem itemId="4837" itemCount="10" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </While> 
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -9)"> 
+                            <BuyItem itemId="4837" itemCount="9" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -8)"> 
+                            <BuyItem itemId="4837" itemCount="8" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -7)"> 
+                            <BuyItem itemId="4837" itemCount="7" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -6)"> 
+                            <BuyItem itemId="4837" itemCount="6" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -5)"> 
+                            <BuyItem itemId="4837" itemCount="5" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>   
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -4)"> 
+                            <BuyItem itemId="4837" itemCount="4" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>    
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -3)"> 
+                            <BuyItem itemId="4837" itemCount="3" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>    
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -2)"> 
+                            <BuyItem itemId="4837" itemCount="2" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>    
+						
+                        <If Condition="ItemCount(4837) == ((&Baked_Qty; - ItemCount(12861) - ItemCount(4702)) -1)"> 
+                            <BuyItem itemId="4837" itemCount="1" dialogOption="0" interactDistance="3.0" npcId="1008907" xyz="-224.9631, -40.48583, 47.14457" />  
+                        </If>    
+						
+                    </If>
+						
+                </If>
+						
+            </If>
+			
+            <!-- Crafting -->
+            <If Condition="&Craft; !=0 and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">	
+			
+                <TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" /> 
+				
+                <RunCode Name="CUL" />  
+				
+                <RunCode Name="Dismount"/>
+				
+                <WaitTimer WaitTime="3"/>
+				
+                <!-- Sweet Cream -->
+                <While Condition="(ItemCount(4753) &gt; 0) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <Synthesize RecipeId="912" HqMats="-1"/>
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                </While>
+				
+                <!-- Cream Cheese -->
+                <While Condition="(ItemCount(4852) &gt; 0 and ItemCount(6149) &gt; 1) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <Synthesize RecipeId="983" HqMats="-1,-1"/>
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                </While>
+				
+                <!-- Chicken Stock -->
+                <While Condition="(ItemCount(4764) &gt; 0 and ItemCount(4777) &gt; 0 and ItemCount(4778) &gt; 0) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <Synthesize RecipeId="968" HqMats="-1,-1,-1"/>
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                </While>
+				
+                <!-- Knight's Bread -->
+                <While Condition="(ItemCount(4751) &gt; 0 and ItemCount(4772) &gt; 0 and ItemCount(4825) &gt; 0 and ItemCount(4837) &gt; 0 and ItemCount(4850) &gt; 0) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+                    <Synthesize RecipeId="988" HqMats="-1,-1,-1,-1,-1"/>
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                    <CraftActionByName Name="Standard Synthesis" />
+                </While>
+				
+                <!-- Baked Onion Soup -->
+                <While Condition="(ItemCount(12878) &gt; 2 and ItemCount(6152) &gt; 0 and ItemCount(4867) &gt; 0 and ItemCount(4756) &gt; 0 and ItemCount(4702) &gt; 0 and ItemCount(13) &gt; 3 and ItemCount(8) &gt; 3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
+					<EatFood ItemId="12861" Name="Baked Onion Soup"/>
+					<Synthesize RecipeId="2809" HqMats="-1,-1,-1,-1,-1"/>
+					<CraftActionByName Name="Muscle Memory" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Comfort Zone" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Inner Quiet" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<RunCode Name="TrickTouch"/>
+					<CraftActionByName Name="Hasty Touch" />
+					<RunCode Name="TrickTouch"/>
+					<CraftActionByName Name="Hasty Touch" />
+					<RunCode Name="TrickTouch"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Master's Mend II" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch2"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Steady Hand" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Tricks of the Trade" />
+					</If>
+					<CraftActionByName Name="Great Strides" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="Core.Player.CurrentCP &gt; 41">
+						<CraftActionByName Name="Innovation" />
+					</If>	
+					<CraftActionByName Name="Byregot's Blessing" />
+					<CraftActionByName Name="Careful Synthesis II" />
+					<CraftActionByName Name="Careful Synthesis II" />
+					<CraftActionByName Name="Careful Synthesis II" />
+				</While>
+			
+                <StopCrafting/>   
+			
+            </If>
+                
+            <TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" /> 
+			
+            <If Condition ="not(IsTimeBetween(17,19)) and ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861))">
+                <TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
+                <RunCode Name="Dismount"/>
+                <ExLog Color="#FFC0CB"  Message="Nothing to do, waiting for Volcanic Rock Salt node to spawn !"/>
+                <WaitWhile Condition ="not(IsTimeBetween(17,19))" />
+            </If>
+            
+        </While>	
+        	
+        <ExLog Color="#FFC0CB"  Message="Baked Onion Soup Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/> 	
+		
+    </Order>	
+    
+</Profile>
