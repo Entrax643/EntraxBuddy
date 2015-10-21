@@ -202,13 +202,13 @@
 			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(12,13)) and ItemCount(12741) &lt; (&Baked_Qty; - ItemCount(12856))">
 				<If Condition="IsTimeBetween(00,1)">
 					<ExLog Color="#FFC0CB"  Message="Baked Pipira Pira 2.0 | 12 AM I'm going to reset Fish !"/>
-					<If Condition="not HasAtLeast(12708,20)">
+					<If Condition="not HasAtLeast(12704,20)">
 						<ExLog Color="#FFC0CB"  Message="Baked Pipira Pira 2.0 | Not enough bait available, I'm going to buy you some !"/>
 						<If Condition="not IsOnMap(401)">
 							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 						</If>
 						<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="true"/>
-						<BuyItem ItemId="12708" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875" />
+						<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875" />
 					</If>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
@@ -230,13 +230,13 @@
 				</If>
 				<If Condition="IsTimeBetween(12,13)">
 					<ExLog Color="#FFC0CB"  Message="Baked Pipira Pira 2.0 | 12 PM I'm going to reset Fish !"/>
-					<If Condition="not HasAtLeast(12704,20)">
+					<If Condition="not HasAtLeast(12708,20)">
 						<ExLog Color="#FFC0CB"  Message="Baked Pipira Pira 2.0 | Not enough bait available, I'm going to buy you some !"/>
 						<If Condition="not IsOnMap(401)">
 							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 						</If>
 						<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="true"/>
-						<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875" />
+						<BuyItem ItemId="12708" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875" />
 					</If>
 					<If Condition="not IsOnMap(400)">
 						<TeleportTo Name="Zenith" AetheryteId="79" />
