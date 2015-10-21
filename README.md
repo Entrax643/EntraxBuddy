@@ -1,2 +1,0 @@
-# Rebornbuddy---Co
-ReadMe
