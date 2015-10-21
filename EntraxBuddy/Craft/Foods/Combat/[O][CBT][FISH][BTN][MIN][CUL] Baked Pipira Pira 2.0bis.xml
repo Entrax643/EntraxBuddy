@@ -11,7 +11,7 @@
 <!-- You have Reclaim as cross skill and you want to use it set 1, 0 if you don't -->
 <!ENTITY Reclaim "0">
 <!-- (Reclaim set to 1 REQUIRED !) How many stacks at least to NOT use Reclaim -->
-<!ENTITY IQ_Stack "9">
+<!ENTITY IQ_Stack "7">
 <!-- Where do you want to port while witing / crafting-->
 <!ENTITY Waiting_AetheryteId "8">]><Profile>
 	<Name>[O][CBT][FISH][BTN][MIN][CUL] Baked Pipira Pira 2.0</Name>
@@ -217,8 +217,8 @@
 						</If>
 						<MoveTo XYZ="-602.2142, -122.2923, 554.533" />
 					</If>
-					<RunCode Name="FSH"/>
 					<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>
+					<RunCode Name="FSH"/>
 					<Fish Condition="IsTimeBetween(00,1)" shuffleFishSpots="true" sitRate=".69" bait="Stonefly Nymph">
 						<FishSpots>
 							<FishSpot XYZ="218.9494, -125.2895, 677.1995" heading="0,0.2" />
@@ -244,8 +244,8 @@
 							<RunCode Name="FSH"/>
 						</If>
 					</If>
-					<RunCode Name="FSH"/>
 					<ExFlyTo XYZ="-677.9122, 213.0839, 533.136" />
+					<RunCode Name="FSH"/>
 					<Fish Condition="IsTimeBetween(12,13)" shuffleFishSpots="true" sitRate=".69" bait="Red Balloon">
 						<FishSpots>
 							<FishSpot XYZ="-665.8422, 180.7286, 585.1367" heading="0,5.02" />
