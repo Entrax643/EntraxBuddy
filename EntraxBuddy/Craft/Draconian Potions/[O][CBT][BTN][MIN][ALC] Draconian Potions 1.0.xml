@@ -18,8 +18,10 @@
 <!ENTITY Craft "0">
 <!-- Wich food do you want to use -->
 <!ENTITY ID_FOOD "12861">
-<!-- If you have at least 406 CP (with muscle memory rotation) or 400 CP (with 4 CS II rotation) -->
-<!ENTITY Extra_Touch "0">
+<!-- If you have at least 400 CP (used on STR/DEX recipes) -->
+<!ENTITY Extra_Touch_58 "0">
+<!-- If you have at least 438 CP (used on VIT/INT/MND recipes) -->
+<!ENTITY Extra_Touch_59 "0">
 <!-- You have Tricks of the Trade as cross skill and you want to use it set 1, 0 if you don't -->
 <!ENTITY ToT "1">
 <!-- You have Reclaim as cross skill and you want to use it set 1, 0 if you don't -->
@@ -982,145 +984,155 @@
 			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Strengh !"/>
 			<While Condition="ItemCount(18) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12642) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
-				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
+				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
-				<Synthesize RecipeId="31206" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
-				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<CraftActionByName Name="Steady Hand" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+				<Synthesize RecipeId="31206" MinimumCp="382" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
+					<CraftActionByName Name="Comfort Zone" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Inner Quiet" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<If Condition="&Extra_Touch_58; == 0">
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<If Condition="&Extra_Touch_58; != 0">
+						<RunCode Name="TrickTouch"/>
+					</If>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Careful Synthesis II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Master's Mend II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch2"/>
+					<CraftActionByName Name="Steady Hand" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+						<CraftActionByName Name="Reclaim" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<CraftActionByName Name="Great Strides" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<RunCode Name="InnovationCheck"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
 					<CraftActionByName Name="Byregot's Blessing" />
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
-					<CraftActionByName Name="Reclaim" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-				</If>
-				<CraftActionByName Name="Great Strides" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<RunCode Name="InnovationCheck"/>
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<CraftActionByName Name="Byregot's Blessing" />
-				<CraftActionByName Name="Careful Synthesis II" />
-				<CraftActionByName Name="Careful Synthesis II" />
-				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Dexterity -->
 			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Dexterity !"/>
 			<While Condition="ItemCount(18) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12638) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
-				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
+				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
-				<Synthesize RecipeId="31207" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
-				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<CraftActionByName Name="Steady Hand" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+				<Synthesize RecipeId="31207" MinimumCp="382" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
+					<CraftActionByName Name="Comfort Zone" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Inner Quiet" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<If Condition="&Extra_Touch_58; == 0">
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<If Condition="&Extra_Touch_58; != 0">
+						<RunCode Name="TrickTouch"/>
+					</If>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Careful Synthesis II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Master's Mend II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch2"/>
+					<CraftActionByName Name="Steady Hand" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+						<CraftActionByName Name="Reclaim" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<CraftActionByName Name="Great Strides" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<RunCode Name="InnovationCheck"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
 					<CraftActionByName Name="Byregot's Blessing" />
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
-					<CraftActionByName Name="Reclaim" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-				</If>
-				<CraftActionByName Name="Great Strides" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<RunCode Name="InnovationCheck"/>
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<CraftActionByName Name="Byregot's Blessing" />
-				<CraftActionByName Name="Careful Synthesis II" />
-				<CraftActionByName Name="Careful Synthesis II" />
-				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Vitality -->
 			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Vitality !"/>
@@ -1129,70 +1141,79 @@
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31208" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
-				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<CraftActionByName Name="Steady Hand" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+					<CraftActionByName Name="Muscle Memory" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Comfort Zone" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Inner Quiet" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<If Condition="&Extra_Touch_59; == 0">
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<If Condition="&Extra_Touch_59; != 0">
+						<RunCode Name="TrickTouch"/>
+					</If>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Master's Mend II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<CraftActionByName Name="Steady Hand" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+						<CraftActionByName Name="Reclaim" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<CraftActionByName Name="Great Strides" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<RunCode Name="InnovationCheck2"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<CraftActionByName Name="Ingenuity II" />
 					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
-					<CraftActionByName Name="Reclaim" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-				</If>
-				<CraftActionByName Name="Great Strides" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<RunCode Name="InnovationCheck2"/>
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<CraftActionByName Name="Byregot's Blessing" />
-				<CraftActionByName Name="Standard Synthesis" />
-				<CraftActionByName Name="Standard Synthesis" />
-				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Intelligence -->
 			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Intelligence !"/>
@@ -1201,70 +1222,79 @@
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31209" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
-				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<CraftActionByName Name="Steady Hand" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+					<CraftActionByName Name="Muscle Memory" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Comfort Zone" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Inner Quiet" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<If Condition="&Extra_Touch_59; == 0">
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<If Condition="&Extra_Touch_59; != 0">
+						<RunCode Name="TrickTouch"/>
+					</If>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Master's Mend II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<CraftActionByName Name="Steady Hand" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+						<CraftActionByName Name="Reclaim" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<CraftActionByName Name="Great Strides" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<RunCode Name="InnovationCheck2"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<CraftActionByName Name="Ingenuity II" />
 					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
-					<CraftActionByName Name="Reclaim" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-				</If>
-				<CraftActionByName Name="Great Strides" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<RunCode Name="InnovationCheck2"/>
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<CraftActionByName Name="Byregot's Blessing" />
-				<CraftActionByName Name="Standard Synthesis" />
-				<CraftActionByName Name="Standard Synthesis" />
-				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Mind -->
 			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Mind !"/>
@@ -1273,70 +1303,79 @@
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31210" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
-				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<CraftActionByName Name="Steady Hand II" />
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<RunCode Name="TrickTouch"/>
-				<CraftActionByName Name="Steady Hand" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+					<CraftActionByName Name="Muscle Memory" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Comfort Zone" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Inner Quiet" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<If Condition="&Extra_Touch_59; == 0">
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<If Condition="&Extra_Touch_59; != 0">
+						<RunCode Name="TrickTouch"/>
+					</If>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Master's Mend II" />
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<CraftActionByName Name="Steady Hand II" />
+					<CraftActionByName Name="Hasty Touch" />
+					<RunCode Name="TrickTouch"/>
+					<RunCode Name="TrickTouch"/>
+					<CraftActionByName Name="Steady Hand" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&ToT; != 0">
+						<RunCode Name="ToT"/>
+					</If>
+					<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+						<CraftActionByName Name="Reclaim" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Hasty Touch" />
+					</If>
+					<CraftActionByName Name="Great Strides" />
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<RunCode Name="InnovationCheck2"/>
+					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Ingenuity II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<CraftActionByName Name="Ingenuity II" />
 					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
-				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
-					<CraftActionByName Name="Reclaim" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-					<CraftActionByName Name="Hasty Touch" />
-				</If>
-				<CraftActionByName Name="Great Strides" />
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<RunCode Name="InnovationCheck2"/>
-				<If Condition="CraftingManager.Condition == CraftingCondition.Excellent or CraftingManager.Condition == CraftingCondition.Good">
-					<CraftActionByName Name="Byregot's Blessing" />
-					<CraftActionByName Name="Standard Synthesis" />
-					<CraftActionByName Name="Standard Synthesis" />
 					<CraftActionByName Name="Careful Synthesis II" />
-				</If>
-				<CraftActionByName Name="Byregot's Blessing" />
-				<CraftActionByName Name="Standard Synthesis" />
-				<CraftActionByName Name="Standard Synthesis" />
-				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<StopCrafting/>
 		</If>
