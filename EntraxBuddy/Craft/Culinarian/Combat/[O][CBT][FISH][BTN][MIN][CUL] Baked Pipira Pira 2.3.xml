@@ -77,7 +77,8 @@
 	</GrindAreas>
 	<Order>
 		<StopCrafting/>
-		<While Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (&Baked_Qty; *4 )">
+		<While Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7))">
+			<RunCode Name="EnableMount"/>
 			<!-- Porcini / Abalathian Rock Salt -->
 			<If Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2)">
 				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Porcini !"/>
@@ -201,6 +202,7 @@
 					</Fish>
 					<RunCode Name="EnableMount"/>
 				</If>
+				<RunCode Name="EnableMount"/>
 			</If>
 			<If Condition="not(ItemCount(12741) &lt; &Baked_Qty;)">
 				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Pipira Pira !"/>
@@ -254,6 +256,7 @@
 						</FishSpots>
 					</Fish>
 				</If>
+				<RunCode Name="EnableMount"/>
 			</If>
 			<!-- Yak Milk -->
 			<If Condition="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
@@ -353,7 +356,7 @@
 				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Fire Crystal !"/>
 			</If>
 			<!-- Fire Shard -->
-			<If Condition="ItemCount(2) &lt; (&Baked_Qty; *4 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
+			<If Condition="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12895))*3.5 + 7) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
 				<If Condition="ItemCount(2) &lt; (&Baked_Qty; *7 )">
 					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Fire Shard !"/>
 				</If>
@@ -363,7 +366,7 @@
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 					<RunCode Name="BTN"/>
 				</If>
-				<ExGather while="ItemCount(2) &lt; (&Baked_Qty; *4 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
+				<ExGather while="ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
 					<GatherObjects>
 						<GatherObject>Mature Tree</GatherObject>
 					</GatherObjects>
@@ -375,7 +378,7 @@
 					</HotSpots>
 				</ExGather>
 			</If>
-			<If Condition="not(ItemCount(2) &lt; (&Baked_Qty; *4 ))">
+			<If Condition="not(ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
 				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Fire Shard !"/>
 			</If>
 			<!-- Abalathian Rock Salt -->
@@ -437,14 +440,15 @@
 				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Abalathian Rock Salt !"/>
 			</If>
 			<!-- Waiting -->
-			<If Condition="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13)))) and not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 )) and (ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (&Baked_Qty; *4 ))">
+			<If Condition="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13)))) and not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 )) and (ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
 				<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 				<RunCode Name="Dismount"/>
 				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | Nothing to do, waiting for something to spawn !"/>
 				<WaitWhile Condition ="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))" />
 			</If>
+		<RunCode Name="EnableMount"/>
 		</While>
-		<If Condition="not(ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (&Baked_Qty; *4 ))">
+		<If Condition="not(ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
 			<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | All materials gathered !"/>
 		</If>
 		<!-- Craft -->
@@ -531,7 +535,6 @@
 					<CraftActionByName Name="Steady Hand" />
 					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
 						<CraftActionByName Name="Byregot's Blessing" />
-						<CraftActionByName Name="Ingenuity II" />
 						<CraftActionByName Name="Careful Synthesis II" />
 						<CraftActionByName Name="Careful Synthesis II" />
 						<CraftActionByName Name="Careful Synthesis II" />
