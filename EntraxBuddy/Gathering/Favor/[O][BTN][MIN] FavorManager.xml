@@ -42,7 +42,7 @@
 
 ]>
 <Profile>
-    <Name>[O][BTN][MIN]Favor Farm All In One 1.2 - RB</Name>
+    <Name>[O][BTN][MIN]FavorManager - RB</Name>
     <KillRadius>50</KillRadius>
     <CodeChunks>
         <CodeChunk name="MIN">
@@ -425,7 +425,7 @@
             <If Condition="&Miner_CWH; != 0">
 
                 <If Condition="ItemCount(10374) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Traders' Favor (Coerthas Western Highlands)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (Coerthas Western Highlands)"/>
                 </If>
 
                 <If Condition="ItemCount(10374) != 0">
@@ -473,9 +473,9 @@
                                 <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
-                                <Hotspot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
-                                <Hotspot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
+                                <HotSpot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
+                                <HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+                                <HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
                             </HotSpots>
                         </ExGather>
                             
@@ -489,9 +489,9 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
-                                    <Hotspot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
-                                    <Hotspot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
+                                    <HotSpot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
+                                    <HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+                                    <HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
                                 </HotSpots>
                             </ExGather>  
 
@@ -514,7 +514,7 @@
             <If Condition="&Botanist_CWH; != 0">
 
                 <If Condition="ItemCount(10380) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Matron's Favor (Coerthas Western Highlands)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (Coerthas Western Highlands)"/>
                 </If>
 
                 <If Condition="ItemCount(10380) != 0">
@@ -562,9 +562,9 @@
                                 <StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
-                                <Hotspot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
-                                <Hotspot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
+                                <HotSpot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+                                <HotSpot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
+                                <HotSpot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
                             </HotSpots>
                         </ExGather>    
                     
@@ -577,9 +577,9 @@
                                     <StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-456.1826, 122.3096, -465.3806" nodeLocation="-464.1032, 122.1049, -462.4032" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
-                                    <Hotspot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
-                                    <Hotspot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
+                                    <HotSpot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+                                    <HotSpot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
+                                    <HotSpot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -599,7 +599,7 @@
             <If Condition="&Miner_Hinterlands; != 0">
 
                 <If Condition="ItemCount(10375) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Traders' Favor (Dravanian Hinterlands)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (Dravanian Hinterlands)"/>
                 </If>
 
                 <If Condition="ItemCount(10375) != 0">
@@ -655,9 +655,9 @@
                                 <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="182.7975, 69.57438, 117.5594" nodeLocation="186.0795, 69.36257, 126.6282" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
-                                <Hotspot XYZ="221.9516, 86.1501, 161.2957" Radius="80"/>
-                                <Hotspot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
+                                <HotSpot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
+                                <HotSpot XYZ="221.9516, 86.1501, 161.2957" Radius="80"/>
+                                <HotSpot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
                             </HotSpots>
                         </ExGather>
 
@@ -675,9 +675,9 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="182.7975, 69.57438, 117.5594" nodeLocation="186.0795, 69.36257, 126.6282" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
-                                    <Hotspot XYZ="221.9516, 86.1501, 161.2957" Radius="80"/>
-                                    <Hotspot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
+                                    <HotSpot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
+                                    <HotSpot XYZ="221.9516, 86.1501, 161.2957" Radius="80"/>
+                                    <HotSpot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -700,7 +700,7 @@
             <If Condition="&Botanist_Hinterlands; != 0">
 
                 <If Condition="ItemCount(10381) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Matron's Favor (Dravanian Hinterlands)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (Dravanian Hinterlands)"/>
                 </If>
 
                 <If Condition="ItemCount(10381) != 0">
@@ -753,9 +753,9 @@
                                 <IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
-                                <Hotspot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
-                                <Hotspot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
+                                <HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
+                                <HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+                                <HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
                             </HotSpots>
                         </ExGather>
 
@@ -772,9 +772,9 @@
                                 <IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
-                                    <Hotspot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
-                                    <Hotspot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
+                                    <HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
+                                    <HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+                                    <HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -794,7 +794,7 @@
             <If Condition="&Miner_Forelands; != 0">
 
                 <If Condition="ItemCount(10376) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Traders' Favor (Dravanian Forelands)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (Dravanian Forelands)"/>
                 </If>
 
                 <If Condition="ItemCount(10376) != 0">
@@ -843,9 +843,9 @@
                                 <IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
-                                <Hotspot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
-                                <Hotspot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
+                                <HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
+                                <HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
+                                <HotSpot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
                             </HotSpots>
                         </ExGather>    
 
@@ -858,9 +858,9 @@
 									<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
-                                    <Hotspot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
-                                    <Hotspot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
+                                    <HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
+                                    <HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
+                                    <HotSpot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -883,7 +883,7 @@
             <If Condition="&Botanist_Forelands; != 0">
 
                 <If Condition="ItemCount(10382) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Matron's Favor (Dravanian Forelands)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (Dravanian Forelands)"/>
                 </If>
 
                 <If Condition="ItemCount(10382) != 0">
@@ -931,9 +931,9 @@
                                 <StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
-                                <Hotspot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
-                                <Hotspot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
+                                <HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+                                <HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+                                <HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
                             </HotSpots>
                         </ExGather>      
 
@@ -945,9 +945,9 @@
                                     <StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-689.1198, -104.5742, 631.8687" nodeLocation="-679.3283, -104.4418, 624.4818" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
-                                    <Hotspot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
-                                    <Hotspot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
+                                    <HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+                                    <HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+                                    <HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -967,7 +967,7 @@
             <If Condition="&Miner_ChurningMists; != 0">
 
                 <If Condition="ItemCount(10377) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Traders' Favor (The Churning Mists)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (The Churning Mists)"/>
                 </If>
 
                 <If Condition="ItemCount(10377) != 0">
@@ -1008,9 +1008,9 @@
                             </ItemNames>
                             <GatherRotation>RegularNode</GatherRotation>
                             <HotSpots>
-                                <Hotspot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
-                                <Hotspot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
-                                <Hotspot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
+                                <HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
+                                <HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
+                                <HotSpot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
                             </HotSpots>
                         </ExGather>     
 
@@ -1019,9 +1019,9 @@
                             <ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
                                 <GatherRotation>RegularNode</GatherRotation>
                                 <HotSpots>
-                                    <Hotspot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
-                                    <Hotspot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
-                                    <Hotspot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
+                                    <HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
+                                    <HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
+                                    <HotSpot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -1044,7 +1044,7 @@
             <If Condition="&Botanist_ChurningMists; != 0">
 
                 <If Condition="ItemCount(10383) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Matron's Favor (The Churning Mists)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (The Churning Mists)"/>
                 </If>
 
                 <If Condition="ItemCount(10383) != 0">
@@ -1092,9 +1092,9 @@
                                 <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" />
                             </GatherSpots>
                             <HotSpots>
-                                <Hotspot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
-                                <Hotspot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
-                                <Hotspot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
+                                <HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
+                                <HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+                                <HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
                             </HotSpots>
                         </ExGather>     
 
@@ -1107,9 +1107,9 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
-                                    <Hotspot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
-                                    <Hotspot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
+                                    <HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
+                                    <HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+                                    <HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -1129,7 +1129,7 @@
             <If Condition="&Miner_SOC; != 0">
 
                 <If Condition="ItemCount(10378) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Traders' Favor (The Sea Of Clouds)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (The Sea Of Clouds)"/>
                 </If>
 
                 <If Condition="ItemCount(10378) != 0">
@@ -1187,8 +1187,8 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />	
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-                                    <Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+                                    <HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+                                    <HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -1221,7 +1221,7 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
+                                    <HotSpot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
                                 </HotSpots>
                             </ExGather>
 						
@@ -1255,7 +1255,7 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />	
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
+                                    <HotSpot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
                                 </HotSpots>
                             </ExGather>
 			
@@ -1277,10 +1277,10 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />	
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-                                    <Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
-                                    <Hotspot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
-                                    <Hotspot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
+                                    <HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+                                    <HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+                                    <HotSpot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
+                                    <HotSpot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
                                 </HotSpots>
                             </ExGather>
 
@@ -1295,7 +1295,7 @@
             <If Condition="&Botanist_SOC; != 0">
 
                 <If Condition="ItemCount(10384) == 0">
-                    <ExLog Color="#FFC0CB"  Message="You don't have any Matron's Favor (The Sea Of Clouds)"/>
+                    <ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (The Sea Of Clouds)"/>
                 </If>
 
                 <If Condition="ItemCount(10384) != 0">
@@ -1345,9 +1345,9 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />							
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
-                                    <Hotspot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
-                                    <Hotspot XYZ="218.774689, -124.9265, 500.0145" Radius="80"/>
+                                    <HotSpot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
+                                    <HotSpot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
+                                    <HotSpot XYZ="218.774689, -124.9265, 500.0145" Radius="80"/>
                                 </HotSpots>
                             </ExGather>   
 
@@ -1377,7 +1377,7 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />								
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
+                                    <HotSpot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
                                 </HotSpots>
                             </ExGather>  
 						
@@ -1407,7 +1407,7 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />								
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="206.746, -118.7252, 599.1957" Radius="60"/>
+                                    <HotSpot XYZ="206.746, -118.7252, 599.1957" Radius="60"/>
                                 </HotSpots>
                             </ExGather>
 			
@@ -1426,9 +1426,9 @@
                                     <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />	
                                 </GatherSpots>
                                 <HotSpots>
-                                    <Hotspot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
-                                    <Hotspot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
-                                    <Hotspot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
+                                    <HotSpot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
+                                    <HotSpot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
+                                    <HotSpot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
                                 </HotSpots>
                             </ExGather>
 

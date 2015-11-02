@@ -30,7 +30,7 @@
 <!ENTITY IQ_Stack "9">
 <!-- Where do you want to port while witing / crafting-->
 <!ENTITY Waiting_AetheryteId "8">]><Profile>
-	<Name>[O][CBT][FSH][BTN][MIN][ALC] Draconian Potions 1.0 - RB</Name>
+	<Name>[O][CBT][FSH][BTN][MIN][ALC] Draconian Potions - RB</Name>
 	<KillRadius>50</KillRadius>
 	<BehaviorDirectory>CustomTags</BehaviorDirectory>
 	<CodeChunks>
@@ -71,9 +71,9 @@
 	</CodeChunks>
 	<GrindAreas>
 		<GrindArea name="Dragon">
-			<Hotspots>
-				<Hotspot Radius="350" XYZ="-14.47088, -19.92993, 25.11162"/>
-			</Hotspots>
+			<HotSpots>
+				<HotSpot Radius="350" XYZ="-14.47088, -19.92993, 25.11162"/>
+			</HotSpots>
 			<TargetMobs>
 				<TargetMob Name="Moss Dragon" Id="3617" />
 			</TargetMobs>
@@ -87,9 +87,9 @@
 			<RunCode Name="EnableMount"/>
 			<!-- Abalathian Rock Salt -->
 			<If Condition="ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Abalathian Rock Salt !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Abalathian Rock Salt !"/>
 				<If Condition="&Gather_Salt; != 0 and not(IsTimeBetween(11,12) or IsTimeBetween(23,24))">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I can't gather them because it's not between 11-12 AM-PM !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I can't gather them because it's not between 11-12 AM-PM !"/>
 				</If>
 				<If Condition="&Gather_Salt; != 0 and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
 					<If Condition="not IsOnMap(401)">
@@ -114,12 +114,12 @@
 						</ItemNames>
 						<GatherRotation>Unspoiled</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-747.2891, -74.98775, -733.9128" Radius="250"/>
+							<HotSpot XYZ="-747.2891, -74.98775, -733.9128" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
 				<If Condition="&Gather_Salt; == 0">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | Take your pickaxe and... oh wait, they're also sold by a npc !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | Take your pickaxe and... oh wait, they're also sold by a npc !"/>
 					<If Condition="not IsOnMap(419)">
 						<If Condition="not IsOnMap(418)">
 							<TeleportTo name="Foundation" aetheryteId="70" />
@@ -170,11 +170,11 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Abalathian Rock Salt !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Abalathian Rock Salt !"/>
 			</If>
 			<!-- Duskborne Aethersand -->
 			<If Condition="ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Duskborne Aethersand !"/>
 				<While Condition="ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) and not(FreeItemSlots() &lt; 2)">
 					<If Condition="FreeItemSlots() &lt; 20">
 						<ExPurify/>
@@ -204,9 +204,9 @@
 								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114" />
 							</GatherSpots>
 							<HotSpots>
-								<HotSpots XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
-								<Hotspots XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
-								<Hotspots XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+								<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
+								<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+								<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -233,9 +233,9 @@
 								<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate;"/>
 							</Items>
 							<HotSpots>
-								<HotSpots XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
-								<Hotspots XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
-								<Hotspots XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
+								<HotSpot XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
+								<HotSpot XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
+								<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -262,9 +262,9 @@
 								<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate;"/>
 							</Items>
 							<HotSpots>
-								<HotSpots XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
-								<Hotspots XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
-								<Hotspots XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
+								<HotSpot XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
+								<HotSpot XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
+								<HotSpot XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -290,9 +290,9 @@
 								<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate;"/>
 							</Items>
 							<HotSpots>
-								<HotSpots XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
-								<HotSpots XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
-								<HotSpots XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
+								<HotSpot XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
+								<HotSpot XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
+								<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -321,9 +321,9 @@
 								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
-								<Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-								<Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+								<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
+								<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+								<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -349,22 +349,22 @@
 								<Collectable Name="Highland Oregano" Value="&Sand_Collect_Rate;"/>
 							</Items>
 							<HotSpots>
-								<HotSpots XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
-								<Hotspots XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
-								<Hotspots XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
+								<HotSpot XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
+								<HotSpot XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
+								<HotSpot XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
 				</While>
 			</If>
 			<If Condition="not(ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Duskborne Aethersand !"/>
 			</If>
 			<!-- Furymint -->
 			<If Condition="ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Furymint !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Furymint !"/>
 				<If Condition="not(IsTimeBetween(20,24) or IsTimeBetween(0,4))">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I can't gather them because it's not between 8 PM - 4 AM !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I can't gather them because it's not between 8 PM - 4 AM !"/>
 				</If>
 				<If Condition="IsTimeBetween(20,24)">
 					<If Condition="not IsOnMap(401)">
@@ -383,9 +383,9 @@
 							<GatherItem Name="Furymint" />
 						</Items>
 						<HotSpots>
-							<HotSpots XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
-							<Hotspots XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
-							<Hotspots XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
+							<HotSpot XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
+							<HotSpot XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
+							<HotSpot XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -410,26 +410,26 @@
 							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114" />
 						</GatherSpots>
 						<HotSpots>
-							<HotSpots XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
-							<Hotspots XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
-							<Hotspots XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+							<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
+							<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+							<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
 						</HotSpots>
 					</ExGather>
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Furymint !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Furymint !"/>
 			</If>
 			<!-- Water/Lightning Cluster -->
 			<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)">
 				<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Water Cluster (Gathering) !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Water Cluster (Gathering) !"/>
 				</If>
 				<If Condition="ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Lightning Cluster !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Lightning Cluster !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | But I can't gather them now !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | But I can't gather them now !"/>
 				</If>
 				<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
 					<If Condition="not IsOnMap(154)">
@@ -448,7 +448,7 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
+								<HotSpot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
 							</HotSpots>
 						</ExGather>
 						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
@@ -460,7 +460,7 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
+								<HotSpot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
 							</HotSpots>
 						</ExGather>
 						<If Condition="IsTimeBetween(2,3)">
@@ -489,7 +489,7 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
+								<HotSpot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
 							</HotSpots>
 						</ExGather>
 						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
@@ -501,7 +501,7 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
+								<HotSpot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
 							</HotSpots>
 						</ExGather>
 						<If Condition="IsTimeBetween(14,15)">
@@ -521,19 +521,19 @@
 			</If>
 			<If Condition="not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)) or not(ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
 				<If Condition="not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Water Cluster !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Water Cluster !"/>
 				</If>
 				<If Condition="not(ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Lightning Cluster !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Lightning Cluster !"/>
 				</If>
 			</If>
 			<!-- Thaliak caiman (Water Cluster) -->
 			<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and not(FreeItemSlots() &lt; 2)">
 				<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Water Cluster (Fishing) !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Water Cluster (Fishing) !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(15,18))">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | But I can't fish for them now !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | But I can't fish for them now !"/>
 				</If>
 				<If Condition="IsTimeBetween(15,18)">
 					<If Condition="not IsOnMap(399)">
@@ -562,13 +562,13 @@
 				<RunCode Name="EnableMount"/>
 			</If>
 			<If Condition="not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Water Cluster (Fishing) !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Water Cluster (Fishing) !"/>
 			</If>
 			<!-- Fish Resetting -->
 			<If Condition="IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | I'm going to reset Fish !"/>
+				<ExLog Color="#FFC0CB" Message="Draconian Potions | I'm going to reset Fish !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Message="Draconian Potions | Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -599,7 +599,7 @@
 			</If>
 			<!-- Rue -->
 			<If Condition="ItemCount(12642) &lt; (&Strength_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Rue !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Rue !"/>
 				<If Condition="not IsOnMap(397)">
 					<TeleportTo Name="Falcons Nest" AetheryteId="71" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
@@ -626,18 +626,18 @@
 						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
-						<Hotspot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
-						<Hotspot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+						<HotSpot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+						<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+						<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12642) &lt; (&Strength_Qty;*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Rue !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Rue !"/>
 			</If>
 			<!-- Coriander -->
 			<If Condition="ItemCount(12643) &lt; (&Intelligence_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Coriander !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Coriander !"/>
 				<If Condition="not IsOnMap(397)">
 					<TeleportTo Name="Falcons Nest" AetheryteId="71" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
@@ -664,18 +664,18 @@
 						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
-						<Hotspot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
-						<Hotspot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+						<HotSpot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+						<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+						<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12643) &lt; (&Intelligence_Qty;*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Coriander !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Coriander !"/>
 			</If>
 			<!-- Coneflower -->
 			<If Condition="ItemCount(12638) &lt; (&Dexterity_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Coneflower !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Coneflower !"/>
 				<If Condition="not IsOnMap(398)">
 					<TeleportTo Name="Anyx Trine" AetheryteId="77" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
@@ -703,18 +703,18 @@
 						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
-						<Hotspot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
-						<Hotspot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
+						<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+						<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+						<HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12638) &lt; (&Dexterity_Qty;*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Coneflower !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Coneflower !"/>
 			</If>
 			<!-- Cow Bitter -->
 			<If Condition="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Cow Bitter !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Cow Bitter !"/>
 				<If Condition="not IsOnMap(399)">
 					<TeleportTo Name="Idyllshire" AetheryteId="75" />
 					<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
@@ -746,18 +746,18 @@
 						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
-						<Hotspot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
-						<Hotspot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
+						<HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
+						<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+						<HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12639) &lt; (&Vitality_Qty;*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Cow Bitter !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Cow Bitter !"/>
 			</If>
 			<!-- Dandelion -->
 			<If Condition="ItemCount(12640) &lt; (&Mind_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Dandelion !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Dandelion !"/>
 				<If Condition="not IsOnMap(400)">
 					<TeleportTo Name="Zenith" AetheryteId="79" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
@@ -785,18 +785,18 @@
 						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
-						<Hotspot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
-						<Hotspot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
+						<HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
+						<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+						<HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12640) &lt; (&Mind_Qty;*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Dandelion !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Dandelion !"/>
 			</If>
 			<!-- Dragon Blood -->
 			<If Condition="ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I don't have enough Dragon Blood !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I don't have enough Dragon Blood !"/>
 				<TeleportTo Name="Zenith" AetheryteId="79" Force="True"/>
 				<RunCode Name="CBT" />
 				<ExFlyTo XYZ="-533.3515, 57.23525, 343.3924" />
@@ -806,12 +806,12 @@
 				<Grind grindRef="Dragon" while="ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" />
 			</If>
 			<If Condition="not(ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))">
-				<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | I'm done with Dragon Blood !"/>
+				<ExLog Color="#FFC0CB"  Message="Draconian Potions | I'm done with Dragon Blood !"/>
 			</If>
 			<!-- Waiting -->
 			<If Condition ="not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(ItemCount(12638) &lt; (&Dexterity_Qty;*2)) and not(ItemCount(12639) &lt; (&Vitality_Qty;*2)) and not(ItemCount(12643) &lt; (&Intelligence_Qty;*2)) and not(ItemCount(12640) &lt; (&Mind_Qty;*2)) and not(ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)) and not(FreeItemSlots() &lt; 2)">
 				<If Condition="&Farm_Sand; !=0 ">
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | Nothing available, I'm going to farm some ephemerals nodes untill something interesting spawn !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | Nothing available, I'm going to farm some ephemerals nodes untill something interesting spawn !"/>
 					<While Condition="not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)) and not(FreeItemSlots() &lt; 2)">
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
@@ -841,9 +841,9 @@
 									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114" />
 								</GatherSpots>
 								<HotSpots>
-									<HotSpots XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
-									<Hotspots XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
-									<Hotspots XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+									<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
+									<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+									<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
 								</HotSpots>
 							</ExGather>
 						</While>
@@ -870,9 +870,9 @@
 									<Collectable Name="Fire Moraine" Value="&Farm_Sand_Collect_Rate;"/>
 								</Items>
 								<HotSpots>
-									<HotSpots XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
-									<Hotspots XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
-									<Hotspots XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
+									<HotSpot XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
+									<HotSpot XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
+									<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
 								</HotSpots>
 							</ExGather>
 						</While>
@@ -899,9 +899,9 @@
 									<Collectable Name="Granular Clay" Value="&Farm_Sand_Collect_Rate;"/>
 								</Items>
 								<HotSpots>
-									<HotSpots XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
-									<Hotspots XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
-									<Hotspots XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
+									<HotSpot XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
+									<HotSpot XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
+									<HotSpot XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
 								</HotSpots>
 							</ExGather>
 						</While>
@@ -927,9 +927,9 @@
 									<Collectable Name="Fire Moraine" Value="&Farm_Sand_Collect_Rate;"/>
 								</Items>
 								<HotSpots>
-									<HotSpots XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
-									<HotSpots XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
-									<HotSpots XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
+									<HotSpot XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
+									<HotSpot XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
+									<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
 								</HotSpots>
 							</ExGather>
 						</While>
@@ -958,9 +958,9 @@
 									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
-									<Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-									<Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+									<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
+									<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+									<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
 								</HotSpots>
 							</ExGather>
 						</While>
@@ -986,9 +986,9 @@
 									<Collectable Name="Highland Oregano" Value="&Farm_Sand_Collect_Rate;"/>
 								</Items>
 								<HotSpots>
-									<HotSpots XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
-									<Hotspots XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
-									<Hotspots XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
+									<HotSpot XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
+									<HotSpot XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
+									<HotSpot XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
 								</HotSpots>
 							</ExGather>
 						</While>
@@ -999,24 +999,24 @@
 				</If>
 				<If Condition="&Farm_Sand; == 0 ">
 					<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
-					<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | Nothing to do, waiting for something to spawn !"/>
+					<ExLog Color="#FFC0CB"  Message="Draconian Potions | Nothing to do, waiting for something to spawn !"/>
 					<WaitWhile Condition ="not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0))" />
 				</If>
 			</If>
 			<RunCode Name="EnableMount"/>
 		</While>
 		<If Condition="not(ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | All materials gathered !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | All materials gathered !"/>
 		</If>
 		<!-- Crafting -->
 		<If Condition="&Craft; !=0 and not(FreeItemSlots() &lt; 2)">
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | It's time to craft !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | It's time to craft !"/>
 			<TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 			<RunCode Name="ALC" />
 			<RunCode Name="Dismount"/>
 			<WaitTimer WaitTime="3"/>
 			<!-- Draconian Potion Of Strengh -->
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Strengh !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | Draconian Potion Of Strengh !"/>
 			<While Condition="ItemCount(18) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12642) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
@@ -1093,7 +1093,7 @@
 				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Dexterity -->
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Dexterity !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | Draconian Potion Of Dexterity !"/>
 			<While Condition="ItemCount(18) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12638) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
@@ -1170,7 +1170,7 @@
 				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Vitality -->
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Vitality !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | Draconian Potion Of Vitality !"/>
 			<While Condition="ItemCount(18) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12901) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12639) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
@@ -1251,7 +1251,7 @@
 				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Intelligence -->
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Intelligence !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | Draconian Potion Of Intelligence !"/>
 			<While Condition="ItemCount(18) &gt; (&Mind_Qty;) and ItemCount(19) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Mind_Qty;) and ItemCount(12936) &gt; (&Mind_Qty;) and ItemCount(12972) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12643) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
@@ -1332,7 +1332,7 @@
 				<CraftActionByName Name="Careful Synthesis II" />
 			</While>
 			<!-- Draconian Potion Of Mind -->
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Draconian Potion Of Mind !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | Draconian Potion Of Mind !"/>
 			<While Condition="ItemCount(18) &gt; 0 and ItemCount(19) &gt; 1 and ItemCount(12630) &gt; 1 and ItemCount(12901) &gt; 0	and ItemCount(12936) &gt; 0	and ItemCount(12972) &gt; 0	and ItemCount(12640) &gt; 1">
 				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
@@ -1417,11 +1417,11 @@
 		<If Condition="FreeItemSlots() &lt; 2">
 			<RunCode Name="EnableMount"/>
 			<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
-			<ExLog Color="#FFC0CB" Message="Draconian Potions 1.0 | Only 1 Free slot left, stopping the profile !"/>
+			<ExLog Color="#FFC0CB" Message="Draconian Potions | Only 1 Free slot left, stopping the profile !"/>
 		</If>
 		<If Condition="not(FreeItemSlots() &lt; 2)">
 			<RunCode Name="EnableMount"/>
-			<ExLog Color="#FFC0CB"  Message="Draconian Potions 1.0 | Draconian Potions Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
+			<ExLog Color="#FFC0CB"  Message="Draconian Potions | Draconian Potions Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 		</If>
 	</Order>
 </Profile>

@@ -311,7 +311,7 @@
 					</ItemNames>
 					<GatherRotation>&Rotation;</GatherRotation>
 					<HotSpots>
-						<Hotspot XYZ="9.627401, -6.880045, 245.0801" Radius="250"/>
+						<HotSpot XYZ="9.627401, -6.880045, 245.0801" Radius="250"/>
 					</HotSpots>
 				</ExGather>
 			</If>
@@ -335,7 +335,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="285.3791, 303.2509, -99.76889" Radius="250"/>
+							<HotSpot XYZ="285.3791, 303.2509, -99.76889" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -357,7 +357,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-443.3712, -1.39606, -262.7161" Radius="250"/>
+							<HotSpot XYZ="-443.3712, -1.39606, -262.7161" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -389,7 +389,7 @@
 								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
+								<HotSpot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -409,7 +409,7 @@
 								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
+								<HotSpot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -444,9 +444,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
-									<Hotspot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
-									<Hotspot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
+									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+									<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+									<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -465,9 +465,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
-									<Hotspot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
-									<Hotspot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
+									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+									<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+									<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -489,9 +489,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
-									<Hotspot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
-									<Hotspot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
+									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+									<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+									<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -510,9 +510,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
-									<Hotspot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
-									<Hotspot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
+									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+									<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+									<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -539,7 +539,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
+									<HotSpot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -553,7 +553,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
+									<HotSpot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -570,7 +570,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
+									<HotSpot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -584,7 +584,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
+									<HotSpot XYZ="584.7388, 21.0551, -21.69694" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -618,7 +618,7 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
+								<HotSpot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -636,7 +636,7 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
+								<HotSpot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -665,7 +665,7 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
+								<HotSpot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -684,7 +684,7 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
+								<HotSpot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -712,8 +712,8 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
-								<Hotspot XYZ="-598.0869, 189.7023, 776.8986" Radius="200"/>
+								<HotSpot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
+								<HotSpot XYZ="-598.0869, 189.7023, 776.8986" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -731,8 +731,8 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139" />
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
-								<Hotspot XYZ="-598.0869, 189.7023, 776.8986" Radius="200"/>
+								<HotSpot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
+								<HotSpot XYZ="-598.0869, 189.7023, 776.8986" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -760,7 +760,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="513.8373, 90.97717, -376.9062" Radius="250"/>
+							<HotSpot XYZ="513.8373, 90.97717, -376.9062" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -789,7 +789,7 @@
 							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732" />
 						</GatherSpots>
 						<HotSpots>
-							<Hotspot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
+							<HotSpot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -814,7 +814,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation_1Star;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-501.0193, 191.7077, 19.77032" Radius="200"/>
+							<HotSpot XYZ="-501.0193, 191.7077, 19.77032" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -845,7 +845,7 @@
 							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="695.1707, -9.929892, -368.4551"/>
 						</GatherSpots>
 						<HotSpots>
-							<Hotspot XYZ="663.7568, 5.096725, -343.6298" Radius="200"/>
+							<HotSpot XYZ="663.7568, 5.096725, -343.6298" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -870,7 +870,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="331.291, 11.89599, -11.15705" Radius="250"/>
+							<HotSpot XYZ="331.291, 11.89599, -11.15705" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -949,9 +949,9 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
-									<Hotspot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
-									<Hotspot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
+									<HotSpot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
+									<HotSpot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
+									<HotSpot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -966,9 +966,9 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
-									<Hotspot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
-									<Hotspot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
+									<HotSpot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
+									<HotSpot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
+									<HotSpot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -986,9 +986,9 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
-									<Hotspot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
-									<Hotspot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
+									<HotSpot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
+									<HotSpot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
+									<HotSpot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1003,9 +1003,9 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
-									<Hotspot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
-									<Hotspot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
+									<HotSpot XYZ="501.7628, -35.17665, -166.8061" Radius="200"/>
+									<HotSpot XYZ="495.6027, 32.42735, 60.13534" Radius="200"/>
+									<HotSpot XYZ="912.7263, 59.69525, -62.25558" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1037,7 +1037,7 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="393.4598, 162.3739, -156.1349" nodeLocation="401.9799, 163.1478, -141.8629"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
+									<HotSpot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1054,7 +1054,7 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="393.4598, 162.3739, -156.1349" nodeLocation="401.9799, 163.1478, -141.8629"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
+									<HotSpot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1074,7 +1074,7 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="393.4598, 162.3739, -156.1349" nodeLocation="401.9799, 163.1478, -141.8629"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
+									<HotSpot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1091,7 +1091,7 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="393.4598, 162.3739, -156.1349" nodeLocation="401.9799, 163.1478, -141.8629"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
+									<HotSpot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1111,7 +1111,7 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="393.4598, 162.3739, -156.1349" nodeLocation="401.9799, 163.1478, -141.8629"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
+									<HotSpot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1128,7 +1128,7 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="393.4598, 162.3739, -156.1349" nodeLocation="401.9799, 163.1478, -141.8629"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
+									<HotSpot XYZ="451.4217, 194.0464, -209.2942" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1155,7 +1155,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
+									<HotSpot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1169,7 +1169,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
+									<HotSpot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1186,7 +1186,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
+									<HotSpot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1200,7 +1200,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
+									<HotSpot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1217,7 +1217,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
+									<HotSpot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1231,7 +1231,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
+									<HotSpot XYZ="216.7381, 2.187376, -236.3906" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1321,9 +1321,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-									<Hotspot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
-									<Hotspot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
+									<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
+									<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1341,9 +1341,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-									<Hotspot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
-									<Hotspot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
+									<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
+									<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1364,9 +1364,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-									<Hotspot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
-									<Hotspot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
+									<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
+									<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1384,9 +1384,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-									<Hotspot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
-									<Hotspot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
+									<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
+									<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1416,7 +1416,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
+									<HotSpot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1431,7 +1431,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
+									<HotSpot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1449,7 +1449,7 @@
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
+									<HotSpot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1464,7 +1464,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<HotSpots>
-									<Hotspot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
+									<HotSpot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1495,8 +1495,8 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
-									<Hotspot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
+									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
+									<HotSpot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1513,8 +1513,8 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
-									<Hotspot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
+									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
+									<HotSpot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1534,8 +1534,8 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
-									<Hotspot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
+									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
+									<HotSpot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1552,8 +1552,8 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
-									<Hotspot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
+									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
+									<HotSpot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
 								</HotSpots>
 							</ExGather>
 						</If>
@@ -1588,7 +1588,7 @@
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="-29.81721, 122.386, -67.21716" Radius="200"/>
+								<HotSpot XYZ="-29.81721, 122.386, -67.21716" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -1603,7 +1603,7 @@
 							</ItemNames>
 							<GatherRotation>&Rotation_1Star;</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="-29.81721, 122.386, -67.21716" Radius="200"/>
+								<HotSpot XYZ="-29.81721, 122.386, -67.21716" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -1633,8 +1633,8 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-100.1561, 8.90383, -770.6738" nodeLocation="-85.75523, 8.754992, -761.5605"/>
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="-54.91675, 32.65963, -793.1055" Radius="200"/>
-								<Hotspot XYZ="74.1788, 12.86857, -785.2369" Radius="200"/>
+								<HotSpot XYZ="-54.91675, 32.65963, -793.1055" Radius="200"/>
+								<HotSpot XYZ="74.1788, 12.86857, -785.2369" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -1653,8 +1653,8 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-100.1561, 8.90383, -770.6738" nodeLocation="-85.75523, 8.754992, -761.5605"/>
 							</GatherSpots>
 							<HotSpots>
-								<Hotspot XYZ="-54.91675, 32.65963, -793.1055" Radius="200"/>
-								<Hotspot XYZ="74.1788, 12.86857, -785.2369" Radius="200"/>
+								<HotSpot XYZ="-54.91675, 32.65963, -793.1055" Radius="200"/>
+								<HotSpot XYZ="74.1788, 12.86857, -785.2369" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -1680,7 +1680,7 @@
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="-234.3543, 12.46441, 703.6292" Radius="200"/>
+								<HotSpot XYZ="-234.3543, 12.46441, 703.6292" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -1695,7 +1695,7 @@
 							</ItemNames>
 							<GatherRotation>&Rotation_1Star;</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="-234.3543, 12.46441, 703.6292" Radius="200"/>
+								<HotSpot XYZ="-234.3543, 12.46441, 703.6292" Radius="200"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -1718,7 +1718,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/>
+							<HotSpot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1740,7 +1740,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-632.1406, 207.0169, -429.8357" Radius="250"/>
+							<HotSpot XYZ="-632.1406, 207.0169, -429.8357" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1762,7 +1762,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="48.81628, 7.451846, 433.1523" Radius="250"/>
+							<HotSpot XYZ="48.81628, 7.451846, 433.1523" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1793,7 +1793,7 @@
 							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="220.8415, 223.6744, 529.7012" nodeLocation="230.707, 223.3473, 529.1682"/>
 						</GatherSpots>
 						<HotSpots>
-							<Hotspot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
+							<HotSpot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1823,7 +1823,7 @@
 							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-46.37386, -59.40304, -648.8481" nodeLocation="-38.41836, -59.37169, -646.3403"/>
 						</GatherSpots>
 						<HotSpots>
-							<Hotspot XYZ="-17.73687, -33.85096, -641.681" Radius="200"/>
+							<HotSpot XYZ="-17.73687, -33.85096, -641.681" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1848,8 +1848,8 @@
 						</ItemNames>
 						<GatherRotation>&Rotation_1Star;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="825.7126, 184.8086, 168.9625" Radius="200"/>
-							<Hotspot XYZ="775.7224, 169.8624, 25.03258" Radius="200"/>
+							<HotSpot XYZ="825.7126, 184.8086, 168.9625" Radius="200"/>
+							<HotSpot XYZ="775.7224, 169.8624, 25.03258" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1871,7 +1871,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/>
+							<HotSpot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1893,7 +1893,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-632.1406, 207.0169, -429.8357" Radius="250"/>
+							<HotSpot XYZ="-632.1406, 207.0169, -429.8357" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1915,7 +1915,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="75.10241, 19.24676, 136.3448" Radius="250"/>
+							<HotSpot XYZ="75.10241, 19.24676, 136.3448" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -1988,9 +1988,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-53.3424, 221.333, 218.8447" ReturnToApproachLocation="false" nodeLocation="-50.76083, 222.9418, 217.8322"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="35.14712, 222.4328, 393.2765"/>
-									<Hotspot Radius="50" XYZ="82.24086, 222.716, 248.7347"/>
-									<Hotspot Radius="90" XYZ="-116.435768, 225.4574, 222.285858"/>
+									<HotSpot Radius="50" XYZ="35.14712, 222.4328, 393.2765"/>
+									<HotSpot Radius="50" XYZ="82.24086, 222.716, 248.7347"/>
+									<HotSpot Radius="90" XYZ="-116.435768, 225.4574, 222.285858"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Citrine(Red Rime) [STOP]"/>
@@ -2017,9 +2017,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-53.3424, 221.333, 218.8447" ReturnToApproachLocation="false" nodeLocation="-50.76083, 222.9418, 217.8322"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="35.14712, 222.4328, 393.2765"/>
-									<Hotspot Radius="50" XYZ="82.24086, 222.716, 248.7347"/>
-									<Hotspot Radius="90" XYZ="-116.435768, 225.4574, 222.285858"/>
+									<HotSpot Radius="50" XYZ="35.14712, 222.4328, 393.2765"/>
+									<HotSpot Radius="50" XYZ="82.24086, 222.716, 248.7347"/>
+									<HotSpot Radius="90" XYZ="-116.435768, 225.4574, 222.285858"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Ice Crystal(Red Rime) [STOP]"/>
@@ -2062,10 +2062,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
-									<Hotspot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
-									<Hotspot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
-									<Hotspot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
+									<HotSpot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
+									<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+									<HotSpot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
+									<HotSpot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Abalathian Spring Water(Voor Sian Siran) [STOP]"/>
@@ -2098,10 +2098,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
-									<Hotspot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
-									<Hotspot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
-									<Hotspot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
+									<HotSpot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
+									<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+									<HotSpot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
+									<HotSpot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Aurum Regis Sand(Voor Sian Siran) [STOP]"/>
@@ -2134,10 +2134,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
-									<Hotspot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
-									<Hotspot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
-									<Hotspot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
+									<HotSpot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
+									<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+									<HotSpot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
+									<HotSpot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Lightning Crystal(Voor Sian Siran) [STOP]"/>
@@ -2170,10 +2170,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
-									<Hotspot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
-									<Hotspot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
-									<Hotspot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
+									<HotSpot Radius="45" XYZ="506.149078, -105.9392, 431.053772"/>
+									<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+									<HotSpot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
+									<HotSpot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Water Crystal(Voor Sian Siran) [STOP]"/>
@@ -2210,9 +2210,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
-									<Hotspot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
-									<Hotspot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
+									<HotSpot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
+									<HotSpot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
+									<HotSpot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Carnelian(Avalonia Fallen) [STOP]"/>
@@ -2238,9 +2238,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
-									<Hotspot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
-									<Hotspot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
+									<HotSpot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
+									<HotSpot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
+									<HotSpot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Opal(Avalonia Fallen) [STOP]"/>
@@ -2266,9 +2266,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
-									<Hotspot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
-									<Hotspot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
+									<HotSpot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
+									<HotSpot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
+									<HotSpot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Fire Crystal(Avalonia Fallen) [STOP]"/>
@@ -2298,9 +2298,9 @@
 								</Items>
 								<GatherRotation>RegularNode</GatherRotation>
 								<HotSpots>
-									<Hotspot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
-									<Hotspot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-									<Hotspot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
+									<HotSpot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
+									<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
+									<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Cloud Mica(Landlord Colony) [STOP]"/>
@@ -2322,9 +2322,9 @@
 								</Items>
 								<GatherRotation>RegularNode</GatherRotation>
 								<HotSpots>
-									<Hotspot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
-									<Hotspot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-									<Hotspot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
+									<HotSpot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
+									<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
+									<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Hardsilver Sand(Landlord Colony) [STOP]"/>
@@ -2346,9 +2346,9 @@
 								</Items>
 								<GatherRotation>RegularNode</GatherRotation>
 								<HotSpots>
-									<Hotspot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
-									<Hotspot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-									<Hotspot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
+									<HotSpot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
+									<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
+									<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Earth Crystal(Landlord Colony) [STOP]"/>
@@ -2392,9 +2392,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="182.7975, 69.57438, 117.5594" ReturnToApproachLocation="false" nodeLocation="186.0795, 69.36257, 126.6282"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
-									<Hotspot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
-									<Hotspot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
+									<HotSpot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
+									<HotSpot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
+									<HotSpot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Hardsilver Ore(The Maker's Quarter) [STOP]"/>
@@ -2425,9 +2425,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="182.7975, 69.57438, 117.5594" ReturnToApproachLocation="false" nodeLocation="186.0795, 69.36257, 126.6282"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
-									<Hotspot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
-									<Hotspot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
+									<HotSpot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
+									<HotSpot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
+									<HotSpot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Chrysolite(The Maker's Quarter) [STOP]"/>
@@ -2458,9 +2458,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="182.7975, 69.57438, 117.5594" ReturnToApproachLocation="false" nodeLocation="186.0795, 69.36257, 126.6282"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
-									<Hotspot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
-									<Hotspot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
+									<HotSpot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
+									<HotSpot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
+									<HotSpot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Wyrm Obsidian(The Maker's Quarter) [STOP]"/>
@@ -2491,9 +2491,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="182.7975, 69.57438, 117.5594" ReturnToApproachLocation="false" nodeLocation="186.0795, 69.36257, 126.6282"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
-									<Hotspot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
-									<Hotspot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
+									<HotSpot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
+									<HotSpot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
+									<HotSpot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Wind Crystal(The Maker's Quarter) [STOP]"/>
@@ -2530,9 +2530,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-469.7902, 127.7917, -265.4348"/>
-									<Hotspot Radius="50" XYZ="-511.3296, 128.6305, -455.8474"/>
-									<Hotspot Radius="50" XYZ="-691.3636, 140.3503, -374.2292"/>
+									<HotSpot Radius="50" XYZ="-469.7902, 127.7917, -265.4348"/>
+									<HotSpot Radius="50" XYZ="-511.3296, 128.6305, -455.8474"/>
+									<HotSpot Radius="50" XYZ="-691.3636, 140.3503, -374.2292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Coriander(Twinpools 56-60) [STOP]"/>
@@ -2558,9 +2558,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-469.7902, 127.7917, -265.4348"/>
-									<Hotspot Radius="50" XYZ="-511.3296, 128.6305, -455.8474"/>
-									<Hotspot Radius="50" XYZ="-691.3636, 140.3503, -374.2292"/>
+									<HotSpot Radius="50" XYZ="-469.7902, 127.7917, -265.4348"/>
+									<HotSpot Radius="50" XYZ="-511.3296, 128.6305, -455.8474"/>
+									<HotSpot Radius="50" XYZ="-691.3636, 140.3503, -374.2292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Rue(Twinpools 56-60) [STOP]"/>
@@ -2586,9 +2586,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-469.7902, 127.7917, -265.4348"/>
-									<Hotspot Radius="50" XYZ="-511.3296, 128.6305, -455.8474"/>
-									<Hotspot Radius="50" XYZ="-691.3636, 140.3503, -374.2292"/>
+									<HotSpot Radius="50" XYZ="-469.7902, 127.7917, -265.4348"/>
+									<HotSpot Radius="50" XYZ="-511.3296, 128.6305, -455.8474"/>
+									<HotSpot Radius="50" XYZ="-691.3636, 140.3503, -374.2292"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Ice Crystal(Twinpools 56-60) [STOP]"/>
@@ -2628,10 +2628,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-									<Hotspot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-									<Hotspot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
-									<Hotspot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+									<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+									<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+									<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+									<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Birch Log(Voor Sian Siran) [STOP]"/>
@@ -2661,10 +2661,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-									<Hotspot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-									<Hotspot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
-									<Hotspot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+									<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+									<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+									<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+									<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Birch Branch(Voor Sian Siran) [STOP]"/>
@@ -2694,10 +2694,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-									<Hotspot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-									<Hotspot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
-									<Hotspot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+									<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+									<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+									<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+									<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Birch Sap(Voor Sian Siran) [STOP]"/>
@@ -2727,10 +2727,10 @@
 									<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-									<Hotspot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-									<Hotspot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
-									<Hotspot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+									<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+									<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+									<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+									<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Water Crystal(Voor Sian Siran) [STOP]"/>
@@ -2767,9 +2767,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
-									<Hotspot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
-									<Hotspot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
+									<HotSpot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
+									<HotSpot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
+									<HotSpot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Coneflower(Avalonia Fallen) [STOP]"/>
@@ -2794,9 +2794,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
-									<Hotspot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
-									<Hotspot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
+									<HotSpot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
+									<HotSpot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
+									<HotSpot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Fire Crystal(Avalonia Fallen) [STOP]"/>
@@ -2833,9 +2833,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-211.961, -10.23702, 282.1108"/>
-									<Hotspot Radius="50" XYZ="-89.7104, -4.862249, 419.6288"/>
-									<Hotspot Radius="50" XYZ="-11.89164, -11.48173, 375.9863"/>
+									<HotSpot Radius="50" XYZ="-211.961, -10.23702, 282.1108"/>
+									<HotSpot Radius="50" XYZ="-89.7104, -4.862249, 419.6288"/>
+									<HotSpot Radius="50" XYZ="-11.89164, -11.48173, 375.9863"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Dandelion(Four Arms) [STOP]"/>
@@ -2861,9 +2861,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" ReturnToApproachLocation="false"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-211.961, -10.23702, 282.1108"/>
-									<Hotspot Radius="50" XYZ="-89.7104, -4.862249, 419.6288"/>
-									<Hotspot Radius="50" XYZ="-11.89164, -11.48173, 375.9863"/>
+									<HotSpot Radius="50" XYZ="-211.961, -10.23702, 282.1108"/>
+									<HotSpot Radius="50" XYZ="-89.7104, -4.862249, 419.6288"/>
+									<HotSpot Radius="50" XYZ="-11.89164, -11.48173, 375.9863"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Earth Crystal(Four Arms) [STOP]"/>
@@ -2904,9 +2904,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-571.7055, 147.9581, -147.7574" ReturnToApproachLocation="true" nodeLocation="-573.738, 148.4877, -158.4798"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-517.4311, 155.392, -297.5033"/>
-									<Hotspot Radius="50" XYZ="-558.9656, 149.6086, -119.9824"/>
-									<Hotspot Radius="50" XYZ="-382.8387, 153.1599, -190.6937"/>
+									<HotSpot Radius="50" XYZ="-517.4311, 155.392, -297.5033"/>
+									<HotSpot Radius="50" XYZ="-558.9656, 149.6086, -119.9824"/>
+									<HotSpot Radius="50" XYZ="-382.8387, 153.1599, -190.6937"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Cow Bitter(The Answering Quarter) [STOP]"/>
@@ -2936,9 +2936,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-571.7055, 147.9581, -147.7574" ReturnToApproachLocation="true" nodeLocation="-573.738, 148.4877, -158.4798"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-517.4311, 155.392, -297.5033"/>
-									<Hotspot Radius="50" XYZ="-558.9656, 149.6086, -119.9824"/>
-									<Hotspot Radius="50" XYZ="-382.8387, 153.1599, -190.6937"/>
+									<HotSpot Radius="50" XYZ="-517.4311, 155.392, -297.5033"/>
+									<HotSpot Radius="50" XYZ="-558.9656, 149.6086, -119.9824"/>
+									<HotSpot Radius="50" XYZ="-382.8387, 153.1599, -190.6937"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Gaelicatnip(The Answering Quarter) [STOP]"/>
@@ -2968,9 +2968,9 @@
 									<IndirectApproachGatherSpot ApproachLocation="-571.7055, 147.9581, -147.7574" ReturnToApproachLocation="true" nodeLocation="-573.738, 148.4877, -158.4798"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-517.4311, 155.392, -297.5033"/>
-									<Hotspot Radius="50" XYZ="-558.9656, 149.6086, -119.9824"/>
-									<Hotspot Radius="50" XYZ="-382.8387, 153.1599, -190.6937"/>
+									<HotSpot Radius="50" XYZ="-517.4311, 155.392, -297.5033"/>
+									<HotSpot Radius="50" XYZ="-558.9656, 149.6086, -119.9824"/>
+									<HotSpot Radius="50" XYZ="-382.8387, 153.1599, -190.6937"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Wind Crystal(The Answering Quarter) [STOP]"/>
@@ -3003,9 +3003,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-193.4736, 105.0126, -414.2657"/>
-									<Hotspot Radius="50" XYZ="-412.046, 105.0645, -455.7659"/>
-									<Hotspot Radius="50" XYZ="-346.8775, 104.6202, -611.3132"/>
+									<HotSpot Radius="50" XYZ="-193.4736, 105.0126, -414.2657"/>
+									<HotSpot Radius="50" XYZ="-412.046, 105.0645, -455.7659"/>
+									<HotSpot Radius="50" XYZ="-346.8775, 104.6202, -611.3132"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Mythrite Sand(Twinpools 51-55) [STOP]"/>
@@ -3026,9 +3026,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-193.4736, 105.0126, -414.2657"/>
-									<Hotspot Radius="50" XYZ="-412.046, 105.0645, -455.7659"/>
-									<Hotspot Radius="50" XYZ="-346.8775, 104.6202, -611.3132"/>
+									<HotSpot Radius="50" XYZ="-193.4736, 105.0126, -414.2657"/>
+									<HotSpot Radius="50" XYZ="-412.046, 105.0645, -455.7659"/>
+									<HotSpot Radius="50" XYZ="-346.8775, 104.6202, -611.3132"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Ice Crystal(Twinpools 51-55) [STOP]"/>
@@ -3061,9 +3061,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
-									<Hotspot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
-									<Hotspot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
+									<HotSpot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
+									<HotSpot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
+									<HotSpot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Mythrite Ore(Gorgane Holding) [STOP]"/>
@@ -3084,9 +3084,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
-									<Hotspot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
-									<Hotspot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
+									<HotSpot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
+									<HotSpot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
+									<HotSpot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Larimar(Gorgane Holding) [STOP]"/>
@@ -3107,9 +3107,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
-									<Hotspot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
-									<Hotspot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
+									<HotSpot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
+									<HotSpot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
+									<HotSpot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Mormorion(Gorgane Holding) [STOP]"/>
@@ -3130,9 +3130,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
-									<Hotspot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
-									<Hotspot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
+									<HotSpot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
+									<HotSpot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
+									<HotSpot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Ice Crystal(Gorgane Holding) [STOP]"/>
@@ -3164,9 +3164,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
-									<Hotspot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
-									<Hotspot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
+									<HotSpot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
+									<HotSpot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
+									<HotSpot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Agate(The Smoldering Wastes) [STOP]"/>
@@ -3187,9 +3187,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
-									<Hotspot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
-									<Hotspot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
+									<HotSpot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
+									<HotSpot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
+									<HotSpot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Tiger's Eye(The Smoldering Wastes) [STOP]"/>
@@ -3210,9 +3210,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
-									<Hotspot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
-									<Hotspot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
+									<HotSpot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
+									<HotSpot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
+									<HotSpot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Dravanian Spring Water(The Smoldering Wastes) [STOP]"/>
@@ -3233,9 +3233,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
-									<Hotspot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
-									<Hotspot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
+									<HotSpot Radius="50" XYZ="265.1003, -98.24197, 388.2251"/>
+									<HotSpot Radius="50" XYZ="315.1889, -92.19657, 492.4402"/>
+									<HotSpot Radius="50" XYZ="144.7386, -106.838, 530.5764"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Fire Crystal(The Smoldering Wastes) [STOP]"/>
@@ -3270,9 +3270,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
-									<Hotspot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
-									<Hotspot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
+									<HotSpot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
+									<HotSpot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
+									<HotSpot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Star Ruby(Chocobo Forest) [STOP]"/>
@@ -3296,9 +3296,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
-									<Hotspot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
-									<Hotspot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
+									<HotSpot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
+									<HotSpot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
+									<HotSpot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Raw Star Sapphire(Chocobo Forest) [STOP]"/>
@@ -3323,9 +3323,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
-									<Hotspot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
-									<Hotspot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
+									<HotSpot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
+									<HotSpot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
+									<HotSpot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Titanium Ore(Chocobo Forest) [STOP]"/>
@@ -3349,9 +3349,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
-									<Hotspot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
-									<Hotspot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
+									<HotSpot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
+									<HotSpot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
+									<HotSpot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Fire Crystal(Chocobo Forest) [STOP]"/>
@@ -3384,9 +3384,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-151.2296, 116.4795, -203.1248"/>
-									<Hotspot Radius="50" XYZ="-149.7908, 104.0798, -339.7343"/>
-									<Hotspot Radius="50" XYZ="-343.0068, 97.66545, -282.7291"/>
+									<HotSpot Radius="50" XYZ="-151.2296, 116.4795, -203.1248"/>
+									<HotSpot Radius="50" XYZ="-149.7908, 104.0798, -339.7343"/>
+									<HotSpot Radius="50" XYZ="-343.0068, 97.66545, -282.7291"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Rainbow Cotton Boll(Twinpools 51-55) [STOP]"/>
@@ -3407,9 +3407,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-151.2296, 116.4795, -203.1248"/>
-									<Hotspot Radius="50" XYZ="-149.7908, 104.0798, -339.7343"/>
-									<Hotspot Radius="50" XYZ="-343.0068, 97.66545, -282.7291"/>
+									<HotSpot Radius="50" XYZ="-151.2296, 116.4795, -203.1248"/>
+									<HotSpot Radius="50" XYZ="-149.7908, 104.0798, -339.7343"/>
+									<HotSpot Radius="50" XYZ="-343.0068, 97.66545, -282.7291"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Sprig Of Mist Dill(Twinpools 51-55) [STOP]"/>
@@ -3430,9 +3430,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-151.2296, 116.4795, -203.1248"/>
-									<Hotspot Radius="50" XYZ="-149.7908, 104.0798, -339.7343"/>
-									<Hotspot Radius="50" XYZ="-343.0068, 97.66545, -282.7291"/>
+									<HotSpot Radius="50" XYZ="-151.2296, 116.4795, -203.1248"/>
+									<HotSpot Radius="50" XYZ="-149.7908, 104.0798, -339.7343"/>
+									<HotSpot Radius="50" XYZ="-343.0068, 97.66545, -282.7291"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Ice Crystal(Twinpools 51-55) [STOP]"/>
@@ -3463,9 +3463,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
-									<Hotspot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
-									<Hotspot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
+									<HotSpot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
+									<HotSpot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
+									<HotSpot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Dark Chestnut Log(The Smoldering Wastes) [STOP]"/>
@@ -3486,9 +3486,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
-									<Hotspot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
-									<Hotspot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
+									<HotSpot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
+									<HotSpot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
+									<HotSpot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Dark Chestnut Branch(The Smoldering Wastes) [STOP]"/>
@@ -3510,9 +3510,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
-									<Hotspot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
-									<Hotspot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
+									<HotSpot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
+									<HotSpot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
+									<HotSpot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Dark Chestnut(The Smoldering Wastes) [STOP]"/>
@@ -3533,9 +3533,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
-									<Hotspot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
-									<Hotspot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
+									<HotSpot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
+									<HotSpot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
+									<HotSpot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Fire Crystal(The Smoldering Wastes) [STOP]"/>
@@ -3567,9 +3567,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
-									<Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
-									<Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
+									<HotSpot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+									<HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+									<HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Cyclops Onion(Chocobo Forest) [STOP]"/>
@@ -3590,9 +3590,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
-									<Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
-									<Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
+									<HotSpot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+									<HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+									<HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Highland Wheat(Chocobo Forest) [STOP]"/>
@@ -3613,9 +3613,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
-									<Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
-									<Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
+									<HotSpot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+									<HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+									<HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Stalk Of Ramie(Chocobo Forest) [STOP]"/>
@@ -3636,9 +3636,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
-									<Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
-									<Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
+									<HotSpot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+									<HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+									<HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Fire Crystal(Chocobo Forest) [STOP]"/>
@@ -3668,9 +3668,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
-									<Hotspot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
-									<Hotspot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
+									<HotSpot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
+									<HotSpot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
+									<HotSpot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Magma Beet(Landlord Colony) [STOP]"/>
@@ -3692,9 +3692,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
-									<Hotspot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
-									<Hotspot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
+									<HotSpot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
+									<HotSpot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
+									<HotSpot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Emerald Beans(Landlord Colony) [STOP]"/>
@@ -3715,9 +3715,9 @@
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots/>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
-									<Hotspot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
-									<Hotspot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
+									<HotSpot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
+									<HotSpot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
+									<HotSpot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Earth Crystal(Landlord Colony) [STOP]"/>
@@ -3752,9 +3752,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
-									<Hotspot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
-									<Hotspot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
+									<HotSpot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
+									<HotSpot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
+									<HotSpot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Dragon Obsidian(Riversmeet) [STOP]"/>
@@ -3778,9 +3778,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
-									<Hotspot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
-									<Hotspot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
+									<HotSpot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
+									<HotSpot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
+									<HotSpot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Ice Crystal(Riversmeet) [STOP]"/>
@@ -3815,9 +3815,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
-									<Hotspot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
-									<Hotspot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
+									<HotSpot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
+									<HotSpot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
+									<HotSpot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Cedar Log(Riversmeet) [STOP]"/>
@@ -3841,9 +3841,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
-									<Hotspot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
-									<Hotspot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
+									<HotSpot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
+									<HotSpot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
+									<HotSpot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Cedar Branch(Riversmeet) [STOP]"/>
@@ -3867,9 +3867,9 @@
 									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
-									<Hotspot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
-									<Hotspot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
+									<HotSpot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
+									<HotSpot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
+									<HotSpot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Ice Crystal(Riversmeet) [STOP]"/>
@@ -4027,9 +4027,9 @@
 									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905" />
 								</GatherSpots>
 								<HotSpots>
-									<Hotspot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
-									<Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-									<Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+									<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
+									<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+									<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
 								</HotSpots>
 							</ExGather>
 						</While>

@@ -19,7 +19,7 @@
 <!ENTITY IQ_Stack "7">
 <!-- Where do you want to port while witing / crafting-->
 <!ENTITY Waiting_AetheryteId "8">]><Profile>
-	<Name>[O][CBT][FISH][BTN][MIN][CUL] Baked Pipira Pira 2.3 - RB</Name>
+	<Name>[O][CBT][FISH][BTN][MIN][CUL] Baked Pipira Pira - RB</Name>
 	<KillRadius>50</KillRadius>
 	<BehaviorDirectory>CustomTags</BehaviorDirectory>
 	<CodeChunks>
@@ -63,11 +63,11 @@
 	</CodeChunks>
 	<GrindAreas>
 		<GrindArea name="Yak Milk">
-			<Hotspots>
-				<Hotspot Radius="300" XYZ="-312.8286, 76.98337, -308.5416" name="Yak n°1" />
-				<Hotspot Radius="300" XYZ="-337.1082, 85.47809, -385.7387" name="Yak n°2" />
-				<Hotspot Radius="300" XYZ="-102.2089, 94.62686, -375.1368" name="Yak n°3" />
-			</Hotspots>
+			<HotSpots>
+				<HotSpot Radius="300" XYZ="-312.8286, 76.98337, -308.5416" name="Yak n°1" />
+				<HotSpot Radius="300" XYZ="-337.1082, 85.47809, -385.7387" name="Yak n°2" />
+				<HotSpot Radius="300" XYZ="-102.2089, 94.62686, -375.1368" name="Yak n°3" />
+			</HotSpots>
 			<TargetMobs>
 				<TargetMob Name="Wooly Yak" Id="3479" />
 			</TargetMobs>
@@ -81,9 +81,9 @@
 			<RunCode Name="EnableMount"/>
 			<!-- Porcini / Abalathian Rock Salt -->
 			<If Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2)">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Porcini !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Porcini !"/>
 				<If Condition="not(IsTimeBetween(11,12) or IsTimeBetween(23,24))">
-					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I can't gather it because it's not between 11-12 AM-PM !"/>
+					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I can't gather it because it's not between 11-12 AM-PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)">
 					<If Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;))">
@@ -106,7 +106,7 @@
 									</ItemNames>
 									<GatherRotation>Unspoiled</GatherRotation>
 									<HotSpots>
-										<Hotspot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
+										<HotSpot XYZ="-747.2891, -74.98775, -733.9128" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -133,8 +133,8 @@
 											<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="172.4342, 219.8132, -593.0721" nodeLocation="176.2558, 221.2827, -603.0313" />
 										</GatherSpots>
 										<HotSpots>
-											<Hotspot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
-											<Hotspot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
+											<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
+											<HotSpot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
 										</HotSpots>
 									</ExGather>
 								</If>
@@ -163,8 +163,8 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="172.4342, 219.8132, -593.0721" nodeLocation="176.2558, 221.2827, -603.0313" />
 									</GatherSpots>
 									<HotSpots>
-										<Hotspot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
-										<Hotspot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
+										<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
+										<HotSpot XYZ="137.7397, 236.3515, -797.9588" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -173,20 +173,20 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12899) &lt; (&Baked_Qty; * 2))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Porcini !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Porcini !"/>
 			</If>
 			<!-- Pipira Pira -->
 			<If Condition="ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(1,12) or IsTimeBetween(13,24))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Pipira Pira !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Pipira Pira !"/>
 				<If Condition="not(SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11))">
-					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | But I can't fish them now, the weather isn't good, sadly"/>
+					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | But I can't fish them now, the weather isn't good, sadly"/>
 				</If>
 				<If Condition="SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)">
 					<If Condition="not IsOnMap(398)">
 						<TeleportTo Name="Tailfeather" AetheryteId="76" />
 					</If>
 					<If Condition="not HasAtLeast(12706,1)">
-						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
+						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
 					</If>
 					<RunCode Name="FSH"/>
 					<Fish Condition="ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (IsTimeBetween(1,12) or IsTimeBetween(13,24)) and not(ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) and not(&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24)))" minFish="15" maxFish="25" shuffleFishSpots="true" sitRate=".69" Bait="Goblin Jig">
@@ -205,14 +205,14 @@
 				<RunCode Name="EnableMount"/>
 			</If>
 			<If Condition="not(ItemCount(12741) &lt; &Baked_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Pipira Pira !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Pipira Pira !"/>
 			</If>
 			<!-- Fish Resetting -->
 			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(12,13)) and ItemCount(12741) &lt; &Baked_Qty;">
 				<If Condition="IsTimeBetween(00,1)">
-					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | 12 AM I'm going to reset Fish !"/>
+					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | 12 AM I'm going to reset Fish !"/>
 					<If Condition="not HasAtLeast(12704,20)">
-						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | Not enough bait available, I'm going to buy you some !"/>
+						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | Not enough bait available, I'm going to buy you some !"/>
 						<If Condition="not IsOnMap(401)">
 							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 						</If>
@@ -238,9 +238,9 @@
 					</Fish>
 				</If>
 				<If Condition="IsTimeBetween(12,13)">
-					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | 12 PM I'm going to reset Fish !"/>
+					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | 12 PM I'm going to reset Fish !"/>
 					<If Condition="not HasAtLeast(12706,1)">
-						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
+						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
 					</If>
 					<TeleportTo Name="Zenith" AetheryteId="79" Force="True" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
@@ -260,7 +260,7 @@
 			</If>
 			<!-- Yak Milk -->
 			<If Condition="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Yak Milk !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Yak Milk !"/>
 				<If Condition="not IsOnMap(397)">
 					<TeleportTo Name="Falcons Nest" AetheryteId="71" />
 					<RunCode Name="CBT"/>
@@ -274,11 +274,11 @@
 				<Grind grindRef="Yak Milk" while="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))" />
 			</If>
 			<If Condition="not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Yak Milk !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Yak Milk !"/>
 			</If>
 			<!-- Water Crystal -->
 			<If Condition="ItemCount(13) &lt; (&Baked_Qty; * 5) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Water Crystal !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Water Crystal !"/>
 				<If Condition="not IsOnMap(401)">
 					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
@@ -307,19 +307,19 @@
 						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
-						<Hotspot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
-						<Hotspot XYZ="218.774689, -124.9265, 500.0145" Radius="80"/>
-						<Hotspot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
+						<HotSpot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
+						<HotSpot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
+						<HotSpot XYZ="218.774689, -124.9265, 500.0145" Radius="80"/>
+						<HotSpot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(13) &lt; (&Baked_Qty; * 5))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Water Crystal !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Water Crystal !"/>
 			</If>
 			<!-- Fire Crystal -->
 			<If Condition="ItemCount(8) &lt; (&Baked_Qty; * 5) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Fire Crystal !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Fire Crystal !"/>
 				<If Condition="not IsOnMap(398)">
 					<TeleportTo Name="Anyx Trine" AetheryteId="77" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
@@ -346,19 +346,19 @@
 						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818" />
 					</GatherSpots>
 					<HotSpots>
-						<Hotspot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
-						<Hotspot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
-						<Hotspot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
+						<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+						<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+						<HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(8) &lt; (&Baked_Qty; * 5))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Fire Crystal !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Fire Crystal !"/>
 			</If>
 			<!-- Fire Shard -->
 			<If Condition="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12895))*3.5 + 7) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
 				<If Condition="ItemCount(2) &lt; (&Baked_Qty; *7 )">
-					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Fire Shard !"/>
+					<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Fire Shard !"/>
 				</If>
 				<If Condition="not IsOnMap(134)">
 					<TeleportTo Name="Summerford Farms" AetheryteId="52" />
@@ -374,16 +374,16 @@
 						<ItemName>Fire Shard</ItemName>
 					</ItemNames>
 					<HotSpots>
-						<Hotspot XYZ="-13.61854, 47.75556, -11.34931" Radius="300"/>
+						<HotSpot XYZ="-13.61854, 47.75556, -11.34931" Radius="300"/>
 					</HotSpots>
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Fire Shard !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Fire Shard !"/>
 			</If>
 			<!-- Abalathian Rock Salt -->
 			<If Condition="(&Gather_Salt; == 0 and ItemCount(12901) &lt; &Baked_Qty;) and not(ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) and not(ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) and not(((IsTimeBetween(00,1) or IsTimeBetween(12,13)) and ItemCount(12741) &lt; &Baked_Qty;))">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I don't have enough Abalathian Rock Salt ! Take your pickaxe and... oh wait, they're also sold by a npc !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I don't have enough Abalathian Rock Salt ! Take your pickaxe and... oh wait, they're also sold by a npc !"/>
 				<If Condition="not IsOnMap(419)">
 					<If Condition="not IsOnMap(418)">
 						<TeleportTo name="Foundation" aetheryteId="70" />
@@ -437,23 +437,23 @@
 				</While>
 			</If>
 			<If Condition="not(&Gather_Salt; == 0 and ItemCount(12901) &lt; &Baked_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | I'm done with Abalathian Rock Salt !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | I'm done with Abalathian Rock Salt !"/>
 			</If>
 			<!-- Waiting -->
 			<If Condition="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13)))) and not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 )) and (ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
 				<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 				<RunCode Name="Dismount"/>
-				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | Nothing to do, waiting for something to spawn !"/>
+				<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | Nothing to do, waiting for something to spawn !"/>
 				<WaitWhile Condition ="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))" />
 			</If>
 		<RunCode Name="EnableMount"/>
 		</While>
 		<If Condition="not(ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
-			<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | All materials gathered !"/>
+			<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | All materials gathered !"/>
 		</If>
 		<!-- Craft -->
 		<If Condition="&Craft; != 0">
-			<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | It's time to craft !"/>
+			<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | It's time to craft !"/>
 			<TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 			<RunCode Name="CUL" />
 			<RunCode Name="Dismount"/>
@@ -654,6 +654,6 @@
 			</If>
 			<StopCrafting/>
 		</If>
-		<ExLog Color="#FFC0CB" Message="Baked Pipira Pira 2.3 | Baked Pipira pira Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
+		<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | Baked Pipira pira Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 	</Order>
 </Profile>

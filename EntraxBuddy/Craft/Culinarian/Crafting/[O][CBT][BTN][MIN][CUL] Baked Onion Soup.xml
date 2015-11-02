@@ -9,7 +9,7 @@
 	<!ENTITY Waiting_AetheryteId "8">
 ]>
 <Profile>
-    <Name>[O][CBT][BTN][MIN][CUL] Baked Onion Soup 1.0 - RB</Name>
+    <Name>[O][CBT][BTN][MIN][CUL] Baked Onion Soup - RB</Name>
     <KillRadius>50</KillRadius>
     <BehaviorDirectory>CustomTags</BehaviorDirectory>
     <CodeChunks>
@@ -144,7 +144,7 @@
                         </ItemNames>
                         <GatherRotation>Unspoiled</GatherRotation>
                         <HotSpots>
-                            <Hotspot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/> 
+                            <HotSpot XYZ="-94.77985, 44.19695, 560.4274" Radius="250"/> 
                         </HotSpots>
                     </ExGather>   
 					
@@ -176,9 +176,9 @@
                         <ItemName>Fire Crystal</ItemName>
                     </ItemNames>
                     <HotSpots>
-                        <Hotspot XYZ="682.9902, -23.20486, -107.5284" Radius="50"/>
-                        <Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
-                        <Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/> 
+                        <HotSpot XYZ="682.9902, -23.20486, -107.5284" Radius="50"/>
+                        <HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+                        <HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/> 
                     </HotSpots>
                 </ExGather> 
 				
@@ -209,9 +209,9 @@
                         <ItemName>Fire Crystal</ItemName>
                     </ItemNames>
                     <HotSpots>
-                        <Hotspot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
-                        <Hotspot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
-                        <Hotspot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/> 
+                        <HotSpot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+                        <HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+                        <HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/> 
                     </HotSpots>
                 </ExGather> 
 				
@@ -257,10 +257,10 @@
                         <IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />	
                     </GatherSpots>
                     <HotSpots>
-                        <Hotspot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-                        <Hotspot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
-                        <Hotspot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
-                        <Hotspot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
+                        <HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+                        <HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+                        <HotSpot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
+                        <HotSpot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
                     </HotSpots>
                 </ExGather>
 				
@@ -290,7 +290,7 @@
                         <ItemName>Fire Shard</ItemName>
                     </ItemNames>
                     <HotSpots>
-                        <Hotspot XYZ="253.2534, 56.07324, 218.2655" Radius="250"/>
+                        <HotSpot XYZ="253.2534, 56.07324, 218.2655" Radius="250"/>
                     </HotSpots>
                 </ExGather>
 
@@ -320,7 +320,7 @@
                         <ItemName>Water Shard</ItemName>
                     </ItemNames>
                     <HotSpots>
-                        <Hotspot XYZ="253.2534, 56.07324, 218.2655" Radius="250"/>
+                        <HotSpot XYZ="253.2534, 56.07324, 218.2655" Radius="250"/>
                     </HotSpots>
                 </ExGather>
 

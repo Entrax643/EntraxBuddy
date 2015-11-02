@@ -3,6 +3,11 @@
 <!ENTITY Seafood_Qty "99">
 <!-- How many collectability to reach while farming sands -->
 <!ENTITY Sand_Collect_Rate "550">
+<!ENTITY CordialType_Sand "Cordial">
+<!ENTITY CordialTime_Sand "Auto">
+<!-- Cordial Settings on D.Tomato, D. Paprika and Cluster -->
+<!ENTITY CordialType "Cordial">
+<!ENTITY CordialTime "Auto">
 <!-- Use Craft at your OWN RISK -->
 <!ENTITY Craft "0">
 <!ENTITY ID_FOOD "12861">
@@ -15,7 +20,7 @@
 <!ENTITY Reclaim "1">
 <!-- Where do you want to port while witing / crafting-->
 <!ENTITY Waiting_AetheryteId "8">]><Profile>
-	<Name>[O][FISH][BTN][MIN][CUL]Seafood Stew 2.01 - RB</Name>
+	<Name>[O][FISH][BTN][MIN][CUL]Seafood Stew - RB</Name>
 	<KillRadius>50</KillRadius>
 	<BehaviorDirectory>CustomTags</BehaviorDirectory>
 	<CodeChunks>
@@ -52,9 +57,9 @@
 		<While Condition="ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;">
 			<!-- Dravanian Paprika -->
 			<If Condition="ItemCount(12903) &lt; (&Seafood_Qty;*2)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Dravanian Paprika !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Dravanian Paprika !"/>
 				<If Condition="not(IsTimeBetween(18,19))">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | But I can't gather them because it's not between 6-7 PM !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | But I can't gather them because it's not between 6-7 PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(18,19)">
 					<If Condition="not IsOnMap(397)">
@@ -69,7 +74,7 @@
 					</If>
 					<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" Radius="3.0" />
 					<WaitWhile Condition ="IsTimeBetween(18,19)" />
-					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="YieldAndQuality">
+					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
 						<GatherObjects>
 							<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 						</GatherObjects>
@@ -82,19 +87,19 @@
 							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="220.8415, 223.6744, 529.7012" nodeLocation="230.707, 223.3473, 529.1682"/>
 						</GatherSpots>
 						<HotSpots>
-							<Hotspot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
+							<HotSpot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
 						</HotSpots>
 					</ExGather>
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12903) &lt; (&Seafood_Qty;*2))">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Dravanian Paprika !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Dravanian Paprika !"/>
 			</If>
 			<!-- Dzemael Tomato -->
 			<If Condition="ItemCount(6148) &lt; (&Seafood_Qty;*2)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Dzemael Tomato !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Dzemael Tomato !"/>
 				<If Condition="not(IsTimeBetween(12,13))">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | But I can't gather them because it's not between 12 AM - 1 PM !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | But I can't gather them because it's not between 12 AM - 1 PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(12,13)">
 					<If Condition="not IsOnMap(137)">
@@ -108,7 +113,7 @@
 					</If>
 					<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
 					<WaitWhile Condition ="IsTimeBetween(12,13)" />
-					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="YieldAndQuality">
+					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 						</GatherObjects>
@@ -117,17 +122,17 @@
 						</ItemNames>
 						<GatherRotation>Unspoiled</GatherRotation>
 						<HotSpots>
-							<Hotspot XYZ="-170.2747, 37.52908, 281.4099" Radius="120"/>
+							<HotSpot XYZ="-170.2747, 37.52908, 281.4099" Radius="120"/>
 						</HotSpots>
 					</ExGather>
 				</If>
 			</If>
 			<If Condition="not(ItemCount(6148) &lt; (&Seafood_Qty;*2))">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Dzemael Tomato !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Dzemael Tomato !"/>
 			</If>
 			<!-- Duskborne Aethersand -->
 			<If Condition="ItemCount(12936) &lt; &Seafood_Qty;">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Duskborne Aethersand !"/>
 				<While Condition="ItemCount(12936) &lt; &Seafood_Qty; and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
 					<ExPurify/>
 					<While Condition="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;">
@@ -142,7 +147,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 							<RunCode Name="BTN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Furymint" Value="&Sand_Collect_Rate;"/>
@@ -150,9 +155,9 @@
 							</Collectables>
 							<GatherRotation>RegularNode</GatherRotation>
 							<HotSpots>
-								<HotSpots XYZ="-586.7975, 127.4666, -406.9053" Radius="30" />
-								<Hotspots XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
-								<Hotspots XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+								<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30" />
+								<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+								<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -170,7 +175,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
 							<RunCode Name="MIN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(4,8) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(4,8) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate;"/>
@@ -178,9 +183,9 @@
 							</Collectables>
 							<GatherRotation>RegularNode</GatherRotation>
 							<HotSpots>
-								<HotSpots XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
-								<Hotspots XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
-								<Hotspots XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
+								<HotSpot XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
+								<HotSpot XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
+								<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -198,7 +203,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 							<RunCode Name="BTN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(8,12) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(8,12) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate;"/>
@@ -206,9 +211,9 @@
 							</Collectables>
 							<GatherRotation>RegularNode</GatherRotation>
 							<HotSpots>
-								<HotSpots XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
-								<Hotspots XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
-								<Hotspots XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
+								<HotSpot XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
+								<HotSpot XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
+								<HotSpot XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -225,7 +230,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
 							<RunCode Name="MIN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(12,16) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(12,16) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate;"/>
@@ -233,9 +238,9 @@
 							</Collectables>
 							<GatherRotation>RegularNode</GatherRotation>
 							<HotSpots>
-								<HotSpots XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
-								<HotSpots XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
-								<HotSpots XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
+								<HotSpot XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
+								<HotSpot XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
+								<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -252,7 +257,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 							<RunCode Name="BTN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(16,20) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(16,20) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;" />
 								<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate;" />
@@ -263,9 +268,9 @@
 								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-86.32848, -9.662621, 446.8793" nodeLocation="-88.15926, -8.882813, 447.7102" />
 							</GatherSpots>
 							<HotSpots>
-								<HotSpots XYZ="-126.247, -9.62507, 378.8831" Radius="30"/>
-								<HotSpots XYZ="-93.01031, 0.9097285, 430.5367" Radius="30"/>
-								<HotSpots XYZ="4.89065, -7.601609, 373.6958" Radius="30"/>
+								<HotSpot XYZ="-126.247, -9.62507, 378.8831" Radius="30"/>
+								<HotSpot XYZ="-93.01031, 0.9097285, 430.5367" Radius="30"/>
+								<HotSpot XYZ="4.89065, -7.601609, 373.6958" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
@@ -282,7 +287,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 							<RunCode Name="BTN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(20,24) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(20,24) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Furymint" Value="&Sand_Collect_Rate;"/>
@@ -290,27 +295,27 @@
 							</Collectables>
 							<GatherRotation>RegularNode</GatherRotation>
 							<HotSpots>
-								<HotSpots XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
-								<Hotspots XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
-								<Hotspots XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
+								<HotSpot XYZ="201.4897, -125.9551, 636.8804" Radius="30"/>
+								<HotSpot XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
+								<HotSpot XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
 							</HotSpots>
 						</ExGather>
 					</While>
 				</While>
 			</If>
 			<If Condition="not(ItemCount(12936) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Duskborne Aethersand !"/>
 			</If>
 			<!-- Fire/Water Cluster -->
 			<If Condition="ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
 				<If Condition="ItemCount(19) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Water Cluster !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Water Cluster !"/>
 				</If>
 				<If Condition="ItemCount(14) &lt; (&Seafood_Qty; * 2)">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Fire Cluster !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Fire Cluster !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | But I can't gather them yet !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | But I can't gather them yet !"/>
 				</If>
 				<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
 					<If Condition="not IsOnMap(154)">
@@ -320,7 +325,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 							<RunCode Name="BTN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -329,10 +334,10 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
+								<HotSpot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
 							</HotSpots>
 						</ExGather>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; &Seafood_Qty; and not(ItemCount(14) &lt; (&Seafood_Qty; * 2))" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; &Seafood_Qty; and not(ItemCount(14) &lt; (&Seafood_Qty; * 2))" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -341,7 +346,7 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
+								<HotSpot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
 							</HotSpots>
 						</ExGather>
 						<If Condition="IsTimeBetween(2,3)">
@@ -358,7 +363,7 @@
 						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
 							<RunCode Name="MIN"/>
 						</If>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -367,10 +372,10 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
+								<HotSpot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
 							</HotSpots>
 						</ExGather>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; &Seafood_Qty; and not(ItemCount(14) &lt; (&Seafood_Qty; * 2))" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; &Seafood_Qty; and not(ItemCount(14) &lt; (&Seafood_Qty; * 2))" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -379,7 +384,7 @@
 							</ItemNames>
 							<GatherRotation>Unspoiled</GatherRotation>
 							<HotSpots>
-								<Hotspot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
+								<HotSpot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
 							</HotSpots>
 						</ExGather>
 						<If Condition="IsTimeBetween(14,15)">
@@ -395,22 +400,22 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(19) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Water Cluster !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Water Cluster !"/>
 			</If>
 			<If Condition="not(ItemCount(14) &lt; (&Seafood_Qty; * 2))">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Fire Cluster !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Fire Cluster !"/>
 			</If>
 			<!-- Fishing -->
 			<!-- Rock Mussel | Blueclaw Shrimp -->
 			<If Condition="(ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty;) and (IsTimeBetween(1,13) or (IsTimeBetween(14,24) and not(ItemCount(12718) &lt; &Seafood_Qty;))) and not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">
 				<If Condition="ItemCount(12733) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Rock Mussel !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Rock Mussel !"/>
 				</If>
 				<If Condition="ItemCount(12722) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Blueclaw Shrimp !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Blueclaw Shrimp !"/>
 				</If>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -438,16 +443,16 @@
 				</Fish>
 			</If>
 			<If Condition="not(ItemCount(12733) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Rock Mussel !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Rock Mussel !"/>
 			</If>
 			<If Condition="not(ItemCount(12722) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Blueclaw Shrimp !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Blueclaw Shrimp !"/>
 			</If>
 			<!-- Coerthan Crab -->
 			<If Condition="ItemCount(12718) &lt; &Seafood_Qty; and (IsTimeBetween(14,24) or (IsTimeBetween(1,13) and not(ItemCount(12722) &lt; &Seafood_Qty;))) and not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I don't have enough Coerthan Crab !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I don't have enough Coerthan Crab !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -474,13 +479,13 @@
 				</Fish>
 			</If>
 			<If Condition="not(ItemCount(12718) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm done with Coerthan Crab !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm done with Coerthan Crab !"/>
 			</If>
 			<!-- Fish Resetting -->
 			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(13,14)) and (ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | I'm going to reset Fish !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | I'm going to reset Fish !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Message="Seafood Stew | Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -509,16 +514,16 @@
 			<If Condition="not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)))) and not(ItemCount(12733) &lt; &Seafood_Qty;) and not(ItemCount(12722) &lt; &Seafood_Qty;) and not(ItemCount(12718) &lt; &Seafood_Qty;) and not(ItemCount(12936) &lt; &Seafood_Qty;) and(ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
 				<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 				<RunCode Name="Dismount"/>
-				<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | Nothing to do, waiting for something to spawn !"/>
+				<ExLog Color="#FFC0CB" Message="Seafood Stew | Nothing to do, waiting for something to spawn !"/>
 				<WaitWhile Condition ="not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))" />
 			</If>
 		</While>
 		<If Condition="not(ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
-			<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | All materials gathered !"/>
+			<ExLog Color="#FFC0CB" Message="Seafood Stew | All materials gathered !"/>
 		</If>
 		<!-- Crafting -->
 		<If Condition="&Craft; !=0">
-			<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | It's time to craft !"/>
+			<ExLog Color="#FFC0CB" Message="Seafood Stew | It's time to craft !"/>
 			<TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 			<RunCode Name="CUL" />
 			<RunCode Name="Dismount"/>
@@ -590,6 +595,6 @@
 			<StopCrafting/>
 		</If>
 		<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
-		<ExLog Color="#FFC0CB" Message="Seafood Stew 2.01 | Seafood Stew Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
+		<ExLog Color="#FFC0CB" Message="Seafood Stew | Seafood Stew Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 	</Order>
 </Profile>
