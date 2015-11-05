@@ -1921,7 +1921,7 @@
 				</If>
 			</If>
 			<!-- Turn In -->
-			<If Condition="&TurnInAfterLoop; != 0 and (IsTimeBetween(7,8) or IsTimeBetween(19,20))">
+			<If Condition="&TurnInAfterLoop; != 0 and (IsTimeBetween(2,3) or IsTimeBetween(14,15) or IsTimeBetween(5,6) or IsTimeBetween(17,18) or IsTimeBetween(9,10) or IsTimeBetween(21,22) or IsTimeBetween(10,11) or IsTimeBetween(22,23) or IsTimeBetween(11,12) or IsTimeBetween(23,24) or IsTimeBetween(12,13) or IsTimeBetween(0,1))">
 				<TurnInCollectables location="Idyllshire" forcePurchase="false" >
 					<ShopPurchases>
 						<ShopPurchase shopItem=" RedGatherToken" maxCount="&RedGatherToken_Count;"/>
