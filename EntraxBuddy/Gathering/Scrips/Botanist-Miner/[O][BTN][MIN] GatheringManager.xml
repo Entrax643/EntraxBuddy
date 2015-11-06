@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Profile [<!-- Profile Settings -->
-<!-- Where do you want to port while witing / crafting-->
+<!-- Where do you want to port while witing / crafting -->
 <!ENTITY Waiting_AetheryteId "8">
-<!---->
+<!-- -->
 <!-- Do you want to do something instead of waiting -->
 <!ENTITY YoloFarm "0">
 <!ENTITY EphemeralFarm "0">
@@ -13,8 +13,8 @@
 <!ENTITY Farm_Sand_Collect_Rate "550">
 <!ENTITY CordialType_Ephemeral "Cordial">
 <!ENTITY CordialTime_Ephemeral "None">
-<!---->
-<!-- Gathering Rotation Settings NO Collectable-->
+<!-- -->
+<!-- Gathering Rotation Settings NO Collectable -->
 <!ENTITY Rotation "Unspoiled">
 <!ENTITY Rotation_1Star "Unspoiled">
 <!ENTITY Rotation_Topsoil "RegularNode">
@@ -37,7 +37,7 @@
 <!ENTITY DiscoverUnknowns "true">
 <!ENTITY IsTimeBetween_tick "20">
 <!ENTITY TurnInAfterLoop "20">
-<!---->
+<!-- -->
 <!-- Food setting - Set 1 if you want to use food with THIS profile not chanko ! -->
 <!-- You'll also have to set food name in FOOD codechunck -->
 <!ENTITY Use_Food "0">
@@ -45,14 +45,14 @@
 <!-- Choose if you want to use Cordial or HiCordial  -->
 <!ENTITY Cordial_Type_50_60 "Cordial">
 <!ENTITY Cordial_Type_50_60_Collectale "Cordial">
-<!---->
+<!-- -->
 <!ENTITY Cordial_Type_1star "Cordial">
 <!ENTITY Cordial_Type_1star_Collectable "Cordial">
 <!-- Choose when you want to use Cordial / HiCordial on Collectable and on Non collectable  -->
 <!-- Possible settings : Auto / AfterGather / BeforeGather / IfNeeded -->
 <!ENTITY Cordial_Time_50_60 "Auto">
 <!ENTITY Cordial_Time_50_60_Collectale "Auto">
-<!---->
+<!-- -->
 <!ENTITY Cordial_Time_1star "Auto">
 <!ENTITY Cordial_Time_1star_Collectable "Auto">
 <!-- Shop Settings - Set the amount of what you want -->
@@ -66,89 +66,89 @@
 <!ENTITY BouillonCube_Count "0">
 <!ENTITY BeanSauce_Count "0">
 <!ENTITY BeanPaste_Count "0">
-<!-- Gathering Schedule : Set to 1 what you want to gather or 0 if you don't want - Collect_XXX : Set to 1 if you want them as Collectable or 0 if you don't want-->
+<!-- Gathering Schedule : Set to 1 what you want to gather or 0 if you don't want - Collect_XXX : Set to 1 if you want them as Collectable or 0 if you don't want -->
 <!-- FOR COLLECTABLE FIRST ENTITY HAVE TO BE SET A 1 TOO -->
 <!-- 1.00 AM & PM - 1.55 AM & PM -->
 <!ENTITY SilkwormCocoon "0">
 <!-- 2.00 AM & PM - 2.55 AM & PM -->
 <!ENTITY DarksteelOre "0">
-<!---->
+<!-- -->
 <!ENTITY FragrantLog "0">
-<!---->
+<!-- -->
 <!ENTITY BlackTruffle "0">
-<!---->
+<!-- -->
 <!ENTITY DzemaelTomato "0">
-<!---->
+<!-- -->
 <!ENTITY OldWorldFig "0">
 <!ENTITY Collect_OldWorldFig "0">
-<!---->
+<!-- -->
 <!ENTITY YellowQuartz "0">
 <!ENTITY Collect_YellowQuartz "0">
-<!---->
+<!-- -->
 <!ENTITY GreenQuartz "0">
 <!ENTITY Collect_GreenQuartz "0">
-<!---->
+<!-- -->
 <!ENTITY LightKidneyOre "0">
 <!ENTITY Collect_LightKidneyOre "0">
-<!---->
+<!-- -->
 <!ENTITY Cuprite "0">
 <!ENTITY Collect_Cuprite "0">
 <!-- 5.00 AM - 5.55 AM -->
 <!ENTITY ThanalanTopsoil "0">
-<!---->
+<!-- -->
 <!ENTITY HoneyLemon "0">
-<!---->
+<!-- -->
 <!ENTITY AstralMoraine "0">
 <!ENTITY Collect_AstralMoraine "0">
-<!---->
+<!-- -->
 <!ENTITY SunMica "0">
 <!ENTITY Collect_SunMica "0">
-<!---->
+<!-- -->
 <!ENTITY AurumRegisOre "0">
 <!ENTITY Collect_AurumRegisOre "0">
 <!-- 7.00 AM - 7.55 AM -->
 <!ENTITY UmbralRock "0">
-<!---->
+<!-- -->
 <!ENTITY ShroudTopsoil "0">
-<!---->
+<!-- -->
 <!ENTITY Spinach "0">
-<!---->
+<!-- -->
 <!ENTITY VioletQuartz "0">
-<!---->
+<!-- -->
 <!ENTITY BlueQuartz "0">
-<!---->
+<!-- -->
 <!ENTITY RedAlumen "0">
 <!-- 9.00 AM & PM - 9.55 AM & PM You can pick Gold Ore and Chysahl, the bot'll gather Gold Ore at 9AM and Chysahl at 9PM -->
 <!ENTITY SpruceLog "0">
-<!---->
+<!-- -->
 <!ENTITY PricklyPineapple "0">
-<!---->
+<!-- -->
 <!ENTITY GoldOre "0">
-<!---->
+<!-- -->
 <!ENTITY Chysahl "0">
 <!ENTITY Collect_Chysahl "0">
 <!-- 10.00 AM & PM - 10.55 AM & PM -->
 <!ENTITY Pyrite "0">
 <!ENTITY Collect_Pyrite "0">
-<!---->
+<!-- -->
 <!ENTITY Chalcocite "0">
 <!ENTITY Collect_Chalcocite "0">
-<!---->
+<!-- -->
 <!ENTITY Limonite "0">
 <!ENTITY Collect_Limonite "0">
-<!---->
+<!-- -->
 <!ENTITY CoerthanTeaLeaves "0">
 <!ENTITY Collect_CoerthanTeaLeaves "0">
-<!---->
+<!-- -->
 <!ENTITY PearlSprouts "0">
 <!ENTITY Collect_PearlSprouts "0">
-<!---->
+<!-- -->
 <!ENTITY Chives "0">
 <!ENTITY Collect_Chives "0">
-<!---->
+<!-- -->
 <!ENTITY HeavensLemon "0">
 <!ENTITY Collect_HeavensLemon "0">
-<!---->
+<!-- -->
 <!ENTITY AbalathianMistletoe "0">
 <!ENTITY Collect_AbalathianMistletoe "0">
 <!-- 11.00 AM & PM - 11.55 AM & PM -->
@@ -157,52 +157,52 @@
 <!-- 12.00 AM & PM - 12.55 AM & PM -->
 <!ENTITY Porcini "0">
 <!ENTITY Collect_Porcini "0">
-<!---->
+<!-- -->
 <!ENTITY DravanianMistletoe "0">
 <!ENTITY Collect_DravanianMistletoe "0">
-<!---->
+<!-- -->
 <!ENTITY CloudBanana "0">
 <!ENTITY Collect_CloudBanana "0">
-<!---->
+<!-- -->
 <!ENTITY Morel "0">
 <!ENTITY Collect_Morel "0">
-<!---->
+<!-- -->
 <!ENTITY AbalathianRockSalt "0">
 <!ENTITY Collect_AbalathianRockSalt "0">
-<!---->
+<!-- -->
 <!ENTITY RedQuartz "0">
 <!ENTITY Collect_RedQuartz "0">
 <!-- 5.00 PM - 5.55 PM -->
 <!ENTITY ThavnairianMistletoe_5 "0">
-<!---->
+<!-- -->
 <!ENTITY VolcanicRockSalt_5 "0">
-<!---->
+<!-- -->
 <!ENTITY Rosemary "0">
-<!---->
+<!-- -->
 <!ENTITY VanillaBeans "0">
 <!ENTITY Collect_VanillaBeans "0">
-<!---->
+<!-- -->
 <!ENTITY HoneydewAlmonds "0">
 <!ENTITY Collect_HoneydewAlmonds "0">
-<!---->
+<!-- -->
 <!ENTITY SeventhHeaven "0">
 <!ENTITY Collect_SeventhHeaven "0">
 <!-- 7.00 PM - 7.55 PM -->
 <!ENTITY LaNosceanTopsoil "0">
-<!---->
+<!-- -->
 <!ENTITY ThavnairianMistletoe_7 "0">
-<!---->
+<!-- -->
 <!ENTITY VolcanicRockSalt_7 "0">
-<!---->
+<!-- -->
 <!ENTITY VirginBasiliskEgg "0">
-<!---->
+<!-- -->
 <!ENTITY DravanianPaprika "0">
-<!---->
+<!-- -->
 <!ENTITY WattleBark "0">
-<!---->
+<!-- -->
 <!ENTITY Snurbleberry "0">
-<!---->
-<!---->
+<!-- -->
+<!-- -->
 <!-- YoloFarm Settings -->
 <!-- Set Quantity here ! -->
 <!-- Miner -->
@@ -232,7 +232,7 @@
 <!-- Western Coerthas Highlands -->
 <!ENTITY MythriteSand "0">
 <!ENTITY IceCrystal_Twinpools_MIN51 "0">
-<!---->
+<!-- -->
 <!ENTITY MythriteOre "0">
 <!ENTITY RawLarimar "0">
 <!ENTITY RawMormorion "0">
@@ -242,7 +242,7 @@
 <!ENTITY RawTigersEye "0">
 <!ENTITY DravanianSpringWater "0">
 <!ENTITY FireCrystal_TheSmolderingWastes_MIN "0">
-<!---->
+<!-- -->
 <!ENTITY RawStarRuby "0">
 <!ENTITY RawStarSapphire "0">
 <!ENTITY TitaniumOre "0">
@@ -281,7 +281,7 @@
 <!ENTITY DarkChestnutBranch "0">
 <!ENTITY DarkChestnut "0">
 <!ENTITY FireCrystal_TheSmolderingWastes_BTN "0">
-<!---->
+<!-- -->
 <!ENTITY CyclopsOnion "0">
 <!ENTITY HighlandWheat "0">
 <!ENTITY StalkOfRamie "0">
@@ -337,7 +337,7 @@
 			</If>
 			<!-- 2AM-PM -->
 			<If Condition="(IsTimeBetween(1,2) or IsTimeBetween(12,13)) and (&OldWorldFig; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &BlackTruffle; != 0) and IsTimeBetween(12,13))) and FreeItemSlots() &gt; 0">
-				<!-- User wants some Darksteel Ore ?-->
+				<!-- User wants some Darksteel Ore ? -->
 				<If Condition="&DarksteelOre; != 0 and IsTimeBetween(1,2)">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Darksteel Ore"/>
 					<If Condition="not IsOnMap(155)">
@@ -359,7 +359,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!-- User wants some Fragrant Log ?-->
+				<!-- User wants some Fragrant Log ? -->
 				<If Condition="&FragrantLog; != 0 and IsTimeBetween(1,2)">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Fragrant Log"/>
 					<If Condition="not IsOnMap(153)">
@@ -381,7 +381,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!-- User wants some Black Truffle?-->
+				<!-- User wants some Black Truffle? -->
 				<If Condition="&BlackTruffle; != 0 and IsTimeBetween(12,13)">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Black Truffle"/>
 					<If Condition="not IsOnMap(145)">
@@ -403,7 +403,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!-- User wants some Dzemael Tomato?-->
+				<!-- User wants some Dzemael Tomato? -->
 				<If Condition="&DzemaelTomato; != 0 and IsTimeBetween(12,13)">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Dzemael Tomato"/>
 					<If Condition="not IsOnMap(137)">
@@ -425,7 +425,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Old World Fig-->
+				<!--If Old World Fig -->
 				<If Condition="&OldWorldFig; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Old World Fig"/>
 					<If Condition="not IsOnMap(398)">
@@ -437,7 +437,7 @@
 					</If>
 					<RunCode Name="BTN"/>
 					<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(12,14)"/>
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_OldWorldFig; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -457,7 +457,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_OldWorldFig; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
@@ -478,7 +478,7 @@
 						</ExGather>
 					</If>
 				</If>
-				<!-- User wants some Cuprite or Light Kidney Ore ?-->
+				<!-- User wants some Cuprite or Light Kidney Ore ? -->
 				<If Condition="&Cuprite; != 0 or &LightKidneyOre; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Cuprite or Light Kidney Ore"/>
 					<If Condition="not IsOnMap(399)">
@@ -491,9 +491,9 @@
 					<ExFlyTo Radius="3.0" XYZ="294.029, 271.385, 341.6016"/>
 					<ExFlyTo Radius="3.0" XYZ="512.589, 230.5479, 354.7156"/>
 					<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(12,14)"/>
-					<!--If Cuprite-->
+					<!--If Cuprite -->
 					<If Condition="&Cuprite; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_Cuprite; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -514,7 +514,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_Cuprite; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -536,9 +536,9 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--If Light Kidney Ore-->
+					<!--If Light Kidney Ore -->
 					<If Condition="&LightKidneyOre; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_LightKidneyOre; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -559,7 +559,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_LightKidneyOre; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -582,7 +582,7 @@
 						</If>
 					</If>
 				</If>
-				<!-- User wants some Yellow Quartz or Green Quartz ?-->
+				<!-- User wants some Yellow Quartz or Green Quartz ? -->
 				<If Condition="&YellowQuartz; != 0 or &GreenQuartz; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Yellow Quartz or Green Quartz"/>
 					<If Condition="not IsOnMap(400)">
@@ -591,7 +591,7 @@
 					<RunCode Name="MIN"/>
 					<ExFlyTo Radius="3.0" XYZ="584.7388, 21.0551, -21.69694"/>
 					<WaitWhile Condition="IsTimeBetween(0,2) or IsTimeBetween(12,14)"/>
-					<!--If Yellow Quartz-->
+					<!--If Yellow Quartz -->
 					<If Condition="&YellowQuartz; != 0">
 						<If Condition="&Collect_YellowQuartz; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -622,7 +622,7 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--Green Quartz-->
+					<!--Green Quartz -->
 					<If Condition="&GreenQuartz; != 0">
 						<If Condition="&Collect_GreenQuartz; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -713,7 +713,7 @@
 					<RunCode Name="MIN"/>
 					<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(4,5)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_AstralMoraine; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -731,7 +731,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_AstralMoraine; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
@@ -750,7 +750,7 @@
 						</ExGather>
 					</If>
 				</If>
-				<!--If Sun Mica-->
+				<!--If Sun Mica -->
 				<If Condition="&SunMica; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Sun Mica"/>
 					<If Condition="not IsOnMap(401)">
@@ -759,7 +759,7 @@
 					<RunCode Name="MIN"/>
 					<ExFlyTo XYZ="713.3589, -141.6476, 739.575" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(4,5)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_SunMica; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -778,7 +778,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_SunMica; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
@@ -798,7 +798,7 @@
 						</ExGather>
 					</If>
 				</If>
-				<!--If Aurum Regis Ore-->
+				<!--If Aurum Regis Ore -->
 				<If Condition="&AurumRegisOre; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Aurum Regis Ore"/>
 					<If Condition="not IsOnMap(400)">
@@ -807,7 +807,7 @@
 					<RunCode Name="MIN"/>
 					<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(4,5)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_AurumRegisOre; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -826,7 +826,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_AurumRegisOre; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
@@ -849,7 +849,7 @@
 			</If>
 			<!-- 7AM -->
 			<If Condition="IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil; != 0) and FreeItemSlots() &gt; 0">
-				<!--If Umbral Rock-->
+				<!--If Umbral Rock -->
 				<If Condition="&UmbralRock; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Umbral Rock"/>
 					<If Condition="not IsOnMap(153)">
@@ -871,7 +871,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Grade 3 Shroud Topsoil-->
+				<!--If Grade 3 Shroud Topsoil -->
 				<If Condition="&ShroudTopsoil; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Grade 3 Shroud Topsoil"/>
 					<If Condition="not IsOnMap(153)">
@@ -894,7 +894,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Spinach-->
+				<!--If Spinach -->
 				<If Condition="&Spinach; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Young Cieldalaes Spinach"/>
 					<If Condition="not IsOnMap(135)">
@@ -916,7 +916,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Blue Quartz-->
+				<!--If Blue Quartz -->
 				<If Condition="&BlueQuartz; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Blue Quartz"/>
 					<If Condition="not IsOnMap(399)">
@@ -945,7 +945,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Violet Quartz-->
+				<!--If Violet Quartz -->
 				<If Condition="&VioletQuartz; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Violet Quartz"/>
 					<If Condition="not IsOnMap(397)">
@@ -970,7 +970,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Red Alumen-->
+				<!--If Red Alumen -->
 				<If Condition="&RedAlumen; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Red Alumen"/>
 					<If condition="not IsOnMap(402)">
@@ -1082,7 +1082,7 @@
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(8,9) or IsTimeBetween(20,21)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_Chysahl; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -1097,7 +1097,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_Chysahl; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
@@ -1132,9 +1132,9 @@
 					<ExFlyTo XYZ="-202.444, -16.6456, -283.0277" Radius="3.0" />
 					<ExFlyTo XYZ="501.7628, -35.17665, -166.8061" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
-					<!--If Heavens Lemon-->
+					<!--If Heavens Lemon -->
 					<If Condition="&HeavensLemon; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_HeavensLemon; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1151,7 +1151,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_HeavensLemon; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -1169,9 +1169,9 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--If Abalathian Mistletoe-->
+					<!--If Abalathian Mistletoe -->
 					<If Condition="&AbalathianMistletoe; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_AbalathianMistletoe; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1188,7 +1188,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_AbalathianMistletoe; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -1218,7 +1218,7 @@
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
-					<!--If Coerthan Tea Leaves-->
+					<!--If Coerthan Tea Leaves -->
 					<If Condition="&CoerthanTeaLeaves; != 0">
 						<If Condition="&Collect_CoerthanTeaLeaves; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1255,7 +1255,7 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--If Pearl Sprouts-->
+					<!--If Pearl Sprouts -->
 					<If Condition="&PearlSprouts; != 0">
 						<If Condition="&Collect_PearlSprouts; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1292,7 +1292,7 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--If Chives-->
+					<!--If Chives -->
 					<If Condition="&Chives; != 0">
 						<If Condition="&Collect_Chives; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1339,7 +1339,7 @@
 					<RunCode Name="MIN"/>
 					<ExFlyTo XYZ="216.7381, 2.187376, -236.3906" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
-					<!--If Pyrite-->
+					<!--If Pyrite -->
 					<If Condition="&Pyrite; != 0">
 						<If Condition="&Collect_Pyrite; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1370,7 +1370,7 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--If Chalcocite-->
+					<!--If Chalcocite -->
 					<If Condition="&Chalcocite; != 0">
 						<If Condition="&Collect_Chalcocite; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1401,7 +1401,7 @@
 							</ExGather>
 						</If>
 					</If>
-					<!--If Limonite-->
+					<!--If Limonite -->
 					<If Condition="&Limonite; != 0">
 						<If Condition="&Collect_Limonite; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1446,7 +1446,7 @@
 				<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0" />
 				<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" Radius="3.0" />
 				<WaitWhile Condition="IsTimeBetween(10,11) or IsTimeBetween(22,23)" />
-				<!--If Collectable-->
+				<!--If Collectable -->
 				<If Condition="&Collect_Adamantite; != 0">
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 						<GatherObjects>
@@ -1466,7 +1466,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If NOT Collectable-->
+				<!--If NOT Collectable -->
 				<If Condition="&Collect_Adamantite; == 0">
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
@@ -1501,9 +1501,9 @@
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
-					<!--If Cloud Banana-->
+					<!--If Cloud Banana -->
 					<If Condition="&CloudBanana; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_CloudBanana; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1523,7 +1523,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_CloudBanana; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -1546,7 +1546,7 @@
 					</If>
 					<!--If Morel -->
 					<If Condition="&Morel; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_Morel; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1566,7 +1566,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_Morel; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -1599,9 +1599,9 @@
 					<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608" Radius="3.0" />
 					<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
-					<!--If Abalathian Rock Salt-->
+					<!--If Abalathian Rock Salt -->
 					<If Condition="&AbalathianRockSalt; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_AbalathianRockSalt; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1616,7 +1616,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_AbalathianRockSalt; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -1634,7 +1634,7 @@
 					</If>
 					<!--If Red Quartz -->
 					<If Condition="&RedQuartz; != 0">
-						<!--If Collectable-->
+						<!--If Collectable -->
 						<If Condition="&Collect_RedQuartz; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1649,7 +1649,7 @@
 								</HotSpots>
 							</ExGather>
 						</If>
-						<!--If NOT Collectable-->
+						<!--If NOT Collectable -->
 						<If Condition="&Collect_RedQuartz; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 								<GatherObjects>
@@ -1676,7 +1676,7 @@
 					<ExFlyTo XYZ="-599.4534, 67.44411, 278.351" Radius="3.0" />
 					<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
-					<!--If Porcini-->
+					<!--If Porcini -->
 					<If Condition="&Porcini; != 0">
 						<If Condition="&Collect_Porcini; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1773,7 +1773,7 @@
 					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
 					<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(16,17)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_VanillaBeans; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -1788,7 +1788,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_VanillaBeans; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
@@ -1804,7 +1804,7 @@
 						</ExGather>
 					</If>
 				</If>
-				<!--If Honeydew Almonds-->
+				<!--If Honeydew Almonds -->
 				<If Condition="&HoneydewAlmonds; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Honeydew Almonds"/>
 					<If Condition="not IsOnMap(401)">
@@ -1814,7 +1814,7 @@
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(16,17)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_HoneydewAlmonds; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -1834,7 +1834,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_HoneydewAlmonds; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
@@ -1855,7 +1855,7 @@
 						</ExGather>
 					</If>
 				</If>
-				<!--If Seventh Heaven-->
+				<!--If Seventh Heaven -->
 				<If Condition="&SeventhHeaven; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Seventh Heaven"/>
 					<If Condition="not IsOnMap(400)">
@@ -1865,7 +1865,7 @@
 					<ExFlyTo XYZ="-511.196, 58.26035, 352.3266" Radius="3.0" />
 					<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" Radius="3.0" />
 					<WaitWhile Condition="IsTimeBetween(16,17)" />
-					<!--If Collectable-->
+					<!--If Collectable -->
 					<If Condition="&Collect_SeventhHeaven; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
@@ -1880,7 +1880,7 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					<!--If NOT Collectable-->
+					<!--If NOT Collectable -->
 					<If Condition="&Collect_SeventhHeaven; == 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
@@ -1896,7 +1896,7 @@
 						</ExGather>
 					</If>
 				</If>
-				<!--If Volcanic Rock Salt-->
+				<!--If Volcanic Rock Salt -->
 				<If Condition="&VolcanicRockSalt_5; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Volcanic Rock Salt"/>
 					<If Condition="not IsOnMap(137)">
@@ -1918,7 +1918,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Thavnairian Mistletoe-->
+				<!--If Thavnairian Mistletoe -->
 				<If Condition="&ThavnairianMistletoe_5; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Thavnairian Mistletoe"/>
 					<If Condition="not IsOnMap(155)">
@@ -1940,7 +1940,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Rosemary-->
+				<!--If Rosemary -->
 				<If Condition="&Rosemary; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Rosemary"/>
 					<If Condition="not IsOnMap(152)">
@@ -1993,7 +1993,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Wattle Bark-->
+				<!--If Wattle Bark -->
 				<If Condition="&WattleBark; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Wattle Bark"/>
 					<If Condition="not IsOnMap(402)">
@@ -2023,7 +2023,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Snurbleberry-->
+				<!--If Snurbleberry -->
 				<If Condition="&Snurbleberry; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [BTN] Snurbleberry"/>
 					<If Condition="not IsOnMap(399)">
@@ -2049,7 +2049,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Volcanic Rock Salt-->
+				<!--If Volcanic Rock Salt -->
 				<If Condition="&VolcanicRockSalt_7; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Volcanic Rock Salt"/>
 					<If Condition="not IsOnMap(137)">
@@ -2116,7 +2116,7 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!--If Virgin Basilisk Egg-->
+				<!--If Virgin Basilisk Egg -->
 				<If Condition="&VirginBasiliskEgg; != 0">
 					<ExLog Color="#FFC0CB" Message="GatherManager | [MIN] Virgin Basilisk Egg"/>
 					<If Condition="not IsOnMap(147)">
