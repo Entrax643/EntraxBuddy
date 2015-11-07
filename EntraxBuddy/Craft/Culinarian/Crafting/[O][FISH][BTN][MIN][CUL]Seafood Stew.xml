@@ -59,9 +59,9 @@
 		<While Condition="ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;">
 			<!-- Dravanian Paprika -->
 			<If Condition="ItemCount(12903) &lt; (&Seafood_Qty;*2)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Dravanian Paprika !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Dravanian Paprika !"/>
 				<If Condition="not(IsTimeBetween(18,19))">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="But I can't gather them because it's not between 6-7 PM !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="But I can't gather them because it's not between 6-7 PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(18,19)">
 					<If Condition="not IsOnMap(397)">
@@ -95,13 +95,13 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12903) &lt; (&Seafood_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Dravanian Paprika !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Dravanian Paprika !"/>
 			</If>
 			<!-- Dzemael Tomato -->
 			<If Condition="ItemCount(6148) &lt; (&Seafood_Qty;*2)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Dzemael Tomato !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Dzemael Tomato !"/>
 				<If Condition="not(IsTimeBetween(12,13))">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="But I can't gather them because it's not between 12 AM - 1 PM !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="But I can't gather them because it's not between 12 AM - 1 PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(12,13)">
 					<If Condition="not IsOnMap(137)">
@@ -130,11 +130,11 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(6148) &lt; (&Seafood_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Dzemael Tomato !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Dzemael Tomato !"/>
 			</If>
 			<!-- Duskborne Aethersand -->
 			<If Condition="ItemCount(12936) &lt; &Seafood_Qty;">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Duskborne Aethersand !"/>
 				<While Condition="ItemCount(12936) &lt; &Seafood_Qty; and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
 					<ExPurify/>
 					<While Condition="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;">
@@ -306,18 +306,18 @@
 				</While>
 			</If>
 			<If Condition="not(ItemCount(12936) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Duskborne Aethersand !"/>
 			</If>
 			<!-- Fire/Water Cluster -->
 			<If Condition="ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
 				<If Condition="ItemCount(19) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Water Cluster !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Water Cluster !"/>
 				</If>
 				<If Condition="ItemCount(14) &lt; (&Seafood_Qty; * 2)">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Fire Cluster !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Fire Cluster !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="But I can't gather them yet !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="But I can't gather them yet !"/>
 				</If>
 				<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
 					<If Condition="not IsOnMap(154)">
@@ -402,22 +402,22 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(19) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Water Cluster !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Water Cluster !"/>
 			</If>
 			<If Condition="not(ItemCount(14) &lt; (&Seafood_Qty; * 2))">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Fire Cluster !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Fire Cluster !"/>
 			</If>
 			<!-- Fishing -->
 			<!-- Rock Mussel | Blueclaw Shrimp -->
 			<If Condition="(ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty;) and (IsTimeBetween(1,13) or (IsTimeBetween(14,24) and not(ItemCount(12718) &lt; &Seafood_Qty;))) and not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">
 				<If Condition="ItemCount(12733) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Rock Mussel !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Rock Mussel !"/>
 				</If>
 				<If Condition="ItemCount(12722) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Blueclaw Shrimp !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Blueclaw Shrimp !"/>
 				</If>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -445,16 +445,16 @@
 				</Fish>
 			</If>
 			<If Condition="not(ItemCount(12733) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Rock Mussel !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Rock Mussel !"/>
 			</If>
 			<If Condition="not(ItemCount(12722) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Blueclaw Shrimp !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Blueclaw Shrimp !"/>
 			</If>
 			<!-- Coerthan Crab -->
 			<If Condition="ItemCount(12718) &lt; &Seafood_Qty; and (IsTimeBetween(14,24) or (IsTimeBetween(1,13) and not(ItemCount(12722) &lt; &Seafood_Qty;))) and not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I don't have enough Coerthan Crab !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I don't have enough Coerthan Crab !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -481,13 +481,13 @@
 				</Fish>
 			</If>
 			<If Condition="not(ItemCount(12718) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm done with Coerthan Crab !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm done with Coerthan Crab !"/>
 			</If>
 			<!-- Fish Resetting -->
 			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(13,14)) and (ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="I'm going to reset Fish !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="I'm going to reset Fish !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -516,16 +516,16 @@
 			<If Condition="not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)))) and not(ItemCount(12733) &lt; &Seafood_Qty;) and not(ItemCount(12722) &lt; &Seafood_Qty;) and not(ItemCount(12718) &lt; &Seafood_Qty;) and not(ItemCount(12936) &lt; &Seafood_Qty;) and(ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
 				<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 				<RunCode Name="Dismount"/>
-				<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="Nothing to do, waiting for something to spawn !"/>
+				<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="Nothing to do, waiting for something to spawn !"/>
 				<WaitWhile Condition ="not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))" />
 			</If>
 		</While>
 		<If Condition="not(ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
-			<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="All materials gathered !"/>
+			<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="All materials gathered !"/>
 		</If>
 		<!-- Crafting -->
 		<If Condition="&Craft; !=0">
-			<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="It's time to craft !"/>
+			<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="It's time to craft !"/>
 			<TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 			<RunCode Name="CUL" />
 			<RunCode Name="Dismount"/>
@@ -597,6 +597,6 @@
 			<StopCrafting/>
 		</If>
 		<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
-		<ExLog Color="#FFC0CB" Name="Vaporeon Seafood Stew" Message="Seafood Stew Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
+		<ExLog Color="#FFC0CB" Name="Seafood Stew Vaporeon" Message="Seafood Stew Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 	</Order>
 </Profile>

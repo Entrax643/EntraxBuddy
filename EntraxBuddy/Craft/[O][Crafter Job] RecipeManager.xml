@@ -30,6 +30,8 @@
 <!-- Do you want to use a food ? If yes wich one ? -->
 <!ENTITY FOOD "1">
 <!ENTITY ID_FOOD "12861">
+<!-- 1 Star settings : if CSII > 110 Progress set this to 854 BUT make sure you have at least 445 CP</!-->
+<!ENTITY FlawlessLimit "894">
 <!-- Foods ID Baked onion Soup : 12861 Seafood Stew : 12865 -->
 <!-- Rotation Settings -->
 <!ENTITY ToT "1">
@@ -47,7 +49,7 @@
 <!-- If you want to keep HQ set true, false if you don't-->
 <!ENTITY IncludeArmory "false">
 <!-- If you also want to desynthesis from your armory set true, false if you don't  -->   ]><Profile>
-	<Name>[O][Crafter Job] RecipeManager 2.11</Name>
+	<Name>[O][Crafter Job] RecipeManager</Name>
 	<BehaviorDirectory>CustomTags</BehaviorDirectory>
 	<CodeChunks>
 		<CodeChunk name="ToT">
@@ -83,7 +85,7 @@
 					<RunCode Name="Collector"/>
 				</If>
 				<If Condition="&Quick_Synthesis; != 0">
-					<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting Quick Synthesis like rotation"/>
+					<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting Quick Synthesis like rotation"/>
 					<Synthesize RecipeId="&ID_ITEM_RECIPE;" HQMats="-1,-1,-1,-1,-1,-1"/>
 					<CraftActionByName Name="Steady Hand" />
 					<CraftActionByName Name="Standard Synthesis" />
@@ -94,7 +96,7 @@
 				</If>
 				<If Condition="&Quick_Synthesis; == 0">
 					<If Condition="&Durability; &lt; 41 and &Recipe_level; &lt; 59">
-						<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting rotation for low durability and low level"/>
+						<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting rotation for low durability and low level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="426" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 285" />
@@ -124,6 +126,8 @@
 							<CraftActionByName Name="Hasty Touch" />
 							<CraftActionByName Name="Hasty Touch" />
 							<CraftActionByName Name="Hasty Touch" />
+							<CraftActionByName Name="Hasty Touch" />
+							<CraftActionByName Name="Hasty Touch" />
 						</If>
 						<CraftActionByName Name="Great Strides" />
 						<CraftActionByName Name="Byregot's Blessing" />
@@ -136,7 +140,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &lt; 41 and (&Recipe_level; == 59 or(&Recipe_level; == 60 and &Recipe_level_star; == 0))">
-						<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting rotation for low durability and high level"/>
+						<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting rotation for low durability and high level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="408" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 285" />
@@ -155,15 +159,14 @@
 						<RunCode Name="TrickTouch"/>
 						<RunCode Name="TrickTouch"/>
 						<RunCode Name="TrickTouch"/>
-						<If Condition="&ToT; != 0">
-							<RunCode Name="ToT"/>
-						</If>
 						<CraftActionByName Name="Steady Hand II" />
 						<RunCode Name="TrickTouch"/>
 						<CraftActionByName Name="Master's Mend" />
 						<RunCode Name="BBCheck"/>
 						<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
 							<CraftActionByName Name="Reclaim" />
+							<CraftActionByName Name="Hasty Touch" />
+							<CraftActionByName Name="Hasty Touch" />
 							<CraftActionByName Name="Hasty Touch" />
 							<CraftActionByName Name="Hasty Touch" />
 							<CraftActionByName Name="Hasty Touch" />
@@ -181,7 +184,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &gt; 69 and &Recipe_level; &lt; 59">
-						<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting rotation for high durability and low level"/>
+						<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting rotation for high durability and low level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="388" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
@@ -271,7 +274,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &gt; 69 and (&Recipe_level; &gt; 58 and &Recipe_level_star; == 0)">
-						<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting rotation for high durability and high level"/>
+						<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting rotation for high durability and high level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 						<!-- Optionnals : Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
@@ -365,7 +368,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &gt; 69 and &Recipe_level; == 60 and &Recipe_level_star; == 1">
-						<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting rotation for 1 Star recipe"/>
+						<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting rotation for 1 Star recipe"/>
 						<!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="437" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="100178, 100083, 281, 100069, 100039, 100108, 100009, 286, 285" />
@@ -374,7 +377,7 @@
 						<CraftActionByName Name="Steady Hand" />
 						<CraftActionByName Name="Piece by Piece" />
 						<CraftActionByName Name="Piece by Piece" />
-						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; 854">
+						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; &FlawlessLimit;">
 							<CraftActionByName Name="Flawless Synthesis" />
 						</While>
 						<If Condition="&ToT; != 0">
@@ -428,7 +431,7 @@
 						<CraftActionByName Name="Careful Synthesis II" />
 					</If>
 					<If Condition="&Durability; &gt; 69 and &Recipe_level; == 60 and &Recipe_level_star; == 2">
-						<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Starting rotation for 2 Star recipe"/>
+						<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Starting rotation for 2 Star recipe"/>
 						<!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="437" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="100178, 100083, 281, 100069, 100039, 100108, 100009, 286, 285" />
@@ -499,10 +502,10 @@
 				</If>
 			</While>
 			<If Condition="FreeItemSlots() == 1">
-				<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | Only 1 free slot left I'm going to desynthesis"/>
+				<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="Only 1 free slot left I'm going to desynthesis"/>
 			</If>
 			<If Condition="FreeItemSlots() == 0">
-				<ExLog Color="#FFC0CB"  Message="RecipeManager 2.11 | No free slot left I'm going to stop the profile"/>
+				<ExLog Color="#FFC0CB" Name="RecipeManager Porygon"  Message="No free slot left I'm going to stop the profile"/>
 			</If>
 			<StopCrafting/>
 			<WaitTimer WaitTime="3"/>
