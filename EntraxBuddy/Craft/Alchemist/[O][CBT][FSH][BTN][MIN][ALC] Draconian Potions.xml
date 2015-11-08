@@ -87,9 +87,9 @@
 			<RunCode Name="EnableMount"/>
 			<!-- Abalathian Rock Salt -->
 			<If Condition="ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Abalathian Rock Salt !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Abalathian Rock Salt !"/>
 				<If Condition="&Gather_Salt; != 0 and not(IsTimeBetween(11,12) or IsTimeBetween(23,24))">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" can't gather them because it's not between 11-12 AM-PM !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" can't gather them because it's not between 11-12 AM-PM !"/>
 				</If>
 				<If Condition="&Gather_Salt; != 0 and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
 					<TeleportTo Name="Ok' Zundu" AetheryteId="73" Force="True"/>
@@ -163,11 +163,11 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Abalathian Rock Salt !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Abalathian Rock Salt !"/>
 			</If>
 			<!-- Duskborne Aethersand -->
 			<If Condition="ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Duskborne Aethersand !"/>
 				<While Condition="ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) and not(FreeItemSlots() &lt; 2)">
 					<If Condition="FreeItemSlots() &lt; 20">
 						<ExPurify/>
@@ -312,13 +312,13 @@
 				</While>
 			</If>
 			<If Condition="not(ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Duskborne Aethersand !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Duskborne Aethersand !"/>
 			</If>
 			<!-- Furymint -->
 			<If Condition="ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Furymint !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Furymint !"/>
 				<If Condition="not(IsTimeBetween(20,24) or IsTimeBetween(0,4))">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" can't gather them because it's not between 8 PM - 4 AM !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" can't gather them because it's not between 8 PM - 4 AM !"/>
 				</If>
 				<If Condition="IsTimeBetween(20,24)">
 					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Force="True"/>
@@ -358,15 +358,15 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Furymint !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Furymint !"/>
 			</If>
 			<!-- Water/Lightning Cluster -->
 			<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)">
 				<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Water Cluster (Gathering) !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Water Cluster (Gathering) !"/>
 				</If>
 				<If Condition="ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Lightning Cluster !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Lightning Cluster !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))">
 					<ExLog Color="#FFC0CB"  Message="Draconian Potions | But I can't gather them now !"/>
@@ -455,16 +455,16 @@
 			</If>
 			<If Condition="not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)) or not(ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
 				<If Condition="not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Water Cluster !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Water Cluster !"/>
 				</If>
 				<If Condition="not(ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Lightning Cluster !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Lightning Cluster !"/>
 				</If>
 			</If>
 			<!-- Thaliak caiman (Water Cluster) -->
 			<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and not(FreeItemSlots() &lt; 2)">
 				<If Condition="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)">
-					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Water Cluster (Fishing) !"/>
+					<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Water Cluster (Fishing) !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(15,18))">
 					<ExLog Color="#FFC0CB"  Message="Draconian Potions | But I can't fish for them now !"/>
@@ -496,7 +496,7 @@
 				<RunCode Name="EnableMount"/>
 			</If>
 			<If Condition="not(ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Water Cluster (Fishing) !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Water Cluster (Fishing) !"/>
 			</If>
 			<!-- Fish Resetting -->
 			<If Condition="IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and not(FreeItemSlots() &lt; 2)">
@@ -525,7 +525,7 @@
 			</If>
 			<!-- Rue -->
 			<If Condition="ItemCount(12642) &lt; (&Strength_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Rue !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Rue !"/>
 				<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
@@ -552,11 +552,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12642) &lt; (&Strength_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Rue !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Rue !"/>
 			</If>
 			<!-- Coriander -->
 			<If Condition="ItemCount(12643) &lt; (&Intelligence_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Coriander !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Coriander !"/>
 				<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
@@ -583,11 +583,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12643) &lt; (&Intelligence_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Coriander !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Coriander !"/>
 			</If>
 			<!-- Coneflower -->
 			<If Condition="ItemCount(12638) &lt; (&Dexterity_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Coneflower !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Coneflower !"/>
 				<TeleportTo Name="Anyx Trine" AetheryteId="77" Force="True"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505" Radius="3.0" />
@@ -615,11 +615,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12638) &lt; (&Dexterity_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Coneflower !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Coneflower !"/>
 			</If>
 			<!-- Cow Bitter -->
 			<If Condition="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Cow Bitter !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Cow Bitter !"/>
 				<TeleportTo Name="Idyllshire" AetheryteId="75" Force="True"/>
 				<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
 				<RunCode Name="BTN"/>
@@ -651,11 +651,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12639) &lt; (&Vitality_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Cow Bitter !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Cow Bitter !"/>
 			</If>
 			<!-- Dandelion -->
 			<If Condition="ItemCount(12640) &lt; (&Mind_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Dandelion !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Dandelion !"/>
 				<TeleportTo Name="Zenith" AetheryteId="79" Force="True"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" Radius="3.0" MountId="1" DismountAtDestination="false" />
@@ -683,11 +683,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(12640) &lt; (&Mind_Qty;*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Dandelion !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Dandelion !"/>
 			</If>
 			<!-- Dragon Blood -->
 			<If Condition="ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Dragon Blood !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Dragon Blood !"/>
 				<TeleportTo Name="Zenith" AetheryteId="79" Force="True"/>
 				<RunCode Name="CBT" />
 				<ExFlyTo XYZ="-533.3515, 57.23525, 343.3924" />
@@ -697,7 +697,7 @@
 				<Grind grindRef="Dragon" while="ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" />
 			</If>
 			<If Condition="not(ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2))">
-				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message="'m done with Dragon Blood !"/>
+				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="'m done with Dragon Blood !"/>
 			</If>
 			<!-- Waiting -->
 			<If Condition ="not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(ItemCount(12638) &lt; (&Dexterity_Qty;*2)) and not(ItemCount(12639) &lt; (&Vitality_Qty;*2)) and not(ItemCount(12643) &lt; (&Intelligence_Qty;*2)) and not(ItemCount(12640) &lt; (&Mind_Qty;*2)) and not(ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)) and not(FreeItemSlots() &lt; 2)">
