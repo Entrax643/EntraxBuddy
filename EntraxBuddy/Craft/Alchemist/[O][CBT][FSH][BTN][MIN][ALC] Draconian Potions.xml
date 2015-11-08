@@ -92,13 +92,11 @@
 					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" can't gather them because it's not between 11-12 AM-PM !"/>
 				</If>
 				<If Condition="&Gather_Salt; != 0 and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
-					<If Condition="not IsOnMap(401)">
-						<TeleportTo Name="Ok' Zundu" AetheryteId="73" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
-						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549" />
+					<TeleportTo Name="Ok' Zundu" AetheryteId="73" Force="True"/>
+					<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
+						<RunCode Name="MIN"/>
 					</If>
+					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549" />
 					<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
 						<RunCode Name="MIN"/>
 					</If>
