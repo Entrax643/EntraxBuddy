@@ -36,7 +36,7 @@
 <!ENTITY PlusPlus "0">
 <!ENTITY DiscoverUnknowns "true">
 <!ENTITY IsTimeBetween_tick "20">
-<!ENTITY TurnInAfterLoop "20">
+<!ENTITY TurnInAfterLoop "0">
 <!-- -->
 <!-- Food setting - Set 1 if you want to use food with THIS profile not chanko ! -->
 <!-- You'll also have to set food name in FOOD codechunck -->
