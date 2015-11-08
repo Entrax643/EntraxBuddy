@@ -93,13 +93,8 @@
 				</If>
 				<If Condition="&Gather_Salt; != 0 and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
 					<TeleportTo Name="Ok' Zundu" AetheryteId="73" Force="True"/>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-						<RunCode Name="MIN"/>
-					</If>
+					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-						<RunCode Name="MIN"/>
-					</If>
 					<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608" Radius="3.0" />
 					<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" Radius="3.0" />
 					<WaitWhile Condition ="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
@@ -181,16 +176,9 @@
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
 						</If>
-						<If Condition="not IsOnMap(397)">
-							<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
-							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
-						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
+						<RunCode Name="BTN"/>
+						<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(0,4) and ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)" skipWindowDelay="1500">
 							<Items>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
@@ -212,18 +200,11 @@
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
 						</If>
-						<If Condition="not IsOnMap(398)">
-							<TeleportTo Name="Tailfeather" AetheryteId="76" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
-							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
-							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
-						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
+						<TeleportTo Name="Tailfeather" AetheryteId="76" Force="True"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
+						<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
+						<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(4,8) and ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)" skipWindowDelay="1500">
 							<Items>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
@@ -241,18 +222,11 @@
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
 						</If>
-						<If Condition="not IsOnMap(398)">
-							<TeleportTo Name="Tailfeather" AetheryteId="76" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
-							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
-							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
-						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<TeleportTo Name="Tailfeather" AetheryteId="76" Force="True"/>
+						<RunCode Name="BTN"/>
+						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
+						<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
+						<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(8,12) and ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and IsTimeBetween(11,12))" skipWindowDelay="1500">
 							<Items>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;"/>
@@ -270,17 +244,10 @@
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
 						</If>
-						<If Condition="not IsOnMap(400)">
-							<TeleportTo Name="Moghome" AetheryteId="78" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
-							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0" />
-							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
-						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
+						<TeleportTo Name="Moghome" AetheryteId="78" Force="True"/>
+						<RunCode Name="MIN"/>
+						<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0" />
+						<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(12,16) and ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)" skipWindowDelay="1500">
 							<Items>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
@@ -298,15 +265,11 @@
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
 						</If>
-						<If Condition="not IsOnMap(401)">
-							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Fore="True"/>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
-							<MoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
-							<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" />
-							<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0" />
-						</If>
+						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Fore="True"/>
+						<RunCode Name="MIN"/>
+						<MoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
+						<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" />
+						<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0" />
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(16,20) and ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)" skipWindowDelay="1500">
 							<Items>
 								<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate;"/>
@@ -329,17 +292,10 @@
 						<If Condition="FreeItemSlots() &lt; 20">
 							<ExPurify/>
 						</If>
-						<If Condition="not IsOnMap(401)">
-							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
-							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
-							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
-						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Force="True"/>
+						<RunCode Name="BTN"/>
+						<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
+						<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(20,24) and ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and IsTimeBetween(23,24))" skipWindowDelay="1500">
 							<Items>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
@@ -365,17 +321,10 @@
 					<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" can't gather them because it's not between 8 PM - 4 AM !"/>
 				</If>
 				<If Condition="IsTimeBetween(20,24)">
-					<If Condition="not IsOnMap(401)">
-						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
-						<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
-						<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
-					</If>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
+					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Force="True"/>
+					<RunCode Name="BTN"/>
+					<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
+					<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
 					<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(20,24) and  ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and not(ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and IsTimeBetween(23,24))" skipWindowDelay="1500">
 						<Items>
 							<GatherItem Name="Furymint" />
@@ -388,16 +337,9 @@
 					</ExGather>
 				</If>
 				<If Condition="IsTimeBetween(0,4)">
-					<If Condition="not IsOnMap(397)">
-						<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
-						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
-					</If>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
+					<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
+					<RunCode Name="BTN"/>
+					<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
 					<ExFlyTo XYZ="-565.7362, 132.6356, -453.2172" Radius="3.0" />
 					<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="Auto" while="IsTimeBetween(0,4) and ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)" skipWindowDelay="1500">
 						<Items>
@@ -430,13 +372,9 @@
 					<ExLog Color="#FFC0CB"  Message="Draconian Potions | But I can't gather them now !"/>
 				</If>
 				<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
-					<If Condition="not IsOnMap(154)">
-						<TeleportTo Name="Revenant's Toll" AetheryteId="24" />
-					</If>
+					<TeleportTo Name="Revenant's Toll" AetheryteId="24" Force="True"/>
 					<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11)">
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -475,9 +413,7 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
+						<RunCode Name="MIN"/>
 						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2)" spawnTimeout="15" CordialType="Cordial" CordialTime="IfNeeded" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -573,17 +509,9 @@
 					<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="true"/>
 					<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875" />
 				</If>
-				<If Condition="not IsOnMap(401)">
-					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
-						<RunCode Name="FSH"/>
-					</If>
-					<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
-					<RunCode Name="FSH"/>
-				</If>
+				<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Force="True"/>
 				<RunCode Name="FSH"/>
+				<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
 				<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>
 				<Fish Condition="IsTimeBetween(12,13)" shuffleFishSpots="true" sitRate=".69" bait="Stonefly Nymph">
 					<FishSpots>
@@ -598,16 +526,9 @@
 			<!-- Rue -->
 			<If Condition="ItemCount(12642) &lt; (&Strength_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Rue !"/>
-				<If Condition="not IsOnMap(397)">
-					<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
-					<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
+				<RunCode Name="BTN"/>
+				<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
 				<ExFlyTo XYZ="-83.43105, 310.537, -88.52545" Radius="3.0" />
 				<ExGather while="ItemCount(12642) &lt; (&Strength_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" GatherIncrease="Yield" DisableRotationOverride="true">
 					<GatherObjects>
@@ -636,16 +557,9 @@
 			<!-- Coriander -->
 			<If Condition="ItemCount(12643) &lt; (&Intelligence_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Coriander !"/>
-				<If Condition="not IsOnMap(397)">
-					<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
-					<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
+				<RunCode Name="BTN"/>
+				<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
 				<ExFlyTo XYZ="-83.43105, 310.537, -88.52545" Radius="3.0" />
 				<ExGather while="ItemCount(12643) &lt; (&Intelligence_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" GatherIncrease="Yield" DisableRotationOverride="true">
 					<GatherObjects>
@@ -674,18 +588,11 @@
 			<!-- Coneflower -->
 			<If Condition="ItemCount(12638) &lt; (&Dexterity_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Coneflower !"/>
-				<If Condition="not IsOnMap(398)">
-					<TeleportTo Name="Anyx Trine" AetheryteId="77" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
-					<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505" Radius="3.0" />
-					<ExFlyTo XYZ="-216.91, -25.85352, 196.2107" Radius="3.0" />
-					<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867" Radius="3.0" />
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<TeleportTo Name="Anyx Trine" AetheryteId="77" Force="True"/>
+				<RunCode Name="BTN"/>
+				<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505" Radius="3.0" />
+				<ExFlyTo XYZ="-216.91, -25.85352, 196.2107" Radius="3.0" />
+				<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867" Radius="3.0" />
 				<ExFlyTo XYZ="-553.3353, -85.52296, 419.714" Radius="3.0" />
 				<ExGather while="ItemCount(12638) &lt; (&Dexterity_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" GatherIncrease="Yield" DisableRotationOverride="true">
 					<GatherObjects>
@@ -713,17 +620,10 @@
 			<!-- Cow Bitter -->
 			<If Condition="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Cow Bitter !"/>
-				<If Condition="not IsOnMap(399)">
-					<TeleportTo Name="Idyllshire" AetheryteId="75" />
-					<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
-					<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<TeleportTo Name="Idyllshire" AetheryteId="75" Force="True"/>
+				<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
+				<RunCode Name="BTN"/>
+				<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
 				<ExFlyTo XYZ="-517.9157, 141.9116, -274.003" Radius="3.0" />
 				<ExGather while="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" GatherIncrease="Yield" DisableRotationOverride="true">
 					<GatherObjects>
@@ -756,17 +656,10 @@
 			<!-- Dandelion -->
 			<If Condition="ItemCount(12640) &lt; (&Mind_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Glaceon"  Message=" don't have enough Dandelion !"/>
-				<If Condition="not IsOnMap(400)">
-					<TeleportTo Name="Zenith" AetheryteId="79" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
-					<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" Radius="3.0" MountId="1" DismountAtDestination="false" />
-					<ExFlyTo XYZ="-223.9079, 73.30476, 369.493" Radius="3.0" MountId="1" DismountAtDestination="false" />
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<TeleportTo Name="Zenith" AetheryteId="79" Force="True"/>
+				<RunCode Name="BTN"/>
+				<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" Radius="3.0" MountId="1" DismountAtDestination="false" />
+				<ExFlyTo XYZ="-223.9079, 73.30476, 369.493" Radius="3.0" MountId="1" DismountAtDestination="false" />
 				<ExFlyTo XYZ="-216.0441, -15.27015, 263.3171" Radius="3.0" />
 				<ExGather while="ItemCount(12640) &lt; (&Mind_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" GatherIncrease="Yield" DisableRotationOverride="true">
 					<GatherObjects>
@@ -818,16 +711,9 @@
 							<If Condition="FreeItemSlots() &lt; 20">
 								<ExPurify/>
 							</If>
-							<If Condition="not IsOnMap(397)">
-								<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-									<RunCode Name="BTN"/>
-								</If>
-								<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
-							</If>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<TeleportTo Name="Falcons Nest" AetheryteId="71" Force="True"/>
+							<RunCode Name="BTN"/>
+							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 							<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="None" while="IsTimeBetween(0,4) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Clary Sage" Value="&Farm_Sand_Collect_Rate;"/>
@@ -849,18 +735,11 @@
 							<If Condition="FreeItemSlots() &lt; 20">
 								<ExPurify/>
 							</If>
-							<If Condition="not IsOnMap(398)">
-								<TeleportTo Name="Tailfeather" AetheryteId="76" />
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-									<RunCode Name="MIN"/>
-								</If>
-								<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-								<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
-								<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
-							</If>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
+							<TeleportTo Name="Tailfeather" AetheryteId="76" Force="True"/>
+							<RunCode Name="MIN"/>
+							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
+							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
+							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 							<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="None" while="IsTimeBetween(4,8) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Radiant Fire Moraine" Value="&Farm_Sand_Collect_Rate;"/>
@@ -878,18 +757,11 @@
 							<If Condition="FreeItemSlots() &lt; 20">
 								<ExPurify/>
 							</If>
-							<If Condition="not IsOnMap(398)">
-								<TeleportTo Name="Tailfeather" AetheryteId="76" />
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-									<RunCode Name="BTN"/>
-								</If>
-								<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-								<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
-								<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
-							</If>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<TeleportTo Name="Tailfeather" AetheryteId="76" Force="True"/>
+							<RunCode Name="BTN"/>
+							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
+							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
+							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 							<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="None" while="IsTimeBetween(8,12) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Black Soil" Value="&Farm_Sand_Collect_Rate;"/>
@@ -907,17 +779,10 @@
 							<If Condition="FreeItemSlots() &lt; 20">
 								<ExPurify/>
 							</If>
-							<If Condition="not IsOnMap(400)">
-								<TeleportTo Name="Moghome" AetheryteId="78" />
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-									<RunCode Name="MIN"/>
-								</If>
-								<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0" />
-								<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
-							</If>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
+							<TeleportTo Name="Moghome" AetheryteId="78" Force="True"/>
+							<RunCode Name="MIN"/>
+							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0" />
+							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
 							<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="None" while="IsTimeBetween(12,16) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Radiant Fire Moraine" Value="&Farm_Sand_Collect_Rate;"/>
@@ -935,15 +800,11 @@
 							<If Condition="FreeItemSlots() &lt; 20">
 								<ExPurify/>
 							</If>
-							<If Condition="not IsOnMap(401)">
-								<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Fore="True"/>
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-									<RunCode Name="MIN"/>
-								</If>
-								<MoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
-								<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" />
-								<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0" />
-							</If>
+							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Fore="True"/>
+							<RunCode Name="MIN"/>
+							<MoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
+							<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" />
+							<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0" />
 							<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="None" while="IsTimeBetween(16,20) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Radiant Lightning Moraine" Value="&Farm_Sand_Collect_Rate;"/>
@@ -966,17 +827,10 @@
 							<If Condition="FreeItemSlots() &lt; 20">
 								<ExPurify/>
 							</If>
-							<If Condition="not IsOnMap(401)">
-								<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-									<RunCode Name="BTN"/>
-								</If>
-								<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
-								<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
-							</If>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" Force="True"/>
+							<RunCode Name="BTN"/>
+							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
+							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
 							<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="Cordial" CordialTime="None" while="IsTimeBetween(20,24) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and (ItemCount(12630) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12640) &lt; (&Mind_Qty;*2) or ItemCount(12643) &lt; (&Intelligence_Qty;*2) or ItemCount(12639) &lt; (&Vitality_Qty;*2) or ItemCount(12638) &lt; (&Dexterity_Qty;*2) or ItemCount(12642) &lt; (&Strength_Qty;*2) or ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) or ItemCount(12936) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) or ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;))" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Clary Sage" Value="&Farm_Sand_Collect_Rate;"/>
