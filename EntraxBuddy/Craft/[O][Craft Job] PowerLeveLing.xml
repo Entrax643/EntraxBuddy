@@ -570,7 +570,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(3765)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="89" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="89" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExTurnInGuildLeve npcId="1001868" npcLocation="142.5418, -7, -86.22319" />
 					</While>
@@ -596,7 +596,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(5277)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="101" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="101" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="The Hawthorne Hut" AetheryteId="4" />
 						<ExTurnInGuildLeve npcId="1001219" npcLocation="-206.5178, 2.559912, 307.8207" />
 					</While>
@@ -621,7 +621,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4106)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="112" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="112" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Quarrymill" AetheryteId="5" />
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
@@ -634,7 +634,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4022)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="117" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="117" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Costa del Sol" AetheryteId="11" />
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
@@ -647,7 +647,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(3616)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="123" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="123" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
@@ -660,7 +660,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(3426)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="129" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="129" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
@@ -673,7 +673,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4051)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="135" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="135" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Revenant's Toll" AetheryteId="24" />
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
@@ -755,7 +755,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(1836)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="52" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="52" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Quarrymill" AetheryteId="5" />
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
@@ -768,7 +768,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(1637)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="57" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="57" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Costa del Sol" AetheryteId="11" />
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
@@ -781,7 +781,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1850)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="63" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="63" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
@@ -794,7 +794,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(1862)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="69" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="69" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Camp Dragonhead" AetheryteId="23" />
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
@@ -807,7 +807,7 @@
 					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(1867)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
-						<ExPickupGuildLeve leveIds="75" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="25.119, 1.2, 105.0532" />
+						<ExPickupGuildLeve leveIds="75" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
 						<TeleportTo Name="Revenant's Toll" AetheryteId="24" />
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
