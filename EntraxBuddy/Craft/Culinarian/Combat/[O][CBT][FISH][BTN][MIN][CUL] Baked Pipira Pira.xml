@@ -90,9 +90,7 @@
 						<If Condition="IsTimeBetween(11,12)">
 							<If Condition="&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;)">
 								<TeleportTo Name="Ok' Zundu" AetheryteId="73" Force="True"/>
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-									<RunCode Name="MIN"/>
-								</If>
+								<RunCode Name="MIN"/>
 								<MoveTo XYZ="-593.2999, -51.74009, -416.2549" />
 								<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608" Radius="3.0" />
 								<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" Radius="3.0" />
@@ -114,9 +112,7 @@
 								<If Condition="not IsOnMap(400)">
 									<TeleportTo Name="Zenith" AetheryteId="79" />
 								</If>
-								<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-									<RunCode Name="BTN"/>
-								</If>
+								<RunCode Name="BTN"/>
 								<ExFlyTo XYZ="-599.4534, 67.44411, 278.351" Radius="3.0" />
 								<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" Radius="3.0" />
 								<WaitWhile Condition ="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
@@ -144,9 +140,7 @@
 							<If Condition="not IsOnMap(400)">
 								<TeleportTo Name="Zenith" AetheryteId="79" />
 							</If>
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<RunCode Name="BTN"/>
 							<ExFlyTo XYZ="-599.4534, 67.44411, 278.351" Radius="3.0" />
 							<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" Radius="3.0" />
 							<WaitWhile Condition ="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
@@ -221,9 +215,7 @@
 					</If>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
-							<RunCode Name="FSH"/>
-						</If>
+						<RunCode Name="FSH"/>
 						<MoveTo XYZ="-602.2142, -122.2923, 554.533" />
 					</If>
 					<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>
@@ -243,9 +235,7 @@
 						<ExLog Color="#FFC0CB" Message="Baked Pipira Pira | Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
 					</If>
 					<TeleportTo Name="Zenith" AetheryteId="79" Force="True" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
-						<RunCode Name="FSH"/>
-					</If>
+					<RunCode Name="FSH"/>
 					<ExFlyTo XYZ="-677.9122, 213.0839, 533.136" />
 					<RunCode Name="FSH"/>
 					<Fish Condition="IsTimeBetween(12,13)" shuffleFishSpots="true" sitRate=".69" bait="Goblin Jig">
@@ -281,13 +271,9 @@
 				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message=" don't have enough Water Crystal !"/>
 				<If Condition="not IsOnMap(401)">
 					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
-				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 					<RunCode Name="BTN"/>
 				</If>
+				<RunCode Name="BTN"/>
 				<ExGather while="(ItemCount(13) &lt; (&Baked_Qty; * 5)) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
 					<GatherObjects>
 						<GatherObject>Mature Tree</GatherObject>
@@ -322,16 +308,12 @@
 				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message=" don't have enough Fire Crystal !"/>
 				<If Condition="not IsOnMap(398)">
 					<TeleportTo Name="Anyx Trine" AetheryteId="77" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
+					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505" Radius="3.0" />
 					<ExFlyTo XYZ="-216.91, -25.85352, 196.2107" Radius="3.0" />
 					<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867" Radius="3.0" />
 				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<RunCode Name="BTN"/>
 				<ExGather while="ItemCount(8) &lt; (&Baked_Qty; * 5) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
 					<GatherObjects>
 						<GatherObject>Lush Vegetation Patch</GatherObject>
@@ -363,9 +345,7 @@
 				<If Condition="not IsOnMap(134)">
 					<TeleportTo Name="Summerford Farms" AetheryteId="52" />
 				</If>
-				<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-					<RunCode Name="BTN"/>
-				</If>
+				<RunCode Name="BTN"/>
 				<ExGather while="ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
 					<GatherObjects>
 						<GatherObject>Mature Tree</GatherObject>

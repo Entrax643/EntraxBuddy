@@ -305,6 +305,9 @@
 		</CodeChunk>
 		<CodeChunk name="FOOD">
 			<![CDATA[	await Buddy.Coroutines.Coroutine.Sleep(1000);	if(!Core.Player.HasAura(48))	{	var result = true;	if (MovementManager.IsFlying)	{	result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		if (result && Core.Player.IsMounted)	{	Actionmanager.Dismount();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		foreach (BagSlot item in InventoryManager.FilledSlots)	{	if (item.EnglishName == "Frumenty" )	{	item.UseItem();	await Coroutine.Wait(7000, () => Core.Player.HasAura(48));	ff14bot.Helpers.Logging.Write("Using Food: " + item.Name);	}	}	}	]]></CodeChunk>
+		<CodeChunk Name="useAethernet">
+			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(2000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(2000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(2); await Buddy.Coroutines.Coroutine.Sleep(5000); ]]>
+		</CodeChunk>
 	</CodeChunks>
 	<Order>
 		<While Condition="FreeItemSlots() &gt; 0">
@@ -484,8 +487,8 @@
 					<If Condition="not IsOnMap(399)">
 						<TeleportTo AetheryteId="75" Name="Idyllshire"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
-						<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427"/>
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+						<RunCode Name="useAethernet"/>
 					</If>
 					<RunCode Name="MIN"/>
 					<ExFlyTo Radius="3.0" XYZ="294.029, 271.385, 341.6016"/>
@@ -922,8 +925,8 @@
 					<If Condition="not IsOnMap(399)">
 						<TeleportTo Name="Idyllshire" AetheryteId="75" />
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
-						<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+						<RunCode Name="useAethernet"/>
 					</If>
 					<RunCode Name="MIN"/>
 					<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" Radius="3.0" />
@@ -1495,8 +1498,8 @@
 					<If Condition="not IsOnMap(399)">
 						<TeleportTo Name="Idyllshire" AetheryteId="75" />
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
-						<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+						<RunCode Name="useAethernet"/>
 					</If>
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" Radius="3.0" />
@@ -2029,8 +2032,8 @@
 					<If Condition="not IsOnMap(399)">
 						<TeleportTo Name="Idyllshire" AetheryteId="75" />
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
-						<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+						<RunCode Name="useAethernet"/>
 					</If>
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" Radius="3.0" />
@@ -2578,9 +2581,9 @@
 						<ExLog Color="#FFC0CB" Name="GatherManager Ditto" Message="[MIN] YoloFarm ~ Destination ----&gt; The Maker's Quarter"/>
 						<If Condition="not IsOnMap(399)">
 							<TeleportTo AetheryteId="75" Name="Idyllshire"/>
-							<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
 							<RunCode Name="MIN"/>
-							<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427"/>
+							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+							<RunCode Name="useAethernet"/>
 							<ExFlyTo  Radius="3.0" XYZ="11.32641, 129.841, -243.8127"/>
 						</If>
 						<RunCode Name="MIN"/>
@@ -3093,9 +3096,9 @@
 						<ExLog Color="#FFC0CB" Name="GatherManager Ditto" Message="[BTN] YoloFarm ~ Destination ----&gt; The Answering Quarter"/>
 						<If Condition="not IsOnMap(399)">
 							<TeleportTo AetheryteId="75" Name="Idyllshire"/>
-							<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
 							<RunCode Name="BTN"/>
-							<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427"/>
+							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+							<RunCode Name="useAethernet"/>
 						</If>
 						<RunCode Name="BTN"/>
 						<!-- Cow Bitter -->

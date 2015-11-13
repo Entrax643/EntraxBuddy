@@ -66,14 +66,10 @@
 				<If Condition="IsTimeBetween(18,19)">
 					<If Condition="not IsOnMap(397)">
 						<TeleportTo Name="Falcon's Nest" AetheryteId="71" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
 					</If>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-						<RunCode Name="BTN"/>
-					</If>
+					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" Radius="3.0" />
 					<WaitWhile Condition ="IsTimeBetween(18,19)" />
 					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
@@ -106,13 +102,9 @@
 				<If Condition="IsTimeBetween(12,13)">
 					<If Condition="not IsOnMap(137)">
 						<TeleportTo Name="Wineport" AetheryteId="12" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
-					</If>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
 						<RunCode Name="BTN"/>
 					</If>
+					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
 					<WaitWhile Condition ="IsTimeBetween(12,13)" />
 					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
@@ -141,14 +133,10 @@
 						<ExPurify/>
 						<If Condition="not IsOnMap(397)">
 							<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<RunCode Name="BTN"/>
 							<MoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
@@ -167,16 +155,12 @@
 						<ExPurify/>
 						<If Condition="not IsOnMap(398)">
 							<TeleportTo Name="Tailfeather" AetheryteId="76" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
+							<RunCode Name="MIN"/>
 							<MoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
+						<RunCode Name="MIN"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(4,8) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
@@ -195,16 +179,12 @@
 						<ExPurify/>
 						<If Condition="not IsOnMap(398)">
 							<TeleportTo Name="Tailfeather" AetheryteId="76" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<RunCode Name="BTN"/>
 							<MoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(8,12) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;"/>
@@ -223,15 +203,11 @@
 						<ExPurify/>
 						<If Condition="not IsOnMap(400)">
 							<TeleportTo Name="Moghome" AetheryteId="78" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-								<RunCode Name="MIN"/>
-							</If>
+							<RunCode Name="MIN"/>
 							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0" />
 							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
 						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
+						<RunCode Name="MIN"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(12,16) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
@@ -250,15 +226,11 @@
 						<ExPurify/>
 						<If Condition="not IsOnMap(400)">
 							<TeleportTo Name="Moghome" AetheryteId="78" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<RunCode Name="BTN"/>
 							<ExFlyTo XYZ="180.723, 70.2466, 32.25669" Radius="3.0" />
 							<ExFlyTo XYZ="-113.2326, 1.693077, 369.2427" Radius="3.0" />
 						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(16,20) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;" />
@@ -280,15 +252,11 @@
 						<ExPurify/>
 						<If Condition="not IsOnMap(401)">
 							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-							<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-								<RunCode Name="BTN"/>
-							</If>
+							<RunCode Name="BTN"/>
 							<MoveTo XYZ="-602.2142, -122.2923, 554.533" />
 							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
 						</If>
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(20,24) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
@@ -324,9 +292,7 @@
 						<TeleportTo Name="Revenant's Toll" AetheryteId="24" />
 					</If>
 					<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11)">
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-							<RunCode Name="BTN"/>
-						</If>
+						<RunCode Name="BTN"/>
 						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -362,9 +328,7 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-							<RunCode Name="MIN"/>
-						</If>
+						<RunCode Name="MIN"/>
 						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -496,9 +460,7 @@
 				</If>
 				<If Condition="not IsOnMap(401)">
 					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
-						<RunCode Name="FSH"/>
-					</If>
+					<RunCode Name="FSH"/>
 					<MoveTo XYZ="-602.2142, -122.2923, 554.533" />
 				</If>
 				<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>

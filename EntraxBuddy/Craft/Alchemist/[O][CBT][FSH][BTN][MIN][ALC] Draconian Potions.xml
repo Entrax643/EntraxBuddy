@@ -68,6 +68,9 @@
 		<CodeChunk Name="MoveForward">
 			<![CDATA[	await Buddy.Coroutines.Coroutine.Sleep(500);	ff14bot.Managers.MovementManager.MoveForwardStart();	await Buddy.Coroutines.Coroutine.Sleep(2000);	ff14bot.Managers.MovementManager.MoveForwardStop();	await Buddy.Coroutines.Coroutine.Sleep(500);	]]>
 		</CodeChunk>
+		<CodeChunk Name="useAethernet">
+			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(2000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(2000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(2); await Buddy.Coroutines.Coroutine.Sleep(5000); ]]>
+		</CodeChunk>
 	</CodeChunks>
 	<GrindAreas>
 		<GrindArea name="Dragon">
@@ -472,15 +475,11 @@
 				<If Condition="IsTimeBetween(15,18)">
 					<If Condition="not IsOnMap(399)">
 						<TeleportTo Name="Idyllshire" AetheryteId="75" />
-						<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
-							<RunCode Name="FSH"/>
-						</If>
-						<MoveTo XYZ="63.6445, 207.29, -1.626427"/>
-						<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
-					</If>
-					<If Condition="Core.Me.CurrentJob != ClassJobType.Fisher">
 						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+						<RunCode Name="useAethernet"/>
 					</If>
+					<RunCode Name="FSH"/>
 					<ExFlyTo XYZ="-88.10485, 180.7275, -173.6805" Radius="3.0"/>
 					<Fish Condition="IsTimeBetween(15,18)" shuffleFishSpots="false" sitRate=".69" patience="Patience" snagging="true" bait="Bladed Steel Jig" mooch="5" Collect="true">
 						<FishSpots>
@@ -621,9 +620,9 @@
 			<If Condition="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message=" don't have enough Cow Bitter !"/>
 				<TeleportTo Name="Idyllshire" AetheryteId="75" Force="True"/>
-				<ExMoveTo XYZ="63.6445, 207.29, -1.626427"/>
+				<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
 				<RunCode Name="BTN"/>
-				<UseTransport InteractDistance="3.0" NpcId="1015570" XYZ="63.6445, 207.29, -1.626427" />
+				<RunCode Name="useAethernet"/>
 				<ExFlyTo XYZ="-517.9157, 141.9116, -274.003" Radius="3.0" />
 				<ExGather while="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)" GatherIncrease="Yield" DisableRotationOverride="true">
 					<GatherObjects>

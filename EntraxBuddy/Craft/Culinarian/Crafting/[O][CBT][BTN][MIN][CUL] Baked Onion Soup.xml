@@ -129,9 +129,7 @@
                     <If Condition="not IsOnMap(137)">
                         <TeleportTo Name="Wineport" AetheryteId="12" />
                     </If>
-                    <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-                        <RunCode Name="MIN"/>
-                    </If>
+					<RunCode Name="MIN"/>
                     <MoveTo XYZ="-94.77985, 44.19695, 560.4274"/>
                     <WaitWhile Condition="Core.Player.CurrentGP &lt; 500" />				
 					
@@ -163,9 +161,7 @@
                 <If Condition="not IsOnMap(398)">
                     <TeleportTo Name="Tailfeather" AetheryteId="76" />
                 </If>
-                <If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-                    <RunCode Name="BTN"/>
-                </If>			
+				<RunCode Name="BTN"/>
 					
                 <ExGather while="ItemCount(12878) &lt; ((&Baked_Qty; - ItemCount(12861)) * 3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
                     <GatherObjects>
@@ -196,9 +192,7 @@
                 <If Condition="not IsOnMap(398)">
                     <TeleportTo Name="Tailfeather" AetheryteId="76" />
                 </If>
-                <If Condition="Core.Me.CurrentJob != ClassJobType.Botanist">
-                    <RunCode Name="BTN"/>
-                </If>			
+                <RunCode Name="BTN"/>
 					
                 <ExGather while="ItemCount(8) &lt; ((&Baked_Qty;-ItemCount(12861)) * 3) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
                     <GatherObjects>
@@ -228,10 +222,7 @@
                 <ExLog Color="#FFC0CB"  Message="I don't have enough Water Crystal !"/>
                 <If Condition="not IsOnMap(401)">
                     <TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-                    <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-                        <RunCode Name="MIN"/>
-                        <WaitTimer WaitTime="1"/>                                                 
-                    </If>  
+                    <RunCode Name="MIN"/>
                     <ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" MountId="1" DismountAtDestination="false" /> 
                 </If>		
 					
@@ -278,9 +269,7 @@
                 <If Condition="not IsOnMap(140)">
                     <TeleportTo Name="Horizon" AetheryteId="17" />
                 </If>
-                <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-                    <RunCode Name="MIN"/>
-                </If>
+                <RunCode Name="MIN"/>
 				
                 <ExGather while="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12861)) * 6.2 ) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
                     <GatherObjects>
@@ -308,9 +297,7 @@
                 <If Condition="not IsOnMap(140)">
                     <TeleportTo Name="Horizon" AetheryteId="17" />
                 </If>
-                <If Condition="Core.Me.CurrentJob != ClassJobType.Miner">
-                    <RunCode Name="MIN"/>
-                </If>
+                <RunCode Name="MIN"/>
 		
                 <ExGather while="ItemCount(7) &lt; ((&Baked_Qty; - ItemCount(12861)) * 4 ) and not(ItemCount(6152) &lt; (&Baked_Qty; - ItemCount(12861)) and IsTimeBetween(17,19))">
                     <GatherObjects>
