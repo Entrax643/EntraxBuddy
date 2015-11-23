@@ -466,6 +466,8 @@
 				<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>
 				<RunCode Name="FSH"/>
 				<Fish Condition="IsTimeBetween(00,1) or IsTimeBetween(13,14)" shuffleFishSpots="true" sitRate=".69" bait="Stonefly Nymph">
+					<Keepers>
+					</Keepers>
 					<FishSpots>
 						<FishSpot XYZ="218.9494, -125.2895, 677.1995" heading="0,0.2" />
 						<FishSpot XYZ="252.9679, -125.2895, 658.6575" heading="0,1.44" />
