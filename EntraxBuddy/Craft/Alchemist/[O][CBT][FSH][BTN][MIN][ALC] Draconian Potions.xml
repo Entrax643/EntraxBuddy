@@ -67,7 +67,10 @@
 		<CodeChunk Name="InnovationCheck2">
 			<![CDATA[	SpellData data;	if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good))	{	if (Core.Player.CurrentCP > 73 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Innovation", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	else	{	if (Core.Player.CurrentCP > 69 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Observe", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	}	await Coroutine.Sleep(250);	]]></CodeChunk>
 		<CodeChunk Name="Dismount">
-			<![CDATA[	ff14bot.Managers.Actionmanager.Dismount();	]]>
+			<![CDATA[	
+			var result=true;
+			if (MovementManager.IsFlying){result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);}
+			if (result && Core.Player.IsMounted) {Actionmanager.Dismount();await Buddy.Coroutines.Coroutine.Sleep(1000);}	]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
 			<![CDATA[	ff14bot.Settings.CharacterSettings.Instance.UseMount = true;	]]>
@@ -483,21 +486,22 @@
 					<If Condition="not IsOnMap(399)">
 						<TeleportTo Name="Idyllshire" AetheryteId="75" />
 						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="12" />
 						<RunCode Name="useAethernet"/>
 					</If>
 					<RunCode Name="FSH"/>
 					<ExFlyTo XYZ="-88.10485, 180.7275, -173.6805" Radius="3.0"/>
-					<Fish Condition="IsTimeBetween(15,18)" shuffleFishSpots="false" sitRate=".69" patience="Patience" snagging="true" bait="Bladed Steel Jig" mooch="5" Collect="true">
+					<ExFlyTo XYZ="-63.41612, 54.06216, 129.8949" />
+					<RunCode Name="Dismount"/>
+					<Fish Condition="IsTimeBetween(15,18)" shuffleFishSpots="true" sitRate=".69" patience="Patience" snagging="true" bait="Bladed Steel Jig" mooch="5" Collect="true">
 						<FishSpots>
+							<FishSpot XYZ="-57.21039, 53.45807, 111.6945" heading="0,1.78" />
 							<FishSpot XYZ="-55.5114, 54.32302, 127.2057" heading="0,1.78" />
-							<FishSpot XYZ="-54.38957, 54.11845, 141.2373" heading="0,0.73" />
-							<FishSpot XYZ="-121.5448, 53.40902, 129.2466" heading="0,4.29" />
+							<FishSpot XYZ="-51.05783, 54.25337, 133.5217" heading="0,1.24" />
+							<FishSpot XYZ="-53.59542, 54.04964, 141.6731" heading="0,0.73" />
 						</FishSpots>
 					</Fish>
-					<If Condition="FreeItemSlots() &lt; 20">
-						<ExPurify/>
-					</If>
+					<ExPurify/>
 				</If>
 				<RunCode Name="EnableMount"/>
 			</If>
@@ -627,7 +631,7 @@
 			<If Condition="ItemCount(12639) &lt; (&Vitality_Qty;*2) and not((ItemCount(12901) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12972) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(20,24) or IsTimeBetween(0,4))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(18) &lt; (&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0 and IsTimeBetween(15,18)) or (IsTimeBetween(12,13) and ItemCount(19) &lt; ((&Strength_Qty; + &Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2) and &Fish; != 0)) and not(FreeItemSlots() &lt; 2)">
 				<ExLog Color="#FFC0CB" Name="Draconian Potions Espeon"  Message="I don't have enough Cow Bitter !"/>
 				<TeleportTo Name="Idyllshire" AetheryteId="75" Force="True"/>
-				<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
+				<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="12" />
 				<RunCode Name="BTN"/>
 				<RunCode Name="useAethernet"/>
 				<ExFlyTo XYZ="-517.9157, 141.9116, -274.003" Radius="3.0" />
