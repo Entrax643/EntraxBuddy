@@ -599,7 +599,6 @@
 					<CraftActionByName Name="Steady Hand" />
 					<If Condition="CraftingManager.Condition == CraftingCondition.Excellent">
 						<CraftActionByName Name="Byregot's Blessing" />
-						<CraftActionByName Name="Ingenuity II" />
 						<CraftActionByName Name="Careful Synthesis II" />
 						<CraftActionByName Name="Careful Synthesis II" />
 						<CraftActionByName Name="Careful Synthesis II" />
