@@ -96,7 +96,7 @@
 					<RunCode Name="Collector"/>
 				</If>
 				<If Condition="&Quick_Synthesis; != 0">
-					<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting Quick Synthesis like rotation"/>
+					<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting Quick Synthesis like rotation"/>
 					<Synthesize RecipeId="&ID_ITEM_RECIPE;" HQMats="-1,-1,-1,-1,-1,-1"/>
 					<CraftActionByName Name="Steady Hand" />
 					<CraftActionByName Name="Standard Synthesis" />
@@ -107,7 +107,7 @@
 				</If>
 				<If Condition="&Quick_Synthesis; == 0">
 					<If Condition="&Durability; &lt; 41 and &Recipe_level; &lt; 59">
-						<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting rotation for low durability and low level"/>
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for low durability and low level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="426" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 285" />
@@ -151,7 +151,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &lt; 41 and (&Recipe_level; == 59 or(&Recipe_level; == 60 and &Recipe_level_star; == 0))">
-						<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting rotation for low durability and high level"/>
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for low durability and high level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="408" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 285" />
@@ -195,7 +195,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &gt; 69 and &Recipe_level; &lt; 59">
-						<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting rotation for high durability and low level"/>
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for high durability and low level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="388" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
@@ -285,7 +285,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &gt; 69 and (&Recipe_level; &gt; 58 and &Recipe_level_star; == 0)">
-						<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting rotation for high durability and high level"/>
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for high durability and high level"/>
 						<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 						<!-- Optionnals : Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
@@ -379,7 +379,7 @@
 						</If>
 					</If>
 					<If Condition="&Durability; &gt; 69 and &Recipe_level; == 60 and &Recipe_level_star; == 1">
-						<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting rotation for 1 Star recipe"/>
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for 1 Star recipe"/>
 						<!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="437" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="100178, 100083, 281, 100069, 100039, 100108, 100009, 286, 285" />
@@ -442,7 +442,7 @@
 						<CraftActionByName Name="Careful Synthesis II" />
 					</If>
 					<If Condition="&Durability; &gt; 69 and &Recipe_level; == 60 and &Recipe_level_star; == 2">
-						<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Starting rotation for 2 Star recipe"/>
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for 2 Star recipe"/>
 						<!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="437" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="100178, 100083, 281, 100069, 100039, 100108, 100009, 286, 285" />
@@ -513,10 +513,10 @@
 				</If>
 			</While>
 			<If Condition="FreeItemSlots() == 1">
-				<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="Only 1 free slot left I'm going to desynthesis"/>
+				<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Only 1 free slot left I'm going to desynthesis"/>
 			</If>
 			<If Condition="FreeItemSlots() == 0">
-				<ExLog Color="#FFC0CB" Name="RecipeManager &Version;"  Message="No free slot left I'm going to stop the profile"/>
+				<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="No free slot left I'm going to stop the profile"/>
 			</If>
 			<StopCrafting/>
 			<WaitTimer WaitTime="3"/>

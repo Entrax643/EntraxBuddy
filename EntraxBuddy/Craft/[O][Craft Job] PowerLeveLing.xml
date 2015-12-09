@@ -138,52 +138,52 @@
 	<Order>
 		<!-- Ul'dah -->
 		<If Condition="&Alchemist; != 0 or &Weaver; != 0 or &Goldsmith; != 0">
-			<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Ul'dah [ON]"/>
+			<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Ul'dah [ON]"/>
 			<!-- Alchemist -->
 			<If Condition="&Alchemist; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Alchemist">
 					<RunCode Name="ALC"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Leather Grimoire -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(2143)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="322" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 					</While>
 					<If Condition="not HasHqItem(2143) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Leather Grimoire !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Leather Grimoire !"/>
 					</If>
 				</If>
 				<!--  5 : 3 x Beeswax -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(5515)">
 						<TeleportTo Name="Horizon" AetheryteId="17" />
 						<ExPickupGuildLeve leveIds="331" leveType="&Tradecraft_translate;" npcId="1003888" npcLocation="229.6263, 52.03812, 153.7908" />
 						<ExTurnInGuildLeve npcId="1003889" npcLocation="213.4249, 52.03812, 151.4519" />
 					</While>
 					<If Condition="not HasHqItem(5515) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Beeswax !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Beeswax !"/>
 					</If>
 				</If>
 				<!-- 10 : 3 x Ether -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(4555)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="334" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(4555) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Ether !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Ether !"/>
 					</If>
 				</If>
 				<!-- 15 : 3 x Potion Of Strength -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(4594)">
 						<TeleportTo Name="Camp Drybone" AetheryteId="18" />
 						<ExPickupGuildLeve leveIds="344" leveType="&Tradecraft_translate;" npcId="1001799" npcLocation="-378.164, -57.32689, 129.3365" />
@@ -191,12 +191,12 @@
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(4594) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Potion Of Strength !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Potion Of Strength !"/>
 					</If>
 				</If>
 				<!-- 20 : 3 x Enchanted Silver Ink -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(5477)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="347" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -204,12 +204,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(5477) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Enchanted Silver Ink !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Enchanted Silver Ink !"/>
 					</If>
 				</If>
 				<!-- 25 : Clear Glass Lens -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(5512)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="352" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -217,12 +217,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(5512) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Clear Glass Lens !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Clear Glass Lens !"/>
 					</If>
 				</If>
 				<!-- 30 : 3 x Hi-Potion Of Strength -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4599)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="357" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -230,12 +230,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(4599) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Hi-Potion Of Strength !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Hi-Potion Of Strength !"/>
 					</If>
 				</If>
 				<!-- 35 : Budding Oak Wand -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1971)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="363" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -243,12 +243,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(1971) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Budding Oak Wand !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Budding Oak Wand !"/>
 					</If>
 				</If>
 				<!-- 40 : 3 x Mega-Potion -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(4553)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="369" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -256,12 +256,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(4553) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Mega-Potion !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Mega-Potion !"/>
 					</If>
 				</If>
 				<!-- 45 : 3 x Potent Sleeping Potion -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Alchemist 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4587)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="375" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -269,56 +269,56 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(4587) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Potent Sleeping Potion !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Potent Sleeping Potion !"/>
 					</If>
 				</If>
 			</If>
 			<!-- Weaver -->
 			<If Condition="&Weaver; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Weaver">
 					<RunCode Name="WVR"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Hempen Chausses -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(3309)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="382" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(3309) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Hempen Chausses !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Hempen Chausses !"/>
 					</If>
 				</If>
 				<!--  5 : Amateur's Dalmatica -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(3015)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="388" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(3015) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Amateur's Dalmatica !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Amateur's Dalmatica !"/>
 					</If>
 				</If>
 				<!-- 10 : Cotton Scarf -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(2670)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="394" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(2670) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Cotton Scarf !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Cotton Scarf !"/>
 					</If>
 				</If>
 				<!-- 15 : Cotton Kurta -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(3041)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="401" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -326,12 +326,12 @@
 						<ExTurnInGuildLeve npcId="1001801" npcLocation="-394.2583, -57.32689, 128.8821" />
 					</While>
 					<If Condition="not HasHqItem(3041) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Cotton Kurta !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Cotton Kurta !"/>
 					</If>
 				</If>
 				<!-- 20 : Cotton Doublet Vest Of Gathering -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(3053)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="407" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -339,12 +339,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(3053) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Cotton Doublet Vest Of Gathering !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Cotton Doublet Vest Of Gathering !"/>
 					</If>
 				</If>
 				<!-- 25 : Velveteen Wedge Cap Of Gathering -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(2734)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="412" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -352,12 +352,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(2734) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Velveteen Wedge Cap Of Gathering !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Velveteen Wedge Cap Of Gathering !"/>
 					</If>
 				</If>
 				<!-- 30 : Linen Chausses -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(3379)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="417" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -365,12 +365,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(3379) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Linen Chausses !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Linen Chausses !"/>
 					</If>
 				</If>
 				<!-- 35 : Linen Wedge Cap Of Gathering -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(2805)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="423" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -378,12 +378,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(2805) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Linen Wedge Cap Of Gathering !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Linen Wedge Cap Of Gathering !"/>
 					</If>
 				</If>
 				<!-- 40 : Woolen Kecks -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(3421)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="429" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -391,12 +391,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(3421) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Woolen Kecks !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Woolen Kecks !"/>
 					</If>
 				</If>
 				<!-- 45 : Felt Chausses -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Weaver 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(3456)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="435" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -404,56 +404,56 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(3456) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Felt Chausses !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Felt Chausses !"/>
 					</If>
 				</If>
 			</If>
 			<!-- Goldsmith -->
 			<If Condition="&Goldsmith; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Goldsmith">
 					<RunCode Name="GSM"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Copper Wristlets -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(4091)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="442" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(4091) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Copper Wristlets !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Copper Wristlets !"/>
 					</If>
 				</If>
 				<!--  5 : Ramhorn Claws -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(1683)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="448" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
 						<ExTurnInGuildLeve npcId="1004417" npcLocation="-33.78, 9, -84.40" />
 					</While>
 					<If Condition="not HasHqItem(1683) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Ramhorn Claws !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Ramhorn Claws !"/>
 					</If>
 				</If>
 				<!-- 10 : Amateur's Needle -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(2445)">
 						<TeleportTo Name="Horizon" AetheryteId="17" />
 						<ExPickupGuildLeve leveIds="456" leveType="&Tradecraft_translate;" npcId="1001796" npcLocation="85.21222, 46, -245.8927" />
 						<ExTurnInGuildLeve npcId="1001798" npcLocation="69.22528, 46, -251.4847" />
 					</While>
 					<If Condition="not HasHqItem(2445) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Amateur's Needle !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Amateur's Needle !"/>
 					</If>
 				</If>
 				<!-- 15 : Brass Circlet (Sunstone) -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(2685)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="461" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -461,12 +461,12 @@
 						<ExTurnInGuildLeve npcId="1001801" npcLocation="-394.2583, -57.32689, 128.8821" />
 					</While>
 					<If Condition="not HasHqItem(2685) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Brass Circlet (Sunstone) !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Brass Circlet (Sunstone) !"/>
 					</If>
 				</If>
 				<!-- 20 : Wind Brand -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(2063)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="467" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -474,12 +474,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(2063) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Wind Brand !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Wind Brand !"/>
 					</If>
 				</If>
 				<!-- 25 : Fluorite Ring -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4450)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="472" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -487,12 +487,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(4450) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Fluorite Ring !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Fluorite Ring !"/>
 					</If>
 				</If>
 				<!-- 30 : Silver Circlet (Goshenite) -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(2737)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="477" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -500,12 +500,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(2737) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Silver Circlet (Goshenite) !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Silver Circlet (Goshenite) !"/>
 					</If>
 				</If>
 				<!-- 35 : Aquamarine Bracelet -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(4143)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="483" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -513,12 +513,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(4143) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Aquamarine Bracelet !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Aquamarine Bracelet !"/>
 					</If>
 				</If>
 				<!-- 40 : Red Coral Ring -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(4485)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="489" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -526,12 +526,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(4485) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Red Coral Ring !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Red Coral Ring !"/>
 					</If>
 				</If>
 				<!-- 45 : Tourmaline Choker -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Goldsmith 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4369)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="495" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -539,36 +539,36 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(4369) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Tourmaline Choker !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Tourmaline Choker !"/>
 					</If>
 				</If>
 			</If>
 		</If>
 		<!-- Gridania -->
 		<If Condition="&Leatherworker; != 0 or &Carpenter; != 0">
-			<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Gridania [ON]"/>
+			<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Gridania [ON]"/>
 			<!-- Leatherworker -->
 			<If Condition="&Leatherworker; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Leatherworker">
 					<RunCode Name="LTW"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Leather Choker -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(4304)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="85" leveType="&Tradecraft_translate;" npcId="1001866" npcLocation="120.1298, -6.784678, -97.19905" />
 						<ExTurnInGuildLeve npcId="1001868" npcLocation="142.5418, -7, -86.22319" />
 					</While>
 					<If Condition="not HasHqItem(4304) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Leather Choker !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Leather Choker !"/>
 					</If>
 				</If>
 				<!--  5 : Leather Leggings -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(3765)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="89" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -576,12 +576,12 @@
 						<ExTurnInGuildLeve npcId="1001868" npcLocation="142.5418, -7, -86.22319" />
 					</While>
 					<If Condition="not HasHqItem(3765) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Leather Leggings !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Leather Leggings !"/>
 					</If>
 				</If>
 				<!-- 10 : Hard Leather Hunting Belt -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(3967)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="98" leveType="&Tradecraft_translate;" npcId="1000105" npcLocation="54.96688, -6.000001, 40.78176" />
@@ -589,12 +589,12 @@
 						<ExTurnInGuildLeve npcId="1001276" npcLocation="12.11619, 0.1237941, 2.174994" />
 					</While>
 					<If Condition="not HasHqItem(3967) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Hard Leather Hunting Belt !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Hard Leather Hunting Belt !"/>
 					</If>
 				</If>
 				<!-- 15 : 3 x Aldgoat Leather -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(5277)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="101" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -602,24 +602,24 @@
 						<ExTurnInGuildLeve npcId="1001219" npcLocation="-206.5178, 2.559912, 307.8207" />
 					</While>
 					<If Condition="not HasHqItem(5277) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Aldgoat Leather !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Aldgoat Leather !"/>
 					</If>
 				</If>
 				<!-- 20 : Goatskin Jacket  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(3043)">
 						<TeleportTo Name="Quarrymill" AetheryteId="5" />
 						<ExPickupGuildLeve leveIds="110" leveType="&Tradecraft_translate;" npcId="1000823" npcLocation="201.5859, 9.736246, -61.5179" />
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(3043) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Goatskin Jacket !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Goatskin Jacket !"/>
 					</If>
 				</If>
 				<!-- 25 : Goatskin Wristbands -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4106)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="112" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -627,12 +627,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(4106) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Goatskin Wristbands !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Goatskin Wristbands !"/>
 					</If>
 				</If>
 				<!-- 30 : Boarskin Satchel Belt -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4022)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="117" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -640,12 +640,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(4022) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Boarskin Satchel Belt !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Boarskin Satchel Belt !"/>
 					</If>
 				</If>
 				<!-- 35 : Boarskin Ringbands -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(3616)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="123" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -653,12 +653,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(3616) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Boarskin Ringbands !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Boarskin Ringbands !"/>
 					</If>
 				</If>
 				<!-- 40 : Boarskin Culottes -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(3426)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="129" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -666,12 +666,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(3426) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Boarskin Culottes !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Boarskin Culottes !"/>
 					</If>
 				</If>
 				<!-- 45 : Raptorskin Artisan's Belt -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Leatherworker 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4051)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="135" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -679,44 +679,44 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(4051) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Raptorskin Artisan's Belt !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Raptorskin Artisan's Belt !"/>
 					</If>
 				</If>
 			</If>
 			<!-- Carpenter -->
 			<If Condition="&Carpenter; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Carpenter">
 					<RunCode Name="CRP"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Square Maple Shield -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(2219)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="25" leveType="&Tradecraft_translate;" npcId="1001866" npcLocation="120.1298, -6.784678, -97.19905" />
 						<ExTurnInGuildLeve npcId="1001868" npcLocation="142.5418, -7, -86.22319" />
 					</While>
 					<If Condition="not HasHqItem(2219) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Square Maple Shield !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Square Maple Shield !"/>
 					</If>
 				</If>
 				<!--  5 : Ash Macuahuitl -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(1604)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="31" leveType="&Tradecraft_translate;" npcId="1001866" npcLocation="120.1298, -6.784678, -97.19905" />
 						<ExTurnInGuildLeve npcId="1001868" npcLocation="142.5418, -7, -86.22319" />
 					</While>
 					<If Condition="not HasHqItem(1604) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Ash Macuahuitl !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Ash Macuahuitl !"/>
 					</If>
 				</If>
 				<!-- 10 : Square Ash Shield -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(2233)">
 						<TeleportTo Name="The Hawthorne Hut" AetheryteId="4" />
 						<ExPickupGuildLeve leveIds="38" leveType="&Tradecraft_translate;" npcId="1000821" npcLocation="-212.6509, 1.042868, 285.6935" />
@@ -724,36 +724,36 @@
 						<ExTurnInGuildLeve npcId="1001276" npcLocation="12.11619, 0.1237941, 2.174994" />
 					</While>
 					<If Condition="not HasHqItem(2233) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Square Ash Shield !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Square Ash Shield !"/>
 					</If>
 				</If>
 				<!-- 15 : Ash Mask (Lapis Lazuli) -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(2703)">
 						<TeleportTo Name="The Hawthorne Hut" AetheryteId="4" />
 						<ExPickupGuildLeve leveIds="42" leveType="&Tradecraft_translate;" npcId="1000821" npcLocation="-212.6509, 1.042868, 285.6935" />
 						<ExTurnInGuildLeve npcId="1001219" npcLocation="-206.5178, 2.559912, 307.8207" />
 					</While>
 					<If Condition="not HasHqItem(2703) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Ash Mask (Lapis Lazuli) !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Ash Mask (Lapis Lazuli) !"/>
 					</If>
 				</If>
 				<!-- 20 : 3 x Walnut Lumber  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(5371)">
 						<TeleportTo Name="Quarrymill" AetheryteId="5" />
 						<ExPickupGuildLeve leveIds="50" leveType="&Tradecraft_translate;" npcId="1000823" npcLocation="201.5859, 9.736246, -61.5179" />
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(5371) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Walnut Lumber !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Walnut Lumber !"/>
 					</If>
 				</If>
 				<!-- 25 : Silver Battle Fork -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(1836)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="52" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -761,12 +761,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(1836) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Silver Battle Fork !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Silver Battle Fork !"/>
 					</If>
 				</If>
 				<!-- 30 : Walnut Macuahuitl -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(1637)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="57" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -774,12 +774,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(1637) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Walnut Macuahuitl !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Walnut Macuahuitl !"/>
 					</If>
 				</If>
 				<!-- 35 : Yarzonshell Harpoon -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1850)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="63" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -787,12 +787,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(1850) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Yarzonshell Harpoon !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Yarzonshell Harpoon !"/>
 					</If>
 				</If>
 				<!-- 40 : Cobalt Halberd -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(1862)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="69" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -800,12 +800,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(1862) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Cobalt Halberd !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Cobalt Halberd !"/>
 					</If>
 				</If>
 				<!-- 45 : Cobalt Trident -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Carpenter 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(1867)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="75" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -813,24 +813,24 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(1867) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Cobalt Trident !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Cobalt Trident !"/>
 					</If>
 				</If>
 			</If>
 		</If>
 		<!-- Limsa -->
 		<If Condition="&Culinarian; != 0 or &Blacksmith; != 0 or &Armorer; != 0">
-			<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Limsa [ON]"/>
+			<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Limsa [ON]"/>
 			<!-- Culinarian -->
 			<If Condition="&Culinarian; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Culinarian">
 					<RunCode Name="CUL"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Grilled Trout -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(4660)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -842,12 +842,12 @@
 						<RunCode Name="CloseShopWindow"/>
 					</While>
 					<If Condition="not HasHqItem(4660) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Grilled Trout !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Grilled Trout !"/>
 					</If>
 				</If>
 				<!--  5 : Jack-o'-lantern -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(4681)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -859,12 +859,12 @@
 						<RunCode Name="CloseShopWindow"/>
 					</While>
 					<If Condition="not HasHqItem(4681) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Jack-o'-lantern !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Jack-o'-lantern !"/>
 					</If>
 				</If>
 				<!-- 10 : Grilled Carp -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(4661)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -876,12 +876,12 @@
 						<RunCode Name="CloseShopWindow"/>
 					</While>
 					<If Condition="not HasHqItem(4661) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Grilled Carp !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Grilled Carp !"/>
 					</If>
 				</If>
 				<!-- 15 : Walnut Bread -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(4697)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -891,12 +891,12 @@
 						<ExTurnInGuildLeve npcId="1001793" npcLocation="292.0781, -24.99481, 235.584" />
 					</While>
 					<If Condition="not HasHqItem(4697) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Walnut Bread !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Walnut Bread !"/>
 					</If>
 				</If>
 				<!-- 20 : Salmon Meuniere  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(4662)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -906,12 +906,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(4662) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Salmon Meuniere !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Salmon Meuniere !"/>
 					</If>
 				</If>
 				<!-- 25 : 9 x Chicken Stock -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4867)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -921,12 +921,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(4867) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Chicken Stock !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Chicken Stock !"/>
 					</If>
 				</If>
 				<!-- 30 : 5 x Dark Vinegar -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4860)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -936,12 +936,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(4860) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Dark Vinegar !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Dark Vinegar !"/>
 					</If>
 				</If>
 				<!-- 35 : Knight's Bread -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(4702)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -951,12 +951,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(4702) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Knight's Bread !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Knight's Bread !"/>
 					</If>
 				</If>
 				<!-- 40 : 5 x Rolanberry Cheese -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(4757)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -966,12 +966,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(4757) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Rolanberry Cheese !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Rolanberry Cheese !"/>
 					</If>
 				</If>
 				<!-- 45 : Crowned Pie -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Culinarian 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4713)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -981,20 +981,20 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(4713) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Crowned Pie !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Crowned Pie !"/>
 					</If>
 				</If>
 			</If>
 			<!-- Blacksmith -->
 			<If Condition="&Blacksmith; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Blacksmith">
 					<RunCode Name="BSM"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : 5 x Bronze Rivets -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(5091)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1004,12 +1004,12 @@
 						<ExTurnInGuildLeve npcId="1004343" npcLocation="547.6992, 88.92168, -50.71211" />
 					</While>
 					<If Condition="not HasHqItem(5091) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Bronze Rivets !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Bronze Rivets !"/>
 					</If>
 				</If>
 				<!--  5 : Bronze Head Knife -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(2417)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1019,12 +1019,12 @@
 						<ExTurnInGuildLeve npcId="1004343" npcLocation="547.6992, 88.92168, -50.71211" />
 					</While>
 					<If Condition="not HasHqItem(2417) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Spiked Bronze Labrys !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Spiked Bronze Labrys !"/>
 					</If>
 				</If>
 				<!-- 10 : Spiked Bronze Labrys -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(1753)">
 						<TeleportTo Name="Swiftperch" AetheryteId="13" />
 						<ExPickupGuildLeve leveIds="158" leveType="&Tradecraft_translate;" npcId="1001788" npcLocation="668.8723, 9.262033, 512.707" />
@@ -1033,12 +1033,12 @@
 						<RunCode Name="CloseShopWindow"/>
 					</While>
 					<If Condition="not HasHqItem(1753) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Spiked Bronze Labrys !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Spiked Bronze Labrys !"/>
 					</If>
 				</If>
 				<!-- 15 : Iron Rivets -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(5092)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1048,12 +1048,12 @@
 						<ExTurnInGuildLeve npcId="1001793" npcLocation="292.0781, -24.99481, 235.584" />
 					</While>
 					<If Condition="not HasHqItem(5092) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Iron Rivets !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Iron Rivets !"/>
 					</If>
 				</If>
 				<!-- 20 : Iron Sledgehammer  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(2537)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1063,12 +1063,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(2537) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Iron Sledgehammer !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Iron Sledgehammer !"/>
 					</If>
 				</If>
 				<!-- 25 : Steel Broadsword -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(1625)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1078,12 +1078,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(1625) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Steel Broadsword !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Steel Broadsword !"/>
 					</If>
 				</If>
 				<!-- 30 : Steel Falchion -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(1633)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1093,12 +1093,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(1633) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Steel Falchion !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Steel Falchion !"/>
 					</If>
 				</If>
 				<!-- 35 : Mythril Broadsword -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1643)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1108,12 +1108,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(1643) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Mythril Broadsword !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Mythril Broadsword !"/>
 					</If>
 				</If>
 				<!-- 40 : Mythril Sledgehammer -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(2542)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1123,12 +1123,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(2542) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Mythril Sledgehammer !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Mythril Sledgehammer !"/>
 					</If>
 				</If>
 				<!-- 45 : Electrum Head Knife -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Blacksmith 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(2427)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1138,32 +1138,32 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(2427) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Electrum Head Knife !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Electrum Head Knife !"/>
 					</If>
 				</If>
 			</If>
 			<!-- Armorer -->
 			<If Condition="&Armorer; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer [ON]"/>
+				<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Armorer">
 					<RunCode Name="ARM"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Bronze Hoplon -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 1-5"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(2226)">
 						<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
 						<ExPickupGuildLeve leveIds="205" leveType="&Tradecraft_translate;" npcId="1004342" npcLocation="499.7849, 79.70081, -74.5624" />
 						<ExTurnInGuildLeve npcId="1004343" npcLocation="547.6992, 88.92168, -50.71211" />
 					</While>
 					<If Condition="not HasHqItem(2226) and Core.Player.ClassLevel &lt; 5">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Bronze Hoplon !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Bronze Hoplon !"/>
 					</If>
 				</If>
 				<!--  5 : Bronze Barbut -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 5-10"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(2664)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1175,12 +1175,12 @@
 						<RunCode Name="CloseShopWindow"/>
 					</While>
 					<If Condition="not HasHqItem(2664) and Core.Player.ClassLevel &lt; 10">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Bronze Barbut !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Bronze Barbut !"/>
 					</If>
 				</If>
 				<!-- 10 : Bronze Gauntlets -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 10-15"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(3544)">
 						<TeleportTo Name="Swiftperch" AetheryteId="13" />
 						<ExPickupGuildLeve leveIds="218" leveType="&Tradecraft_translate;" npcId="1001788" npcLocation="668.8723, 9.262033, 512.707" />
@@ -1189,12 +1189,12 @@
 						<RunCode Name="CloseShopWindow"/>
 					</While>
 					<If Condition="not HasHqItem(3544) and Core.Player.ClassLevel &lt; 15">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Bronze Gauntlets !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Bronze Gauntlets !"/>
 					</If>
 				</If>
 				<!-- 15 : Initiate's Skillet -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 15-20"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(2497)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1204,12 +1204,12 @@
 						<ExTurnInGuildLeve npcId="1001793" npcLocation="292.0781, -24.99481, 235.584" />
 					</While>
 					<If Condition="not HasHqItem(2497) and Core.Player.ClassLevel &lt; 20">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Initiate's Skillet !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Initiate's Skillet !"/>
 					</If>
 				</If>
 				<!-- 20 : Iron Frypan  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 20-25"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(2498)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1219,12 +1219,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(2498) and Core.Player.ClassLevel &lt; 25">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Iron Frypan !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Iron Frypan !"/>
 					</If>
 				</If>
 				<!-- 25 : Heavy Iron Flanchard -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 25-30"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(3352)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1234,12 +1234,12 @@
 						<ExTurnInGuildLeve npcId="1001220" npcLocation="167.6966, 9.243, -45.80192" />
 					</While>
 					<If Condition="not HasHqItem(3352) and Core.Player.ClassLevel &lt; 30">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Heavy Iron Flanchard !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Heavy Iron Flanchard !"/>
 					</If>
 				</If>
 				<!-- 30 : Decorated Buckler -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 30-35"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(2260)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1249,12 +1249,12 @@
 						<ExTurnInGuildLeve npcId="1004345" npcLocation="450.1401, 17.7485, 470.3299" />
 					</While>
 					<If Condition="not HasHqItem(2260) and Core.Player.ClassLevel &lt; 35">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Decorated Buckler !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Decorated Buckler !"/>
 					</If>
 				</If>
 				<!-- 35 : Mythril Plate -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 35-40"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(5079)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1264,12 +1264,12 @@
 						<ExTurnInGuildLeve npcId="1002385" npcLocation="239.1644, 222.2132, 327.758" />
 					</While>
 					<If Condition="not HasHqItem(5079) and Core.Player.ClassLevel &lt; 40">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Mythril Plate !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Mythril Plate !"/>
 					</If>
 				</If>
 				<!-- 40 : Mythril Chain Coif -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 40-45"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(2827)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1279,12 +1279,12 @@
 						<ExTurnInGuildLeve npcId="1002402" npcLocation="-405.6902, 210.7882, -267.7335" />
 					</While>
 					<If Condition="not HasHqItem(2827) and Core.Player.ClassLevel &lt; 45">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Mythril Chain Coif !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Mythril Chain Coif !"/>
 					</If>
 				</If>
 				<!-- 45 : Hells' Kitchen -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 45-50"/>
+					<ExLog Color="#FFFF00" Name="PowerLeveLing &Version;"  Message="Armorer 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(2504)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1294,7 +1294,7 @@
 						<ExTurnInGuildLeve npcId="1004349" npcLocation="445, -4.631977, -453.22" />
 					</While>
 					<If Condition="not HasHqItem(2504) and Core.Player.ClassLevel &lt; 50">
-						<ExLog Color="#FFC0CB"  Message="Not enough HQ Raptorskin Hells' Kitchen !"/>
+						<ExLog Color="#FFFF00"  Message="Not enough HQ Raptorskin Hells' Kitchen !"/>
 					</If>
 				</If>
 			</If>
