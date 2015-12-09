@@ -344,7 +344,7 @@
 	</CodeChunks>
 	<Order>
 		<ExPurify/>
-		<While Condition="FreeItemSlots() &gt; 0">
+		<While Condition="FreeItemSlots() &gt; 1">
 			<ExPurify/>
 			<If Condition="&Use_Food; != 0">
 				<While Condition="not Core.Player.HasAura(48)">
@@ -352,7 +352,7 @@
 				</While>
 			</If>
 			<!-- 1AM-PM -->
-			<If Condition="IsTimeBetween(0,1) and (&SilkwormCocoon; != 0) and FreeItemSlots() &gt; 0">
+			<If Condition="IsTimeBetween(0,1) and (&SilkwormCocoon; != 0) and FreeItemSlots() &gt; 1">
 				<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Silkworm Cocoon"/>
 				<TeleportTo Force="True" AetheryteId="4" Name="Hawthorne Hut"/>
 				<RunCode Name="BTN"/>
@@ -372,7 +372,7 @@
 				</ExGather>
 			</If>
 			<!-- 2AM-PM -->
-			<If Condition="(IsTimeBetween(1,2) or IsTimeBetween(12,13)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(12,13))) and FreeItemSlots() &gt; 0">
+			<If Condition="(IsTimeBetween(1,2) or IsTimeBetween(12,13)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(12,13))) and FreeItemSlots() &gt; 1">
 				<!-- Darksteel Ore  -->
 				<If Condition="&DarksteelOre; != 0 and IsTimeBetween(1,2)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Darksteel Ore"/>
@@ -396,7 +396,7 @@
 				<!-- Fragrant Log  -->
 				<If Condition="&FragrantLog; != 0 and IsTimeBetween(1,2)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Fragrant Log"/>
-					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6" />
+					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-195.0522, 10.15532, -99.76889"/>
 					<WaitWhile Condition="IsTimeBetween(1,2)"/>
@@ -436,7 +436,7 @@
 				<!-- Dzemael Tomato Seeds -->
 				<If Condition="&DzemaelTomatoSeeds; != 0 and IsTimeBetween(12,13)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dzemael Tomato Seeds"/>
-					<TeleportTo Force="True" Name="Wineport" AetheryteId="12" />
+					<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
 					<WaitWhile Condition="IsTimeBetween(12,13)"/>
@@ -457,7 +457,7 @@
 				<!-- Dzemael Tomato -->
 				<If Condition="&DzemaelTomato; != 0 and IsTimeBetween(12,13)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dzemael Tomato"/>
-					<TeleportTo Force="True" Name="Wineport" AetheryteId="12" />
+					<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
 					<WaitWhile Condition="IsTimeBetween(12,13)"/>
@@ -490,13 +490,13 @@
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Old World Fig" Value="&Collectability_200;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Old World Fig" Value="&Collectability_200;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<GatherSpots>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="199.102, -28.92968, -438.256" nodeLocation="199.9407, -29.08817, -433.7411" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="186.3129, -23.5914, -485.4018" nodeLocation="193.9708, -23.64505, -479.9466" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538" />
+								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="199.102, -28.92968, -438.256" nodeLocation="199.9407, -29.08817, -433.7411"/>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="186.3129, -23.5914, -485.4018" nodeLocation="193.9708, -23.64505, -479.9466"/>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
@@ -514,9 +514,9 @@
 							</ItemNames>
 							<GatherRotation>&Rotation;</GatherRotation>
 							<GatherSpots>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="199.102, -28.92968, -438.256" nodeLocation="199.9407, -29.08817, -433.7411" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="186.3129, -23.5914, -485.4018" nodeLocation="193.9708, -23.64505, -479.9466" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538" />
+								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="199.102, -28.92968, -438.256" nodeLocation="199.9407, -29.08817, -433.7411"/>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="186.3129, -23.5914, -485.4018" nodeLocation="193.9708, -23.64505, -479.9466"/>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
@@ -542,9 +542,9 @@
 						</ItemNames>
 						<GatherRotation>regularnode</GatherRotation>
 						<GatherSpots>
-							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="199.102, -28.92968, -438.256" nodeLocation="199.9407, -29.08817, -433.7411" />
-							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="186.3129, -23.5914, -485.4018" nodeLocation="193.9708, -23.64505, -479.9466" />
-							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538" />
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="199.102, -28.92968, -438.256" nodeLocation="199.9407, -29.08817, -433.7411"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="186.3129, -23.5914, -485.4018" nodeLocation="193.9708, -23.64505, -479.9466"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="217.0563, -24.55294, -482.4783" nodeLocation="212.8449, -25.08769, -473.0538"/>
 						</GatherSpots>
 						<HotSpots>
 							<HotSpot XYZ="200.8059, 19.17759, -459.1148" Radius="50"/>
@@ -554,9 +554,9 @@
 				<!-- Cuprite or Light Kidney Ore  -->
 				<If Condition="&Cuprite; != 0 or &LightKidneyOre; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Cuprite or Light Kidney Ore"/>
-					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75" />
+					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 					<RunCode Name="MIN"/>
-					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10" />
+					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 					<RunCode Name="useAethernet"/>
 					<ExFlyTo Radius="3.0" XYZ="294.029, 271.385, 341.6016"/>
 					<ExFlyTo Radius="3.0" XYZ="512.589, 230.5479, 354.7156"/>
@@ -570,12 +570,12 @@
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Cuprite" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Cuprite" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
@@ -595,8 +595,8 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
@@ -615,12 +615,12 @@
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Light Kidney Ore" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Light Kidney Ore" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
@@ -640,8 +640,8 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
@@ -667,7 +667,7 @@
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Yellow Quartz" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Yellow Quartz" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -698,7 +698,7 @@
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Green Quartz" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Green Quartz" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -724,14 +724,14 @@
 				</If>
 			</If>
 			<!-- 5AM -->
-			<If Condition="IsTimeBetween(4,5) and (&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; !=0 or &ThanalanTopsoil3; !=0 or &EbonyLog; !=0) and FreeItemSlots() &gt; 0">
+			<If Condition="IsTimeBetween(4,5) and (&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; !=0 or &ThanalanTopsoil3; !=0 or &EbonyLog; !=0) and FreeItemSlots() &gt; 1">
 				<!-- Grade 3 Thanalan Topsoil -->
 				<If Condition="&ThanalanTopsoil3; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Grade 3 Thanalan Topsoil"/>
-					<TeleportTo Force="True" Name="Horizon" AetheryteId="17" />
+					<TeleportTo Force="True" Name="Horizon" AetheryteId="17"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-150.1802, 41.43418, 351.9217"/>
-					<WaitWhile Condition="IsTimeBetween(4,5)" />
+					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -749,10 +749,10 @@
 				<!-- Ebony Log -->
 				<If Condition="&EbonyLog; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Ebony Log"/>
-					<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52" />
+					<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="145.6238, 55.6597, 208.2412"/>
-					<WaitWhile Condition="IsTimeBetween(4,5)" />
+					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -769,10 +769,10 @@
 				<!-- Honey Lemon -->
 				<If Condition="&HoneyLemon; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Honey Lemon"/>
-					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11" />
+					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="332.0574, 27.99921, 580.2009"/>
-					<WaitWhile Condition="IsTimeBetween(4,5)" />
+					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -789,12 +789,12 @@
 				<!-- Astral Moraine -->
 				<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Astral Moraine"/>
 				<If Condition="&AstralMoraine; != 0">
-					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
+					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(4,5)" />
+					<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_AstralMoraine; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -802,11 +802,11 @@
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Astral Moraine" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Astral Moraine" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258" />
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
@@ -824,7 +824,7 @@
 							</ItemNames>
 							<GatherRotation>&Rotation_1Star;</GatherRotation>
 							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258" />
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
@@ -835,10 +835,10 @@
 				<!-- Sun Mica -->
 				<If Condition="&SunMica; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Sun Mica"/>
-					<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72" />
+					<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="713.3589, -141.6476, 739.575" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(4,5)" />
+					<ExFlyTo XYZ="713.3589, -141.6476, 739.575" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_SunMica; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -850,8 +850,8 @@
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="784.3499, -156.2978, 709.4473" nodeLocation="795.6894, -155.8098, 713.2039" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955" />
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="784.3499, -156.2978, 709.4473" nodeLocation="795.6894, -155.8098, 713.2039"/>
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
@@ -869,8 +869,8 @@
 							</ItemNames>
 							<GatherRotation>&Rotation_1Star;</GatherRotation>
 							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="784.3499, -156.2978, 709.4473" nodeLocation="795.6894, -155.8098, 713.2039" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955" />
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="784.3499, -156.2978, 709.4473" nodeLocation="795.6894, -155.8098, 713.2039"/>
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
@@ -881,10 +881,10 @@
 				<!-- Aurum Regis Ore -->
 				<If Condition="&AurumRegisOre; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Aurum Regis Ore"/>
-					<TeleportTo Force="True" Name="Zenith" AetheryteId="79" />
+					<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(4,5)" />
+					<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_AurumRegisOre; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -892,11 +892,11 @@
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Aurum Regis Ore" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Aurum Regis Ore" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139" />
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
@@ -915,7 +915,7 @@
 							</ItemNames>
 							<GatherRotation>&Rotation_1Star;</GatherRotation>
 							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139" />
+								<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139"/>
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
@@ -926,14 +926,14 @@
 				</If>
 			</If>
 			<!-- 7AM -->
-			<If Condition="IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &Spinach; != 0) and FreeItemSlots() &gt; 0">
+			<If Condition="IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &Spinach; != 0) and FreeItemSlots() &gt; 1">
 				<!-- Umbral Rock -->
 				<If Condition="&UmbralRock; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Umbral Rock"/>
-					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6" />
+					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-238.5004, 2.006799, 521.4088"/>
-					<WaitWhile Condition="IsTimeBetween(6,7)" />
+					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -950,10 +950,10 @@
 				<!-- Grade 3 Shroud Topsoil -->
 				<If Condition="&ShroudTopsoil3; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Grade 3 Shroud Topsoil"/>
-					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6" />
+					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-238.5004, 2.006799, 521.4088"/>
-					<WaitWhile Condition="IsTimeBetween(6,7)" />
+					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -971,10 +971,10 @@
 				<!-- Spinach -->
 				<If Condition="&Spinach; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Young Cieldalaes Spinach"/>
-					<TeleportTo Force="True" Name=" Moraby Drydocks" AetheryteId="10" />
+					<TeleportTo Force="True" Name=" Moraby Drydocks" AetheryteId="10"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="513.8373, 90.97717, -376.9062"/>
-					<WaitWhile Condition="IsTimeBetween(6,7)" />
+					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -991,12 +991,12 @@
 				<!-- Blue Quartz -->
 				<If Condition="&BlueQuartz; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Blue Quartz"/>
-					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75" />
+					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 					<RunCode Name="MIN"/>
-					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10" />
+					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 					<RunCode Name="useAethernet"/>
-					<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(6,7)" />
+					<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 						<GatherObjects>
 							<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1006,8 +1006,8 @@
 						</ItemNames>
 						<GatherRotation>&Rotation_1Star;</GatherRotation>
 						<GatherSpots>
-							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-558.1887, 142.4569, -315.9558" />
-							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732" />
+							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-558.1887, 142.4569, -315.9558"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732"/>
 						</GatherSpots>
 						<HotSpots>
 							<HotSpot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
@@ -1017,13 +1017,13 @@
 				<!-- Violet Quartz -->
 				<If Condition="&VioletQuartz; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Violet Quartz"/>
-					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
-					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
+					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
+					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(6,7)" />
+					<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 						<GatherObjects>
 							<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1041,15 +1041,15 @@
 				<If Condition="&RedAlumen; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Red Alumen"/>
 					<If condition="not IsOnMap(402)">
-						<TeleportTo Force="True" name="Helix" aetheryteId="74" />
+						<TeleportTo Force="True" name="Helix" aetheryteId="74"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
 					</If>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0" />
-					<ExFlyTo XYZ="182.2543, 30.27122, -228.4919" Radius="3.0" />
-					<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(6,7)" />
+					<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
+					<ExFlyTo XYZ="182.2543, 30.27122, -228.4919" Radius="3.0"/>
+					<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 						<GatherObjects>
 							<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -1070,14 +1070,14 @@
 				</If>
 			</If>
 			<!-- 9AM-PM -->
-			<If Condition="(IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or ((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0) and IsTimeBetween(8,9))) and FreeItemSlots() &gt; 0">
+			<If Condition="(IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or ((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0) and IsTimeBetween(8,9))) and FreeItemSlots() &gt; 1">
 				<!-- Spruce Log -->
 				<If Condition="&SpruceLog; != 0 and IsTimeBetween(8,9)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Spruce Log"/>
-					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23" />
+					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="354.2818, 303.052, -348.1232"/>
-					<WaitWhile Condition="IsTimeBetween(8,9)" />
+					<WaitWhile Condition="IsTimeBetween(8,9)"/>
 					<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -1094,10 +1094,10 @@
 				<!-- Prickly Pineapple Seeds -->
 				<If Condition="&PricklyPineappleSeeds; != 0 and IsTimeBetween(8,9)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Prickly Pineapple Seeds"/>
-					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11" />
+					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="443.7831, 16.39372, 252.9884"/>
-					<WaitWhile Condition="IsTimeBetween(8,9)" />
+					<WaitWhile Condition="IsTimeBetween(8,9)"/>
 					<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -1115,10 +1115,10 @@
 				<!-- Prickly Pineapple -->
 				<If Condition="&PricklyPineapple; != 0 and IsTimeBetween(8,9)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Prickly Pineapple"/>
-					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11" />
+					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="443.7831, 16.39372, 252.9884"/>
-					<WaitWhile Condition="IsTimeBetween(8,9)" />
+					<WaitWhile Condition="IsTimeBetween(8,9)"/>
 					<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -1135,10 +1135,10 @@
 				<!-- Gold ore -->
 				<If Condition="&GoldOre; != 0 and IsTimeBetween(8,9)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Gold ore"/>
-					<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18" />
+					<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="331.291, 11.89599, -11.15705"/>
-					<WaitWhile Condition="IsTimeBetween(8,9)" />
+					<WaitWhile Condition="IsTimeBetween(8,9)"/>
 					<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -1155,12 +1155,12 @@
 				<!-- Chysahl Greens -->
 				<If Condition="&Chysahl; != 0 and (&GoldOre; == 0 or IsTimeBetween(20,21))">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Chysahl Greens"/>
-					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
-					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
-					<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(8,9) or IsTimeBetween(20,21)" />
+					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
+					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
+					<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(8,9) or IsTimeBetween(20,21)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_Chysahl; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1168,7 +1168,7 @@
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Chysahl Greens" Value="&Collectability_Chysahl;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Chysahl Greens" Value="&Collectability_Chysahl;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<HotSpots>
@@ -1193,19 +1193,19 @@
 					</If>
 				</If>
 				<If Condition="&CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0">
-					<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;" />
+					<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 				</If>
 			</If>
 			<!-- 10 AM-PM -->
-			<If Condition="(IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or (&CypressLog; != 0 and IsTimeBetween(9,10))) and FreeItemSlots() &gt; 0">
+			<If Condition="(IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or (&CypressLog; != 0 and IsTimeBetween(9,10))) and FreeItemSlots() &gt; 1">
 				<!-- Pearl Sprouts Seeds -->
 				<If Condition="&PearlSproutSeeds; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Pearl Sprouts Seeds"/>
-					<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 					<ExMoveTo XYZ="451.4217, 194.0464, -209.2942"/>
-					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
+					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1225,11 +1225,11 @@
 				<!-- Coerthan Tea Seeds -->
 				<If Condition="&CoerthanTeaSeeds; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Coerthan Tea Seeds"/>
-					<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 					<ExMoveTo XYZ="451.4217, 194.0464, -209.2942"/>
-					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
+					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1249,7 +1249,7 @@
 				<!-- Cypress Log -->
 				<If Condition="&CypressLog; != 0 and IsTimeBetween(9,10)">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] CypressLog"/>
-					<TeleportTo Force="True" Name="Bentbranch Meadows" AetheryteId="3" />
+					<TeleportTo Force="True" Name="Bentbranch Meadows" AetheryteId="3"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="185.9685, -32.75785, 403.3672"/>
 					<WaitWhile Condition="IsTimeBetween(9,10)"/>
@@ -1272,14 +1272,14 @@
 				<!-- Heavens Lemon or Abalathian Mistletoe  -->
 				<If Condition="&HeavensLemon; != 0 or &AbalathianMistletoe; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Heavens Lemon or Abalathian Mistletoe"/>
-					<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73" />
-					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549" />
+					<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
+					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="-488.5303, -21.48237, -425.4246" Radius="3.0" />
-					<ExFlyTo XYZ="-467.6273, -4.80903, -366.3413" Radius="3.0" />
-					<ExFlyTo XYZ="-202.444, -16.6456, -283.0277" Radius="3.0" />
-					<ExFlyTo XYZ="501.7628, -35.17665, -166.8061" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
+					<ExFlyTo XYZ="-488.5303, -21.48237, -425.4246" Radius="3.0"/>
+					<ExFlyTo XYZ="-467.6273, -4.80903, -366.3413" Radius="3.0"/>
+					<ExFlyTo XYZ="-202.444, -16.6456, -283.0277" Radius="3.0"/>
+					<ExFlyTo XYZ="501.7628, -35.17665, -166.8061" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
 					<!-- Heavens Lemon -->
 					<If Condition="&HeavensLemon; != 0">
 						<!-- Collectable -->
@@ -1289,7 +1289,7 @@
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Heavens Lemon" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Heavens Lemon" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1326,7 +1326,7 @@
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Abalathian Mistletoe" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Abalathian Mistletoe" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1358,11 +1358,11 @@
 				<!-- Coerthan Tea Leaves or Pearl Sprouts or Chives  -->
 				<If Condition="&CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Coerthan Tea Leaves or Pearl Sprouts or Chives"/>
-					<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
-					<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
+					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
+					<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
 					<!-- Coerthan Tea Leaves -->
 					<If Condition="&CoerthanTeaLeaves; != 0">
 						<If Condition="&Collect_CoerthanTeaLeaves; != 0">
@@ -1371,7 +1371,7 @@
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Coerthan Tea Leaves" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Coerthan Tea Leaves" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
@@ -1408,7 +1408,7 @@
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Pearl Sprouts" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Pearl Sprouts" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
@@ -1445,7 +1445,7 @@
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Chives" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Chives" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
@@ -1478,10 +1478,10 @@
 				<!-- Pyrite or Chalcocite or Limonite  -->
 				<If Condition="&Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Pyrite or Chalcocite or Limonite"/>
-					<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+					<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="216.7381, 2.187376, -236.3906" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)" />
+					<ExFlyTo XYZ="216.7381, 2.187376, -236.3906" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
 					<!-- Pyrite -->
 					<If Condition="&Pyrite; != 0">
 						<If Condition="&Collect_Pyrite; != 0">
@@ -1490,7 +1490,7 @@
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Pyrite" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Pyrite" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1521,7 +1521,7 @@
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Chalcocite" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Chalcocite" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1552,7 +1552,7 @@
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Limonite" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Limonite" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1578,14 +1578,14 @@
 				</If>
 			</If>
 			<!-- 11AM-PM -->
-			<If Condition="(IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0) and FreeItemSlots() &gt; 0">
+			<If Condition="(IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0) and FreeItemSlots() &gt; 1">
 				<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Adamantite Ore"/>
-				<TeleportTo Force="True" name="Helix" aetheryteId="74" />
+				<TeleportTo Force="True" name="Helix" aetheryteId="74"/>
 				<RunCode Name="MIN"/>
 				<ExMoveTo XYZ="-716.1138, -186.9606, -584.3765"/>
-				<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0" />
-				<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" Radius="3.0" />
-				<WaitWhile Condition="IsTimeBetween(10,11) or IsTimeBetween(22,23)" />
+				<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
+				<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" Radius="3.0"/>
+				<WaitWhile Condition="IsTimeBetween(10,11) or IsTimeBetween(22,23)"/>
 				<!-- Collectable -->
 				<If Condition="&Collect_Adamantite; != 0">
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1593,7 +1593,7 @@
 							<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 						</GatherObjects>
 						<Collectables>
-							<Collectable Name="Adamantite Ore" Value="&Collectability_Adamantite;" PlusPlus="&PlusPlus;" />
+							<Collectable Name="Adamantite Ore" Value="&Collectability_Adamantite;" PlusPlus="&PlusPlus;"/>
 						</Collectables>
 						<GatherRotation>&Rotation_C;</GatherRotation>
 						<GatherSpots>
@@ -1628,16 +1628,16 @@
 				</If>
 			</If>
 			<!-- 12AM-PM -->
-			<If Condition="(IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0) and FreeItemSlots() &gt; 0">
+			<If Condition="(IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0) and FreeItemSlots() &gt; 1">
 				<!-- Cloud Banana or Morel  -->
 				<If Condition="&CloudBanana; != 0 or &Morel; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cloud Banana or Morel"/>
-					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75" />
+					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 					<RunCode Name="BTN"/>
-					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10" />
+					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 					<RunCode Name="useAethernet"/>
-					<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
+					<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
 					<!-- Cloud Banana -->
 					<If Condition="&CloudBanana; != 0">
 						<!-- Collectable -->
@@ -1647,11 +1647,11 @@
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Cloud Banana" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Cloud Banana" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
@@ -1671,7 +1671,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
@@ -1690,11 +1690,11 @@
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name=" Morel" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name=" Morel" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
@@ -1714,7 +1714,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
@@ -1728,12 +1728,12 @@
 				<!-- Abalathian Rock Salt or Red Quartz  -->
 				<If Condition="&AbalathianRockSalt; != 0 or &RedQuartz; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Abalathian Rock Salt or Red Quartz"/>
-					<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73" />
-					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549" />
+					<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
+					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
 					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608" Radius="3.0" />
-					<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
+					<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608" Radius="3.0"/>
+					<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
 					<!-- Abalathian Rock Salt -->
 					<If Condition="&AbalathianRockSalt; != 0">
 						<!-- Collectable -->
@@ -1743,7 +1743,7 @@
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Abalathian Rock Salt" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Abalathian Rock Salt" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1776,7 +1776,7 @@
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name=" Red Quartz" Value="&Collectability_450;" PlusPlus="&PlusPlus;" />
+									<Collectable Name=" Red Quartz" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<HotSpots>
@@ -1804,11 +1804,11 @@
 				<!-- Porcini or Dravanian Mistletoe  -->
 				<If Condition="&Porcini; != 0 or &DravanianMistletoe; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Porcini or Dravanian Mistletoe"/>
-					<TeleportTo Force="True" Name="Zenith" AetheryteId="79" />
+					<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="-599.4534, 67.44411, 278.351" Radius="3.0" />
-					<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)" />
+					<ExFlyTo XYZ="-599.4534, 67.44411, 278.351" Radius="3.0"/>
+					<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
 					<!-- Porcini -->
 					<If Condition="&Porcini; != 0">
 						<If Condition="&Collect_Porcini; != 0">
@@ -1817,11 +1817,11 @@
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Porcini" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Porcini" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
@@ -1839,7 +1839,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
@@ -1856,11 +1856,11 @@
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Dravanian Mistletoe" Value="&Collectability_400;" PlusPlus="&PlusPlus;" />
+									<Collectable Name="Dravanian Mistletoe" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>&Rotation_C;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
@@ -1878,7 +1878,7 @@
 								</ItemNames>
 								<GatherRotation>&Rotation;</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313" />
+									<StealthApproachGatherSpot ReturnToStealthLocation="false" stealthLocation="175.9646, 218.4832, -593.3569" nodeLocation="176.2558, 221.2827, -603.0313"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="198.0199, 257.0274, -683.1827" Radius="200"/>
@@ -1889,20 +1889,20 @@
 					</If>
 				</If>
 				<If Condition="IsTimeBetween(12,13) and &Cuprite; != 0">
-					<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;" />
+					<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 				</If>
 			</If>
 			<!-- 5PM -->
-			<If Condition="IsTimeBetween(16,17) and (&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0) and FreeItemSlots() &gt; 0">
+			<If Condition="IsTimeBetween(16,17) and (&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0) and FreeItemSlots() &gt; 1">
 				<!-- Vanilla Beans -->
 				<If Condition="&VanillaBeans; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Vanilla Beans"/>
-					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
-					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
-					<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(16,17)" />
+					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
+					<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
+					<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(16,17)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_VanillaBeans; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1910,7 +1910,7 @@
 								<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Vanilla Beans" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Vanilla Beans" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<HotSpots>
@@ -1937,11 +1937,11 @@
 				<!-- Honeydew Almonds -->
 				<If Condition="&HoneydewAlmonds; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Honeydew Almonds"/>
-					<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73" />
-					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549" />
+					<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
+					<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(16,17)" />
+					<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(16,17)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_HoneydewAlmonds; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1949,7 +1949,7 @@
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Honeydew Almonds" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Honeydew Almonds" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<GatherSpots>
@@ -1986,11 +1986,11 @@
 				<!-- Seventh Heaven -->
 				<If Condition="&SeventhHeaven; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Seventh Heaven"/>
-					<TeleportTo Force="True" Name="Zenith" AetheryteId="79" />
+					<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="-511.196, 58.26035, 352.3266" Radius="3.0" />
-					<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(16,17)" />
+					<ExFlyTo XYZ="-511.196, 58.26035, 352.3266" Radius="3.0"/>
+					<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(16,17)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_SeventhHeaven; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1998,7 +1998,7 @@
 								<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 							</GatherObjects>
 							<Collectables>
-								<Collectable Name="Seventh Heaven" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;" />
+								<Collectable Name="Seventh Heaven" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>&Rotation_C;</GatherRotation>
 							<HotSpots>
@@ -2025,10 +2025,10 @@
 				<!-- Volcanic Rock Salt -->
 				<If Condition="&VolcanicRockSalt_5; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Volcanic Rock Salt"/>
-					<TeleportTo Force="True" Name="Wineport" AetheryteId="12" />
+					<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274"/>
-					<WaitWhile Condition="IsTimeBetween(16,17)" />
+					<WaitWhile Condition="IsTimeBetween(16,17)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2045,10 +2045,10 @@
 				<!-- Thavnairian Mistletoe -->
 				<If Condition="&ThavnairianMistletoe_5; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Thavnairian Mistletoe"/>
-					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23" />
+					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357"/>
-					<WaitWhile Condition="IsTimeBetween(16,17)" />
+					<WaitWhile Condition="IsTimeBetween(16,17)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2065,10 +2065,10 @@
 				<!-- Rosemary -->
 				<If Condition="&Rosemary; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Rosemary"/>
-					<TeleportTo Force="True" Name="The Hawthorne Hut" AetheryteId="4" />
+					<TeleportTo Force="True" Name="The Hawthorne Hut" AetheryteId="4"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="48.81628, 7.451846, 433.1523"/>
-					<WaitWhile Condition="IsTimeBetween(16,17)" />
+					<WaitWhile Condition="IsTimeBetween(16,17)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -2084,15 +2084,15 @@
 				</If>
 			</If>
 			<!-- 7PM -->
-			<If Condition="(IsTimeBetween(18,19) and (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0)) and FreeItemSlots() &gt; 0">
+			<If Condition="(IsTimeBetween(18,19) and (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0)) and FreeItemSlots() &gt; 1">
 				<!-- Dravanian Paprika -->
 				<If Condition="&DravanianPaprika; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dravanian Paprika"/>
-					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71" />
+					<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 					<RunCode Name="BTN"/>
-					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0" />
-					<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
+					<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="Yield">
 						<GatherObjects>
 							<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
@@ -2113,12 +2113,12 @@
 				<!-- Wattle Bark -->
 				<If Condition="&WattleBark; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Wattle Bark"/>
-					<TeleportTo Force="True" name="Helix" aetheryteId="74" />
+					<TeleportTo Force="True" name="Helix" aetheryteId="74"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
-					<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0" />
-					<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
+					<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 						<GatherObjects>
 							<GatherObject>Legendary Mature Tree</GatherObject>
@@ -2140,12 +2140,12 @@
 				<!-- Snurbleberry -->
 				<If Condition="&Snurbleberry; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Snurbleberry"/>
-					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75" />
+					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 					<RunCode Name="BTN"/>
-					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10" />
+					<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 					<RunCode Name="useAethernet"/>
-					<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" Radius="3.0" />
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" Radius="3.0"/>
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 						<GatherObjects>
 							<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
@@ -2163,10 +2163,10 @@
 				<!-- Volcanic Rock Salt -->
 				<If Condition="&VolcanicRockSalt_7; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Volcanic Rock Salt"/>
-					<TeleportTo Force="True" Name="Wineport" AetheryteId="12" />
+					<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274"/>
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2183,10 +2183,10 @@
 				<!-- Grade 3 La Noscean Topsoil -->
 				<If Condition="&LaNosceanTopsoil3; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Grade 3 La Noscean Topsoil"/>
-					<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52" />
+					<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="176.5952, 61.53287, 263.0089"/>
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2204,10 +2204,10 @@
 				<!-- Thavnairian Mistletoe -->
 				<If Condition="&ThavnairianMistletoe_7; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Thavnairian Mistletoe"/>
-					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23" />
+					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357"/>
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2224,10 +2224,10 @@
 				<!-- Virgin Basilisk Egg -->
 				<If Condition="&VirginBasiliskEgg; != 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Virgin Basilisk Egg"/>
-					<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22" />
+					<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="75.10241, 19.24676, 136.3448"/>
-					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
 							<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -2261,7 +2261,7 @@
 				<!-- Gardenning -->
 				<If Condition="&Gardenning;!= 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="Gardenning [START]"/>
-					<TeleportTo AetheryteId="&HousingAetheryteID;" />
+					<TeleportTo AetheryteId="&HousingAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&GardenLocation;"/>
 					<Gardenner AlwaysWater="&AlwaysWater;"/>
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="Gardenning [STOP]"/>
@@ -2269,7 +2269,7 @@
 				<!-- Retainer -->
 				<If Condition="&Retainer;!= 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="Retainer [START]"/>
-					<TeleportTo AetheryteId="&HousingAetheryteID;" />
+					<TeleportTo AetheryteId="&HousingAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&BellLocation;"/>
 					<Retainer />
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="Retainer [STOP]"/>
@@ -2278,10 +2278,10 @@
 				<WaitWhile Condition="IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)"/>
 			</If>
 			<!-- Waiting / Farm -->
-			<If Condition="&WaitCondition; and FreeItemSlots() &gt; 0">
+			<If Condition="&WaitCondition; and FreeItemSlots() &gt; 1">
 				<If Condition="&YoloFarm; == 0 and &EphemeralFarm; == 0 and &TinyScripsFarm; == 0">
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="Yolo Wait [START]"/>
-					<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;" />
+					<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 					<WaitWhile Condition="&WaitCondition;"/>
 					<If Condition="&Use_Food; != 0">
 						<While Condition="not Core.Player.HasAura(48)">
@@ -2299,15 +2299,15 @@
 					</If>
 					<!-- Miner 56-60 -->
 					<!-- Red Rime -->
-					<If Condition="(ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime;) and &WaitCondition; and FreeItemSlots() &gt; 0">
-						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Red Rime" />
+					<If Condition="(ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime;) and &WaitCondition; and FreeItemSlots() &gt; 1">
+						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Red Rime"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Raw Citrine -->
-						<If Condition="ItemCount(12557) &lt; &RawCitrine; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12557) &lt; &RawCitrine; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Citrine(Red Rime) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12557) &lt; &RawCitrine; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12557) &lt; &RawCitrine; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2334,9 +2334,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Citrine(Red Rime) [STOP]"/>
 						</If>
 						<!-- Ice Crystal at Red Rime -->
-						<If Condition="ItemCount(9) &lt; &IceCrystal_RedRime; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(9) &lt; &IceCrystal_RedRime; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Red Rime) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_RedRime; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_RedRime; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2364,15 +2364,15 @@
 						</If>
 					</If>
 					<!-- Voor Sian Siran -->
-					<If Condition="(ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Voor Sian Siran"/>
 						<TeleportTo Force="True" AetheryteId="72" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo  Radius="3.0" XYZ="125.623, 19.02453, 565.1636"/>
 						<!-- Abalathian Spring Water -->
-						<If Condition="ItemCount(12632) &lt; &AbalathianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12632) &lt; &AbalathianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Abalathian Spring Water(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12632) &lt; &AbalathianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12632) &lt; &AbalathianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2406,9 +2406,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Abalathian Spring Water(Voor Sian Siran) [STOP]"/>
 						</If>
 						<!-- Aurum Regis Sand -->
-						<If Condition="ItemCount(12533) &lt; &AurumRegisSand; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12533) &lt; &AurumRegisSand; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Aurum Regis Sand(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12533) &lt; &AurumRegisSand; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12533) &lt; &AurumRegisSand; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2442,9 +2442,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Aurum Regis Sand(Voor Sian Siran) [STOP]"/>
 						</If>
 						<!-- Lightning Crystal -->
-						<If Condition="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Lightning Crystal(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2478,9 +2478,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Lightning Crystal(Voor Sian Siran) [STOP]"/>
 						</If>
 						<!-- Water Crystal -->
-						<If Condition="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Water Crystal(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2515,16 +2515,16 @@
 						</If>
 					</If>
 					<!-- Avalonia Fallen -->
-					<If Condition="(ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Avalonia Fallen"/>
 						<TeleportTo Force="True" AetheryteId="77" Name="Anyx Trine"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo Radius="3.0" XYZ="-289.3234, -3.640372, 60.82505"/>
 						<ExFlyTo Radius="3.0" XYZ="-229.1113, -21.22585, 168.7209"/>
 						<!-- Raw Carnelian -->
-						<If Condition="ItemCount(12560) &lt; &RawCarnelian; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12560) &lt; &RawCarnelian; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Carnelian(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12560) &lt; &RawCarnelian; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12560) &lt; &RawCarnelian; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2550,9 +2550,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Carnelian(Avalonia Fallen) [STOP]"/>
 						</If>
 						<!-- Raw Opal -->
-						<If Condition="ItemCount(12556) &lt; &RawOpal; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12556) &lt; &RawOpal; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Opal(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12556) &lt; &RawOpal; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12556) &lt; &RawOpal; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2578,9 +2578,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Opal(Avalonia Fallen) [STOP]"/>
 						</If>
 						<!-- Fire Crystal -->
-						<If Condition="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Fire Crystal(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2607,14 +2607,14 @@
 						</If>
 					</If>
 					<!-- Landlord Colony -->
-					<If Condition="(ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Landlord Colony"/>
 						<TeleportTo Force="True" AetheryteId="78" Name=" Moghome"/>
 						<RunCode Name="MIN"/>
 						<!-- Cloud Mica -->
-						<If Condition="ItemCount(12539) &lt; &CloudMica; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12539) &lt; &CloudMica; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Cloud Mica(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12539) &lt; &CloudMica; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12539) &lt; &CloudMica; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2636,9 +2636,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Cloud Mica(Landlord Colony) [STOP]"/>
 						</If>
 						<!-- Hardsilver Sand -->
-						<If Condition="ItemCount(12532) &lt; &HardsilverSand; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12532) &lt; &HardsilverSand; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Hardsilver Sand(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12532) &lt; &HardsilverSand; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12532) &lt; &HardsilverSand; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2660,9 +2660,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Hardsilver Sand(Landlord Colony) [STOP]"/>
 						</If>
 						<!-- Earth Crystal -->
-						<If Condition="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Earth Crystal(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2685,17 +2685,17 @@
 						</If>
 					</If>
 					<!-- The Maker's Quarter -->
-					<If Condition="(ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; The Maker's Quarter"/>
-						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75" />
+						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10" />
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 						<RunCode Name="useAethernet"/>
 						<ExFlyTo  Radius="3.0" XYZ="11.32641, 129.841, -243.8127"/>
 						<!-- Hardsilver Ore -->
-						<If Condition="ItemCount(12535) &lt; &HardsilverOre; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12535) &lt; &HardsilverOre; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12535) &lt; &HardsilverOre; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12535) &lt; &HardsilverOre; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2727,9 +2727,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [STOP]"/>
 						</If>
 						<!-- Raw Chrysolite -->
-						<If Condition="ItemCount(12558) &lt; &RawChrysolite; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12558) &lt; &RawChrysolite; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Chrysolite(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12558) &lt; &RawChrysolite; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12558) &lt; &RawChrysolite; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2760,9 +2760,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Chrysolite(The Maker's Quarter) [STOP]"/>
 						</If>
 						<!-- Wyrm Obsidian -->
-						<If Condition="ItemCount(5127) &lt; &WyrmObsidian; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(5127) &lt; &WyrmObsidian; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Wyrm Obsidian(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5127) &lt; &WyrmObsidian; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5127) &lt; &WyrmObsidian; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2793,9 +2793,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Wyrm Obsidian(The Maker's Quarter) [STOP]"/>
 						</If>
 						<!-- Wind Crystal -->
-						<If Condition="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Wind Crystal(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2828,15 +2828,15 @@
 					</If>
 					<!-- Botanist 56-60 -->
 					<!-- Twinpools(56-60) -->
-					<If Condition="(ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Twinpools(56-60)"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="BTN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Coriander -->
-						<If Condition="ItemCount(12643) &lt; &Coriander; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12643) &lt; &Coriander; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Coriander(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12643) &lt; &Coriander; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12643) &lt; &Coriander; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2862,9 +2862,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Coriander(Twinpools 56-60) [STOP]"/>
 						</If>
 						<!-- Rue -->
-						<If Condition="ItemCount(12642) &lt; &Rue; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12642) &lt; &Rue; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Rue(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12642) &lt; &Rue; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12642) &lt; &Rue; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2890,9 +2890,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Rue(Twinpools 56-60) [STOP]"/>
 						</If>
 						<!-- Ice Crystal -->
-						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Ice Crystal(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2919,14 +2919,14 @@
 						</If>
 					</If>
 					<!-- Voor Sian Siran -->
-					<If Condition="(ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Voor Sian Siran"/>
 						<TeleportTo Force="True" AetheryteId="72" Name="Camp Cloudtop"/>
 						<RunCode Name="BTN"/>
 						<!-- Birch Log -->
-						<If Condition="ItemCount(12579) &lt; &BirchLog; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12579) &lt; &BirchLog; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Birch Log(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12579) &lt; &BirchLog; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12579) &lt; &BirchLog; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2959,9 +2959,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Birch Log(Voor Sian Siran) [STOP]"/>
 						</If>
 						<!-- Birch Branch -->
-						<If Condition="ItemCount(12586) &lt; &BirchBranch; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12586) &lt; &BirchBranch; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Birch Branch(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12586) &lt; &BirchBranch; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12586) &lt; &BirchBranch; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -2993,9 +2993,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Birch Branch(Voor Sian Siran) [STOP]"/>
 						</If>
 						<!-- Birch Sap -->
-						<If Condition="ItemCount(12891) &lt; &BirchSap; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12891) &lt; &BirchSap; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Birch Sap(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12891) &lt; &BirchSap; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12891) &lt; &BirchSap; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3027,9 +3027,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Birch Sap(Voor Sian Siran) [STOP]"/>
 						</If>
 						<!-- Water Crystal -->
-						<If Condition="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Water Crystal(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3062,7 +3062,7 @@
 						</If>
 					</If>
 					<!-- Avalonia Fallen -->
-					<If Condition="(ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Avalonia Fallen"/>
 						<TeleportTo Force="True" AetheryteId="77" Name="Anyx Trine"/>
 						<RunCode Name="BTN"/>
@@ -3070,9 +3070,9 @@
 						<ExFlyTo Radius="3.0" XYZ="-216.91, -25.85352, 196.2107"/>
 						<ExFlyTo Radius="3.0" XYZ="-420.6207, -44.11576, 463.0867"/>
 						<!-- Coneflower -->
-						<If Condition="ItemCount(12638) &lt; &Coneflower; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12638) &lt; &Coneflower; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Coneflower(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12638) &lt; &Coneflower; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12638) &lt; &Coneflower; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3097,9 +3097,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Coneflower(Avalonia Fallen) [STOP]"/>
 						</If>
 						<!-- Fire Crystal -->
-						<If Condition="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Fire Crystal(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3125,16 +3125,16 @@
 						</If>
 					</If>
 					<!-- Four Arms -->
-					<If Condition="(ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Four Arms"/>
 						<TeleportTo Force="True" AetheryteId="79" Name="Zenith"/>
 						<RunCode Name="BTN"/>
 						<ExFlyTo  Radius="3.0" XYZ="-423.3196, 69.13547, 411.706"/>
 						<ExFlyTo  Radius="3.0" XYZ="-223.9079, 73.30476, 369.493"/>
 						<!-- Dandelion -->
-						<If Condition="ItemCount(12640) &lt; &Dandelion; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12640) &lt; &Dandelion; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dandelion(Four Arms) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12640) &lt; &Dandelion; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12640) &lt; &Dandelion; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3160,9 +3160,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dandelion(Four Arms) [STOP]"/>
 						</If>
 						<!-- Earth Crystal -->
-						<If Condition="ItemCount(11) &lt; &EarthCrystal_FourArms; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(11) &lt; &EarthCrystal_FourArms; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Earth Crystal(Four Arms) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_FourArms; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_FourArms; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3189,16 +3189,16 @@
 						</If>
 					</If>
 					<!-- The Answering Quarter -->
-					<If Condition="(ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; The Answering Quarter"/>
 						<TeleportTo Force="True" AetheryteId="75" Name="Idyllshire"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10" />
+						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 						<RunCode Name="useAethernet"/>
 						<!-- Cow Bitter -->
-						<If Condition="ItemCount(12639) &lt; &CowBitter; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12639) &lt; &CowBitter; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cow Bitter(The Answering Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12639) &lt; &CowBitter; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12639) &lt; &CowBitter; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3228,9 +3228,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cow Bitter(The Answering Quarter) [STOP]"/>
 						</If>
 						<!-- Gaelicatnip -->
-						<If Condition="ItemCount(12641) &lt; &Gaelicatnip; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12641) &lt; &Gaelicatnip; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Gaelicatnip(The Answering Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12641) &lt; &Gaelicatnip; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12641) &lt; &Gaelicatnip; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3260,9 +3260,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Gaelicatnip(The Answering Quarter) [STOP]"/>
 						</If>
 						<!-- Wind Crystal -->
-						<If Condition="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Wind Crystal(The Answering Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3294,16 +3294,16 @@
 					</If>
 					<!-- Miner 51-55 -->
 					<!-- Twinpools(51-55) -->
-					<If Condition="(ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Twinpools(51-55)"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
 						<!-- Mythrite Sand -->
-						<If Condition="ItemCount(12531) &lt; &MythriteSand; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12531) &lt; &MythriteSand; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Mythrite Sand(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12531) &lt; &MythriteSand; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12531) &lt; &MythriteSand; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3324,9 +3324,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Mythrite Sand(Twinpools 51-55) [STOP]"/>
 						</If>
 						<!-- Ice Crystal -->
-						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3348,16 +3348,16 @@
 						</If>
 					</If>
 					<!-- Gorgane Holding -->
-					<If Condition="(ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Gorgane Holding"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
 						<!-- Mythrite Ore -->
-						<If Condition="ItemCount(12534) &lt; &MythriteOre; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12534) &lt; &MythriteOre; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12534) &lt; &MythriteOre; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12534) &lt; &MythriteOre; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3379,9 +3379,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [STOP]"/>
 						</If>
 						<!-- Raw Larimar -->
-						<If Condition="ItemCount(12551) &lt; &RawLarimar; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12551) &lt; &RawLarimar; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Larimar(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12551) &lt; &RawLarimar; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12551) &lt; &RawLarimar; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3402,9 +3402,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Larimar(Gorgane Holding) [STOP]"/>
 						</If>
 						<!-- Raw Mormorion -->
-						<If Condition="ItemCount(12559) &lt; &RawMormorion; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12559) &lt; &RawMormorion; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Mormorion(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12559) &lt; &RawMormorion; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12559) &lt; &RawMormorion; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3425,9 +3425,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Mormorion(Gorgane Holding) [STOP]"/>
 						</If>
 						<!-- Ice Crystal -->
-						<If Condition="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3449,16 +3449,16 @@
 						</If>
 					</If>
 					<!-- The Smoldering Wastes -->
-					<If Condition="(ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; The Smoldering Wastes"/>
-						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-						<ExFlyTo XYZ="315.1864, 26.05593, 219.03" Radius="3.0" />
+						<ExFlyTo XYZ="315.1864, 26.05593, 219.03" Radius="3.0"/>
 						<!-- Raw Agate -->
-						<If Condition="ItemCount(12553) &lt; &RawAgate; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12553) &lt; &RawAgate; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Agate(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12553) &lt; &RawAgate; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12553) &lt; &RawAgate; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3479,9 +3479,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Agate(The Smoldering Wastes) [STOP]"/>
 						</If>
 						<!-- Raw Tiger's Eye -->
-						<If Condition="ItemCount(12552) &lt; &RawTigersEye; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12552) &lt; &RawTigersEye; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Tiger's Eye(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12552) &lt; &RawTigersEye; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12552) &lt; &RawTigersEye; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3502,9 +3502,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Tiger's Eye(The Smoldering Wastes) [STOP]"/>
 						</If>
 						<!-- Dravanian Spring Water -->
-						<If Condition="ItemCount(12631) &lt; &DravanianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12631) &lt; &DravanianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Dravanian Spring Water(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12631) &lt; &DravanianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12631) &lt; &DravanianSpringWater; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3525,9 +3525,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Dravanian Spring Water(The Smoldering Wastes) [STOP]"/>
 						</If>
 						<!-- Fire Crystal -->
-						<If Condition="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Fire Crystal(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3549,16 +3549,16 @@
 						</If>
 					</If>
 					<!-- Chocobo Forest -->
-					<If Condition="(ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Chocobo Forest"/>
-						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-						<ExFlyTo XYZ="446.2568, 2.897244, -342.4665" Radius="3.0" />
+						<ExFlyTo XYZ="446.2568, 2.897244, -342.4665" Radius="3.0"/>
 						<!-- Raw Star Ruby -->
-						<If Condition="ItemCount(12554) &lt; &RawStarRuby; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12554) &lt; &RawStarRuby; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Star Ruby(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12554) &lt; &RawStarRuby; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12554) &lt; &RawStarRuby; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3582,9 +3582,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Star Ruby(Chocobo Forest) [STOP]"/>
 						</If>
 						<!-- Raw Star Sapphire -->
-						<If Condition="ItemCount(12555) &lt; &RawStarSapphire; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12555) &lt; &RawStarSapphire; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Star Sapphire(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12555) &lt; &RawStarSapphire; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12555) &lt; &RawStarSapphire; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3608,9 +3608,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Raw Star Sapphire(Chocobo Forest) [STOP]"/>
 						</If>
 						<!-- Titanium Ore -->
-						<If Condition="ItemCount(12537) &lt; &TitaniumOre; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12537) &lt; &TitaniumOre; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12537) &lt; &TitaniumOre; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12537) &lt; &TitaniumOre; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3635,9 +3635,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [STOP]"/>
 						</If>
 						<!-- Fire Crystal -->
-						<If Condition="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Fire Crystal(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3663,16 +3663,16 @@
 					</If>
 					<!-- Botanist 51-55 -->
 					<!-- Twinpools(51-55) -->
-					<If Condition="(ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Twinpools(51-55)"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="BTN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0" />
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
 						<!-- Rainbow Cotton Boll -->
-						<If Condition="ItemCount(12597) &lt; &RainbowCottonBoll; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12597) &lt; &RainbowCottonBoll; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Rainbow Cotton Boll(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12597) &lt; &RainbowCottonBoll; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12597) &lt; &RainbowCottonBoll; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3693,9 +3693,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Rainbow Cotton Boll(Twinpools 51-55) [STOP]"/>
 						</If>
 						<!-- Sprig Of Mist Dill -->
-						<If Condition="ItemCount(12883) &lt; &SprigOfMistDill; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12883) &lt; &SprigOfMistDill; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Sprig Of Mist Dill(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12883) &lt; &SprigOfMistDill; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12883) &lt; &SprigOfMistDill; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3716,9 +3716,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Sprig Of Mist Dill(Twinpools 51-55) [STOP]"/>
 						</If>
 						<!-- Ice Crystal -->
-						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Ice Crystal(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3740,15 +3740,15 @@
 						</If>
 					</If>
 					<!-- The Smoldering Wastes -->
-					<If Condition="(ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; The Smoldering Wastes"/>
-						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 						<!-- Dark Chestnut Log -->
-						<If Condition="ItemCount(12578) &lt; &DarkChestnutLog; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12578) &lt; &DarkChestnutLog; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut Log(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12578) &lt; &DarkChestnutLog; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12578) &lt; &DarkChestnutLog; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3769,9 +3769,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut Log(The Smoldering Wastes) [STOP]"/>
 						</If>
 						<!-- Dark Chestnut Branch -->
-						<If Condition="ItemCount(12585) &lt; &DarkChestnutBranch; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12585) &lt; &DarkChestnutBranch; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut Branch(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12585) &lt; &DarkChestnutBranch; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12585) &lt; &DarkChestnutBranch; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3792,9 +3792,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut Branch(The Smoldering Wastes) [STOP]"/>
 						</If>
 						<!-- Dark Chestnut -->
-						<If Condition="ItemCount(12893) &lt; &DarkChestnut; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12893) &lt; &DarkChestnut; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12893) &lt; &DarkChestnut; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12893) &lt; &DarkChestnut; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3816,9 +3816,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut(The Smoldering Wastes) [STOP]"/>
 						</If>
 						<!-- Fire Crystal -->
-						<If Condition="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Fire Crystal(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3840,15 +3840,15 @@
 						</If>
 					</If>
 					<!-- Chocobo Forest -->
-					<If Condition="(ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Chocobo Forest"/>
-						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 						<!-- Cyclops Onion -->
-						<If Condition="ItemCount(12878) &lt; &CyclopsOnion; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12878) &lt; &CyclopsOnion; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cyclops Onion(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12878) &lt; &CyclopsOnion; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12878) &lt; &CyclopsOnion; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3870,9 +3870,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cyclops Onion(Chocobo Forest) [STOP]"/>
 						</If>
 						<!-- Highland Wheat -->
-						<If Condition="ItemCount(12880) &lt; &HighlandWheat; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12880) &lt; &HighlandWheat; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Highland Wheat(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12880) &lt; &HighlandWheat; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12880) &lt; &HighlandWheat; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3893,9 +3893,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Highland Wheat(Chocobo Forest) [STOP]"/>
 						</If>
 						<!-- Stalk Of Ramie -->
-						<If Condition="ItemCount(12598) &lt; &StalkOfRamie; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12598) &lt; &StalkOfRamie; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Stalk Of Ramie(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12598) &lt; &StalkOfRamie; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12598) &lt; &StalkOfRamie; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3916,9 +3916,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Stalk Of Ramie(Chocobo Forest) [STOP]"/>
 						</If>
 						<!-- Fire Crystal -->
-						<If Condition="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Fire Crystal(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3940,14 +3940,14 @@
 						</If>
 					</If>
 					<!-- Landlord Colony -->
-					<If Condition="(ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Landlord Colony"/>
-						<TeleportTo Force="True" Name="Moghome" AetheryteId="78" />
+						<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 						<RunCode Name="BTN"/>
 						<!-- Magma Beet -->
-						<If Condition="ItemCount(12885) &lt; &MagmaBeet; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12885) &lt; &MagmaBeet; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Magma Beet(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12885) &lt; &MagmaBeet; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12885) &lt; &MagmaBeet; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3968,9 +3968,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Magma Beet(Landlord Colony) [STOP]"/>
 						</If>
 						<!-- Emerald Beans -->
-						<If Condition="ItemCount(12879) &lt; &EmeraldBeans; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(12879) &lt; &EmeraldBeans; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Emerald Beans(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12879) &lt; &EmeraldBeans; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12879) &lt; &EmeraldBeans; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -3992,9 +3992,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Emerald Beans(Landlord Colony) [STOP]"/>
 						</If>
 						<!-- Earth Crystal -->
-						<If Condition="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Earth Crystal(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4017,15 +4017,15 @@
 					</If>
 					<!-- Miner 50-51 -->
 					<!-- Riversmeet -->
-					<If Condition="(ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] YoloFarm ~ Destination ----&gt; Riversmeet"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Dragon Obsidian -->
-						<If Condition="ItemCount(5126) &lt; &DragonObsidian; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(5126) &lt; &DragonObsidian; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Dragon Obsidian(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5126) &lt; &DragonObsidian; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5126) &lt; &DragonObsidian; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4049,9 +4049,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Dragon Obsidian(Riversmeet) [STOP]"/>
 						</If>
 						<!-- Ice Crystal -->
-						<If Condition="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4077,15 +4077,15 @@
 					</If>
 					<!-- Botanist 50-51 -->
 					<!-- Riversmeet -->
-					<If Condition="(ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 0">
+					<If Condition="(ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN;) and &WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Riversmeet"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="BTN"/>
 						<ExFlyTo  Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Cedar Log -->
-						<If Condition="ItemCount(5384) &lt; &CedarLog; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(5384) &lt; &CedarLog; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cedar Log(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5384) &lt; &CedarLog; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5384) &lt; &CedarLog; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4109,9 +4109,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cedar Log(Riversmeet) [STOP]"/>
 						</If>
 						<!-- Cedar Branch -->
-						<If Condition="ItemCount(5403) &lt; &CedarBranch; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(5403) &lt; &CedarBranch; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cedar Branch(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5403) &lt; &CedarBranch; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5403) &lt; &CedarBranch; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4135,9 +4135,9 @@
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Cedar Branch(Riversmeet) [STOP]"/>
 						</If>
 						<!-- Ice Crystal -->
-						<If Condition="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+						<If Condition="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] Ice Crystal(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and &WaitCondition; and FreeItemSlots() &gt; 0">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_YoloFarm;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and &WaitCondition; and FreeItemSlots() &gt; 1">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4164,7 +4164,7 @@
 					<!-- Waiting -->
 					<If Condition="not(ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN;) and &EphemeralFarm; == 0">
 						<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="YoloFarm [DONE]"/>
-						<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;" />
+						<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 						<WaitWhile Condition="&WaitCondition;"/>
 					</If>
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="YoloFarm [STOP]"/>
@@ -4181,23 +4181,23 @@
 							<RunCode Name="FOOD"/>
 						</While>
 					</If>
-					<While Condition="&WaitCondition; and FreeItemSlots() &gt; 0">
+					<While Condition="&WaitCondition; and FreeItemSlots() &gt; 1">
 						<ExPurify/>
-						<While Condition="IsTimeBetween(0,4) and FreeItemSlots() &gt; 0 and &WaitCondition;">
-							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [0:4] ~ Destination ----&gt; Twinpools" />
-							<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71" />
+						<While Condition="IsTimeBetween(0,4) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [0:4] ~ Destination ----&gt; Twinpools"/>
+							<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 							<RunCode Name="BTN"/>
 							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 							<If Condition="&EphemeralFarm_Furrymint; != 0">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(0,4) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(0,4) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Farm_Sand_Collect_Rate;"/>
-										<GatherItem Name="Furymint" />
+										<GatherItem Name="Furymint"/>
 										<Collectable Name="Highland Oregano" Value="&Farm_Sand_Collect_Rate;"/>
 									</Items>
 									<GatherSpots>
-										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-584.357, 118.5735, -410.6856" nodeLocation="-585.8388, 119.6912, -407.5294" />
-										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114" />
+										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-584.357, 118.5735, -410.6856" nodeLocation="-585.8388, 119.6912, -407.5294"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114"/>
 									</GatherSpots>
 									<HotSpots>
 										<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
@@ -4207,15 +4207,15 @@
 								</ExGather>
 							</If>
 							<If Condition="&EphemeralFarm_Furrymint; == 0">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(0,4) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(0,4) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Farm_Sand_Collect_Rate;"/>
 										<Collectable Name="Furymint" Value="&Farm_Sand_Collect_Rate;"/>
 										<Collectable Name="Highland Oregano" Value="&Farm_Sand_Collect_Rate;"/>
 									</Items>
 									<GatherSpots>
-										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-584.357, 118.5735, -410.6856" nodeLocation="-585.8388, 119.6912, -407.5294" />
-										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114" />
+										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-584.357, 118.5735, -410.6856" nodeLocation="-585.8388, 119.6912, -407.5294"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114"/>
 									</GatherSpots>
 									<HotSpots>
 										<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
@@ -4225,14 +4225,14 @@
 								</ExGather>
 							</If>
 						</While>
-						<While Condition="IsTimeBetween(4,8) and FreeItemSlots() &gt; 0 and &WaitCondition;">
-							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [4:8] ~ Destination ----&gt; Avalonia Fallen" />
-							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+						<While Condition="IsTimeBetween(4,8) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [4:8] ~ Destination ----&gt; Avalonia Fallen"/>
+							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 							<RunCode Name="MIN"/>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
-							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(4,8) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0"/>
+							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0"/>
+							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(4,8) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Radiant Fire Moraine" Value="&Farm_Sand_Collect_Rate;"/>
 									<Collectable Name="Bright Fire Rock" Value="&Farm_Sand_Collect_Rate;"/>
@@ -4245,14 +4245,14 @@
 								</HotSpots>
 							</ExGather>
 						</While>
-						<While Condition="IsTimeBetween(8,12) and FreeItemSlots() &gt; 0 and &WaitCondition;">
-							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [8:12] ~ Destination ----&gt; Avalonia Fallen" />
-							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76" />
+						<While Condition="IsTimeBetween(8,12) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
+							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 							<RunCode Name="BTN"/>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0" />
-							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(8,12) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0"/>
+							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0"/>
+							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(8,12) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Black Soil" Value="&Farm_Sand_Collect_Rate;"/>
 									<Collectable Name="Peat Moss" Value="&Farm_Sand_Collect_Rate;"/>
@@ -4265,13 +4265,13 @@
 								</HotSpots>
 							</ExGather>
 						</While>
-						<While Condition="IsTimeBetween(12,16) and FreeItemSlots() &gt; 0 and &WaitCondition;">
-							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [12:16] ~ Destination ----&gt; Landlord Colony" />
-							<TeleportTo Force="True" Name="Moghome" AetheryteId="78" />
+						<While Condition="IsTimeBetween(12,16) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [12:16] ~ Destination ----&gt; Landlord Colony"/>
+							<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 							<RunCode Name="MIN"/>
-							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0" />
-							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(12,16) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0"/>
+							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0"/>
+							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(12,16) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Radiant Fire Moraine" Value="&Farm_Sand_Collect_Rate;"/>
 									<Collectable Name="Bright Fire Rock" Value="&Farm_Sand_Collect_Rate;"/>
@@ -4284,23 +4284,23 @@
 								</HotSpots>
 							</ExGather>
 						</While>
-						<While Condition="IsTimeBetween(16,20) and FreeItemSlots() &gt; 0 and &WaitCondition;">
-							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [16:20] ~ Destination ----&gt; Voor Sian Siran" />
-							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72" />
+						<While Condition="IsTimeBetween(16,20) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [16:20] ~ Destination ----&gt; Voor Sian Siran"/>
+							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 							<RunCode Name="MIN"/>
 							<ExMoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
-							<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" />
-							<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0" />
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(16,20) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+							<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0"/>
+							<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0"/>
+							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(16,20) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 								<Items>
 									<Collectable Name="Radiant Lightning Moraine" Value="&Farm_Sand_Collect_Rate;"/>
 									<Collectable Name="Bright Lightning Rock" Value="&Farm_Sand_Collect_Rate;"/>
 									<Collectable Name="Lightning Moraine" Value="&Farm_Sand_Collect_Rate;"/>
 								</Items>
 								<GatherSpots>
-									<IndirectApproachGatherSpot ApproachLocation="524.8009, -111.2728, 433.7963" NodeLocation="529.0662, -110.3256, 434.3149" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905" />
+									<IndirectApproachGatherSpot ApproachLocation="524.8009, -111.2728, 433.7963" NodeLocation="529.0662, -110.3256, 434.3149"/>
+									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707"/>
+									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905"/>
 								</GatherSpots>
 								<HotSpots>
 									<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
@@ -4309,17 +4309,17 @@
 								</HotSpots>
 							</ExGather>
 						</While>
-						<While Condition="IsTimeBetween(20,24) and FreeItemSlots() &gt; 0 and &WaitCondition;">
-							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [16:20] ~ Destination ----&gt; Voor Sian Siran" />
-							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72" />
+						<While Condition="IsTimeBetween(20,24) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [16:20] ~ Destination ----&gt; Voor Sian Siran"/>
+							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 							<RunCode Name="BTN"/>
-							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" />
-							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
+							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533"/>
+							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0"/>
 							<If Condition="&EphemeralFarm_Furrymint; != 0">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(20,24) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(20,24) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Farm_Sand_Collect_Rate;"/>
-										<GatherItem Name="Furymint" />
+										<GatherItem Name="Furymint"/>
 										<Collectable Name="Highland Oregano" Value="&Farm_Sand_Collect_Rate;"/>
 									</Items>
 									<HotSpots>
@@ -4330,7 +4330,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&EphemeralFarm_Furrymint; == 0">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(20,24) and FreeItemSlots() &gt; 0 and &WaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(20,24) and FreeItemSlots() &gt; 1 and &WaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Farm_Sand_Collect_Rate;"/>
 										<Collectable Name="Furymint" Value="&Farm_Sand_Collect_Rate;"/>
@@ -4349,20 +4349,23 @@
 					<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="EphemeralFarm [STOP]"/>
 				</If>
 			</If>
-			<If Condition="FreeItemSlots() &lt; 1 and &TurnInAfterLoop; != 0">
-				<TurnInCollectables location="Idyllshire" forcePurchase="false" >
-					<ShopPurchases>
-						<ShopPurchase shopItem="RedGatherToken" maxCount="&RedGatherToken_Count;"/>
-						<ShopPurchase shopItem="BlueToken" maxCount="&BlueToken_Count;"/>
-						<ShopPurchase shopItem="HiCordial" maxCount="&HiCordial_Count;"/>
-						<ShopPurchase shopItem="BruteLeech" maxCount="&BruteLeech_Count;"/>
-						<ShopPurchase shopItem="CraneFly" maxCount="&CraneFly_Count;"/>
-					</ShopPurchases>
-				</TurnInCollectables>
+			<If Condition="FreeItemSlots() &lt; 2">
+				<ExPurify/>
+				<If Condition="&TurnInAfterLoop; != 0">
+					<TurnInCollectables location="Idyllshire" forcePurchase="false" >
+						<ShopPurchases>
+							<ShopPurchase shopItem="RedGatherToken" maxCount="&RedGatherToken_Count;"/>
+							<ShopPurchase shopItem="BlueToken" maxCount="&BlueToken_Count;"/>
+							<ShopPurchase shopItem="HiCordial" maxCount="&HiCordial_Count;"/>
+							<ShopPurchase shopItem="BruteLeech" maxCount="&BruteLeech_Count;"/>
+							<ShopPurchase shopItem="CraneFly" maxCount="&CraneFly_Count;"/>
+						</ShopPurchases>
+					</TurnInCollectables>
+				</If>
 			</If>
 		</While>
 		<If Condition="FreeItemSlots() &lt; 1">
-			<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;" />
+			<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 			<ExLog Color="#FFC0CB" Name="GatherManager &Version;" Message="No Free slot left, stopping the profile ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 		</If>
 	</Order>
