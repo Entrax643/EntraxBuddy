@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Profile [<!-- Profile Settings -->
+<!-- Where do you want to port while witing / crafting-->
+<!ENTITY Waiting_AetheryteId "8">
 <!ENTITY Baked_Qty "99">
 <!ENTITY Gather_Salt "1">
 <!-- Craft ? -->
@@ -17,9 +19,11 @@
 <!ENTITY Reclaim "0">
 <!-- (Reclaim set to 1 REQUIRED !) How many stacks at least to NOT use Reclaim -->
 <!ENTITY IQ_Stack "7">
-<!-- Where do you want to port while witing / crafting-->
-<!ENTITY Waiting_AetheryteId "8">]><Profile>
-	<Name>[O][CBT][FISH][BTN][MIN][CUL] Baked Pipira Pira - RB</Name>
+<!--   -->
+<!-- DO NOT TOUCH THIS -->
+<!ENTITY Version "Kabuto">
+<!ENTITY WaitCondition "not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">]><Profile>
+	<Name>Baked Pipira Pira</Name>
 	<KillRadius>50</KillRadius>
 	<BehaviorDirectory>CustomTags</BehaviorDirectory>
 	<CodeChunks>
@@ -39,15 +43,20 @@
 			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 23");	]]>
 		</CodeChunk>
 		<CodeChunk name="BBCheck">
-			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Excellent) { if(Actionmanager.CurrentActions.TryGetValue("Byregot's Blessing", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Byregot's Blessing", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } await Coroutine.Sleep(250);         ]]></CodeChunk>
+			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Excellent) { if(Actionmanager.CurrentActions.TryGetValue("Byregot's Blessing", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Byregot's Blessing", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } await Coroutine.Sleep(250);         ]]>
+		</CodeChunk>
 		<CodeChunk Name="ToT">
-			<![CDATA[	SpellData data;		if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) &&	Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Tricks of the Trade", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	]]></CodeChunk>
+			<![CDATA[	SpellData data;		if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) &&	Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Tricks of the Trade", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
 		<CodeChunk Name="TrickTouch">
-			<![CDATA[	SpellData data;		if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) &&	Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Precise Touch", null);	} 	else 	{	Actionmanager.DoAction("Basic Touch", null);	}	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]></CodeChunk>
+			<![CDATA[	SpellData data;		if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) &&	Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Precise Touch", null);	} 	else 	{	Actionmanager.DoAction("Basic Touch", null);	}	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
 		<CodeChunk Name="TrickTouch2">
-			<![CDATA[	SpellData data;	if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 95)  {  Actionmanager.DoAction("Precise Touch", null);	} else { if(Core.Player.CurrentCP > 95){ Actionmanager.DoAction("Basic Touch", null); } else { Actionmanager.DoAction("Hasty Touch", null); } }	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]></CodeChunk>
+			<![CDATA[	SpellData data;	if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 95)  {  Actionmanager.DoAction("Precise Touch", null);	} else { if(Core.Player.CurrentCP > 95){ Actionmanager.DoAction("Basic Touch", null); } else { Actionmanager.DoAction("Hasty Touch", null); } }	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
 		<CodeChunk Name="InnovationCheck">
-			<![CDATA[	SpellData data;	if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good))	{	if (Core.Player.CurrentCP > 41 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Innovation", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	else	{	if (Core.Player.CurrentCP > 37 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Observe", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	}	await Coroutine.Sleep(250);	]]></CodeChunk>
+			<![CDATA[	SpellData data;	if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good))	{	if (Core.Player.CurrentCP > 41 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Innovation", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	else	{	if (Core.Player.CurrentCP > 37 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Observe", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	}	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
 		<CodeChunk Name="DisableMount">
 			<![CDATA[	ff14bot.Settings.CharacterSettings.Instance.UseMount = false;	]]>
 		</CodeChunk>
@@ -81,9 +90,9 @@
 			<RunCode Name="EnableMount"/>
 			<!-- Porcini / Abalathian Rock Salt -->
 			<If Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2)">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Porcini !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Porcini !"/>
 				<If Condition="not(IsTimeBetween(11,12) or IsTimeBetween(23,24))">
-					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I can't gather it because it's not between 11-12 AM-PM !"/>
+					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I can't gather it because it's not between 11-12 AM-PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)">
 					<If Condition="ItemCount(12899) &lt; (&Baked_Qty; * 2) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;))">
@@ -167,20 +176,20 @@
 				</If>
 			</If>
 			<If Condition="not(ItemCount(12899) &lt; (&Baked_Qty; * 2))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Porcini !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Porcini !"/>
 			</If>
 			<!-- Pipira Pira -->
 			<If Condition="ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(1,12) or IsTimeBetween(13,24))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Pipira Pira !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Pipira Pira !"/>
 				<If Condition="not(SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11))">
-					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="But I can't fish them now, the weather isn't good, sadly"/>
+					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="But I can't fish them now, the weather isn't good, sadly"/>
 				</If>
 				<If Condition="SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)">
 					<If Condition="not IsOnMap(398)">
 						<TeleportTo Name="Tailfeather" AetheryteId="76" />
 					</If>
 					<If Condition="not HasAtLeast(12706,1)">
-						<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
+						<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
 					</If>
 					<RunCode Name="FSH"/>
 					<Fish Condition="ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (IsTimeBetween(1,12) or IsTimeBetween(13,24)) and not(ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) and not(&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24)))" minFish="15" maxFish="25" shuffleFishSpots="true" sitRate=".69" Bait="Goblin Jig">
@@ -199,14 +208,14 @@
 				<RunCode Name="EnableMount"/>
 			</If>
 			<If Condition="not(ItemCount(12741) &lt; &Baked_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Pipira Pira !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Pipira Pira !"/>
 			</If>
 			<!-- Fish Resetting -->
 			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(12,13)) and ItemCount(12741) &lt; &Baked_Qty;">
 				<If Condition="IsTimeBetween(00,1)">
-					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="12 AM I'm going to reset Fish !"/>
+					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="12 AM I'm going to reset Fish !"/>
 					<If Condition="not HasAtLeast(12704,20)">
-						<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="Not enough bait available, I'm going to buy you some !"/>
+						<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
 						<If Condition="not IsOnMap(401)">
 							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 						</If>
@@ -221,8 +230,7 @@
 					<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>
 					<RunCode Name="FSH"/>
 					<Fish Condition="IsTimeBetween(00,1)" shuffleFishSpots="true" sitRate=".69" bait="Stonefly Nymph">
-						<Keepers>
-						</Keepers>
+						<Keepers/>
 						<FishSpots>
 							<FishSpot XYZ="218.9494, -125.2895, 677.1995" heading="0,0.2" />
 							<FishSpot XYZ="252.9679, -125.2895, 658.6575" heading="0,1.44" />
@@ -232,9 +240,9 @@
 					</Fish>
 				</If>
 				<If Condition="IsTimeBetween(12,13)">
-					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="12 PM I'm going to reset Fish !"/>
+					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="12 PM I'm going to reset Fish !"/>
 					<If Condition="not HasAtLeast(12706,1)">
-						<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
+						<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="Bait is missing ! I'm sorry to tell you that a fish stole your bait while you were afk !"/>
 					</If>
 					<TeleportTo Name="Zenith" AetheryteId="79" Force="True" />
 					<RunCode Name="FSH"/>
@@ -251,8 +259,8 @@
 				<RunCode Name="EnableMount"/>
 			</If>
 			<!-- Yak Milk -->
-			<If Condition="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Yak Milk !"/>
+			<If Condition="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and &WaitCondition;">
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Yak Milk !"/>
 				<If Condition="not IsOnMap(397)">
 					<TeleportTo Name="Falcons Nest" AetheryteId="71" />
 					<RunCode Name="CBT"/>
@@ -263,20 +271,20 @@
 				<ExFlyTo XYZ="179.4339, 193.361, 141.8383" Radius="3.0" />
 				<ExFlyTo XYZ="-80.01687, 161.0899, -193.8369" Radius="3.0" />
 				<ExFlyTo XYZ="-166.3909, 121.2483, -265.0909" Radius="3.0" />
-				<Grind grindRef="Yak Milk" while="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))" />
+				<Grind grindRef="Yak Milk" while="ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) and &WaitCondition;" />
 			</If>
 			<If Condition="not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Yak Milk !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Yak Milk !"/>
 			</If>
 			<!-- Water Crystal -->
-			<If Condition="ItemCount(13) &lt; (&Baked_Qty; * 5) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Water Crystal !"/>
+			<If Condition="ItemCount(13) &lt; (&Baked_Qty; * 5) and &WaitCondition;">
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Water Crystal !"/>
 				<If Condition="not IsOnMap(401)">
 					<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					<RunCode Name="BTN"/>
 				</If>
 				<RunCode Name="BTN"/>
-				<ExGather while="(ItemCount(13) &lt; (&Baked_Qty; * 5)) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
+				<ExGather while="(ItemCount(13) &lt; (&Baked_Qty; * 5)) and &WaitCondition;">
 					<GatherObjects>
 						<GatherObject>Mature Tree</GatherObject>
 					</GatherObjects>
@@ -303,11 +311,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(13) &lt; (&Baked_Qty; * 5))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Water Crystal !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Water Crystal !"/>
 			</If>
 			<!-- Fire Crystal -->
-			<If Condition="ItemCount(8) &lt; (&Baked_Qty; * 5) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Fire Crystal !"/>
+			<If Condition="ItemCount(8) &lt; (&Baked_Qty; * 5) and &WaitCondition;">
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Fire Crystal !"/>
 				<If Condition="not IsOnMap(398)">
 					<TeleportTo Name="Anyx Trine" AetheryteId="77" />
 					<RunCode Name="BTN"/>
@@ -316,7 +324,7 @@
 					<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867" Radius="3.0" />
 				</If>
 				<RunCode Name="BTN"/>
-				<ExGather while="ItemCount(8) &lt; (&Baked_Qty; * 5) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
+				<ExGather while="ItemCount(8) &lt; (&Baked_Qty; * 5) and &WaitCondition;">
 					<GatherObjects>
 						<GatherObject>Lush Vegetation Patch</GatherObject>
 					</GatherObjects>
@@ -337,18 +345,18 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(8) &lt; (&Baked_Qty; * 5))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Fire Crystal !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Fire Crystal !"/>
 			</If>
 			<!-- Fire Shard -->
-			<If Condition="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12895))*3.5 + 7) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
+			<If Condition="ItemCount(2) &lt; ((&Baked_Qty; - ItemCount(12895))*3.5 + 7) and &WaitCondition;">
 				<If Condition="ItemCount(2) &lt; (&Baked_Qty; *7 )">
-					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Fire Shard !"/>
+					<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Fire Shard !"/>
 				</If>
 				<If Condition="not IsOnMap(134)">
 					<TeleportTo Name="Summerford Farms" AetheryteId="52" />
 				</If>
 				<RunCode Name="BTN"/>
-				<ExGather while="ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)) and not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">
+				<ExGather while="ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)) and &WaitCondition;">
 					<GatherObjects>
 						<GatherObject>Mature Tree</GatherObject>
 					</GatherObjects>
@@ -361,11 +369,11 @@
 				</ExGather>
 			</If>
 			<If Condition="not(ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Fire Shard !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Fire Shard !"/>
 			</If>
 			<!-- Abalathian Rock Salt -->
 			<If Condition="(&Gather_Salt; == 0 and ItemCount(12901) &lt; &Baked_Qty;) and not(ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) and not(ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) and not(((IsTimeBetween(00,1) or IsTimeBetween(12,13)) and ItemCount(12741) &lt; &Baked_Qty;))">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I don't have enough Abalathian Rock Salt ! Take your pickaxe and... oh wait, they're also sold by a npc !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I don't have enough Abalathian Rock Salt ! Take your pickaxe and... oh wait, they're also sold by a npc !"/>
 				<If Condition="not IsOnMap(419)">
 					<If Condition="not IsOnMap(418)">
 						<TeleportTo name="Foundation" aetheryteId="70" />
@@ -419,23 +427,23 @@
 				</While>
 			</If>
 			<If Condition="not(&Gather_Salt; == 0 and ItemCount(12901) &lt; &Baked_Qty;)">
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="I'm done with Abalathian Rock Salt !"/>
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="I'm done with Abalathian Rock Salt !"/>
 			</If>
 			<!-- Waiting -->
-			<If Condition="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13)))) and not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 )) and (ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
+			<If Condition="&WaitCondition; and not(ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 )) and (ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
 				<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 				<RunCode Name="Dismount"/>
-				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="Nothing to do, waiting for something to spawn !"/>
-				<WaitWhile Condition ="not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))" />
+				<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="Nothing to do, waiting for something to spawn !"/>
+				<WaitWhile Condition ="&WaitCondition;" />
 			</If>
-		<RunCode Name="EnableMount"/>
+			<RunCode Name="EnableMount"/>
 		</While>
 		<If Condition="not(ItemCount(12899) &lt; (&Baked_Qty; * 2) or ItemCount(12901) &lt; &Baked_Qty; or ItemCount(12741) &lt; &Baked_Qty; or ItemCount(12888) &lt; ((&Baked_Qty; - ItemCount(12895))*2.5 + 5 ) or ItemCount(13) &lt; (&Baked_Qty; * 5) or ItemCount(8) &lt; (&Baked_Qty; * 5) or  ItemCount(2) &lt; (((&Baked_Qty; - ItemCount(12895))*3.5 + 7)))">
-			<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="All materials gathered !"/>
+			<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="All materials gathered !"/>
 		</If>
 		<!-- Craft -->
 		<If Condition="&Craft; != 0">
-			<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="t's time to craft !"/>
+			<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="t's time to craft !"/>
 			<TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 			<RunCode Name="CUL" />
 			<RunCode Name="Dismount"/>
@@ -635,6 +643,6 @@
 			</If>
 			<StopCrafting/>
 		</If>
-		<ExLog Color="#FFC0CB" Name="Baked Pipira Pira Flareon" Message="Baked Pipira pira Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
+		<ExLog Color="#FFC0CB" Name="Baked Pipira Pira &Version;" Message="Baked Pipira pira Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 	</Order>
 </Profile>

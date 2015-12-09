@@ -99,8 +99,9 @@
 <!-- 45 : Crowned Pie - 213120 XP ~ 11 Leves -->
 <!ENTITY Tradecraft_translate "Tradecraft">
 <!-- EN : Tradecraft -->
-<!-- FR : artisanat -->]><Profile>
-	<Name>[O][Craft Job] PowerLeveLing</Name>
+<!-- FR : artisanat -->
+<!ENTITY Version "Slowpoke">]><Profile>
+	<Name>PowerLeveLing</Name>
 	<KillRadius>50</KillRadius>
 	<CodeChunks>
 		<CodeChunk name="CRP">
@@ -137,17 +138,17 @@
 	<Order>
 		<!-- Ul'dah -->
 		<If Condition="&Alchemist; != 0 or &Weaver; != 0 or &Goldsmith; != 0">
-			<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Ul'dah [ON]"/>
+			<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Ul'dah [ON]"/>
 			<!-- Alchemist -->
 			<If Condition="&Alchemist; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Alchemist">
 					<RunCode Name="ALC"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Leather Grimoire -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(2143)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="322" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -158,7 +159,7 @@
 				</If>
 				<!--  5 : 3 x Beeswax -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(5515)">
 						<TeleportTo Name="Horizon" AetheryteId="17" />
 						<ExPickupGuildLeve leveIds="331" leveType="&Tradecraft_translate;" npcId="1003888" npcLocation="229.6263, 52.03812, 153.7908" />
@@ -170,7 +171,7 @@
 				</If>
 				<!-- 10 : 3 x Ether -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(4555)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="334" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -182,7 +183,7 @@
 				</If>
 				<!-- 15 : 3 x Potion Of Strength -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(4594)">
 						<TeleportTo Name="Camp Drybone" AetheryteId="18" />
 						<ExPickupGuildLeve leveIds="344" leveType="&Tradecraft_translate;" npcId="1001799" npcLocation="-378.164, -57.32689, 129.3365" />
@@ -195,7 +196,7 @@
 				</If>
 				<!-- 20 : 3 x Enchanted Silver Ink -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(5477)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="347" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -208,7 +209,7 @@
 				</If>
 				<!-- 25 : Clear Glass Lens -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(5512)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="352" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -221,7 +222,7 @@
 				</If>
 				<!-- 30 : 3 x Hi-Potion Of Strength -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4599)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="357" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -234,7 +235,7 @@
 				</If>
 				<!-- 35 : Budding Oak Wand -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1971)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="363" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -247,7 +248,7 @@
 				</If>
 				<!-- 40 : 3 x Mega-Potion -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(4553)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="369" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -260,7 +261,7 @@
 				</If>
 				<!-- 45 : 3 x Potent Sleeping Potion -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Alchemist 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Alchemist 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4587)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="375" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -274,14 +275,14 @@
 			</If>
 			<!-- Weaver -->
 			<If Condition="&Weaver; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Weaver">
 					<RunCode Name="WVR"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Hempen Chausses -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(3309)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="382" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -293,7 +294,7 @@
 				</If>
 				<!--  5 : Amateur's Dalmatica -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(3015)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="388" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -305,7 +306,7 @@
 				</If>
 				<!-- 10 : Cotton Scarf -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(2670)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="394" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -317,7 +318,7 @@
 				</If>
 				<!-- 15 : Cotton Kurta -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(3041)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="401" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -330,7 +331,7 @@
 				</If>
 				<!-- 20 : Cotton Doublet Vest Of Gathering -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(3053)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="407" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -343,7 +344,7 @@
 				</If>
 				<!-- 25 : Velveteen Wedge Cap Of Gathering -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(2734)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="412" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -356,7 +357,7 @@
 				</If>
 				<!-- 30 : Linen Chausses -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(3379)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="417" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -369,7 +370,7 @@
 				</If>
 				<!-- 35 : Linen Wedge Cap Of Gathering -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(2805)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="423" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -382,7 +383,7 @@
 				</If>
 				<!-- 40 : Woolen Kecks -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(3421)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="429" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -395,7 +396,7 @@
 				</If>
 				<!-- 45 : Felt Chausses -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Weaver 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Weaver 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(3456)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="435" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -409,14 +410,14 @@
 			</If>
 			<!-- Goldsmith -->
 			<If Condition="&Goldsmith; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Goldsmith">
 					<RunCode Name="GSM"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Copper Wristlets -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(4091)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="442" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -428,7 +429,7 @@
 				</If>
 				<!--  5 : Ramhorn Claws -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(1683)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="448" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -440,7 +441,7 @@
 				</If>
 				<!-- 10 : Amateur's Needle -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(2445)">
 						<TeleportTo Name="Horizon" AetheryteId="17" />
 						<ExPickupGuildLeve leveIds="456" leveType="&Tradecraft_translate;" npcId="1001796" npcLocation="85.21222, 46, -245.8927" />
@@ -452,7 +453,7 @@
 				</If>
 				<!-- 15 : Brass Circlet (Sunstone) -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(2685)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="461" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -465,7 +466,7 @@
 				</If>
 				<!-- 20 : Wind Brand -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(2063)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="467" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -478,7 +479,7 @@
 				</If>
 				<!-- 25 : Fluorite Ring -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4450)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="472" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -491,7 +492,7 @@
 				</If>
 				<!-- 30 : Silver Circlet (Goshenite) -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(2737)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="477" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -504,7 +505,7 @@
 				</If>
 				<!-- 35 : Aquamarine Bracelet -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(4143)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="483" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -517,7 +518,7 @@
 				</If>
 				<!-- 40 : Red Coral Ring -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(4485)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="489" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -530,7 +531,7 @@
 				</If>
 				<!-- 45 : Tourmaline Choker -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Goldsmith 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Goldsmith 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4369)">
 						<TeleportTo Name="Ul'dah - Steps of Nald" AetheryteId="9" />
 						<ExPickupGuildLeve leveIds="495" leveType="&Tradecraft_translate;" npcId="1001794" npcLocation="42.08, 8.006774, -107.67" />
@@ -545,17 +546,17 @@
 		</If>
 		<!-- Gridania -->
 		<If Condition="&Leatherworker; != 0 or &Carpenter; != 0">
-			<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Gridania [ON]"/>
+			<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Gridania [ON]"/>
 			<!-- Leatherworker -->
 			<If Condition="&Leatherworker; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Leatherworker">
 					<RunCode Name="LTW"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Leather Choker -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(4304)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="85" leveType="&Tradecraft_translate;" npcId="1001866" npcLocation="120.1298, -6.784678, -97.19905" />
@@ -567,7 +568,7 @@
 				</If>
 				<!--  5 : Leather Leggings -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(3765)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="89" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -580,7 +581,7 @@
 				</If>
 				<!-- 10 : Hard Leather Hunting Belt -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(3967)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="98" leveType="&Tradecraft_translate;" npcId="1000105" npcLocation="54.96688, -6.000001, 40.78176" />
@@ -593,7 +594,7 @@
 				</If>
 				<!-- 15 : 3 x Aldgoat Leather -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(5277)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="101" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -606,7 +607,7 @@
 				</If>
 				<!-- 20 : Goatskin Jacket  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(3043)">
 						<TeleportTo Name="Quarrymill" AetheryteId="5" />
 						<ExPickupGuildLeve leveIds="110" leveType="&Tradecraft_translate;" npcId="1000823" npcLocation="201.5859, 9.736246, -61.5179" />
@@ -618,7 +619,7 @@
 				</If>
 				<!-- 25 : Goatskin Wristbands -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4106)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="112" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -631,7 +632,7 @@
 				</If>
 				<!-- 30 : Boarskin Satchel Belt -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4022)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="117" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -644,7 +645,7 @@
 				</If>
 				<!-- 35 : Boarskin Ringbands -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(3616)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="123" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -657,7 +658,7 @@
 				</If>
 				<!-- 40 : Boarskin Culottes -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(3426)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="129" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -670,7 +671,7 @@
 				</If>
 				<!-- 45 : Raptorskin Artisan's Belt -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Leatherworker 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Leatherworker 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4051)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="135" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -684,14 +685,14 @@
 			</If>
 			<!-- Carpenter -->
 			<If Condition="&Carpenter; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Carpenter">
 					<RunCode Name="CRP"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Square Maple Shield -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(2219)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="25" leveType="&Tradecraft_translate;" npcId="1001866" npcLocation="120.1298, -6.784678, -97.19905" />
@@ -703,7 +704,7 @@
 				</If>
 				<!--  5 : Ash Macuahuitl -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(1604)">
 						<TeleportTo Name="Bentbranch Meadows" AetheryteId="3" />
 						<ExPickupGuildLeve leveIds="31" leveType="&Tradecraft_translate;" npcId="1001866" npcLocation="120.1298, -6.784678, -97.19905" />
@@ -715,7 +716,7 @@
 				</If>
 				<!-- 10 : Square Ash Shield -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(2233)">
 						<TeleportTo Name="The Hawthorne Hut" AetheryteId="4" />
 						<ExPickupGuildLeve leveIds="38" leveType="&Tradecraft_translate;" npcId="1000821" npcLocation="-212.6509, 1.042868, 285.6935" />
@@ -728,7 +729,7 @@
 				</If>
 				<!-- 15 : Ash Mask (Lapis Lazuli) -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(2703)">
 						<TeleportTo Name="The Hawthorne Hut" AetheryteId="4" />
 						<ExPickupGuildLeve leveIds="42" leveType="&Tradecraft_translate;" npcId="1000821" npcLocation="-212.6509, 1.042868, 285.6935" />
@@ -740,7 +741,7 @@
 				</If>
 				<!-- 20 : 3 x Walnut Lumber  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(5371)">
 						<TeleportTo Name="Quarrymill" AetheryteId="5" />
 						<ExPickupGuildLeve leveIds="50" leveType="&Tradecraft_translate;" npcId="1000823" npcLocation="201.5859, 9.736246, -61.5179" />
@@ -752,7 +753,7 @@
 				</If>
 				<!-- 25 : Silver Battle Fork -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(1836)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="52" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -765,7 +766,7 @@
 				</If>
 				<!-- 30 : Walnut Macuahuitl -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(1637)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="57" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -778,7 +779,7 @@
 				</If>
 				<!-- 35 : Yarzonshell Harpoon -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1850)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="63" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -791,7 +792,7 @@
 				</If>
 				<!-- 40 : Cobalt Halberd -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(1862)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="69" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -804,7 +805,7 @@
 				</If>
 				<!-- 45 : Cobalt Trident -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Carpenter 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Carpenter 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(1867)">
 						<TeleportTo Name="New Gridania" AetheryteId="2" />
 						<ExPickupGuildLeve leveIds="75" leveType="&Tradecraft_translate;" npcId="1000101" npcLocation="27.70064, -8, 107.8667" />
@@ -819,17 +820,17 @@
 		</If>
 		<!-- Limsa -->
 		<If Condition="&Culinarian; != 0 or &Blacksmith; != 0 or &Armorer; != 0">
-			<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Limsa [ON]"/>
+			<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Limsa [ON]"/>
 			<!-- Culinarian -->
 			<If Condition="&Culinarian; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Culinarian">
 					<RunCode Name="CUL"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Grilled Trout -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(4660)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -846,7 +847,7 @@
 				</If>
 				<!--  5 : Jack-o'-lantern -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(4681)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -863,7 +864,7 @@
 				</If>
 				<!-- 10 : Grilled Carp -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(4661)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -880,7 +881,7 @@
 				</If>
 				<!-- 15 : Walnut Bread -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(4697)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -895,7 +896,7 @@
 				</If>
 				<!-- 20 : Salmon Meuniere  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(4662)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -910,7 +911,7 @@
 				</If>
 				<!-- 25 : 9 x Chicken Stock -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(4867)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -925,7 +926,7 @@
 				</If>
 				<!-- 30 : 5 x Dark Vinegar -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(4860)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -940,7 +941,7 @@
 				</If>
 				<!-- 35 : Knight's Bread -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(4702)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -955,7 +956,7 @@
 				</If>
 				<!-- 40 : 5 x Rolanberry Cheese -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(4757)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -970,7 +971,7 @@
 				</If>
 				<!-- 45 : Crowned Pie -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Culinarian 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Culinarian 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(4713)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -986,14 +987,14 @@
 			</If>
 			<!-- Blacksmith -->
 			<If Condition="&Blacksmith; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Blacksmith">
 					<RunCode Name="BSM"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : 5 x Bronze Rivets -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(5091)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1008,7 +1009,7 @@
 				</If>
 				<!--  5 : Bronze Head Knife -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(2417)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1023,7 +1024,7 @@
 				</If>
 				<!-- 10 : Spiked Bronze Labrys -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(1753)">
 						<TeleportTo Name="Swiftperch" AetheryteId="13" />
 						<ExPickupGuildLeve leveIds="158" leveType="&Tradecraft_translate;" npcId="1001788" npcLocation="668.8723, 9.262033, 512.707" />
@@ -1037,7 +1038,7 @@
 				</If>
 				<!-- 15 : Iron Rivets -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(5092)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1052,7 +1053,7 @@
 				</If>
 				<!-- 20 : Iron Sledgehammer  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(2537)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1067,7 +1068,7 @@
 				</If>
 				<!-- 25 : Steel Broadsword -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(1625)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1082,7 +1083,7 @@
 				</If>
 				<!-- 30 : Steel Falchion -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(1633)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1097,7 +1098,7 @@
 				</If>
 				<!-- 35 : Mythril Broadsword -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(1643)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1112,7 +1113,7 @@
 				</If>
 				<!-- 40 : Mythril Sledgehammer -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(2542)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1127,7 +1128,7 @@
 				</If>
 				<!-- 45 : Electrum Head Knife -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Blacksmith 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Blacksmith 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(2427)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1143,14 +1144,14 @@
 			</If>
 			<!-- Armorer -->
 			<If Condition="&Armorer; != 0">
-				<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer [ON]"/>
+				<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer [ON]"/>
 				<If Condition="Core.Me.CurrentJob != ClassJobType.Armorer">
 					<RunCode Name="ARM"/>
 					<WaitTimer WaitTime="3"/>
 				</If>
 				<!--  1 : Bronze Hoplon -->
 				<If Condition="Core.Player.ClassLevel &lt; 5 and Core.Player.ClassLevel &gt; 0">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 1-5"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 1-5"/>
 					<While Condition="Core.Player.ClassLevel &lt; 5 and HasHqItem(2226)">
 						<TeleportTo Name="Moraby Drydocks" AetheryteId="10" />
 						<ExPickupGuildLeve leveIds="205" leveType="&Tradecraft_translate;" npcId="1004342" npcLocation="499.7849, 79.70081, -74.5624" />
@@ -1162,7 +1163,7 @@
 				</If>
 				<!--  5 : Bronze Barbut -->
 				<If Condition="Core.Player.ClassLevel &lt; 10 and Core.Player.ClassLevel &gt; 4">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 5-10"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 5-10"/>
 					<While Condition="Core.Player.ClassLevel &lt; 10 and HasHqItem(2664)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1179,7 +1180,7 @@
 				</If>
 				<!-- 10 : Bronze Gauntlets -->
 				<If Condition="Core.Player.ClassLevel &lt; 15 and Core.Player.ClassLevel &gt; 9">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 10-15"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 10-15"/>
 					<While Condition="Core.Player.ClassLevel &lt; 15 and HasHqItem(3544)">
 						<TeleportTo Name="Swiftperch" AetheryteId="13" />
 						<ExPickupGuildLeve leveIds="218" leveType="&Tradecraft_translate;" npcId="1001788" npcLocation="668.8723, 9.262033, 512.707" />
@@ -1193,7 +1194,7 @@
 				</If>
 				<!-- 15 : Initiate's Skillet -->
 				<If Condition="Core.Player.ClassLevel &lt; 20 and Core.Player.ClassLevel &gt; 14">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 15-20"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 15-20"/>
 					<While Condition="Core.Player.ClassLevel &lt; 20 and HasHqItem(2497)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1208,7 +1209,7 @@
 				</If>
 				<!-- 20 : Iron Frypan  -->
 				<If Condition="Core.Player.ClassLevel &lt; 25 and Core.Player.ClassLevel &gt; 19">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 20-25"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 20-25"/>
 					<While Condition="Core.Player.ClassLevel &lt; 25 and HasHqItem(2498)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1223,7 +1224,7 @@
 				</If>
 				<!-- 25 : Heavy Iron Flanchard -->
 				<If Condition="Core.Player.ClassLevel &lt; 30 and Core.Player.ClassLevel &gt; 24">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 25-30"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 25-30"/>
 					<While Condition="Core.Player.ClassLevel &lt; 30 and HasHqItem(3352)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1238,7 +1239,7 @@
 				</If>
 				<!-- 30 : Decorated Buckler -->
 				<If Condition="Core.Player.ClassLevel &lt; 35 and Core.Player.ClassLevel &gt; 29">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 30-35"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 30-35"/>
 					<While Condition="Core.Player.ClassLevel &lt; 35 and HasHqItem(2260)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1253,7 +1254,7 @@
 				</If>
 				<!-- 35 : Mythril Plate -->
 				<If Condition="Core.Player.ClassLevel &lt; 40 and Core.Player.ClassLevel &gt; 34">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 35-40"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 35-40"/>
 					<While Condition="Core.Player.ClassLevel &lt; 40 and HasHqItem(5079)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1268,7 +1269,7 @@
 				</If>
 				<!-- 40 : Mythril Chain Coif -->
 				<If Condition="Core.Player.ClassLevel &lt; 45 and Core.Player.ClassLevel &gt; 39">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 40-45"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 40-45"/>
 					<While Condition="Core.Player.ClassLevel &lt; 45 and HasHqItem(2827)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
@@ -1283,7 +1284,7 @@
 				</If>
 				<!-- 45 : Hells' Kitchen -->
 				<If Condition="Core.Player.ClassLevel &lt; 50 and Core.Player.ClassLevel &gt; 44">
-					<ExLog Color="#FFC0CB" Name="PowerLeveLing Slowpoke"  Message="Armorer 45-50"/>
+					<ExLog Color="#FFC0CB" Name="PowerLeveLing &Version;"  Message="Armorer 45-50"/>
 					<While Condition="Core.Player.ClassLevel &lt; 50 and HasHqItem(2504)">
 						<TeleportTo Name="Limsa Lominsa Lower Decks" AetheryteId="8" />
 						<ExMoveTo XYZ="-83.80186, 17.99993, -25.65908"/>
