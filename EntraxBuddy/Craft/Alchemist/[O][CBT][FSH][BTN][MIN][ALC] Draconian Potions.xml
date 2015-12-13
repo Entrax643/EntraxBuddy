@@ -881,7 +881,9 @@
 			<!-- Draconian Potion Of Strengh -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Strengh !"/>
 			<While Condition="ItemCount(18) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12642) &gt; 1">
-				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
+				<If Condition="&ID_FOOD; != 0">
+					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
+				</If>
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31206" MinimumCp="382" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
@@ -958,7 +960,9 @@
 			<!-- Draconian Potion Of Dexterity -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Dexterity !"/>
 			<While Condition="ItemCount(18) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12638) &gt; 1">
-				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
+				<If Condition="&ID_FOOD; != 0">
+					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
+				</If>
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31207" MinimumCp="382" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
@@ -1034,8 +1038,10 @@
 			</While>
 			<!-- Draconian Potion Of Vitality -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Vitality !"/>
-			<While Condition="ItemCount(18) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12901) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12639) &gt; 1">
-				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
+			<While Condition="ItemCount(18) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12901) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12639) &gt; 1">				
+				<If Condition="&ID_FOOD; != 0">
+					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
+				</If>
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31208" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
@@ -1116,7 +1122,9 @@
 			<!-- Draconian Potion Of Intelligence -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Intelligence !"/>
 			<While Condition="ItemCount(18) &gt; (&Mind_Qty;) and ItemCount(19) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Mind_Qty;) and ItemCount(12936) &gt; (&Mind_Qty;) and ItemCount(12972) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12643) &gt; 1">
-				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
+				<If Condition="&ID_FOOD; != 0">
+					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
+				</If>
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31209" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
@@ -1197,7 +1205,9 @@
 			<!-- Draconian Potion Of Mind -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Mind !"/>
 			<While Condition="ItemCount(18) &gt; 0 and ItemCount(19) &gt; 1 and ItemCount(12630) &gt; 1 and ItemCount(12901) &gt; 0	and ItemCount(12936) &gt; 0	and ItemCount(12972) &gt; 0	and ItemCount(12640) &gt; 1">
-				<EatFood ItemId="&ID_FOOD;" HqOnly="True" />
+				<If Condition="&ID_FOOD; != 0">
+					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
+				</If>
 				<!-- Required Skills : Steady Hand 2, Careful synthesis 2, Hasty Touch, Byregot's Blessing, Comfort Zone, Muscle Memory, Ingenuity II -->
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31210" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />

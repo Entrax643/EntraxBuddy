@@ -755,7 +755,7 @@
 					<WaitWhile Condition="IsTimeBetween(4,5)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
-							<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
+							<GatherObject>Unspoiled Mature Tree</GatherObject>
 						</GatherObjects>
 						<ItemNames>
 							<ItemName>Ebony Log</ItemName>
@@ -932,7 +932,7 @@
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[MIN] Umbral Rock"/>
 					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 					<RunCode Name="MIN"/>
-					<ExMoveTo XYZ="-238.5004, 2.006799, 521.4088"/>
+					<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795"/>
 					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
@@ -943,7 +943,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation;</GatherRotation>
 						<HotSpots>
-							<HotSpot XYZ="-238.5004, 2.006799, 521.4088" Radius="250"/>
+							<HotSpot XYZ="-234.4876, -0.4223762, 443.9795" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -952,7 +952,7 @@
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[MIN] Grade 3 Shroud Topsoil"/>
 					<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 					<RunCode Name="MIN"/>
-					<ExMoveTo XYZ="-238.5004, 2.006799, 521.4088"/>
+					<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795"/>
 					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 						<GatherObjects>
@@ -964,7 +964,7 @@
 						</ItemNames>
 						<GatherRotation>&Rotation_Topsoil;</GatherRotation>
 						<HotSpots>
-							<HotSpot XYZ="-238.5004, 2.006799, 521.4088" Radius="250"/>
+							<HotSpot XYZ="-234.4876, -0.4223762, 443.9795" Radius="250"/>
 						</HotSpots>
 					</ExGather>
 				</If>
@@ -2263,6 +2263,7 @@
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="Gardenning [START]"/>
 					<TeleportTo AetheryteId="&HousingAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&GardenLocation;"/>
+					<WaitTimer WaitTime="1"/>
 					<Gardenner AlwaysWater="&AlwaysWater;"/>
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="Gardenning [STOP]"/>
 				</If>
@@ -4182,10 +4183,10 @@
 						</While>
 					</If>
 					<While Condition="&WaitCondition; and FreeItemSlots() &gt; 1">
-						<ExPurify/>
-						<While Condition="IsTimeBetween(0,4) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+						<If Condition="IsTimeBetween(0,4) and FreeItemSlots() &gt; 1 and &WaitCondition;">
 							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [0:4] ~ Destination ----&gt; Twinpools"/>
 							<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
+							<ExPurify/>
 							<RunCode Name="BTN"/>
 							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 							<If Condition="&EphemeralFarm_Furrymint; != 0">
@@ -4224,10 +4225,11 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-						</While>
-						<While Condition="IsTimeBetween(4,8) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+						</If>
+						<If Condition="IsTimeBetween(4,8) and FreeItemSlots() &gt; 1 and &WaitCondition;">
 							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [4:8] ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
+							<ExPurify/>
 							<RunCode Name="MIN"/>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0"/>
@@ -4244,10 +4246,11 @@
 									<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
 								</HotSpots>
 							</ExGather>
-						</While>
-						<While Condition="IsTimeBetween(8,12) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+						</If>
+						<If Condition="IsTimeBetween(8,12) and FreeItemSlots() &gt; 1 and &WaitCondition;">
 							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
+							<ExPurify/>
 							<RunCode Name="BTN"/>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0"/>
@@ -4264,10 +4267,11 @@
 									<HotSpot XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
 								</HotSpots>
 							</ExGather>
-						</While>
-						<While Condition="IsTimeBetween(12,16) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+						</If>
+						<If Condition="IsTimeBetween(12,16) and FreeItemSlots() &gt; 1 and &WaitCondition;">
 							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [12:16] ~ Destination ----&gt; Landlord Colony"/>
 							<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
+							<ExPurify/>
 							<RunCode Name="MIN"/>
 							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0"/>
 							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0"/>
@@ -4283,10 +4287,11 @@
 									<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
 								</HotSpots>
 							</ExGather>
-						</While>
-						<While Condition="IsTimeBetween(16,20) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+						</If>
+						<If Condition="IsTimeBetween(16,20) and FreeItemSlots() &gt; 1 and &WaitCondition;">
 							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[MIN] EphemeralFarm [16:20] ~ Destination ----&gt; Voor Sian Siran"/>
 							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
+							<ExPurify/>
 							<RunCode Name="MIN"/>
 							<ExMoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
 							<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0"/>
@@ -4308,10 +4313,11 @@
 									<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
 								</HotSpots>
 							</ExGather>
-						</While>
-						<While Condition="IsTimeBetween(20,24) and FreeItemSlots() &gt; 1 and &WaitCondition;">
-							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [16:20] ~ Destination ----&gt; Voor Sian Siran"/>
+						</If>
+						<If Condition="IsTimeBetween(20,24) and FreeItemSlots() &gt; 1 and &WaitCondition;">
+							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [20:24] ~ Destination ----&gt; Voor Sian Siran"/>
 							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
+							<ExPurify/>
 							<RunCode Name="BTN"/>
 							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533"/>
 							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0"/>
@@ -4343,13 +4349,13 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-						</While>
+						</If>
 					</While>
 					<ExPurify/>
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="EphemeralFarm [STOP]"/>
 				</If>
 			</If>
-			<If Condition="FreeItemSlots() &lt; 2">
+			<If Condition="FreeItemSlots() == 1">
 				<ExPurify/>
 				<If Condition="&TurnInAfterLoop; != 0">
 					<TurnInCollectables location="Idyllshire" forcePurchase="false" >
