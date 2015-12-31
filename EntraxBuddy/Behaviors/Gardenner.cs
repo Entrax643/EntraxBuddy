@@ -49,7 +49,8 @@ namespace ExBuddy.OrderBotTags.Behaviors
                                     }
                                     else
                                     {
-                                        Blacklist.Add(plant, BlacklistFlags.All, TimeSpan.FromMinutes(61), "Plant is ready to be harvested");
+                                        LogVerbose("Plant is ready to be harvested");
+										SelectString.ClickSlot(1);
                                     }
                                 }
                             }
@@ -98,7 +99,8 @@ namespace ExBuddy.OrderBotTags.Behaviors
                                 }
                                 else
                                 {
-                                    Blacklist.Add(plant, BlacklistFlags.All, TimeSpan.FromMinutes(61), "Plant is ready to be harvested");
+									LogVerbose("Plant is ready to be harvested");
+									SelectString.ClickSlot(1);
                                 }
                             }
                         }
