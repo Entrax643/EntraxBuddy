@@ -1,814 +1,857 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE Profile [<!-- Where do you want to port at the end-->
-<!ENTITY Ending_AetheryteId "8">
-<!-- Gather settings : Set 1 for yes and 0 for no -->
-<!-- Miner :  -->
-<!-- Traders' Favor (Coerthas Western Highlands) -->
-<!ENTITY Miner_CWH "1">
-<!-- Traders' Favor (Dravanian Hinterlands) -->
-<!ENTITY Miner_Hinterlands "1">
-<!-- Traders' Favor (Dravanian Forelands) -->
-<!ENTITY Miner_Forelands "1">
-<!-- Traders' Favor (The Churning Mists) -->
-<!ENTITY Miner_ChurningMists "1">
-<!-- Traders' Favor (The Sea Of Clouds) -->
-<!ENTITY Miner_SOC "1">
-<!-- Botanist :  -->
-<!-- Matron's Favor (Coerthas Western Highlands) -->
-<!ENTITY Botanist_CWH "1">
-<!-- Matron' Favor (Dravanian Hinterlands) -->
-<!ENTITY Botanist_Hinterlands "1">
-<!-- Matron's Favor (Dravanian Forelands) -->
-<!ENTITY Botanist_Forelands "1">
-<!-- Matron' Favor (The Churning Mists) -->
-<!ENTITY Botanist_ChurningMists "1">
-<!-- Matron's Favor (The Sea Of Clouds) -->
-<!ENTITY Botanist_SOC "1">	 ]><Profile>
-	<Name>[O][BTN][MIN]FavorManager - RB</Name>
+<!DOCTYPE Profile [
+<!ENTITY BRN_Hinterland "0">
+<!ENTITY Version "Slowpoke">
+<!ENTITY Ending_AetheryteId "8">	 ]><Profile>
+	<Name>FavorManager</Name>
 	<KillRadius>50</KillRadius>
 	<CodeChunks>
 		<CodeChunk name="MIN">
-			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 20"); await Buddy.Coroutines.Coroutine.Sleep(1000);  if(!Core.Player.HasAura(222)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(1000); } ff14bot.Managers.Actionmanager.DoAction(238, Core.Player); await Buddy.Coroutines.Coroutine.Sleep(2000); } ]]>
+			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 10"); ]]>
 		</CodeChunk>
 		<CodeChunk name="BTN">
-			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 21"); await Buddy.Coroutines.Coroutine.Sleep(1000);  if(!Core.Player.HasAura(221)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { Actionmanager.Dismount(); await Buddy.Coroutines.Coroutine.Sleep(1000); } ff14bot.Managers.Actionmanager.DoAction(221, Core.Player); await Buddy.Coroutines.Coroutine.Sleep(2000); } ]]>
+			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 11"); ]]>
 		</CodeChunk>
 		<CodeChunk name="Miner_CWH">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(881)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10374 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(881)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(881)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10374 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(881)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Miner_Hinterlands">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(883)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10375 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(883)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(883)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10375 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(883)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Miner_Forelands">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(882)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10376 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(882)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(882)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10376 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(882)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Miner_ChurningMists">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(884)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10377 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(884)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(884)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10377 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(884)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Miner_SOC">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(885)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10378 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(885)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(885)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10378 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(885)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Botanist_CWH">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(887)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10380 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(887)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(887)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10380 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(887)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Botanist_Hinterlands">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(889)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10381 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(889)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(889)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10381 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(889)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Botanist_Forelands">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(888)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10382 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(888)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(888)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10382 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(888)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Botanist_ChurningMists">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(890)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10383 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(890)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(890)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10383 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(890)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk name="Botanist_SOC">
-			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(891)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10384 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(891)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]></CodeChunk>
+			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(891)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10384 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(891)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>
+		</CodeChunk>
 		<CodeChunk Name="useAethernet">
-			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(2000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(2000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(2); await Buddy.Coroutines.Coroutine.Sleep(5000); ]]>
+			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(2000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(2000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(1); await Buddy.Coroutines.Coroutine.Sleep(5000); ]]>
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
 		<!-- Western Coerthas Highlands -->
-		<If Condition="&Miner_CWH; != 0 or &Botanist_CWH; != 0">
-			<If Condition="&Miner_CWH; != 0">
-				<If Condition="ItemCount(10374) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (Coerthas Western Highlands)"/>
-				</If>
+		<If Condition="ItemCount(10374) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Traders' Favor (Coerthas Western Highlands)"/>
+		</If>
+		<If Condition="ItemCount(10374) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Coerthas Western Highlands [START]"/>
+			<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
+			<RunCode Name="MIN"/>
+			<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
+			<While Condition="ItemCount(10374) != 0">
+				<ExFlyTo XYZ="40.38419, 215.8549, 403.8255"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="16.08923, 214.9115, 424.2126" nodeLocation="17.58205, 216.0664, 421.5481"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-123.0415, 220.4186, 203.7249" nodeLocation="-124.1629, 221.9654, 197.8645"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322"/>
+					</GatherSpots>
+					<HotSpots>
+						<Hotspot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
+						<Hotspot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="40.38419, 215.8549, 403.8255"/>
+				<While Condition="not Core.Player.HasAura(881)">
+					<RunCode Name="Miner_CWH"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(881) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(881))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mineral Deposit</GatherObject>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Red Roundstone</ItemName>
+						<ItemName>Red Ooid</ItemName>
+						<ItemName>Ice Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Raw Citrine</ItemName> -->
+						<ItemName>Ice Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="16.08923, 214.9115, 424.2126" nodeLocation="17.58205, 216.0664, 421.5481"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-123.0415, 220.4186, 203.7249" nodeLocation="-124.1629, 221.9654, 197.8645"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
+						<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+						<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10374) != 0">
-					<If Condition="not IsOnMap(397)">
-						<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
-					</If>
-					<RunCode Name="MIN"/>
-					<While Condition="ItemCount(10374) != 0">
-						<ExFlyTo XYZ="40.38419, 215.8549, 403.8255" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(881)">
-							<RunCode Name="Miner_CWH"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(881) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(881))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Mineral Deposit</GatherObject>
-								<GatherObject>Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Red Roundstone</ItemName>
-								<ItemName>Red Ooid</ItemName>
-								<ItemName>Ice Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Raw Citrine</ItemName> --><ItemName>Ice Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="16.08923, 214.9115, 424.2126" nodeLocation="17.58205, 216.0664, 421.5481" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-123.0415, 220.4186, 203.7249" nodeLocation="-124.1629, 221.9654, 197.8645" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
-								<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
-								<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10374) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="16.08923, 214.9115, 424.2126" nodeLocation="17.58205, 216.0664, 421.5481" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-123.0415, 220.4186, 203.7249" nodeLocation="-124.1629, 221.9654, 197.8645" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
-									<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
-									<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
-					<If Condition="&Botanist_CWH; != 0">
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-51.51937, 245.6809, 259.9921" Radius="3.0" DismountAtDestination="false" />
-					</If>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Mineral Deposit</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="16.08923, 214.9115, 424.2126" nodeLocation="17.58205, 216.0664, 421.5481"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-123.0415, 220.4186, 203.7249" nodeLocation="-124.1629, 221.9654, 197.8645"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-53.3424, 221.333, 218.8447" nodeLocation="-50.76083, 222.9418, 217.8322"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot XYZ="35.14712, 222.4328, 393.2765" Radius="50"/>
+							<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+							<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
-			<If Condition="&Botanist_CWH; != 0">
-				<If Condition="ItemCount(10380) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (Coerthas Western Highlands)"/>
-				</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Coerthas Western Highlands [STOP]"/>
+		</If>
+		<If Condition="ItemCount(10380) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (Coerthas Western Highlands)"/>
+		</If>
+		<If Condition="ItemCount(10380) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Coerthas Western Highlands [START]"/>
+			<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
+			<RunCode Name="BTN"/>
+			<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
+			<While Condition="ItemCount(10380) != 0">
+				<ExFlyTo XYZ="-495.9898, 120.2891, -271.8333"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-453.1555, 120.3001, -274.9049" nodeLocation="-460.4598, 120.6998, -282.0876"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
+					</GatherSpots>
+					<HotSpots>
+						<Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+						<Hotspot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="-495.9898, 120.2891, -271.8333"/>
+				<While Condition="not Core.Player.HasAura(887)">
+					<RunCode Name="Botanist_CWH"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(887) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(887))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Lush Vegetation Patch</GatherObject>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Bitter Foxglove</ItemName>
+						<ItemName>Foxglove</ItemName>
+						<ItemName>Ice Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Coriander</ItemName> -->
+						<!-- <ItemName>Rue</ItemName> -->
+						<ItemName>Ice Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-453.1555, 120.3001, -274.9049" nodeLocation="-460.4598, 120.6998, -282.0876"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
+					</GatherSpots>
+					<HotSpots>
+						<Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+						<Hotspot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
+						<Hotspot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10380) != 0">
-					<If Condition="not IsOnMap(397)">
-						<TeleportTo Name="Falcons Nest" AetheryteId="71" />
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022" Radius="3.0" DismountAtDestination="false" />
-					</If>
-					<RunCode Name="BTN"/>
-					<While Condition="ItemCount(10380) != 0">
-						<ExFlyTo XYZ="-495.9898, 120.2891, -271.8333" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(887)">
-							<RunCode Name="Botanist_CWH"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(887) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(887))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Lush Vegetation Patch</GatherObject>
-								<GatherObject>Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Bitter Foxglove</ItemName>
-								<ItemName>Foxglove</ItemName>
-								<ItemName>Ice Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Coriander</ItemName> --><!-- <ItemName>Rue</ItemName> --><ItemName>Ice Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-453.1555, 120.3001, -274.9049" nodeLocation="-460.4598, 120.6998, -282.0876" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
-								<HotSpot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
-								<HotSpot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10380) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-453.1555, 120.3001, -274.9049" nodeLocation="-460.4598, 120.6998, -282.0876" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-456.1826, 122.3096, -465.3806" nodeLocation="-464.1032, 122.1049, -462.4032" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
-									<HotSpot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
-									<HotSpot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Lush Vegetation Patch</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-453.1555, 120.3001, -274.9049" nodeLocation="-460.4598, 120.6998, -282.0876"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-456.1826, 122.3096, -465.3806" nodeLocation="-464.1032, 122.1049, -462.4032"/>
+						</GatherSpots>
+						<HotSpots>
+							<Hotspot XYZ="-469.7902, 127.7917, -265.4348" Radius="50"/>
+							<Hotspot XYZ="-485.9373, 132.9034, -442.8306" Radius="50"/>
+							<Hotspot XYZ="-688.9618, 137.7209, -399.3329" Radius="50"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Coerthas Western Highlands [STOP]"/>
 		</If>
 		<!-- Hinterlands -->
-		<If Condition="&Miner_Hinterlands; != 0 or &Botanist_Hinterlands; != 0">
-			<If Condition="&Miner_Hinterlands; != 0">
-				<If Condition="ItemCount(10375) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (Dravanian Hinterlands)"/>
-				</If>
+		<If Condition="ItemCount(10375) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Traders' Favor (Dravanian Hinterlands)"/>
+		</If>
+		<If Condition="ItemCount(10375) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [START]"/>
+			<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
+			<RunCode Name="MIN"/>
+			<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
+			<RunCode Name="useAethernet"/>
+			<ExFlyTo XYZ="11.32641, 129.841, -243.8127"/>
+			<While Condition="ItemCount(10375) != 0">
+				<ExFlyTo XYZ="120.7219, 69.52051, 32.74143"/>
+				<ExGather loops="1" DisableRotationOverride="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="61.12149, 54.32081, 169.105" nodeLocation="59.4164, 54.40149, 160.6752"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="45.88089, 53.29337, 168.1437" nodeLocation="47.04347, 53.91698, 164.1816"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="145.1571, 69.60546, 43.35614" nodeLocation="145.684, 70.47159, 45.05047"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="250.3258, 75.36033, 143.0813" nodeLocation="237.4622, 74.67197, 150.8143"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="235.511, 73.91628, 114.766" nodeLocation="231.3517, 74.23511, 112.9807"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="137.5328, 67.66, 77.90279" nodeLocation="138.7979, 69.3564, 76.02666"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="120.7555, 70.53104, 30.26702" Radius="15"/>
+						<HotSpot XYZ="147.3953, 74.17239, 56.05408" Radius="35"/>
+						<HotSpot XYZ="207.0412, 72.04823, 107.8131" Radius="40"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="120.7219, 69.52051, 32.74143"/>
+				<While Condition="not Core.Player.HasAura(883)">
+					<RunCode Name="Miner_Hinterlands"/> 
+				</While>
+				<ExGather while="Core.Player.HasAura(883) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(883))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mineral Deposit</GatherObject>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Blue Roundstone</ItemName>
+						<ItemName>Blue Ooid</ItemName>
+						<ItemName>Wind Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Hardsilver Ore</ItemName> -->
+						<!-- <ItemName>Raw Chrysolite</ItemName> -->
+						<!-- <ItemName>Wyrm Obsidian</ItemName> -->
+						<ItemName>Wind Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="61.12149, 54.32081, 169.105" nodeLocation="59.4164, 54.40149, 160.6752"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="45.88089, 53.29337, 168.1437" nodeLocation="47.04347, 53.91698, 164.1816"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="145.1571, 69.60546, 43.35614" nodeLocation="145.684, 70.47159, 45.05047"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="250.3258, 75.36033, 143.0813" nodeLocation="237.4622, 74.67197, 150.8143"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="235.511, 73.91628, 114.766" nodeLocation="231.3517, 74.23511, 112.9807"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="137.5328, 67.66, 77.90279" nodeLocation="138.7979, 69.3564, 76.02666"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
+						<HotSpot XYZ="207.0412, 72.04823, 107.8131" Radius="40"/>
+						<HotSpot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10375) != 0">
-					<If Condition="not IsOnMap(399)">
-						<TeleportTo Name="Idyllshire" AetheryteId="75" />
-						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
-						<RunCode Name="MIN"/>
-						<RunCode Name="useAethernet"/>
-						<ExFlyTo XYZ="11.32641, 129.841, -243.8127" Radius="3.0" DismountAtDestination="false" />
-					</If>
-					<RunCode Name="MIN"/>
-					<While Condition="ItemCount(10375) != 0">
-						<ExFlyTo XYZ="120.7219, 69.52051, 32.74143" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(883)">
-							<RunCode Name="Miner_Hinterlands"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(883) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(883))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Mineral Deposit</GatherObject>
-								<GatherObject>Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Blue Roundstone</ItemName>
-								<ItemName>Blue Ooid</ItemName>
-								<ItemName>Wind Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Hardsilver Ore</ItemName> --><!-- <ItemName>Raw Chrysolite</ItemName> --><!-- <ItemName>Wyrm Obsidian</ItemName> --><ItemName>Wind Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="226.1602, 76.71241, 178.5256" nodeLocation="211.4673, 75.37302, 169.3396" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="61.12149, 54.32081, 169.105" nodeLocation="59.4164, 54.40149, 160.6752" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="45.88089, 53.29337, 168.1437" nodeLocation="47.04347, 53.91698, 164.1816" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="250.3258, 75.36033, 143.0813" nodeLocation="237.4622, 74.67197, 150.8143" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="235.511, 73.91628, 114.766" nodeLocation="231.3517, 74.23511, 112.9807" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="137.5328, 67.66, 77.90279" nodeLocation="138.7979, 69.3564, 76.02666" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="182.7975, 69.57438, 117.5594" nodeLocation="186.0795, 69.36257, 126.6282" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
-								<HotSpot XYZ="221.9516, 86.1501, 161.2957" Radius="80"/>
-								<HotSpot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10375) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="226.1602, 76.71241, 178.5256" nodeLocation="211.4673, 75.37302, 169.3396" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="61.12149, 54.32081, 169.105" nodeLocation="59.4164, 54.40149, 160.6752" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="45.88089, 53.29337, 168.1437" nodeLocation="47.04347, 53.91698, 164.1816" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="250.3258, 75.36033, 143.0813" nodeLocation="237.4622, 74.67197, 150.8143" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="235.511, 73.91628, 114.766" nodeLocation="231.3517, 74.23511, 112.9807" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="137.5328, 67.66, 77.90279" nodeLocation="138.7979, 69.3564, 76.02666" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="182.7975, 69.57438, 117.5594" nodeLocation="186.0795, 69.36257, 126.6282" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
-									<HotSpot XYZ="221.9516, 86.1501, 161.2957" Radius="80"/>
-									<HotSpot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
-					<If Condition="&Botanist_Hinterlands; != 0">
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-503.6754, 185.6601, -338.7932" Radius="3.0" DismountAtDestination="false" />
-					</If>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Mineral Deposit</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="61.12149, 54.32081, 169.105" nodeLocation="59.4164, 54.40149, 160.6752"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="45.88089, 53.29337, 168.1437" nodeLocation="47.04347, 53.91698, 164.1816"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="145.1571, 69.60546, 43.35614" nodeLocation="145.684, 70.47159, 45.05047"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="250.3258, 75.36033, 143.0813" nodeLocation="237.4622, 74.67197, 150.8143"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="235.511, 73.91628, 114.766" nodeLocation="231.3517, 74.23511, 112.9807"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="137.5328, 67.66, 77.90279" nodeLocation="138.7979, 69.3564, 76.02666"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot XYZ="144.1487, 81.11399, 54.39318" Radius="50"/>
+							<HotSpot XYZ="207.0412, 72.04823, 107.8131" Radius="40"/>
+							<HotSpot XYZ="53.67305, 61.78543, 169.2949" Radius="50"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
-			<If Condition="&Botanist_Hinterlands; != 0">
-				<If Condition="ItemCount(10381) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (Dravanian Hinterlands)"/>
-				</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [STOP]"/>
+		</If>
+		<If Condition="ItemCount(10381) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (Dravanian Hinterlands)"/>
+		</If>
+		<If Condition="ItemCount(10381) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [START]"/>
+			<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
+			<RunCode Name="BTN"/>
+			<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
+			<RunCode Name="useAethernet"/>
+			<While Condition="ItemCount(10381) != 0">
+				<ExFlyTo XYZ="-517.9157, 141.9116, -274.003"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-512.0675, 141.4861, -277.4222" nodeLocation="-510.6701, 141.0723, -279.9205"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-494.1652, 142.7381, -287.4084"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-485.4606, 142.9737, -290.856"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-388.4753, 147.345, -177.1972"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-391.4452, 147.115, -169.2141"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
+						<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="-517.9157, 141.9116, -274.003"/>
+				<While Condition="not Core.Player.HasAura(889)">
+					<RunCode Name="Botanist_Hinterlands"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(889) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(889))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Lush Vegetation Patch</GatherObject>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Mute Swan Feather</ItemName>
+						<ItemName>Black Swan Feather</ItemName>
+						<ItemName>Wind Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Gaelicatnip</ItemName> -->
+						<!-- <ItemName>Cow Bitter</ItemName> -->
+						<ItemName>Wind Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-512.0675, 141.4861, -277.4222" nodeLocation="-510.6701, 141.0723, -279.9205"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-494.1652, 142.7381, -287.4084"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-485.4606, 142.9737, -290.856"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-388.4753, 147.345, -177.1972"/>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-391.4452, 147.115, -169.2141"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
+						<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+						<HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10381) != 0">
-					<If Condition="not IsOnMap(399)">
-						<TeleportTo Name="Idyllshire" AetheryteId="75" />
-						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Radius="8" />
-						<RunCode Name="BTN"/>
-						<RunCode Name="useAethernet"/>
-					</If>
-					<RunCode Name="BTN"/>
-					<While Condition="ItemCount(10381) != 0">
-						<ExFlyTo XYZ="-517.9157, 141.9116, -274.003" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(889)">
-							<RunCode Name="Botanist_Hinterlands"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(889) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(889))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Lush Vegetation Patch</GatherObject>
-								<GatherObject>Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Mute Swan Feather</ItemName>
-								<ItemName>Black Swan Feather</ItemName>
-								<ItemName>Wind Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Gaelicatnip</ItemName> --><!-- <ItemName>Cow Bitter</ItemName> --><ItemName>Wind Crystal</ItemName>
-							</ItemNames>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Lush Vegetation Patch</GatherObject>
+						</GatherObjects>
 							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-512.0675, 141.4861, -277.4222" nodeLocation="-510.6701, 141.0723, -279.9205" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-494.1652, 142.7381, -287.4084" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-485.4606, 142.9737, -290.856" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-388.4753, 147.345, -177.1972" />
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-391.4452, 147.115, -169.2141" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
-								<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
-								<HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10381) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-512.0675, 141.4861, -277.4222" nodeLocation="-510.6701, 141.0723, -279.9205" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-494.1652, 142.7381, -287.4084" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-485.4606, 142.9737, -290.856" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-388.4753, 147.345, -177.1972" />
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-391.4452, 147.115, -169.2141" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
-									<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
-									<HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
+						<GatherSpots>
+							<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-512.0675, 141.4861, -277.4222" nodeLocation="-510.6701, 141.0723, -279.9205"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-494.1652, 142.7381, -287.4084"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-485.4606, 142.9737, -290.856"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-388.4753, 147.345, -177.1972"/>
+							<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-391.4452, 147.115, -169.2141"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-571.7055, 147.9581, -147.7574" nodeLocation="-573.738, 148.4877, -158.4798"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot XYZ="-517.4311, 155.392, -297.5033" Radius="50"/>
+							<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+							<HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [STOP]"/>
 		</If>
 		<!-- Forelands -->
-		<If Condition="&Miner_Forelands; != 0 or &Botanist_Forelands; != 0">
-			<If Condition="&Miner_Forelands; != 0">
-				<If Condition="ItemCount(10376) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (Dravanian Forelands)"/>
-				</If>
+		<If Condition="ItemCount(10376) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Traders' Favor (Dravanian Forelands)"/>
+		</If>
+		<If Condition="ItemCount(10376) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Forelands [START]"/>
+			<TeleportTo Force="True" Name="Anyx Trine" AetheryteId="77"/>
+			<RunCode Name="MIN"/>
+			<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
+			<ExFlyTo XYZ="-229.1113, -21.22585, 168.7209"/>
+			<While Condition="ItemCount(10376) != 0">
+				<ExFlyTo XYZ="-116.7301, -46.90722, 214.4372"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-133.4553, -46.51377, 214.2649" nodeLocation="-133.4304, -45.47835, 211.6268"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
+						<HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="-116.7301, -46.90722, 214.4372"/>
+				<While Condition="not Core.Player.HasAura(882)">
+					<RunCode Name="Miner_Forelands"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(882) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(882))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mineral Deposit</GatherObject>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Green Roundstone</ItemName>
+						<ItemName>Green Ooid</ItemName>
+						<ItemName>Fire Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Raw Carnelian</ItemName> -->
+						<!-- <ItemName>Raw Opal</ItemName> -->
+						<ItemName>Fire Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-133.4553, -46.51377, 214.2649" nodeLocation="-133.4304, -45.47835, 211.6268"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
+						<HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
+						<HotSpot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10376) != 0">
-					<If Condition="not IsOnMap(398)">
-						<TeleportTo Name="Anyx Trine" AetheryteId="77" />
-						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505" Radius="3.0" />
-						<ExFlyTo XYZ="-229.1113, -21.22585, 168.7209" Radius="3.0" />
-					</If>
-					<RunCode Name="MIN"/>
-					<While Condition="ItemCount(10376) != 0">
-						<ExFlyTo XYZ="-116.7301, -46.90722, 214.4372" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(882)">
-							<RunCode Name="Miner_Forelands"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(882) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(882))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Mineral Deposit</GatherObject>
-								<GatherObject>Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Green Roundstone</ItemName>
-								<ItemName>Green Ooid</ItemName>
-								<ItemName>Fire Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Raw Carnelian</ItemName> --><!-- <ItemName>Raw Opal</ItemName> --><ItemName>Fire Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-133.4553, -46.51377, 214.2649" nodeLocation="-133.4304, -45.47835, 211.6268" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
-								<HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
-								<HotSpot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10376) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-133.4553, -46.51377, 214.2649" nodeLocation="-133.4304, -45.47835, 211.6268" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
-									<HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
-									<HotSpot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
-					<If Condition="&Botanist_Forelands; != 0">
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-273.937, -35.31438, 384.2581" Radius="3.0" DismountAtDestination="false" />
-					</If>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Mineral Deposit</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-133.4553, -46.51377, 214.2649" nodeLocation="-133.4304, -45.47835, 211.6268"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="true" ApproachLocation="-149.9537, -70.32066, 368.6832" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot XYZ="-110.220871, -39.95467, 228.607437" Radius="50"/>
+							<HotSpot XYZ="-154.3863, -63.26427, 368.2925" Radius="70"/>
+							<HotSpot XYZ="-299.2256, -54.72244, 326.3812" Radius="50"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
-			<If Condition="&Botanist_Forelands; != 0">
-				<If Condition="ItemCount(10382) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (Dravanian Forelands)"/>
-				</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Forelands [STOP]"/>
+		</If>
+		<If Condition="ItemCount(10382) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (Dravanian Forelands)"/>
+		</If>
+		<If Condition="ItemCount(10382) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Forelands [START]"/>
+			<TeleportTo Force="True" Name="Anyx Trine" AetheryteId="77"/>
+			<RunCode Name="BTN"/>
+			<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
+			<ExFlyTo XYZ="-216.91, -25.85352, 196.2107"/>
+			<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867"/>
+			<While Condition="ItemCount(10382) != 0">
+				<ExFlyTo XYZ="-553.3353, -85.52296, 419.714"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+						<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="-553.3353, -85.52296, 419.714"/>
+				<While Condition="not Core.Player.HasAura(888)">
+					<RunCode Name="Botanist_Forelands"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(888) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(888))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Lush Vegetation Patch</GatherObject>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Swordleaf</ItemName>
+						<ItemName>Bladeleaf</ItemName>
+						<ItemName>Fire Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Coneflower</ItemName> -->
+						<ItemName>Fire Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+						<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+						<HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10382) != 0">
-					<If Condition="not IsOnMap(398)">
-						<TeleportTo Name="Anyx Trine" AetheryteId="77" />
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505" Radius="3.0" />
-						<ExFlyTo XYZ="-216.91, -25.85352, 196.2107" Radius="3.0" />
-						<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867" Radius="3.0" />
-					</If>
-					<RunCode Name="BTN"/>
-					<While Condition="ItemCount(10382) != 0">
-						<ExFlyTo XYZ="-553.3353, -85.52296, 419.714" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(888)">
-							<RunCode Name="Botanist_Forelands"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(888) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(888))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Lush Vegetation Patch</GatherObject>
-								<GatherObject>Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Swordleaf</ItemName>
-								<ItemName>Bladeleaf</ItemName>
-								<ItemName>Fire Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Coneflower</ItemName> --><ItemName>Fire Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
-								<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
-								<HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10382) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-689.1198, -104.5742, 631.8687" nodeLocation="-679.3283, -104.4418, 624.4818" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
-									<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
-									<HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Lush Vegetation Patch</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<StealthApproachGatherSpot ReturnToStealthLocation="true" StealthLocation="-689.1198, -104.5742, 631.8687" nodeLocation="-679.3283, -104.4418, 624.4818"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot XYZ="-532.0055, -82.23738, 455.3998" Radius="70"/>
+							<HotSpot XYZ="-580.0791, -93.15157, 538.0186" Radius="70"/>
+							<HotSpot XYZ="-710.0841, -100.0908, 589.6254" Radius="60"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Forelands [STOP]"/>
 		</If>
 		<!-- Churning Mist -->
-		<If Condition="&Miner_ChurningMists; != 0 or &Botanist_ChurningMists; != 0">
-			<If Condition="&Miner_ChurningMists; != 0">
-				<If Condition="ItemCount(10377) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (The Churning Mists)"/>
-				</If>
+		<If Condition="ItemCount(10377) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Traders' Favor (The Churning Mists)"/>
+		</If>
+		<If Condition="ItemCount(10377) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Churning Mist [START]"/>
+			<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
+			<RunCode Name="MIN"/>
+			<ExFlyTo XYZ="278.0609, -36.08669, -109.267"/>
+			<While Condition="ItemCount(10377) != 0">
+				<ExFlyTo XYZ="298.4705, -33.42664, -104.0061"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Rocky Outcrop</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<HotSpots>
+						<HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
+						<HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="298.4705, -33.42664, -104.0061"/>
+				<While Condition="not Core.Player.HasAura(884)">
+					<RunCode Name="Miner_ChurningMists"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(884) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(884))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mineral Deposit</GatherObject>
+						<GatherObject>Rocky Outcrop</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Yellow Roundstone</ItemName>
+						<ItemName>Yellow Ooid</ItemName>
+						<ItemName>Earth Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Cloud Mica</ItemName> -->
+						<!-- <ItemName>Hardsilver Sand</ItemName> -->
+						<ItemName>Earth Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<HotSpots>
+						<HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
+						<HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
+						<HotSpot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10377) != 0">
-					<If Condition="not IsOnMap(400)">
-						<TeleportTo Name="Moghome" AetheryteId="78" />
-					</If>
-					<RunCode Name="MIN"/>
-					<ExFlyTo XYZ="278.0609, -36.08669, -109.267" Radius="3.0" />
-					<While Condition="ItemCount(10377) != 0">
-						<ExFlyTo XYZ="298.4705, -33.42664, -104.0061" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(884)">
-							<RunCode Name="Miner_ChurningMists"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(884) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(884))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Mineral Deposit</GatherObject>
-								<GatherObject>Rocky Outcrop</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Yellow Roundstone</ItemName>
-								<ItemName>Yellow Ooid</ItemName>
-								<ItemName>Earth Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Cloud Mica</ItemName> --><!-- <ItemName>Hardsilver Sand</ItemName> --><ItemName>Earth Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<HotSpots>
-								<HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
-								<HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
-								<HotSpot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10377) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<HotSpots>
-									<HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
-									<HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
-									<HotSpot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
-					<If Condition="&Botanist_ChurningMists; != 0">
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-183.4011, 61.47494, 345.4377" Radius="3.0" DismountAtDestination="false" />
-					</If>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Rocky Outcrop</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<HotSpots>
+							<HotSpot XYZ="282.2615, -31.4674, -124.715" Radius="70"/>
+							<HotSpot XYZ="314.366364, -27.5310516, -225.964035" Radius="40"/>
+							<HotSpot XYZ="167.6636, -28.06865, -185.1557" Radius="50"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
-			<If Condition="&Botanist_ChurningMists; != 0">
-				<If Condition="ItemCount(10383) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (The Churning Mists)"/>
-				</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Churning Mist [STOP]"/>
+		</If>
+		<If Condition="ItemCount(10383) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (The Churning Mists)"/>
+		</If>
+		<If Condition="ItemCount(10383) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [START]"/>
+			<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
+			<RunCode Name="BTN"/>
+			<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" MountId="1"/>
+			<ExFlyTo XYZ="-223.9079, 73.30476, 369.493" MountId="1"/>
+			<While Condition="ItemCount(10383) != 0">
+				<ExFlyTo XYZ="-216.0441, -15.27015, 263.3171"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" UnStealthAfter="true" StealthLocation="-81.65399, -9.282702, 448.6534" NodeLocation="-88.15926, -8.882813, 447.7102"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
+						<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="-216.0441, -15.27015, 263.3171"/>
+				<While Condition="not Core.Player.HasAura(890)">
+					<RunCode Name="Botanist_ChurningMists"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(890) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(890))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mature Tree</GatherObject>
+						<GatherObject>Lush Vegetation Patch</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Dragon's Wart</ItemName>
+						<ItemName>Wyvern's Wart</ItemName>
+						<ItemName>Earth Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Dandelion</ItemName> -->
+						<ItemName>Earth Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<StealthApproachGatherSpot ReturnToStealthLocation="true" UnStealthAfter="true" StealthLocation="-81.65399, -9.282702, 448.6534" NodeLocation="-88.15926, -8.882813, 447.7102"/>
+						<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
+						<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+						<HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
+					</HotSpots>
+				</ExGather>
 				<If Condition="ItemCount(10383) != 0">
-					<If Condition="not IsOnMap(400)">
-						<TeleportTo Name="Zenith" AetheryteId="79" />
-						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" Radius="3.0" MountId="1" DismountAtDestination="false" />
-						<ExFlyTo XYZ="-223.9079, 73.30476, 369.493" Radius="3.0" MountId="1" DismountAtDestination="false" />
-					</If>
-					<RunCode Name="BTN"/>
-					<While Condition="ItemCount(10383) != 0">
-						<ExFlyTo XYZ="-216.0441, -15.27015, 263.3171" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(890)">
-							<RunCode Name="Botanist_ChurningMists"/>
-						</While>
-						<ExGather while="Core.Player.HasAura(890) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(890))" DisableRotationOverride="true">
-							<GatherObjects>
-								<GatherObject>Concealed Mature Tree</GatherObject>
-								<GatherObject>Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Dragon's Wart</ItemName>
-								<ItemName>Wyvern's Wart</ItemName>
-								<ItemName>Earth Cluster</ItemName>
-								<ItemName>Grade 5 Carbonized Matter</ItemName>
-								<ItemName>Timeworn Dragonskin Map</ItemName>
-								<!-- <ItemName>Dandelion</ItemName> --><ItemName>Earth Crystal</ItemName>
-							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="true" UnStealthAfter="true" StealthLocation="-81.65399, -9.282702, 448.6534" NodeLocation="-88.15926, -8.882813, 447.7102" />
-								<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" />
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
-								<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
-								<HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
-							</HotSpots>
-						</ExGather>
-						<If Condition="ItemCount(10383) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<StealthApproachGatherSpot ReturnToStealthLocation="true" UnStealthAfter="true" StealthLocation="-81.65399, -9.282702, 448.6534" NodeLocation="-88.15926, -8.882813, 447.7102" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
-									<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
-									<HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Lush Vegetation Patch</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<StealthApproachGatherSpot ReturnToStealthLocation="true" UnStealthAfter="true" StealthLocation="-81.65399, -9.282702, 448.6534" NodeLocation="-88.15926, -8.882813, 447.7102"/>
+							<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="-27.539, -13.48827, 370.4258" NodeLocation="-33.43795, -13.69157, 374.1798"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot XYZ="-211.961, -10.23702, 282.1108" Radius="50"/>
+							<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+							<HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
+						</HotSpots>
+					</ExGather>
 				</If>
-			</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [STOP]"/>
 		</If>
 		<!-- Sea of Clouds -->
-		<If Condition="&Miner_SOC; != 0 or &Botanist_SOC; != 0">
-			<If Condition="&Miner_SOC; != 0">
-				<If Condition="ItemCount(10378) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Traders' Favor (The Sea Of Clouds)"/>
-				</If>
-				<If Condition="ItemCount(10378) != 0">
-					<If Condition="not IsOnMap(401)">
-						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0" MountId="1" DismountAtDestination="false" />
-					</If>
-					<RunCode Name="MIN"/>
-					<While Condition="ItemCount(10378) != 0">
-						<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(885)">
-							<RunCode Name="Miner_SOC"/>
-						</While>
-						<While Condition="Core.Player.HasAura(885) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(885))">
-							<ExGather loops="1" while="Core.Player.HasAura(885) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(885))" DisableRotationOverride="true">
-								<GatherObjects>
-									<GatherObject>Concealed Mineral Deposit</GatherObject>
-									<GatherObject>Mineral Deposit</GatherObject>
-								</GatherObjects>
-								<ItemNames>
-									<ItemName>Violet Roundstone</ItemName>
-									<ItemName>Violet Ooid</ItemName>
-									<ItemName>Water Cluster</ItemName>
-									<ItemName>Grade 5 Carbonized Matter</ItemName>
-									<ItemName>Timeworn Dragonskin Map</ItemName>
-									<!-- <ItemName>Abalathian Spring Water</ItemName> --><!-- <ItemName>Aurum Regis Sand</ItemName> --><!-- <ItemName>Water Crystal</ItemName> --><ItemName>Lightning Crystal</ItemName>
-								</ItemNames>
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" />
-									<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" />
-									<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471" />
-									<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="533.8292, -110.3895, 448.9955" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-									<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
-								</HotSpots>
-							</ExGather>
-							<ExGather loops="1" while="Core.Player.HasAura(885) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(885))" DisableRotationOverride="true">
-								<GatherObjects>
-									<GatherObject>Concealed Mineral Deposit</GatherObject>
-									<GatherObject>Mineral Deposit</GatherObject>
-								</GatherObjects>
-								<ItemNames>
-									<ItemName>Violet Roundstone</ItemName>
-									<ItemName>Violet Ooid</ItemName>
-									<ItemName>Water Cluster</ItemName>
-									<ItemName>Grade 5 Carbonized Matter</ItemName>
-									<ItemName>Timeworn Dragonskin Map</ItemName>
-									<!-- <ItemName>Abalathian Spring Water</ItemName> --><!-- <ItemName>Aurum Regis Sand</ItemName> --><!-- <ItemName>Water Crystal</ItemName> --><ItemName>Lightning Crystal</ItemName>
-								</ItemNames>
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" />
-									<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" />
-									<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471" />
-									<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="533.8292, -110.3895, 448.9955" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
-								</HotSpots>
-							</ExGather>
-							<ExGather loops="1" while="Core.Player.HasAura(885) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(885))" DisableRotationOverride="true">
-								<GatherObjects>
-									<GatherObject>Concealed Mineral Deposit</GatherObject>
-									<GatherObject>Mineral Deposit</GatherObject>
-								</GatherObjects>
-								<ItemNames>
-									<ItemName>Violet Roundstone</ItemName>
-									<ItemName>Violet Ooid</ItemName>
-									<ItemName>Water Cluster</ItemName>
-									<ItemName>Grade 5 Carbonized Matter</ItemName>
-									<ItemName>Timeworn Dragonskin Map</ItemName>
-									<!-- <ItemName>Abalathian Spring Water</ItemName> --><!-- <ItemName>Aurum Regis Sand</ItemName> --><!-- <ItemName>Lightning Crystal</ItemName> --><!-- <ItemName>Water Crystal</ItemName> --><ItemName>Lightning Crystal</ItemName>
-								</ItemNames>
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" />
-									<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" />
-									<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471" />
-									<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="533.8292, -110.3895, 448.9955" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
-								</HotSpots>
-							</ExGather>
-						</While>
-						<If Condition="ItemCount(10378) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" />
-									<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" />
-									<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471" />
-									<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="533.8292, -110.3895, 448.9955" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-									<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
-									<HotSpot XYZ="707.7832, -109.0969, 378.0255" Radius="45"/>
-									<HotSpot XYZ="649.4897, -108.6848, 300.6292" Radius="60"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
-				</If>
-			</If>
-			<If Condition="&Botanist_SOC; != 0">
-				<If Condition="ItemCount(10384) == 0">
-					<ExLog Color="#FFC0CB"  Message="FavorManager | You don't have any Matron's Favor (The Sea Of Clouds)"/>
-				</If>
-				<If Condition="ItemCount(10384) != 0">
-					<If Condition="not IsOnMap(401)">
-						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
-					</If>
-					<RunCode Name="BTN"/>
-					<While Condition="ItemCount(10384) != 0">
-						<ExFlyTo XYZ="79.19703, -146.5234, 582.6823" Radius="3.0" />
-						<While Condition="not Core.Player.HasAura(891)">
-							<RunCode Name="Botanist_SOC"/>
-						</While>
-						<While Condition="Core.Player.HasAura(891) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(891))">
-							<ExGather loops="1" while="Core.Player.HasAura(891) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(891))" DisableRotationOverride="true">
-								<GatherObjects>
-									<GatherObject>Concealed Mature Tree</GatherObject>
-									<GatherObject>Mature Tree</GatherObject>
-								</GatherObjects>
-								<ItemNames>
-									<ItemName>Heavensnut</ItemName>
-									<ItemName>Void Nut</ItemName>
-									<ItemName>Water Cluster</ItemName>
-									<ItemName>Grade 5 Carbonized Matter</ItemName>
-									<ItemName>Timeworn Dragonskin Map</ItemName>
-									<!-- <ItemName>Birch Log</ItemName> --><!-- <ItemName>Birch Branch</ItemName> --><!-- <ItemName>Birch Sap</ItemName> --><ItemName>Water Crystal</ItemName>
-								</ItemNames>
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
-									<HotSpot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
-									<HotSpot XYZ="218.774689, -124.9265, 500.0145" Radius="80"/>
-								</HotSpots>
-							</ExGather>
-							<ExGather loops="1" while="Core.Player.HasAura(891) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(891))" DisableRotationOverride="true">
-								<GatherObjects>
-									<GatherObject>Concealed Mature Tree</GatherObject>
-									<GatherObject>Mature Tree</GatherObject>
-								</GatherObjects>
-								<ItemNames>
-									<ItemName>Heavensnut</ItemName>
-									<ItemName>Void Nut</ItemName>
-									<ItemName>Water Cluster</ItemName>
-									<ItemName>Grade 5 Carbonized Matter</ItemName>
-									<ItemName>Timeworn Dragonskin Map</ItemName>
-									<!-- <ItemName>Birch Log</ItemName> --><!-- <ItemName>Birch Branch</ItemName> --><!-- <ItemName>Birch Sap</ItemName> --><ItemName>Water Crystal</ItemName>
-								</ItemNames>
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
-								</HotSpots>
-							</ExGather>
-							<ExGather loops="1" while="Core.Player.HasAura(891) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(891))" DisableRotationOverride="true">
-								<GatherObjects>
-									<GatherObject>Concealed Mature Tree</GatherObject>
-									<GatherObject>Mature Tree</GatherObject>
-								</GatherObjects>
-								<ItemNames>
-									<ItemName>Heavensnut</ItemName>
-									<ItemName>Void Nut</ItemName>
-									<ItemName>Water Cluster</ItemName>
-									<ItemName>Grade 5 Carbonized Matter</ItemName>
-									<ItemName>Timeworn Dragonskin Map</ItemName>
-									<!-- <ItemName>Birch Log</ItemName> --><!-- <ItemName>Birch Branch</ItemName> --><!-- <ItemName>Birch Sap</ItemName> --><ItemName>Water Crystal</ItemName>
-								</ItemNames>
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="206.746, -118.7252, 599.1957" Radius="60"/>
-								</HotSpots>
-							</ExGather>
-						</While>
-						<If Condition="ItemCount(10384) != 0">
-							<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
-								<GatherRotation>RegularNode</GatherRotation>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" />
-									<IndirectApproachGatherSpot ReturnToApproachLocation="false" ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" />
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="117.249428, -137.9418, 613.707947" Radius="65"/>
-									<HotSpot XYZ="100.5221, -137.9418, 504.220642" Radius="40"/>
-									<HotSpot XYZ="294.9306, -111.2702, 521.9253" Radius="60"/>
-								</HotSpots>
-							</ExGather>
-						</If>
-					</While>
-				</If>
-			</If>
+		<If Condition="ItemCount(10378) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Traders' Favor (The Sea Of Clouds)"/>
 		</If>
-		<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Ending_AetheryteId;" />
+		<If Condition="ItemCount(10378) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Sea of Clouds [START]"/>
+			<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
+			<RunCode Name="MIN"/>
+			<ExFlyTo XYZ="125.623, 19.02453, 565.1636" MountId="1"/>
+			<While Condition="ItemCount(10378) != 0">
+				<ExFlyTo XYZ="506.612579, -93.20097, 421.040375"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+						<GatherObjects>
+							<GatherObject>Mineral Deposit</GatherObject>
+						</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149"/>
+						<IndirectApproachGatherSpot ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471"/>
+						<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633"/>
+						<IndirectApproachGatherSpot ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="525.8179, -111.779, 440.9017" NodeLocation="533.8292, -110.3895, 448.9955"/>
+						<IndirectApproachGatherSpot ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot Radius="45" XYZ="506.612579, -93.20097, 421.040375"/>
+						<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="514.1337, -80.13731, 430.907"/>
+				<While Condition="not Core.Player.HasAura(885)">
+					<RunCode Name="Miner_SOC"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(885) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(885))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mineral Deposit</GatherObject>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Violet Roundstone</ItemName>
+						<ItemName>Violet Ooid</ItemName>
+						<ItemName>Water Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Abalathian Spring Water</ItemName> -->
+						<!-- <ItemName>Aurum Regis Sand</ItemName> -->
+						<!-- <ItemName>Water Crystal</ItemName> -->
+						<ItemName>Lightning Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149"/>
+						<IndirectApproachGatherSpot ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471"/>
+						<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633"/>
+						<IndirectApproachGatherSpot ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="525.8179, -111.779, 440.9017" NodeLocation="533.8292, -110.3895, 448.9955"/>
+						<IndirectApproachGatherSpot ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot Radius="45" XYZ="506.612579, -93.20097, 421.040375"/>
+						<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+						<HotSpot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
+						<HotSpot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
+					</HotSpots>
+				</ExGather>
+				<If Condition="ItemCount(10378) != 0">
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Mineral Deposit</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<IndirectApproachGatherSpot ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="521.7946, -111.9575, 435.3797" NodeLocation="529.0662, -110.3256, 434.3149"/>
+							<IndirectApproachGatherSpot ApproachLocation="498.314, -110.2203, 411.5274" NodeLocation="499.3676, -108.7323, 410.8949" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="555.3109, -113.4487, 473.3432" NodeLocation="541.8505, -111.128, 452.5471"/>
+							<IndirectApproachGatherSpot ApproachLocation="644.941, -124.3496, 329.1923" NodeLocation="644.1232, -123.028, 333.9633"/>
+							<IndirectApproachGatherSpot ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="525.8179, -111.779, 440.9017" NodeLocation="533.8292, -110.3895, 448.9955"/>
+							<IndirectApproachGatherSpot ApproachLocation="684.262, -125.0184, 353.4989" NodeLocation="678.5617, -122.8687, 356.7407" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="654.742, -112.7149, 339.4667" NodeLocation="650.0299, -111.3171, 346.1465" ReturnToApproachLocation="false"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot Radius="45" XYZ="506.612579, -93.20097, 421.040375"/>
+							<HotSpot Radius="40" XYZ="706.3032, -79.69473, 460.5809"/>
+							<HotSpot Radius="45" XYZ="707.7832, -109.0969, 378.0255"/>
+							<HotSpot Radius="60" XYZ="649.4897, -108.6848, 300.6292"/>
+						</HotSpots>
+					</ExGather>
+				</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Sea of Clouds [STOP]"/>
+		</If>
+		<If Condition="ItemCount(10384) == 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (The Sea Of Clouds)"/>
+		</If>
+		<If Condition="ItemCount(10384) != 0">
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [START]"/>
+			<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
+			<RunCode Name="BTN"/>
+			<While Condition="ItemCount(10384) != 0">
+				<ExFlyTo XYZ="79.19703, -146.5234, 582.6823"/>
+				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
+					<GatherObjects>
+						<GatherObject>Mature Tree</GatherObject>
+					</GatherObjects>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="133.8673, -147.8377, 571.5581" NodeLocation="136.0294, -147.8377, 576.7831" ReturnToApproachLocation="false"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+						<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+						<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+					</HotSpots>
+				</ExGather>
+				<ExFlyTo XYZ="79.19703, -146.5234, 582.6823"/>
+				<While Condition="not Core.Player.HasAura(891)">
+					<RunCode Name="Botanist_SOC"/>
+				</While>
+				<ExGather while="Core.Player.HasAura(891) or (ff14bot.Helpers.Poi.Current.Type == ff14bot.Helpers.PoiType.Gather and not Core.Player.HasAura(891))" DisableRotationOverride="true">
+					<GatherObjects>
+						<GatherObject>Concealed Mature Tree</GatherObject>
+						<GatherObject>Mature Tree</GatherObject>
+					</GatherObjects>
+					<ItemNames>
+						<ItemName>Heavensnut</ItemName>
+						<ItemName>Void Nut</ItemName>
+						<ItemName>Water Cluster</ItemName>
+						<ItemName>Grade 5 Carbonized Matter</ItemName>
+						<ItemName>Timeworn Dragonskin Map</ItemName>
+						<!-- <ItemName>Birch Log</ItemName> -->
+						<!-- <ItemName>Birch Branch</ItemName> -->
+						<!-- <ItemName>Birch Sap</ItemName> -->
+						<ItemName>Water Crystal</ItemName>
+					</ItemNames>
+					<GatherRotation>RegularNode</GatherRotation>
+					<GatherSpots>
+						<IndirectApproachGatherSpot ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
+						<IndirectApproachGatherSpot ApproachLocation="133.8673, -147.8377, 571.5581" NodeLocation="136.0294, -147.8377, 576.7831" ReturnToApproachLocation="false"/>
+					</GatherSpots>
+					<HotSpots>
+						<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+						<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+						<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+						<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+					</HotSpots>
+				</ExGather>
+				<If Condition="ItemCount(10384) != 0">
+					<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="false" GatherStrategy="TouchAndGo" skipWindowDelay="1500">
+						<GatherObjects>
+							<GatherObject>Mature Tree</GatherObject>
+						</GatherObjects>
+						<GatherRotation>RegularNode</GatherRotation>
+						<GatherSpots>
+							<IndirectApproachGatherSpot ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="355.3312, -125.2895, 547.7977" NodeLocation="355.2203, -124.4831, 546.3409" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="238.5827, -147.8377, 561.194" NodeLocation="239.7856, -147.8377, 560.218" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="118.4536, -135.0074, 667.5775" NodeLocation="125.7459, -134.1405, 660.5757" ReturnToApproachLocation="false"/>
+							<IndirectApproachGatherSpot ApproachLocation="133.8673, -147.8377, 571.5581" NodeLocation="136.0294, -147.8377, 576.7831" ReturnToApproachLocation="false"/>
+						</GatherSpots>
+						<HotSpots>
+							<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+							<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+							<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+						</HotSpots>
+					</ExGather>
+				</If>
+			</While>
+			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [STOP]"/>
+		</If>
+		<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="No more Favor to do"/>
+		<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Ending_AetheryteId;"/>
 	</Order>
 </Profile>
