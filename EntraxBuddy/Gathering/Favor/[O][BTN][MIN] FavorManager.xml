@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Profile [
-<!ENTITY BRN_Hinterland "0">
+<!ENTITY BTN_Hinterland "0">
+<!ENTITY BTN_SoC "0">
 <!ENTITY Version "Slowpoke">
 <!ENTITY Ending_AetheryteId "8">	 ]><Profile>
 	<Name>FavorManager</Name>
@@ -44,6 +45,9 @@
 		</CodeChunk>
 		<CodeChunk Name="useAethernet">
 			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(2000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(2000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(1); await Buddy.Coroutines.Coroutine.Sleep(5000); ]]>
+		</CodeChunk>
+		<CodeChunk Name="MoveForward">
+			<![CDATA[	await Buddy.Coroutines.Coroutine.Sleep(500);	ff14bot.Managers.MovementManager.MoveForwardStart();	await Buddy.Coroutines.Coroutine.Sleep(2000);	ff14bot.Managers.MovementManager.MoveForwardStop();	await Buddy.Coroutines.Coroutine.Sleep(500);	]]>
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
@@ -206,8 +210,9 @@
 			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [START]"/>
 			<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 			<RunCode Name="MIN"/>
-			<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
-			<RunCode Name="useAethernet"/>
+			<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
+			<RunCode Name="MoveForward"/>
+			<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 			<ExFlyTo XYZ="11.32641, 129.841, -243.8127"/>
 			<While Condition="ItemCount(10375) != 0">
 				<ExFlyTo XYZ="120.7219, 69.52051, 32.74143"/>
@@ -292,12 +297,13 @@
 		<If Condition="ItemCount(10381) == 0">
 			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (Dravanian Hinterlands)"/>
 		</If>
-		<If Condition="ItemCount(10381) != 0">
+		<If Condition="ItemCount(10381) != 0 and &BTN_Hinterland; != 0">
 			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [START]"/>
 			<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 			<RunCode Name="BTN"/>
-			<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
-			<RunCode Name="useAethernet"/>
+			<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
+			<RunCode Name="MoveForward"/>
+			<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 			<While Condition="ItemCount(10381) != 0">
 				<ExFlyTo XYZ="-517.9157, 141.9116, -274.003"/>
 				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
@@ -357,7 +363,7 @@
 						<GatherObjects>
 							<GatherObject>Lush Vegetation Patch</GatherObject>
 						</GatherObjects>
-							<GatherRotation>RegularNode</GatherRotation>
+						<GatherRotation>RegularNode</GatherRotation>
 						<GatherSpots>
 							<StealthApproachGatherSpot ReturnToStealthLocation="true" UnstealthAfter="true" StealthLocation="-512.0675, 141.4861, -277.4222" nodeLocation="-510.6701, 141.0723, -279.9205"/>
 							<StealthApproachGatherSpot ReturnToStealthLocation="false" StealthLocation="-473.159, 143.2004, -298.8527" nodeLocation="-494.1652, 142.7381, -287.4084"/>
@@ -594,7 +600,7 @@
 			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [START]"/>
 			<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 			<RunCode Name="BTN"/>
-			<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" MountId="1"/>
+			<ExFlyTo XYZ="-514.855, 53.54427, 354.8046" MountId="1"/>
 			<ExFlyTo XYZ="-223.9079, 73.30476, 369.493" MountId="1"/>
 			<While Condition="ItemCount(10383) != 0">
 				<ExFlyTo XYZ="-216.0441, -15.27015, 263.3171"/>
@@ -673,9 +679,9 @@
 			<While Condition="ItemCount(10378) != 0">
 				<ExFlyTo XYZ="506.612579, -93.20097, 421.040375"/>
 				<ExGather loops="1" DisableRotationOverride="true" AlwaysGather="true" SwingsRemaining="1">
-						<GatherObjects>
-							<GatherObject>Mineral Deposit</GatherObject>
-						</GatherObjects>
+					<GatherObjects>
+						<GatherObject>Mineral Deposit</GatherObject>
+					</GatherObjects>
 					<GatherRotation>RegularNode</GatherRotation>
 					<GatherSpots>
 						<IndirectApproachGatherSpot ApproachLocation="515.9323, -110.6312, 420.1824" NodeLocation="517.9747, -109.2984, 417.9554" ReturnToApproachLocation="false"/>
@@ -763,7 +769,7 @@
 		<If Condition="ItemCount(10384) == 0">
 			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="You don't have any Matron's Favor (The Sea Of Clouds)"/>
 		</If>
-		<If Condition="ItemCount(10384) != 0">
+		<If Condition="ItemCount(10384) != 0 and &BTN_SoC; !=0">
 			<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [START]"/>
 			<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 			<RunCode Name="BTN"/>

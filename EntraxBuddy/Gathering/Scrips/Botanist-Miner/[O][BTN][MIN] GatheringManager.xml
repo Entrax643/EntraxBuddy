@@ -140,7 +140,7 @@
 <!-- -->
 <!ENTITY ShroudTopsoil3 "0">
 <!-- -->
-<!ENTITY Spinach "0">
+<!ENTITY YoungCieldalaesSpinach "0">
 <!-- -->
 <!ENTITY VioletQuartz "0">
 <!-- -->
@@ -333,11 +333,11 @@
 <!--   -->
 <!-- DO NOT TOUCH THIS -->
 <!ENTITY Version "Charizard">
-<!ENTITY WaitCondition "not(((&Gardenning; != 0 or &Retainer; != 0) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or (IsTimeBetween(0,1) and (&SilkwormCocoon; != 0)) or ((IsTimeBetween(1,2) or IsTimeBetween(12,13)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(12,13)))) or (IsTimeBetween(4,5) and (&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; !=0 or &ThanalanTopsoil3; !=0 or &EbonyLog; !=0)) or (IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &Spinach; != 0)) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or ((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0) and IsTimeBetween(8,9)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or (&CypressLog; != 0 and IsTimeBetween(9,10)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0)) or (IsTimeBetween(16,17) and (&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0)) or (IsTimeBetween(18,19) and (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0))) and FreeItemSlots() &gt; 1">]><Profile>
+<!ENTITY WaitCondition "not(((&Gardenning; != 0 or &Retainer; != 0) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or (IsTimeBetween(0,1) and (&SilkwormCocoon; != 0)) or ((IsTimeBetween(1,2) or IsTimeBetween(12,13)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(12,13)))) or (IsTimeBetween(4,5) and (&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; !=0 or &ThanalanTopsoil3; !=0 or &EbonyLog; !=0)) or (IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0)) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or ((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0) and IsTimeBetween(8,9)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or (&CypressLog; != 0 and IsTimeBetween(9,10)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0)) or (IsTimeBetween(16,17) and (&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0)) or (IsTimeBetween(18,19) and (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0))) and FreeItemSlots() &gt; 1">]><Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
 	<CodeChunks>
-		<CodeChunk Name=" MIN">
+		<CodeChunk Name="MIN">
 			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 10");	await Buddy.Coroutines.Coroutine.Sleep(2000);	if(!Core.Player.HasAura(222))	{	var result = true;	if (MovementManager.IsFlying)	{	result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		if (result && Core.Player.IsMounted)	{	await CommonTasks.StopAndDismount();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		ff14bot.Managers.Actionmanager.DoAction(238, Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
 		</CodeChunk>
 		<CodeChunk Name="BTN">
@@ -572,6 +572,7 @@
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 					<RunCode Name="MoveForward"/>
+					<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 					<ExFlyTo Radius="3.0" XYZ="294.029, 271.385, 341.6016"/>
 					<ExFlyTo Radius="3.0" XYZ="512.589, 230.5479, 354.7156"/>
 					<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(12,14)"/>
@@ -940,7 +941,7 @@
 				</If>
 			</If>
 			<!-- 7AM -->
-			<If Condition="IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &Spinach; != 0) and FreeItemSlots() &gt; 1">
+			<If Condition="IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0) and FreeItemSlots() &gt; 1">
 				<!-- Umbral Rock -->
 				<If Condition="&UmbralRock; != 0">
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[MIN] Umbral Rock"/>
@@ -982,8 +983,8 @@
 						</HotSpots>
 					</ExGather>
 				</If>
-				<!-- Spinach -->
-				<If Condition="&Spinach; != 0">
+				<!-- Young Cieldalaes Spinach -->
+				<If Condition="&YoungCieldalaesSpinach; != 0">
 					<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] Young Cieldalaes Spinach"/>
 					<TeleportTo Force="True" Name="Moraby Drydocks" AetheryteId="10"/>
 					<RunCode Name="BTN"/>
@@ -1009,6 +1010,7 @@
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 					<RunCode Name="MoveForward"/>
+					<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 					<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" Radius="3.0"/>
 					<WaitWhile Condition="IsTimeBetween(6,7)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
@@ -1650,6 +1652,8 @@
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 					<RunCode Name="MoveForward"/>
+					<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
+					<ExFlyTo XYZ="-260.9374, 253.6686, 404.2157" Radius="3.0"/>
 					<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" Radius="3.0"/>
 					<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
 					<!-- Cloud Banana -->
@@ -2160,6 +2164,7 @@
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 					<RunCode Name="MoveForward"/>
+					<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 					<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" Radius="3.0"/>
 					<WaitWhile Condition="IsTimeBetween(18,19)"/>
 					<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
@@ -2708,6 +2713,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 						<RunCode Name="MoveForward"/>
+						<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 						<ExFlyTo  Radius="3.0" XYZ="11.32641, 129.841, -243.8127"/>
 						<!-- Hardsilver Ore -->
 						<If Condition="ItemCount(12535) &lt; &HardsilverOre; and &WaitCondition;">
@@ -3146,7 +3152,7 @@
 						<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] YoloFarm ~ Destination ----&gt; Four Arms"/>
 						<TeleportTo Force="True" AetheryteId="79" Name="Zenith"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo  Radius="3.0" XYZ="-423.3196, 69.13547, 411.706"/>
+						<ExFlyTo  Radius="3.0" XYZ="-514.855, 53.54427, 354.8046"/>
 						<ExFlyTo  Radius="3.0" XYZ="-223.9079, 73.30476, 369.493"/>
 						<!-- Dandelion -->
 						<If Condition="ItemCount(12640) &lt; &Dandelion; and &WaitCondition;">
@@ -3212,6 +3218,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 						<RunCode Name="MoveForward"/>
+						<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 						<!-- Cow Bitter -->
 						<If Condition="ItemCount(12639) &lt; &CowBitter; and &WaitCondition;">
 							<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] Cow Bitter(The Answering Quarter) [START]"/>
@@ -4271,6 +4278,7 @@
 								<ExPurify/>
 								<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 								<RunCode Name="MoveForward"/>
+								<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 								<ExFlyTo XYZ="-470.2735, 167.3033, -139.4283" Radius="3.0"/>
 								<If Condition="&EphemeralFarm_BlackSoil; == 0">
 									<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(4,8) and &WaitCondition;" skipWindowDelay="1500">
@@ -4353,6 +4361,7 @@
 								<ExPurify/>
 								<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
 								<RunCode Name="MoveForward"/>
+								<ExMoveTo XYZ="-210.4723, 101.8975, -568.0225" Distance="1"/>
 								<ExFlyTo XYZ="120.7219, 69.52051, 32.74143" Radius="3.0"/>
 								<ExLog Color="#FFFF00" Name="GatherManager &Version;" Message="[BTN] EphemeralFarm [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(8,12) and &WaitCondition;" skipWindowDelay="1500">
@@ -4421,8 +4430,8 @@
 								<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 								<RunCode Name="BTN"/>
 								<ExPurify/>
-								<ExFlyTo XYZ="-423.3196, 69.13547, 411.706" MountId="1"/>
-								<ExFlyTo XYZ="-159.2171, 8.916934, 373.4327" MountId="1"/>
+								<ExFlyTo XYZ="-514.855, 53.54427, 354.8046"/>
+								<ExFlyTo XYZ="-159.2171, 8.916934, 373.4327"/>
 								<If Condition="&EphemeralFarm_BlackSoil; == 0">
 									<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Ephemeral;" CordialTime="&CordialTime_Ephemeral;" while="IsTimeBetween(16,20) and &WaitCondition;" skipWindowDelay="1500">
 										<Items>
