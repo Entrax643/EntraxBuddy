@@ -517,17 +517,11 @@
 				<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; &FlawlessLimit;">
 					<CraftActionByName Name="Flawless Synthesis" />
 				</While>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Waste Not II" />
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
@@ -537,22 +531,16 @@
 				<CraftActionByName Name="Hasty Touch" />
 				<CraftActionByName Name="Careful Synthesis II" />
 				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<CraftActionByName Name="Master's Mend II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<CraftActionByName Name="Hasty Touch" />
 				<CraftActionByName Name="Hasty Touch" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<RunCode Name="BBCheck"/>
 				<RunCode Name="TrickTouch"/>

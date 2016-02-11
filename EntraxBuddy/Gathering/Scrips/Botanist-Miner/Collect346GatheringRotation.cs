@@ -6,8 +6,8 @@
 	using ExBuddy.Interfaces;
 
 	using ff14bot;
-	[GatheringRotation("Collect346", 30, 600,400,200)]
-	public sealed class Collect346GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
+	[GatheringRotation("Lileep346", 30, 600,400,200)]
+	public sealed class Lileep346GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
 	{
 		#region IGetOverridePriority Members
 		int IGetOverridePriority.GetOverridePriority(ExGatherTag tag)

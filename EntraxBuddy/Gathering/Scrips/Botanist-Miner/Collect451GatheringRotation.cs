@@ -6,16 +6,16 @@
 	using ExBuddy.Interfaces;
 
 	using ff14bot;
-	[GatheringRotation("Lileep402", 30, 600)]
-	public sealed class Lileep402GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
+	[GatheringRotation("Ditto459", 30, 600)]
+	public sealed class Ditto459GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
 	{
 		#region IGetOverridePriority Members
 		int IGetOverridePriority.GetOverridePriority(ExGatherTag tag)
 		{
-			// if we have a collectable && the collectable value is greater than or equal to 402: Priority 402
-			if (tag.CollectableItem != null && tag.CollectableItem.Value >= 402)
+			// if we have a collectable && the collectable value is greater than or equal to 459: Priority 459
+			if (tag.CollectableItem != null && tag.CollectableItem.Value >= 459)
 			{
-				return 402;
+				return 459;
 			}
 			return -1;
 		}
@@ -24,20 +24,20 @@
 		{
 			if (tag.IsUnspoiled())
 			{
-				await SingleMindMethodical(tag);
-				await SingleMindMethodical(tag);
 				await DiscerningMethodical(tag);
+				await DiscerningMethodical(tag);
+				await SingleMindMethodical(tag);
 			}
 			else
 			{
 				if (Core.Player.CurrentGP >= 600)
 				{
-					await SingleMindMethodical(tag);
-					await SingleMindMethodical(tag);
 					await DiscerningMethodical(tag);
+					await DiscerningMethodical(tag);
+					await SingleMindMethodical(tag);
 					return true;
 				}
-				
+
 				await Impulsive(tag);
 				await Impulsive(tag);
 				await Methodical(tag);
