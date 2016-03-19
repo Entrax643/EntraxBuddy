@@ -30,8 +30,13 @@
 <!-- Do you want to use a food ? If yes wich one ? -->
 <!ENTITY FOOD "1">
 <!ENTITY ID_FOOD "12861">
-<!-- 1 Star settings : if CSII > 110 Progress set this to 854 BUT make sure you have at least 445 CP</!-->
-<!ENTITY FlawlessLimit "894">
+<!-- 1 Star settings : if CSII > 110 Progress(Craftmanship > 787) set this to 854 BUT make sure you have at least 445 CP!-->
+<!-- 2 Star settings : if CSII < 111 Progress(Craftmanship < 788) set this to 894!-->
+<!ENTITY FlawlessLimit_1Star "894">
+<!-- 2 Star settings : if CSII > 122 Progress(Craftmanship > 866) set this to 1110!-->
+<!-- 2 Star settings : if CSII > 102 Progress(Craftmanship > 733) set this to 1150!-->
+<!-- 2 Star settings : if CSII < 103 Progress(Craftmanship < 734) set this to 1190!-->
+<!ENTITY FlawlessLimit_2Star "1150">
 <!-- Foods ID Baked onion Soup : 12861 Seafood Stew : 12865 -->
 <!-- Rotation Settings -->
 <!ENTITY Reclaim "0">
@@ -354,7 +359,7 @@
 						<CraftActionByName Name="Steady Hand" />
 						<CraftActionByName Name="Piece by Piece" />
 						<CraftActionByName Name="Piece by Piece" />
-						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; &FlawlessLimit;">
+						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; &FlawlessLimit_1Star;">
 							<CraftActionByName Name="Flawless Synthesis" />
 						</While>
 						<RunCode Name="ToT"/>
@@ -405,11 +410,66 @@
 						<CraftActionByName Name="Steady Hand" />
 						<CraftActionByName Name="Piece by Piece" />
 						<CraftActionByName Name="Piece by Piece" />
-						<While Condition="CraftingManager.Progress &lt; 1150">
+						<While Condition="CraftingManager.Progress &lt; 1110">
 							<CraftActionByName Name="Flawless Synthesis" />
 						</While>
 						<RunCode Name="ToT"/>
-						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; 1190">
+						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; &FlawlessLimit_2Star;">
+							<CraftActionByName Name="Flawless Synthesis" />
+							<RunCode Name="ToT"/>
+						</While>
+						<CraftActionByName Name="Comfort Zone" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Inner Quiet" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Waste Not II" />
+						<CraftActionByName Name="Steady Hand II" />
+						<While Condition="Core.Player.HasAura(262)">
+							<CraftActionByName Name="Hasty Touch" />
+						</While>
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Comfort Zone" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Steady Hand II" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Master's Mend II" />
+						<While Condition="Core.Player.HasAura(262)">
+							<CraftActionByName Name="Hasty Touch" />
+						</While>
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Steady Hand II" />
+						<RunCode Name="BBCheck"/>
+						<RunCode Name="StarTrickTouch"/>
+						<RunCode Name="BBCheck"/>
+						<RunCode Name="StarTrickTouch2"/>
+						<RunCode Name="BBCheck"/>
+						<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+							<CraftActionByName Name="Reclaim" />
+							<CraftActionByName Name="Hasty Touch" />
+							<CraftActionByName Name="Hasty Touch" />
+						</If>
+						<CraftActionByName Name="Great Strides" />
+						<RunCode Name="InnovationCheck"/>
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&Durability; &gt; 69 and &Recipe_level; == 60 and &Recipe_level_star; == 3">
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for 3 Star recipe"/>
+						<!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
+						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
+						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="437" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="100178, 100083, 281, 100069, 100039, 100108, 100009, 286, 285" />
+						<CraftActionByName Name="Maker's Mark" />
+						<CraftActionByName Name="Comfort Zone" />
+						<CraftActionByName Name="Steady Hand" />
+						<CraftActionByName Name="Piece by Piece" />
+						<CraftActionByName Name="Piece by Piece" />
+						<While Condition="CraftingManager.Progress &lt; 1309">
+							<CraftActionByName Name="Flawless Synthesis" />
+						</While>
+						<RunCode Name="ToT"/>
+						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; 1389">
 							<CraftActionByName Name="Flawless Synthesis" />
 							<RunCode Name="ToT"/>
 						</While>
