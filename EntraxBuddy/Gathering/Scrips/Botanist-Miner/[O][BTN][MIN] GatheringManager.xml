@@ -172,7 +172,6 @@
 <!ENTITY HiCordial_Count "0">
 <!ENTITY BruteLeech_Count "0">
 <!ENTITY CraneFly_Count "0">
-<!ENTITY FiendWorm_Count "0">
 <!-- Food setting - Set 1 if you want to use food with THIS profile not chanko ! -->
 <!-- And set your FOOD ID -->
 <!ENTITY USE_FOOD "0">
@@ -3866,7 +3865,6 @@
 						<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
 						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-						<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm_Count;"/>
 					</ShopPurchases>
 				</TurnInCollectables>
 				<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
@@ -6649,7 +6647,6 @@
 									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
 									<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
 									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-									<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm_Count;"/>
 								</ShopPurchases>
 							</TurnInCollectables>
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
@@ -6739,7 +6736,7 @@
 							</If>
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 							<ExMoveTo XYZ="-70.83005, 160.0187, -174.3838" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12706,1) or HasAtLeast(12711,1)) and ((IsTimeBetween(0,6) and not SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (IsTimeBetween(18,20) and ItemCount(12707) == 0) or IsTimeBetween(20,24) or &Illuminati_Perch_ONLY_Magikarp; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Illuminati_Perch_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12706,1) or HasAtLeast(12711,1)) and ((IsTimeBetween(0,6) and not SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (IsTimeBetween(18,20) and ItemCount(12707) == 0) or IsTimeBetween(20,24) or (&Illuminati_Perch_ONLY_Magikarp; != 0 and not IsTimeBetween(6,8))) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Illuminati_Perch_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
 									<Bait Name="Brute Leech"/>
 									<Bait Name="Goblin Jig"/>
@@ -6799,7 +6796,6 @@
 									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
 									<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
 									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-									<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm_Count;"/>
 								</ShopPurchases>
 							</TurnInCollectables>
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
@@ -6860,7 +6856,6 @@
 									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
 									<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
 									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-									<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm_Count;"/>
 								</ShopPurchases>
 							</TurnInCollectables>
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
@@ -7431,7 +7426,6 @@
 								<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 								<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
 								<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-								<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm_Count;"/>
 							</ShopPurchases>
 						</TurnInCollectables>
 						<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
@@ -7448,7 +7442,6 @@
 							<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 							<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
 							<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-							<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm_Count;"/>
 						</ShopPurchases>
 					</TurnInCollectables>
 				</If>
