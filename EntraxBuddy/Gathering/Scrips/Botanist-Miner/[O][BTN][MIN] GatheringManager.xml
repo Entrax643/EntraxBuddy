@@ -524,7 +524,7 @@
 			<![CDATA[	SpellData data;	if(Actionmanager.CurrentActions.TryGetValue("Quit", out data))	{	await Buddy.Coroutines.Coroutine.Sleep(500);	ff14bot.Managers.Actionmanager.DoAction(299, Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
 		</CodeChunk>
 		<CodeChunk Name="Dismount">
-			<![CDATA[		var result=true;	if (MovementManager.IsFlying){result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);}	if (result && Core.Player.IsMounted) {Actionmanager.Dismount();await Buddy.Coroutines.Coroutine.Sleep(1000);}	]]>
+			<![CDATA[		var result=true;	if (MovementManager.IsFlying){result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);}	if (result && Core.Player.IsMounted) {Actionmanager.Dismount();await Buddy.Coroutines.Coroutine.Sleep(2000);}	]]>
 		</CodeChunk>
 		<CodeChunk Name="EnableMount">
 			<![CDATA[	ff14bot.Settings.CharacterSettings.Instance.UseMount = true;	]]>
@@ -1096,7 +1096,7 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-						<ExFlyTo Radius="3.0" XYZ="665.7573, 216.7327, 331.6227"/>
+						<ExFlyTo Radius="3.0" XYZ="512.589, 230.5479, 354.7156"/>
 						<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(13,14)"/>
 						<!-- Cuprite -->
 						<If Condition="&Cuprite; != 0">
@@ -1111,7 +1111,7 @@
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
-										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="520.2643, 203.4863, 401.4426"/>
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
@@ -1132,7 +1132,7 @@
 									</ItemNames>
 									<GatherRotation>&Rotation_50_60;</GatherRotation>
 									<GatherSpots>
-										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="520.2643, 203.4863, 401.4426"/>
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
@@ -1156,7 +1156,7 @@
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
-										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="520.2643, 203.4863, 401.4426"/>
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
@@ -1177,7 +1177,7 @@
 									</ItemNames>
 									<GatherRotation>&Rotation_50_60;</GatherRotation>
 									<GatherSpots>
-										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="521.3271, 202.1645, 402.7722"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="508.8456, 201.7483, 397.1557" nodeLocation="520.2643, 203.4863, 401.4426"/>
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
@@ -1287,7 +1287,7 @@
 						</ExGather>
 					</If>
 					<!-- Old-growth Camphorwood Log  -->
-					<If Condition="&LumythriteOre; != 0 and IsTimeBetween(14,15)">
+					<If Condition="&Old-growthCamphorwoodLog; != 0 and IsTimeBetween(14,15)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Old-growth Camphorwood Log"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
@@ -6787,18 +6787,6 @@
 								</FishSpots>
 							</ExFish>
 							<RunCode Name="StopFishing"/>
-							<TurnInCollectables location="Idyllshire" forcePurchase="False">
-								<Collectables>
-									<CollectableTurnIn Name="Illuminati Perch" value="826"/>
-								</Collectables>
-								<ShopPurchases>
-									<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
-									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
-									<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
-									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-								</ShopPurchases>
-							</TurnInCollectables>
-							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 						</If>
 						<!-- Reset - Turn In - Desynth Time -->
 						<If Condition="IsTimeBetween(6,8)">
@@ -7434,17 +7422,15 @@
 			</If>
 			<If Condition="FreeItemSlots() &lt; 2">
 				<ExPurify/>
-				<If Condition="&TurnInAfterLoop; != 0">
-					<TurnInCollectables location="Idyllshire" forcePurchase="False" >
-						<ShopPurchases>
-							<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
-							<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
-							<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-							<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
-							<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-						</ShopPurchases>
-					</TurnInCollectables>
-				</If>
+				<TurnInCollectables location="Idyllshire" forcePurchase="False" >
+					<ShopPurchases>
+						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
+						<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
+						<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
+						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
+						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
+					</ShopPurchases>
+				</TurnInCollectables>
 				<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 				<If Condition="&Desynth_Magikarp; != 0">
 					<If Condition="&Desynth_Magikarp; != 0">
