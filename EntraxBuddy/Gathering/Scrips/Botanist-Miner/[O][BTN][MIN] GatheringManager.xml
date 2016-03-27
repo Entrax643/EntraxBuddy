@@ -490,8 +490,7 @@
 <!-- -->
 <!ENTITY PsyduckWaitCondition "not((&NeptoDragon_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(137 , 7, 8)) or (&KunotheKiller_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(2),16)) or (&Helicoprion_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(146, 1) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26)) or (&Namitaro_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&NinjaBetta_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&FrilledShark_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&PipiraPira_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (&TheGreatestBreamInTheWorld_Psyduck; != 0 and IsTimeBetween(19,23)) or (&MagicCarpet_Psyduck; != 0 and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26))) and &Psyduck; != 0">
 <!-- -->
-<!ENTITY UnspoiledWaitCondition "not(((&Gardenning; != 0 or &Retainer; != 0) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0 or &SilkwormCocoon; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(13,14)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and (((&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; != 0 or &ThanalanTopsoil3; != 0 or &EbonyLog; != 0 or &Cluster_5AM; != 0) and IsTimeBetween(4,5)) or ((&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0 or &Cluster_5PM; != 0) and IsTimeBetween(16,17)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and (((&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0) and IsTimeBetween(6,7)) or (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0) and IsTimeBetween(18,19))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or (((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0 or &Cluster_9AM; != 0) and IsTimeBetween(8,9)) or ((&Cluster_9PM; != 0) and IsTimeBetween(20,21))))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or ((&CypressLog; != 0) and IsTimeBetween(9,10)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0))) and FreeItemSlots() &gt; 1">]>
-<!-- TO HERE -->
+<!ENTITY UnspoiledWaitCondition "not(((&Gardenning; != 0 or &Retainer; != 0) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0 or &SilkwormCocoon; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(13,14)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and (((&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; != 0 or &ThanalanTopsoil3; != 0 or &EbonyLog; != 0 or &Cluster_5AM; != 0) and IsTimeBetween(4,5)) or ((&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0 or &Cluster_5PM; != 0) and IsTimeBetween(16,17)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and (((&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0) and IsTimeBetween(6,7)) or (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0) and IsTimeBetween(18,19))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or (((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0 or &Cluster_9AM; != 0) and IsTimeBetween(8,9)) or ((&Cluster_9PM; != 0) and IsTimeBetween(20,21))))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or ((&CypressLog; != 0) and IsTimeBetween(9,10)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
@@ -542,6 +541,7 @@
 			</If>
 			<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 				<RunCode Name="Dismount"/>
+				<WaitTimer WaitTime="3"/>
 				<EatFood ItemId="&ID_FOOD;"/>
 			</If>
 			<!-- Unspoiled -->
@@ -3899,6 +3899,7 @@
 					<WaitWhile Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 					<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 						<RunCode Name="Dismount"/>
+						<WaitTimer WaitTime="3"/>
 						<EatFood ItemId="&ID_FOOD;"/>
 					</If>
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Standard Wait [STOP]"/>
@@ -3907,6 +3908,7 @@
 				<If Condition="&Lileep; != 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 					<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 						<RunCode Name="Dismount"/>
+						<WaitTimer WaitTime="3"/>
 						<EatFood ItemId="&ID_FOOD;"/>
 					</If>
 					<If Condition="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
@@ -3994,6 +3996,7 @@
 							<WaitWhile Condition="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
+								<WaitTimer WaitTime="3"/>
 								<EatFood ItemId="&ID_FOOD;"/>
 							</If>
 						</If>
@@ -4075,6 +4078,7 @@
 							<WaitWhile Condition="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
+								<WaitTimer WaitTime="3"/>
 								<EatFood ItemId="&ID_FOOD;"/>
 							</If>
 						</If>
@@ -4151,6 +4155,7 @@
 							<WaitWhile Condition="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
+								<WaitTimer WaitTime="3"/>
 								<EatFood ItemId="&ID_FOOD;"/>
 							</If>
 						</If>
@@ -4181,6 +4186,7 @@
 							<WaitWhile Condition="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
+								<WaitTimer WaitTime="3"/>
 								<EatFood ItemId="&ID_FOOD;"/>
 							</If>
 						</If>
@@ -4256,6 +4262,7 @@
 							<WaitWhile Condition="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
+								<WaitTimer WaitTime="3"/>
 								<EatFood ItemId="&ID_FOOD;"/>
 							</If>
 						</If>
@@ -4350,6 +4357,7 @@
 							<WaitWhile Condition="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
+								<WaitTimer WaitTime="3"/>
 								<EatFood ItemId="&ID_FOOD;"/>
 							</If>
 						</If>
@@ -4360,6 +4368,7 @@
 				<If Condition="&Snorlax; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 					<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 						<RunCode Name="Dismount"/>
+						<WaitTimer WaitTime="3"/>
 						<EatFood ItemId="&ID_FOOD;"/>
 					</If>
 					<If Condition="(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
@@ -6405,6 +6414,7 @@
 					</If>
 					<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 						<RunCode Name="Dismount"/>
+						<WaitTimer WaitTime="3"/>
 						<EatFood ItemId="&ID_FOOD;"/>
 					</If>
 				</If>
@@ -6761,7 +6771,7 @@
 									<FishSpot ApproachLocation="7.835634, 100.9697, -191.898" Location="11.24685, 100.9193, -186.3409" Heading="1.385839"/>
 									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="11.4238, 100.9185, -177.7729" Heading="1.222586"/>
 									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="10.40183, 100.7158, -173.2357" Heading="1.865549"/>
-									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="13.50897, 100.9403, -169.1267" Heading="1.612835"/>									
+									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="13.50897, 100.9403, -169.1267" Heading="1.612835"/>
 									<!-- <FishSpot ApproachLocation="5.46863, 100.9697, -159.654" Location="10.42086, 100.9523, -160.3983" Heading="1.373525"/> -->
 									<FishSpot ApproachLocation="5.46863, 100.9697, -159.654" Location="9.187197, 100.943, -152.8534" Heading="1.396613"/>
 									<FishSpot ApproachLocation="5.46863, 100.9697, -159.654" Location="6.773185, 100.941, -146.2589" Heading="0.8766696"/>
@@ -6770,9 +6780,7 @@
 									<FishSpot ApproachLocation="-54.30595, 100.6696, -139.6677" Location="-58.79286, 100.5541, -132.8653" Heading="0.128675"/>
 									<FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-67.93871, 100.5926, -122.933" Heading="1.455408"/>
 									<FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-70.09016, 100.5808, -119.9369" Heading="1.077754"/>
-									<!-- <FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-70.46819, 100.5751, -115.4002" Heading="0.7133303"/>
-									<FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-75.3158, 100.6012, -109.933" Heading="1.044861"/>
-									<FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-79.84214, 100.3013, -105.8774" Heading="0.4347806"/> -->
+									<!-- <FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-70.46819, 100.5751, -115.4002" Heading="0.7133303"/><FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-75.3158, 100.6012, -109.933" Heading="1.044861"/><FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-79.84214, 100.3013, -105.8774" Heading="0.4347806"/> -->
 									<FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-83.69323, 100.5478, -105.0763" Heading="0.3746359"/>
 									<FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-87.63007, 100.5309, -103.7966" Heading="0.1492736"/>
 									<FishSpot ApproachLocation="-103.9924, 100.6697, -115.1572" Location="-102.3145, 100.559, -109.4575" Heading="5.995001"/>
@@ -6926,6 +6934,7 @@
 					</While>
 					<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 						<RunCode Name="Dismount"/>
+						<WaitTimer WaitTime="3"/>
 						<EatFood ItemId="&ID_FOOD;"/>
 					</If>
 				</If>
@@ -6934,6 +6943,7 @@
 					<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 						<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 							<RunCode Name="Dismount"/>
+							<WaitTimer WaitTime="3"/>
 							<EatFood ItemId="&ID_FOOD;"/>
 						</If>
 						<!-- Voor Sian Siran : Wind Widow or Cloud Mushroom -->
