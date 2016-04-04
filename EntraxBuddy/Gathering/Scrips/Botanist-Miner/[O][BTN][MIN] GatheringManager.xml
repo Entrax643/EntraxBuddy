@@ -78,6 +78,7 @@
 <!ENTITY CraneFly_Count_Magikarp "99">
 <!ENTITY Illuminati_Perch_ONLY_Magikarp "0">
 <!ENTITY Ice_Cluster_Crystal_Magikarp "0">
+<!ENTITY Patience_Magikarp "Patience">
 <!-- Ice -->
 <!ENTITY CordialType_Pteranodon_Magikarp "Cordial">
 <!ENTITY CordialType_Tupuxuara_Magikarp "Cordial">
@@ -104,9 +105,14 @@
 <!-- -->
 <!-- Psyduck Settings -->
 <!-- -->
+<!ENTITY Patience_Psyduck "Patience">
+<!-- -->
 <!ENTITY CordialType_Psyduck "None">
 <!ENTITY KeepFishing_Psyduck "0">
 <!-- -->
+<!-- The Beast Of Brewer's Beacon -->
+<!ENTITY TitanicSawfish_Psyduck "0">
+<!ENTITY Navigatorsbrand_Psyduck "0">
 <!-- Feast or Famine -->
 <!ENTITY NeptoDragon_Psyduck "0">
 <!ENTITY KunotheKiller_Psyduck "0">
@@ -3471,7 +3477,7 @@
 					</If>
 					<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and not(Core.Player.HasAura(568)) and IsTimeBetween(8,16)  and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" sitRate=".69" Bait="Honey Worm">
+					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and not(Core.Player.HasAura(568)) and IsTimeBetween(8,16)  and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" sitRate=".69" Bait="Honey Worm">
 						<Keepers>
 							<Keeper name="Kuno the Killer"/>
 							<Keeper name="Canavan"/>
@@ -3486,7 +3492,7 @@
 							<FishSpot XYZ="460.7786, -4.933786, -749.075" Heading="0.6825423"/>
 						</FishSpots>
 					</ExFish>
-					<ExFish Condition="Core.Player.HasAura(568) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="10" sitRate=".69" Bait="Honey Worm">
+					<ExFish Condition="Core.Player.HasAura(568) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="10" sitRate=".69" Bait="Honey Worm">
 						<Keepers>
 							<Keeper name="Kuno the Killer"/>
 							<Keeper name="Canavan"/>
@@ -3517,9 +3523,9 @@
 					<If Condition="IsTimeBetween(0,8)">
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True"/>
 						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
-								<Keeper name="Shonisaurus_Psyduck"/>
+								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
 							</Keepers>
 							<FishSpots>
@@ -3540,9 +3546,9 @@
 					<If Condition="IsTimeBetween(8,16)">
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True"/>
 						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
-								<Keeper name="Shonisaurus_Psyduck"/>
+								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
 							</Keepers>
 							<FishSpots>
@@ -3563,9 +3569,9 @@
 					<If Condition="IsTimeBetween(16,24)">
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True"/>
 						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
-								<Keeper name="Shonisaurus_Psyduck"/>
+								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
 							</Keepers>
 							<FishSpots>
@@ -3598,9 +3604,9 @@
 					<If Condition="IsTimeBetween(0,8)">
 						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True"/>
 						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
+						<ExFish Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 							<Keepers>
-								<Keeper name="Helicoprion_Psyduck"/>
+								<Keeper name="Helicoprion"/>
 								<Keeper name="Magic Carpet"/>
 							</Keepers>
 							<FishSpots>
@@ -3614,9 +3620,9 @@
 					<If Condition="IsTimeBetween(8,16)">
 						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True"/>
 						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(16,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
+						<ExFish Condition="IsTimeBetween(16,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 							<Keepers>
-								<Keeper name="Helicoprion_Psyduck"/>
+								<Keeper name="Helicoprion"/>
 								<Keeper name="Magic Carpet"/>
 							</Keepers>
 							<FishSpots>
@@ -3642,7 +3648,7 @@
 					<RunCode Name="FSH"/>
 					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and not(Core.Player.HasAura(568)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Glowworm">
 						<Keepers>
-							<Keeper name="Namitaro_Psyduck"/>
+							<Keeper name="Namitaro"/>
 						</Keepers>
 						<FishSpots>
 							<FishSpot XYZ="432.1451, 0.3782275, 161.1124" Heading="2.110898"/>
@@ -3662,7 +3668,7 @@
 					</If>
 					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and Core.Player.HasAura(568) and HasAtLeast(2624,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Topwater Frog">
 						<Keepers>
-							<Keeper name="Namitaro_Psyduck"/>
+							<Keeper name="Namitaro"/>
 						</Keepers>
 						<FishSpots>
 							<FishSpot XYZ="432.1451, 0.3782275, 161.1124" Heading="2.110898"/>
@@ -3700,7 +3706,7 @@
 								<Bait Name="Steel Jig"/>
 							</Baits>
 							<Keepers>
-								<Keeper name="Endoceras_Psyduck"/>
+								<Keeper name="Endoceras"/>
 								<Keeper name="Coelacanthus"/>
 							</Keepers>
 							<FishSpots>
@@ -3722,7 +3728,7 @@
 								<Bait Name="Steel Jig"/>
 							</Baits>
 							<Keepers>
-								<Keeper name="Endoceras_Psyduck"/>
+								<Keeper name="Endoceras"/>
 								<Keeper name="Coelacanthus"/>
 							</Keepers>
 							<FishSpots>
@@ -3749,7 +3755,7 @@
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="317.2209, -36.325, 352.0146" ForceLanding="True"/>
 					<UseTransport Name="The Ship Graveyard" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
-					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138 , 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69">
+					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138 , 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69">
 						<Baits>
 							<Bait Name="Heavy Steel Jig"/>
 							<Bait Name="Steel Jig"/>
@@ -3778,7 +3784,7 @@
 					</If>
 					<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Midge Basket">
+					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Midge Basket">
 						<Keepers>
 							<Keeper name="Ninja Betta"/>
 						</Keepers>
@@ -3800,7 +3806,7 @@
 						<BuyItem ItemId="2600" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1004430" XYZ="-278.7472, 8, 378.7108"/>
 					</If>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
+					<ExFish Condition="IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 						<Keepers>
 							<Keeper name="Magic Carpet"/>
 						</Keepers>
@@ -6449,7 +6455,7 @@
 							<RunCode Name="FSH"/>
 							<ExMoveTo XYZ="516.1227, -51.274, 46.26479" Type="RandomPointWithin" Distance="5"/>
 							<ExMoveTo XYZ="501.6224, -32.29482, -145.8089" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_DravanianBass_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
+							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_DravanianBass_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
 								<Baits>
 									<Bait Name="Brute Leech"/>
 									<Bait Name="Stonefly Nymph"/>
@@ -6496,7 +6502,7 @@
 							<ExMoveTo XYZ="-420.8228, 111.4044, 674.2472" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="-290.5473, -13.94905, 828.9244" Type="RandomPointWithin" Distance="10"/>
 							<WaitWhile Condition="IsTimeBetween(8,9)"/>
-							<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(8,14) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Pteranodon_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(8,14) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Pteranodon_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
 									<Bait Name="Giant Crane Fly"/>
 									<Bait Name="Red Balloon"/>
@@ -6540,7 +6546,7 @@
 							<ExMoveTo XYZ="-88.10485, 180.7275, -173.6805" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="-87.96331, 78.26161, 120.5088" Type="RandomPointWithin" Distance="10"/>
 							<WaitWhile Condition="IsTimeBetween(14,15)"/>
-							<ExFish Condition="IsTimeBetween(14,18) and ItemCount(12707) &gt; 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_ThaliakCaiman_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
+							<ExFish Condition="IsTimeBetween(14,18) and ItemCount(12707) &gt; 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_ThaliakCaiman_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
 								<Keepers>
 									<Keeper Name="Thaliak Caiman"/>
 									<Keeper name="Berserker Betta"/>
@@ -6582,7 +6588,7 @@
 							<ExFlyTo XYZ="150.045, 83.63493, -305.3822" Radius="3.0"/>
 							<ExMoveTo XYZ="845.9851, 62.37205, -199.7481" Radius="3.0"/>
 							<WaitWhile Condition="IsTimeBetween(14,15)"/>
-							<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Tupuxuara_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Tupuxuara_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
 									<Bait Name="Giant Crane Fly"/>
 									<Bait Name="Red Balloon"/>
@@ -6618,7 +6624,7 @@
 							<RunCode Name="FSH"/>
 							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" Type="RandomPointWithin" Distance="5"/>
 							<ExMoveTo XYZ="205.5932, -85.20891, 659.786" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Caiman_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
+							<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Caiman_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
 								<Keepers>
 									<Keeper Name="Caiman"/>
 								</Keepers>
@@ -6761,7 +6767,7 @@
 							</If>
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 							<ExMoveTo XYZ="-70.83005, 160.0187, -174.3838" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12706,1) or HasAtLeast(12711,1)) and ((IsTimeBetween(0,6) and not SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (IsTimeBetween(18,20) and ItemCount(12707) == 0) or IsTimeBetween(20,24) or (&Illuminati_Perch_ONLY_Magikarp; != 0 and not IsTimeBetween(6,8))) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Illuminati_Perch_Magikarp;" Snagging="True" Collect="True" Patience="Patience" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12706,1) or HasAtLeast(12711,1)) and ((IsTimeBetween(0,6) and not SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (IsTimeBetween(18,20) and ItemCount(12707) == 0) or IsTimeBetween(20,24) or (&Illuminati_Perch_ONLY_Magikarp; != 0 and not IsTimeBetween(6,8))) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Illuminati_Perch_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
 									<Bait Name="Brute Leech"/>
 									<Bait Name="Goblin Jig"/>
