@@ -6,10 +6,10 @@
 	<KillRadius>50</KillRadius>
 	<CodeChunks>
 		<CodeChunk name="MIN">
-			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 20"); ]]>
+			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 20");	await Buddy.Coroutines.Coroutine.Sleep(2000); ]]>
 		</CodeChunk>
 		<CodeChunk name="BTN">
-			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 21"); ]]>
+			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 21");	await Buddy.Coroutines.Coroutine.Sleep(2000); ]]>
 		</CodeChunk>
 		<CodeChunk name="Miner_CWH">
 			<![CDATA[ await Buddy.Coroutines.Coroutine.Sleep(1000); if(!Core.Player.HasAura(881)) { var result = true; if (MovementManager.IsFlying) { result = await CommonTasks.Land(); await Buddy.Coroutines.Coroutine.Sleep(1000); } if (result && Core.Player.IsMounted) { await CommonTasks.StopAndDismount(); await Buddy.Coroutines.Coroutine.Sleep(3000); } foreach (BagSlot item in InventoryManager.FilledSlots) { if (item.TrueItemId == 10374 ) { item.UseItem(); await Coroutine.Wait(7000, () => Core.Player.HasAura(881)); ff14bot.Helpers.Logging.Write("Using Item: " + item.Name); } } } ]]>

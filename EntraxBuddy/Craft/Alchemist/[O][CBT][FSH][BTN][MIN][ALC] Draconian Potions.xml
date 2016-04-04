@@ -888,13 +888,9 @@
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31206" MinimumCp="382" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<If Condition="&Extra_Touch_58; == 0">
@@ -906,17 +902,11 @@
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
@@ -928,9 +918,7 @@
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
 					<CraftActionByName Name="Reclaim" />
 					<CraftActionByName Name="Hasty Touch" />
@@ -967,13 +955,9 @@
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31207" MinimumCp="382" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286" />
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<If Condition="&Extra_Touch_58; == 0">
@@ -985,17 +969,11 @@
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Careful Synthesis II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
@@ -1007,9 +985,7 @@
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
 					<CraftActionByName Name="Reclaim" />
 					<CraftActionByName Name="Hasty Touch" />
@@ -1046,17 +1022,11 @@
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31208" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
 				<CraftActionByName Name="Muscle Memory" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<If Condition="&Extra_Touch_59; == 0">
@@ -1068,13 +1038,9 @@
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<RunCode Name="TrickTouch"/>
@@ -1087,9 +1053,7 @@
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
 					<CraftActionByName Name="Reclaim" />
 					<CraftActionByName Name="Hasty Touch" />
@@ -1129,17 +1093,11 @@
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31209" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
 				<CraftActionByName Name="Muscle Memory" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<If Condition="&Extra_Touch_59; == 0">
@@ -1151,13 +1109,9 @@
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<RunCode Name="TrickTouch"/>
@@ -1170,9 +1124,7 @@
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
 					<CraftActionByName Name="Reclaim" />
 					<CraftActionByName Name="Hasty Touch" />
@@ -1212,17 +1164,11 @@
 				<!-- Optionnals : Tricks of the Trade, Reclaim -->
 				<Synthesize RecipeId="31210" MinimumCp="420" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="281, 100069, 100108, 100009, 286, 100136, 283" />
 				<CraftActionByName Name="Muscle Memory" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Comfort Zone" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Inner Quiet" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<If Condition="&Extra_Touch_59; == 0">
@@ -1234,13 +1180,9 @@
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
 				<RunCode Name="TrickTouch"/>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Master's Mend II" />
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<CraftActionByName Name="Steady Hand II" />
 				<CraftActionByName Name="Hasty Touch" />
 				<RunCode Name="TrickTouch"/>
@@ -1253,9 +1195,7 @@
 					<CraftActionByName Name="Careful Synthesis II" />
 					<CraftActionByName Name="Careful Synthesis II" />
 				</If>
-				<If Condition="&ToT; != 0">
-					<RunCode Name="ToT"/>
-				</If>
+				<RunCode Name="ToT"/>
 				<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
 					<CraftActionByName Name="Reclaim" />
 					<CraftActionByName Name="Hasty Touch" />
