@@ -74,12 +74,17 @@
 <!-- -->
 <!-- -->
 <!-- Magikarp Settings -->
+<!-- Bait -->
 <!ENTITY BruteLeech_Count_Magikarp "99">
 <!ENTITY CraneFly_Count_Magikarp "99">
-<!ENTITY Illuminati_Perch_ONLY_Magikarp "0">
-<!ENTITY Ice_Cluster_Crystal_Magikarp "0">
+<!-- Fish Options -->
 <!ENTITY Patience_Magikarp "Patience">
+<!ENTITY Illuminati_Perch_ONLY_Magikarp "0">
+<!-- Red Scrip -->
+<!ENTITY ThunderboltEel_Magikarp "0">
+<!ENTITY CordialType_ThunderboltEel_Magikarp "Auto">
 <!-- Ice -->
+<!ENTITY Ice_Cluster_Crystal_Magikarp "0">
 <!ENTITY CordialType_Pteranodon_Magikarp "Cordial">
 <!ENTITY CordialType_Tupuxuara_Magikarp "Cordial">
 <!-- Water -->
@@ -91,7 +96,7 @@
 <!ENTITY Desynth_Magikarp "1">
 <!ENTITY Keep_BlueclawShrimp_Magikarp "0">
 <!ENTITY Keep_RockMussel_Magikarp "1">
-<!ENTITY Keep_PipiraPira_Psyduck_Magikarp "1">
+<!ENTITY Keep_PipiraPira_Magikarp "1">
 <!ENTITY Keep_GobbieMask_Magikarp "0">
 <!ENTITY Keep_Sweetfish_Magikarp "0">
 <!ENTITY Keep_SkySweeper_Magikarp "0">
@@ -532,12 +537,12 @@
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
-		<ExEnablePlugins Names="Skywatcher,EnableFlight"/>
+		<ExEnablePlugins Names="Skywatcher,Enable Flight"/>
 		<If Condition="FreeItemSlots() &lt; 5">
 			<ExPurify/>
 		</If>
 		<While Condition="FreeItemSlots() &gt; 1">
-			<ExEnablePlugins Names="Skywatcher,EnableFlight"/>
+			<ExEnablePlugins Names="Skywatcher,Enable Flight"/>
 			<If Condition="FreeItemSlots() &lt; 5">
 				<ExPurify/>
 			</If>
@@ -582,6 +587,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Frost Cotton Boll"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
 						<ExMoveTo XYZ="629.4525, 199.0281, -448.9458" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(12,13)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
@@ -4394,7 +4400,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Eil Tohm"/>
 						<TeleportTo Force="True" AetheryteId="78" Name="Moghome"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="313.5194, 27.84554, 417.6872"/>
+						<ExMoveTo XYZ="255.9486, 20.39227, 550.3695"/>
 						<!-- Camphorwood Branch -->
 						<If Condition="ItemCount(14160) &lt; &CamphorwoodBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Camphorwood Branch(Eil Tohm) [START]"/>
@@ -4412,15 +4418,16 @@
 								</Items>
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot StealthLocation="474.4374, 24.02308, 513.2177" ReturnToStealthLocation="False" nodeLocation="477.1408, 23.48306, 524.3116"/>
-									<StealthApproachGatherSpot StealthLocation="417.2551, 24.24545, 378.0834" ReturnToStealthLocation="False" nodeLocation="424.3351, 25.21637, 388.3117"/>
-									<StealthApproachGatherSpot StealthLocation="461.5313, 18.8006, 355.2503" ReturnToStealthLocation="False" nodeLocation="450.895, 19.94349, 356.9699"/>
-									<StealthApproachGatherSpot StealthLocation="580.6784, 20.49299, 454.985" ReturnToStealthLocation="False" nodeLocation="574.4484, 23.32597, 461.3707"/>
+									<StealthApproachGatherSpot StealthLocation="470.6837, 23.88359, 512.7332" ReturnToStealthLocation="False" nodeLocation="477.1408, 23.48306, 524.3116"/>
+									<IndirectApproachGatherSpot ApproachLocation="599.6972, 20.34034, 491.4504" ReturnToApproachLocation="False" nodeLocation="594.189, 21.49491, 493.1122"/>
+									<StealthApproachGatherSpot StealthLocation="590.2356, 21.26801, 479.5449" ReturnToStealthLocation="False" nodeLocation="574.4484, 23.32597, 461.3707"/>
+									<StealthApproachGatherSpot StealthLocation="411.0842, 23.87378, 382.237" ReturnToStealthLocation="False" nodeLocation="424.3351, 25.21637, 388.3117"/>
+									<StealthApproachGatherSpot StealthLocation="458.3395, 19.17876, 360.8439" ReturnToStealthLocation="False" nodeLocation="450.895, 19.94349, 356.9699"/>
 								</GatherSpots>
 								<HotSpots>
-									<HotSpot Radius="50" XYZ="481.521, 38.7664, 529.7748"/>
-									<HotSpot Radius="50" XYZ="445.8876, 43.7851, 382.1945"/>
-									<HotSpot Radius="50" XYZ="569.1788, 41.57594, 474.9844"/>
+									<HotSpot Radius="50" XYZ="457.0232, 30, 518.3314"/>
+									<HotSpot Radius="50" XYZ="589.5259, 30, 501.3627"/>
+									<HotSpot Radius="50" XYZ="453.2689, 30, 364.8374"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Camphorwood Branch(Eil Tohm) [STOP]"/>
@@ -4442,15 +4449,16 @@
 								</Items>
 								<GatherRotation>RegularNode</GatherRotation>
 								<GatherSpots>
-									<StealthApproachGatherSpot StealthLocation="474.4374, 24.02308, 513.2177" ReturnToStealthLocation="False" nodeLocation="477.1408, 23.48306, 524.3116"/>
-									<StealthApproachGatherSpot StealthLocation="417.2551, 24.24545, 378.0834" ReturnToStealthLocation="False" nodeLocation="424.3351, 25.21637, 388.3117"/>
-									<StealthApproachGatherSpot StealthLocation="461.5313, 18.8006, 355.2503" ReturnToStealthLocation="False" nodeLocation="450.895, 19.94349, 356.9699"/>
-									<StealthApproachGatherSpot StealthLocation="580.6784, 20.49299, 454.985" ReturnToStealthLocation="False" nodeLocation="574.4484, 23.32597, 461.3707"/>
+									<StealthApproachGatherSpot StealthLocation="470.6837, 23.88359, 512.7332" ReturnToStealthLocation="False" nodeLocation="477.1408, 23.48306, 524.3116"/>
+									<IndirectApproachGatherSpot ApproachLocation="599.6972, 20.34034, 491.4504" ReturnToApproachLocation="False" nodeLocation="594.189, 21.49491, 493.1122"/>
+									<StealthApproachGatherSpot StealthLocation="590.2356, 21.26801, 479.5449" ReturnToStealthLocation="False" nodeLocation="574.4484, 23.32597, 461.3707"/>
+									<StealthApproachGatherSpot StealthLocation="411.0842, 23.87378, 382.237" ReturnToStealthLocation="False" nodeLocation="424.3351, 25.21637, 388.3117"/>
+									<StealthApproachGatherSpot StealthLocation="458.3395, 19.17876, 360.8439" ReturnToStealthLocation="False" nodeLocation="450.895, 19.94349, 356.9699"/>
 								</GatherSpots>
 								<HotSpots>
-									<HotSpot Radius="50" XYZ="481.521, 38.7664, 529.7748"/>
-									<HotSpot Radius="50" XYZ="445.8876, 43.7851, 382.1945"/>
-									<HotSpot Radius="50" XYZ="569.1788, 41.57594, 474.9844"/>
+									<HotSpot Radius="50" XYZ="457.0232, 30, 518.3314"/>
+									<HotSpot Radius="50" XYZ="589.5259, 30, 501.3627"/>
+									<HotSpot Radius="50" XYZ="453.2689, 30, 364.8374"/>
 								</HotSpots>
 							</ExGather>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Camphorwood Log(Eil Tohm) [STOP]"/>
@@ -6440,10 +6448,42 @@
 				</If>
 				<!-- Magikarp -->
 				<If Condition="&Magikarp; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-					<ExEnablePlugins Names="Skywatcher,EnableFlight"/>
+					<ExEnablePlugins Names="Skywatcher,Enable Flight"/>
 					<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<!-- Thunderbolt Eel　-->
+						<If Condition="(IsTimeBetween(20,24) or IsTimeBetween(0,3)) and &ThunderboltEel_Magikarp; != 0 and HasAtLeast(12707,1) and &Illuminati_Perch_ONLY_Magikarp; == 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [22:3] ~ Destination ----&gt; The Iron Feast ~ Thunderbolt Eel"/>
+							<TeleportTo Name="Tailfeather" AetheryteId="76"/>
+							<RunCode Name="FSH"/>
+							<!-- <ExMoveTo XYZ="520.1277, 116.3365, -706.1959" Type="RandomPointWithin" Distance="5"/><ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/> -->
+							<WaitWhile Condition="IsTimeBetween(20,22)"/>
+							<ExFish Condition="(IsTimeBetween(20,24) or IsTimeBetween(0,3)) and HasAtLeast(12707,1) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_ThunderboltEel_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
+								<Baits>
+									<Bait Name="Brute Leech"/>
+									<Bait Name="Bladed Steel Jig"/>
+								</Baits>
+								<Collectables>
+									<Collectable Name="Thunderbolt Eel" Value="813"/>
+								</Collectables>
+								<Keepers>
+									<Keeper Name="Thunderbolt Eel"/>
+									<Keeper Name="Pipira Pira"/>
+								</Keepers>
+								<FishSpots>
+									<FishSpot Location="41.9362, 58.42915, -789.0236" Heading="3.601661"/>
+									<FishSpot Location="424.3322, 58.42915, -794.769" Heading="3.960191"/>
+									<FishSpot Location="410.7512, 58.42915, -802.1146" Heading="1.859906"/>
+									<FishSpot Location="395.4563, 58.42916, -858.5338" Heading="2.680909"/>
+									<FishSpot Location="405.4252, 58.42916, -878.9984" Heading="0.960191"/>
+									<FishSpot Location="449.2926, 58.42917, -902.9581" Heading="0.1474183"/>
+									<FishSpot Location="483.7453, 58.42917, -892.4057" Heading="5.500691"/>
+								</FishSpots>
+							</ExFish>
+							<RunCode Name="StopFishing"/>
+							<ExPurify/>
+						</If>
 						<!-- Dravanian bass　-->
-						<If Condition="IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and &Illuminati_Perch_ONLY_Magikarp; == 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="((IsTimeBetween(0,6) and &ThunderboltEel_Magikarp; == 0) or (IsTimeBetween(3,6) and &ThunderboltEel_Magikarp; != 0)) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and &Illuminati_Perch_ONLY_Magikarp; == 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [0:6] ~ Destination ----&gt; Whilom River ~ Dravanian bass"/>
 							<If Condition="not HasAtLeast(12704,99) and not HasAtLeast(12711,1)">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
@@ -6660,7 +6700,7 @@
 							<ExPurify/>
 						</If>
 						<!-- Illuminati Perch　-->
-						<If Condition="((IsTimeBetween(0,6) and not SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (IsTimeBetween(18,20) and ItemCount(12707) == 0) or IsTimeBetween(20,24) or &Illuminati_Perch_ONLY_Magikarp; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="((IsTimeBetween(0,6) and not SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (IsTimeBetween(18,20) and ItemCount(12707) == 0) or ((IsTimeBetween(20,24) or IsTimeBetween(0,3)) and (&ThunderboltEel_Magikarp; == 0 or ItemCount(12707) == 0)) or &Illuminati_Perch_ONLY_Magikarp; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [X:X] ~ Destination ----&gt; Thaliak River ~ Illuminati Perch"/>
 							<If Condition="not HasAtLeast(12704,99) and not HasAtLeast(12706,1) and not HasAtLeast(12711,1)">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
@@ -6697,7 +6737,7 @@
 								<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12733"/>
 								</While>
-								<While Condition="&Keep_PipiraPira_Psyduck_Magikarp; == 0 and HasAtLeast(12741, 1)">
+								<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12741"/>
 								</While>
 								<While Condition="HasAtLeast(12753, 1)">
@@ -6893,7 +6933,7 @@
 								<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12733"/>
 								</While>
-								<While Condition="&Keep_PipiraPira_Psyduck_Magikarp; == 0 and HasAtLeast(12741, 1)">
+								<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12741"/>
 								</While>
 								<While Condition="HasAtLeast(12753, 1)">
@@ -7483,7 +7523,7 @@
 						<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
 							<Desynth DesynthTimeout="1" ItemIds="12733"/>
 						</While>
-						<While Condition="&Keep_PipiraPira_Psyduck_Magikarp; == 0 and HasAtLeast(12741, 1)">
+						<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
 							<Desynth DesynthTimeout="1" ItemIds="12741"/>
 						</While>
 						<While Condition="HasAtLeast(12753, 1)">
