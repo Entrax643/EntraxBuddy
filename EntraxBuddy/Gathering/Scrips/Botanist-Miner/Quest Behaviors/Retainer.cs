@@ -1,15 +1,57 @@
 ﻿using System.Threading.Tasks;
+using System.Windows.Media;
 using Buddy.Coroutines;
 using Clio.XmlEngine;
+using ff14bot.Helpers;
 using ff14bot.Managers;
 using ff14bot.RemoteWindows;
+using TreeSharp;
 
-namespace ExBuddy.OrderBotTags.Behaviors
+namespace ff14bot.NeoProfiles
 {
     [XmlElement("Retainer")]
-    public class Retainer : ExProfileBehavior
+    public class Retainer : ProfileBehavior
     {
-        protected override async Task<bool> Main()
+		private bool _done = false;
+
+		private static readonly Color MessageColor = Color.FromRgb(151, 59, 216);
+
+        new public static void Log(string text, params object[] args)
+        {
+            text = "[Retainer] " + string.Format(text, args);
+            Logging.Write(MessageColor, text);
+        }
+		protected override void OnStart()
+		{
+			_done = false;
+		}
+
+        public override bool IsDone 
+		{ 
+			get 
+			{ 
+				return _done; 
+			} 
+		}
+
+        protected override void OnDone()
+        {
+		}
+
+		protected override Composite CreateBehavior() 
+		{
+			return
+				new Decorator(
+					ret => !_done,
+					new ActionRunCoroutine(r => Retaining()));
+         }
+
+        protected override void OnResetCachedDone()
+		{
+			_done = false;
+		}
+		
+        protected async Task<bool> Retaining()
         {
             GameObjectManager.GetObjectByNPCId(2000401).Interact();
             if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
@@ -73,9 +115,9 @@ namespace ExBuddy.OrderBotTags.Behaviors
                         SelectString.ClickSlot(countLine - 1);
                     }
                 }
-                return isDone = true;
+                return _done = true;
             }
-            return isDone = true;
+            return _done = true;
         }
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE Profile [<!-- Profile Settings -->
+<!DOCTYPE Profile [
+<!-- Profile Settings -->
 <!-- Where do you want to port while witing / crafting -->
 <!ENTITY Waiting_AetheryteId "8">
 <!-- -->
@@ -32,6 +33,8 @@
 <!-- -->
 <!-- Lileep Settings -->
 <!ENTITY Sand_Collect_Rate_Lileep "550">
+<!ENTITY Collect_RadiantAstralMoraine_Lileep "0">
+<!ENTITY Collect_LoversLaurel_Lileep "0">
 <!ENTITY Gather_HighlandOregano_Lileep "0">
 <!ENTITY Gather_Furrymint_Lileep "0">
 <!ENTITY Gather_BlackSoil_Lileep "0">
@@ -75,8 +78,8 @@
 <!-- -->
 <!-- Magikarp Settings -->
 <!-- Bait -->
-<!ENTITY BruteLeech_Count_Magikarp "99">
-<!ENTITY CraneFly_Count_Magikarp "99">
+<!ENTITY BruteLeech_Count_Magikarp "50">
+<!ENTITY CraneFly_Count_Magikarp "50">
 <!-- Fish Options -->
 <!ENTITY Patience_Magikarp "Patience">
 <!ENTITY Illuminati_Perch_ONLY_Magikarp "0">
@@ -156,8 +159,8 @@
 <!ENTITY TurnInAfterLoop_free_bag_slots "100">
 <!-- Cordial setting -->
 <!-- Choose if you want to use Cordial or HiCordial  -->
-<!ENTITY Cordial_Type_50_60 "Cordial">
-<!ENTITY Cordial_Type_50_60_Collectale "Cordial">
+<!ENTITY Cordial_Type_50_60 "Auto">
+<!ENTITY Cordial_Type_50_60_Collectale "Auto">
 <!-- -->
 <!-- -->
 <!ENTITY Cordial_Type_1star "Auto">
@@ -214,6 +217,8 @@
 <!-- -->
 <!ENTITY SmithsoniteOre "0">
 <!-- -->
+<!ENTITY Meteorite "0">
+<!-- -->
 <!ENTITY FrostCottonBoll "0">
 <!-- -->
 <!-- -->
@@ -252,6 +257,8 @@
 <!ENTITY LumythriteOre "0">
 <!-- -->
 <!ENTITY Old-growthCamphorwoodLog "0">
+<!-- -->
+<!ENTITY CrystallizedSap "0">
 <!-- -->
 <!-- -->
 <!-- 5.00 AM - 5.55 AM -->
@@ -499,11 +506,13 @@
 <!-- -->
 <!ENTITY Version "Psyduck">
 <!-- -->
+<!ENTITY SnorlaxWaitCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &Ditto; == 0 and &Magikarp; == 0">
+<!-- -->
 <!ENTITY LileepWaitCondition "not((IsTimeBetween(0,4) and &BTN_0_4_Lileep; != 0) or (IsTimeBetween(4,8) and (&MIN_4_8_Lileep; != 0 or &BTN_4_8_Lileep; != 0)) or (IsTimeBetween(8,12) and (&MIN_8_12_Lileep; != 0 or &BTN_8_12_Lileep; != 0)) or (IsTimeBetween(12,16) and &MIN_12_16_Lileep; != 0) or (IsTimeBetween(16,20) and (&MIN_16_20_Lileep; != 0 or &BTN_16_20_Lileep; != 0)) or (IsTimeBetween(20,24) and (&MIN_20_24_Lileep; != 0 or &BTN_20_24_Lileep; != 0))) and &Lileep; != 0">
 <!-- -->
 <!ENTITY PsyduckWaitCondition "not((&NeptoDragon_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(2), 16)) or (&Helicoprion_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&NinjaBetta_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&FrilledShark_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&PipiraPira_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (&TheGreatestBreamInTheWorld_Psyduck; != 0 and IsTimeBetween(19,23)) or (&MagicCarpet_Psyduck; != 0 and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26))) and &Psyduck; != 0">
 <!-- -->
-<!ENTITY UnspoiledWaitCondition "not(((&Gardenning; != 0 or &Retainer; != 0) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0 or &SilkwormCocoon; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(13,14)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and (((&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; != 0 or &ThanalanTopsoil3; != 0 or &EbonyLog; != 0 or &Cluster_5AM; != 0) and IsTimeBetween(4,5)) or ((&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0 or &Cluster_5PM; != 0) and IsTimeBetween(16,17)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and (((&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0) and IsTimeBetween(6,7)) or (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0) and IsTimeBetween(18,19))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or (((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0 or &Cluster_9AM; != 0) and IsTimeBetween(8,9)) or ((&Cluster_9PM; != 0) and IsTimeBetween(20,21))))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or ((&CypressLog; != 0) and IsTimeBetween(9,10)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
+<!ENTITY UnspoiledWaitCondition "not(((&Gardenning; != 0 or &Retainer; != 0) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0 or &Meteorite; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or ((&FragrantLog; != 0 or &DarksteelOre; != 0 or &SilkwormCocoon; != 0) and IsTimeBetween(1,2)) or ((&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0) and IsTimeBetween(13,14)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0 or &CrystallizedSap; != 0)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and (((&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; != 0 or &ThanalanTopsoil3; != 0 or &EbonyLog; != 0 or &Cluster_5AM; != 0) and IsTimeBetween(4,5)) or ((&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0 or &Cluster_5PM; != 0) and IsTimeBetween(16,17)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and (((&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0) and IsTimeBetween(6,7)) or (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0) and IsTimeBetween(18,19))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or (((&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0 or &Cluster_9AM; != 0) and IsTimeBetween(8,9)) or ((&Cluster_9PM; != 0) and IsTimeBetween(20,21))))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or ((&CypressLog; != 0) and IsTimeBetween(9,10)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
@@ -533,7 +542,7 @@
 			<![CDATA[		var result=true;	if (MovementManager.IsFlying){result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);}	if (result && Core.Player.IsMounted) {Actionmanager.Dismount();await Buddy.Coroutines.Coroutine.Sleep(2000);}	]]>
 		</CodeChunk>
 		<CodeChunk Name="UnStealth">
-			<![CDATA[	if(!Core.Player.HasAura(47))	{	ff14bot.Managers.Actionmanager.DoAction("Stealth", Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
+			<![CDATA[	if(Core.Player.HasAura(47))	{	ff14bot.Managers.Actionmanager.DoAction("Stealth", Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
@@ -554,7 +563,34 @@
 			<!-- Unspoiled -->
 			<If Condition="(&Psyduck; == 0 or &KeepFishing_Psyduck; == 0 or &PsyduckWaitCondition;)">
 				<!-- 1AM-PM -->
-				<If Condition="((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0 or &Meteorite; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) and FreeItemSlots() &gt; 1">
+					<!-- Meteorite  -->
+					<If Condition="&Meteorite; != 0 and IsTimeBetween(0,1)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Meteorite"/>
+						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="-592.4529, -51.99783, -418.1975"/>
+						<ExMoveTo XYZ="-465.8073, -9.25843, -521.0132"/>
+						<ExMoveTo XYZ="63.03825, -9.990895, -321.291"/>
+						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
+						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<GatherObjects>
+								<GatherObject>Legendary Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Meteorite</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherSpots>
+								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="753.5545, -11.39684, -462.5639" nodeLocation="756.488, -9.917932, -457.6566"/>
+							</GatherSpots>
+							<HotSpots>
+								<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
 					<!-- Smithsonite Ore  -->
 					<If Condition="&SmithsoniteOre; != 0 and IsTimeBetween(0,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Smithsonite Ore"/>
@@ -564,8 +600,8 @@
 						<ExMoveTo XYZ="-465.8073, -9.25843, -521.0132"/>
 						<ExMoveTo XYZ="63.03825, -9.990895, -321.291"/>
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
-						<ExMoveTo XYZ="742.1635, 3.426399, -399.5402" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(0,1)"/>
+						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -587,9 +623,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Frost Cotton Boll"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExMoveTo XYZ="629.4525, 199.0281, -448.9458" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(12,13)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="629.4525, 199.0281, -448.9458" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
@@ -609,8 +645,8 @@
 						<TeleportTo Force="True" AetheryteId="24" Name="Revenant's Toll"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="76.95176, 20.5404, -618.4407"/>
-						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106"/>
-						<WaitWhile Condition="IsTimeBetween(0,1) or Core.Player.CurrentGP &lt; 500"/>
+						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -620,7 +656,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -637,7 +673,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -654,7 +690,7 @@
 									<ItemName>Lightning Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -671,7 +707,7 @@
 									<ItemName>Earth Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -688,7 +724,7 @@
 									<ItemName>Wind Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -705,7 +741,7 @@
 									<ItemName>Ice Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -722,7 +758,7 @@
 									<ItemName>Fire Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -753,8 +789,8 @@
 						<TeleportTo Force="True" AetheryteId="24" Name="Revenant's Toll"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="76.95176, 20.5404, -618.4407"/>
-						<ExMoveTo XYZ="345.458, -4.698928, -482.9557"/>
-						<WaitWhile Condition="IsTimeBetween(12,13) or Core.Player.CurrentGP &lt; 500"/>
+						<ExMoveTo XYZ="345.458, -4.698928, -482.9557" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -764,7 +800,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -781,7 +817,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -798,7 +834,7 @@
 									<ItemName>Lightning Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -815,7 +851,7 @@
 									<ItemName>Earth Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -832,7 +868,7 @@
 									<ItemName>Wind Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -849,7 +885,7 @@
 									<ItemName>Ice Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -866,7 +902,7 @@
 									<ItemName>Fire Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -900,8 +936,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Darksteel Ore"/>
 						<TeleportTo Force="True" AetheryteId="23" Name="Camp Dragonhead"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="285.3791, 303.2509, -99.76889"/>
-						<WaitWhile Condition="IsTimeBetween(1,2)"/>
+						<ExMoveTo XYZ="285.3791, 303.2509, -99.76889" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -920,8 +956,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Silkworm Cocoon"/>
 						<TeleportTo Force="True" AetheryteId="4" Name="Hawthorne Hut"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="9.627401, -6.880045, 245.0801"/>
-						<WaitWhile Condition="IsTimeBetween(1,2)"/>
+						<ExMoveTo XYZ="9.627401, -6.880045, 245.0801" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -940,8 +976,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Fragrant Log"/>
 						<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-195.0522, 10.15532, -99.76889"/>
-						<WaitWhile Condition="IsTimeBetween(1,2)"/>
+						<ExMoveTo XYZ="-195.0522, 10.15532, -99.76889" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -960,8 +996,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Black Truffle"/>
 						<TeleportTo Force="True" AetheryteId="18" Name="Camp Drybone"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-443.3712, -1.39606, -262.7161"/>
-						<WaitWhile Condition="IsTimeBetween(13,14)"/>
+						<ExMoveTo XYZ="-443.3712, -1.39606, -262.7161" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(13,14.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -980,8 +1016,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dzemael Tomato Seeds"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
-						<WaitWhile Condition="IsTimeBetween(13,14)"/>
+						<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(13,14.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1001,8 +1037,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dzemael Tomato"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
-						<WaitWhile Condition="IsTimeBetween(13,14)"/>
+						<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(13,14.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1021,10 +1057,10 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Old World Fig"/>
 						<TeleportTo Force="True" AetheryteId="76" Name="Tailfeather"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo Radius="3.0" XYZ="537.7156, 41.16022, 27.72104"/>
-						<ExFlyTo Radius="3.0" XYZ="260.6163, 77.28701, -374.0894"/>
-						<ExFlyTo Radius="3.0" XYZ="200.8059, 19.17759, -459.1148"/>
-						<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(13,14)"/>
+						<ExFlyTo XYZ="537.7156, 41.16022, 27.72104"/>
+						<ExFlyTo XYZ="260.6163, 77.28701, -374.0894"/>
+						<ExFlyTo XYZ="200.8059, 19.17759, -459.1148" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_OldWorldFig; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1073,8 +1109,8 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="537.7156, 41.16022, 27.72104"/>
 						<ExMoveTo XYZ="260.6163, 77.28701, -374.0894"/>
-						<ExMoveTo XYZ="200.8059, 19.17759, -459.1148"/>
-						<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(13,14)"/>
+						<ExFlyTo XYZ="200.8059, 19.17759, -459.1148" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1107,8 +1143,8 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-						<ExFlyTo Radius="3.0" XYZ="512.589, 230.5479, 354.7156"/>
-						<WaitWhile Condition="IsTimeBetween(1,2) or IsTimeBetween(13,14)"/>
+						<ExFlyTo XYZ="512.589, 230.5479, 354.7156" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Cuprite -->
 						<If Condition="&Cuprite; != 0">
 							<!-- Collectable -->
@@ -1205,8 +1241,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Yellow Quartz or Green Quartz"/>
 						<TeleportTo Force="True" AetheryteId="78" Name="Moghome"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="584.7388, 21.0551, -21.69694"/>
-						<WaitWhile Condition="IsTimeBetween(0,2) or IsTimeBetween(13,14)"/>
+						<ExFlyTo XYZ="584.7388, 21.0551, -21.69694" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Yellow Quartz -->
 						<If Condition="&YellowQuartz; != 0">
 							<If Condition="&Collect_YellowQuartz; != 0">
@@ -1272,15 +1308,15 @@
 					</If>
 				</If>
 				<!-- 3AM-PM -->
-				<If Condition="((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0 or &CrystallizedSap; != 0)))) and FreeItemSlots() &gt; 1">
 					<!-- Lumythrite Ore  -->
 					<If Condition="&LumythriteOre; != 0 and IsTimeBetween(2,3)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lumythrite Ore"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-560.9453, 162.0053, 5.935372"/>
-						<ExMoveTo XYZ="-800.9816, 289.6386, -154.6211" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(2,3)"/>
+						<ExFlyTo XYZ="-800.9816, 289.6386, -154.6211" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -1302,14 +1338,37 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Old-growth Camphorwood Log"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-639.786, 291.7949, -665.0966" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(14,15)"/>
+						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Old-growth Camphorwood Log</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherSpots>
+								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+							</GatherSpots>
+							<HotSpots>
+								<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Crystallized Sap -->
+					<If Condition="&CrystallizedSap; != 0 and IsTimeBetween(14,15)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Crystallized Sap"/>
+						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
+						<RunCode Name="BTN"/>
+						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<GatherObjects>
+								<GatherObject>Legendary Mature Tree</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Crystallized Sap</ItemName>
 							</ItemNames>
 							<GatherRotation>&Rotation_1Star;</GatherRotation>
 							<GatherSpots>
@@ -1329,8 +1388,8 @@
 						<TeleportTo Force="True" AetheryteId="24" Name="Revenant's Toll"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="76.95176, 20.5404, -618.4407"/>
-						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106"/>
-						<WaitWhile Condition="IsTimeBetween(4,5) or Core.Player.CurrentGP &lt; 500"/>
+						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1340,7 +1399,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1357,7 +1416,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1374,7 +1433,7 @@
 									<ItemName>Lightning Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1391,7 +1450,7 @@
 									<ItemName>Earth Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1408,7 +1467,7 @@
 									<ItemName>Wind Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1425,7 +1484,7 @@
 									<ItemName>Ice Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1442,7 +1501,7 @@
 									<ItemName>Fire Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1473,8 +1532,8 @@
 						<TeleportTo Force="True" AetheryteId="24" Name="Revenant's Toll"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="76.95176, 20.5404, -618.4407"/>
-						<ExMoveTo XYZ="345.458, -4.698928, -482.9557"/>
-						<WaitWhile Condition="IsTimeBetween(16,17) or Core.Player.CurrentGP &lt; 500"/>
+						<ExMoveTo XYZ="345.458, -4.698928, -482.9557" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -1484,7 +1543,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1501,7 +1560,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1518,7 +1577,7 @@
 									<ItemName>Lightning Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1535,7 +1594,7 @@
 									<ItemName>Earth Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1552,7 +1611,7 @@
 									<ItemName>Wind Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1569,7 +1628,7 @@
 									<ItemName>Ice Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1586,7 +1645,7 @@
 									<ItemName>Fire Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -1617,8 +1676,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Grade 3 Thanalan Topsoil"/>
 						<TeleportTo Force="True" Name="Horizon" AetheryteId="17"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="-150.1802, 41.43418, 351.9217"/>
-						<WaitWhile Condition="IsTimeBetween(4,5)"/>
+						<ExMoveTo XYZ="-150.1802, 41.43418, 351.9217" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -1638,8 +1697,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ebony Log"/>
 						<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="145.6238, 55.6597, 208.2412"/>
-						<WaitWhile Condition="IsTimeBetween(4,5)"/>
+						<ExMoveTo XYZ="145.6238, 55.6597, 208.2412" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -1658,8 +1717,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Honey Lemon"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="332.0574, 27.99921, 580.2009"/>
-						<WaitWhile Condition="IsTimeBetween(4,5)"/>
+						<ExMoveTo XYZ="332.0574, 27.99921, 580.2009" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1678,9 +1737,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Astral Moraine"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(4,5)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_AstralMoraine; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1723,8 +1782,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Sun Mica"/>
 						<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="713.3589, -141.6476, 739.575" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(4,5)"/>
+						<ExFlyTo XYZ="713.3589, -141.6476, 739.575" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_SunMica; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1769,8 +1828,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Aurum Regis Ore"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(4,5)"/>
+						<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_AurumRegisOre; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1815,10 +1874,10 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Vanilla Beans"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
-						<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(16,17)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
+						<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_VanillaBeans; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1856,8 +1915,8 @@
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(16,17)"/>
+						<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_HoneydewAlmonds; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1906,9 +1965,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Seventh Heaven"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-511.196, 58.26035, 352.3266" Radius="3.0"/>
-						<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(16,17)"/>
+						<ExFlyTo XYZ="-511.196, 58.26035, 352.3266"/>
+						<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_SeventhHeaven; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -1945,8 +2004,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Volcanic Rock Salt"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274"/>
-						<WaitWhile Condition="IsTimeBetween(16,17)"/>
+						<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -1965,8 +2024,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Thavnairian Mistletoe"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357"/>
-						<WaitWhile Condition="IsTimeBetween(16,17)"/>
+						<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -1985,8 +2044,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Rosemary"/>
 						<TeleportTo Force="True" Name="The Hawthorne Hut" AetheryteId="4"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="48.81628, 7.451846, 433.1523"/>
-						<WaitWhile Condition="IsTimeBetween(16,17)"/>
+						<ExMoveTo XYZ="48.81628, 7.451846, 433.1523" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -2008,8 +2067,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Umbral Rock"/>
 						<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795"/>
-						<WaitWhile Condition="IsTimeBetween(6,7)"/>
+						<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2028,8 +2087,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Grade 3 Shroud Topsoil"/>
 						<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795"/>
-						<WaitWhile Condition="IsTimeBetween(6,7)"/>
+						<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2053,8 +2112,8 @@
 						<ExMoveTo XYZ="388.5541, 21.05678, 441.398"/>
 						<ExMoveTo XYZ="245.6796, 56.29837, 834.6301"/>
 						<RunCode Name="MoveForward"/>
-						<ExMoveTo XYZ="513.8373, 90.97717, -376.9062"/>
-						<WaitWhile Condition="IsTimeBetween(6,7)"/>
+						<ExMoveTo XYZ="513.8373, 90.97717, -376.9062" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -2082,8 +2141,8 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
-						<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(6,7)"/>
+						<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -2106,11 +2165,10 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Violet Quartz"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
-						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(6,7)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
+						<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -2127,16 +2185,13 @@
 					<!-- Red Alumen -->
 					<If Condition="&RedAlumen; != 0 and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Red Alumen"/>
-						<If condition="not IsOnMap(402)">
-							<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
-							<RunCode Name="MIN"/>
-							<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
-						</If>
+						<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
-						<ExFlyTo XYZ="182.2543, 30.27122, -228.4919" Radius="3.0"/>
-						<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(6,7)"/>
+						<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
+						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
+						<ExFlyTo XYZ="182.2543, 30.27122, -228.4919"/>
+						<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -2160,9 +2215,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dravanian Paprika"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="Yield">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
@@ -2186,9 +2241,9 @@
 						<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
-						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
-						<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
+						<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
@@ -2221,8 +2276,8 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-						<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
@@ -2242,8 +2297,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Volcanic Rock Salt"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2262,8 +2317,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Grade 3 La Noscean Topsoil"/>
 						<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="176.5952, 61.53287, 263.0089"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExMoveTo XYZ="176.5952, 61.53287, 263.0089" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -2283,8 +2338,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Thavnairian Mistletoe"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2303,8 +2358,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Virgin Basilisk Egg"/>
 						<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="75.10241, 19.24676, 136.3448"/>
-						<WaitWhile Condition="IsTimeBetween(18,19)"/>
+						<ExMoveTo XYZ="75.10241, 19.24676, 136.3448" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -2327,8 +2382,8 @@
 						<TeleportTo Force="True" AetheryteId="24" Name="Revenant's Toll"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="76.95176, 20.5404, -618.4407"/>
-						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106"/>
-						<WaitWhile Condition="IsTimeBetween(8,9) or Core.Player.CurrentGP &lt; 500"/>
+						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -2338,7 +2393,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2355,7 +2410,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2372,7 +2427,7 @@
 									<ItemName>Lightning Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2389,7 +2444,7 @@
 									<ItemName>Earth Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2406,7 +2461,7 @@
 									<ItemName>Wind Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2423,7 +2478,7 @@
 									<ItemName>Ice Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2440,7 +2495,7 @@
 									<ItemName>Fire Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Field Mastery" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2471,8 +2526,8 @@
 						<TeleportTo Force="True" AetheryteId="24" Name="Revenant's Toll"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="76.95176, 20.5404, -618.4407"/>
-						<ExMoveTo XYZ="345.458, -4.698928, -482.9557"/>
-						<WaitWhile Condition="IsTimeBetween(20,21) or Core.Player.CurrentGP &lt; 500"/>
+						<ExMoveTo XYZ="345.458, -4.698928, -482.9557" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(20,21.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
@@ -2482,7 +2537,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2499,7 +2554,7 @@
 									<ItemName>Water Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Thaliak's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2516,7 +2571,7 @@
 									<ItemName>Lightning Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Byregot's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2533,7 +2588,7 @@
 									<ItemName>Earth Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nophica's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2550,7 +2605,7 @@
 									<ItemName>Wind Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Llymlaen's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2567,7 +2622,7 @@
 									<ItemName>Ice Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Menphina's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2584,7 +2639,7 @@
 									<ItemName>Fire Cluster</ItemName>
 								</ItemNames>
 								<GatheringSkillOrder>
-									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1" />
+									<GatheringSkill SpellName="Nald'thal's Ward" TimesToCast="1"/>
 									<GatheringSkill SpellName="Sharp Vision" TimesToCast="1"/>
 								</GatheringSkillOrder>
 								<HotSpots>
@@ -2615,8 +2670,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Spruce Log"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="354.2818, 303.052, -348.1232"/>
-						<WaitWhile Condition="IsTimeBetween(8,9)"/>
+						<ExMoveTo XYZ="354.2818, 303.052, -348.1232" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
 						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2635,8 +2690,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Prickly Pineapple Seeds"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="443.7831, 16.39372, 252.9884"/>
-						<WaitWhile Condition="IsTimeBetween(8,9)"/>
+						<ExMoveTo XYZ="443.7831, 16.39372, 252.9884" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
 						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2656,8 +2711,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Prickly Pineapple"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="443.7831, 16.39372, 252.9884"/>
-						<WaitWhile Condition="IsTimeBetween(8,9)"/>
+						<ExMoveTo XYZ="443.7831, 16.39372, 252.9884" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
 						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2676,8 +2731,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Gold ore"/>
 						<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18"/>
 						<RunCode Name="MIN"/>
-						<ExMoveTo XYZ="331.291, 11.89599, -11.15705"/>
-						<WaitWhile Condition="IsTimeBetween(8,9)"/>
+						<ExMoveTo XYZ="331.291, 11.89599, -11.15705" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
 						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -2696,10 +2751,10 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Chysahl Greens"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
-						<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(8,9) or IsTimeBetween(20,21)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
+						<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Condition.IsTimeBetween(20,21.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_Chysahl; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -2744,8 +2799,8 @@
 						<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
-						<ExMoveTo XYZ="451.4217, 194.0464, -209.2942"/>
-						<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
+						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -2768,8 +2823,8 @@
 						<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
-						<ExMoveTo XYZ="451.4217, 194.0464, -209.2942"/>
-						<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
+						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -2791,8 +2846,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] CypressLog"/>
 						<TeleportTo Force="True" Name="Bentbranch Meadows" AetheryteId="3"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="185.9685, -32.75785, 403.3672"/>
-						<WaitWhile Condition="IsTimeBetween(9,10)"/>
+						<ExMoveTo XYZ="185.9685, -32.75785, 403.3672" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -2815,11 +2870,11 @@
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-488.5303, -21.48237, -425.4246" Radius="3.0"/>
-						<ExFlyTo XYZ="-467.6273, -4.80903, -366.3413" Radius="3.0"/>
-						<ExFlyTo XYZ="-202.444, -16.6456, -283.0277" Radius="3.0"/>
-						<ExFlyTo XYZ="501.7628, -35.17665, -166.8061" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
+						<ExFlyTo XYZ="-488.5303, -21.48237, -425.4246"/>
+						<ExFlyTo XYZ="-467.6273, -4.80903, -366.3413"/>
+						<ExFlyTo XYZ="-202.444, -16.6456, -283.0277"/>
+						<ExFlyTo XYZ="501.7628, -35.17665, -166.8061" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<!-- Heavens Lemon -->
 						<If Condition="&HeavensLemon; != 0">
 							<!-- Collectable -->
@@ -2900,9 +2955,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Coerthan Tea Leaves or Pearl Sprouts or Chives"/>
 						<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
-						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
+						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
+						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<!-- Coerthan Tea Leaves -->
 						<If Condition="&CoerthanTeaLeaves; != 0">
 							<If Condition="&Collect_CoerthanTeaLeaves; != 0">
@@ -3020,8 +3075,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Pyrite or Chalcocite or Limonite"/>
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="216.7381, 2.187376, -236.3906" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(9,10) or IsTimeBetween(21,22)"/>
+						<ExFlyTo XYZ="216.7381, 2.187376, -236.3906" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<!-- Pyrite -->
 						<If Condition="&Pyrite; != 0">
 							<If Condition="&Collect_Pyrite; != 0">
@@ -3123,9 +3178,9 @@
 					<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 					<RunCode Name="MIN"/>
 					<ExMoveTo XYZ="-716.1138, -186.9606, -584.3765"/>
-					<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
-					<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" Radius="3.0"/>
-					<WaitWhile Condition="IsTimeBetween(10,11) or IsTimeBetween(22,23)"/>
+					<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
+					<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" RandomFinalSpot="True"/>
+					<WaitWhile Condition="Condition.IsTimeBetween(10,11.1) or Condition.IsTimeBetween(22,23.1)"/>
 					<!-- Collectable -->
 					<If Condition="&Collect_Adamantite; != 0">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
@@ -3183,9 +3238,9 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
-						<ExFlyTo XYZ="-474.7896, 221.0817, -68.38828" Radius="3.0"/>
-						<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
+						<ExFlyTo XYZ="-474.7896, 221.0817, -68.38828"/>
+						<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Cloud Banana -->
 						<If Condition="&CloudBanana; != 0">
 							<!-- Collectable -->
@@ -3279,9 +3334,9 @@
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608" Radius="3.0"/>
-						<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
+						<ExFlyTo XYZ="-591.6451, -25.34154, -487.7608"/>
+						<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Abalathian Rock Salt -->
 						<If Condition="&AbalathianRockSalt; != 0">
 							<!-- Collectable -->
@@ -3354,9 +3409,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Porcini or Dravanian Mistletoe"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-599.4534, 67.44411, 278.351" Radius="3.0"/>
-						<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" Radius="3.0"/>
-						<WaitWhile Condition="IsTimeBetween(11,12) or IsTimeBetween(23,24)"/>
+						<ExFlyTo XYZ="-599.4534, 67.44411, 278.351"/>
+						<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" RandomFinalSpot="True"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Porcini -->
 						<If Condition="&Porcini; != 0">
 							<If Condition="&Collect_Porcini; != 0">
@@ -3527,7 +3582,7 @@
 					<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 					<RunCode Name="FSH"/>
 					<If Condition="IsTimeBetween(0,8)">
-						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True"/>
+						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
@@ -3550,7 +3605,7 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(8,16)">
-						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True"/>
+						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
@@ -3573,7 +3628,7 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(16,24)">
-						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True"/>
+						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
@@ -3608,7 +3663,7 @@
 						<BuyItem ItemId="2600" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1004430" XYZ="-278.7472, 8, 378.7108"/>
 					</If>
 					<If Condition="IsTimeBetween(0,8)">
-						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True"/>
+						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 							<Keepers>
@@ -3624,7 +3679,7 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(8,16)">
-						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True"/>
+						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="IsTimeBetween(16,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 							<Keepers>
@@ -3704,7 +3759,7 @@
 					<UseTransport Name="Isles of Umbra Southshore" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
 					<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True"/>
 					<If Condition="IsTimeBetween(14,16)">
-						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True"/>
+						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(14,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69">
 							<Baits>
@@ -3726,7 +3781,7 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(16,24)">
-						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True"/>
+						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69">
 							<Baits>
@@ -3875,7 +3930,7 @@
 			<!-- Turn In -->
 			<If Condition="&TurnInAfterLoop; != 0 and (IsTimeBetween(2,3) or IsTimeBetween(14,15) or IsTimeBetween(5,6) or IsTimeBetween(17,18) or IsTimeBetween(9,10) or IsTimeBetween(21,22) or IsTimeBetween(10,11) or IsTimeBetween(22,23) or IsTimeBetween(11,12) or IsTimeBetween(23,24) or IsTimeBetween(12,13) or IsTimeBetween(0,1)) and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
 				<ExPurify/>
-				<TurnInCollectables location="Idyllshire" forcePurchase="False" >
+				<TurnInCollectables location="Idyllshire" forcePurchase="False">
 					<ShopPurchases>
 						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
 						<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
@@ -3937,7 +3992,23 @@
 							<RunCode Name="BTN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0">
+							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Lover's Laurel" Value="550"/>
+									</Items>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="-584.357, 118.5735, -410.6856" nodeLocation="-585.8388, 119.6912, -407.5294"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="-502.8308, 117.3001, -444.0552" nodeLocation="-501.2244, 118.0477, -443.4114"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot XYZ="-586.7975, 127.4666, -406.9053" Radius="30"/>
+										<HotSpot XYZ="-511.3296, 128.6305, -455.8474" Radius="50"/>
+										<HotSpot XYZ="-691.3636, 140.3503, -374.2292" Radius="50"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -3973,7 +4044,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -3991,7 +4062,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0">
+							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4013,7 +4084,7 @@
 						<If Condition="&BTN_0_4_Lileep; == 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0">
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
-							<WaitWhile Condition="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
+							<WaitWhile Condition="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
 								<WaitTimer WaitTime="3"/>
@@ -4028,20 +4099,34 @@
 							<RunCode Name="MIN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0"/>
-							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0"/>
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
-								<Items>
-									<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-								</Items>
-								<HotSpots>
-									<HotSpot XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
-									<HotSpot XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
-									<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
-								</HotSpots>
-							</ExGather>
+							<ExFlyTo XYZ="36.562, 13.66749, 252.4461"/>
+							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419"/>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Astral Moraine" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
+										<HotSpot XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
+										<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="-254.241, -49.31017, 275.3868" Radius="30"/>
+										<HotSpot XYZ="-307.5015, -51.15042, 330.267" Radius="30"/>
+										<HotSpot XYZ="-148.6799, -61.24704, 394.047" Radius="20"/>
+									</HotSpots>
+								</ExGather>
+							</If>
 						</If>
 						<If Condition="&BTN_4_8_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [4:8] ~ Destination ----&gt; The Answering Quarter"/>
@@ -4057,8 +4142,23 @@
 								<RunCode Name="MoveForward"/>
 							</If>
 							<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
-							<ExFlyTo XYZ="-470.2735, 167.3033, -139.4283" Radius="3.0"/>
-							<If Condition="&Gather_BlackSoil_Lileep; == 0">
+							<ExFlyTo XYZ="-470.2735, 167.3033, -139.4283"/>
+							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Lover's Laurel" Value="550"/>
+									</Items>
+									<GatherSpots>
+										<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-391.9269, 146.2479, -183.8181" nodeLocation="-388.4753, 147.345, -177.1972"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot XYZ="-473.0906, 147.9601, -139.3534" Radius="30"/>
+										<HotSpot XYZ="-558.9656, 149.6086, -119.9824" Radius="50"/>
+										<HotSpot XYZ="-382.8387, 153.1599, -190.6937" Radius="50"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4075,7 +4175,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_BlackSoil_Lileep; != 0">
+							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Black Soil"/>
@@ -4096,7 +4196,7 @@
 						<If Condition="&MIN_4_8_Lileep; == 0 and &BTN_4_8_Lileep; == 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0">
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
-							<WaitWhile Condition="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
+							<WaitWhile Condition="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
 								<WaitTimer WaitTime="3"/>
@@ -4119,20 +4219,34 @@
 								<RunCode Name="MoveForward"/>
 							</If>
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-							<ExFlyTo XYZ="120.7219, 69.52051, 32.74143" Radius="3.0"/>
+							<ExFlyTo XYZ="120.7219, 69.52051, 32.74143"/>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
-								<Items>
-									<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-								</Items>
-								<HotSpots>
-									<HotSpot XYZ="173.2233, 69.60097, 107.3567" Radius="30"/>
-									<HotSpot XYZ="147.3953, 74.17239, 56.05408" Radius="50"/>
-									<HotSpot XYZ="207.0412, 72.04823, 107.8131" Radius="40"/>
-								</HotSpots>
-							</ExGather>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Astral Moraine" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="173.2233, 69.60097, 107.3567" Radius="30"/>
+										<HotSpot XYZ="147.3953, 74.17239, 56.05408" Radius="50"/>
+										<HotSpot XYZ="207.0412, 72.04823, 107.8131" Radius="40"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="173.2233, 69.60097, 107.3567" Radius="30"/>
+										<HotSpot XYZ="147.3953, 74.17239, 56.05408" Radius="50"/>
+										<HotSpot XYZ="207.0412, 72.04823, 107.8131" Radius="40"/>
+									</HotSpots>
+								</ExGather>
+							</If>
 						</If>
 						<If Condition="&BTN_8_12_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
@@ -4140,9 +4254,21 @@
 							<RunCode Name="BTN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-							<ExFlyTo XYZ="36.562, 13.66749, 252.4461" Radius="3.0"/>
-							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0"/>
-							<If Condition="&Gather_BlackSoil_Lileep; == 0">
+							<ExFlyTo XYZ="36.562, 13.66749, 252.4461"/>
+							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419"/>
+							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Lover's Laurel" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="-617.4734, -98.22275, 486.038" Radius="30"/>
+										<HotSpot XYZ="-553.9785, -76.84792, 419.580" Radius="30"/>
+										<HotSpot XYZ="-569.1127, -88.61699, 546.949" Radius="30"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4156,7 +4282,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_BlackSoil_Lileep; != 0">
+							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Black Soil"/>
@@ -4174,7 +4300,7 @@
 						<If Condition="&MIN_8_12_Lileep; == 0 and &BTN_8_12_Lileep; == 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0">
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
-							<WaitWhile Condition="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
+							<WaitWhile Condition="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
 								<WaitTimer WaitTime="3"/>
@@ -4188,25 +4314,39 @@
 							<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 							<RunCode Name="MIN"/>
 							<ExPurify/>
-							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193" Radius="3.0"/>
-							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0"/>
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
-								<Items>
-									<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-								</Items>
-								<HotSpots>
-									<HotSpot XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
-									<HotSpot XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
-									<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
-								</HotSpots>
-							</ExGather>
+							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193"/>
+							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604"/>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Astral Moraine" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
+										<HotSpot XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
+										<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="322.2591, -20.08315, -149.3368" Radius="30"/>
+										<HotSpot XYZ="320.6808, -21.97984, -216.2199" Radius="30"/>
+										<HotSpot XYZ="299.7046, -29.75275, -107.2751" Radius="30"/>
+									</HotSpots>
+								</ExGather>
+							</If>
 						</If>
 						<If Condition="&MIN_12_16_Lileep; == 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0">
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
-							<WaitWhile Condition="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
+							<WaitWhile Condition="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
 								<WaitTimer WaitTime="3"/>
@@ -4221,25 +4361,44 @@
 							<RunCode Name="MIN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
-							<ExFlyTo XYZ="125.623, 19.02453, 565.1636" Radius="3.0"/>
-							<ExFlyTo XYZ="514.1337, -80.13731, 430.907" Radius="3.0"/>
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
-								<Items>
-									<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Bright Lightning Rock" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-								</Items>
-								<GatherSpots>
-									<IndirectApproachGatherSpot ApproachLocation="524.8009, -111.2728, 433.7963" NodeLocation="529.0662, -110.3256, 434.3149"/>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707"/>
-									<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905"/>
-								</GatherSpots>
-								<HotSpots>
-									<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
-									<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
-									<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
-								</HotSpots>
-							</ExGather>
+							<ExFlyTo XYZ="125.623, 19.02453, 565.1636"/>
+							<ExFlyTo XYZ="514.1337, -80.13731, 430.907"/>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Astral Moraine" Value="550"/>
+									</Items>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="524.8009, -111.2728, 433.7963" NodeLocation="529.0662, -110.3256, 434.3149"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
+										<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+										<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Bright Lightning Rock" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+									</Items>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="524.8009, -111.2728, 433.7963" NodeLocation="529.0662, -110.3256, 434.3149"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="659.7636, -124.5583, 326.8338" NodeLocation="661.9959, -122.6855, 333.0707"/>
+										<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="590.5559, -98.91835, 409.9416" NodeLocation="591.6068, -98.08508, 407.905"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot XYZ="591.0585, -92.11768, 408.6512" Radius="30"/>
+										<HotSpot XYZ="506.149078, -105.9392, 431.053772" Radius="45"/>
+										<HotSpot XYZ="706.3032, -79.69473, 460.5809" Radius="40"/>
+									</HotSpots>
+								</ExGather>
+							</If>
 						</If>
 						<If Condition="&BTN_16_20_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [16:20] ~ Destination ----&gt; Four Arms"/>
@@ -4248,7 +4407,19 @@
 							<ExPurify/>
 							<ExFlyTo XYZ="-498.7655, 131.2126, 281.2856"/>
 							<ExFlyTo XYZ="-214.1187, 51.6551, 333.5159"/>
-							<If Condition="&Gather_BlackSoil_Lileep; == 0">
+							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Lover's Laurel" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="-125.29, -18.16194, 379.2246" Radius="30"/>
+										<HotSpot XYZ="-89.7104, -4.862249, 419.6288" Radius="50"/>
+										<HotSpot XYZ="-11.89164, -11.48173, 375.9863" Radius="50"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4262,7 +4433,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_BlackSoil_Lileep; != 0">
+							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Black Soil"/>
@@ -4283,7 +4454,7 @@
 						<If Condition="&MIN_16_20_Lileep; == 0 and &BTN_16_20_Lileep; == 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0">
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
-							<WaitWhile Condition="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
+							<WaitWhile Condition="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
 								<WaitTimer WaitTime="3"/>
@@ -4297,20 +4468,34 @@
 							<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 							<RunCode Name="MIN"/>
 							<ExPurify/>
-							<ExFlyTo XYZ="447.5304, 231.6418, 698.439" Radius="3.0"/>
+							<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
 							<ExFlyTo XYZ="-10.57232, 229.2152, 281.0444"/>
-							<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
-								<Items>
-									<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Bright Lightning Rock" Value="&Sand_Collect_Rate_Lileep;"/>
-									<Collectable Name="Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
-								</Items>
-								<HotSpots>
-									<HotSpot XYZ="-35.37612, 217.6103, 285.2752" Radius="30"/>
-									<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
-									<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
-								</HotSpots>
-							</ExGather>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Astral Moraine" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="-35.37612, 217.6103, 285.2752" Radius="30"/>
+										<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+										<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Bright Lightning Rock" Value="&Sand_Collect_Rate_Lileep;"/>
+										<Collectable Name="Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="-35.37612, 217.6103, 285.2752" Radius="30"/>
+										<HotSpot XYZ="82.24086, 222.716, 248.7347" Radius="50"/>
+										<HotSpot XYZ="-116.435768, 225.4574, 222.285858" Radius="90"/>
+									</HotSpots>
+								</ExGather>
+							</If>
 						</If>
 						<If Condition="&BTN_20_24_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [20:24] ~ Destination ----&gt; Voor Sian Siran"/>
@@ -4318,8 +4503,20 @@
 							<RunCode Name="BTN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533"/>
-							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0"/>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0">
+							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207"/>
+							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+									<Items>
+										<Collectable Name="Lover's Laurel" Value="550"/>
+									</Items>
+									<HotSpots>
+										<HotSpot XYZ="183.3238, -135.0074, 637.3044" Radius="30"/>
+										<HotSpot XYZ="91.30701, -139.0224, 584.8624" Radius="30"/>
+										<HotSpot XYZ="98.29739, -142.3631, 510.3914" Radius="30"/>
+									</HotSpots>
+								</ExGather>
+							</If>
+							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4333,7 +4530,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4347,7 +4544,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4361,7 +4558,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0">
+							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4379,7 +4576,7 @@
 						<If Condition="&MIN_20_24_Lileep; == 0 and &BTN_20_24_Lileep; == 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0">
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
-							<WaitWhile Condition="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition; and &Snorlax; == 0 and &Ditto; == 0 and &Magikarp; == 0"/>
+							<WaitWhile Condition="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 							<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 								<RunCode Name="Dismount"/>
 								<WaitTimer WaitTime="3"/>
@@ -4396,11 +4593,12 @@
 						<WaitTimer WaitTime="3"/>
 						<EatFood ItemId="&ID_FOOD;"/>
 					</If>
+					<!-- Eil Thom -->
 					<If Condition="(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Eil Tohm"/>
 						<TeleportTo Force="True" AetheryteId="78" Name="Moghome"/>
 						<RunCode Name="BTN"/>
-						<ExMoveTo XYZ="255.9486, 20.39227, 550.3695"/>
+						<ExMoveTo XYZ="292.2472, 82.39008, 521.7303"/>
 						<!-- Camphorwood Branch -->
 						<If Condition="ItemCount(14160) &lt; &CamphorwoodBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Camphorwood Branch(Eil Tohm) [START]"/>
@@ -4470,7 +4668,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Red Rime"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Raw Citrine -->
 						<If Condition="ItemCount(12557) &lt; &RawCitrine; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Citrine(Red Rime) [START]"/>
@@ -4535,7 +4733,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Voor Sian Siran"/>
 						<TeleportTo Force="True" AetheryteId="72" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="125.623, 19.02453, 565.1636"/>
+						<ExFlyTo XYZ="125.623, 19.02453, 565.1636"/>
 						<!-- Abalathian Spring Water -->
 						<If Condition="ItemCount(12632) &lt; &AbalathianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Abalathian Spring Water(Voor Sian Siran) [START]"/>
@@ -4682,8 +4880,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Avalonia Fallen"/>
 						<TeleportTo Force="True" AetheryteId="77" Name="Anyx Trine"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="-289.3234, -3.640372, 60.82505"/>
-						<ExFlyTo Radius="3.0" XYZ="-229.1113, -21.22585, 168.7209"/>
+						<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
+						<ExFlyTo XYZ="-229.1113, -21.22585, 168.7209"/>
 						<!-- Beastkin Horn -->
 						<If Condition="ItemCount(14190) &lt; &BeastkinHorn; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Beastkin Horn(Avalonia Fallen) [START]"/>
@@ -4913,7 +5111,7 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-						<ExFlyTo XYZ="11.32641, 129.841, -243.8127" Radius="3.0"/>
+						<ExFlyTo XYZ="11.32641, 129.841, -243.8127"/>
 						<!-- Hardsilver Ore -->
 						<If Condition="ItemCount(12535) &lt; &HardsilverOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [START]"/>
@@ -5054,7 +5252,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Twinpools(56-60)"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Whitefrost Cotton Boll -->
 						<If Condition="ItemCount(14956) &lt; &WhitefrostCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Whitefrost Cotton Boll(Twinpools 56-60) [START]"/>
@@ -5328,9 +5526,9 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Avalonia Fallen"/>
 						<TeleportTo Force="True" AetheryteId="77" Name="Anyx Trine"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo Radius="3.0" XYZ="-289.3234, -3.640372, 60.82505"/>
-						<ExFlyTo Radius="3.0" XYZ="-216.91, -25.85352, 196.2107"/>
-						<ExFlyTo Radius="3.0" XYZ="-420.6207, -44.11576, 463.0867"/>
+						<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
+						<ExFlyTo XYZ="-216.91, -25.85352, 196.2107"/>
+						<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867"/>
 						<!-- Coneflower -->
 						<If Condition="ItemCount(12638) &lt; &Coneflower; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Coneflower(Avalonia Fallen) [START]"/>
@@ -5391,8 +5589,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Four Arms"/>
 						<TeleportTo Force="True" AetheryteId="79" Name="Zenith"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo Radius="3.0" XYZ="-498.7655, 131.2126, 281.2856"/>
-						<ExFlyTo Radius="3.0" XYZ="-214.1187, 51.6551, 333.5159"/>
+						<ExFlyTo XYZ="-498.7655, 131.2126, 281.2856"/>
+						<ExFlyTo XYZ="-214.1187, 51.6551, 333.5159"/>
 						<!-- Dandelion -->
 						<If Condition="ItemCount(12640) &lt; &Dandelion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dandelion(Four Arms) [START]"/>
@@ -5568,8 +5766,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Twinpools(51-55)"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<!-- Mythrite Sand -->
 						<If Condition="ItemCount(12531) &lt; &MythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Sand(Twinpools 51-55) [START]"/>
@@ -5622,8 +5820,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Gorgane Holding"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<!-- Mythrite Ore -->
 						<If Condition="ItemCount(12534) &lt; &MythriteOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [START]"/>
@@ -5724,7 +5922,7 @@
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-						<ExFlyTo XYZ="315.1864, 26.05593, 219.03" Radius="3.0"/>
+						<ExFlyTo XYZ="315.1864, 26.05593, 219.03"/>
 						<!-- Raw Agate -->
 						<If Condition="ItemCount(12553) &lt; &RawAgate; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Agate(The Smoldering Wastes) [START]"/>
@@ -5824,7 +6022,7 @@
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
-						<ExFlyTo XYZ="446.2568, 2.897244, -342.4665" Radius="3.0"/>
+						<ExFlyTo XYZ="446.2568, 2.897244, -342.4665"/>
 						<!-- Raw Star Ruby -->
 						<If Condition="ItemCount(12554) &lt; &RawStarRuby; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Star Ruby(Chocobo Forest) [START]"/>
@@ -5937,8 +6135,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Twinpools(51-55)"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
-						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615" Radius="3.0"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<!-- Rainbow Cotton Boll -->
 						<If Condition="ItemCount(12597) &lt; &RainbowCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Rainbow Cotton Boll(Twinpools 51-55) [START]"/>
@@ -6291,7 +6489,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Riversmeet"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="MIN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Dragon Obsidian -->
 						<If Condition="ItemCount(5126) &lt; &DragonObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Dragon Obsidian(Riversmeet) [START]"/>
@@ -6351,7 +6549,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Riversmeet"/>
 						<TeleportTo Force="True" AetheryteId="71" Name="Falcons Nest"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo Radius="3.0" XYZ="441.3659, 227.2105, 696.4022"/>
+						<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 						<!-- Cedar Log -->
 						<If Condition="ItemCount(5384) &lt; &CedarLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cedar Log(Riversmeet) [START]"/>
@@ -6455,7 +6653,8 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [22:3] ~ Destination ----&gt; The Iron Feast ~ Thunderbolt Eel"/>
 							<TeleportTo Name="Tailfeather" AetheryteId="76"/>
 							<RunCode Name="FSH"/>
-							<!-- <ExMoveTo XYZ="520.1277, 116.3365, -706.1959" Type="RandomPointWithin" Distance="5"/><ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/> -->
+							<ExMoveTo XYZ="520.1277, 116.3365, -706.1959" Type="RandomPointWithin" Distance="5"/>
+							<ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/>
 							<WaitWhile Condition="IsTimeBetween(20,22)"/>
 							<ExFish Condition="(IsTimeBetween(20,24) or IsTimeBetween(0,3)) and HasAtLeast(12707,1) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_ThunderboltEel_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
 								<Baits>
@@ -6624,9 +6823,9 @@
 							<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 							<RunCode Name="FSH"/>
 							<ExMoveTo XYZ="-716.1138, -186.9606, -584.3765"/>
-							<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969" Radius="3.0"/>
-							<ExFlyTo XYZ="150.045, 83.63493, -305.3822" Radius="3.0"/>
-							<ExMoveTo XYZ="845.9851, 62.37205, -199.7481" Radius="3.0"/>
+							<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
+							<ExFlyTo XYZ="150.045, 83.63493, -305.3822"/>
+							<ExMoveTo XYZ="845.9851, 62.37205, -199.7481"/>
 							<WaitWhile Condition="IsTimeBetween(14,15)"/>
 							<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Tupuxuara_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
@@ -6833,7 +7032,6 @@
 									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="11.4238, 100.9185, -177.7729" Heading="1.222586"/>
 									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="10.40183, 100.7158, -173.2357" Heading="1.865549"/>
 									<FishSpot ApproachLocation="6.022795, 100.9697, -176.2241" Location="13.50897, 100.9403, -169.1267" Heading="1.612835"/>
-									<!-- <FishSpot ApproachLocation="5.46863, 100.9697, -159.654" Location="10.42086, 100.9523, -160.3983" Heading="1.373525"/> -->
 									<FishSpot ApproachLocation="5.46863, 100.9697, -159.654" Location="9.187197, 100.943, -152.8534" Heading="1.396613"/>
 									<FishSpot ApproachLocation="5.46863, 100.9697, -159.654" Location="6.773185, 100.941, -146.2589" Heading="0.8766696"/>
 									<FishSpot ApproachLocation="-54.30595, 100.6696, -139.6677" Location="-46.33702, 100.5623, -139.993" Heading="1.120301"/>
@@ -6841,7 +7039,6 @@
 									<FishSpot ApproachLocation="-54.30595, 100.6696, -139.6677" Location="-58.79286, 100.5541, -132.8653" Heading="0.128675"/>
 									<FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-67.93871, 100.5926, -122.933" Heading="1.455408"/>
 									<FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-70.09016, 100.5808, -119.9369" Heading="1.077754"/>
-									<!-- <FishSpot ApproachLocation="-74.67026, 100.6697, -122.5086" Location="-70.46819, 100.5751, -115.4002" Heading="0.7133303"/><FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-75.3158, 100.6012, -109.933" Heading="1.044861"/><FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-79.84214, 100.3013, -105.8774" Heading="0.4347806"/> -->
 									<FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-83.69323, 100.5478, -105.0763" Heading="0.3746359"/>
 									<FishSpot ApproachLocation="-82.24212, 100.6697, -109.5486" Location="-87.63007, 100.5309, -103.7966" Heading="0.1492736"/>
 									<FishSpot ApproachLocation="-103.9924, 100.6697, -115.1572" Location="-102.3145, 100.559, -109.4575" Heading="5.995001"/>
@@ -6863,14 +7060,14 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [6:7] ~ Reset Time"/>
 								<If Condition="not HasAtLeast(12704,20)">
 									<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
-									<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
+									<TeleportTo Name="Camp Cloudtop" AetheryteId="72"/>
 									<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="true"/>
-									<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875" />
+									<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
 								</If>
-								<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
+								<TeleportTo Name="Camp Cloudtop" AetheryteId="72"/>
 								<RunCode Name="FSH"/>
-								<MoveTo XYZ="-602.2142, -122.2923, 554.533" />
-								<ExFlyTo XYZ="203.5816, -109.9027, 652.8904" Radius="3.0"/>
+								<MoveTo XYZ="-602.2142, -122.2923, 554.533"/>
+								<ExFlyTo XYZ="203.5816, -109.9027, 652.8904"/>
 								<ExFish Condition="IsTimeBetween(6,7)" shuffleFishSpots="true" sitRate=".69" bait="Stonefly Nymph">
 									<Keepers/>
 									<FishSpots>
@@ -7329,8 +7526,8 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ditto ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" AetheryteId="77" Name="Anyx Trine"/>
 							<RunCode Name="MIN"/>
-							<ExFlyTo Radius="3.0" XYZ="-289.3234, -3.640372, 60.82505"/>
-							<ExFlyTo Radius="3.0" XYZ="-229.1113, -21.22585, 168.7209"/>
+							<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
+							<ExFlyTo XYZ="-229.1113, -21.22585, 168.7209"/>
 							<!-- Eventide Jade -->
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Eventide Jade(Avalonia Fallen) [START]"/>
 							<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
@@ -7405,7 +7602,7 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ditto ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" AetheryteId="77" Name="Anyx Trine"/>
 							<RunCode Name="BTN"/>
-							<ExFlyTo Radius="3.0" XYZ="-289.3234, -3.640372, 60.82505"/>
+							<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
 							<ExFlyTo XYZ="-216.91, -25.85352, 196.2107"/>
 							<ExFlyTo XYZ="-420.6207, -44.11576, 463.0867"/>
 							<!-- Periwinkle -->
@@ -7495,7 +7692,7 @@
 			</If>
 			<If Condition="FreeItemSlots() &lt; 2">
 				<ExPurify/>
-				<TurnInCollectables location="Idyllshire" forcePurchase="False" >
+				<TurnInCollectables location="Idyllshire" forcePurchase="False">
 					<ShopPurchases>
 						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
 						<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>

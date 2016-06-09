@@ -1,24 +1,64 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using Buddy.Coroutines;
-using ff14bot.Managers;
 using Clio.XmlEngine;
-using ff14bot;
 using ff14bot.Enums;
 using ff14bot.Helpers;
+using ff14bot.Managers;
 using ff14bot.RemoteWindows;
+using TreeSharp;
 
-namespace ExBuddy.OrderBotTags.Behaviors
+namespace ff14bot.NeoProfiles
 {
     [XmlElement("Gardenner")]
-    public class Gardenner : ExProfileBehavior
+    public class Gardenner : ProfileBehavior
     {
+		private bool _done = false;
+
         [XmlAttribute("AlwaysWater")]
         public bool AlwaysWater { get; set; }
 
         private const int PostInteractDelay = 2300;
 
-        protected override async Task<bool> Main()
+		private static readonly Color MessageColor = Color.FromRgb(59, 216, 72);
+
+        new public static void Log(string text, params object[] args)
+        {
+            text = "[Gardenner] " + string.Format(text, args);
+            Logging.Write(MessageColor, text);
+        }
+		protected override void OnStart()
+		{
+			_done = false;
+		}
+
+        public override bool IsDone 
+		{ 
+			get 
+			{ 
+				return _done; 
+			} 
+		}
+
+        protected override void OnDone()
+        {
+		}
+
+		protected override Composite CreateBehavior() 
+		{
+			return
+				new Decorator(
+					ret => !_done,
+					new ActionRunCoroutine(r => Gardenning()));
+         }
+
+        protected override void OnResetCachedDone()
+		{
+			_done = false;
+		}
+
+        protected async Task<bool> Gardenning()
         {
             var watering = GardenManager.Plants.Where(r => !Blacklist.Contains(r) && r.Distance2D(Core.Player) < 5).ToArray();
             foreach (var plant in watering)
@@ -104,7 +144,9 @@ namespace ExBuddy.OrderBotTags.Behaviors
                     }
                 }
             }
-			return isDone = true;
-        }
-    }
+			return _done = true;
+        }		
+
+	}
 }
+			
