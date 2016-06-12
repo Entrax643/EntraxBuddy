@@ -1690,7 +1690,7 @@
 							<ItemNames>
 								<ItemName>Trillium</ItemName>
 							</ItemNames>
-							<GatherRotation>RegularNode</GatherRotation>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
 							<HotSpots>
 								<HotSpot XYZ="-189.5239, 45.19356, -102.333" Radius="250"/>
 							</HotSpots>
