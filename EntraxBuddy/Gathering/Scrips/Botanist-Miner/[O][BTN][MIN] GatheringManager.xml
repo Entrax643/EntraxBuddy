@@ -139,8 +139,10 @@
 <!-- Gathering Rotation Settings NO Collectable -->
 <!ENTITY Rotation_50_60 "Unspoiled">
 <!ENTITY Rotation_1Star "Unspoiled">
+<!ENTITY Rotation_1StarPlus "Unspoiled">
 <!ENTITY GatherIncrease_50_60 "Yield">
-<!ENTITY GatherIncrease_1star "Quality">
+<!ENTITY GatherIncrease_1Star "Quality">
+<!ENTITY GatherIncrease_1StarPlus "Quality">
 <!-- Tags possibles -->
 <!-- Yield : +2 Yield items / +5% or 15% Yield rate -->
 <!-- Quality : +30% Quality / +5% or 15% Yield rate -->
@@ -162,17 +164,25 @@
 <!ENTITY Cordial_Type_50_60 "Auto">
 <!ENTITY Cordial_Type_50_60_Collectale "Auto">
 <!-- -->
+<!ENTITY Cordial_Type_1Star "Auto">
+<!ENTITY Cordial_Type_1Star_Collectable "Auto">
 <!-- -->
-<!ENTITY Cordial_Type_1star "Auto">
-<!ENTITY Cordial_Type_1star_Collectable "Auto">
+<!ENTITY Cordial_Type_1StarPlus "Auto">
+<!ENTITY Cordial_Type_1StarPlus_Collectable "Auto">
+<!-- -->
+<!-- -->
 <!-- Choose when you want to use Cordial / HiCordial on Collectable and on Non collectable  -->
 <!-- Possible settings : Auto / AfterGather / BeforeGather / IfNeeded -->
 <!ENTITY Cordial_Time_50_60 "Auto">
 <!ENTITY Cordial_Time_50_60_Collectale "Auto">
 <!-- -->
+<!ENTITY Cordial_Time_1Star "Auto">
+<!ENTITY Cordial_Time_1Star_Collectable "Auto">
 <!-- -->
-<!ENTITY Cordial_Time_1star "Auto">
-<!ENTITY Cordial_Time_1star_Collectable "Auto">
+<!ENTITY Cordial_Time_1StarPlus "Auto">
+<!ENTITY Cordial_Time_1StarPlus_Collectable "Auto">
+<!-- -->
+<!-- -->
 <!-- Revenant's Toll Settings / Set QUANTITY here -->
 <!ENTITY Grade4_Carbonized_Matter "0">
 <!ENTITY Lightning_Cluster "0">
@@ -582,14 +592,14 @@
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
 						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Meteorite</ItemName>
 							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
 							<GatherSpots>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="753.2714, -11.39684, -464.1076" nodeLocation="756.488, -9.917932, -457.6566"/>
 							</GatherSpots>
@@ -609,14 +619,14 @@
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
 						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Smithsonite Ore</ItemName>
 							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
 							<GatherSpots>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="753.2714, -11.39684, -464.1076" nodeLocation="756.488, -9.917932, -457.6566"/>
 							</GatherSpots>
@@ -634,14 +644,14 @@
 						<ExFlyTo XYZ="556.0789, 245.7701, -68.30688"/>
 						<ExFlyTo XYZ="629.4525, 199.0281, -448.9458" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Frost Cotton Boll</ItemName>
 							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
 							<HotSpots>
 								<HotSpot XYZ="629.4525, 199.0281, -448.9458" Radius="250"/>
 							</HotSpots>
@@ -1325,14 +1335,14 @@
 						<ExMoveTo XYZ="-560.9453, 162.0053, 5.935372"/>
 						<ExFlyTo XYZ="-761.2698, 299.2732, -165.5555" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Lumythrite Ore</ItemName>
 							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
 							<GatherSpots>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-779.605, 261.8743, -222.7212" nodeLocation="-793.147, 263.2028, -216.627"/>
 							</GatherSpots>
@@ -1348,14 +1358,14 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Old-growth Camphorwood Log</ItemName>
 							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
 							<GatherSpots>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-603.8478, 254.711, -663.4998" nodeLocation="-599.6603, 256.5238, -655.631"/>
@@ -1372,14 +1382,14 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Crystallized Sap</ItemName>
 							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
+							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
 							<GatherSpots>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-603.8478, 254.711, -663.4998" nodeLocation="-599.6603, 256.5238, -655.631"/>
@@ -1772,7 +1782,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_AstralMoraine; != 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1790,7 +1800,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_AstralMoraine; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1816,7 +1826,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_SunMica; != 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1835,7 +1845,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_SunMica; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1862,7 +1872,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_AurumRegisOre; != 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
 								</GatherObjects>
@@ -1881,7 +1891,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_AurumRegisOre; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
 								</GatherObjects>
@@ -1910,7 +1920,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_VanillaBeans; != 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -1925,7 +1935,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_VanillaBeans; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -1949,7 +1959,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_HoneydewAlmonds; != 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1970,7 +1980,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_HoneydewAlmonds; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2000,7 +2010,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_SeventhHeaven; != 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star_Collectable;" CordialTime="&Cordial_Time_1star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -2015,7 +2025,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_SeventhHeaven; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -2173,7 +2183,7 @@
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 						<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2199,7 +2209,7 @@
 						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2222,7 +2232,7 @@
 						<ExFlyTo XYZ="182.2543, 30.27122, -228.4919"/>
 						<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -2248,7 +2258,7 @@
 						<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
 						<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="Yield">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="Yield">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -2274,7 +2284,7 @@
 						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
 						<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
@@ -2308,7 +2318,7 @@
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 						<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1star;" CordialTime="&Cordial_Time_1star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1star;">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
