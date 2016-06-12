@@ -6690,7 +6690,7 @@
 						<!-- Aloe -->
 						<If Condition="ItemCount(4790) &lt; &Aloe; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Aloe(Broken Water) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5384) &lt; &CedarLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(4790) &lt; &Aloe; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
