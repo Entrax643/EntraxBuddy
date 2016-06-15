@@ -521,7 +521,7 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Cordial">
+<!ENTITY Version "Dratini">
 <!-- -->
 <!ENTITY SnorlaxWaitCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &Ditto; == 0 and &Magikarp; == 0">
 <!-- -->
@@ -3769,6 +3769,7 @@
 					<RunCode Name="FSH"/>
 					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and not(Core.Player.HasAura(568)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Glowworm">
 						<Keepers>
+							<Keeper name="Giant Takitaro"/>
 							<Keeper name="Namitaro"/>
 						</Keepers>
 						<FishSpots>
@@ -3821,7 +3822,7 @@
 					<If Condition="IsTimeBetween(14,16)">
 						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(14,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
 							<Baits>
 								<Bait Name="Spoon Worm"/>
 								<Bait Name="Steel Jig"/>
@@ -3843,7 +3844,7 @@
 					<If Condition="IsTimeBetween(16,24)">
 						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
 							<Baits>
 								<Bait Name="Spoon Worm"/>
 								<Bait Name="Steel Jig"/>
@@ -4055,6 +4056,7 @@
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
 									</Items>
 									<GatherSpots>
@@ -4071,6 +4073,7 @@
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<GatherItem Name="Furymint"/>
 										<GatherItem Name="Highland Oregano"/>
@@ -4089,6 +4092,7 @@
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<GatherItem Name="Furymint"/>
 										<Collectable Name="Highland Oregano" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4107,6 +4111,7 @@
 							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Furymint" Value="&Sand_Collect_Rate_Lileep;"/>
 										<GatherItem Name="Highland Oregano"/>
@@ -4125,6 +4130,7 @@
 							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Furymint" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Highland Oregano" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4164,6 +4170,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4176,6 +4183,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4206,6 +4214,7 @@
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
 									</Items>
 									<GatherSpots>
@@ -4221,6 +4230,7 @@
 							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4238,6 +4248,7 @@
 							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<GatherItem Name="Black Soil"/>
 										<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4284,6 +4295,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4296,6 +4308,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4319,6 +4332,7 @@
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4331,6 +4345,7 @@
 							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4345,6 +4360,7 @@
 							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<GatherItem Name="Black Soil"/>
 										<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4379,6 +4395,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4391,6 +4408,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4426,6 +4444,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
 									</Items>
 									<GatherSpots>
@@ -4443,6 +4462,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Bright Lightning Rock" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4470,6 +4490,7 @@
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4482,6 +4503,7 @@
 							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4496,6 +4518,7 @@
 							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<GatherItem Name="Black Soil"/>
 										<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Granular Clay" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4533,6 +4556,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4545,6 +4569,7 @@
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Bright Lightning Rock" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4567,6 +4592,7 @@
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
 									</Items>
 									<HotSpots>
@@ -4579,6 +4605,7 @@
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<GatherItem Name="Furymint"/>
 										<GatherItem Name="Highland Oregano"/>
@@ -4593,6 +4620,7 @@
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<GatherItem Name="Furymint"/>
 										<Collectable Name="Highland Oregano" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4607,6 +4635,7 @@
 							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Furymint" Value="&Sand_Collect_Rate_Lileep;"/>
 										<GatherItem Name="Highland Oregano"/>
@@ -4621,6 +4650,7 @@
 							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Furymint" Value="&Sand_Collect_Rate_Lileep;"/>
 										<Collectable Name="Highland Oregano" Value="&Sand_Collect_Rate_Lileep;"/>
