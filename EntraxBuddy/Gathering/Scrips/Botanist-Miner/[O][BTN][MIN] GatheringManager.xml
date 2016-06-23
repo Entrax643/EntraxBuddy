@@ -636,7 +636,7 @@
 			<![CDATA[ 
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
-					if(slot.12828 == 12900 && slot.Collectability >= 834)
+					if(slot.RawItemId == 12828 && slot.Collectability >= 834)
 					{
 						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);
 						await Buddy.Coroutines.Coroutine.Sleep(1000);
@@ -655,7 +655,7 @@
 			<![CDATA[ 
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
-					if(slot.12828 == 13760 && slot.Collectability >= 515)
+					if(slot.RawItemId == 13760 && slot.Collectability >= 515)
 					{
 						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 19);
 						await Buddy.Coroutines.Coroutine.Sleep(1000);
@@ -674,7 +674,7 @@
 			<![CDATA[ 
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
-					if(slot.12828 == 13762 && slot.Collectability >= 515)
+					if(slot.RawItemId == 13762 && slot.Collectability >= 515)
 					{
 						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 20);
 						await Buddy.Coroutines.Coroutine.Sleep(1000);
@@ -693,7 +693,7 @@
 			<![CDATA[ 
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
-					if(slot.12828 == 1774 && slot.Collectability >= 326)
+					if(slot.RawItemId == 1774 && slot.Collectability >= 326)
 					{
 						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 21);
 						await Buddy.Coroutines.Coroutine.Sleep(1000);
