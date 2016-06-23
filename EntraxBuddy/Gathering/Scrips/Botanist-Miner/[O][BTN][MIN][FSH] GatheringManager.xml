@@ -537,7 +537,7 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Jigglypuff">
+<!ENTITY Version "Crystal Onix">
 <!-- -->
 <!ENTITY SnorlaxWaitCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &Ditto; == 0 and &Magikarp; == 0">
 <!-- -->
@@ -3442,7 +3442,7 @@
 						</If>
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 						<ExFlyTo XYZ="-474.7896, 221.0817, -68.38828"/>
-						<ExFlyTo XYZ="-190.3633, 204.6348, 651.1259" RandomFinalSpot="True"/>
+						<ExFlyTo XYZ="-223.5427, 220.2257, 742.9002" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Cloud Banana -->
 						<If Condition="&CloudBanana; != 0">
@@ -3460,9 +3460,8 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
-										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+										<HotSpot XYZ="-223.5427, 220.2257, 742.9002" Radius="200"/>
+										<HotSpot XYZ="-472.993, 214.7853, 713.6664" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -3480,9 +3479,8 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
-										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+										<HotSpot XYZ="-223.5427, 220.2257, 742.9002" Radius="200"/>
+										<HotSpot XYZ="-472.993, 214.7853, 713.6664" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -3503,9 +3501,8 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
-										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+										<HotSpot XYZ="-223.5427, 220.2257, 742.9002" Radius="200"/>
+										<HotSpot XYZ="-472.993, 214.7853, 713.6664" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -3523,9 +3520,8 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-156.4867, 189.7932, 696.7126" nodeLocation="-157.8228, 192.1223, 705.066"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
-										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
+										<HotSpot XYZ="-223.5427, 220.2257, 742.9002" Radius="200"/>
+										<HotSpot XYZ="-472.993, 214.7853, 713.6664" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -7180,6 +7176,18 @@
 								<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
 								<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
 							</If>
+							<If Condition="&Trade_Counterfoil; != 0">
+								<TeleportTo name="Idyllshire" aetheryteId="75"/>
+								<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
+								<RunCode Name="InteractNPCTurnIn"/>
+								<RunCode Name="ExchangeAdamantite"/>
+								<RunCode Name="ExchangeChysahl"/>
+								<RunCode Name="ExchangeEel"/>
+								<RunCode Name="ExchangeEventideJade"/>
+								<RunCode Name="ExchangePeriwinkle"/>
+								<RunCode Name="ExchangeTinyAxolotl"/>
+								<RunCode Name="CloseWindow"/>
+							</If>
 							<TurnInCollectables location="Idyllshire" forcePurchase="False">
 								<Collectables>
 									<CollectableTurnIn Name="Illuminati Perch" value="826"/>
@@ -7845,6 +7853,19 @@
 						</If>
 					</While>
 					<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
+						<If Condition="&Trade_Counterfoil; != 0">
+							<TeleportTo name="Idyllshire" aetheryteId="75"/>
+							<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
+							<RunCode Name="InteractNPCTurnIn"/>
+							<RunCode Name="ExchangeAdamantite"/>
+							<RunCode Name="ExchangeChysahl"/>
+							<RunCode Name="ExchangeEel"/>
+							<RunCode Name="ExchangeEventideJade"/>
+							<RunCode Name="ExchangePeriwinkle"/>
+							<RunCode Name="ExchangeTinyAxolotl"/>
+							<RunCode Name="CloseWindow"/>
+						</If>
+						<ExPurify/>
 						<TurnInCollectables location="Idyllshire" forcePurchase="False" >
 							<ShopPurchases>
 								<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
@@ -7860,6 +7881,18 @@
 				</If>
 			</If>
 			<If Condition="FreeItemSlots() &lt; 2">
+				<If Condition="&Trade_Counterfoil; != 0">
+					<TeleportTo name="Idyllshire" aetheryteId="75"/>
+					<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
+					<RunCode Name="InteractNPCTurnIn"/>
+					<RunCode Name="ExchangeAdamantite"/>
+					<RunCode Name="ExchangeChysahl"/>
+					<RunCode Name="ExchangeEel"/>
+					<RunCode Name="ExchangeEventideJade"/>
+					<RunCode Name="ExchangePeriwinkle"/>
+					<RunCode Name="ExchangeTinyAxolotl"/>
+					<RunCode Name="CloseWindow"/>
+				</If>
 				<ExPurify/>
 				<TurnInCollectables location="Idyllshire" forcePurchase="False">
 					<ShopPurchases>
