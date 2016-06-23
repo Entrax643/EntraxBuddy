@@ -194,7 +194,7 @@
 <!-- Turn-in collectables after rotation depending on your bags free slots -->
 <!ENTITY TurnInAfterLoop "0">
 <!ENTITY TurnInAfterLoop_free_bag_slots "100">
-<!ENTITY Trade_Foils "0">
+<!ENTITY Trade_Counterfoil "0">
 <!-- Shop Settings -  -->
 <!-- Set the amount of what you want - For instance if BlueToken = 100 and you already have 42, the bot will spend scrips to buy 58 token. -->
 <!ENTITY RedGatherToken_Count "0">
@@ -639,6 +639,63 @@
 					if(slot.12828 == 12900 && slot.Collectability >= 834)
 					{
 						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						slot.Handover();
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						ff14bot.RemoteWindows.Request.HandOver();
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+					}
+				}
+				await Buddy.Coroutines.Coroutine.Sleep(1000);
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="ExchangeEventideJade">
+			<![CDATA[ 
+				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
+				{
+					if(slot.12828 == 13760 && slot.Collectability >= 515)
+					{
+						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 19);
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						slot.Handover();
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						ff14bot.RemoteWindows.Request.HandOver();
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+					}
+				}
+				await Buddy.Coroutines.Coroutine.Sleep(1000);
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="ExchangePeriwinkle">
+			<![CDATA[ 
+				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
+				{
+					if(slot.12828 == 13762 && slot.Collectability >= 515)
+					{
+						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 20);
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						slot.Handover();
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+						ff14bot.RemoteWindows.Request.HandOver();
+						await Buddy.Coroutines.Coroutine.Sleep(1000);
+					}
+				}
+				await Buddy.Coroutines.Coroutine.Sleep(1000);
+			]]>
+		</CodeChunk>
+		<CodeChunk Name="ExchangeTinyAxolotl">
+			<![CDATA[ 
+				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
+				{
+					if(slot.12828 == 1774 && slot.Collectability >= 326)
+					{
+						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 21);
 						await Buddy.Coroutines.Coroutine.Sleep(1000);
 						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
 						await Buddy.Coroutines.Coroutine.Sleep(1000);
@@ -4076,13 +4133,16 @@
 			</If>
 			<!-- Turn In -->
 			<If Condition="&TurnInAfterLoop; != 0 and (IsTimeBetween(2,3) or IsTimeBetween(14,15) or IsTimeBetween(5,6) or IsTimeBetween(17,18) or IsTimeBetween(9,10) or IsTimeBetween(21,22) or IsTimeBetween(10,11) or IsTimeBetween(22,23) or IsTimeBetween(11,12) or IsTimeBetween(23,24) or IsTimeBetween(12,13) or IsTimeBetween(0,1)) and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-				<If Condition="&Trade_Foils; != 0">
+				<If Condition="&Trade_Counterfoil; != 0">
 					<TeleportTo name="Idyllshire" aetheryteId="75"/>
 					<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
 					<RunCode Name="InteractNPCTurnIn"/>
 					<RunCode Name="ExchangeAdamantite"/>
 					<RunCode Name="ExchangeChysahl"/>
 					<RunCode Name="ExchangeEel"/>
+					<RunCode Name="ExchangeEventideJade"/>
+					<RunCode Name="ExchangePeriwinkle"/>
+					<RunCode Name="ExchangeTinyAxolotl"/>
 					<RunCode Name="CloseWindow"/>
 				</If>
 				<ExPurify/>
