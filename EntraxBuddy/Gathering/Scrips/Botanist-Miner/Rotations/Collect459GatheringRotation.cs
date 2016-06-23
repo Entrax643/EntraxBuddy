@@ -24,17 +24,17 @@
 		{
 			if (tag.IsUnspoiled())
 			{
+				await DiscerningMethodical(tag);
+				await DiscerningMethodical(tag);
 				await SingleMindMethodical(tag);
-				await DiscerningMethodical(tag);
-				await DiscerningMethodical(tag);
 			}
 			else
 			{
 				if (Core.Player.CurrentGP >= 600)
 				{
+					await DiscerningMethodical(tag);
+					await DiscerningMethodical(tag);
 					await SingleMindMethodical(tag);
-					await DiscerningMethodical(tag);
-					await DiscerningMethodical(tag);
 					return true;
 				}
 

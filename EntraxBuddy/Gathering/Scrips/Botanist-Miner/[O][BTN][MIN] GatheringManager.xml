@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Profile [
 <!-- Profile Settings -->
-<!-- Where do you want to port While witing / crafting -->
+<!-- Where do you want to port while witing / crafting -->
 <!ENTITY Waiting_AetheryteId "8">
 <!-- -->
 <!-- -->
@@ -66,25 +66,14 @@
 <!-- -->
 <!-- -->
 <!-- Ditto Settings -->
-<!-- Cordial -->
 <!ENTITY CordialType_Ditto "Auto">
 <!ENTITY CordialTime_Ditto "Auto">
-<!-- -->
-<!-- Items -->
 <!ENTITY FossilizedDragonBone_Ditto "0">
-<!ENTITY WindWidow_Ditto "0">
-<!ENTITY Tektite_Ditto "0"> 
-<!ENTITY CloudMushroom_Ditto "0">
+<!ENTITY Tektite_Ditto "0">
 <!ENTITY EventideJade_Ditto "0">
+<!ENTITY WindWidow_Ditto "0">
+<!ENTITY CloudMushroom_Ditto "0">
 <!ENTITY Periwinkle_Ditto "0">
-<!-- -->
-<!-- Collectability Rate -->
-<!ENTITY FossilizedDragonBone_Rate_Ditto "410">
-<!ENTITY WindWidow_Rate_Ditto "410">
-<!ENTITY Tektite_Rate_Ditto "459"> 
-<!ENTITY CloudMushroom_Rate_Ditto "459">
-<!ENTITY EventideJade_Rate_Ditto "459">
-<!ENTITY Periwinkle_Rate_Ditto "459">
 <!-- -->
 <!-- -->
 <!-- Magikarp Settings -->
@@ -167,6 +156,9 @@
 <!ENTITY PlusPlus "0">
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY IsTimeBetween_tick "25">
+<!-- Turn-in collectables after rotation depending on your bags free slots -->
+<!ENTITY TurnInAfterLoop "0">
+<!ENTITY TurnInAfterLoop_free_bag_slots "100">
 <!-- Cordial setting -->
 <!-- Choose if you want to use Cordial or HiCordial  -->
 <!ENTITY Cordial_Type_50_60 "Auto">
@@ -191,19 +183,6 @@
 <!ENTITY Cordial_Time_1StarPlus_Collectable "Auto">
 <!-- -->
 <!-- -->
-<!-- Turn-in collectables after rotation depending on your bags free slots -->
-<!ENTITY TurnInAfterLoop "0">
-<!ENTITY TurnInAfterLoop_free_bag_slots "100">
-<!ENTITY Trade_Foils "0">
-<!-- Shop Settings -  -->
-<!-- Set the amount of what you want - For instance if BlueToken = 100 and you already have 42, the bot will spend scrips to buy 58 token. -->
-<!ENTITY RedGatherToken_Count "0">
-<!ENTITY BlueToken_Count "0">
-<!ENTITY HiCordial_Count "0">
-<!ENTITY BruteLeech_Count "0">
-<!ENTITY CraneFly_Count "0">
-<!-- -->
-<!-- -->
 <!-- Revenant's Toll Settings / Set QUANTITY here -->
 <!ENTITY Grade4_Carbonized_Matter "0">
 <!ENTITY Lightning_Cluster "0">
@@ -212,8 +191,13 @@
 <!ENTITY Water_Cluster "0">
 <!ENTITY Ice_Cluster "0">
 <!ENTITY Earth_Cluster "0">
-<!-- -->
-<!-- -->
+<!-- Shop Settings - Set the amount of what you want -->
+<!-- For instance if BlueToken = 100 and you already have 42, the bot will spend scrips to buy 58 token. -->
+<!ENTITY RedGatherToken_Count "999">
+<!ENTITY BlueToken_Count "0">
+<!ENTITY HiCordial_Count "0">
+<!ENTITY BruteLeech_Count "0">
+<!ENTITY CraneFly_Count "0">
 <!-- Food setting - Set 1 if you want to use food with THIS profile not chanko ! -->
 <!-- And set your FOOD ID -->
 <!ENTITY USE_FOOD "0">
@@ -537,7 +521,7 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Jigglypuff">
+<!ENTITY Version "Dratini">
 <!-- -->
 <!ENTITY SnorlaxWaitCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &Ditto; == 0 and &Magikarp; == 0">
 <!-- -->
@@ -576,80 +560,6 @@
 		</CodeChunk>
 		<CodeChunk Name="UnStealth">
 			<![CDATA[	if(Core.Player.HasAura(47))	{	ff14bot.Managers.Actionmanager.DoAction("Stealth", Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
-		</CodeChunk>
-		<CodeChunk Name="CloseWindow">
-			<![CDATA[ 
-				await Buddy.Coroutines.Coroutine.Sleep(1500);
-				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(1, 3, uint.MaxValue);
-				await Buddy.Coroutines.Coroutine.Sleep(1500);
-			]]>
-		</CodeChunk>
-		<CodeChunk Name="InteractNPCTurnIn">
-			<![CDATA[ 
-				await Buddy.Coroutines.Coroutine.Sleep(2000);
-				ff14bot.Managers.GameObjectManager.GetObjectByNPCId(1012229).Interact();
-				await Buddy.Coroutines.Coroutine.Sleep(2000);
-				if (ff14bot.RemoteWindows.SelectIconString.IsOpen)
-					ff14bot.RemoteWindows.SelectIconString.ClickSlot(0);
-				await Buddy.Coroutines.Coroutine.Sleep(2000);
-			]]>
-		</CodeChunk>
-		<CodeChunk Name="ExchangeAdamantite">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 12538 && slot.Collectability >= 530)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 8);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
-		</CodeChunk>
-		<CodeChunk Name="ExchangeChysahl">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 12900 && slot.Collectability >= 530)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 9);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
-		</CodeChunk>
-		<CodeChunk Name="ExchangeEel">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.12828 == 12900 && slot.Collectability >= 834)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
@@ -1251,7 +1161,7 @@
 							<RunCode Name="MoveForward"/>
 						</If>
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-						<ExFlyTo XYZ="585.7131, 229.4594, 393.8523" RandomFinalSpot="True"/>
+						<ExFlyTo XYZ="512.589, 230.5479, 354.7156" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Cuprite -->
 						<If Condition="&Cuprite; != 0">
@@ -1270,8 +1180,9 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="585.7131, 229.4594, 393.8523" Radius="100"/>
-										<HotSpot XYZ="722.2445, 215.1417, 378.9118" Radius="100"/>
+										<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+										<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+										<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -1290,8 +1201,9 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="585.7131, 229.4594, 393.8523" Radius="100"/>
-										<HotSpot XYZ="722.2445, 215.1417, 378.9118" Radius="100"/>
+										<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+										<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+										<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -1313,8 +1225,9 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="585.7131, 229.4594, 393.8523" Radius="100"/>
-										<HotSpot XYZ="722.2445, 215.1417, 378.9118" Radius="100"/>
+										<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+										<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+										<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -1333,8 +1246,9 @@
 										<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="662.3566, 198.9258, 386.2394" nodeLocation="653.6418, 198.7008, 391.15"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot XYZ="585.7131, 229.4594, 393.8523" Radius="100"/>
-										<HotSpot XYZ="722.2445, 215.1417, 378.9118" Radius="100"/>
+										<HotSpot XYZ="512.589, 230.5479, 354.7156" Radius="200"/>
+										<HotSpot XYZ="638.9163, 214.2034, 342.2627" Radius="200"/>
+										<HotSpot XYZ="729.0784, 218.6413, 374.9722" Radius="200"/>
 									</HotSpots>
 								</ExGather>
 							</If>
@@ -3404,7 +3318,7 @@
 									</GatherSpots>
 									<HotSpots>
 										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
+										<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
 										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 									</HotSpots>
 								</ExGather>
@@ -3424,7 +3338,7 @@
 									</GatherSpots>
 									<HotSpots>
 										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
+										<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
 										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 									</HotSpots>
 								</ExGather>
@@ -3447,7 +3361,7 @@
 									</GatherSpots>
 									<HotSpots>
 										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
+										<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
 										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 									</HotSpots>
 								</ExGather>
@@ -3467,7 +3381,7 @@
 									</GatherSpots>
 									<HotSpots>
 										<HotSpot XYZ="-190.3633, 204.6348, 651.1259" Radius="200"/>
-										<HotSpot XYZ="-316.6828, 217.2011, 752.0873" Radius="200"/>
+										<HotSpot XYZ="-279.0121, 213.5398, 749.4237" Radius="200"/>
 										<HotSpot XYZ="-455.1725, 211.5871, 694.7683" Radius="200"/>
 									</HotSpots>
 								</ExGather>
@@ -3716,11 +3630,11 @@
 					</ExFish>
 					<RunCode Name="StopFishing"/>
 				</If>
-				<!-- Shonisaurus -->
+				<!-- Shonisaurus_Psyduck -->
 				<If Condition="&Shonisaurus_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(2), 16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
-					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Witchdrop ~ Shonisaurus !"/>
+					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Witchdrop ~ Shonisaurus_Psyduck !"/>
 					<If Condition="not HasAtLeast(2605,99)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Shonisaurus : Not enough bait available, I'm going to buy you some !"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Shonisaurus_Psyduck : Not enough bait available, I'm going to buy you some !"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<ExMoveTo XYZ="-411.413, 211.9846, -275.2478" ForceLanding="True"/>
 						<BuyItem ItemId="2605" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1006800" XYZ="-411.413, 211.9846, -275.2478"/>
@@ -3730,7 +3644,7 @@
 					<If Condition="IsTimeBetween(0,8)">
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
 								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
@@ -3753,7 +3667,7 @@
 					<If Condition="IsTimeBetween(8,16)">
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
 								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
@@ -3776,7 +3690,7 @@
 					<If Condition="IsTimeBetween(16,24)">
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(155, 16) and IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
 								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
@@ -3798,13 +3712,13 @@
 					</If>
 					<RunCode Name="StopFishing"/>
 				</If>
-				<!-- Helicoprion -->
+				<!-- Helicoprion_Psyduck -->
 				<If Condition="&Helicoprion_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
-					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt;  ~ Helicoprion !"/>
+					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt;  ~ Helicoprion_Psyduck !"/>
 					<TeleportTo Force="True" Name="Forgotten Springs" AetheryteId="20"/>
 					<RunCode Name="FSH"/>
 					<If Condition="not HasAtLeast(2600,99)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Helicoprion : Not enough bait available, I'm going to buy you some !"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Helicoprion_Psyduck : Not enough bait available, I'm going to buy you some !"/>
 						<ExMoveTo XYZ="-282.4713, 7.874228, 377.9678" ForceLanding="True"/>
 						<BuyItem ItemId="2600" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1004430" XYZ="-278.7472, 8, 378.7108"/>
 					</If>
@@ -3842,11 +3756,11 @@
 					</If>
 					<RunCode Name="StopFishing"/>
 				</If>
-				<!-- Namitaro -->
+				<!-- Namitaro_Psyduck -->
 				<If Condition="&Namitaro_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
-					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Urth's Gift ~ Namitaro !"/>
+					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Urth's Gift ~ Namitaro_Psyduck !"/>
 					<If Condition="not HasAtLeast(2603,99)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Namitaro : Not enough bait available, I'm going to buy you some !"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Namitaro_Psyduck : Not enough bait available, I'm going to buy you some !"/>
 						<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 						<ExMoveTo XYZ="-3.272566, 43.1377, 32.66482" ForceLanding="True"/>
 						<BuyItem ItemId="2603" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1004598" XYZ="-3.272566, 43.1377, 32.66482"/>
@@ -3871,7 +3785,7 @@
 					</ExFish>
 					<RunCode Name="StopFishing"/>
 					<If Condition="not HasAtLeast(2624,1)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Namitaro : Bait Topwater Frog is missing !"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Namitaro_Psyduck : Bait Topwater Frog is missing !"/>
 						<WaitWhile Condition="SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
 					</If>
 					<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and Core.Player.HasAura(568) and HasAtLeast(2624,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Topwater Frog">
@@ -3891,11 +3805,11 @@
 					</ExFish>
 					<RunCode Name="StopFishing"/>
 				</If>
-				<!-- Endoceras -->
+				<!-- Endoceras_Psyduck -->
 				<If Condition="&Endoceras_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
-					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Isles of Umbra Southshore ~ Endoceras !"/>
+					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Isles of Umbra Southshore ~ Endoceras_Psyduck !"/>
 					<If Condition="not(HasAtLeast(2596,99)) and not(HasAtLeast(2616,5))">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Endoceras : Not enough bait available, I'm going to buy you some !"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Endoceras_Psyduck : Not enough bait available, I'm going to buy you some !"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<ExMoveTo XYZ="460.3923, 17.12467, 486.5724" ForceLanding="True"/>
 						<BuyItem ItemId="2596" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1003261" XYZ="460.3923, 17.12467, 486.5724"/>
@@ -3908,7 +3822,7 @@
 					<If Condition="IsTimeBetween(14,16)">
 						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(14,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
 							<Baits>
 								<Bait Name="Spoon Worm"/>
 								<Bait Name="Steel Jig"/>
@@ -3930,7 +3844,7 @@
 					<If Condition="IsTimeBetween(16,24)">
 						<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
+						<ExFish Condition="SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
 							<Baits>
 								<Bait Name="Spoon Worm"/>
 								<Bait Name="Steel Jig"/>
@@ -4076,15 +3990,6 @@
 			</If>
 			<!-- Turn In -->
 			<If Condition="&TurnInAfterLoop; != 0 and (IsTimeBetween(2,3) or IsTimeBetween(14,15) or IsTimeBetween(5,6) or IsTimeBetween(17,18) or IsTimeBetween(9,10) or IsTimeBetween(21,22) or IsTimeBetween(10,11) or IsTimeBetween(22,23) or IsTimeBetween(11,12) or IsTimeBetween(23,24) or IsTimeBetween(12,13) or IsTimeBetween(0,1)) and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-				<If Condition="&Trade_Foils; != 0">
-					<TeleportTo name="Idyllshire" aetheryteId="75"/>
-					<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
-					<RunCode Name="InteractNPCTurnIn"/>
-					<RunCode Name="ExchangeAdamantite"/>
-					<RunCode Name="ExchangeChysahl"/>
-					<RunCode Name="ExchangeEel"/>
-					<RunCode Name="CloseWindow"/>
-				</If>
 				<ExPurify/>
 				<TurnInCollectables location="Idyllshire" forcePurchase="False">
 					<ShopPurchases>
@@ -4149,7 +4054,7 @@
 							<ExPurify/>
 							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
@@ -4166,7 +4071,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4185,7 +4090,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4204,7 +4109,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4223,7 +4128,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4263,7 +4168,7 @@
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461"/>
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419"/>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
@@ -4276,7 +4181,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4307,7 +4212,7 @@
 							<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 							<ExFlyTo XYZ="-470.2735, 167.3033, -139.4283"/>
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
@@ -4323,7 +4228,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4341,7 +4246,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<GatherItem Name="Black Soil"/>
@@ -4388,7 +4293,7 @@
 							<ExFlyTo XYZ="120.7219, 69.52051, 32.74143"/>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
@@ -4401,7 +4306,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4425,7 +4330,7 @@
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461"/>
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419"/>
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
@@ -4438,7 +4343,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4453,7 +4358,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<GatherItem Name="Black Soil"/>
@@ -4488,7 +4393,7 @@
 							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193"/>
 							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604"/>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
@@ -4501,7 +4406,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4537,7 +4442,7 @@
 							<ExFlyTo XYZ="125.623, 19.02453, 565.1636"/>
 							<ExFlyTo XYZ="514.1337, -80.13731, 430.907"/>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
@@ -4555,7 +4460,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4583,7 +4488,7 @@
 							<ExFlyTo XYZ="-498.7655, 131.2126, 281.2856"/>
 							<ExFlyTo XYZ="-214.1187, 51.6551, 333.5159"/>
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
@@ -4596,7 +4501,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_BlackSoil_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Black Soil" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4611,7 +4516,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<GatherItem Name="Black Soil"/>
@@ -4649,7 +4554,7 @@
 							<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
 							<ExFlyTo XYZ="-10.57232, 229.2152, 281.0444"/>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Astral Moraine" Value="550"/>
@@ -4662,7 +4567,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_RadiantAstralMoraine_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Radiant Lightning Moraine" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4685,7 +4590,7 @@
 							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533"/>
 							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207"/>
 							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Lover's Laurel" Value="550"/>
@@ -4698,7 +4603,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4713,7 +4618,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4728,7 +4633,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4743,7 +4648,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Gather_Furrymint_Lileep; == 0 and &Gather_HighlandOregano_Lileep; == 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
+								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" while="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
 										<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate_Lileep;"/>
@@ -4787,7 +4692,7 @@
 						<!-- Camphorwood Branch -->
 						<If Condition="ItemCount(14160) &lt; &CamphorwoodBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Camphorwood Branch(Eil Tohm) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(14160) &lt; &CamphorwoodBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(14160) &lt; &CamphorwoodBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4818,7 +4723,7 @@
 						<!-- Camphorwood Log -->
 						<If Condition="ItemCount(14159) &lt; &CamphorwoodLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Camphorwood Log(Eil Tohm) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(14159) &lt; &CamphorwoodLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(14159) &lt; &CamphorwoodLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4857,7 +4762,7 @@
 						<!-- Raw Citrine -->
 						<If Condition="ItemCount(12557) &lt; &RawCitrine; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Citrine(Red Rime) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12557) &lt; &RawCitrine; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12557) &lt; &RawCitrine; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4886,7 +4791,7 @@
 						<!-- Ice Crystal at Red Rime -->
 						<If Condition="ItemCount(9) &lt; &IceCrystal_RedRime; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Red Rime) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(9) &lt; &IceCrystal_RedRime; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_RedRime; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4922,7 +4827,7 @@
 						<!-- Abalathian Spring Water -->
 						<If Condition="ItemCount(12632) &lt; &AbalathianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Abalathian Spring Water(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12632) &lt; &AbalathianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12632) &lt; &AbalathianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4957,7 +4862,7 @@
 						<!-- Aurum Regis Sand -->
 						<If Condition="ItemCount(12533) &lt; &AurumRegisSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Aurum Regis Sand(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12533) &lt; &AurumRegisSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12533) &lt; &AurumRegisSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -4992,7 +4897,7 @@
 						<!-- Lightning Crystal -->
 						<If Condition="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lightning Crystal(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5027,7 +4932,7 @@
 						<!-- Water Crystal -->
 						<If Condition="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Water Crystal(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5070,7 +4975,7 @@
 						<!-- Beastkin Horn -->
 						<If Condition="ItemCount(14190) &lt; &BeastkinHorn; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Beastkin Horn(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(14190) &lt; &BeastkinHorn; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(14190) &lt; &BeastkinHorn; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5098,7 +5003,7 @@
 						<!-- Raw Carnelian -->
 						<If Condition="ItemCount(12560) &lt; &RawCarnelian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Carnelian(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12560) &lt; &RawCarnelian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12560) &lt; &RawCarnelian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5126,7 +5031,7 @@
 						<!-- Raw Opal -->
 						<If Condition="ItemCount(12556) &lt; &RawOpal; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Opal(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12556) &lt; &RawOpal; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12556) &lt; &RawOpal; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5154,7 +5059,7 @@
 						<!-- Fire Crystal -->
 						<If Condition="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fire Crystal(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5188,7 +5093,7 @@
 						<!-- Lumythrite Sand -->
 						<If Condition="ItemCount(14955) &lt; &LumythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lumythrite Sand(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(14955) &lt; &LumythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(14955) &lt; &LumythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5212,7 +5117,7 @@
 						<!-- Cloud Mica -->
 						<If Condition="ItemCount(12539) &lt; &CloudMica; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Cloud Mica(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12539) &lt; &CloudMica; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12539) &lt; &CloudMica; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5236,7 +5141,7 @@
 						<!-- Hardsilver Sand -->
 						<If Condition="ItemCount(12532) &lt; &HardsilverSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Sand(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12532) &lt; &HardsilverSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12532) &lt; &HardsilverSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5260,7 +5165,7 @@
 						<!-- Earth Crystal -->
 						<If Condition="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Earth Crystal(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5300,7 +5205,7 @@
 						<!-- Hardsilver Ore -->
 						<If Condition="ItemCount(12535) &lt; &HardsilverOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12535) &lt; &HardsilverOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12535) &lt; &HardsilverOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5334,7 +5239,7 @@
 						<!-- Raw Chrysolite -->
 						<If Condition="ItemCount(12558) &lt; &RawChrysolite; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Chrysolite(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12558) &lt; &RawChrysolite; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12558) &lt; &RawChrysolite; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5367,7 +5272,7 @@
 						<!-- Wyrm Obsidian -->
 						<If Condition="ItemCount(5127) &lt; &WyrmObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Wyrm Obsidian(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5127) &lt; &WyrmObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5127) &lt; &WyrmObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5400,7 +5305,7 @@
 						<!-- Wind Crystal -->
 						<If Condition="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Wind Crystal(The Maker's Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5441,7 +5346,7 @@
 						<!-- Whitefrost Cotton Boll -->
 						<If Condition="ItemCount(14956) &lt; &WhitefrostCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Whitefrost Cotton Boll(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(14956) &lt; &WhitefrostCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(14956) &lt; &WhitefrostCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5469,7 +5374,7 @@
 						<!-- Coriander -->
 						<If Condition="ItemCount(12643) &lt; &Coriander; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Coriander(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12643) &lt; &Coriander; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12643) &lt; &Coriander; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5497,7 +5402,7 @@
 						<!-- Rue -->
 						<If Condition="ItemCount(12642) &lt; &Rue; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Rue(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12642) &lt; &Rue; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12642) &lt; &Rue; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5525,7 +5430,7 @@
 						<!-- Ice Crystal -->
 						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ice Crystal(Twinpools 56-60) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5559,7 +5464,7 @@
 						<!-- Birch Log -->
 						<If Condition="ItemCount(12579) &lt; &BirchLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Birch Log(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12579) &lt; &BirchLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12579) &lt; &BirchLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5597,7 +5502,7 @@
 						<!-- Birch Branch -->
 						<If Condition="ItemCount(12586) &lt; &BirchBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Birch Branch(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12586) &lt; &BirchBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12586) &lt; &BirchBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5634,7 +5539,7 @@
 						<!-- Birch Sap -->
 						<If Condition="ItemCount(12891) &lt; &BirchSap; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Birch Sap(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12891) &lt; &BirchSap; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12891) &lt; &BirchSap; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5671,7 +5576,7 @@
 						<!-- Water Crystal -->
 						<If Condition="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Water Crystal(Voor Sian Siran) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5717,7 +5622,7 @@
 						<!-- Coneflower -->
 						<If Condition="ItemCount(12638) &lt; &Coneflower; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Coneflower(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12638) &lt; &Coneflower; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12638) &lt; &Coneflower; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5744,7 +5649,7 @@
 						<!-- Fire Crystal -->
 						<If Condition="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Fire Crystal(Avalonia Fallen) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5779,7 +5684,7 @@
 						<!-- Dandelion -->
 						<If Condition="ItemCount(12640) &lt; &Dandelion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dandelion(Four Arms) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12640) &lt; &Dandelion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12640) &lt; &Dandelion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5807,7 +5712,7 @@
 						<!-- Earth Crystal -->
 						<If Condition="ItemCount(11) &lt; &EarthCrystal_FourArms; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Earth Crystal(Four Arms) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(11) &lt; &EarthCrystal_FourArms; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_FourArms; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5851,7 +5756,7 @@
 						<!-- Cow Bitter -->
 						<If Condition="ItemCount(12639) &lt; &CowBitter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cow Bitter(The Answering Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12639) &lt; &CowBitter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12639) &lt; &CowBitter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5883,7 +5788,7 @@
 						<!-- Gaelicatnip -->
 						<If Condition="ItemCount(12641) &lt; &Gaelicatnip; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Gaelicatnip(The Answering Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12641) &lt; &Gaelicatnip; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12641) &lt; &Gaelicatnip; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5915,7 +5820,7 @@
 						<!-- Wind Crystal -->
 						<If Condition="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Wind Crystal(The Answering Quarter) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5956,7 +5861,7 @@
 						<!-- Mythrite Sand -->
 						<If Condition="ItemCount(12531) &lt; &MythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Sand(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12531) &lt; &MythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12531) &lt; &MythriteSand; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -5979,7 +5884,7 @@
 						<!-- Ice Crystal -->
 						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6010,7 +5915,7 @@
 						<!-- Mythrite Ore -->
 						<If Condition="ItemCount(12534) &lt; &MythriteOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12534) &lt; &MythriteOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12534) &lt; &MythriteOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6034,7 +5939,7 @@
 						<!-- Raw Larimar -->
 						<If Condition="ItemCount(12551) &lt; &RawLarimar; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Larimar(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12551) &lt; &RawLarimar; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12551) &lt; &RawLarimar; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6057,7 +5962,7 @@
 						<!-- Raw Mormorion -->
 						<If Condition="ItemCount(12559) &lt; &RawMormorion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Mormorion(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12559) &lt; &RawMormorion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12559) &lt; &RawMormorion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6080,7 +5985,7 @@
 						<!-- Ice Crystal -->
 						<If Condition="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Gorgane Holding) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12534) &lt; &IceCrystal_GorganeHolding; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6111,7 +6016,7 @@
 						<!-- Raw Agate -->
 						<If Condition="ItemCount(12553) &lt; &RawAgate; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Agate(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12553) &lt; &RawAgate; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12553) &lt; &RawAgate; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6134,7 +6039,7 @@
 						<!-- Raw Tiger's Eye -->
 						<If Condition="ItemCount(12552) &lt; &RawTigersEye; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Tiger's Eye(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12552) &lt; &RawTigersEye; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12552) &lt; &RawTigersEye; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6157,7 +6062,7 @@
 						<!-- Dravanian Spring Water -->
 						<If Condition="ItemCount(12631) &lt; &DravanianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Dravanian Spring Water(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12631) &lt; &DravanianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12631) &lt; &DravanianSpringWater; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6180,7 +6085,7 @@
 						<!-- Fire Crystal -->
 						<If Condition="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fire Crystal(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6211,7 +6116,7 @@
 						<!-- Raw Star Ruby -->
 						<If Condition="ItemCount(12554) &lt; &RawStarRuby; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Star Ruby(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12554) &lt; &RawStarRuby; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12554) &lt; &RawStarRuby; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6237,7 +6142,7 @@
 						<!-- Raw Star Sapphire -->
 						<If Condition="ItemCount(12555) &lt; &RawStarSapphire; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Star Sapphire(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12555) &lt; &RawStarSapphire; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12555) &lt; &RawStarSapphire; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6263,7 +6168,7 @@
 						<!-- Titanium Ore -->
 						<If Condition="ItemCount(12537) &lt; &TitaniumOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12537) &lt; &TitaniumOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12537) &lt; &TitaniumOre; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6290,7 +6195,7 @@
 						<!-- Fire Crystal -->
 						<If Condition="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fire Crystal(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6325,7 +6230,7 @@
 						<!-- Rainbow Cotton Boll -->
 						<If Condition="ItemCount(12597) &lt; &RainbowCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Rainbow Cotton Boll(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12597) &lt; &RainbowCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12597) &lt; &RainbowCottonBoll; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6348,7 +6253,7 @@
 						<!-- Sprig Of Mist Dill -->
 						<If Condition="ItemCount(12883) &lt; &SprigOfMistDill; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Sprig Of Mist Dill(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12883) &lt; &SprigOfMistDill; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12883) &lt; &SprigOfMistDill; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6371,7 +6276,7 @@
 						<!-- Ice Crystal -->
 						<If Condition="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ice Crystal(Twinpools 51-55) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6401,7 +6306,7 @@
 						<!-- Dark Chestnut Log -->
 						<If Condition="ItemCount(12578) &lt; &DarkChestnutLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut Log(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12578) &lt; &DarkChestnutLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12578) &lt; &DarkChestnutLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6424,7 +6329,7 @@
 						<!-- Dark Chestnut Branch -->
 						<If Condition="ItemCount(12585) &lt; &DarkChestnutBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut Branch(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12585) &lt; &DarkChestnutBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12585) &lt; &DarkChestnutBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6447,7 +6352,7 @@
 						<!-- Dark Chestnut -->
 						<If Condition="ItemCount(12893) &lt; &DarkChestnut; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12893) &lt; &DarkChestnut; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12893) &lt; &DarkChestnut; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6471,7 +6376,7 @@
 						<!-- Fire Crystal -->
 						<If Condition="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Fire Crystal(The Smoldering Wastes) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6501,7 +6406,7 @@
 						<!-- Cyclops Onion -->
 						<If Condition="ItemCount(12878) &lt; &CyclopsOnion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cyclops Onion(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12878) &lt; &CyclopsOnion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12878) &lt; &CyclopsOnion; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6525,7 +6430,7 @@
 						<!-- Highland Wheat -->
 						<If Condition="ItemCount(12880) &lt; &HighlandWheat; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Highland Wheat(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12880) &lt; &HighlandWheat; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12880) &lt; &HighlandWheat; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6548,7 +6453,7 @@
 						<!-- Stalk Of Ramie -->
 						<If Condition="ItemCount(12598) &lt; &StalkOfRamie; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Stalk Of Ramie(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12598) &lt; &StalkOfRamie; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12598) &lt; &StalkOfRamie; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6571,7 +6476,7 @@
 						<!-- Fire Crystal -->
 						<If Condition="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Fire Crystal(Chocobo Forest) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6600,7 +6505,7 @@
 						<!-- Magma Beet -->
 						<If Condition="ItemCount(12885) &lt; &MagmaBeet; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Magma Beet(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12885) &lt; &MagmaBeet; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12885) &lt; &MagmaBeet; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6623,7 +6528,7 @@
 						<!-- Emerald Beans -->
 						<If Condition="ItemCount(12879) &lt; &EmeraldBeans; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Emerald Beans(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12879) &lt; &EmeraldBeans; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(12879) &lt; &EmeraldBeans; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6647,7 +6552,7 @@
 						<!-- Earth Crystal -->
 						<If Condition="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Earth Crystal(Landlord Colony) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6678,7 +6583,7 @@
 						<!-- Dragon Obsidian -->
 						<If Condition="ItemCount(5126) &lt; &DragonObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Dragon Obsidian(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5126) &lt; &DragonObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5126) &lt; &DragonObsidian; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6704,7 +6609,7 @@
 						<!-- Ice Crystal -->
 						<If Condition="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ice Crystal(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6738,7 +6643,7 @@
 						<!-- Cedar Log -->
 						<If Condition="ItemCount(5384) &lt; &CedarLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cedar Log(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5384) &lt; &CedarLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5384) &lt; &CedarLog; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6764,7 +6669,7 @@
 						<!-- Cedar Branch -->
 						<If Condition="ItemCount(5403) &lt; &CedarBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cedar Branch(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5403) &lt; &CedarBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(5403) &lt; &CedarBranch; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6790,7 +6695,7 @@
 						<!-- Ice Crystal -->
 						<If Condition="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ice Crystal(Riversmeet) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6825,7 +6730,7 @@
 						<!-- Aloe -->
 						<If Condition="ItemCount(4790) &lt; &Aloe; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Aloe(Broken Water) [START]"/>
-							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(4790) &lt; &Aloe; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" while="ItemCount(4790) &lt; &Aloe; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<GatherObjects>
 									<GatherObject>Rocky Outcrop</GatherObject>
 									<GatherObject>Mineral Deposit</GatherObject>
@@ -6883,6 +6788,7 @@
 									<Keeper Name="Pipira Pira"/>
 								</Keepers>
 								<FishSpots>
+									<FishSpot Location="41.9362, 58.42915, -789.0236" Heading="3.601661"/>
 									<FishSpot Location="424.3322, 58.42915, -794.769" Heading="3.960191"/>
 									<FishSpot Location="410.7512, 58.42915, -802.1146" Heading="1.859906"/>
 									<FishSpot Location="395.4563, 58.42916, -858.5338" Heading="2.680909"/>
@@ -7428,7 +7334,7 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Wind Widow(Voor Sian Siran) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
-										<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7436,7 +7342,7 @@
 												<GatherObject>Mature Tree</GatherObject>
 											</GatherObjects>
 											<Items>
-												<Collectable Name="Wind Widow" Value="&WindWidow_Rate_Ditto;"/>
+												<Collectable Name="Wind Widow" Value="410"/>
 												<GatherItem Name="Grade 5 Carbonized Matter"/>
 												<GatherItem Name="Timeworn Dragonskin Map"/>
 											</Items>
@@ -7454,13 +7360,11 @@
 											</GatherSpots>
 											<HotSpots>
 												<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-												<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-												<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 											</HotSpots>
 										</ExGather>
 									</If>
 									<If Condition="Core.Player.CurrentGP &lt; 600">
-										<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7485,11 +7389,37 @@
 											</GatherSpots>
 											<HotSpots>
 												<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-												<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-												<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 											</HotSpots>
 										</ExGather>
 									</If>
+									<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
+										<GatherObjects>
+											<GatherObject>Rocky Outcrop</GatherObject>
+											<GatherObject>Mineral Deposit</GatherObject>
+											<GatherObject>Lush Vegetation patch</GatherObject>
+											<GatherObject>Mature Tree</GatherObject>
+										</GatherObjects>
+										<Items>
+											<GatherItem Name="Grade 5 Carbonized Matter"/>
+											<GatherItem Name="Timeworn Dragonskin Map"/>
+										</Items>
+										<GatherSpots>
+											<IndirectApproachGatherSpot ApproachLocation="124.2828, -135.0074, 664.0291" NodeLocation="125.2828, -135, 660.5291" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="239.0889, -147.8377, 562.1637" NodeLocation="240.5389, -147.8377, 560.1057" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="207.4956, -147.8377, 597.161" NodeLocation="206.2956, -147.8377, 599.861" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="133.8673, -147.8377, 571.5581" NodeLocation="136.0294, -147.8377, 576.7831" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="100.6749, -147.8656, 505.4717" NodeLocation="100.5335, -147.8377, 502.2275" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="200.0888, -147.8377, 469.9167" NodeLocation="202.3888, -147.0208, 469.2167" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="309.7932, -118.2533, 530.2704" NodeLocation="310.146, -118.5, 530.895" ReturnToApproachLocation="False"/>
+										</GatherSpots>
+										<HotSpots>
+											<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+											<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+										</HotSpots>
+									</ExGather>
 								</While>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Wind Widow(Voor Sian Siran) [STOP]"/>
 							</If>
@@ -7498,7 +7428,7 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cloud Mushroom(Voor Sian Siran) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
-										<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7506,7 +7436,7 @@
 												<GatherObject>Mature Tree</GatherObject>
 											</GatherObjects>
 											<Items>
-												<Collectable Name="Cloud Mushroom" Value="&CloudMushroom_Rate_Ditto;"/>
+												<Collectable Name="Cloud Mushroom" Value="459"/>
 												<GatherItem Name="Grade 5 Carbonized Matter"/>
 												<GatherItem Name="Timeworn Dragonskin Map"/>
 											</Items>
@@ -7524,13 +7454,11 @@
 											</GatherSpots>
 											<HotSpots>
 												<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-												<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-												<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 											</HotSpots>
 										</ExGather>
 									</If>
 									<If Condition="Core.Player.CurrentGP &lt; 600">
-										<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7555,11 +7483,37 @@
 											</GatherSpots>
 											<HotSpots>
 												<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-												<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-												<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
 											</HotSpots>
 										</ExGather>
 									</If>
+									<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
+										<GatherObjects>
+											<GatherObject>Rocky Outcrop</GatherObject>
+											<GatherObject>Mineral Deposit</GatherObject>
+											<GatherObject>Lush Vegetation patch</GatherObject>
+											<GatherObject>Mature Tree</GatherObject>
+										</GatherObjects>
+										<Items>
+											<GatherItem Name="Grade 5 Carbonized Matter"/>
+											<GatherItem Name="Timeworn Dragonskin Map"/>
+										</Items>
+										<GatherSpots>
+											<IndirectApproachGatherSpot ApproachLocation="124.2828, -135.0074, 664.0291" NodeLocation="125.2828, -135, 660.5291" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="239.0889, -147.8377, 562.1637" NodeLocation="240.5389, -147.8377, 560.1057" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="207.4956, -147.8377, 597.161" NodeLocation="206.2956, -147.8377, 599.861" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="133.8673, -147.8377, 571.5581" NodeLocation="136.0294, -147.8377, 576.7831" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="100.6749, -147.8656, 505.4717" NodeLocation="100.5335, -147.8377, 502.2275" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="200.0888, -147.8377, 469.9167" NodeLocation="202.3888, -147.0208, 469.2167" ReturnToApproachLocation="False"/>
+											<IndirectApproachGatherSpot ApproachLocation="309.7932, -118.2533, 530.2704" NodeLocation="310.146, -118.5, 530.895" ReturnToApproachLocation="False"/>
+										</GatherSpots>
+										<HotSpots>
+											<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+											<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+										</HotSpots>
+									</ExGather>
 								</While>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cloud Mushroom(Voor Sian Siran) [STOP]"/>
 							</If>
@@ -7567,14 +7521,14 @@
 						<!-- Landlord Colony : Fossilized Dragon Bone or Tektite -->
 						<If Condition="(&FossilizedDragonBone_Ditto; != 0 or &Tektite_Ditto; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ditto ~ Destination ----&gt; Landlord Colony"/>
-							<TeleportTo AetheryteId="78" Name="Moghome"/>
+							<TeleportTo Force="True" AetheryteId="78" Name="Moghome"/>
 							<RunCode Name="MIN"/>
 							<!-- Fossilized Dragon Bone -->
 							<If Condition="&FossilizedDragonBone_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fossilized Dragon Bone(Landlord Colony) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
-										<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7582,19 +7536,17 @@
 												<GatherObject>Mature Tree</GatherObject>
 											</GatherObjects>
 											<Items>
-												<Collectable Name="Fossilized Dragon Bone" Value="&FossilizedDragonBone_Rate_Ditto;"/>
+												<Collectable Name="Fossilized Dragon Bone" Value="410"/>
 												<GatherItem Name="Grade 5 Carbonized Matter"/>
 												<GatherItem Name="Timeworn Dragonskin Map"/>
 											</Items>
 											<HotSpots>
 												<HotSpot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
-												<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-												<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 											</HotSpots>
 										</ExGather>
 									</If>
 									<If Condition="Core.Player.CurrentGP &lt; 600">
-										<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7607,11 +7559,25 @@
 											</Items>
 											<HotSpots>
 												<HotSpot Radius="65" XYZ="282.2615, -31.4674, -124.715"/>
-												<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-												<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 											</HotSpots>
 										</ExGather>
 									</If>
+									<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
+										<GatherObjects>
+											<GatherObject>Rocky Outcrop</GatherObject>
+											<GatherObject>Mineral Deposit</GatherObject>
+											<GatherObject>Lush Vegetation patch</GatherObject>
+											<GatherObject>Mature Tree</GatherObject>
+										</GatherObjects>
+										<Items>
+											<GatherItem Name="Grade 5 Carbonized Matter"/>
+											<GatherItem Name="Timeworn Dragonskin Map"/>
+										</Items>
+										<HotSpots>
+											<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
+											<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
+										</HotSpots>
+									</ExGather>
 								</While>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fossilized Dragon Bone(Landlord Colony) [STOP]"/>
 							</If>
@@ -7620,7 +7586,7 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Tektite(Landlord Colony) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
-										<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7628,19 +7594,17 @@
 												<GatherObject>Mature Tree</GatherObject>
 											</GatherObjects>
 											<Items>
-												<Collectable Name="Tektite" Value="&Tektite_Rate_Ditto;"/>
+												<Collectable Name="Tektite" Value="459"/>
 												<GatherItem Name="Grade 5 Carbonized Matter"/>
 												<GatherItem Name="Timeworn Dragonskin Map"/>
 											</Items>
 											<HotSpots>
 												<HotSpot Radius="70" XYZ="282.2615, -31.4674, -124.715"/>
-												<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-												<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 											</HotSpots>
 										</ExGather>
 									</If>
 									<If Condition="Core.Player.CurrentGP &lt; 600">
-										<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+										<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 											<GatherObjects>
 												<GatherObject>Rocky Outcrop</GatherObject>
 												<GatherObject>Mineral Deposit</GatherObject>
@@ -7653,11 +7617,25 @@
 											</Items>
 											<HotSpots>
 												<HotSpot Radius="65" XYZ="282.2615, -31.4674, -124.715"/>
-												<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
-												<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
 											</HotSpots>
 										</ExGather>
 									</If>
+									<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
+										<GatherObjects>
+											<GatherObject>Rocky Outcrop</GatherObject>
+											<GatherObject>Mineral Deposit</GatherObject>
+											<GatherObject>Lush Vegetation patch</GatherObject>
+											<GatherObject>Mature Tree</GatherObject>
+										</GatherObjects>
+										<Items>
+											<GatherItem Name="Grade 5 Carbonized Matter"/>
+											<GatherItem Name="Timeworn Dragonskin Map"/>
+										</Items>
+										<HotSpots>
+											<HotSpot Radius="40" XYZ="314.366364, -27.5310516, -225.964035"/>
+											<HotSpot Radius="50" XYZ="167.6636, -28.06865, -185.1557"/>
+										</HotSpots>
+									</ExGather>
 								</While>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Tektite(Landlord Colony) [STOP]"/>
 							</If>
@@ -7673,7 +7651,7 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Eventide Jade(Avalonia Fallen) [START]"/>
 							<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<If Condition="Core.Player.CurrentGP &gt; 599">
-									<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+									<ExGather Loops="1" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 										<GatherObjects>
 											<GatherObject>Rocky Outcrop</GatherObject>
 											<GatherObject>Mineral Deposit</GatherObject>
@@ -7681,7 +7659,7 @@
 											<GatherObject>Mature Tree</GatherObject>
 										</GatherObjects>
 										<Items>
-											<Collectable Name="Eventide Jade" Value="&EventideJade_Rate_Ditto;"/>
+											<Collectable Name="Eventide Jade" Value="459"/>
 											<GatherItem Name="Grade 5 Carbonized Matter"/>
 											<GatherItem Name="Timeworn Dragonskin Map"/>
 										</Items>
@@ -7691,13 +7669,11 @@
 										</GatherSpots>
 										<HotSpots>
 											<HotSpot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
-											<HotSpot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
-											<HotSpot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
 										</HotSpots>
 									</ExGather>
 								</If>
 								<If Condition="Core.Player.CurrentGP &lt; 600">
-									<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+									<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 										<GatherObjects>
 											<GatherObject>Rocky Outcrop</GatherObject>
 											<GatherObject>Mineral Deposit</GatherObject>
@@ -7714,11 +7690,29 @@
 										</GatherSpots>
 										<HotSpots>
 											<HotSpot Radius="50" XYZ="-110.220871, -39.95467, 228.607437"/>
-											<HotSpot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
-											<HotSpot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
 										</HotSpots>
 									</ExGather>
 								</If>
+								<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="-133.4553, -46.51377, 214.2649" ReturnToApproachLocation="true" nodeLocation="-133.4304, -45.47835, 211.6268"/>
+										<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+									</GatherSpots>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
+									</Items>
+									<HotSpots>
+										<HotSpot Radius="70" XYZ="-154.3863, -63.26427, 368.2925"/>
+										<HotSpot Radius="50" XYZ="-299.2256, -54.72244, 326.3812"/>
+									</HotSpots>
+								</ExGather>
 							</While>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Eventide Jade(Avalonia Fallen) [STOP]"/>
 						</If>
@@ -7734,7 +7728,7 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Periwinkle(Avalonia Fallen) [START]"/>
 							<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<If Condition="Core.Player.CurrentGP &gt; 599">
-									<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+									<ExGather Loops="1" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 										<GatherObjects>
 											<GatherObject>Rocky Outcrop</GatherObject>
 											<GatherObject>Mineral Deposit</GatherObject>
@@ -7742,7 +7736,7 @@
 											<GatherObject>Mature Tree</GatherObject>
 										</GatherObjects>
 										<Items>
-											<Collectable Name="Periwinkle" Value="&Periwinkle_Rate_Ditto;"/>
+											<Collectable Name="Periwinkle" Value="459"/>
 											<GatherItem Name="Grade 5 Carbonized Matter"/>
 											<GatherItem Name="Timeworn Dragonskin Map"/>
 										</Items>
@@ -7752,13 +7746,11 @@
 										</GatherSpots>
 										<HotSpots>
 											<HotSpot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
-											<HotSpot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
-											<HotSpot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
 										</HotSpots>
 									</ExGather>
 								</If>
 								<If Condition="Core.Player.CurrentGP &lt; 600">
-									<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+									<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
 										<GatherObjects>
 											<GatherObject>Rocky Outcrop</GatherObject>
 											<GatherObject>Mineral Deposit</GatherObject>
@@ -7775,11 +7767,29 @@
 										</GatherSpots>
 										<HotSpots>
 											<HotSpot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
-											<HotSpot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
-											<HotSpot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
 										</HotSpots>
 									</ExGather>
 								</If>
+								<ExGather Loops="1" DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="-133.4553, -46.51377, 214.2649" ReturnToApproachLocation="true" nodeLocation="-133.4304, -45.47835, 211.6268"/>
+										<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+									</GatherSpots>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
+									</Items>
+									<HotSpots>
+										<HotSpot Radius="70" XYZ="-532.0055, -82.23738, 455.3998"/>
+										<HotSpot Radius="60" XYZ="-710.0841, -100.0908, 589.6254"/>
+									</HotSpots>
+								</ExGather>
 							</While>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Periwinkle(Avalonia Fallen) [STOP]"/>
 						</If>

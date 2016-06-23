@@ -116,6 +116,8 @@ namespace ff14bot.NeoProfiles
 				return _done = true;
 			}
 			
+			Log("Your {0}'s desynthesis level is: {1}.",Core.Player.CurrentJob,Core.Player.GetDesynthesisLevel(Core.Player.CurrentJob));
+			
 			IEnumerable<BagSlot> desynthables = null;
 			
 			if (_bagIds != null && ItemIds != null)
@@ -184,7 +186,7 @@ namespace ff14bot.NeoProfiles
 				}
 				else
 				{
-					Log("Desynthed \"{0}\".",name);
+					Log("Desynthed \"{0}\": your {1}'s desynthesis level is now {2}.",name,Core.Player.CurrentJob,Core.Player.GetDesynthesisLevel(Core.Player.CurrentJob));
 				}
 			}
 			

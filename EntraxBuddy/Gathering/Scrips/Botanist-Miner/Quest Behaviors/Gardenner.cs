@@ -145,7 +145,7 @@ namespace ff14bot.NeoProfiles
                 }
             }
 			return _done = true;
-        }
+        }		
 
 	}
 }
