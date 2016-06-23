@@ -6,16 +6,16 @@
 	using ExBuddy.Interfaces;
 
 	using ff14bot;
-	[GatheringRotation("Ditto459", 30, 600)]
-	public sealed class Ditto459GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
+	[GatheringRotation("Ditto515", 30, 600)]
+	public sealed class Ditto515GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
 	{
 		#region IGetOverridePriority Members
 		int IGetOverridePriority.GetOverridePriority(ExGatherTag tag)
 		{
-			// if we have a collectable && the collectable value is greater than or equal to 459: Priority 459
-			if (tag.CollectableItem != null && tag.CollectableItem.Value >= 459)
+			// if we have a collectable && the collectable value is greater than or equal to 515: Priority 515
+			if (tag.CollectableItem != null && tag.CollectableItem.Value >= 515)
 			{
-				return 459;
+				return 515;
 			}
 			return -1;
 		}
@@ -24,7 +24,7 @@
 		{
 			if (tag.IsUnspoiled())
 			{
-				await SingleMindMethodical(tag);
+				await DiscerningMethodical(tag);
 				await DiscerningMethodical(tag);
 				await DiscerningMethodical(tag);
 			}
@@ -32,7 +32,7 @@
 			{
 				if (Core.Player.CurrentGP >= 600)
 				{
-					await SingleMindMethodical(tag);
+					await DiscerningMethodical(tag);
 					await DiscerningMethodical(tag);
 					await DiscerningMethodical(tag);
 					return true;
