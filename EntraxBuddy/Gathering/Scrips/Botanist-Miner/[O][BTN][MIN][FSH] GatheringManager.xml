@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE Profile [
-<!-- Profile Settings -->
+<!DOCTYPE Profile [<!-- Profile Settings -->
 <!-- Where do you want to port While witing / crafting -->
 <!ENTITY Waiting_AetheryteId "8">
 <!-- -->
@@ -73,7 +72,7 @@
 <!-- Items -->
 <!ENTITY FossilizedDragonBone_Ditto "0">
 <!ENTITY WindWidow_Ditto "0">
-<!ENTITY Tektite_Ditto "0"> 
+<!ENTITY Tektite_Ditto "0">
 <!ENTITY CloudMushroom_Ditto "0">
 <!ENTITY EventideJade_Ditto "0">
 <!ENTITY Periwinkle_Ditto "0">
@@ -81,7 +80,7 @@
 <!-- Collectability Rate -->
 <!ENTITY FossilizedDragonBone_Rate_Ditto "410">
 <!ENTITY WindWidow_Rate_Ditto "410">
-<!ENTITY Tektite_Rate_Ditto "459"> 
+<!ENTITY Tektite_Rate_Ditto "459">
 <!ENTITY CloudMushroom_Rate_Ditto "459">
 <!ENTITY EventideJade_Rate_Ditto "459">
 <!ENTITY Periwinkle_Rate_Ditto "459">
@@ -581,135 +580,28 @@
 			<![CDATA[	if(Core.Player.HasAura(47))	{	ff14bot.Managers.Actionmanager.DoAction("Stealth", Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
 		</CodeChunk>
 		<CodeChunk Name="CloseWindow">
-			<![CDATA[ 
-				await Buddy.Coroutines.Coroutine.Sleep(1500);
-				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(1, 3, uint.MaxValue);
-				await Buddy.Coroutines.Coroutine.Sleep(1500);
-			]]>
+			<![CDATA[ 	await Buddy.Coroutines.Coroutine.Sleep(1500);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(1, 3, uint.MaxValue);	await Buddy.Coroutines.Coroutine.Sleep(1500);	]]>
 		</CodeChunk>
 		<CodeChunk Name="InteractNPCTurnIn">
-			<![CDATA[ 
-				await Buddy.Coroutines.Coroutine.Sleep(2000);
-				ff14bot.Managers.GameObjectManager.GetObjectByNPCId(1012229).Interact();
-				await Buddy.Coroutines.Coroutine.Sleep(2000);
-				if (ff14bot.RemoteWindows.SelectIconString.IsOpen)
-					ff14bot.RemoteWindows.SelectIconString.ClickSlot(0);
-				await Buddy.Coroutines.Coroutine.Sleep(2000);
-			]]>
+			<![CDATA[ 	await Buddy.Coroutines.Coroutine.Sleep(2000);	ff14bot.Managers.GameObjectManager.GetObjectByNPCId(1012229).Interact();	await Buddy.Coroutines.Coroutine.Sleep(2000);	if (ff14bot.RemoteWindows.SelectIconString.IsOpen)	ff14bot.RemoteWindows.SelectIconString.ClickSlot(0);	await Buddy.Coroutines.Coroutine.Sleep(2000);	]]>
 		</CodeChunk>
 		<CodeChunk Name="ExchangeAdamantite">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 12538 && slot.Collectability >= 530)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 8);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
+			<![CDATA[ 	foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)	{	if(slot.RawItemId == 12538 && slot.Collectability >= 530)	{	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 8);	await Buddy.Coroutines.Coroutine.Sleep(1000);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);	await Buddy.Coroutines.Coroutine.Sleep(1000);	slot.Handover();	await Buddy.Coroutines.Coroutine.Sleep(1000);	ff14bot.RemoteWindows.Request.HandOver();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}	}	await Buddy.Coroutines.Coroutine.Sleep(1000);	]]>
 		</CodeChunk>
 		<CodeChunk Name="ExchangeChysahl">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 12900 && slot.Collectability >= 530)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 9);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
+			<![CDATA[ 	foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)	{	if(slot.RawItemId == 12900 && slot.Collectability >= 530)	{	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 9);	await Buddy.Coroutines.Coroutine.Sleep(1000);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);	await Buddy.Coroutines.Coroutine.Sleep(1000);	slot.Handover();	await Buddy.Coroutines.Coroutine.Sleep(1000);	ff14bot.RemoteWindows.Request.HandOver();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}	}	await Buddy.Coroutines.Coroutine.Sleep(1000);	]]>
 		</CodeChunk>
 		<CodeChunk Name="ExchangeEel">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 12828 && slot.Collectability >= 834)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
+			<![CDATA[ 	foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)	{	if(slot.RawItemId == 12828 && slot.Collectability >= 834)	{	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);	await Buddy.Coroutines.Coroutine.Sleep(1000);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);	await Buddy.Coroutines.Coroutine.Sleep(1000);	slot.Handover();	await Buddy.Coroutines.Coroutine.Sleep(1000);	ff14bot.RemoteWindows.Request.HandOver();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}	}	await Buddy.Coroutines.Coroutine.Sleep(1000);	]]>
 		</CodeChunk>
 		<CodeChunk Name="ExchangeEventideJade">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 13760 && slot.Collectability >= 515)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 19);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
+			<![CDATA[ 	foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)	{	if(slot.RawItemId == 13760 && slot.Collectability >= 515)	{	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 19);	await Buddy.Coroutines.Coroutine.Sleep(1000);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);	await Buddy.Coroutines.Coroutine.Sleep(1000);	slot.Handover();	await Buddy.Coroutines.Coroutine.Sleep(1000);	ff14bot.RemoteWindows.Request.HandOver();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}	}	await Buddy.Coroutines.Coroutine.Sleep(1000);	]]>
 		</CodeChunk>
 		<CodeChunk Name="ExchangePeriwinkle">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 13762 && slot.Collectability >= 515)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 20);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
+			<![CDATA[ 	foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)	{	if(slot.RawItemId == 13762 && slot.Collectability >= 515)	{	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 20);	await Buddy.Coroutines.Coroutine.Sleep(1000);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);	await Buddy.Coroutines.Coroutine.Sleep(1000);	slot.Handover();	await Buddy.Coroutines.Coroutine.Sleep(1000);	ff14bot.RemoteWindows.Request.HandOver();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}	}	await Buddy.Coroutines.Coroutine.Sleep(1000);	]]>
 		</CodeChunk>
 		<CodeChunk Name="ExchangeTinyAxolotl">
-			<![CDATA[ 
-				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
-				{
-					if(slot.RawItemId == 1774 && slot.Collectability >= 326)
-					{
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 21);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						slot.Handover();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-						ff14bot.RemoteWindows.Request.HandOver();
-						await Buddy.Coroutines.Coroutine.Sleep(1000);
-					}
-				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
-			]]>
+			<![CDATA[ 	foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)	{	if(slot.RawItemId == 1774 && slot.Collectability >= 326)	{	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 21);	await Buddy.Coroutines.Coroutine.Sleep(1000);	RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);	await Buddy.Coroutines.Coroutine.Sleep(1000);	slot.Handover();	await Buddy.Coroutines.Coroutine.Sleep(1000);	ff14bot.RemoteWindows.Request.HandOver();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}	}	await Buddy.Coroutines.Coroutine.Sleep(1000);	]]>
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
@@ -2008,7 +1900,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_SunMica; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+						<If Condition="&Collect_SunMica; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -2073,7 +1965,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_AurumRegisOre; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+						<If Condition="&Collect_AurumRegisOre; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -2136,7 +2028,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_VanillaBeans; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+						<If Condition="&Collect_VanillaBeans; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2196,7 +2088,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_HoneydewAlmonds; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+						<If Condition="&Collect_HoneydewAlmonds; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
@@ -2262,7 +2154,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_SeventhHeaven; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+						<If Condition="&Collect_SeventhHeaven; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -3084,7 +2976,7 @@
 							</ExGather>
 						</If>
 						<!-- High Rate If Capped -->
-						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &HighRateIfCapped; != 0">
+						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and (&HighRateIfCapped; != 0 or &Collectability_Chysahl; == 550)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3099,7 +2991,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0">
+						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0 and &Collectability_Chysahl; != 550">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3545,7 +3437,7 @@
 						</ExGather>
 					</If>
 					<!-- High Rate If Capped -->
-					<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &HighRateIfCapped; != 0">
+					<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and (&HighRateIfCapped; != 0 or &Collectability_Adamantite; == 550)">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3565,7 +3457,7 @@
 						</ExGather>
 					</If>
 					<!-- Regular If Capped -->
-					<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0">
+					<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0 and &Collectability_Adamantite; != 550">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -7357,18 +7249,18 @@
 								<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
 							</If>
 							<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-							<If Condition="&Trade_Counterfoil; != 0">
-								<TeleportTo name="Idyllshire" aetheryteId="75"/>
-								<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
-								<RunCode Name="InteractNPCTurnIn"/>
-								<RunCode Name="ExchangeAdamantite"/>
-								<RunCode Name="ExchangeChysahl"/>
-								<RunCode Name="ExchangeEel"/>
-								<RunCode Name="ExchangeEventideJade"/>
-								<RunCode Name="ExchangePeriwinkle"/>
-								<RunCode Name="ExchangeTinyAxolotl"/>
-								<RunCode Name="CloseWindow"/>
-							</If>
+								<If Condition="&Trade_Counterfoil; != 0">
+									<TeleportTo name="Idyllshire" aetheryteId="75"/>
+									<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
+									<RunCode Name="InteractNPCTurnIn"/>
+									<RunCode Name="ExchangeAdamantite"/>
+									<RunCode Name="ExchangeChysahl"/>
+									<RunCode Name="ExchangeEel"/>
+									<RunCode Name="ExchangeEventideJade"/>
+									<RunCode Name="ExchangePeriwinkle"/>
+									<RunCode Name="ExchangeTinyAxolotl"/>
+									<RunCode Name="CloseWindow"/>
+								</If>
 								<TurnInCollectables location="Idyllshire" forcePurchase="False">
 									<ShopPurchases>
 										<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
@@ -7377,82 +7269,82 @@
 										<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 									</ShopPurchases>
 								</TurnInCollectables>
-							</If>
-							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
-							<RunCode Name="UnStealth"/>
-							<If Condition="&Desynth_Magikarp; != 0">
-								<While Condition="HasAtLeast(12721, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12721"/>
-								</While>
-								<While Condition="&Keep_BlueclawShrimp_Magikarp; == 0 and HasAtLeast(12722, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12722"/>
-								</While>
-								<While Condition="HasAtLeast(12729, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12729"/>
-								</While>
-								<While Condition="HasAtLeast(12730, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12730"/>
-								</While>
-								<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12733"/>
-								</While>
-								<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12741"/>
-								</While>
-								<While Condition="HasAtLeast(12753, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12753"/>
-								</While>
-								<While Condition="HasAtLeast(12756, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12756"/>
-								</While>
-								<While Condition="HasAtLeast(12757, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12757"/>
-								</While>
-								<While Condition="HasAtLeast(12760, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12760"/>
-								</While>
-								<While Condition="&Keep_GobbieMask_Magikarp; == 0 and HasAtLeast(12770, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12770"/>
-								</While>
-								<While Condition="&Keep_Sweetfish_Magikarp; == 0 and HasAtLeast(12780, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12780"/>
-								</While>
-								<While Condition="HasAtLeast(12783, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12783"/>
-								</While>
-								<While Condition="&Keep_SkySweeper_Magikarp; == 0 and HasAtLeast(12785, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12785"/>
-								</While>
-								<While Condition="HasAtLeast(12790, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12790"/>
-								</While>
-								<While Condition="HasAtLeast(12794, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12794"/>
-								</While>
-								<While Condition="HasAtLeast(12804, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12804"/>
-								</While>
-								<While Condition="&Keep_Rudderfish_Magikarp; == 0 and HasAtLeast(12805, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12805"/>
-								</While>
-								<While Condition="&Keep_BombPuffer_Magikarp; == 0 and HasAtLeast(12806, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12806"/>
-								</While>
-								<While Condition="HasAtLeast(12808, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12808"/>
-								</While>
-								<While Condition="&Keep_Cobrafish_Magikarp; == 0 and HasAtLeast(12813, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12813"/>
-								</While>
-								<While Condition="&Keep_HinterlandsPerch_Magikarp; == 0 and HasAtLeast(12819, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12819"/>
-								</While>
-								<While Condition="&Keep_Stupendemys_Magikarp; == 0 and HasAtLeast(12825, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12825"/>
-								</While>
-								<While Condition="&Keep_BerserkerBetta_Magikarp; == 0 and HasAtLeast(12836, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12836"/>
-								</While>
+								<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
+								<RunCode Name="UnStealth"/>
+								<If Condition="&Desynth_Magikarp; != 0">
+									<While Condition="HasAtLeast(12721, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12721"/>
+									</While>
+									<While Condition="&Keep_BlueclawShrimp_Magikarp; == 0 and HasAtLeast(12722, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12722"/>
+									</While>
+									<While Condition="HasAtLeast(12729, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12729"/>
+									</While>
+									<While Condition="HasAtLeast(12730, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12730"/>
+									</While>
+									<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12733"/>
+									</While>
+									<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12741"/>
+									</While>
+									<While Condition="HasAtLeast(12753, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12753"/>
+									</While>
+									<While Condition="HasAtLeast(12756, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12756"/>
+									</While>
+									<While Condition="HasAtLeast(12757, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12757"/>
+									</While>
+									<While Condition="HasAtLeast(12760, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12760"/>
+									</While>
+									<While Condition="&Keep_GobbieMask_Magikarp; == 0 and HasAtLeast(12770, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12770"/>
+									</While>
+									<While Condition="&Keep_Sweetfish_Magikarp; == 0 and HasAtLeast(12780, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12780"/>
+									</While>
+									<While Condition="HasAtLeast(12783, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12783"/>
+									</While>
+									<While Condition="&Keep_SkySweeper_Magikarp; == 0 and HasAtLeast(12785, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12785"/>
+									</While>
+									<While Condition="HasAtLeast(12790, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12790"/>
+									</While>
+									<While Condition="HasAtLeast(12794, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12794"/>
+									</While>
+									<While Condition="HasAtLeast(12804, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12804"/>
+									</While>
+									<While Condition="&Keep_Rudderfish_Magikarp; == 0 and HasAtLeast(12805, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12805"/>
+									</While>
+									<While Condition="&Keep_BombPuffer_Magikarp; == 0 and HasAtLeast(12806, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12806"/>
+									</While>
+									<While Condition="HasAtLeast(12808, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12808"/>
+									</While>
+									<While Condition="&Keep_Cobrafish_Magikarp; == 0 and HasAtLeast(12813, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12813"/>
+									</While>
+									<While Condition="&Keep_HinterlandsPerch_Magikarp; == 0 and HasAtLeast(12819, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12819"/>
+									</While>
+									<While Condition="&Keep_Stupendemys_Magikarp; == 0 and HasAtLeast(12825, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12825"/>
+									</While>
+									<While Condition="&Keep_BerserkerBetta_Magikarp; == 0 and HasAtLeast(12836, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12836"/>
+									</While>
+								</If>
 							</If>
 							<TeleportTo Force="True" AetheryteId="75" Name="Idyllshire"/>
 							<RunCode Name="FSH"/>
@@ -7570,82 +7462,82 @@
 										<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 									</ShopPurchases>
 								</TurnInCollectables>
-							</If>
-							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
-							<RunCode Name="UnStealth"/>
-							<If Condition="&Desynth_Magikarp; != 0">
-								<While Condition="HasAtLeast(12721, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12721"/>
-								</While>
-								<While Condition="&Keep_BlueclawShrimp_Magikarp; == 0 and HasAtLeast(12722, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12722"/>
-								</While>
-								<While Condition="HasAtLeast(12729, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12729"/>
-								</While>
-								<While Condition="HasAtLeast(12730, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12730"/>
-								</While>
-								<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12733"/>
-								</While>
-								<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12741"/>
-								</While>
-								<While Condition="HasAtLeast(12753, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12753"/>
-								</While>
-								<While Condition="HasAtLeast(12756, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12756"/>
-								</While>
-								<While Condition="HasAtLeast(12757, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12757"/>
-								</While>
-								<While Condition="HasAtLeast(12760, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12760"/>
-								</While>
-								<While Condition="&Keep_GobbieMask_Magikarp; == 0 and HasAtLeast(12770, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12770"/>
-								</While>
-								<While Condition="&Keep_Sweetfish_Magikarp; == 0 and HasAtLeast(12780, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12780"/>
-								</While>
-								<While Condition="HasAtLeast(12783, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12783"/>
-								</While>
-								<While Condition="&Keep_SkySweeper_Magikarp; == 0 and HasAtLeast(12785, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12785"/>
-								</While>
-								<While Condition="HasAtLeast(12790, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12790"/>
-								</While>
-								<While Condition="HasAtLeast(12794, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12794"/>
-								</While>
-								<While Condition="HasAtLeast(12804, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12804"/>
-								</While>
-								<While Condition="&Keep_Rudderfish_Magikarp; == 0 and HasAtLeast(12805, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12805"/>
-								</While>
-								<While Condition="&Keep_BombPuffer_Magikarp; == 0 and HasAtLeast(12806, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12806"/>
-								</While>
-								<While Condition="HasAtLeast(12808, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12808"/>
-								</While>
-								<While Condition="&Keep_Cobrafish_Magikarp; == 0 and HasAtLeast(12813, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12813"/>
-								</While>
-								<While Condition="&Keep_HinterlandsPerch_Magikarp; == 0 and HasAtLeast(12819, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12819"/>
-								</While>
-								<While Condition="&Keep_Stupendemys_Magikarp; == 0 and HasAtLeast(12825, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12825"/>
-								</While>
-								<While Condition="&Keep_BerserkerBetta_Magikarp; == 0 and HasAtLeast(12836, 1)">
-									<Desynth DesynthTimeout="1" ItemIds="12836"/>
-								</While>
+								<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
+								<RunCode Name="UnStealth"/>
+								<If Condition="&Desynth_Magikarp; != 0">
+									<While Condition="HasAtLeast(12721, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12721"/>
+									</While>
+									<While Condition="&Keep_BlueclawShrimp_Magikarp; == 0 and HasAtLeast(12722, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12722"/>
+									</While>
+									<While Condition="HasAtLeast(12729, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12729"/>
+									</While>
+									<While Condition="HasAtLeast(12730, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12730"/>
+									</While>
+									<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12733"/>
+									</While>
+									<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12741"/>
+									</While>
+									<While Condition="HasAtLeast(12753, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12753"/>
+									</While>
+									<While Condition="HasAtLeast(12756, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12756"/>
+									</While>
+									<While Condition="HasAtLeast(12757, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12757"/>
+									</While>
+									<While Condition="HasAtLeast(12760, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12760"/>
+									</While>
+									<While Condition="&Keep_GobbieMask_Magikarp; == 0 and HasAtLeast(12770, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12770"/>
+									</While>
+									<While Condition="&Keep_Sweetfish_Magikarp; == 0 and HasAtLeast(12780, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12780"/>
+									</While>
+									<While Condition="HasAtLeast(12783, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12783"/>
+									</While>
+									<While Condition="&Keep_SkySweeper_Magikarp; == 0 and HasAtLeast(12785, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12785"/>
+									</While>
+									<While Condition="HasAtLeast(12790, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12790"/>
+									</While>
+									<While Condition="HasAtLeast(12794, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12794"/>
+									</While>
+									<While Condition="HasAtLeast(12804, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12804"/>
+									</While>
+									<While Condition="&Keep_Rudderfish_Magikarp; == 0 and HasAtLeast(12805, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12805"/>
+									</While>
+									<While Condition="&Keep_BombPuffer_Magikarp; == 0 and HasAtLeast(12806, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12806"/>
+									</While>
+									<While Condition="HasAtLeast(12808, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12808"/>
+									</While>
+									<While Condition="&Keep_Cobrafish_Magikarp; == 0 and HasAtLeast(12813, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12813"/>
+									</While>
+									<While Condition="&Keep_HinterlandsPerch_Magikarp; == 0 and HasAtLeast(12819, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12819"/>
+									</While>
+									<While Condition="&Keep_Stupendemys_Magikarp; == 0 and HasAtLeast(12825, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12825"/>
+									</While>
+									<While Condition="&Keep_BerserkerBetta_Magikarp; == 0 and HasAtLeast(12836, 1)">
+										<Desynth DesynthTimeout="1" ItemIds="12836"/>
+									</While>
+								</If>
 							</If>
 							<WaitWhile Condition="IsTimeBetween(6,8) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;"/>
 						</If>
@@ -8086,80 +7978,78 @@
 				<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 				<RunCode Name="UnStealth"/>
 				<If Condition="&Desynth_Magikarp; != 0">
-					<If Condition="&Desynth_Magikarp; != 0">
-						<While Condition="HasAtLeast(12721, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12721"/>
-						</While>
-						<While Condition="&Keep_BlueclawShrimp_Magikarp; == 0 and HasAtLeast(12722, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12722"/>
-						</While>
-						<While Condition="HasAtLeast(12729, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12729"/>
-						</While>
-						<While Condition="HasAtLeast(12730, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12730"/>
-						</While>
-						<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12733"/>
-						</While>
-						<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12741"/>
-						</While>
-						<While Condition="HasAtLeast(12753, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12753"/>
-						</While>
-						<While Condition="HasAtLeast(12756, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12756"/>
-						</While>
-						<While Condition="HasAtLeast(12757, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12757"/>
-						</While>
-						<While Condition="HasAtLeast(12760, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12760"/>
-						</While>
-						<While Condition="&Keep_GobbieMask_Magikarp; == 0 and HasAtLeast(12770, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12770"/>
-						</While>
-						<While Condition="&Keep_Sweetfish_Magikarp; == 0 and HasAtLeast(12780, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12780"/>
-						</While>
-						<While Condition="HasAtLeast(12783, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12783"/>
-						</While>
-						<While Condition="&Keep_SkySweeper_Magikarp; == 0 and HasAtLeast(12785, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12785"/>
-						</While>
-						<While Condition="HasAtLeast(12790, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12790"/>
-						</While>
-						<While Condition="HasAtLeast(12794, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12794"/>
-						</While>
-						<While Condition="HasAtLeast(12804, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12804"/>
-						</While>
-						<While Condition="&Keep_Rudderfish_Magikarp; == 0 and HasAtLeast(12805, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12805"/>
-						</While>
-						<While Condition="&Keep_BombPuffer_Magikarp; == 0 and HasAtLeast(12806, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12806"/>
-						</While>
-						<While Condition="HasAtLeast(12808, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12808"/>
-						</While>
-						<While Condition="&Keep_Cobrafish_Magikarp; == 0 and HasAtLeast(12813, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12813"/>
-						</While>
-						<While Condition="&Keep_HinterlandsPerch_Magikarp; == 0 and HasAtLeast(12819, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12819"/>
-						</While>
-						<While Condition="&Keep_Stupendemys_Magikarp; == 0 and HasAtLeast(12825, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12825"/>
-						</While>
-						<While Condition="&Keep_BerserkerBetta_Magikarp; == 0 and HasAtLeast(12836, 1)">
-							<Desynth DesynthTimeout="1" ItemIds="12836"/>
-						</While>
-					</If>
+					<While Condition="HasAtLeast(12721, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12721"/>
+					</While>
+					<While Condition="&Keep_BlueclawShrimp_Magikarp; == 0 and HasAtLeast(12722, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12722"/>
+					</While>
+					<While Condition="HasAtLeast(12729, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12729"/>
+					</While>
+					<While Condition="HasAtLeast(12730, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12730"/>
+					</While>
+					<While Condition="&Keep_RockMussel_Magikarp; == 0 and HasAtLeast(12733, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12733"/>
+					</While>
+					<While Condition="&Keep_PipiraPira_Magikarp; == 0 and HasAtLeast(12741, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12741"/>
+					</While>
+					<While Condition="HasAtLeast(12753, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12753"/>
+					</While>
+					<While Condition="HasAtLeast(12756, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12756"/>
+					</While>
+					<While Condition="HasAtLeast(12757, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12757"/>
+					</While>
+					<While Condition="HasAtLeast(12760, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12760"/>
+					</While>
+					<While Condition="&Keep_GobbieMask_Magikarp; == 0 and HasAtLeast(12770, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12770"/>
+					</While>
+					<While Condition="&Keep_Sweetfish_Magikarp; == 0 and HasAtLeast(12780, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12780"/>
+					</While>
+					<While Condition="HasAtLeast(12783, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12783"/>
+					</While>
+					<While Condition="&Keep_SkySweeper_Magikarp; == 0 and HasAtLeast(12785, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12785"/>
+					</While>
+					<While Condition="HasAtLeast(12790, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12790"/>
+					</While>
+					<While Condition="HasAtLeast(12794, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12794"/>
+					</While>
+					<While Condition="HasAtLeast(12804, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12804"/>
+					</While>
+					<While Condition="&Keep_Rudderfish_Magikarp; == 0 and HasAtLeast(12805, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12805"/>
+					</While>
+					<While Condition="&Keep_BombPuffer_Magikarp; == 0 and HasAtLeast(12806, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12806"/>
+					</While>
+					<While Condition="HasAtLeast(12808, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12808"/>
+					</While>
+					<While Condition="&Keep_Cobrafish_Magikarp; == 0 and HasAtLeast(12813, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12813"/>
+					</While>
+					<While Condition="&Keep_HinterlandsPerch_Magikarp; == 0 and HasAtLeast(12819, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12819"/>
+					</While>
+					<While Condition="&Keep_Stupendemys_Magikarp; == 0 and HasAtLeast(12825, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12825"/>
+					</While>
+					<While Condition="&Keep_BerserkerBetta_Magikarp; == 0 and HasAtLeast(12836, 1)">
+						<Desynth DesynthTimeout="1" ItemIds="12836"/>
+					</While>
 				</If>
 			</If>
 		</While>
