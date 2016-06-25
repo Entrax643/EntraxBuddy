@@ -164,6 +164,8 @@
 <!ENTITY Collectability_Chysahl "470">
 <!ENTITY Collectability_Adamantite "470">
 <!ENTITY Collectability_1Star "570">
+<!ENTITY RegularIfCapped "0">
+<!ENTITY HighRateIfCapped "0">
 <!ENTITY PlusPlus "0">
 <!ENTITY DiscoverUnknowns "True">
 <!ENTITY IsTimeBetween_tick "25">
@@ -195,6 +197,7 @@
 <!ENTITY TurnInAfterLoop "0">
 <!ENTITY TurnInAfterLoop_free_bag_slots "100">
 <!ENTITY Trade_Counterfoil "0">
+<!ENTITY Cap_Amount "420">
 <!-- Shop Settings -  -->
 <!-- Set the amount of what you want - For instance if BlueToken = 100 and you already have 42, the bot will spend scrips to buy 58 token. -->
 <!ENTITY RedGatherToken_Count "0">
@@ -1924,7 +1927,7 @@
 						<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_AstralMoraine; != 0">
+						<If Condition="&Collect_AstralMoraine; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1933,6 +1936,24 @@
 									<Collectable Name="Astral Moraine" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="727.6328, 211.1374, -225.1546" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_AstralMoraine; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Astral Moraine</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
 								<GatherSpots>
 									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="745.5949, 207.7516, -295.9388" nodeLocation="735.9623, 209.0792, -308.0258"/>
 								</GatherSpots>
@@ -1968,7 +1989,7 @@
 						<ExFlyTo XYZ="713.3589, -141.6476, 739.575" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_SunMica; != 0">
+						<If Condition="&Collect_SunMica; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1977,6 +1998,25 @@
 									<Collectable Name="Sun Mica" Value="&Collectability_1Star;"  PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="784.3499, -156.2978, 709.4473" nodeLocation="795.6894, -155.8098, 713.2039"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="713.3589, -141.6476, 739.575" Radius="300"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_SunMica; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Sun Mica</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
 								<GatherSpots>
 									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="784.3499, -156.2978, 709.4473" nodeLocation="795.6894, -155.8098, 713.2039"/>
 									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="670.5177, -157.8228, 835.6047" nodeLocation="665.5395, -157.7969, 826.8955"/>
@@ -2014,7 +2054,7 @@
 						<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_AurumRegisOre; != 0">
+						<If Condition="&Collect_AurumRegisOre; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -2023,6 +2063,25 @@
 									<Collectable Name="Aurum Regis Ore" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-696.2029, 239.4825, 553.1216" Radius="250"/>
+									<HotSpot XYZ="-598.0869, 189.7023, 776.8986" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_AurumRegisOre; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Aurum Regis Ore</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
 								<GatherSpots>
 									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-663.3519, 167.1378, 787.0792" nodeLocation="-658.3278, 168.6156, 799.0139"/>
 								</GatherSpots>
@@ -2062,7 +2121,7 @@
 						<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_VanillaBeans; != 0">
+						<If Condition="&Collect_VanillaBeans; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2071,6 +2130,21 @@
 									<Collectable Name="Vanilla Beans" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="-29.81721, 122.386, -67.21716" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_VanillaBeans; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Vanilla Beans</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
 								<HotSpots>
 									<HotSpot XYZ="-29.81721, 122.386, -67.21716" Radius="200"/>
 								</HotSpots>
@@ -2101,7 +2175,7 @@
 						<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_HoneydewAlmonds; != 0">
+						<If Condition="&Collect_HoneydewAlmonds; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
@@ -2110,6 +2184,27 @@
 									<Collectable Name="Honeydew Almonds" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-101.1807, 9.971554, -760.6421" nodeLocation="-89.53649, 9.406851, -765.1414"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-57.72252, 9.188148, -858.4722" nodeLocation="-49.65337, 9.238801, -850.0153"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="91.18084, -17.95462, -808.1276" nodeLocation="91.73372, -17.05236, -812.7791"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-54.91675, 32.65963, -793.1055" Radius="200"/>
+									<HotSpot XYZ="74.1788, 12.86857, -785.2369" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_HoneydewAlmonds; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Honeydew Almonds</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
 								<GatherSpots>
 									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-101.1807, 9.971554, -760.6421" nodeLocation="-89.53649, 9.406851, -765.1414"/>
 									<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="-57.72252, 9.188148, -858.4722" nodeLocation="-49.65337, 9.238801, -850.0153"/>
@@ -2152,7 +2247,7 @@
 						<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_SeventhHeaven; != 0">
+						<If Condition="&Collect_SeventhHeaven; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2161,6 +2256,21 @@
 									<Collectable Name="Seventh Heaven" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="-234.3543, 12.46441, 703.6292" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_SeventhHeaven; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0">">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Seventh Heaven</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
 								<HotSpots>
 									<HotSpot XYZ="-234.3543, 12.46441, 703.6292" Radius="200"/>
 								</HotSpots>
@@ -2959,7 +3069,7 @@
 						<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Condition.IsTimeBetween(20,21.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_Chysahl; != 0">
+						<If Condition="&Collect_Chysahl; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -2968,6 +3078,36 @@
 									<Collectable Name="Chysahl Greens" Value="&Collectability_Chysahl;" PlusPlus="&PlusPlus;"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
+								<HotSpots>
+									<HotSpot Radius="90" XYZ="-684.4172, 130.6977, -600.1046"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- High Rate If Capped -->
+						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &HighRateIfCapped; != 0">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Chysahl Greens" Value="550" PlusPlus="&PlusPlus;"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<HotSpots>
+									<HotSpot Radius="90" XYZ="-684.4172, 130.6977, -600.1046"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0">
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Chysahl Greens</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_50_60;</GatherRotation>
 								<HotSpots>
 									<HotSpot Radius="90" XYZ="-684.4172, 130.6977, -600.1046"/>
 								</HotSpots>
@@ -3385,7 +3525,7 @@
 					<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" RandomFinalSpot="True"/>
 					<WaitWhile Condition="Condition.IsTimeBetween(10,11.1) or Condition.IsTimeBetween(22,23.1)"/>
 					<!-- Collectable -->
-					<If Condition="&Collect_Adamantite; != 0">
+					<If Condition="&Collect_Adamantite; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3394,6 +3534,46 @@
 								<Collectable Name="Adamantite Ore" Value="&Collectability_Adamantite;" PlusPlus="&PlusPlus;"/>
 							</Collectables>
 							<GatherRotation>NewbCollect</GatherRotation>
+							<GatherSpots>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="71.82657, -0.7113832, -859.5731" nodeLocation="72.07767, 0.7522836, -854.5031"/>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="24.49877, 0.1047641, -827.0684" nodeLocation="25.29292, 0.5668808, -833.7905"/>
+								<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="87.43224, -0.9560863, -795.0317" nodeLocation="79.63015, 0.5219008, -804.5839"/>
+							</GatherSpots>
+							<HotSpots>
+								<HotSpot Radius="90" XYZ="41.74664, 16.07355, -843.0107"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- High Rate If Capped -->
+					<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &HighRateIfCapped; != 0">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<Collectables>
+								<Collectable Name="Adamantite Ore" Value="550" PlusPlus="&PlusPlus;"/>
+							</Collectables>
+							<GatherRotation>NewbCollect</GatherRotation>
+							<GatherSpots>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="71.82657, -0.7113832, -859.5731" nodeLocation="72.07767, 0.7522836, -854.5031"/>
+								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="24.49877, 0.1047641, -827.0684" nodeLocation="25.29292, 0.5668808, -833.7905"/>
+								<StealthApproachGatherSpot ReturnToStealthLocation="False" stealthLocation="87.43224, -0.9560863, -795.0317" nodeLocation="79.63015, 0.5219008, -804.5839"/>
+							</GatherSpots>
+							<HotSpots>
+								<HotSpot Radius="90" XYZ="41.74664, 16.07355, -843.0107"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Regular If Capped -->
+					<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt; &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0">
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Adamantite Ore</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
 							<GatherSpots>
 								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="71.82657, -0.7113832, -859.5731" nodeLocation="72.07767, 0.7522836, -854.5031"/>
 								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="24.49877, 0.1047641, -827.0684" nodeLocation="25.29292, 0.5668808, -833.7905"/>
@@ -7176,6 +7356,7 @@
 								<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
 								<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
 							</If>
+							<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
 							<If Condition="&Trade_Counterfoil; != 0">
 								<TeleportTo name="Idyllshire" aetheryteId="75"/>
 								<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
@@ -7188,17 +7369,15 @@
 								<RunCode Name="ExchangeTinyAxolotl"/>
 								<RunCode Name="CloseWindow"/>
 							</If>
-							<TurnInCollectables location="Idyllshire" forcePurchase="False">
-								<Collectables>
-									<CollectableTurnIn Name="Illuminati Perch" value="826"/>
-								</Collectables>
-								<ShopPurchases>
-									<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
-									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
-									<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
-									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-								</ShopPurchases>
-							</TurnInCollectables>
+								<TurnInCollectables location="Idyllshire" forcePurchase="False">
+									<ShopPurchases>
+										<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
+										<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
+										<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
+										<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
+									</ShopPurchases>
+								</TurnInCollectables>
+							</If>
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
 							<If Condition="&Desynth_Magikarp; != 0">
@@ -7382,17 +7561,16 @@
 								<RunCode Name="StopFishing"/>
 							</If>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [6:8] ~ Turnin - Desynth Time"/>
-							<TurnInCollectables location="Idyllshire" forcePurchase="False">
-								<Collectables>
-									<CollectableTurnIn Name="Illuminati Perch" value="826"/>
-								</Collectables>
-								<ShopPurchases>
-									<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
-									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
-									<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
-									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-								</ShopPurchases>
-							</TurnInCollectables>
+							<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
+								<TurnInCollectables location="Idyllshire" forcePurchase="False">
+									<ShopPurchases>
+										<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
+										<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count_Magikarp;"/>
+										<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
+										<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
+									</ShopPurchases>
+								</TurnInCollectables>
+							</If>
 							<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 							<RunCode Name="UnStealth"/>
 							<If Condition="&Desynth_Magikarp; != 0">
@@ -7635,7 +7813,7 @@
 						<!-- Landlord Colony : Fossilized Dragon Bone or Tektite -->
 						<If Condition="(&FossilizedDragonBone_Ditto; != 0 or &Tektite_Ditto; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ditto ~ Destination ----&gt; Landlord Colony"/>
-							<TeleportTo AetheryteId="78" Name="Moghome"/>
+							<TeleportTo Force="True" AetheryteId="78" Name="Moghome"/>
 							<RunCode Name="MIN"/>
 							<!-- Fossilized Dragon Bone -->
 							<If Condition="&FossilizedDragonBone_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
@@ -7894,15 +8072,17 @@
 					<RunCode Name="CloseWindow"/>
 				</If>
 				<ExPurify/>
-				<TurnInCollectables location="Idyllshire" forcePurchase="False">
-					<ShopPurchases>
-						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
-						<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
-						<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
-						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-					</ShopPurchases>
-				</TurnInCollectables>
+				<If Condition="&TurnInAfterLoop; != 0">
+					<TurnInCollectables location="Idyllshire" forcePurchase="False">
+						<ShopPurchases>
+							<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
+							<ShopPurchase shopItem="BlueToken" MaxCount="&BlueToken_Count;"/>
+							<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
+							<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
+							<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
+						</ShopPurchases>
+					</TurnInCollectables>
+				</If>
 				<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 				<RunCode Name="UnStealth"/>
 				<If Condition="&Desynth_Magikarp; != 0">
