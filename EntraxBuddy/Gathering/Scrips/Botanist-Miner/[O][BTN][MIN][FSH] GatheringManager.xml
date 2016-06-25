@@ -7248,7 +7248,7 @@
 								<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
 								<BuyItem ItemId="12704" ItemCount="99" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
 							</If>
-							<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
+							<If Condition="FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
 								<If Condition="&Trade_Counterfoil; != 0">
 									<TeleportTo name="Idyllshire" aetheryteId="75"/>
 									<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
@@ -7453,7 +7453,7 @@
 								<RunCode Name="StopFishing"/>
 							</If>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [6:8] ~ Turnin - Desynth Time"/>
-							<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
+							<If Condition="FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
 								<TurnInCollectables location="Idyllshire" forcePurchase="False">
 									<ShopPurchases>
 										<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
