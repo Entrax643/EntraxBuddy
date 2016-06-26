@@ -167,7 +167,7 @@
 <!ENTITY HighRateIfCapped "0">
 <!ENTITY PlusPlus "0">
 <!ENTITY DiscoverUnknowns "True">
-<!ENTITY IsTimeBetween_tick "25">
+<!ENTITY IsTimeBetween_tick "10">
 <!-- Cordial setting -->
 <!-- Choose if you want to use Cordial or HiCordial  -->
 <!ENTITY Cordial_Type_50_60 "Auto">

@@ -252,7 +252,7 @@
 	<Order>
 		<TeleportTo name="Idyllshire" aetheryteId="75"/>
 		<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
-		<If Condition="(&TurnIn_MIN; != 0 and ItemCount(12538) &gt; 0) or (&TurnIn_BTN; != 0 and ItemCount(12900) &gt; 0)">
+		<If Condition="&TurnIn_MIN; != 0 or &TurnIn_BTN; != 0 or &TurnIn_FSH; != 0">
 			<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Interacting with NPC"/>
 			<RunCode Name="InteractNPCTurnIn"/>
 			<!-- Type-1 Mining Counterfoil -->
