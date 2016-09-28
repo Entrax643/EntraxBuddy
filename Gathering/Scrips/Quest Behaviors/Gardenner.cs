@@ -14,49 +14,43 @@ namespace ff14bot.NeoProfiles
     [XmlElement("Gardenner")]
     public class Gardenner : ProfileBehavior
     {
-		private bool _done = false;
+        private bool _done;
 
         [XmlAttribute("AlwaysWater")]
         public bool AlwaysWater { get; set; }
 
         private const int PostInteractDelay = 2300;
 
-		private static readonly Color MessageColor = Color.FromRgb(59, 216, 72);
+        private static readonly Color MessageColor = Colors.DeepPink;
 
-        new public static void Log(string text, params object[] args)
+        public new static void Log(string text, params object[] args)
         {
             text = "[Gardenner] " + string.Format(text, args);
             Logging.Write(MessageColor, text);
         }
-		protected override void OnStart()
-		{
-			_done = false;
-		}
+        protected override void OnStart()
+        {
+            _done = false;
+        }
 
-        public override bool IsDone 
-		{ 
-			get 
-			{ 
-				return _done; 
-			} 
-		}
+        public override bool IsDone => _done;
 
         protected override void OnDone()
         {
-		}
+        }
 
-		protected override Composite CreateBehavior() 
-		{
-			return
-				new Decorator(
-					ret => !_done,
-					new ActionRunCoroutine(r => Gardenning()));
-         }
+        protected override Composite CreateBehavior()
+        {
+            return
+                new Decorator(
+                    ret => !_done,
+                    new ActionRunCoroutine(r => Gardenning()));
+        }
 
         protected override void OnResetCachedDone()
-		{
-			_done = false;
-		}
+        {
+            _done = false;
+        }
 
         protected async Task<bool> Gardenning()
         {
@@ -86,8 +80,8 @@ namespace ff14bot.NeoProfiles
                                     }
                                     else
                                     {
-                                        LogVerbose("Plant is ready to be harvested");
-										SelectString.ClickSlot(1);
+                                        Log("Plant is ready to be harvested");
+                                        SelectString.ClickSlot(1);
                                     }
                                 }
                             }
@@ -136,17 +130,16 @@ namespace ff14bot.NeoProfiles
                                 }
                                 else
                                 {
-									LogVerbose("Plant is ready to be harvested");
-									SelectString.ClickSlot(1);
+                                    LogVerbose("Plant is ready to be harvested");
+                                    SelectString.ClickSlot(1);
                                 }
                             }
                         }
                     }
                 }
             }
-			return _done = true;
+            return _done = true;
         }
 
-	}
+    }
 }
-			

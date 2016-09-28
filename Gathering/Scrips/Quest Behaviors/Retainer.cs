@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Media;
 using Buddy.Coroutines;
 using Clio.XmlEngine;
@@ -12,48 +13,49 @@ namespace ff14bot.NeoProfiles
     [XmlElement("Retainer")]
     public class Retainer : ProfileBehavior
     {
-		private bool _done = false;
+        private bool _done;
 
-		private static readonly Color MessageColor = Color.FromRgb(151, 59, 216);
+        private static readonly Color MessageColor = Colors.DeepPink;
 
-        new public static void Log(string text, params object[] args)
+        public new static void Log(string text, params object[] args)
         {
             text = "[Retainer] " + string.Format(text, args);
             Logging.Write(MessageColor, text);
         }
-		protected override void OnStart()
-		{
-			_done = false;
-		}
+        protected override void OnStart()
+        {
+            _done = false;
+        }
 
-        public override bool IsDone 
-		{ 
-			get 
-			{ 
-				return _done; 
-			} 
-		}
+        public override bool IsDone => _done;
 
         protected override void OnDone()
         {
-		}
+        }
 
-		protected override Composite CreateBehavior() 
-		{
-			return
-				new Decorator(
-					ret => !_done,
-					new ActionRunCoroutine(r => Retaining()));
-         }
+        protected override Composite CreateBehavior()
+        {
+            return
+                new Decorator(
+                    ret => !_done,
+                    new ActionRunCoroutine(r => Retaining()));
+        }
 
         protected override void OnResetCachedDone()
-		{
-			_done = false;
-		}
-		
+        {
+            _done = false;
+        }
+
         protected async Task<bool> Retaining()
         {
-            GameObjectManager.GetObjectByNPCId(2000401).Interact();
+            foreach (var unit in GameObjectManager.GameObjects.OrderBy(r => r.Distance()))
+            {
+                if (unit.NpcId == 2000401 || unit.NpcId == 2000441)
+                {
+                    unit.Interact();
+                    break;
+                }
+            }
             if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
             {
                 uint count = 0;
@@ -61,36 +63,53 @@ namespace ff14bot.NeoProfiles
                 uint countLine = (uint)lineC;
                 foreach (var retainer in SelectString.Lines())
                 {
-                    if (retainer.ToString().EndsWith("]") || retainer.ToString().EndsWith(")"))
+                    if (retainer.EndsWith("]") || retainer.EndsWith(")"))
                     {
                         Log("Checking Retainer n° " + (count + 1));
-                        if (retainer.ToString().EndsWith("[Tâche terminée]") || retainer.ToString().EndsWith("(Venture complete)"))
+                        // If Venture Completed
+                        if (retainer.EndsWith("[Tâche terminée]") || retainer.EndsWith("(Venture complete)"))
                         {
                             Log("Venture Completed !");
+                            // Select the retainer
                             SelectString.ClickSlot(count);
                             if (await Coroutine.Wait(5000, () => Talk.DialogOpen))
                             {
+                                // Skip Dialog
                                 Talk.Next();
                                 if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
                                 {
+                                    // Click on the completed venture
                                     SelectString.ClickSlot(5);
                                     if (await Coroutine.Wait(5000, () => RetainerTaskResult.IsOpen))
                                     {
+                                        // Assign a new venture
                                         RetainerTaskResult.Reassign();
                                         if (await Coroutine.Wait(5000, () => RetainerTaskAsk.IsOpen))
                                         {
+                                            // Confirm new venture
                                             RetainerTaskAsk.Confirm();
                                             if (await Coroutine.Wait(5000, () => Talk.DialogOpen))
                                             {
+                                                // Skip Dialog
                                                 Talk.Next();
-                                                if (await Coroutine.Wait(54000, () => SelectString.IsOpen))
+                                                if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
                                                 {
-                                                    SelectString.ClickSlot(9);
+                                                    SelectString.ClickSlot((uint)SelectString.LineCount -1);
                                                     if (await Coroutine.Wait(5000, () => Talk.DialogOpen))
                                                     {
+                                                        // Skip Dialog
                                                         Talk.Next();
                                                         await Coroutine.Sleep(3000);
-                                                        GameObjectManager.GetObjectByNPCId(2000401).Interact();
+														
+                                                        foreach (var unit in GameObjectManager.GameObjects.OrderBy(r => r.Distance()))
+                                                        {
+                                                            if (unit.NpcId == 2000401 || unit.NpcId == 2000441)
+                                                            {
+                                                                unit.Interact();
+                                                                break;
+                                                            }
+                                                        }
+														
                                                         if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
                                                         {
                                                             count++;
