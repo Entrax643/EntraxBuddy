@@ -2512,7 +2512,7 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;">
 							<GatherObjects>
-								<GatherObject>Legendary Lush Mature Tree</GatherObject>
+								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
 							<ItemNames>
 								<ItemName>Teak log</ItemName>
