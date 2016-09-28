@@ -3879,9 +3879,9 @@
 					<!-- 12PM -->
 					<!-- Star Cotton Boll -->
 					<If Condition="&StarCottonBoll; != 0 and IsTimeBetween(11,12)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Star Cotton Boll"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Star Cotton Boll"/>
 						<TeleportTo Force="True" Name="Helix" AetheryteId="71"/>
-						<RunCode Name="MIN"/>
+						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
 						<ExFlyTo XYZ="-717.6938, 67.0583, -445.2144"/>
 						<ExFlyTo XYZ="-733.1625, -35.88503, 398.2443" RandomFinalSpot="True"/>
