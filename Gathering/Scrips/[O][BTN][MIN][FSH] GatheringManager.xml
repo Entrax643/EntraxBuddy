@@ -1603,7 +1603,7 @@
 					<!-- Luminium Ore -->
 					<If Condition="&LuminiumOre; != 0 and IsTimeBetween(3,4)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Luminium Ore"/>
-						<TeleportTo Force="True" Name="Helix" AetheryteId="71"/>
+						<TeleportTo Force="True" Name="Helix" AetheryteId="74"/>
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
 						<ExFlyTo XYZ="-717.6938, 67.0583, -445.2144"/>
@@ -1628,7 +1628,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Brown Mushroom"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
-						<ExFlyTo XYZ="-612.83, 190.2112, 746.4683" RandomFinalSpot="True"/>
+						<ExFlyTo XYZ="-569.434, 187.4845, 756.0823" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(15,16.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;">
 							<GatherObjects>
@@ -1642,7 +1642,8 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-529.3109, 167.1217, 762.0784" nodeLocation="-519.3289, 167.1217, 755.1937"/>
 							</GatherSpots>
 							<HotSpots>
-								<HotSpot XYZ="-612.83, 190.2112, 746.4683" Radius="250"/>
+								<HotSpot XYZ="-569.434, 187.4845, 756.0823" Radius="100"/>
+								<HotSpot XYZ="-662.1222, 183.5786, 822.1833" Radius="100"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -2507,7 +2508,7 @@
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 						<ExFlyTo XYZ="-577.259, 247.5025, -265.3599"/>
 						<ExFlyTo XYZ="-668.187, 239.2614, 209.3701"/>
-						<ExFlyTo XYZ="-746.0731, 193.1911, 270.4328" RandomFinalSpot="True"/>
+						<ExFlyTo XYZ="-771.0028, 199.434, 311.5589" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;">
 							<GatherObjects>
@@ -2521,7 +2522,8 @@
 								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-770.6428, 178.9402, 205.2782" nodeLocation="-759.6645, 176.3587, 218.3049"/>
 							</GatherSpots>
 							<HotSpots>
-								<HotSpot XYZ="-746.0731, 193.1911, 270.4328" Radius="250"/>
+								<HotSpot XYZ="-771.0028, 199.434, 311.5589" Radius="100"/>
+								<HotSpot XYZ="-773.1674, 203.2802, 220.0729" Radius="100"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -3880,10 +3882,11 @@
 					<!-- Star Cotton Boll -->
 					<If Condition="&StarCottonBoll; != 0 and IsTimeBetween(11,12)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Star Cotton Boll"/>
-						<TeleportTo Force="True" Name="Helix" AetheryteId="71"/>
+						<TeleportTo Force="True" Name="Helix" AetheryteId="74"/>
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-701.8921, -188.9359, -584.603"/>
 						<ExFlyTo XYZ="-717.6938, 67.0583, -445.2144"/>
+						<ExFlyTo XYZ="-779.9359, 52.66815, -125.0472"/>
 						<ExFlyTo XYZ="-733.1625, -35.88503, 398.2443" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1)"/>
 						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;">
