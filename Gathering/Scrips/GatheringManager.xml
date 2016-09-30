@@ -185,7 +185,7 @@
 <!ENTITY Collectability_450 "0">
 <!ENTITY Collectability_Chysahl "470">
 <!ENTITY Collectability_Adamantite "470">
-<!ENTITY Collectability_1Star "570">
+<!ENTITY Collectability_1Star "470">
 <!ENTITY RegularIfCapped "0">
 <!ENTITY HighRateIfCapped "0">
 <!ENTITY PlusPlus "0">
@@ -647,11 +647,11 @@
 <!-- -->
 <!ENTITY SnorlaxCondition "ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe; or ItemCount(2) &lt; &FireShard_BTN; or ItemCount(3) &lt; &IceShard_BTN; or ItemCount(4) &lt; &WindShard_BTN; or ItemCount(5) &lt; &EarthShard_BTN; or ItemCount(6) &lt; &LightningShard_BTN; or ItemCount(7) &lt; &WaterShard_BTN; or ItemCount(2) &lt; &FireShard_MIN; or ItemCount(3) &lt; &IceShard_MIN; or ItemCount(4) &lt; &WindShard_MIN; or ItemCount(5) &lt; &EarthShard_MIN; or ItemCount(6) &lt; &LightningShard_MIN; or ItemCount(7) &lt; &WaterShard_MIN;">
 <!-- -->
-<!ENTITY LileepWaitCondition "not((IsTimeBetween(0,4) and &BTN_0_4_Lileep; != 0) or (IsTimeBetween(4,8) and (&MIN_4_8_Lileep; != 0 or &BTN_4_8_Lileep; != 0)) or (IsTimeBetween(8,12) and (&MIN_8_12_Lileep; != 0 or &BTN_8_12_Lileep; != 0)) or (IsTimeBetween(12,16) and &MIN_12_16_Lileep; != 0) or (IsTimeBetween(16,20) and (&MIN_16_20_Lileep; != 0 or &BTN_16_20_Lileep; != 0)) or (IsTimeBetween(20,24) and (&MIN_20_24_Lileep; != 0 or &BTN_20_24_Lileep; != 0))) and &Lileep; != 0">
+<!ENTITY LileepWaitCondition "not((IsTimeBetween(0,4) and &BTN_0_4_Lileep;) or (IsTimeBetween(4,8) and (&MIN_4_8_Lileep; or &BTN_4_8_Lileep;)) or (IsTimeBetween(8,12) and (&MIN_8_12_Lileep; or &BTN_8_12_Lileep;)) or (IsTimeBetween(12,16) and &MIN_12_16_Lileep;) or (IsTimeBetween(16,20) and (&MIN_16_20_Lileep; or &BTN_16_20_Lileep;)) or (IsTimeBetween(20,24) and (&MIN_20_24_Lileep; or &BTN_20_24_Lileep;))) and &Lileep;">
 <!-- -->
-<!ENTITY PsyduckWaitCondition "not((&NeptoDragon_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16)) or (&Helicoprion_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; != 0 and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&TitanicSawfish_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15)) or (&NavigatorsBrand_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1)) or (&FrilledShark_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&NinjaBetta_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&MagicCarpet_Psyduck; != 0 and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26)) or (&TheGreatestBreamInTheWorld_Psyduck; != 0 and IsTimeBetween(19,23)) or (&ThunderboltEel_Psyduck; != 0 and IsTimeBetween(21,3) and HasAtLeast(12707,1)) or (&DravanianBass_Psyduck; != 0 and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (&Pteranodon_Psyduck; != 0 and IsTimeBetween(8,14)) or (&ThaliakCaiman_Psyduck; != 0 and IsTimeBetween(14,18)) or (&Tupuxuara_Psyduck; != 0 and IsTimeBetween(14,18)) or (&Caiman_Psyduck; != 0 and IsTimeBetween(18,20)) or (&PipiraPira_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and HasAtLeast(12706,1))) and &Psyduck; != 0">
+<!ENTITY PsyduckWaitCondition "not((&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16)) or (&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15)) or (&NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1)) or (&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26)) or (&TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23)) or (&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1)) or (&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (&Pteranodon_Psyduck; and IsTimeBetween(8,14)) or (&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18)) or (&Tupuxuara_Psyduck; and IsTimeBetween(14,18)) or (&Caiman_Psyduck; and IsTimeBetween(18,20)) or (&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and HasAtLeast(12706,1))) and &Psyduck;">
 <!-- -->
-<!ENTITY UnspoiledWaitCondition "not(((&Housing; and (&Gardenning; != 0 or &Retainer; != 0 or &Chocobot; != 0)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0 or &Meteorite; != 0 or &DarksteelOre; != 0 or &SilkwormCocoon; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or (IsTimeBetween(1,2) and (&FragrantLog; != 0 or &AntumbralRock; != 0)) or (IsTimeBetween(13,14) and (&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0 or &Ferberite; != 0 or &RawTopaz; != 0 or &RawIolite; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0 or &CrystallizedSap; != 0)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&LuminiumOre; != 0)) or (IsTimeBetween(15,16) and (&BrownMushroom;!= 0)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; != 0 or &ThanalanTopsoil3; != 0 or &EbonyLog; != 0 or &Cluster_5AM; != 0 or &Trillium; != 0)) or (IsTimeBetween(16,17) and (&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0 or &Cluster_5PM; != 0)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre; != 0)) or (IsTimeBetween(17,18) and (&Teaklog;!= 0)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &RedolentLog; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0)) or (IsTimeBetween(18,19) and (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; != 0)) or (IsTimeBetween(19,20) and (&NobleSage;!= 0)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or (IsTimeBetween(8,9) and (&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0 or &Cluster_9AM; != 0 or &Apricot; != 0)) or (IsTimeBetween(20,21) and (&Cluster_9PM; != 0)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or (IsTimeBetween(9,10) and (&CypressLog; != 0)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0 or (IsTimeBetween(11,12) and (&StarCottonBoll; != 0))))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
+<!ENTITY UnspoiledWaitCondition "not(((&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
@@ -687,7 +687,7 @@
 	<Order>
 		<ExEnablePlugins Names="Skywatcher,Enable Flight"/>
 		<While Condition="FreeItemSlots() &gt; 1">
-			<If Condition="&USE_FOOD; != 0 and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
+			<If Condition="&USE_FOOD; and HasAtLeast(&ID_FOOD;,2) and not(Core.Player.HasAura(48))">
 				<RunCode Name="Dismount"/>
 				<WaitTimer WaitTime="3"/>
 				<EatFood ItemId="&ID_FOOD;"/>
@@ -695,10 +695,10 @@
 			<!-- Unspoiled -->
 			<If Condition="(&Psyduck; == 0 or &KeepFishing_Psyduck; == 0 or &PsyduckWaitCondition;)">
 				<!-- 1.00 AM & PM - 1.55 AM & PM -->
-				<If Condition="((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; != 0 or &SmithsoniteOre; != 0 or &Meteorite; != 0 or &DarksteelOre; != 0 or &SilkwormCocoon; != 0)) or (IsTimeBetween(12,13) and (&Cluster_1PM;!= 0 or &FrostCottonBoll; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll;)))) and FreeItemSlots() &gt; 1">
 					<!-- 1AM -->
 					<!-- Revenant's Toll -->
-					<If Condition="&Cluster_1AM; != 0 and IsTimeBetween(0,1)">
+					<If Condition="&Cluster_1AM; and IsTimeBetween(0,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Revenant's Toll"/>
 						<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 						<RunCode Name="BTN"/>
@@ -843,7 +843,7 @@
 						</If>
 					</If>
 					<!-- Meteorite -->
-					<If Condition="&Meteorite; != 0 and IsTimeBetween(0,1)">
+					<If Condition="&Meteorite; and IsTimeBetween(0,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Meteorite"/>
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<RunCode Name="MIN"/>
@@ -870,7 +870,7 @@
 						</ExGather>
 					</If>
 					<!-- Smithsonite Ore -->
-					<If Condition="&SmithsoniteOre; != 0 and IsTimeBetween(0,1)">
+					<If Condition="&SmithsoniteOre; and IsTimeBetween(0,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Smithsonite Ore"/>
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<RunCode Name="MIN"/>
@@ -897,7 +897,7 @@
 						</ExGather>
 					</If>
 					<!-- Darksteel Ore -->
-					<If Condition="&DarksteelOre; != 0 and IsTimeBetween(0,1)">
+					<If Condition="&DarksteelOre; and IsTimeBetween(0,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Darksteel Ore"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="MIN"/>
@@ -917,7 +917,7 @@
 						</ExGather>
 					</If>
 					<!-- Silkworm Cocoon -->
-					<If Condition="&SilkwormCocoon; != 0 and IsTimeBetween(0,1)">
+					<If Condition="&SilkwormCocoon; and IsTimeBetween(0,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Silkworm Cocoon"/>
 						<TeleportTo Force="True" Name="Hawthorne Hut" AetheryteId="4"/>
 						<RunCode Name="BTN"/>
@@ -938,7 +938,7 @@
 					</If>
 					<!-- 1PM -->
 					<!-- Revenant's Toll -->
-					<If Condition="&Cluster_1PM; != 0 and IsTimeBetween(12,13)">
+					<If Condition="&Cluster_1PM; and IsTimeBetween(12,13)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Revenant's Toll"/>
 						<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 						<RunCode Name="MIN"/>
@@ -1083,7 +1083,7 @@
 						</If>
 					</If>
 					<!-- Frost Cotton Boll -->
-					<If Condition="&FrostCottonBoll; != 0 and IsTimeBetween(12,13)">
+					<If Condition="&FrostCottonBoll; and IsTimeBetween(12,13)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Frost Cotton Boll"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -1104,12 +1104,12 @@
 							</HotSpots>
 						</ExGather>
 					</If>
-					</If>
+				</If>
 				<!-- 2.00 AM & PM - 2.55 AM & PM -->
-				<If Condition="((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; != 0 or &OldWorldFigSeeds; != 0 or &Cuprite; != 0 or &LightKidneyOre; != 0 or &YellowQuartz; != 0 or &GreenQuartz; != 0 or (IsTimeBetween(1,2) and (&FragrantLog; != 0 or &AntumbralRock; != 0)) or (IsTimeBetween(13,14) and (&DzemaelTomato; != 0  or &DzemaelTomatoSeeds; != 0 or &BlackTruffle; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) and FreeItemSlots() &gt; 1">
 					<!-- 2AM -->
 					<!-- Fragrant Log -->
-					<If Condition="&FragrantLog; != 0 and IsTimeBetween(1,2)">
+					<If Condition="&FragrantLog; and IsTimeBetween(1,2)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Fragrant Log"/>
 						<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 						<RunCode Name="BTN"/>
@@ -1129,7 +1129,7 @@
 						</ExGather>
 					</If>
 					<!-- Antumbral Rock -->
-					<If Condition="&AntumbralRock; != 0 and IsTimeBetween(1,2)">
+					<If Condition="&AntumbralRock; and IsTimeBetween(1,2)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Antumbral Rock"/>
 						<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18"/>
 						<RunCode Name="MIN"/>
@@ -1150,7 +1150,7 @@
 					</If>
 					<!-- 2PM -->
 					<!-- Black Truffle -->
-					<If Condition="&BlackTruffle; != 0 and IsTimeBetween(13,14)">
+					<If Condition="&BlackTruffle; and IsTimeBetween(13,14)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Black Truffle"/>
 						<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18"/>
 						<RunCode Name="BTN"/>
@@ -1170,7 +1170,7 @@
 						</ExGather>
 					</If>
 					<!-- Dzemael Tomato -->
-					<If Condition="&DzemaelTomato; != 0 and IsTimeBetween(13,14)">
+					<If Condition="&DzemaelTomato; and IsTimeBetween(13,14)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dzemael Tomato"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="BTN"/>
@@ -1190,7 +1190,7 @@
 						</ExGather>
 					</If>
 					<!-- Dzemael Tomato Seeds -->
-					<If Condition="&DzemaelTomatoSeeds; != 0 and IsTimeBetween(13,14)">
+					<If Condition="&DzemaelTomatoSeeds; and IsTimeBetween(13,14)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dzemael Tomato Seeds"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="BTN"/>
@@ -1212,7 +1212,7 @@
 					</If>
 					<!-- 2AM & 2PM -->
 					<!-- Old World Fig -->
-					<If Condition="&OldWorldFig; != 0 and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
+					<If Condition="&OldWorldFig; and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Old World Fig"/>
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="BTN"/>
@@ -1221,7 +1221,7 @@
 						<ExFlyTo XYZ="200.8059, 19.17759, -459.1148" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_OldWorldFig; != 0">
+						<If Condition="&Collect_OldWorldFig;">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -1262,7 +1262,7 @@
 						</If>
 					</If>
 					<!-- Old World Fig Seeds -->
-					<If Condition="&OldWorldFigSeeds; != 0 and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
+					<If Condition="&OldWorldFigSeeds; and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Old World Fig Seeds"/>
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="BTN"/>
@@ -1289,15 +1289,15 @@
 						</ExGather>
 					</If>
 					<!-- Yellow Quartz or Green Quartz -->
-					<If Condition="(&YellowQuartz; != 0 or &GreenQuartz; != 0) and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
+					<If Condition="(&YellowQuartz; or &GreenQuartz;) and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Yellow Quartz or Green Quartz"/>
 						<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo XYZ="584.7388, 21.0551, -21.69694" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Yellow Quartz -->
-						<If Condition="&YellowQuartz; != 0">
-							<If Condition="&Collect_YellowQuartz; != 0">
+						<If Condition="&YellowQuartz;">
+							<If Condition="&Collect_YellowQuartz;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -1327,8 +1327,8 @@
 							</If>
 						</If>
 						<!--Green Quartz -->
-						<If Condition="&GreenQuartz; != 0">
-							<If Condition="&Collect_GreenQuartz; != 0">
+						<If Condition="&GreenQuartz;">
+							<If Condition="&Collect_GreenQuartz;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -1359,11 +1359,11 @@
 						</If>
 					</If>
 					<!-- Cuprite or Light Kidney Ore -->
-					<If Condition="(&Cuprite; != 0 or &LightKidneyOre; != 0) and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
+					<If Condition="(&Cuprite; or &LightKidneyOre;) and (IsTimeBetween(1,2) or IsTimeBetween(13,14))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Cuprite or Light Kidney Ore"/>
 						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="MIN"/>
-						<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+						<If Condition="&Use_Aetheryte_Idyllshire;">
 							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 							<RunCode Name="useAethernetEastSide"/>
 						</If>
@@ -1375,9 +1375,9 @@
 						<ExFlyTo XYZ="585.7131, 229.4594, 393.8523" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Light Kidney Ore -->
-						<If Condition="&LightKidneyOre; != 0">
+						<If Condition="&LightKidneyOre;">
 							<!-- Collectable -->
-							<If Condition="&Collect_LightKidneyOre; != 0">
+							<If Condition="&Collect_LightKidneyOre;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -1418,9 +1418,9 @@
 							</If>
 						</If>
 						<!-- Cuprite -->
-						<If Condition="&Cuprite; != 0">
+						<If Condition="&Cuprite;">
 							<!-- Collectable -->
-							<If Condition="&Collect_Cuprite; != 0">
+							<If Condition="&Collect_Cuprite;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -1463,10 +1463,10 @@
 					</If>
 				</If>
 				<!-- 3.00 AM & PM - 3.55 AM & PM -->
-				<If Condition="((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; != 0 or &Ferberite; != 0 or &RawTopaz; != 0 or &RawIolite; != 0)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; != 0 or &CrystallizedSap; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; or &CrystallizedSap;)))) and FreeItemSlots() &gt; 1">
 					<!-- 3AM -->
 					<!-- Lumythrite Ore -->
-					<If Condition="&LumythriteOre; != 0 and IsTimeBetween(2,3)">
+					<If Condition="&LumythriteOre; and IsTimeBetween(2,3)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lumythrite Ore"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="MIN"/>
@@ -1490,7 +1490,7 @@
 						</ExGather>
 					</If>
 					<!-- Ferberite -->
-					<If Condition="&Ferberite; != 0 and IsTimeBetween(2,3)">
+					<If Condition="&Ferberite; and IsTimeBetween(2,3)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ferberite"/>
 						<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 						<RunCode Name="MIN"/>
@@ -1510,7 +1510,7 @@
 						</ExGather>
 					</If>
 					<!-- Raw Topaz -->
-					<If Condition="&RawTopaz; != 0 and IsTimeBetween(2,3)">
+					<If Condition="&RawTopaz; and IsTimeBetween(2,3)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Topaz"/>
 						<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 						<RunCode Name="MIN"/>
@@ -1530,7 +1530,7 @@
 						</ExGather>
 					</If>
 					<!-- Raw Iolite -->
-					<If Condition="&RawIolite; != 0 and IsTimeBetween(2,3)">
+					<If Condition="&RawIolite; and IsTimeBetween(2,3)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Iolite"/>
 						<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 						<RunCode Name="MIN"/>
@@ -1551,7 +1551,7 @@
 					</If>
 					<!-- 3PM -->
 					<!-- Old-growth Camphorwood Log -->
-					<If Condition="&Old-growthCamphorwoodLog; != 0 and IsTimeBetween(14,15)">
+					<If Condition="&Old-growthCamphorwoodLog; and IsTimeBetween(14,15)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Old-growth Camphorwood Log"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
@@ -1575,7 +1575,7 @@
 						</ExGather>
 					</If>
 					<!-- Crystallized Sap -->
-					<If Condition="&CrystallizedSap; != 0 and IsTimeBetween(14,15)">
+					<If Condition="&CrystallizedSap; and IsTimeBetween(14,15)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Crystallized Sap"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
@@ -1600,10 +1600,10 @@
 					</If>
 				</If>
 				<!-- 4.00 AM & PM - 4.55 AM & PM -->
-				<If Condition="((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&LuminiumOre; != 0)) or (IsTimeBetween(15,16) and (&BrownMushroom;!= 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) and FreeItemSlots() &gt; 1">
 					<!-- 4AM -->
 					<!-- Luminium Ore -->
-					<If Condition="&LuminiumOre; != 0 and IsTimeBetween(3,4)">
+					<If Condition="&LuminiumOre; and IsTimeBetween(3,4)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Luminium Ore"/>
 						<TeleportTo Force="True" Name="Helix" AetheryteId="74"/>
 						<RunCode Name="MIN"/>
@@ -1626,7 +1626,7 @@
 					</If>
 					<!-- 4PM -->
 					<!-- Brown Mushroom -->
-					<If Condition="&BrownMushroom; != 0 and IsTimeBetween(15,16)">
+					<If Condition="&BrownMushroom; and IsTimeBetween(15,16)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Brown Mushroom"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
@@ -1651,10 +1651,10 @@
 					</If>
 				</If>
 				<!-- 5.00 AM & PM - 5.55 AM & PM -->
-				<If Condition="((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; != 0 or &SunMica; != 0 or &AurumRegisOre; != 0 or &HoneyLemon; != 0 or &ThanalanTopsoil3; != 0 or &EbonyLog; != 0 or &Cluster_5AM; != 0 or &Trillium; != 0)) or (IsTimeBetween(16,17) and (&VanillaBeans; != 0 or &HoneydewAlmonds; != 0 or &SeventhHeaven; != 0 or &Rosemary; != 0 or &ThavnairianMistletoe_5; != 0 or &VolcanicRockSalt_5; != 0 or &Cluster_5PM; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) and FreeItemSlots() &gt; 1">
 					<!-- 5AM -->
 					<!-- Revenant's Toll -->
-					<If Condition="&Cluster_5AM; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&Cluster_5AM; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Revenant's Toll"/>
 						<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 						<RunCode Name="BTN"/>
@@ -1799,7 +1799,7 @@
 						</If>
 					</If>
 					<!-- Grade 3 Thanalan Topsoil -->
-					<If Condition="&ThanalanTopsoil3; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&ThanalanTopsoil3; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Grade 3 Thanalan Topsoil"/>
 						<TeleportTo Force="True" Name="Horizon" AetheryteId="17"/>
 						<RunCode Name="MIN"/>
@@ -1820,7 +1820,7 @@
 						</ExGather>
 					</If>
 					<!-- Ebony Log -->
-					<If Condition="&EbonyLog; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&EbonyLog; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ebony Log"/>
 						<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 						<RunCode Name="BTN"/>
@@ -1840,7 +1840,7 @@
 						</ExGather>
 					</If>
 					<!-- Trillium -->
-					<If Condition="&Trillium; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&Trillium; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Trillium"/>
 						<TeleportTo Force="True" Name="The Hawthorne Hut" AetheryteId="4"/>
 						<RunCode Name="BTN"/>
@@ -1860,7 +1860,7 @@
 						</ExGather>
 					</If>
 					<!-- Honey Lemon -->
-					<If Condition="&HoneyLemon; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&HoneyLemon; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Honey Lemon"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
@@ -1880,7 +1880,7 @@
 						</ExGather>
 					</If>
 					<!-- Astral Moraine -->
-					<If Condition="&AstralMoraine; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&AstralMoraine; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Astral Moraine"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="MIN"/>
@@ -1888,7 +1888,7 @@
 						<ExFlyTo XYZ="727.6328, 211.1374, -225.1546" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_AstralMoraine; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_AstralMoraine; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1906,7 +1906,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_AstralMoraine; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0">
+						<If Condition="&Collect_AstralMoraine; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1943,14 +1943,14 @@
 						</If>
 					</If>
 					<!-- Sun Mica -->
-					<If Condition="&SunMica; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&SunMica; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Sun Mica"/>
 						<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo XYZ="713.3589, -141.6476, 739.575" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_SunMica; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_SunMica; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -1969,7 +1969,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_SunMica; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0">
+						<If Condition="&Collect_SunMica; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
@@ -2008,14 +2008,14 @@
 						</If>
 					</If>
 					<!-- Aurum Regis Ore -->
-					<If Condition="&AurumRegisOre; != 0 and IsTimeBetween(4,5)">
+					<If Condition="&AurumRegisOre; and IsTimeBetween(4,5)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Aurum Regis Ore"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo XYZ="-696.2029, 239.4825, 553.1216" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_AurumRegisOre; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_AurumRegisOre; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -2034,7 +2034,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_AurumRegisOre; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0">
+						<If Condition="&Collect_AurumRegisOre; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
@@ -2074,7 +2074,7 @@
 					</If>
 					<!-- 5PM -->
 					<!-- Revenant's Toll -->
-					<If Condition="&Cluster_5PM; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&Cluster_5PM; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Revenant's Toll"/>
 						<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 						<RunCode Name="MIN"/>
@@ -2219,7 +2219,7 @@
 						</If>
 					</If>
 					<!-- Thavnairian Mistletoe -->
-					<If Condition="&ThavnairianMistletoe_5; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&ThavnairianMistletoe_5; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Thavnairian Mistletoe"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="BTN"/>
@@ -2239,7 +2239,7 @@
 						</ExGather>
 					</If>
 					<!-- Volcanic Rock Salt -->
-					<If Condition="&VolcanicRockSalt_5; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&VolcanicRockSalt_5; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Volcanic Rock Salt"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="MIN"/>
@@ -2259,7 +2259,7 @@
 						</ExGather>
 					</If>
 					<!-- Rosemary -->
-					<If Condition="&Rosemary; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&Rosemary; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Rosemary"/>
 						<TeleportTo Force="True" Name="The Hawthorne Hut" AetheryteId="4"/>
 						<RunCode Name="BTN"/>
@@ -2279,7 +2279,7 @@
 						</ExGather>
 					</If>
 					<!-- Vanilla Beans -->
-					<If Condition="&VanillaBeans; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&VanillaBeans; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Vanilla Beans"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -2288,7 +2288,7 @@
 						<ExFlyTo XYZ="-29.81721, 122.386, -67.21716" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_VanillaBeans; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_VanillaBeans; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2303,7 +2303,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_VanillaBeans; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0">
+						<If Condition="&Collect_VanillaBeans; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2334,7 +2334,7 @@
 						</If>
 					</If>
 					<!-- Honeydew Almonds -->
-					<If Condition="&HoneydewAlmonds; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&HoneydewAlmonds; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Honeydew Almonds"/>
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
@@ -2342,7 +2342,7 @@
 						<ExFlyTo XYZ="-54.91675, 32.65963, -793.1055" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_HoneydewAlmonds; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_HoneydewAlmonds; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
@@ -2363,7 +2363,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_HoneydewAlmonds; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0">
+						<If Condition="&Collect_HoneydewAlmonds; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
@@ -2406,7 +2406,7 @@
 						</If>
 					</If>
 					<!-- Seventh Heaven -->
-					<If Condition="&SeventhHeaven; != 0 and IsTimeBetween(16,17)">
+					<If Condition="&SeventhHeaven; and IsTimeBetween(16,17)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Seventh Heaven"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
@@ -2414,7 +2414,7 @@
 						<ExFlyTo XYZ="-234.3543, 12.46441, 703.6292" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_SeventhHeaven; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_SeventhHeaven; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2429,7 +2429,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_SeventhHeaven; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0">
+						<If Condition="&Collect_SeventhHeaven; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
@@ -2459,16 +2459,16 @@
 							</ExGather>
 						</If>
 					</If>
-					</If>
+				</If>
 				<!-- 6.00 AM & PM - 6.55 AM & PM -->
-				<If Condition="((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre; != 0)) or (IsTimeBetween(17,18) and (&Teaklog;!= 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&Teaklog;)))) and FreeItemSlots() &gt; 1">
 					<!-- 6AM -->
 					<!-- Zeolite Ore -->
-					<If Condition="&ZeoliteOre; != 0 and IsTimeBetween(5,6)">
+					<If Condition="&ZeoliteOre; and IsTimeBetween(5,6)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Zeolite Ore"/>
 						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="MIN"/>
-						<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+						<If Condition="&Use_Aetheryte_Idyllshire;">
 							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 							<RunCode Name="useAethernetWestSide"/>
 						</If>
@@ -2495,11 +2495,11 @@
 					</If>
 					<!-- 6PM -->
 					<!-- Teak log -->
-					<If Condition="&Teaklog; != 0 and IsTimeBetween(17,18)">
+					<If Condition="&Teaklog; and IsTimeBetween(17,18)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Teak log"/>
 						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="BTN"/>
-						<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+						<If Condition="&Use_Aetheryte_Idyllshire;">
 							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 							<RunCode Name="useAethernetWestSide"/>
 						</If>
@@ -2531,10 +2531,10 @@
 					</If>
 				</If>
 				<!-- 7.00 AM & PM - 7.55 AM & PM -->
-				<If Condition="((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; != 0 or &VioletQuartz; != 0 or &RedAlumen; != 0 or &UmbralRock; != 0 or &RedolentLog; != 0 or &ShroudTopsoil3; != 0 or &YoungCieldalaesSpinach; != 0)) or (IsTimeBetween(18,19) and (&DravanianPaprika; != 0 or &WattleBark; != 0 or &Snurbleberry; != 0 or &VolcanicRockSalt_7; != 0 or &ThavnairianMistletoe_7; != 0 or &VirginBasiliskEgg; != 0 or &LaNosceanTopsoil3; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) and FreeItemSlots() &gt; 1">
 					<!-- 7AM -->
 					<!-- Umbral Rock -->
-					<If Condition="&UmbralRock; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&UmbralRock; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Umbral Rock"/>
 						<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 						<RunCode Name="MIN"/>
@@ -2554,7 +2554,7 @@
 						</ExGather>
 					</If>
 					<!-- Redolent Log -->
-					<If Condition="&RedolentLog; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&RedolentLog; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Redolent Log"/>
 						<TeleportTo Force="True" Name="Bentbranch Meadows" AetheryteId="3"/>
 						<RunCode Name="BTN"/>
@@ -2574,7 +2574,7 @@
 						</ExGather>
 					</If>
 					<!-- Grade 3 Shroud Topsoil -->
-					<If Condition="&ShroudTopsoil3; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&ShroudTopsoil3; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Grade 3 Shroud Topsoil"/>
 						<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
 						<RunCode Name="MIN"/>
@@ -2595,7 +2595,7 @@
 						</ExGather>
 					</If>
 					<!-- Young Cieldalaes Spinach -->
-					<If Condition="&YoungCieldalaesSpinach; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&YoungCieldalaesSpinach; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Young Cieldalaes Spinach"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
@@ -2619,7 +2619,7 @@
 						</ExGather>
 					</If>
 					<!-- Violet Quartz -->
-					<If Condition="&VioletQuartz; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&VioletQuartz; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Violet Quartz"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="MIN"/>
@@ -2641,11 +2641,11 @@
 						</ExGather>
 					</If>
 					<!-- Blue Quartz -->
-					<If Condition="&BlueQuartz; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&BlueQuartz; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Blue Quartz"/>
 						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="MIN"/>
-						<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+						<If Condition="&Use_Aetheryte_Idyllshire;">
 							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 							<RunCode Name="useAethernetWestSide"/>
 						</If>
@@ -2674,7 +2674,7 @@
 						</ExGather>
 					</If>
 					<!-- Red Alumen -->
-					<If Condition="&RedAlumen; != 0 and IsTimeBetween(6,7)">
+					<If Condition="&RedAlumen; and IsTimeBetween(6,7)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Red Alumen"/>
 						<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 						<RunCode Name="MIN"/>
@@ -2703,7 +2703,7 @@
 					</If>
 					<!-- 7PM -->
 					<!-- Grade 3 La Noscean Topsoil -->
-					<If Condition="&LaNosceanTopsoil3; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&LaNosceanTopsoil3; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Grade 3 La Noscean Topsoil"/>
 						<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 						<RunCode Name="MIN"/>
@@ -2724,7 +2724,7 @@
 						</ExGather>
 					</If>
 					<!-- Thavnairian Mistletoe -->
-					<If Condition="&ThavnairianMistletoe_7; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&ThavnairianMistletoe_7; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Thavnairian Mistletoe"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="BTN"/>
@@ -2744,7 +2744,7 @@
 						</ExGather>
 					</If>
 					<!-- Volcanic Rock Salt -->
-					<If Condition="&VolcanicRockSalt_7; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&VolcanicRockSalt_7; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Volcanic Rock Salt"/>
 						<TeleportTo Force="True" Name="Wineport" AetheryteId="12"/>
 						<RunCode Name="MIN"/>
@@ -2764,7 +2764,7 @@
 						</ExGather>
 					</If>
 					<!-- Virgin Basilisk Egg -->
-					<If Condition="&VirginBasiliskEgg; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&VirginBasiliskEgg; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Virgin Basilisk Egg"/>
 						<TeleportTo Force="True" Name="Ceruleum Processing Plant" AetheryteId="22"/>
 						<RunCode Name="MIN"/>
@@ -2784,7 +2784,7 @@
 						</ExGather>
 					</If>
 					<!-- Dravanian Paprika -->
-					<If Condition="&DravanianPaprika; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&DravanianPaprika; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dravanian Paprika"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -2809,7 +2809,7 @@
 						</ExGather>
 					</If>
 					<!-- Wattle Bark -->
-					<If Condition="&WattleBark; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&WattleBark; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Wattle Bark"/>
 						<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 						<RunCode Name="BTN"/>
@@ -2836,11 +2836,11 @@
 						</ExGather>
 					</If>
 					<!-- Snurbleberry -->
-					<If Condition="&Snurbleberry; != 0 and IsTimeBetween(18,19)">
+					<If Condition="&Snurbleberry; and IsTimeBetween(18,19)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snurbleberry"/>
 						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="BTN"/>
-						<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+						<If Condition="&Use_Aetheryte_Idyllshire;">
 							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 							<RunCode Name="useAethernetEastSide"/>
 						</If>
@@ -2867,10 +2867,10 @@
 					</If>
 				</If>
 				<!-- 8.00 AM & PM - 8.55 AM & PM -->
-				<If Condition="((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; != 0)) or (IsTimeBetween(19,20) and (&NobleSage;!= 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) and FreeItemSlots() &gt; 1">
 					<!-- 8AM -->
 					<!-- Tungstite -->
-					<If Condition="&Tungstite; != 0 and IsTimeBetween(7,8)">
+					<If Condition="&Tungstite; and IsTimeBetween(7,8)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Tungstite"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="MIN"/>
@@ -2896,7 +2896,7 @@
 					</If>
 					<!-- 8PM -->
 					<!-- Noble Sage -->
-					<If Condition="&NobleSage; != 0 and IsTimeBetween(19,20)">
+					<If Condition="&NobleSage; and IsTimeBetween(19,20)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Noble Sage"/>
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="BTN"/>
@@ -2919,10 +2919,10 @@
 					</If>
 				</If>
 				<!-- 9.00 AM & PM - 9.55 AM & PM -->
-				<If Condition="((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; != 0 or (IsTimeBetween(8,9) and (&GoldOre; != 0 or &SpruceLog; != 0 or &PricklyPineapple; != 0 or &PricklyPineappleSeeds; != 0 or &Cluster_9AM; != 0 or &Apricot; != 0)) or (IsTimeBetween(20,21) and (&Cluster_9PM; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Cluster_9PM;)))) and FreeItemSlots() &gt; 1">
 					<!-- 9AM -->
 					<!-- Revenant's Toll -->
-					<If Condition="&Cluster_9AM; != 0 and IsTimeBetween(8,9)">
+					<If Condition="&Cluster_9AM; and IsTimeBetween(8,9)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Revenant's Toll"/>
 						<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 						<RunCode Name="BTN"/>
@@ -3067,7 +3067,7 @@
 						</If>
 					</If>
 					<!-- Spruce Log -->
-					<If Condition="&SpruceLog; != 0 and IsTimeBetween(8,9)">
+					<If Condition="&SpruceLog; and IsTimeBetween(8,9)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Spruce Log"/>
 						<TeleportTo Force="True" Name="Camp Dragonhead" AetheryteId="23"/>
 						<RunCode Name="BTN"/>
@@ -3087,7 +3087,7 @@
 						</ExGather>
 					</If>
 					<!-- Gold ore -->
-					<If Condition="&GoldOre; != 0 and IsTimeBetween(8,9)">
+					<If Condition="&GoldOre; and IsTimeBetween(8,9)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Gold ore"/>
 						<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18"/>
 						<RunCode Name="MIN"/>
@@ -3107,7 +3107,7 @@
 						</ExGather>
 					</If>
 					<!-- Apricot -->
-					<If Condition="&Apricot; != 0 and IsTimeBetween(8,9)">
+					<If Condition="&Apricot; and IsTimeBetween(8,9)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Apricot"/>
 						<TeleportTo Force="True" Name="Summerford Farms" AetheryteId="52"/>
 						<RunCode Name="BTN"/>
@@ -3127,7 +3127,7 @@
 						</ExGather>
 					</If>
 					<!-- Prickly Pineapple -->
-					<If Condition="&PricklyPineapple; != 0 and IsTimeBetween(8,9)">
+					<If Condition="&PricklyPineapple; and IsTimeBetween(8,9)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Prickly Pineapple"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
@@ -3147,7 +3147,7 @@
 						</ExGather>
 					</If>
 					<!-- Prickly Pineapple Seeds -->
-					<If Condition="&PricklyPineappleSeeds; != 0 and IsTimeBetween(8,9)">
+					<If Condition="&PricklyPineappleSeeds; and IsTimeBetween(8,9)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Prickly Pineapple Seeds"/>
 						<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 						<RunCode Name="BTN"/>
@@ -3169,7 +3169,7 @@
 					</If>
 					<!-- 9PM -->
 					<!-- Revenant's Toll -->
-					<If Condition="&Cluster_9PM; != 0 and IsTimeBetween(20,21)">
+					<If Condition="&Cluster_9PM; and IsTimeBetween(20,21)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Revenant's Toll"/>
 						<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 						<RunCode Name="MIN"/>
@@ -3315,7 +3315,7 @@
 					</If>
 					<!-- 9AM & 9PM -->
 					<!-- Chysahl Greens -->
-					<If Condition="&Chysahl; != 0 and (IsTimeBetween(8,9) or IsTimeBetween(20,21))">
+					<If Condition="&Chysahl; and (IsTimeBetween(8,9) or IsTimeBetween(20,21))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Chysahl Greens"/>
 						<TeleportTo Force="True" Name="Falcon's Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -3324,7 +3324,7 @@
 						<ExFlyTo XYZ="-684.4172, 130.6977, -600.1046" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Condition.IsTimeBetween(20,21.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_Chysahl; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_Chysahl; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3339,7 +3339,7 @@
 							</ExGather>
 						</If>
 						<!-- High Rate If Capped -->
-						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and (&HighRateIfCapped; != 0 or &Collectability_Chysahl; == 550)">
+						<If Condition="&Collect_Chysahl; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and (&HighRateIfCapped; or &Collectability_Chysahl; == 550)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3354,7 +3354,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_Chysahl; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0 and &Collectability_Chysahl; != 550">
+						<If Condition="&Collect_Chysahl; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; and &HighRateIfCapped; == 0 and &Collectability_Chysahl; != 550">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3386,10 +3386,10 @@
 					</If>
 				</If>
 				<!-- 10.00 AM & PM - 10.55 AM & PM -->
-				<If Condition="((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; != 0 or &CoerthanTeaSeeds; != 0 or &HeavensLemon; != 0 or &AbalathianMistletoe; != 0 or &CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0 or &Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0 or (IsTimeBetween(9,10) and (&CypressLog; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) and FreeItemSlots() &gt; 1">
 					<!-- 10AM -->
 					<!-- Cypress Log -->
-					<If Condition="&CypressLog; != 0 and IsTimeBetween(9,10)">
+					<If Condition="&CypressLog; and IsTimeBetween(9,10)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cypress Log"/>
 						<TeleportTo Force="True" Name="Bentbranch Meadows" AetheryteId="3"/>
 						<RunCode Name="BTN"/>
@@ -3414,7 +3414,7 @@
 					<!-- 10PM -->
 					<!-- 10AM & 10PM -->
 					<!-- Pearl Sprouts Seeds -->
-					<If Condition="&PearlSproutSeeds; != 0 and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
+					<If Condition="&PearlSproutSeeds; and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Pearl Sprouts Seeds"/>
 						<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -3438,7 +3438,7 @@
 						</ExGather>
 					</If>
 					<!-- Coerthan Tea Seeds -->
-					<If Condition="&CoerthanTeaSeeds; != 0 and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
+					<If Condition="&CoerthanTeaSeeds; and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Coerthan Tea Seeds"/>
 						<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -3462,15 +3462,15 @@
 						</ExGather>
 					</If>
 					<!-- Pyrite or Chalcocite or Limonite -->
-					<If Condition="(&Pyrite; != 0 or &Chalcocite; != 0 or &Limonite; != 0) and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
+					<If Condition="(&Pyrite; or &Chalcocite; or &Limonite;) and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Pyrite or Chalcocite or Limonite"/>
 						<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 						<RunCode Name="MIN"/>
 						<ExFlyTo XYZ="216.7381, 2.187376, -236.3906" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<!-- Pyrite -->
-						<If Condition="&Pyrite; != 0">
-							<If Condition="&Collect_Pyrite; != 0">
+						<If Condition="&Pyrite;">
+							<If Condition="&Collect_Pyrite;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3500,8 +3500,8 @@
 							</If>
 						</If>
 						<!-- Chalcocite -->
-						<If Condition="&Chalcocite; != 0">
-							<If Condition="&Collect_Chalcocite; != 0">
+						<If Condition="&Chalcocite;">
+							<If Condition="&Collect_Chalcocite;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3531,8 +3531,8 @@
 							</If>
 						</If>
 						<!-- Limonite -->
-						<If Condition="&Limonite; != 0">
-							<If Condition="&Collect_Limonite; != 0">
+						<If Condition="&Limonite;">
+							<If Condition="&Collect_Limonite;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3563,7 +3563,7 @@
 						</If>
 					</If>
 					<!-- Coerthan Tea Leaves or Pearl Sprouts or Chives -->
-					<If Condition="(&CoerthanTeaLeaves; != 0 or &PearlSprouts; != 0 or &Chives; != 0) and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
+					<If Condition="(&CoerthanTeaLeaves; or &PearlSprouts; or &Chives;) and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Coerthan Tea Leaves or Pearl Sprouts or Chives"/>
 						<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 						<RunCode Name="BTN"/>
@@ -3571,8 +3571,8 @@
 						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<!-- Coerthan Tea Leaves -->
-						<If Condition="&CoerthanTeaLeaves; != 0">
-							<If Condition="&Collect_CoerthanTeaLeaves; != 0">
+						<If Condition="&CoerthanTeaLeaves;">
+							<If Condition="&Collect_CoerthanTeaLeaves;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3608,8 +3608,8 @@
 							</If>
 						</If>
 						<!-- Pearl Sprouts -->
-						<If Condition="&PearlSprouts; != 0">
-							<If Condition="&Collect_PearlSprouts; != 0">
+						<If Condition="&PearlSprouts;">
+							<If Condition="&Collect_PearlSprouts;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3645,8 +3645,8 @@
 							</If>
 						</If>
 						<!-- Chives -->
-						<If Condition="&Chives; != 0">
-							<If Condition="&Collect_Chives; != 0">
+						<If Condition="&Chives;">
+							<If Condition="&Collect_Chives;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
@@ -3683,7 +3683,7 @@
 						</If>
 					</If>
 					<!-- Heavens Lemon or Abalathian Mistletoe -->
-					<If Condition="(&HeavensLemon; != 0 or &AbalathianMistletoe; != 0) and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
+					<If Condition="(&HeavensLemon; or &AbalathianMistletoe;) and (IsTimeBetween(9,10) or IsTimeBetween(21,22))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Heavens Lemon or Abalathian Mistletoe"/>
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
@@ -3694,9 +3694,9 @@
 						<ExFlyTo XYZ="501.7628, -35.17665, -166.8061" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
 						<!-- Heavens Lemon -->
-						<If Condition="&HeavensLemon; != 0">
+						<If Condition="&HeavensLemon;">
 							<!-- Collectable -->
-							<If Condition="&Collect_HeavensLemon; != 0">
+							<If Condition="&Collect_HeavensLemon;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -3737,9 +3737,9 @@
 							</If>
 						</If>
 						<!-- Abalathian Mistletoe -->
-						<If Condition="&AbalathianMistletoe; != 0">
+						<If Condition="&AbalathianMistletoe;">
 							<!-- Collectable -->
-							<If Condition="&Collect_AbalathianMistletoe; != 0">
+							<If Condition="&Collect_AbalathianMistletoe;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -3782,12 +3782,12 @@
 					</If>
 				</If>
 				<!-- 11.00 AM & PM - 11.55 AM & PM -->
-				<If Condition="((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite; != 0)) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) and FreeItemSlots() &gt; 1">
 					<!-- 11AM -->
 					<!-- 11PM -->
 					<!-- 11AM & 11PM -->
 					<!-- Adamantite -->
-					<If Condition="&Adamantite; != 0 and (IsTimeBetween(10,11) or IsTimeBetween(22,23))">
+					<If Condition="&Adamantite; and (IsTimeBetween(10,11) or IsTimeBetween(22,23))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Adamantite Ore"/>
 						<TeleportTo Force="True" Name="Helix" aetheryteId="74"/>
 						<RunCode Name="MIN"/>
@@ -3796,7 +3796,7 @@
 						<ExFlyTo XYZ="41.74664, 16.07355, -843.0107" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(10,11.1) or Condition.IsTimeBetween(22,23.1)"/>
 						<!-- Collectable -->
-						<If Condition="&Collect_Adamantite; != 0 and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
+						<If Condition="&Collect_Adamantite; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3816,7 +3816,7 @@
 							</ExGather>
 						</If>
 						<!-- High Rate If Capped -->
-						<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and (&HighRateIfCapped; != 0 or &Collectability_Adamantite; == 550)">
+						<If Condition="&Collect_Adamantite; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and (&HighRateIfCapped; or &Collectability_Adamantite; == 550)">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3836,7 +3836,7 @@
 							</ExGather>
 						</If>
 						<!-- Regular If Capped -->
-						<If Condition="&Collect_Adamantite; != 0 and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; != 0 and &HighRateIfCapped; == 0 and &Collectability_Adamantite; != 550">
+						<If Condition="&Collect_Adamantite; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; and &HighRateIfCapped; == 0 and &Collectability_Adamantite; != 550">
 							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
@@ -3857,32 +3857,32 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_Adamantite; == 0">
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
-							<GatherObjects>
-								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Adamantite Ore</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_50_60;</GatherRotation>
-							<GatherSpots>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="71.82657, -0.7113832, -859.5731" nodeLocation="72.07767, 0.7522836, -854.5031"/>
-								<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="24.49877, 0.1047641, -827.0684" nodeLocation="25.29292, 0.5668808, -833.7905"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="87.43224, -0.9560863, -795.0317" nodeLocation="79.63015, 0.5219008, -804.5839"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot Radius="90" XYZ="41.74664, 16.07355, -843.0107"/>
-							</HotSpots>
-						</ExGather>
-					</If>
+							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+								<GatherObjects>
+									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Adamantite Ore</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_50_60;</GatherRotation>
+								<GatherSpots>
+									<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="71.82657, -0.7113832, -859.5731" nodeLocation="72.07767, 0.7522836, -854.5031"/>
+									<IndirectApproachGatherSpot ReturnToApproachLocation="False" ApproachLocation="24.49877, 0.1047641, -827.0684" nodeLocation="25.29292, 0.5668808, -833.7905"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="87.43224, -0.9560863, -795.0317" nodeLocation="79.63015, 0.5219008, -804.5839"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot Radius="90" XYZ="41.74664, 16.07355, -843.0107"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 				</If>
 				<!-- 12.00 AM & PM - 12.55 AM & PM -->
-				<If Condition="((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; != 0 or &RedQuartz; != 0 or &CloudBanana; != 0 or &Morel; != 0 or &Porcini; != 0 or &DravanianMistletoe; != 0 or (IsTimeBetween(11,12) and (&StarCottonBoll; != 0)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;)))) and FreeItemSlots() &gt; 1">
 					<!-- 12AM -->
 					<!-- 12PM -->
 					<!-- Star Cotton Boll -->
-					<If Condition="&StarCottonBoll; != 0 and IsTimeBetween(11,12)">
+					<If Condition="&StarCottonBoll; and IsTimeBetween(11,12)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Star Cotton Boll"/>
 						<TeleportTo Force="True" Name="Helix" AetheryteId="74"/>
 						<RunCode Name="BTN"/>
@@ -3906,7 +3906,7 @@
 					</If>
 					<!-- 12AM & 12PM -->
 					<!-- Porcini or Dravanian Mistletoe -->
-					<If Condition="(&Porcini; != 0 or &DravanianMistletoe; != 0) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
+					<If Condition="(&Porcini; or &DravanianMistletoe;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Porcini or Dravanian Mistletoe"/>
 						<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 						<RunCode Name="BTN"/>
@@ -3914,8 +3914,8 @@
 						<ExFlyTo XYZ="198.0199, 257.0274, -683.1827" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Porcini -->
-						<If Condition="&Porcini; != 0">
-							<If Condition="&Collect_Porcini; != 0">
+						<If Condition="&Porcini;">
+							<If Condition="&Collect_Porcini;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -3953,8 +3953,8 @@
 							</If>
 						</If>
 						<!-- Dravanian Mistletoe -->
-						<If Condition="&DravanianMistletoe; != 0">
-							<If Condition="&Collect_DravanianMistletoe; != 0">
+						<If Condition="&DravanianMistletoe;">
+							<If Condition="&Collect_DravanianMistletoe;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -3993,11 +3993,11 @@
 						</If>
 					</If>
 					<!-- Cloud Banana or Morel -->
-					<If Condition="(&CloudBanana; != 0 or &Morel; != 0) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
+					<If Condition="(&CloudBanana; or &Morel;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cloud Banana or Morel"/>
 						<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 						<RunCode Name="BTN"/>
-						<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+						<If Condition="&Use_Aetheryte_Idyllshire;">
 							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 							<RunCode Name="useAethernetWestSide"/>
 						</If>
@@ -4010,9 +4010,9 @@
 						<ExFlyTo XYZ="-229.9601, 220.9936, 726.4595" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Cloud Banana -->
-						<If Condition="&CloudBanana; != 0">
+						<If Condition="&CloudBanana;">
 							<!-- Collectable -->
-							<If Condition="&Collect_CloudBanana; != 0">
+							<If Condition="&Collect_CloudBanana;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -4051,9 +4051,9 @@
 							</If>
 						</If>
 						<!-- Morel -->
-						<If Condition="&Morel; != 0">
+						<If Condition="&Morel;">
 							<!-- Collectable -->
-							<If Condition="&Collect_Morel; != 0">
+							<If Condition="&Collect_Morel;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
@@ -4093,7 +4093,7 @@
 						</If>
 					</If>
 					<!-- Abalathian Rock Salt or Red Quartz -->
-					<If Condition="(&AbalathianRockSalt; != 0 or &RedQuartz; != 0) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
+					<If Condition="(&AbalathianRockSalt; or &RedQuartz;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Abalathian Rock Salt or Red Quartz"/>
 						<TeleportTo Force="True" Name="Ok' Zundu" AetheryteId="73"/>
 						<ExMoveTo XYZ="-593.2999, -51.74009, -416.2549"/>
@@ -4102,9 +4102,9 @@
 						<ExFlyTo XYZ="-747.2891, -74.98775, -733.9128" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1) or Condition.IsTimeBetween(23,24.1)"/>
 						<!-- Abalathian Rock Salt -->
-						<If Condition="&AbalathianRockSalt; != 0">
+						<If Condition="&AbalathianRockSalt;">
 							<!-- Collectable -->
-							<If Condition="&Collect_AbalathianRockSalt; != 0">
+							<If Condition="&Collect_AbalathianRockSalt;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -4135,9 +4135,9 @@
 							</If>
 						</If>
 						<!-- Red Quartz -->
-						<If Condition="&RedQuartz; != 0">
+						<If Condition="&RedQuartz;">
 							<!-- Collectable -->
-							<If Condition="&Collect_RedQuartz; != 0">
+							<If Condition="&Collect_RedQuartz;">
 								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectale;" CordialTime="&Cordial_Time_50_60_Collectale;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
@@ -4171,10 +4171,10 @@
 				</If>
 			</If>
 			<!-- Psyduck -->
-			<If Condition="&Psyduck; != 0 and (&KeepFishing_Psyduck; != 0 or &UnspoiledWaitCondition;)">
+			<If Condition="&Psyduck; and (&KeepFishing_Psyduck; or &UnspoiledWaitCondition;)">
 				<!-- Feast or Famine -->
 				<!-- Nepto Dragon -->
-				<If Condition="&NeptoDragon_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(137, 7, 8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Rhotano Sea (Privateer Sterncastle) ~ Nepto Dragon !"/>
 					<If Condition="not HasAtLeast(2606,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Nepto Dragon : Not enough bait available, I'm going to buy you some !"/>
@@ -4186,7 +4186,7 @@
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="607.71, 11.62379, 391.8909" ForceLanding="True"/>
 					<UseTransport Name="Rhotano Sea (Privateer Sterncastle)" InteractDistance="3.0" NpcId="1003585" DialogOption="1" XYZ="607.71, 11.62379, 391.8909"/>
-					<ExFish Condition="HasAtLeast(2606,1) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Northern Krill">
+					<ExFish Condition="HasAtLeast(2606,1) and SkywatcherPlugin.IsWeatherInZone(137, 7, 8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Northern Krill">
 						<Keepers>
 							<Keeper name="Nepto Dragon"/>
 						</Keepers>
@@ -4206,7 +4206,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Kuno the Killer -->
-				<If Condition="&KunotheKiller_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The North Shards ~ Kuno the Killer !"/>
 					<If Condition="not HasAtLeast(2599,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Kuno the Killer : Not enough bait available, I'm going to buy you some !"/>
@@ -4216,7 +4216,7 @@
 					</If>
 					<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="HasAtLeast(2599,1) and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and not(Core.Player.HasAura(568)) and IsTimeBetween(8,16)  and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" sitRate=".69" Bait="Honey Worm">
+					<ExFish Condition="HasAtLeast(2599,1) and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and not(Core.Player.HasAura(568)) and IsTimeBetween(8,16)  and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" sitRate=".69" Bait="Honey Worm">
 						<Keepers>
 							<Keeper name="Kuno the Killer"/>
 							<Keeper name="Canavan"/>
@@ -4231,7 +4231,7 @@
 							<FishSpot XYZ="460.7786, -4.933786, -749.075" Heading="0.6825423"/>
 						</FishSpots>
 					</ExFish>
-					<ExFish Condition="HasAtLeast(2599,1) and Core.Player.HasAura(568) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="10" sitRate=".69" Bait="Honey Worm">
+					<ExFish Condition="HasAtLeast(2599,1) and Core.Player.HasAura(568) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="10" sitRate=".69" Bait="Honey Worm">
 						<Keepers>
 							<Keeper name="Kuno the Killer"/>
 							<Keeper name="Canavan"/>
@@ -4249,7 +4249,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Shonisaurus -->
-				<If Condition="&Shonisaurus_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Witchdrop ~ Shonisaurus !"/>
 					<If Condition="not HasAtLeast(2605,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Shonisaurus : Not enough bait available, I'm going to buy you some !"/>
@@ -4261,8 +4261,8 @@
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 					<If Condition="IsTimeBetween(0,8)">
-						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
 								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
@@ -4283,8 +4283,8 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(8,16)">
-						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
 								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
@@ -4305,8 +4305,8 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(16,24)">
-						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
+						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Hoverworm">
 							<Keepers>
 								<Keeper name="Shonisaurus"/>
 								<Keeper name="Mahar"/>
@@ -4329,7 +4329,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Helicoprion -->
-				<If Condition="&Helicoprion_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt;  ~ Helicoprion !"/>
 					<TeleportTo Force="True" Name="Forgotten Springs" AetheryteId="20"/>
 					<RunCode Name="FSH"/>
@@ -4340,8 +4340,8 @@
 					</If>
 					<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
 					<If Condition="IsTimeBetween(0,8)">
-						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
+						<WaitWhile Condition="IsTimeBetween(0,8) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 							<Keepers>
 								<Keeper name="Helicoprion"/>
 								<Keeper name="Magic Carpet"/>
@@ -4355,8 +4355,8 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(8,16)">
-						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(16,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
+						<WaitWhile Condition="IsTimeBetween(8,16) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(16,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 							<Keepers>
 								<Keeper name="Helicoprion"/>
 								<Keeper name="Magic Carpet"/>
@@ -4372,7 +4372,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Namitaro -->
-				<If Condition="&Namitaro_Psyduck; != 0 and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Urth's Gift ~ Namitaro !"/>
 					<If Condition="not HasAtLeast(2603,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Namitaro : Not enough bait available, I'm going to buy you some !"/>
@@ -4382,7 +4382,7 @@
 					</If>
 					<TeleportTo Force="True" Name="Quarrymill" AetheryteId="5"/>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="HasAtLeast(2603,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and not(Core.Player.HasAura(568)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Glowworm">
+					<ExFish Condition="HasAtLeast(2603,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10) and not(Core.Player.HasAura(568)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Glowworm">
 						<Keepers>
 							<Keeper name="Giant Takitaro"/>
 						</Keepers>
@@ -4398,7 +4398,7 @@
 						</FishSpots>
 					</ExFish>
 					<RunCode Name="StopFishing"/>
-					<ExFish Condition="HasAtLeast(2624,1) and Core.Player.HasAura(568) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Topwater Frog">
+					<ExFish Condition="HasAtLeast(2624,1) and Core.Player.HasAura(568) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Topwater Frog">
 						<Keepers>
 							<Keeper name="Namitaro"/>
 						</Keepers>
@@ -4416,7 +4416,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Endoceras -->
-				<If Condition="&Endoceras_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Isles of Umbra Southshore ~ Endoceras !"/>
 					<If Condition="not(HasAtLeast(2596,50)) and not(HasAtLeast(2616,1))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Endoceras : Not enough bait available, I'm going to buy you some !"/>
@@ -4430,8 +4430,8 @@
 					<UseTransport Name="Isles of Umbra Southshore" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
 					<ExMoveTo XYZ="-449.8933, -37.63804, 745.066" ForceLanding="True"/>
 					<If Condition="IsTimeBetween(14,16)">
-						<WaitWhile Condition="IsTimeBetween(14,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
+						<WaitWhile Condition="IsTimeBetween(14,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="IsTimeBetween(20,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
 							<Baits>
 								<Bait Name="Spoon Worm"/>
 								<Bait Name="Steel Jig"/>
@@ -4450,8 +4450,8 @@
 						</ExFish>
 					</If>
 					<If Condition="IsTimeBetween(16,24)">
-						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)"/>
-						<ExFish Condition="IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
+						<WaitWhile Condition="IsTimeBetween(16,24) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="IsTimeBetween(0,4) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" sitRate=".69">
 							<Baits>
 								<Bait Name="Spoon Worm"/>
 								<Bait Name="Steel Jig"/>
@@ -4473,7 +4473,7 @@
 				</If>
 				<!-- The Beast Of Brewer's Beacon -->
 				<!-- Titanic Sawfish -->
-				<If Condition="&TitanicSawfish_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Cap Westwind ~ Titanic Sawfish"/>
 					<If Condition="not HasAtLeast(2613,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Titanic Sawfish : Not enough bait available, I'm going to buy you some !"/>
@@ -4485,7 +4485,7 @@
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="-553.6001, 52.34926, -769.0154" Type="RandomPointWithin" Distance="10"/>
 					<WaitWhile Condition="IsTimeBetween(8,9)"/>
-					<ExFish Condition="HasAtLeast(2613,1) and IsTimeBetween(8,15) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Shrimp Cage Feeder">
+					<ExFish Condition="HasAtLeast(2613,1) and IsTimeBetween(8,15) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Shrimp Cage Feeder">
 						<Keepers>
 							<Keeper Name="Pirate's Bane"/>
 							<Keeper Name="Titanic Sawfish"/>
@@ -4505,13 +4505,13 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Navigator' s Brand -->
-				<If Condition="&NavigatorsBrand_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Brewer's Beacon ~ Navigator' s Brand"/>
 					<TeleportTo Force="True" Name="Swiftperch" AetheryteId="13"/>
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="450.6311, 10.53571, 433.3366" Type="RandomPointWithin" Distance="10"/>
 					<WaitWhile Condition="IsTimeBetween(8,9)"/>
-					<ExFish Condition="HasAtLeast(2628,1) and IsTimeBetween(8,15) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Yumizuno">
+					<ExFish Condition="HasAtLeast(2628,1) and IsTimeBetween(8,15) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Yumizuno">
 						<Keepers>
 							<Keeper Name="Pirate's Bane"/>
 							<Keeper Name="Titanic Sawfish"/>
@@ -4528,7 +4528,7 @@
 				</If>
 				<!-- Big Fish -->
 				<!-- Frilled Shark -->
-				<If Condition="&FrilledShark_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Ship Graveyard ~ Frilled Shark !"/>
 					<If Condition="not HasAtLeast(2613,50) and HasAtLeast(2619,1) and HasAtLeast(2616,1)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Frilled Shark  : Not enough bait available, I'm going to buy you some !"/>
@@ -4539,7 +4539,7 @@
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="317.2209, -36.325, 352.0146" ForceLanding="True"/>
 					<UseTransport Name="The Ship Graveyard" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
-					<ExFish Condition="HasAtLeast(2613,1) and SkywatcherPlugin.IsWeatherInZone(138 , 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69">
+					<ExFish Condition="HasAtLeast(2613,1) and SkywatcherPlugin.IsWeatherInZone(138 , 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69">
 						<Baits>
 							<Bait Name="Heavy Steel Jig"/>
 							<Bait Name="Steel Jig"/>
@@ -4558,7 +4558,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Ninja Betta -->
-				<If Condition="&NinjaBetta_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Tangle ~ Ninja Betta !"/>
 					<If Condition="not HasAtLeast(2592,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Ninja Betta : Not enough bait available, I'm going to buy you some !"/>
@@ -4568,7 +4568,7 @@
 					</If>
 					<TeleportTo Force="True" Name="Revenant's Toll" AetheryteId="24"/>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="HasAtLeast(2592,1) and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Midge Basket">
+					<ExFish Condition="HasAtLeast(2592,1) and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" sitRate=".69" Bait="Midge Basket">
 						<Keepers>
 							<Keeper name="Ninja Betta"/>
 						</Keepers>
@@ -4581,7 +4581,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- Magic Carpet -->
-				<If Condition="&MagicCarpet_Psyduck; != 0 and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Sagolii Desert ~ Magic Carpet !"/>
 					<TeleportTo Force="True" Name="Forgotten Springs" AetheryteId="20"/>
 					<If Condition="not HasAtLeast(2600,50)">
@@ -4590,7 +4590,7 @@
 						<BuyItem ItemId="2600" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1004430" XYZ="-278.7472, 8, 378.7108"/>
 					</If>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
+					<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Mooch="1" Bait="Sand Leech">
 						<Keepers>
 							<Keeper name="Helicoprion"/>
 							<Keeper name="Magic Carpet"/>
@@ -4605,7 +4605,7 @@
 					<RunCode Name="StopFishing"/>
 				</If>
 				<!-- The Greatest Bream in the World -->
-				<If Condition="&TheGreatestBreamInTheWorld_Psyduck; != 0 and IsTimeBetween(19,23) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; South Bloodshore ~ The Greatest Bream in the World !"/>
 					<If Condition="not HasAtLeast(2613,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ The Greatest Bream in the World : Not enough bait available, I'm going to buy you some !"/>
@@ -4615,7 +4615,7 @@
 					</If>
 					<TeleportTo Force="True" Name="Costa Del Sol" AetheryteId="11"/>
 					<RunCode Name="FSH"/>
-					<ExFish Condition="HasAtLeast(2613,1) and IsTimeBetween(19,23) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Shrimp Cage Feeder">
+					<ExFish Condition="HasAtLeast(2613,1) and IsTimeBetween(19,23) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Shrimp Cage Feeder">
 						<Keepers>
 							<Keeper name="The Greatest Bream in the World"/>
 						</Keepers>
@@ -4630,7 +4630,7 @@
 				</If>
 				<!-- Red scrips Fish -->
 				<!-- Thunderbolt Eel -->
-				<If Condition="&ThunderboltEel_Psyduck; != 0 and IsTimeBetween(21,3) and HasAtLeast(12707,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Iron Feast ~ Thunderbolt Eel"/>
 					<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 					<RunCode Name="FSH"/>
@@ -4639,7 +4639,7 @@
 					<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
 					<ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/>
 					<WaitWhile Condition="IsTimeBetween(21,22)"/>
-					<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(22,3) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
+					<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(22,3) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
 						<Collectables>
 							<Collectable Name="Thunderbolt Eel" Value="813"/>
 						</Collectables>
@@ -4660,7 +4660,7 @@
 				</If>
 				<!-- Ephemeral Fish -->
 				<!-- Dravanian Bass -->
-				<If Condition="&DravanianBass_Psyduck; != 0 and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Whilom River ~ Dravanian bass"/>
 					<If Condition="not HasAtLeast(12704,50) and not HasAtLeast(12711,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Dravanian bass : Not enough bait available, I'm going to buy you some !"/>
@@ -4673,7 +4673,7 @@
 					<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
 					<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
 					<ExMoveTo XYZ="501.6224, -32.29482, -145.8089" Type="RandomPointWithin" Distance="10"/>
-					<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
+					<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
 						<Baits>
 							<Bait Name="Brute Leech"/>
 							<Bait Name="Stonefly Nymph"/>
@@ -4705,7 +4705,7 @@
 					<ExPurify/>
 				</If>
 				<!-- Pteranodon -->
-				<If Condition="&Pteranodon_Psyduck; != 0 and IsTimeBetween(8,14) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Pteranodon_Psyduck; and IsTimeBetween(8,14) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Sohm Al Summit ~ Pteranodon"/>
 					<If Condition="not HasAtLeast(12708,50) and not HasAtLeast(12712,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Pteranodon : Not enough bait available, I'm going to buy you some !"/>
@@ -4719,7 +4719,7 @@
 					<ExMoveTo XYZ="-420.8228, 111.4044, 674.2472" Type="RandomPointWithin" Distance="10"/>
 					<ExMoveTo XYZ="-290.5473, -13.94905, 828.9244" Type="RandomPointWithin" Distance="10"/>
 					<WaitWhile Condition="IsTimeBetween(8,9)"/>
-					<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(9,14) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+					<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(9,14) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 						<Baits>
 							<Bait Name="Giant Crane Fly"/>
 							<Bait Name="Red Balloon"/>
@@ -4746,11 +4746,11 @@
 					<ExPurify/>
 				</If>
 				<!-- Thaliak Caiman -->
-				<If Condition="&ThaliakCaiman_Psyduck; != 0 and IsTimeBetween(14,18) and HasAtLeast(12707,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18) and HasAtLeast(12707,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Middle Thaliak River ~ Thaliak Caiman"/>
 					<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 					<RunCode Name="FSH"/>
-					<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+					<If Condition="&Use_Aetheryte_Idyllshire;">
 						<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 						<RunCode Name="useAethernetEastSide"/>
 					</If>
@@ -4762,7 +4762,7 @@
 					<ExMoveTo XYZ="-88.10485, 180.7275, -173.6805" Type="RandomPointWithin" Distance="10"/>
 					<ExMoveTo XYZ="-87.96331, 78.26161, 120.5088" Type="RandomPointWithin" Distance="10"/>
 					<WaitWhile Condition="IsTimeBetween(14,15)"/>
-					<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(14,18) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
+					<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(14,18) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
 						<Keepers>
 							<Keeper Name="Thaliak Caiman"/>
 						</Keepers>
@@ -4787,7 +4787,7 @@
 					<ExPurify/>
 				</If>
 				<!-- Tupuxuara -->
-				<If Condition="&Tupuxuara_Psyduck; != 0 and IsTimeBetween(14,18) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Tupuxuara_Psyduck; and IsTimeBetween(14,18) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Habisphere ~ Tupuxuara"/>
 					<If Condition="not HasAtLeast(12708,50) and not HasAtLeast(12712,50)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Tupuxuara : Not enough bait available, I'm going to buy you some !"/>
@@ -4802,7 +4802,7 @@
 					<ExFlyTo XYZ="150.045, 83.63493, -305.3822"/>
 					<ExMoveTo XYZ="845.9851, 62.37205, -199.7481" Type="RandomPointWithin" Distance="10"/>
 					<WaitWhile Condition="IsTimeBetween(14,15)"/>
-					<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+					<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 						<Baits>
 							<Bait Name="Giant Crane Fly"/>
 							<Bait Name="Red Balloon"/>
@@ -4828,13 +4828,13 @@
 					<ExPurify/>
 				</If>
 				<!-- Caiman -->
-				<If Condition="&Caiman_Psyduck; != 0 and IsTimeBetween(18,20) and HasAtLeast(12707,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&Caiman_Psyduck; and IsTimeBetween(18,20) and HasAtLeast(12707,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Voor Sian Siran ~ Caiman"/>
 					<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 					<RunCode Name="FSH"/>
 					<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" Type="RandomPointWithin" Distance="5"/>
 					<ExMoveTo XYZ="205.5932, -85.20891, 659.786" Type="RandomPointWithin" Distance="10"/>
-					<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
+					<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
 						<Keepers>
 							<Keeper Name="Caiman"/>
 						</Keepers>
@@ -4871,7 +4871,7 @@
 				</If>
 				<!-- Other Fish -->
 				<!-- Pipira Pira -->
-				<If Condition="&PipiraPira_Psyduck; != 0 and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and HasAtLeast(12706,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)">
+				<If Condition="&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and HasAtLeast(12706,1) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Hundred Throes ~ Pipira Pira  !"/>
 					<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 					<RunCode Name="FSH"/>
@@ -4879,7 +4879,7 @@
 					<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
 					<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
 					<ExMoveTo XYZ="422.0666, 11.53462, -533.5797" Type="RandomPointWithin" Distance="10"/>
-					<ExFish Condition="HasAtLeast(12706,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck; != 0)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Goblin Jig">
+					<ExFish Condition="HasAtLeast(12706,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and (&UnspoiledWaitCondition; or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" sitRate=".69" Bait="Goblin Jig">
 						<Keepers>
 							<Keeper name="Pipira pira"/>
 						</Keepers>
@@ -4894,8 +4894,8 @@
 				</If>
 			</If>
 			<!-- Turn In -->
-			<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-				<If Condition="&Trade_Counterfoil; != 0">
+			<If Condition="&TurnInAfterLoop; and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
+				<If Condition="&Trade_Counterfoil;">
 					<TurnInCouterfoil/>
 				</If>
 				<TurnInCollectables location="Idyllshire" forcePurchase="False">
@@ -4910,9 +4910,9 @@
 				</TurnInCollectables>
 			</If>
 			<!-- Housing -->
-			<If Condition="(&Housing; and (&Gardenning; != 0 or &Retainer; != 0 or &Chocobot; != 0)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)">
+			<If Condition="(&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)">
 				<!-- Gardenning -->
-				<If Condition="&Gardenning; != 0">
+				<If Condition="&Gardenning;">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Gardenning [START]"/>
 					<TeleportTo Name="Housing Aetheryte" AetheryteId="&HousingAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&GardenLocation;"/>
@@ -4921,7 +4921,7 @@
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Gardenning [STOP]"/>
 				</If>
 				<!-- Retainer -->
-				<If Condition="&Retainer;!= 0">
+				<If Condition="&Retainer;">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Retainer [START]"/>
 					<TeleportTo Name="Housing Aetheryte" AetheryteId="&HousingAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&BellLocation;"/>
@@ -4929,7 +4929,7 @@
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Retainer [STOP]"/>
 				</If>
 				<!-- Chocobot -->
-				<If Condition="&Chocobot;!= 0">
+				<If Condition="&Chocobot;">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Chocobot [START]"/>
 					<TeleportTo Name="Housing Aetheryte" AetheryteId="&HousingAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&StableLocation;"/>
@@ -4949,15 +4949,15 @@
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Standard Wait [STOP]"/>
 				</If>
 				<!-- Lileep -->
-				<If Condition="&Lileep; != 0 and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+				<If Condition="&Lileep; and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 					<If Condition="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-						<If Condition="&BTN_0_4_Lileep; != 0">
+						<If Condition="&BTN_0_4_Lileep;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [0:4] ~ Destination ----&gt; Twinpools"/>
 							<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 							<RunCode Name="BTN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="461.7119, 212.5399, 696.9837"/>
-							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_LoversLaurel_Lileep; and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -4974,7 +4974,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_Furrymint_Lileep; and &Gather_HighlandOregano_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -4993,7 +4993,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_Furrymint_Lileep; and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5012,7 +5012,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_HighlandOregano_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(0,4) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5058,7 +5058,7 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-						<If Condition="&MIN_4_8_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&MIN_4_8_Lileep; and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [4:8] ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 							<RunCode Name="MIN"/>
@@ -5066,7 +5066,7 @@
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461"/>
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419"/>
-							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5095,12 +5095,12 @@
 								</ExGather>
 							</If>
 						</If>
-						<If Condition="&BTN_4_8_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&BTN_4_8_Lileep; and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [4:8] ~ Destination ----&gt; The Answering Quarter"/>
 							<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 							<RunCode Name="BTN"/>
 							<ExPurify/>
-							<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+							<If Condition="&Use_Aetheryte_Idyllshire;">
 								<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 								<RunCode Name="useAethernetWestSide"/>
 							</If>
@@ -5110,7 +5110,7 @@
 							</If>
 							<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 							<ExFlyTo XYZ="-470.2735, 167.3033, -139.4283"/>
-							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_LoversLaurel_Lileep; and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5144,7 +5144,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_BlackSoil_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(4,8) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5170,12 +5170,12 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-						<If Condition="&MIN_8_12_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&MIN_8_12_Lileep; and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [8:12] ~ Destination ----&gt; The Maker's Quarter"/>
 							<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 							<RunCode Name="MIN"/>
 							<ExPurify/>
-							<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+							<If Condition="&Use_Aetheryte_Idyllshire;">
 								<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 								<RunCode Name="useAethernetEastSide"/>
 							</If>
@@ -5186,7 +5186,7 @@
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 							<ExFlyTo XYZ="120.7219, 69.52051, 32.74143"/>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
-							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5215,7 +5215,7 @@
 								</ExGather>
 							</If>
 						</If>
-						<If Condition="&BTN_8_12_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&BTN_8_12_Lileep; and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [8:12] ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" Name="Tailfeather" AetheryteId="76"/>
 							<RunCode Name="BTN"/>
@@ -5223,7 +5223,7 @@
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="36.562, 13.66749, 252.4461"/>
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419"/>
-							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_LoversLaurel_Lileep; and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5251,7 +5251,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_BlackSoil_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(8,12) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5274,14 +5274,14 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-						<If Condition="&MIN_12_16_Lileep; != 0">
+						<If Condition="&MIN_12_16_Lileep;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [12:16] ~ Destination ----&gt; Landlord Colony"/>
 							<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 							<RunCode Name="MIN"/>
 							<ExPurify/>
 							<ExFlyTo XYZ="315.8713, 27.29165, 265.4193"/>
 							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604"/>
-							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; and IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(12,16) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5317,7 +5317,7 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-						<If Condition="&MIN_16_20_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&MIN_16_20_Lileep; and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [16:20] ~ Destination ----&gt; Voor Sian Siran"/>
 							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 							<RunCode Name="MIN"/>
@@ -5325,7 +5325,7 @@
 							<ExMoveTo XYZ="-601.6155, -122.1475, 548.3532"/>
 							<ExFlyTo XYZ="125.623, 19.02453, 565.1636"/>
 							<ExFlyTo XYZ="514.1337, -80.13731, 430.907"/>
-							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5364,14 +5364,14 @@
 								</ExGather>
 							</If>
 						</If>
-						<If Condition="&BTN_16_20_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&BTN_16_20_Lileep; and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [16:20] ~ Destination ----&gt; Four Arms"/>
 							<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 							<RunCode Name="BTN"/>
 							<ExPurify/>
 							<ExFlyTo XYZ="-498.7655, 131.2126, 281.2856"/>
 							<ExFlyTo XYZ="-214.1187, 51.6551, 333.5159"/>
-							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_LoversLaurel_Lileep; and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5399,7 +5399,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_BlackSoil_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_BlackSoil_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(16,20) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5425,14 +5425,14 @@
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
-						<If Condition="&MIN_20_24_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&MIN_20_24_Lileep; and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Lileep [20:24] ~ Destination ----&gt; Red Rime"/>
 							<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 							<RunCode Name="MIN"/>
 							<ExPurify/>
 							<ExFlyTo XYZ="447.5304, 231.6418, 698.439"/>
 							<ExFlyTo XYZ="-10.57232, 229.2152, 281.0444"/>
-							<If Condition="&Collect_RadiantAstralMoraine_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_RadiantAstralMoraine_Lileep; and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5461,14 +5461,14 @@
 								</ExGather>
 							</If>
 						</If>
-						<If Condition="&BTN_20_24_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&BTN_20_24_Lileep; and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Lileep [20:24] ~ Destination ----&gt; Voor Sian Siran"/>
 							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 							<RunCode Name="BTN"/>
 							<ExPurify/>
 							<ExMoveTo XYZ="-602.2142, -122.2923, 554.533"/>
 							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207"/>
-							<If Condition="&Collect_LoversLaurel_Lileep; != 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Collect_LoversLaurel_Lileep; and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5481,7 +5481,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_Furrymint_Lileep; and &Gather_HighlandOregano_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5496,7 +5496,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_Furrymint_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_Furrymint_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5511,7 +5511,7 @@
 									</HotSpots>
 								</ExGather>
 							</If>
-							<If Condition="&Gather_HighlandOregano_Lileep; != 0 and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Gather_HighlandOregano_Lileep; and &Collect_LoversLaurel_Lileep; == 0 and IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExGather DiscoverUnknowns="&DiscoverUnknowns;" AlwaysGather="False" GatherStrategy="TouchAndGo" CordialType="&CordialType_Lileep;" CordialTime="&CordialTime_Lileep;" While="IsTimeBetween(20,24) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" skipWindowDelay="1500">
 									<Items>
 										<GatherItem Name="Timeworn Dragonskin Map"/>
@@ -5551,7 +5551,7 @@
 					<ExPurify/>
 				</If>
 				<!-- Snorlax -->
-				<If Condition="&Snorlax; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+				<If Condition="&Snorlax; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 					<!-- Farming -->
 					<If Condition="(&SnorlaxCondition;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Snorlax Farm [START]"/>
@@ -6007,7 +6007,7 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; The Maker's Quarter"/>
 							<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 							<RunCode Name="MIN"/>
-							<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+							<If Condition="&Use_Aetheryte_Idyllshire;">
 								<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 								<RunCode Name="useAethernetEastSide"/>
 							</If>
@@ -6627,7 +6627,7 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; The Answering Quarter"/>
 							<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 							<RunCode Name="BTN"/>
-							<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+							<If Condition="&Use_Aetheryte_Idyllshire;">
 								<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 								<RunCode Name="useAethernetWestSide"/>
 							</If>
@@ -7957,7 +7957,7 @@
 					</If>
 				</If>
 				<!-- Magikarp -->
-				<If Condition="&Magikarp; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+				<If Condition="&Magikarp; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 					<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 						<If Condition="not IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [X:X] ~ Destination ----&gt; Thaliak River ~ Illuminati Perch"/>
@@ -7969,7 +7969,7 @@
 							</If>
 							<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 							<RunCode Name="FSH"/>
-							<If Condition="&Use_Aetheryte_Idyllshire; != 0">
+							<If Condition="&Use_Aetheryte_Idyllshire;">
 								<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
 								<RunCode Name="useAethernetEastSide"/>
 							</If>
@@ -8035,21 +8035,21 @@
 						<!--  Desynth/Sell - Reset Time -->
 						<If Condition="IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [&ResetHour_Magikarp;:&ResetHour_Magikarp;+2] ~ Desynth/Sell Time"/>
-							<If Condition="&Sell_Magikarp; != 0 and &Desynth_Magikarp; == 0">
-								<If Condition="&Keep_IlluminatiPerch_Magikarp; != 0 and &Keep_HinterlandsPerch_Magikarp; != 0">
+							<If Condition="&Sell_Magikarp; and &Desynth_Magikarp; == 0">
+								<If Condition="&Keep_IlluminatiPerch_Magikarp; and &Keep_HinterlandsPerch_Magikarp;">
 									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790"/>
 								</If>
-								<If Condition="&Keep_IlluminatiPerch_Magikarp; != 0 and &Keep_HinterlandsPerch_Magikarp; == 0">
+								<If Condition="&Keep_IlluminatiPerch_Magikarp; and &Keep_HinterlandsPerch_Magikarp; == 0">
 									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804"/>
 								</If>
-								<If Condition="&Keep_HinterlandsPerch_Magikarp; != 0 and &Keep_IlluminatiPerch_Magikarp; == 0">
+								<If Condition="&Keep_HinterlandsPerch_Magikarp; and &Keep_IlluminatiPerch_Magikarp; == 0">
 									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804"/>
 								</If>
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; == 0 and &Keep_HinterlandsPerch_Magikarp; == 0">
 									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804,12819"/>
 								</If>
 							</If>
-							<If Condition="&Desynth_Magikarp; != 0">
+							<If Condition="&Desynth_Magikarp;">
 								<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 								<!-- Shipworm -->
 								<While Condition="HasAtLeast(12756, 1)">
@@ -8124,15 +8124,15 @@
 					</While>
 				</If>
 				<!-- Ditto -->
-				<If Condition="&Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+				<If Condition="&Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 					<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 						<!-- Voor Sian Siran : Wind Widow or Cloud Mushroom -->
-						<If Condition="(&WindWidow_Ditto; != 0 or &CloudMushroom_Ditto; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="(&WindWidow_Ditto; or &CloudMushroom_Ditto;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ditto ~ Destination ----&gt; Voor Sian Siran"/>
 							<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 							<RunCode Name="BTN"/>
 							<!-- Wind Widow -->
-							<If Condition="&WindWidow_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&WindWidow_Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Wind Widow(Voor Sian Siran) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
@@ -8202,7 +8202,7 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Wind Widow(Voor Sian Siran) [STOP]"/>
 							</If>
 							<!-- Cloud Mushroom -->
-							<If Condition="&CloudMushroom_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&CloudMushroom_Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cloud Mushroom(Voor Sian Siran) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
@@ -8273,12 +8273,12 @@
 							</If>
 						</If>
 						<!-- Landlord Colony : Fossilized Dragon Bone or Tektite -->
-						<If Condition="(&FossilizedDragonBone_Ditto; != 0 or &Tektite_Ditto; != 0) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="(&FossilizedDragonBone_Ditto; or &Tektite_Ditto;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ditto ~ Destination ----&gt; Landlord Colony"/>
 							<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 							<RunCode Name="MIN"/>
 							<!-- Fossilized Dragon Bone -->
-							<If Condition="&FossilizedDragonBone_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&FossilizedDragonBone_Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fossilized Dragon Bone(Landlord Colony) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
@@ -8330,7 +8330,7 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Fossilized Dragon Bone(Landlord Colony) [STOP]"/>
 							</If>
 							<!-- Tektite -->
-							<If Condition="&Tektite_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<If Condition="&Tektite_Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Tektite(Landlord Colony) [START]"/>
 								<While Condition="(&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 									<If Condition="Core.Player.CurrentGP &gt; 599">
@@ -8383,7 +8383,7 @@
 							</If>
 						</If>
 						<!-- Avalonia Fallen : Eventide Jade -->
-						<If Condition="&EventideJade_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&EventideJade_Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Ditto ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" Name="Anyx Trine" AetheryteId="77"/>
 							<RunCode Name="MIN"/>
@@ -8443,7 +8443,7 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Eventide Jade(Avalonia Fallen) [STOP]"/>
 						</If>
 						<!-- Avalonia Fallen : Periwinkle -->
-						<If Condition="&Periwinkle_Ditto; != 0 and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+						<If Condition="&Periwinkle_Ditto; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Ditto ~ Destination ----&gt; Avalonia Fallen"/>
 							<TeleportTo Force="True" Name="Anyx Trine" AetheryteId="77"/>
 							<RunCode Name="BTN"/>
@@ -8504,8 +8504,8 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Periwinkle(Avalonia Fallen) [STOP]"/>
 						</If>
 					</While>
-					<If Condition="&TurnInAfterLoop; != 0 and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-						<If Condition="&Trade_Counterfoil; != 0">
+					<If Condition="&TurnInAfterLoop; and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
+						<If Condition="&Trade_Counterfoil;">
 							<TurnInCouterfoil/>
 						</If>
 						<TurnInCollectables location="Idyllshire" forcePurchase="False">
@@ -8540,7 +8540,7 @@
 				<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Waiting_AetheryteId;"/>
 				<RunCode Name="UnStealth"/>
 				<ExPurify/>
-				<If Condition="&Desynth_Magikarp; != 0">
+				<If Condition="&Desynth_Magikarp;">
 					<!-- Shipworm -->
 					<While Condition="HasAtLeast(12756, 1)">
 						<Desynth DesynthTimeout="1" ItemIds="12756"/>
