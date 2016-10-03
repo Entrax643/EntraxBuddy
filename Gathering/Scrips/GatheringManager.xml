@@ -322,6 +322,14 @@
 <!-- 4.00 AM & PM - 4.55 AM & PM -->
 <!-- -->
 <!-- AM -->
+<!ENTITY PlatinumOre "0">
+<!-- -->
+<!ENTITY NativeGold "0">
+<!-- -->
+<!ENTITY RawDiamond "0">
+<!-- -->
+<!ENTITY RawEmerald "0">
+<!-- -->
 <!ENTITY LuminiumOre "0">
 <!-- -->
 <!-- PM -->
@@ -333,6 +341,8 @@
 <!ENTITY Cluster_5AM "0">
 <!-- -->
 <!ENTITY ThanalanTopsoil3 "0">
+<!-- -->
+<!ENTITY GoldSand "0">
 <!-- -->
 <!ENTITY EbonyLog "0">
 <!-- -->
@@ -373,6 +383,10 @@
 <!ENTITY ZeoliteOre "0">
 <!-- -->
 <!-- PM -->
+<!ENTITY RawRuby "0">
+<!-- -->
+<!ENTITY RawSapphire "0">
+<!-- -->
 <!ENTITY Teaklog "0">
 <!-- -->
 <!-- -->
@@ -614,6 +628,8 @@
 <!-- Botanist -->
 <!ENTITY Aloe "0">
 <!-- -->
+<!ENTITY BloodCurrants "0">
+<!-- -->
 <!ENTITY FireShard_BTN "0">
 <!-- -->
 <!ENTITY IceShard_BTN "0">
@@ -643,15 +659,15 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Dragonite">
+<!ENTITY Version "Gyarados">
 <!-- -->
-<!ENTITY SnorlaxCondition "ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe; or ItemCount(2) &lt; &FireShard_BTN; or ItemCount(3) &lt; &IceShard_BTN; or ItemCount(4) &lt; &WindShard_BTN; or ItemCount(5) &lt; &EarthShard_BTN; or ItemCount(6) &lt; &LightningShard_BTN; or ItemCount(7) &lt; &WaterShard_BTN; or ItemCount(2) &lt; &FireShard_MIN; or ItemCount(3) &lt; &IceShard_MIN; or ItemCount(4) &lt; &WindShard_MIN; or ItemCount(5) &lt; &EarthShard_MIN; or ItemCount(6) &lt; &LightningShard_MIN; or ItemCount(7) &lt; &WaterShard_MIN;">
+<!ENTITY SnorlaxCondition "ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe; or ItemCount(4814) &lt; &BloodCurrants; or ItemCount(2) &lt; &FireShard_BTN; or ItemCount(3) &lt; &IceShard_BTN; or ItemCount(4) &lt; &WindShard_BTN; or ItemCount(5) &lt; &EarthShard_BTN; or ItemCount(6) &lt; &LightningShard_BTN; or ItemCount(7) &lt; &WaterShard_BTN; or ItemCount(2) &lt; &FireShard_MIN; or ItemCount(3) &lt; &IceShard_MIN; or ItemCount(4) &lt; &WindShard_MIN; or ItemCount(5) &lt; &EarthShard_MIN; or ItemCount(6) &lt; &LightningShard_MIN; or ItemCount(7) &lt; &WaterShard_MIN;">
 <!-- -->
 <!ENTITY LileepWaitCondition "not((IsTimeBetween(0,4) and &BTN_0_4_Lileep;) or (IsTimeBetween(4,8) and (&MIN_4_8_Lileep; or &BTN_4_8_Lileep;)) or (IsTimeBetween(8,12) and (&MIN_8_12_Lileep; or &BTN_8_12_Lileep;)) or (IsTimeBetween(12,16) and &MIN_12_16_Lileep;) or (IsTimeBetween(16,20) and (&MIN_16_20_Lileep; or &BTN_16_20_Lileep;)) or (IsTimeBetween(20,24) and (&MIN_20_24_Lileep; or &BTN_20_24_Lileep;))) and &Lileep;">
 <!-- -->
 <!ENTITY PsyduckWaitCondition "not((&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16)) or (&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15)) or (&NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1)) or (&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26)) or (&TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23)) or (&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1)) or (&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (&Pteranodon_Psyduck; and IsTimeBetween(8,14)) or (&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18)) or (&Tupuxuara_Psyduck; and IsTimeBetween(14,18)) or (&Caiman_Psyduck; and IsTimeBetween(18,20)) or (&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11) and HasAtLeast(12706,1))) and &Psyduck;">
 <!-- -->
-<!ENTITY UnspoiledWaitCondition "not(((&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
+<!ENTITY UnspoiledWaitCondition "not(((&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&Old-growthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 1">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
@@ -1600,8 +1616,89 @@
 					</If>
 				</If>
 				<!-- 4.00 AM & PM - 4.55 AM & PM -->
-				<If Condition="((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) and FreeItemSlots() &gt; 1">
 					<!-- 4AM -->
+					<!-- Platinum Ore -->
+					<If Condition="&PlatinumOre; and IsTimeBetween(3,4)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Platinum Ore"/>
+						<TeleportTo Force="True" Name="Little Ala Mhigo" AetheryteId="19"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="-228.0934, 23.43507, -489.6928" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Platinum Ore</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="-228.0934, 23.43507, -489.6928" Radius="250"/>
+								<HotSpot XYZ="-121.5414, 14.40532, -601.1863" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Native Gold -->
+					<If Condition="&NativeGold; and IsTimeBetween(3,4)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Native Gold"/>
+						<TeleportTo Force="True" Name="Black Brush Station" AetheryteId="53"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="187.831, -2, -272.5329" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Native Gold</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="187.831, -2, -272.5329" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Raw Diamond -->
+					<If Condition="&RawDiamond; and IsTimeBetween(3,4)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Diamond"/>
+						<TeleportTo Force="True" Name="Black Brush Station" AetheryteId="53"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="187.831, -2, -272.5329" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Raw Diamond</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="187.831, -2, -272.5329" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Raw Emerald -->
+					<If Condition="&RawEmerald; and IsTimeBetween(3,4)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Emerald"/>
+						<TeleportTo Force="True" Name="Black Brush Station" AetheryteId="53"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="187.831, -2, -272.5329" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Raw Emerald</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="187.831, -2, -272.5329" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
 					<!-- Luminium Ore -->
 					<If Condition="&LuminiumOre; and IsTimeBetween(3,4)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Luminium Ore"/>
@@ -1651,7 +1748,7 @@
 					</If>
 				</If>
 				<!-- 5.00 AM & PM - 5.55 AM & PM -->
-				<If Condition="((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) and FreeItemSlots() &gt; 1">
 					<!-- 5AM -->
 					<!-- Revenant's Toll -->
 					<If Condition="&Cluster_5AM; and IsTimeBetween(4,5)">
@@ -1797,6 +1894,26 @@
 								</HotSpots>
 							</ExGather>
 						</If>
+					</If>
+					<!-- Gold Sand -->
+					<If Condition="&GoldSand; and IsTimeBetween(4,5)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Gold Sand"/>
+						<TeleportTo Force="True" Name="Camp Drybone" AetheryteId="18"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="180.9666, -9.873509, 68.35862" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Gold Sand</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="180.9666, -9.873509, 68.35862" Radius="250"/>
+							</HotSpots>
+						</ExGather>
 					</If>
 					<!-- Grade 3 Thanalan Topsoil -->
 					<If Condition="&ThanalanTopsoil3; and IsTimeBetween(4,5)">
@@ -2461,7 +2578,7 @@
 					</If>
 				</If>
 				<!-- 6.00 AM & PM - 6.55 AM & PM -->
-				<If Condition="((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&Teaklog;)))) and FreeItemSlots() &gt; 1">
+				<If Condition="((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) and FreeItemSlots() &gt; 1">
 					<!-- 6AM -->
 					<!-- Zeolite Ore -->
 					<If Condition="&ZeoliteOre; and IsTimeBetween(5,6)">
@@ -2494,6 +2611,46 @@
 						</ExGather>
 					</If>
 					<!-- 6PM -->
+					<!-- Raw Ruby -->
+					<If Condition="&RawRuby; and IsTimeBetween(17,18)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Ruby"/>
+						<TeleportTo Force="True" Name="Moraby Drydocks" AetheryteId="10"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="110.9606, 36.187, 11.86534" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Raw Ruby</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="110.9606, 36.187, 11.86534" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Raw Sapphire -->
+					<If Condition="&RawSapphire; and IsTimeBetween(17,18)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Raw Sapphire"/>
+						<TeleportTo Force="True" Name="Moraby Drydocks" AetheryteId="10"/>
+						<RunCode Name="MIN"/>
+						<ExMoveTo XYZ="110.9606, 36.187, 11.86534" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
+						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Raw Sapphire</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="110.9606, 36.187, 11.86534" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
 					<!-- Teak log -->
 					<If Condition="&Teaklog; and IsTimeBetween(17,18)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Teak log"/>
@@ -7631,6 +7788,32 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Aloe(Broken Water) [STOP]"/>
 							</If>
 						</If>
+						<!-- Blood Currants -->
+						<If Condition="(ItemCount(4814) &lt; &BloodCurrants;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Lower Paths"/>
+							<TeleportTo Force="True" Name="Camp Tranquil" AetheryteId="6"/>
+							<RunCode Name="BTN"/>
+							<!-- Blood Currants -->
+							<If Condition="ItemCount(4814) &lt; &BloodCurrants; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Blood Currants(Lower Paths) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(4814) &lt; &BloodCurrants; and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Blood Currants"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="-12.2049, -0.4348666, 369.0394"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Blood Currants(Lower Paths) [STOP]"/>
+							</If>
+						</If>
 						<!-- Drybone -->
 						<If Condition="(ItemCount(2) &lt; &FireShard_BTN;) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Drybone"/>
@@ -7978,8 +8161,9 @@
 								<RunCode Name="MoveForward"/>
 							</If>
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-							<ExMoveTo XYZ="-70.83005, 160.0187, -174.3838" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="not IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Magikarp;" Snagging="True" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<ExMoveTo XYZ="-61.14677, 100.6723, -152.3772" Type="RandomPointWithin" Distance="10"/>
+							<ExDisablePlugins Names="Enable Flight"/>
+							<ExFish Condition="not IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;" CordialType="&CordialType_Magikarp;" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
 									<Bait Name="Brute Leech"/>
 									<Bait Name="Goblin Jig"/>
@@ -8031,6 +8215,7 @@
 									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 								</ShopPurchases>
 							</TurnInCollectables>
+							<ExEnablePlugins Names="Enable Flight"/>
 						</If>
 						<!--  Desynth/Sell - Reset Time -->
 						<If Condition="IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&LileepWaitCondition; or &Lileep; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and &UnspoiledWaitCondition;">
