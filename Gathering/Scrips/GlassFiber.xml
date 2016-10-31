@@ -6,7 +6,134 @@
 <!ENTITY Bacon_Broth "0">
 ]><Profile>
 	<Name>Glass Fiber</Name>
-	<KillRadius>100</KillRadius>
+	<Order>
+		<TurnInCouterfoil/>
+		<If Condition="&LTW; != 0 or &WVR;">
+			<While Condition="(ItemCount(12982) &gt; 0 or ItemCount(12983) &gt; 0 or ItemCount(12984) &gt; 0) and ItemCount(12841) &gt; 2">
+				<TeleportTo name="Idyllshire" aetheryteId="75"/>
+				<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
+				<!-- LTW -->
+				<If Condition="&LTW; != 0 and not(ItemCount(10273) &gt; 0 and ItemCount(10274) &gt; 0 and ItemCount(10279) &gt; 0 and ItemCount(10284) &gt; 0)">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Start"/>
+					<!-- MIN -->
+					<If Condition="ItemCount(12982) &gt; 0 and ItemCount(12841) &gt; 2">
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Switching to Miner"/>
+						<RunCode Name="MIN"/>
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Interacting with NPC"/>
+						<RunCode Name="InteractNPCBuy"/>
+						<!-- Minekeep's Slops -->
+						<If Condition="ItemCount(12982) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10273) &gt; 0)">
+							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Attempting to Buy Minekeep's Slops"/>
+							<RunCode Name="BuyMINlegs"/>
+						</If>
+						<!-- Minekeep's Workboots -->
+						<If Condition="ItemCount(12982) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10274) &gt; 0)">
+							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Attempting to Buy Minekeep's Workboots"/>
+							<RunCode Name="BuyMINboots"/>
+						</If>
+						<RunCode Name="CloseWindow"/>
+					</If>
+					<!-- BTN -->
+					<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2">
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Switching to Botanist"/>
+						<RunCode Name="BTN"/>
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Interacting with NPC"/>
+						<RunCode Name="InteractNPCBuy"/>
+						<!-- Fieldkeep's Jackboots -->
+						<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10279) &gt; 0)">
+							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Attempting to Buy Fieldkeep's Jackboots"/>
+							<RunCode Name="BuyBTNboots"/>
+						</If>
+						<RunCode Name="CloseWindow"/>
+					</If>
+					<!-- FSH -->
+					<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2">
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[FSH] Switching to Fisher"/>
+						<RunCode Name="FSH"/>
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[FSH] Interacting with NPC"/>
+						<RunCode Name="InteractNPCBuy"/>
+						<!-- Tacklekeep's Waders -->
+						<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10284) &gt; 0)">
+							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[FSH] Attempting to Buy Tacklekeep's Waders"/>
+							<RunCode Name="BuyFSHboots"/>
+						</If>
+						<RunCode Name="CloseWindow"/>
+					</If>
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Stop"/>
+				</If>
+				<!-- WVR -->
+				<If Condition="&WVR; != 0 and not(ItemCount(10278) &gt; 0 and ItemCount(10283) &gt; 0)">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Start"/>
+					<!-- BTN -->
+					<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2">
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Switching to Botanist"/>
+						<RunCode Name="BTN"/>
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Interacting with NPC"/>
+						<RunCode Name="InteractNPCBuy"/>
+						<!-- Fieldkeep's Slops -->
+						<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10278) &gt; 0)">
+							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Attempting to Buy Fieldkeep's Slops"/>
+							<RunCode Name="BuyBTNlegs"/>
+						</If>
+						<RunCode Name="CloseWindow"/>
+					</If>
+					<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2">
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Switching to Fisher"/>
+						<RunCode Name="FSH"/>
+						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Interacting with NPC"/>
+						<RunCode Name="InteractNPCBuy"/>
+						<!-- Tacklekeep's Gaskins -->
+						<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10283) &gt; 0)">
+							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Attempting to Buy Tacklekeep's Gaskins"/>
+							<RunCode Name="BuyFSHlegs"/>
+						</If>
+						<RunCode Name="CloseWindow"/>
+					</If>
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Stop"/>
+				</If>
+				<If Condition="&Tinkers_Calm; != 0 and ItemCount(10086) &gt; 0 and not(Core.Player.HasAura(49))">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Using Tinker's Calm"/>
+					<RunCode Name="TinkersCalm"/>
+					<WaitTimer waitTime="3"/>
+				</If>
+				<If Condition="&Bacon_Broth; != 0 and HasAtLeast(9335, 1) and not(Core.Player.HasAura(48))">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Using Bacon Broth"/>
+					<EatFood ItemId="9335"/>
+					<WaitTimer waitTime="3"/>
+				</If>
+				<!-- Minekeep's Slops -->
+				<If Condition="ItemCount(10273) &gt; 0">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Minekeep's Slops"/>
+					<Desynth DesynthTimeout="1" ItemIds="10273"/>
+				</If>
+				<!-- Minekeep's Workboots -->
+				<If Condition="ItemCount(10274) &gt; 0">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Minekeep's Workboots"/>
+					<Desynth DesynthTimeout="1" ItemIds="10274"/>
+				</If>
+				<!-- Fieldkeep's Slops -->
+				<If Condition="ItemCount(10278) &gt; 0">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Fieldkeep's Slops"/>
+					<Desynth DesynthTimeout="1" ItemIds="10278"/>
+				</If>
+				<!-- Fieldkeep's Jackboots -->
+				<If Condition="ItemCount(10279) &gt; 0">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Fieldkeep's Jackboots"/>
+					<Desynth DesynthTimeout="1" ItemIds="10279"/>
+				</If>
+				<!-- Tacklekeep's Gaskins -->
+				<If Condition="ItemCount(10283) &gt; 0">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Tacklekeep's Gaskins"/>
+					<Desynth DesynthTimeout="1" ItemIds="10283"/>
+				</If>
+				<!-- Tacklekeep's Waders -->
+				<If Condition="ItemCount(10284) &gt; 0">
+					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Tacklekeep's Waders"/>
+					<Desynth DesynthTimeout="1" ItemIds="10284"/>
+				</If>
+			</While>
+		</If>
+	</Order>
     <CodeChunks>
 		<CodeChunk Name="MIN">
 			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 10");]]>
@@ -179,132 +306,4 @@
 			]]>
 		</CodeChunk>
     </CodeChunks>
-	<Order>
-		<TurnInCouterfoil/>
-		<If Condition="&LTW; != 0 or &WVR;">
-			<While Condition="(ItemCount(12982) &gt; 0 or ItemCount(12983) &gt; 0 or ItemCount(12984) &gt; 0) and ItemCount(12841) &gt; 2">
-				<TeleportTo name="Idyllshire" aetheryteId="75"/>
-				<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
-				<!-- LTW -->
-				<If Condition="&LTW; != 0 and not(ItemCount(10273) &gt; 0 and ItemCount(10274) &gt; 0 and ItemCount(10279) &gt; 0 and ItemCount(10284) &gt; 0)">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Start"/>
-					<!-- MIN -->
-					<If Condition="ItemCount(12982) &gt; 0 and ItemCount(12841) &gt; 2">
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Switching to Miner"/>
-						<RunCode Name="MIN"/>
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Interacting with NPC"/>
-						<RunCode Name="InteractNPCBuy"/>
-						<!-- Minekeep's Slops -->
-						<If Condition="ItemCount(12982) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10273) &gt; 0)">
-							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Attempting to Buy Minekeep's Slops"/>
-							<RunCode Name="BuyMINlegs"/>
-						</If>
-						<!-- Minekeep's Workboots -->
-						<If Condition="ItemCount(12982) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10274) &gt; 0)">
-							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Attempting to Buy Minekeep's Workboots"/>
-							<RunCode Name="BuyMINboots"/>
-						</If>
-						<RunCode Name="CloseWindow"/>
-					</If>
-					<!-- BTN -->
-					<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2">
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Switching to Botanist"/>
-						<RunCode Name="BTN"/>
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Interacting with NPC"/>
-						<RunCode Name="InteractNPCBuy"/>
-						<!-- Fieldkeep's Jackboots -->
-						<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10279) &gt; 0)">
-							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Attempting to Buy Fieldkeep's Jackboots"/>
-							<RunCode Name="BuyBTNboots"/>
-						</If>
-						<RunCode Name="CloseWindow"/>
-					</If>
-					<!-- FSH -->
-					<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2">
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[FSH] Switching to Fisher"/>
-						<RunCode Name="FSH"/>
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[FSH] Interacting with NPC"/>
-						<RunCode Name="InteractNPCBuy"/>
-						<!-- Tacklekeep's Waders -->
-						<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10284) &gt; 0)">
-							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[FSH] Attempting to Buy Tacklekeep's Waders"/>
-							<RunCode Name="BuyFSHboots"/>
-						</If>
-						<RunCode Name="CloseWindow"/>
-					</If>
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[LTW] Stop"/>
-				</If>
-				<!-- WVR -->
-				<If Condition="&WVR; != 0 and not(ItemCount(10278) &gt; 0 and ItemCount(10283) &gt; 0)">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Start"/>
-					<!-- BTN -->
-					<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2">
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Switching to Botanist"/>
-						<RunCode Name="BTN"/>
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Interacting with NPC"/>
-						<RunCode Name="InteractNPCBuy"/>
-						<!-- Fieldkeep's Slops -->
-						<If Condition="ItemCount(12983) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10278) &gt; 0)">
-							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Attempting to Buy Fieldkeep's Slops"/>
-							<RunCode Name="BuyBTNlegs"/>
-						</If>
-						<RunCode Name="CloseWindow"/>
-					</If>
-					<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2">
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Switching to Fisher"/>
-						<RunCode Name="FSH"/>
-						<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Interacting with NPC"/>
-						<RunCode Name="InteractNPCBuy"/>
-						<!-- Tacklekeep's Gaskins -->
-						<If Condition="ItemCount(12984) &gt; 0 and ItemCount(12841) &gt; 2 and not(ItemCount(10283) &gt; 0)">
-							<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Attempting to Buy Tacklekeep's Gaskins"/>
-							<RunCode Name="BuyFSHlegs"/>
-						</If>
-						<RunCode Name="CloseWindow"/>
-					</If>
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="[WVR] Stop"/>
-				</If>
-				<If Condition="&Tinkers_Calm; != 0 and ItemCount(10086) &gt; 0 and not(Core.Player.HasAura(49))">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Using Tinker's Calm"/>
-					<RunCode Name="TinkersCalm"/>
-					<WaitTimer waitTime="3"/>
-				</If>
-				<If Condition="&Bacon_Broth; != 0 and HasAtLeast(9335, 1) and not(Core.Player.HasAura(48))">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Using Bacon Broth"/>
-					<EatFood ItemId="9335"/>
-					<WaitTimer waitTime="3"/>
-				</If>
-				<!-- Minekeep's Slops -->
-				<If Condition="ItemCount(10273) &gt; 0">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Minekeep's Slops"/>
-					<Desynth DesynthTimeout="1" ItemIds="10273"/>
-				</If>
-				<!-- Minekeep's Workboots -->
-				<If Condition="ItemCount(10274) &gt; 0">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Minekeep's Workboots"/>
-					<Desynth DesynthTimeout="1" ItemIds="10274"/>
-				</If>
-				<!-- Fieldkeep's Slops -->
-				<If Condition="ItemCount(10278) &gt; 0">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Fieldkeep's Slops"/>
-					<Desynth DesynthTimeout="1" ItemIds="10278"/>
-				</If>
-				<!-- Fieldkeep's Jackboots -->
-				<If Condition="ItemCount(10279) &gt; 0">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Fieldkeep's Jackboots"/>
-					<Desynth DesynthTimeout="1" ItemIds="10279"/>
-				</If>
-				<!-- Tacklekeep's Gaskins -->
-				<If Condition="ItemCount(10283) &gt; 0">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Tacklekeep's Gaskins"/>
-					<Desynth DesynthTimeout="1" ItemIds="10283"/>
-				</If>
-				<!-- Tacklekeep's Waders -->
-				<If Condition="ItemCount(10284) &gt; 0">
-					<ExLog Color="#ff33ff" Name="GatherManager Crystal Onix Extended Profile" Message="Desynthezing Tacklekeep's Waders"/>
-					<Desynth DesynthTimeout="1" ItemIds="10284"/>
-				</If>
-			</While>
-		</If>
-	</Order>
 </Profile>

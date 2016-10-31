@@ -880,7 +880,7 @@
 			<WaitTimer WaitTime="3"/>
 			<!-- Draconian Potion Of Strengh -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Strengh !"/>
-			<While Condition="ItemCount(18) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12642) &gt; 1">
+			<While Condition="ItemCount(18) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Dexterity_Qty; + &Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12642) &gt; 1 and &Strength_Qty;">
 				<If Condition="&ID_FOOD; != 0">
 					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
 				</If>
@@ -947,7 +947,7 @@
 			</While>
 			<!-- Draconian Potion Of Dexterity -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Dexterity !"/>
-			<While Condition="ItemCount(18) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12638) &gt; 1">
+			<While Condition="ItemCount(18) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Vitality_Qty; + &Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12638) &gt; 1 and &Dexterity_Qty;">
 				<If Condition="&ID_FOOD; != 0">
 					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
 				</If>
@@ -1014,7 +1014,7 @@
 			</While>
 			<!-- Draconian Potion Of Vitality -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Vitality !"/>
-			<While Condition="ItemCount(18) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12901) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12639) &gt; 1">				
+			<While Condition="ItemCount(18) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(19) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12901) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12936) &gt; (&Intelligence_Qty; + &Mind_Qty;) and ItemCount(12972) &gt; ((&Intelligence_Qty; + &Mind_Qty;)*2+1)and ItemCount(12639) &gt; 1 and &Vitality_Qty;">				
 				<If Condition="&ID_FOOD; != 0">
 					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
 				</If>
@@ -1085,7 +1085,7 @@
 			</While>
 			<!-- Draconian Potion Of Intelligence -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Intelligence !"/>
-			<While Condition="ItemCount(18) &gt; (&Mind_Qty;) and ItemCount(19) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Mind_Qty;) and ItemCount(12936) &gt; (&Mind_Qty;) and ItemCount(12972) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12643) &gt; 1">
+			<While Condition="ItemCount(18) &gt; (&Mind_Qty;) and ItemCount(19) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12630) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12901) &gt; (&Mind_Qty;) and ItemCount(12936) &gt; (&Mind_Qty;) and ItemCount(12972) &gt; ((&Mind_Qty;)*2+1) and ItemCount(12643) &gt; 1 and &Intelligence_Qty;">
 				<If Condition="&ID_FOOD; != 0">
 					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
 				</If>
@@ -1156,7 +1156,7 @@
 			</While>
 			<!-- Draconian Potion Of Mind -->
 			<ExLog Color="#FFFF00" Name="Draconian Potions &Version;"  Message="Draconian Potion Of Mind !"/>
-			<While Condition="ItemCount(18) &gt; 0 and ItemCount(19) &gt; 1 and ItemCount(12630) &gt; 1 and ItemCount(12901) &gt; 0	and ItemCount(12936) &gt; 0	and ItemCount(12972) &gt; 0	and ItemCount(12640) &gt; 1">
+			<While Condition="ItemCount(18) &gt; 0 and ItemCount(19) &gt; 1 and ItemCount(12630) &gt; 1 and ItemCount(12901) &gt; 0	and ItemCount(12936) &gt; 0	and ItemCount(12972) &gt; 0	and ItemCount(12640) &gt; 1 and &Mind_Qty;">
 				<If Condition="&ID_FOOD; != 0">
 					<EatFood ItemId="&ID_FOOD;" HqOnly="True"/>
 				</If>
