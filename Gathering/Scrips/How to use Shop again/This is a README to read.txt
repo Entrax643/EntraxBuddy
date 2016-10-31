@@ -1,1 +1,0 @@
-To update the Scrips shop database copy paste those two files into Rebornbuddy\Plugins\ExBuddy\OrderBotTags\Behaviors\Objects and RESTART the bot after that.
