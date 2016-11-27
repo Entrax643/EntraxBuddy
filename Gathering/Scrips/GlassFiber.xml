@@ -10,7 +10,7 @@
 		<TurnInCouterfoil/>
 		<If Condition="&LTW; != 0 or &WVR;">
 			<While Condition="(ItemCount(12982) &gt; 0 or ItemCount(12983) &gt; 0 or ItemCount(12984) &gt; 0) and ItemCount(12841) &gt; 2">
-				<TeleportTo name="Idyllshire" aetheryteId="75"/>
+				<TeleportTo Name="Idyllshire" aetheryteId="75"/>
 				<ExMoveTo XYZ="-18.48964, 206.4994, 53.98175"/>
 				<!-- LTW -->
 				<If Condition="&LTW; != 0 and not(ItemCount(10273) &gt; 0 and ItemCount(10274) &gt; 0 and ItemCount(10279) &gt; 0 and ItemCount(10284) &gt; 0)">

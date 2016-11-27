@@ -9,7 +9,7 @@
 	<!ENTITY Waiting_AetheryteId "8">
 ]>
 <Profile>
-    <Name>[O][BTN][MIN][CUL] Baked Onion Soup - RB</Name>
+    <Name>Baked Onion Soup</Name>
     <KillRadius>50</KillRadius>
     <BehaviorDirectory>CustomTags</BehaviorDirectory>
     <CodeChunks>

@@ -97,6 +97,8 @@ namespace ff14bot.NeoProfiles
 
         protected async Task<bool> MoveAllItems(IEnumerable<BagSlot> bagSlots)
         {
+			Thread.Sleep(500);
+			
             foreach (var bagSlot in bagSlots)
             {
                 string name = bagSlot.Name;
@@ -180,20 +182,23 @@ namespace ff14bot.NeoProfiles
                     }
                     else
                     {
-                        Log("Attempting to equip {0}.", name);
-                        bagSlot.Move(equipSlot);
-                        if (await Coroutine.Wait(MaxWait, () => equipSlot.TrueItemId == startingId))
-                        {
-                            Log("{0} equipped successfully.", name);
-                        }
-                        else
-                        {
-                            Log("Failed to equip {0}.", name);
-                        }
+						while(equipSlot.TrueItemId != startingId)
+						{
+							Log("Attempting to equip {0}.", name);
+							bagSlot.Move(equipSlot);
+							if (await Coroutine.Wait(MaxWait, () => equipSlot.TrueItemId == startingId))
+							{
+								Log("{0} equipped successfully.", name);
+							}
+							else
+							{
+								Log("Failed to equip {0}.", name);
+							}							
+						}
                     }
                 }
 
-                Thread.Sleep(1000);
+                Thread.Sleep(1500);
             }
 
             return true;

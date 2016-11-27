@@ -1,1 +1,2 @@
-You can now found all my profile complete AND my next profiles, some profiles are almost empty because I didn't made them yet, it's like my "To Do List".
+Welcome to my Github, you can find here all my profiles.
+If you have any issue or a suggestion, please join my discord https://discord.gg/gpUMYC9
