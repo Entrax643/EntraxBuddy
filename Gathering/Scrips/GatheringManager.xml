@@ -22,7 +22,7 @@
 <!-- Rare Fish -->
 <!ENTITY Psyduck "0">
 <!-- 24/24 Fish -->
-<!ENTITY Slowpoke "10">
+<!ENTITY Slowpoke "0">
 <!-- Housing Management -->
 <!ENTITY Housing "0">
 <!-- Regular Farm -->
@@ -306,17 +306,12 @@
 <!ENTITY DisableRotationOverride_1StarPlus "False">
 <!ENTITY DisableRotationOverride_3Star "False">
 <!-- -->
-<!ENTITY Collectability_200 "0">
-<!ENTITY Collectability_400 "0">
-<!ENTITY Collectability_450 "0">
 <!ENTITY Collectability_Chysahl "470">
 <!ENTITY Collectability_Adamantite "470">
 <!ENTITY Collectability_1Star "470">
 <!ENTITY RegularIfCapped "0">
 <!ENTITY HighRateIfCapped "0">
-<!ENTITY PlusPlus "0">
 <!ENTITY DiscoverUnknowns "True">
-<!ENTITY IsTimeBetween_tick "10">
 <!-- Cordial setting -->
 <!-- Choose if you want to use Cordial or HiCordial -->
 <!ENTITY Cordial_Type_50_60 "Auto">
@@ -866,7 +861,7 @@
 						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -883,7 +878,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(19) &lt; &Water_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -900,7 +895,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(18) &lt; &Lightning_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -917,7 +912,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(17) &lt; &Earth_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -934,7 +929,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(16) &lt; &Wind_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -951,7 +946,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(15) &lt; &Ice_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -968,7 +963,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(14) &lt; &Fire_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -985,7 +980,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(5602) &lt; &Grade4_Carbonized_Matter;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1013,7 +1008,7 @@
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
 						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1040,7 +1035,7 @@
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
 						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1063,7 +1058,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="285.3791, 303.2509, -99.76889" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1083,7 +1078,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="9.627401, -6.880045, 245.0801" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -1106,7 +1101,7 @@
 						<ExMoveTo XYZ="345.458, -4.698928, -482.9557" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1123,7 +1118,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(19) &lt; &Water_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1140,7 +1135,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(18) &lt; &Lightning_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1157,7 +1152,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(17) &lt; &Earth_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1174,7 +1169,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(16) &lt; &Wind_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1191,7 +1186,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(15) &lt; &Ice_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1208,7 +1203,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(14) &lt; &Fire_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1225,7 +1220,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(5602) &lt; &Grade4_Carbonized_Matter;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -1251,7 +1246,7 @@
 						<ExFlyTo XYZ="556.0789, 245.7701, -68.30688"/>
 						<ExFlyTo XYZ="629.4525, 199.0281, -448.9458" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -1278,7 +1273,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-195.0522, 10.15532, -99.76889" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -1298,7 +1293,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="273.3574, 7.062347, -127.5156" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -1319,7 +1314,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-443.3712, -1.39606, -262.7161" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(13,14.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -1339,7 +1334,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(13,14.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -1359,7 +1354,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(13,14.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -1385,12 +1380,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_OldWorldFig;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Old World Fig" Value="&Collectability_200;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Old World Fig" Value="0" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -1405,7 +1400,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_OldWorldFig; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
@@ -1433,7 +1428,7 @@
 						<ExMoveTo XYZ="260.6163, 77.28701, -374.0894"/>
 						<ExFlyTo XYZ="200.8059, 19.17759, -459.1148" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(1,2.1) or Condition.IsTimeBetween(13,14.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -1461,12 +1456,12 @@
 						<!-- Yellow Quartz -->
 						<If Condition="&YellowQuartz;">
 							<If Condition="&Collect_YellowQuartz;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Yellow Quartz" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Yellow Quartz" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -1475,7 +1470,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_YellowQuartz; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
@@ -1492,12 +1487,12 @@
 						<!--Green Quartz -->
 						<If Condition="&GreenQuartz;">
 							<If Condition="&Collect_GreenQuartz;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Green Quartz" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Green Quartz" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -1506,7 +1501,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_GreenQuartz; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
@@ -1541,12 +1536,12 @@
 						<If Condition="&LightKidneyOre;">
 							<!-- Collectable -->
 							<If Condition="&Collect_LightKidneyOre;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Light Kidney Ore" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Light Kidney Ore" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -1561,7 +1556,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_LightKidneyOre; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
@@ -1584,12 +1579,12 @@
 						<If Condition="&Cuprite;">
 							<!-- Collectable -->
 							<If Condition="&Collect_Cuprite;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Cuprite" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Cuprite" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -1604,7 +1599,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_Cuprite; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
@@ -1636,7 +1631,7 @@
 						<ExMoveTo XYZ="-560.9453, 162.0053, 5.935372"/>
 						<ExFlyTo XYZ="-761.2698, 299.2732, -165.5555" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1659,7 +1654,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-206.263, 60.47285, -87.08531" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1679,7 +1674,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-206.263, 60.47285, -87.08531" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1699,7 +1694,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-206.263, 60.47285, -87.08531" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1720,7 +1715,7 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
@@ -1744,7 +1739,7 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
@@ -1772,7 +1767,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-228.0934, 23.43507, -489.6928" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1793,7 +1788,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="187.831, -2, -272.5329" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1813,7 +1808,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="187.831, -2, -272.5329" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1833,7 +1828,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="187.831, -2, -272.5329" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1855,7 +1850,7 @@
 						<ExFlyTo XYZ="-717.6938, 67.0583, -445.2144"/>
 						<ExFlyTo XYZ="-836.9286, 61.90376, -304.3524" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(3,4.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -1876,7 +1871,7 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-569.434, 187.4845, 756.0823" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(15,16.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
@@ -1906,7 +1901,7 @@
 						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1923,7 +1918,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(19) &lt; &Water_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1940,7 +1935,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(18) &lt; &Lightning_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1957,7 +1952,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(17) &lt; &Earth_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1974,7 +1969,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(16) &lt; &Wind_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1991,7 +1986,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(15) &lt; &Ice_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2008,7 +2003,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(14) &lt; &Fire_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2025,7 +2020,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(5602) &lt; &Grade4_Carbonized_Matter;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2049,7 +2044,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="180.9666, -9.873509, 68.35862" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2069,7 +2064,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-150.1802, 41.43418, 351.9217" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2090,7 +2085,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="145.6238, 55.6597, 208.2412" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -2110,7 +2105,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-189.5239, 45.19356, -102.333" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -2130,7 +2125,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="332.0574, 27.99921, 580.2009" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -2153,12 +2148,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_AstralMoraine; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Astral Moraine" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Astral Moraine" Value="&Collectability_1Star;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -2171,7 +2166,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_AstralMoraine; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2189,7 +2184,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_AstralMoraine; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2215,12 +2210,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_SunMica; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Sun Mica" Value="&Collectability_1Star;"  PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Sun Mica" Value="&Collectability_1Star;"  PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -2234,7 +2229,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_SunMica; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2253,7 +2248,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_SunMica; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2280,12 +2275,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_AurumRegisOre; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Aurum Regis Ore" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Aurum Regis Ore" Value="&Collectability_1Star;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -2299,7 +2294,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_AurumRegisOre; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
 								</GatherObjects>
@@ -2318,7 +2313,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_AurumRegisOre; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Mineral Deposit</GatherObject>
 								</GatherObjects>
@@ -2346,7 +2341,7 @@
 						<ExMoveTo XYZ="345.458, -4.698928, -482.9557" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2363,7 +2358,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(19) &lt; &Water_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2380,7 +2375,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(18) &lt; &Lightning_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2397,7 +2392,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(17) &lt; &Earth_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2414,7 +2409,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(16) &lt; &Wind_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2431,7 +2426,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(15) &lt; &Ice_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2448,7 +2443,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(14) &lt; &Fire_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2465,7 +2460,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(5602) &lt; &Grade4_Carbonized_Matter;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -2489,7 +2484,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -2509,7 +2504,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2529,7 +2524,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="48.81628, 7.451846, 433.1523" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -2553,12 +2548,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_VanillaBeans; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Vanilla Beans" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Vanilla Beans" Value="&Collectability_1Star;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<HotSpots>
@@ -2568,7 +2563,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_VanillaBeans; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -2583,7 +2578,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_VanillaBeans; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -2607,12 +2602,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_HoneydewAlmonds; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Honeydew Almonds" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Honeydew Almonds" Value="&Collectability_1Star;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -2628,7 +2623,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_HoneydewAlmonds; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2649,7 +2644,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_HoneydewAlmonds; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2679,12 +2674,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(16,17.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_SeventhHeaven; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Seventh Heaven" Value="&Collectability_1Star;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Seventh Heaven" Value="&Collectability_1Star;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<HotSpots>
@@ -2694,7 +2689,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_SeventhHeaven; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -2709,7 +2704,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_SeventhHeaven; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 								<GatherObjects>
 									<GatherObject>Legendary Lush Vegetation patch</GatherObject>
 								</GatherObjects>
@@ -2744,7 +2739,7 @@
 						<ExFlyTo XYZ="-350.3127, 232.4916, 22.8831"/>
 						<ExFlyTo XYZ="-284.1622, 191.1834, 373.1395" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(5,6.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2765,7 +2760,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="110.9606, 36.187, 11.86534" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -2785,7 +2780,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="110.9606, 36.187, 11.86534" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -2816,7 +2811,7 @@
 						<ExFlyTo XYZ="-668.187, 239.2614, 209.3701"/>
 						<ExFlyTo XYZ="-771.0028, 199.434, 311.5589" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(17,18.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
@@ -2844,7 +2839,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2864,7 +2859,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="460.8201, 20.01051, -61.98098" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -2884,7 +2879,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-234.4876, -0.4223762, 443.9795" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2909,7 +2904,7 @@
 						<RunCode Name="MoveForward"/>
 						<ExMoveTo XYZ="513.8373, 90.97717, -376.9062" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -2931,7 +2926,7 @@
 						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2960,7 +2955,7 @@
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 						<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -2987,7 +2982,7 @@
 						<ExFlyTo XYZ="182.2543, 30.27122, -228.4919"/>
 						<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -3013,7 +3008,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="176.5952, 61.53287, 263.0089" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -3034,7 +3029,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-632.1406, 207.0169, -429.8357" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3054,7 +3049,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="-94.77985, 44.19695, 560.4274" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -3074,7 +3069,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="75.10241, 19.24676, 136.3448" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -3095,7 +3090,7 @@
 						<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 						<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3121,7 +3116,7 @@
 						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
 						<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3155,7 +3150,7 @@
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 						<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3182,7 +3177,7 @@
 						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<ExFlyTo XYZ="-583.932, 141.957, -652.866" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(7,8.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -3202,7 +3197,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="636.902, 38.89502, 340.2411" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(7,8.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -3222,7 +3217,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="636.902, 38.89502, 340.2411" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(7,8.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Legendary Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -3245,7 +3240,7 @@
 						<ExFlyTo XYZ="543.3156, 25.95834, 103.2624"/>
 						<ExFlyTo XYZ="591.0328, -25.98607, 316.8024" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(19,20.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3271,7 +3266,7 @@
 						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3288,7 +3283,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(19) &lt; &Water_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3305,7 +3300,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(18) &lt; &Lightning_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3322,7 +3317,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(17) &lt; &Earth_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3339,7 +3334,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(16) &lt; &Wind_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3356,7 +3351,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(15) &lt; &Ice_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3373,7 +3368,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(14) &lt; &Fire_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3390,7 +3385,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(5602) &lt; &Grade4_Carbonized_Matter;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -3414,7 +3409,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="354.2818, 303.052, -348.1232" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3434,7 +3429,7 @@
 						<RunCode Name="MIN"/>
 						<ExMoveTo XYZ="331.291, 11.89599, -11.15705" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 							</GatherObjects>
@@ -3454,7 +3449,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-158.8434, 41.22663, -256.206" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3474,7 +3469,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="443.7831, 16.39372, 252.9884" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3494,7 +3489,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="443.7831, 16.39372, 252.9884" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3518,7 +3513,7 @@
 						<ExMoveTo XYZ="345.458, -4.698928, -482.9557" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(20,21.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3535,7 +3530,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(19) &lt; &Water_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3552,7 +3547,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(18) &lt; &Lightning_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3569,7 +3564,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(17) &lt; &Earth_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3586,7 +3581,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(16) &lt; &Wind_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3603,7 +3598,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(15) &lt; &Ice_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3620,7 +3615,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(14) &lt; &Fire_Cluster; and not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter;)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3637,7 +3632,7 @@
 							</ExGather>
 						</If>
 						<If Condition="ItemCount(5602) &lt; &Grade4_Carbonized_Matter;">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 								</GatherObjects>
@@ -3661,7 +3656,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-391.6808, 0.7968072, 109.7606" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(20,21.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3681,7 +3676,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="-391.6808, 0.7968072, 109.7606" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(20,21.1)"/>
-						<ExGather loops="1" spawnTimeout="25" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3706,12 +3701,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Condition.IsTimeBetween(20,21.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_Chysahl; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Chysahl Greens" Value="&Collectability_Chysahl;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Chysahl Greens" Value="&Collectability_Chysahl;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<HotSpots>
@@ -3721,12 +3716,12 @@
 						</If>
 						<!-- High Rate If Capped -->
 						<If Condition="&Collect_Chysahl; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and (&HighRateIfCapped; or &Collectability_Chysahl; == 550)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Chysahl Greens" Value="550" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Chysahl Greens" Value="550" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<HotSpots>
@@ -3736,7 +3731,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_Chysahl; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; and &HighRateIfCapped; == 0 and &Collectability_Chysahl; != 550">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
@@ -3751,7 +3746,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_Chysahl; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 								</GatherObjects>
@@ -3776,7 +3771,7 @@
 						<RunCode Name="BTN"/>
 						<ExMoveTo XYZ="185.9685, -32.75785, 403.3672" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -3802,7 +3797,7 @@
 						<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3826,7 +3821,7 @@
 						<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 						<ExFlyTo XYZ="451.4217, 194.0464, -209.2942" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(9,10.1) or Condition.IsTimeBetween(21,22.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 							<GatherObjects>
 								<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -3852,12 +3847,12 @@
 						<!-- Pyrite -->
 						<If Condition="&Pyrite;">
 							<If Condition="&Collect_Pyrite;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Pyrite" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Pyrite" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -3866,7 +3861,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_Pyrite; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
@@ -3883,12 +3878,12 @@
 						<!-- Chalcocite -->
 						<If Condition="&Chalcocite;">
 							<If Condition="&Collect_Chalcocite;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Chalcocite" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Chalcocite" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -3897,7 +3892,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_Chalcocite; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
@@ -3914,12 +3909,12 @@
 						<!-- Limonite -->
 						<If Condition="&Limonite;">
 							<If Condition="&Collect_Limonite;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Limonite" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Limonite" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -3928,7 +3923,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_Limonite; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 									</GatherObjects>
@@ -3954,12 +3949,12 @@
 						<!-- Coerthan Tea Leaves -->
 						<If Condition="&CoerthanTeaLeaves;">
 							<If Condition="&Collect_CoerthanTeaLeaves;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Coerthan Tea Leaves" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Coerthan Tea Leaves" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -3971,7 +3966,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_CoerthanTeaLeaves; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 									</GatherObjects>
@@ -3991,12 +3986,12 @@
 						<!-- Pearl Sprouts -->
 						<If Condition="&PearlSprouts;">
 							<If Condition="&Collect_PearlSprouts;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Pearl Sprouts" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Pearl Sprouts" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4008,7 +4003,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_PearlSprouts; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 									</GatherObjects>
@@ -4028,12 +4023,12 @@
 						<!-- Chives -->
 						<If Condition="&Chives;">
 							<If Condition="&Collect_Chives;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Chives" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Chives" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4045,7 +4040,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_Chives; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 									</GatherObjects>
@@ -4078,12 +4073,12 @@
 						<If Condition="&HeavensLemon;">
 							<!-- Collectable -->
 							<If Condition="&Collect_HeavensLemon;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Heavens Lemon" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Heavens Lemon" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4098,7 +4093,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_HeavensLemon; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
@@ -4121,12 +4116,12 @@
 						<If Condition="&AbalathianMistletoe;">
 							<!-- Collectable -->
 							<If Condition="&Collect_AbalathianMistletoe;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Abalathian Mistletoe" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Abalathian Mistletoe" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4141,7 +4136,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_AbalathianMistletoe; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
@@ -4178,12 +4173,12 @@
 						<WaitWhile Condition="Condition.IsTimeBetween(10,11.1) or Condition.IsTimeBetween(22,23.1)"/>
 						<!-- Collectable -->
 						<If Condition="&Collect_Adamantite; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &HighRateIfCapped; == 0 and &RegularIfCapped; == 0))">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Adamantite Ore" Value="&Collectability_Adamantite;" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Adamantite Ore" Value="&Collectability_Adamantite;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -4198,12 +4193,12 @@
 						</If>
 						<!-- High Rate If Capped -->
 						<If Condition="&Collect_Adamantite; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and (&HighRateIfCapped; or &Collectability_Adamantite; == 550)">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Adamantite Ore" Value="550" PlusPlus="&PlusPlus;"/>
+									<Collectable Name="Adamantite Ore" Value="550" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -4218,7 +4213,7 @@
 						</If>
 						<!-- Regular If Capped -->
 						<If Condition="&Collect_Adamantite; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; and &HighRateIfCapped; == 0 and &Collectability_Adamantite; != 550">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
@@ -4238,7 +4233,7 @@
 						</If>
 						<!-- NOT Collectable -->
 						<If Condition="&Collect_Adamantite; == 0">
-							<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mineral Deposit</GatherObject>
 								</GatherObjects>
@@ -4272,7 +4267,7 @@
 						<ExFlyTo XYZ="-779.9359, 52.66815, -125.0472"/>
 						<ExFlyTo XYZ="-733.1625, -35.88503, 398.2443" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(11,12.1)"/>
-						<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_3Star;" CordialTime="&Cordial_Time_3Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_3Star;" DisableRotationOverride="&DisableRotationOverride_3Star;">
 							<GatherObjects>
 								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 							</GatherObjects>
@@ -4297,12 +4292,12 @@
 						<!-- Porcini -->
 						<If Condition="&Porcini;">
 							<If Condition="&Collect_Porcini;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Porcini" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Porcini" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4315,7 +4310,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_Porcini; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
@@ -4336,12 +4331,12 @@
 						<!-- Dravanian Mistletoe -->
 						<If Condition="&DravanianMistletoe;">
 							<If Condition="&Collect_DravanianMistletoe;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Dravanian Mistletoe" Value="&Collectability_400;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Dravanian Mistletoe" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4354,7 +4349,7 @@
 								</ExGather>
 							</If>
 							<If Condition="&Collect_DravanianMistletoe; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
@@ -4394,12 +4389,12 @@
 						<If Condition="&CloudBanana;">
 							<!-- Collectable -->
 							<If Condition="&Collect_CloudBanana;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Cloud Banana" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Cloud Banana" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4413,7 +4408,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_CloudBanana; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
@@ -4435,12 +4430,12 @@
 						<If Condition="&Morel;">
 							<!-- Collectable -->
 							<If Condition="&Collect_Morel;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Morel" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Morel" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<GatherSpots>
@@ -4454,7 +4449,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_Morel; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Mature Tree</GatherObject>
 									</GatherObjects>
@@ -4486,12 +4481,12 @@
 						<If Condition="&AbalathianRockSalt;">
 							<!-- Collectable -->
 							<If Condition="&Collect_AbalathianRockSalt;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Abalathian Rock Salt" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Abalathian Rock Salt" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -4501,7 +4496,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_AbalathianRockSalt; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
@@ -4519,12 +4514,12 @@
 						<If Condition="&RedQuartz;">
 							<!-- Collectable -->
 							<If Condition="&Collect_RedQuartz;">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60_Collectable;" CordialTime="&Cordial_Time_50_60_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
 									<Collectables>
-										<Collectable Name="Red Quartz" Value="&Collectability_450;" PlusPlus="&PlusPlus;"/>
+										<Collectable Name="Red Quartz" Value="0" PlusPlus="0"/>
 									</Collectables>
 									<GatherRotation>NewbCollect</GatherRotation>
 									<HotSpots>
@@ -4534,7 +4529,7 @@
 							</If>
 							<!-- NOT Collectable -->
 							<If Condition="&Collect_RedQuartz; == 0">
-								<ExGather loops="1" spawnTimeout="&IsTimeBetween_tick;" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+								<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
 									<GatherObjects>
 										<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 									</GatherObjects>
@@ -5799,7 +5794,7 @@
 				<If Condition="&Trade_Counterfoil;">
 					<TurnInCouterfoil/>
 				</If>
-				<TurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
+				<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 					<ShopPurchases>
 						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
 						<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice_Count;"/>
@@ -5808,7 +5803,7 @@
 						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
 						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
 					</ShopPurchases>
-				</TurnInCollectables>
+				</ExTurnInCollectables>
 			</If>
 			<!-- Housing -->
 			<If Condition="(&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)">
@@ -11005,7 +11000,7 @@
 								</FishSpots>
 							</ExFish>
 							<RunCode Name="StopFishing"/>
-							<TurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
+							<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 								<Collectables>
 									<CollectableTurnIn Name="Illuminati Perch" value="826"/>
 								</Collectables>
@@ -11014,7 +11009,7 @@
 									<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken_Count;"/>
 									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
 								</ShopPurchases>
-							</TurnInCollectables>
+							</ExTurnInCollectables>
 							<ExEnablePlugins Names="Enable Flight"/>
 						</If>
 						<!--  Desynth/Sell - Reset Time -->
@@ -11614,7 +11609,7 @@
 						<If Condition="&Trade_Counterfoil;">
 							<TurnInCouterfoil/>
 						</If>
-						<TurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
+						<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 							<ShopPurchases>
 								<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
 								<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice_Count;"/>
@@ -11623,7 +11618,7 @@
 								<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
 								<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
 							</ShopPurchases>
-						</TurnInCollectables>
+						</ExTurnInCollectables>
 						<If Condition="&Use_House_Codechunck;">
 							<RunCode Name="WaitingHouse"/>
 						</If>
@@ -11675,7 +11670,7 @@
 					</While>
 				</If>
 				<TurnInCouterfoil/>
-				<TurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
+				<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 					<ShopPurchases>
 						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
 						<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice_Count;"/>
@@ -11684,7 +11679,7 @@
 						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
 						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
 					</ShopPurchases>
-				</TurnInCollectables>
+				</ExTurnInCollectables>
 			</If>
 		</While>
 		<!-- Full inventory -->
