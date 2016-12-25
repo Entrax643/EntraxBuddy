@@ -186,7 +186,7 @@ namespace ff14bot.NeoProfiles
                                     Log("Selecting my Chocobo");
                                     HousingChocoboList.SelectMyChocobo();
 
-                                    if (await Coroutine.Wait(2500, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
+                                    if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
                                         Log("{0}, {1}'s chocobo is maxed out", items[i].ChocoboName, items[i].PlayerName);
                                         SelectYesno.ClickNo();
@@ -194,7 +194,7 @@ namespace ff14bot.NeoProfiles
                                         continue;
                                     }
 
-                                    if (await Coroutine.Wait(2500, () => SelectYesno.IsOpen) && !string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
+                                    if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && !string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
                                         if (ConditionParser.HasAtLeast(8166, 1))
                                         {
@@ -206,7 +206,7 @@ namespace ff14bot.NeoProfiles
                                             Log("Selecting {0}, {1}'s chocobo on page {2}", items[i].ChocoboName, items[i].PlayerName, stableSection);
                                             HousingChocoboList.SelectMyChocobo();
 
-                                            await Coroutine.Wait(2500, () => SelectYesno.IsOpen);
+                                            await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
                                             SelectYesno.ClickYes();
                                             ChocoboFoodId = 8166;
                                         }
@@ -255,7 +255,7 @@ namespace ff14bot.NeoProfiles
                                     HousingChocoboList.SelectChocobo(i);
 
                                     //Chocobo is maxed out, don't interact with it again
-                                    if (await Coroutine.Wait(2500, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
+                                    if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
                                         Log("{0}, {1}'s chocobo is maxed out", items[i].ChocoboName, items[i].PlayerName);
                                         SelectYesno.ClickNo();
@@ -264,7 +264,7 @@ namespace ff14bot.NeoProfiles
                                     }
 
                                     //Chocobo is maxed out, don't interact with it again
-                                    if (await Coroutine.Wait(2500, () => SelectYesno.IsOpen) && string.Equals("All", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
+                                    if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("All", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
                                         if (ConditionParser.HasAtLeast(8166, 1))
                                         {
@@ -276,7 +276,7 @@ namespace ff14bot.NeoProfiles
                                             Log("Selecting {0}, {1}'s chocobo on page {2}", items[i].ChocoboName, items[i].PlayerName, stableSection);
                                             HousingChocoboList.SelectChocobo(i);
 
-                                            await Coroutine.Wait(2500, () => SelectYesno.IsOpen);
+                                            await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
                                             SelectYesno.ClickYes();
                                             ChocoboFoodId = 8166;
                                         }
@@ -333,7 +333,7 @@ namespace ff14bot.NeoProfiles
                         HousingMyChocobo.SelectLine(0);
 
                         //Chocobo is maxed out, don't interact with it again
-                        if (await Coroutine.Wait(2500, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
+                        if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                         {
                             Log("Your chocobo is maxed out");
                             SelectYesno.ClickNo();
@@ -341,7 +341,7 @@ namespace ff14bot.NeoProfiles
                         }
 
                         //Chocobo is maxed out, don't interact with it again
-                        if (await Coroutine.Wait(2500, () => SelectYesno.IsOpen) && (string.Equals("Me", ThavnairianOnion, StringComparison.OrdinalIgnoreCase) || string.Equals("All", ThavnairianOnion, StringComparison.OrdinalIgnoreCase)))
+                        if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && (string.Equals("Me", ThavnairianOnion, StringComparison.OrdinalIgnoreCase) || string.Equals("All", ThavnairianOnion, StringComparison.OrdinalIgnoreCase)))
                         {
                             if (ConditionParser.HasAtLeast(8166, 1))
                             {
@@ -352,7 +352,7 @@ namespace ff14bot.NeoProfiles
 
                                 HousingMyChocobo.SelectLine(0);
 
-                                await Coroutine.Wait(2500, () => SelectYesno.IsOpen);
+                                await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
                                 SelectYesno.ClickYes();
                                 ChocoboFoodId = 8166;
                             }

@@ -321,7 +321,6 @@
 <!ENTITY Cordial_Type_1Star_Collectable "Auto">
 <!-- -->
 <!ENTITY Cordial_Type_1StarPlus "Auto">
-<!ENTITY Cordial_Type_1StarPlus_Collectable "Auto">
 <!-- -->
 <!ENTITY Cordial_Type_3Star "Auto">
 <!-- -->
@@ -335,7 +334,6 @@
 <!ENTITY Cordial_Time_1Star_Collectable "Auto">
 <!-- -->
 <!ENTITY Cordial_Time_1StarPlus "Auto">
-<!ENTITY Cordial_Time_1StarPlus_Collectable "Auto">
 <!-- -->
 <!ENTITY Cordial_Time_3Star "Auto">
 <!-- -->
@@ -5196,7 +5194,7 @@
 					</If>
 					<!-- Helicoprion -->
 					<If Condition="&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt;  ~ Helicoprion !"/>
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Sagolii Desert ~ Helicoprion !"/>
 						<TeleportTo Force="True" AetheryteId="20"/>
 						<RunCode Name="FSH"/>
 						<If Condition="not(HasAtLeast(2600,50))">
@@ -11568,8 +11566,7 @@
 											<GatherItem Name="Timeworn Dragonskin Map"/>
 										</Items>
 										<GatherSpots>
-											<IndirectApproachGatherSpot ApproachLocation="-133.4553, -46.51377, 214.2649" ReturnToApproachLocation="true" nodeLocation="-133.4304, -45.47835, 211.6268"/>
-											<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+											<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818"/>
 										</GatherSpots>
 										<HotSpots>
 											<HotSpot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>
@@ -11591,8 +11588,7 @@
 											<GatherItem Name="Timeworn Dragonskin Map"/>
 										</Items>
 										<GatherSpots>
-											<IndirectApproachGatherSpot ApproachLocation="-133.4553, -46.51377, 214.2649" ReturnToApproachLocation="true" nodeLocation="-133.4304, -45.47835, 211.6268"/>
-											<IndirectApproachGatherSpot ApproachLocation="-149.9537, -70.32066, 368.6832" ReturnToApproachLocation="true" nodeLocation="-152.9678, -68.49996, 365.0086"/>
+											<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-693.4734, -105.5641, 620.0862" nodeLocation="-679.3283, -104.4418, 624.4818"/>
 										</GatherSpots>
 										<HotSpots>
 											<HotSpot Radius="70" XYZ="-580.0791, -93.15157, 538.0186"/>

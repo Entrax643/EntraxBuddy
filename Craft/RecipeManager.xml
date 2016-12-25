@@ -14,21 +14,22 @@
 <!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
 <!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
 <!-- Recipe Settings -->
-<!ENTITY Craft "1">
 <!-- If you want to craft set 1, 0 if you don't -->
+<!ENTITY Craft "1">
 <!ENTITY ID_ITEM_RECIPE "31189">
-<!ENTITY Durability "70">
 <!-- 35 - 40 - 70 - 80 -->
-<!ENTITY Recipe_level "60">
+<!ENTITY Durability "70">
 <!-- 51 - ... - 60 -->
+<!ENTITY Recipe_level "60">
+<!-- 0 - 1 - 2 - 3 - 4 (Recipe_level entity set to 60 REQUIRED !) -->
 <!ENTITY Recipe_level_star "0">
-<!-- 0 - 1 - 2  (Recipe_level entity set to 60 REQUIRED !) -->
-<!ENTITY Collectable "1">
 <!-- 0 - 1 Set 1 if you want to craft as collectable, 0 if you don't -->
-<!ENTITY Quick_Synthesis "0">
+<!ENTITY Collectable "1">
 <!-- 0 - 1 Set 1 if you want to spam synthesis without any quality, 0 if you don't -->
+<!ENTITY Quick_Synthesis "0">
 <!-- Do you want to use a food ? If yes wich one ? -->
 <!ENTITY FOOD "1">
+<!-- Foods ID Baked onion Soup : 12861 Seafood Stew : 12865 -->
 <!ENTITY ID_FOOD "12861">
 <!-- 1 Star settings : if CSII > 110 Progress(Craftmanship > 787) set this to 854 BUT make sure you have at least 445 CP!-->
 <!-- 1 Star settings : if CSII < 111 Progress(Craftmanship < 788) set this to 894!-->
@@ -37,27 +38,26 @@
 <!-- 2 Star settings : if CSII > 102 Progress(Craftmanship > 733) set this to 1150!-->
 <!-- 2 Star settings : if CSII < 103 Progress(Craftmanship < 734) set this to 1190!-->
 <!ENTITY FlawlessLimit_2Star "1150">
-<!-- Foods ID Baked onion Soup : 12861 Seafood Stew : 12865 -->
 <!-- Rotation Settings -->
-<!ENTITY Reclaim "0">
 <!-- You have Reclaim as cross skill and you want to use it set 1, 0 if you don't -->
-<!ENTITY IQ_Stack "9">
+<!ENTITY Reclaim "0">
 <!-- (Reclaim set to 1 REQUIRED !) How many stacks at least to NOT use Reclaim -->
+<!ENTITY IQ_Stack "9">
 <!-- Desynthesis Settings -->
-<!ENTITY Desynthesis "0">
 <!-- You want to Desynthesis the item you had craft set 1, 0 if you don't -->
-<!ENTITY Item_Id "2445">
+<!ENTITY Desynthesis "0">
 <!-- Set the Item ID you want to recycle -->
-<!ENTITY NqOnly "false">
+<!ENTITY Item_Id "2445">
 <!-- If you want to keep HQ set true, false if you don't-->
-<!ENTITY IncludeArmory "false">
+<!ENTITY NqOnly "false">
 <!-- If you also want to desynthesis from your armory set true, false if you don't  -->
+<!ENTITY IncludeArmory "false">
 <!ENTITY Version "Porygon">]><Profile>
 	<Name>RecipeManager</Name>
 	<BehaviorDirectory>CustomTags</BehaviorDirectory>
 	<CodeChunks>
 		<CodeChunk name="ToT">
-			<![CDATA[ SpellData data; if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Tricks of the Trade", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); ]]>
+			<![CDATA[ SpellData data; if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Tricks of the Trade", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(500); ]]>
 		</CodeChunk>
 		<CodeChunk Name="Collector">
 			<![CDATA[ if (!Core.Player.HasAura(903)) { if(ff14bot.Managers.Actionmanager.CanCast(4560, null)){ Actionmanager.DoAction(4560, null); } if(ff14bot.Managers.Actionmanager.CanCast(4561, null)){ Actionmanager.DoAction(4561, null); } if(ff14bot.Managers.Actionmanager.CanCast(4562, null)){ Actionmanager.DoAction(4562, null); } if(ff14bot.Managers.Actionmanager.CanCast(4563, null)){ Actionmanager.DoAction(4563, null); } if(ff14bot.Managers.Actionmanager.CanCast(4564, null)){ Actionmanager.DoAction(4564, null); } if(ff14bot.Managers.Actionmanager.CanCast(4565, null)){ Actionmanager.DoAction(4565, null); } if(ff14bot.Managers.Actionmanager.CanCast(4566, null)){ Actionmanager.DoAction(4566, null); } if(ff14bot.Managers.Actionmanager.CanCast(4567, null)){ Actionmanager.DoAction(4567, null); } await Coroutine.Wait(7000, () => Core.Player.HasAura(903));				 } ]]>
@@ -66,25 +66,25 @@
 			<![CDATA[ if (await Buddy.Coroutines.Coroutine.Wait(5000, () => ff14bot.Managers.Actionmanager.CanCast(100069, null))) { ff14bot.Managers.Actionmanager.DoAction(100069, null); await Buddy.Coroutines.Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Buddy.Coroutines.Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked || ff14bot.RemoteWindows.SelectYesNoItem.IsOpen); if (ff14bot.RemoteWindows.SelectYesNoItem.IsOpen) { ff14bot.RemoteWindows.SelectYesNoItem.Yes(); await Buddy.Coroutines.Coroutine.Wait(10000, () => !ff14bot.RemoteWindows.SelectYesNoItem.IsOpen); await Buddy.Coroutines.Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } ]]>
 		</CodeChunk>
 		<CodeChunk Name="TrickTouch">
-			<![CDATA[ SpellData data; if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Precise Touch", null); } else { Actionmanager.DoAction("Basic Touch", null); } await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); await Coroutine.Sleep(250); ]]>
+			<![CDATA[ SpellData data; if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Precise Touch", null); } else { Actionmanager.DoAction("Basic Touch", null); } await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); await Coroutine.Sleep(500); ]]>
 		</CodeChunk>
 		<CodeChunk Name="TrickTouch2">
-			<![CDATA[	SpellData data;	if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 95)  {  Actionmanager.DoAction("Precise Touch", null);	} else { if(Core.Player.CurrentCP > 95){ Actionmanager.DoAction("Basic Touch", null); } else { Actionmanager.DoAction("Hasty Touch", null); } }	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
+			<![CDATA[	SpellData data;	if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 95)  {  Actionmanager.DoAction("Precise Touch", null);	} else { if(Core.Player.CurrentCP > 95){ Actionmanager.DoAction("Basic Touch", null); } else { Actionmanager.DoAction("Hasty Touch", null); } }	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(500);	]]>
 		</CodeChunk>
 		<CodeChunk Name="StarTrickTouch">
-			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 57)  { Actionmanager.DoAction("Precise Touch", null); }else { if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data)) { Actionmanager.DoAction("Hasty Touch", null); } } await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); await Coroutine.Sleep(250); ]]>
+			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 57)  { Actionmanager.DoAction("Precise Touch", null); }else { if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data)) { Actionmanager.DoAction("Hasty Touch", null); } } await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); await Coroutine.Sleep(500); ]]>
 		</CodeChunk>
 		<CodeChunk Name="StarTrickTouch2">
-			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 65)  { Actionmanager.DoAction("Precise Touch", null); }else { if(Core.Player.CurrentCP > 57 && Actionmanager.CurrentActions.TryGetValue("Basic Touch", out data) && Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data)) { Actionmanager.DoAction("Basic Touch", null); }else { if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data)) { Actionmanager.DoAction("Hasty Touch", null); } } } await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); await Coroutine.Sleep(250); ]]>
+			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 65)  { Actionmanager.DoAction("Precise Touch", null); }else { if(Core.Player.CurrentCP > 57 && Actionmanager.CurrentActions.TryGetValue("Basic Touch", out data) && Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data)) { Actionmanager.DoAction("Basic Touch", null); }else { if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data)) { Actionmanager.DoAction("Hasty Touch", null); } } } await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); await Coroutine.Sleep(500); ]]>
 		</CodeChunk>
 		<CodeChunk name="BBCheck">
-			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Excellent) { if(Actionmanager.CurrentActions.TryGetValue("Byregot's Blessing", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Byregot's Blessing", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(250); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } await Coroutine.Sleep(250);         ]]>
+			<![CDATA[ SpellData data; if (CraftingManager.Condition == CraftingCondition.Excellent) { if(Actionmanager.CurrentActions.TryGetValue("Byregot's Blessing", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Byregot's Blessing", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(500); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(500); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(500); if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Careful Synthesis II", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } await Coroutine.Sleep(500);         ]]>
 		</CodeChunk>
 		<CodeChunk name="InnovationCheck">
-			<![CDATA[ SpellData data; if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good)) { if (Core.Player.CurrentCP > 41 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Innovation", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } else { if (Core.Player.CurrentCP > 37 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Observe", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } } await Coroutine.Sleep(250); ]]>
+			<![CDATA[ SpellData data; if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good)) { if (Core.Player.CurrentCP > 41 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Innovation", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } else { if (Core.Player.CurrentCP > 37 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Observe", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } } await Coroutine.Sleep(500); ]]>
 		</CodeChunk>
 		<CodeChunk name="InnovationCheck2">
-			<![CDATA[ SpellData data; if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good)) { if (Core.Player.CurrentCP > 73 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Innovation", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } else { if (Core.Player.CurrentCP > 69 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Observe", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } } await Coroutine.Sleep(250); ]]>
+			<![CDATA[ SpellData data; if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good)) { if (Core.Player.CurrentCP > 73 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Innovation", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } else { if (Core.Player.CurrentCP > 69 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null)) { Actionmanager.DoAction("Observe", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } } } await Coroutine.Sleep(500); ]]>
 		</CodeChunk>
 	</CodeChunks>
 	<Order>
@@ -465,11 +465,66 @@
 						<CraftActionByName Name="Steady Hand" />
 						<CraftActionByName Name="Piece by Piece" />
 						<CraftActionByName Name="Piece by Piece" />
-						<While Condition="CraftingManager.Progress &lt; 1309">
+						<While Condition="CraftingManager.Progress &lt; 1229">
 							<CraftActionByName Name="Flawless Synthesis" />
 						</While>
 						<RunCode Name="ToT"/>
-						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; 1389">
+						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; 1349">
+							<CraftActionByName Name="Flawless Synthesis" />
+							<RunCode Name="ToT"/>
+						</While>
+						<CraftActionByName Name="Comfort Zone" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Inner Quiet" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Waste Not II" />
+						<CraftActionByName Name="Steady Hand II" />
+						<While Condition="Core.Player.HasAura(262)">
+							<CraftActionByName Name="Hasty Touch" />
+						</While>
+						<CraftActionByName Name="Careful Synthesis II" />
+						<CraftActionByName Name="Careful Synthesis II" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Comfort Zone" />
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Steady Hand II" />
+						<CraftActionByName Name="Hasty Touch" />
+						<CraftActionByName Name="Master's Mend II" />
+						<While Condition="Core.Player.HasAura(262)">
+							<CraftActionByName Name="Hasty Touch" />
+						</While>
+						<RunCode Name="ToT"/>
+						<CraftActionByName Name="Steady Hand II" />
+						<RunCode Name="BBCheck"/>
+						<RunCode Name="StarTrickTouch"/>
+						<RunCode Name="BBCheck"/>
+						<RunCode Name="StarTrickTouch2"/>
+						<RunCode Name="BBCheck"/>
+						<If Condition="&Reclaim; != 0 and Core.Player.CharacterAuras.GetAuraStacksById(251) &lt; &IQ_Stack;">
+							<CraftActionByName Name="Reclaim" />
+							<CraftActionByName Name="Hasty Touch" />
+							<CraftActionByName Name="Hasty Touch" />
+						</If>
+						<CraftActionByName Name="Great Strides" />
+						<RunCode Name="InnovationCheck"/>
+						<CraftActionByName Name="Byregot's Blessing" />
+						<CraftActionByName Name="Careful Synthesis II" />
+					</If>
+					<If Condition="&Durability; &gt; 69 and &Recipe_level; == 60 and &Recipe_level_star; == 4">
+						<ExLog Color="#FFFF00" Name="RecipeManager &Version;"  Message="Starting rotation for 4 Star recipe"/>
+						<!-- Required Skills : Maker's Mark, Flawless Synthesis, Steady Hand 2, Careful synthesis 2, Piece by Piece, Hasty Touch, Byregot's Blessing, Comfort Zone, Waste Not II -->
+						<!-- Optionnals : Innovation, Tricks of the Trade, Reclaim -->
+						<Synthesize RecipeId="&ID_ITEM_RECIPE;" MinimumCp="437" HQMats="-1,-1,-1,-1,-1,-1" RequiredSkills="100178, 100083, 281, 100069, 100039, 100108, 100009, 286, 285" />
+						<CraftActionByName Name="Maker's Mark" />
+						<CraftActionByName Name="Comfort Zone" />
+						<CraftActionByName Name="Steady Hand" />
+						<CraftActionByName Name="Piece by Piece" />
+						<CraftActionByName Name="Piece by Piece" />
+						<While Condition="CraftingManager.Progress &lt; 1564">
+							<CraftActionByName Name="Flawless Synthesis"/>
+						</While>
+						<RunCode Name="ToT"/>
+						<While Condition="Core.Player.HasAura(878) and CraftingManager.Progress &lt; 1644">
 							<CraftActionByName Name="Flawless Synthesis" />
 							<RunCode Name="ToT"/>
 						</While>
