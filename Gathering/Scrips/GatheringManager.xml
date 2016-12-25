@@ -24,7 +24,7 @@
 <!-- 24/24 Fish -->
 <!ENTITY Slowpoke "0">
 <!-- Housing Management -->
-<!ENTITY Housing "0">
+<!ENTITY Umbreon "0">
 <!-- Regular Farm -->
 <!ENTITY Snorlax "0">
 <!-- Unspoiled -->
@@ -253,8 +253,8 @@
 <!-- -->
 <!-- -->
 <!-- Housing Settings -->
-<!ENTITY Housing_Hour "0">
-<!ENTITY HousingAetheryteID "8">
+<!ENTITY Umbreon_Hour "0">
+<!ENTITY UmbreonAetheryteID "8">
 <!-- Garden Settings -->
 <!ENTITY Gardenning "0">
 <!ENTITY AlwaysWater "False">
@@ -280,10 +280,6 @@
 <!-- 7898 Tantalplant -->
 <!-- 7900 Pahsana Fruit -->
 <!ENTITY ChocoboFoodID "8165">
-<!-- By default it'll NOT try to unlock the next rank : "None" -->
-<!-- You can set it to unlock your own chocobo's rank : "Me" -->
-<!-- You can set it to unlock next rank on every chocobos you're feeding : "All" -->
-<!ENTITY ThavnairianOnion "None">
 <!ENTITY CleanBefore "True">
 <!-- Enter your stable location here as "x, y, z" -->
 <!ENTITY StableLocation "0,0,0">
@@ -390,6 +386,8 @@
 <!ENTITY Cluster_1PM "0">
 <!-- -->
 <!ENTITY FrostCottonBoll "0">
+<!-- -->
+<!ENTITY VampirePlant "0">
 <!-- -->
 <!-- -->
 <!-- 2.00 AM & PM - 2.55 AM & PM -->
@@ -682,6 +680,7 @@
 <!ENTITY HardsilverSand "0">
 <!ENTITY EarthCrystal_LandlordColony_MIN "0">
 <!-- Hinterlands -->
+<!ENTITY HardsilverOre "0">
 <!ENTITY HardsilverOreOrRawChrysolite "0">
 <!ENTITY HardsilverOreOrWyrmObsidian "0">
 <!ENTITY HardsilverOreOrWindCrystal "0">
@@ -693,6 +692,7 @@
 <!ENTITY MythriteSand "0">
 <!ENTITY IceCrystal_Twinpools_MIN51 "0">
 <!-- -->
+<!ENTITY MythriteOre "0">
 <!ENTITY MythriteOreOrRawLarimar "0">
 <!ENTITY MythriteOreOrRawMormorion "0">
 <!ENTITY MythriteOreOrIceCrystal "0">
@@ -705,6 +705,7 @@
 <!ENTITY DravanianSpringWater "0">
 <!ENTITY FireCrystal_TheSmolderingWastes_MIN "0">
 <!-- -->
+<!ENTITY TitaniumOre "0">
 <!ENTITY TitaniumOreOrRawStarRuby "0">
 <!ENTITY TitaniumOreOrRawStarSapphire "0">
 <!ENTITY TitaniumOreOrFireCrystal "0">
@@ -722,6 +723,7 @@
 <!ENTITY Rue "0">
 <!ENTITY IceCrystal_Twinpools_BTN56 "0">
 <!-- Sea of Clouds -->
+<!ENTITY BirchLog "0">
 <!ENTITY BirchLogOrBirchBranch "0">
 <!ENTITY BirchLogOrBirchSap "0">
 <!ENTITY BirchLogOrWaterCrystal "0">
@@ -747,6 +749,7 @@
 <!ENTITY SprigOfMistDill "0">
 <!ENTITY IceCrystal_Twinpools_BTN51 "0">
 <!-- Forelands -->
+<!ENTITY DarkChestnut "0">
 <!ENTITY DarkChestnutOrDarkChestnutLog "0">
 <!ENTITY DarkChestnutOrDarkChestnutBranch "0">
 <!ENTITY DarkChestnutOrFireCrystal "0">
@@ -754,6 +757,7 @@
 <!ENTITY DarkChestnutBranch "0">
 <!ENTITY FireCrystal_TheSmolderingWastes_BTN "0">
 <!-- -->
+<!ENTITY CyclopsOnion "0">
 <!ENTITY CyclopsOnionOrHighlandWheat "0">
 <!ENTITY CyclopsOnionOrStalkOfRamie "0">
 <!ENTITY CyclopsOnionOrFireCrystal "0">
@@ -761,6 +765,7 @@
 <!ENTITY StalkOfRamie "0">
 <!ENTITY FireCrystal_ChocoboForest_BTN "0">
 <!-- Churning Mist -->
+<!ENTITY EmeraldBeans "0">
 <!ENTITY EmeraldBeansOrMagmaBeet "0">
 <!ENTITY EmeraldBeansOrEarthCrystal "0">
 <!ENTITY MagmaBeet "0">
@@ -771,9 +776,15 @@
 <!ENTITY IceCrystal_Riversmeet_BTN "0">
 <!-- A Realm Reborn -->
 <!-- Botanist -->
+<!ENTITY BloodCurrants "0">
+<!-- -->
+<!ENTITY WhiteTruffle "0">
+<!-- -->
 <!ENTITY Aloe "0">
 <!-- -->
-<!ENTITY BloodCurrants "0">
+<!ENTITY Flax "0">
+<!-- -->
+<!ENTITY HighlandParsley "0">
 <!-- -->
 <!-- Shard & Crystal -->
 <!ENTITY FireShard_BTN "0">
@@ -796,6 +807,18 @@
 <!-- -->
 <!-- -->
 <!-- Miner -->
+<!ENTITY CobaltOre "0">
+<!-- -->
+<!ENTITY BasiliskEgg "0">
+<!-- -->
+<!ENTITY ElectrumOre "0">
+<!-- -->
+<!ENTITY MythrilOre "0">
+<!-- -->
+<!ENTITY SilverOre "0">
+<!-- -->
+<!ENTITY EffervescentWater "0">
+<!-- -->
 <!-- Shard & Crystal -->
 <!ENTITY FireShard_MIN "0">
 <!ENTITY FireCrystal_MIN "0">
@@ -819,7 +842,7 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Slowpoke">
+<!ENTITY Version "Umbreon">
 <!-- -->
 <!ENTITY SlowpokeCondition "not(ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1))">
 <!-- -->
@@ -827,13 +850,13 @@
 <!-- -->
 <!ENTITY SpiritBond_SnorlaxCondition "(Condition.IsSpiritBondDone(11985) and Condition.IsSpiritBondDone(11990) and Condition.IsSpiritBondDone(11995) and Condition.IsSpiritBondDone(11998) and Condition.IsSpiritBondDone(12003) and Condition.IsSpiritBondDone(12008)) and HasNqItem(11985) and HasNqItem(11990) and HasNqItem(11995) and HasNqItem(11998) and HasNqItem(12003) and HasNqItem(12008)">
 <!-- -->
-<!ENTITY SnorlaxCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOreOrRawChrysolite; or ItemCount(12535) &lt; &HardsilverOreOrWyrmObsidian; or ItemCount(12535) &lt; &HardsilverOreOrWindCrystal; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLogOrBirchBranch; or ItemCount(12579) &lt; &BirchLogOrBirchSap; or ItemCount(12579) &lt; &BirchLogOrWaterCrystal; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOreOrRawLarimar; or ItemCount(12534) &lt; &MythriteOreOrRawMormorion; or ItemCount(12534) &lt; &MythriteOreOrIceCrystal; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12537) &lt; &TitaniumOreOrRawStarRuby; or ItemCount(12537) &lt; &TitaniumOreOrRawStarSapphire; or ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutLog; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnutOrFireCrystal; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnionOrHighlandWheat; or ItemCount(12878) &lt; &CyclopsOnionOrStalkOfRamie; or ItemCount(12878) &lt; &CyclopsOnionOrFireCrystal; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12879) &lt; &EmeraldBeansOrMagmaBeet; or ItemCount(12879) &lt; &EmeraldBeansOrEarthCrystal; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4790) &lt; &Aloe; or ItemCount(4814) &lt; &BloodCurrants; or ItemCount(2) &lt; &FireShard_BTN; or ItemCount(3) &lt; &IceShard_BTN; or ItemCount(4) &lt; &WindShard_BTN; or ItemCount(5) &lt; &EarthShard_BTN; or ItemCount(6) &lt; &LightningShard_BTN; or ItemCount(7) &lt; &WaterShard_BTN; or ItemCount(2) &lt; &FireShard_MIN; or ItemCount(3) &lt; &IceShard_MIN; or ItemCount(4) &lt; &WindShard_MIN; or ItemCount(5) &lt; &EarthShard_MIN; or ItemCount(6) &lt; &LightningShard_MIN; or ItemCount(7) &lt; &WaterShard_MIN; or ItemCount(8) &lt; &FireCrystal_BTN; or ItemCount(9) &lt; &IceCrystal_BTN; or ItemCount(10) &lt; &WindCrystal_BTN; or ItemCount(11) &lt; &EarthCrystal_BTN; or ItemCount(12) &lt; &LightningCrystal_BTN; or ItemCount(13) &lt; &WaterCrystal_BTN; or ItemCount(8) &lt; &FireCrystal_MIN; or ItemCount(9) &lt; &IceCrystal_MIN; or ItemCount(10) &lt; &WindCrystal_MIN; or ItemCount(11) &lt; &EarthCrystal_MIN; or ItemCount(12) &lt; &LightningCrystal_MIN; or ItemCount(13) &lt; &WaterCrystal_MIN;)">
+<!ENTITY SnorlaxCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12535) &lt; &HardsilverOreOrRawChrysolite; or ItemCount(12535) &lt; &HardsilverOreOrWyrmObsidian; or ItemCount(12535) &lt; &HardsilverOreOrWindCrystal; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12579) &lt; &BirchLogOrBirchBranch; or ItemCount(12579) &lt; &BirchLogOrBirchSap; or ItemCount(12579) &lt; &BirchLogOrWaterCrystal; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12534) &lt; &MythriteOreOrRawLarimar; or ItemCount(12534) &lt; &MythriteOreOrRawMormorion; or ItemCount(12534) &lt; &MythriteOreOrIceCrystal; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(12537) &lt; &TitaniumOreOrRawStarRuby; or ItemCount(12537) &lt; &TitaniumOreOrRawStarSapphire; or ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutLog; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnutOrFireCrystal; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12878) &lt; &CyclopsOnionOrHighlandWheat; or ItemCount(12878) &lt; &CyclopsOnionOrStalkOfRamie; or ItemCount(12878) &lt; &CyclopsOnionOrFireCrystal; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(12879) &lt; &EmeraldBeansOrMagmaBeet; or ItemCount(12879) &lt; &EmeraldBeansOrEarthCrystal; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4814) &lt; &BloodCurrants; or ItemCount(4798) &lt; &WhiteTruffle; or ItemCount(4790) &lt; &Aloe; or ItemCount(5346) &lt; &Flax; or ItemCount(4784) &lt; &HighlandParsley; or ItemCount(2) &lt; &FireShard_BTN; or ItemCount(8) &lt; &FireCrystal_BTN; or ItemCount(3) &lt; &IceShard_BTN; or ItemCount(9) &lt; &IceCrystal_BTN; or ItemCount(4) &lt; &WindShard_BTN; or ItemCount(10) &lt; &WindCrystal_BTN; or ItemCount(5) &lt; &EarthShard_BTN; or ItemCount(11) &lt; &EarthCrystal_BTN; or ItemCount(6) &lt; &LightningShard_BTN; or ItemCount(12) &lt; &LightningCrystal_BTN; or ItemCount(7) &lt; &WaterShard_BTN; or ItemCount(13) &lt; &WaterCrystal_BTN; or ItemCount(5116) &lt; &CobaltOre; or ItemCount(5263) &lt; &BasiliskEgg; or ItemCount(5115) &lt; &ElectrumOre; or ItemCount(5114) &lt; &MythrilOre; or ItemCount(5113) &lt; &SilverOre; or ItemCount(5491) &lt; &EffervescentWater; or ItemCount(2) &lt; &FireShard_MIN; or ItemCount(8) &lt; &FireCrystal_MIN; or ItemCount(3) &lt; &IceShard_MIN; or ItemCount(9) &lt; &IceCrystal_MIN; or ItemCount(4) &lt; &WindShard_MIN; or ItemCount(10) &lt; &WindCrystal_MIN; or ItemCount(5) &lt; &EarthShard_MIN; or ItemCount(11) &lt; &EarthCrystal_MIN; or ItemCount(6) &lt; &LightningShard_MIN; or ItemCount(12) &lt; &LightningCrystal_MIN; or ItemCount(7) &lt; &WaterShard_MIN; or ItemCount(13) &lt; &WaterCrystal_MIN;)">
 <!-- -->
 <!ENTITY TangelaWaitCondition "not((IsTimeBetween(0,4) and &BTN_0_4_Tangela;) or (IsTimeBetween(4,8) and (&MIN_4_8_Tangela; or &BTN_4_8_Tangela;)) or (IsTimeBetween(8,12) and (&MIN_8_12_Tangela; or &BTN_8_12_Tangela;)) or (IsTimeBetween(12,16) and &MIN_12_16_Tangela;) or (IsTimeBetween(16,20) and (&MIN_16_20_Tangela; or &BTN_16_20_Tangela;)) or (IsTimeBetween(20,24) and (&MIN_20_24_Tangela; or &BTN_20_24_Tangela;))) and &Tangela;">
 <!-- -->
 <!ENTITY PsyduckWaitCondition "not((&HraesvelgrsTear_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 3, 11, 21, 30, 31, 32, 33, 34) and IsTimeBetween(1,6)) or (&Scaleripper_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21)) or (&TheDreamweaver_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 4, 3, 21, 11) and (IsTimeBetween(0,2) or IsTimeBetween(21,24))) or (&Meteortoise_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34)) or (&Vidofnir_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(7,10)) or (&TheSoulOfTheMartyr_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(400, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(3,6)) or (&Inkfish_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(13,16)) or (&TheSecondOne_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(401, 5)) or (&AphoticPirarucu_Psyduck; and SkywatcherPlugin.IsWeatherInZone(402, 3, 21) and (IsTimeBetween(0,2) or IsTimeBetween(21,24))) or (&AmberSalamander_Psyduck; and IsTimeBetween(2,8)) or (&FleeceStingray_Psyduck; and SkywatcherPlugin.IsWeatherInZone(401, 1, 2, 30, 31, 32, 33, 34)) or (&LavaSnail_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34)) or (&OliphantsTrunk_Psyduck; and HasAtLeast(12710,1) and IsTimeBetween(17,24) and SkywatcherPlugin.IsWeatherInZone(402, 9)) or (&ArmoredCatfish_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(399, 3, 4, 21)) or (&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16)) or (&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15)) or (&NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1)) or (&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26)) or (&TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23)) or (&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1)) or (&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21)) or (&Pteranodon_Psyduck; and IsTimeBetween(8,14)) or (&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18)) or (&Tupuxuara_Psyduck; and IsTimeBetween(14,18)) or (&Caiman_Psyduck; and IsTimeBetween(18,20)) or (&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and HasAtLeast(12706,1))) and &Psyduck;">
 <!-- -->
-<!ENTITY UnownWaitCondition "not(((&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&OldGrowthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; or &LaNosceanLeek; or &WaterfowlFeather;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Kidragora; or &TrilliumBulb; or &Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 4">]><!-- TO HERE -->
+<!ENTITY UnownWaitCondition "not(((&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll; or &VampirePlant;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&OldGrowthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; or &LaNosceanLeek; or &WaterfowlFeather;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Kidragora; or &TrilliumBulb; or &Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 4">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
@@ -848,7 +871,7 @@
 			<!-- Unown -->
 			<If Condition="(&Psyduck; == 0 or &KeepFishing_Psyduck; == 0 or &PsyduckWaitCondition;) and &Unown;">
 				<!-- 1.00 AM & PM - 1.55 AM & PM -->
-				<If Condition="((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll;)))) and FreeItemSlots() &gt; 4">
+				<If Condition="((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll; or &VampirePlant;)))) and FreeItemSlots() &gt; 4">
 					<!-- 1AM -->
 					<!-- Revenant's Toll -->
 					<If Condition="&Cluster_1AM; and IsTimeBetween(0,1)">
@@ -1257,6 +1280,26 @@
 							</GatherSpots>
 							<HotSpots>
 								<HotSpot XYZ="629.4525, 199.0281, -448.9458" Radius="250"/>
+							</HotSpots>
+						</ExGather>
+					</If>
+					<!-- Vampire Plant -->
+					<If Condition="&VampirePlant; and IsTimeBetween(12,13)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Vampire Plant"/>
+						<TeleportTo Force="True" AetheryteId="23"/>
+						<RunCode Name="BTN"/>
+						<ExMoveTo XYZ="270.1253, 254.1803, 110.5052" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1)"/>
+						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_50_60;" DisableRotationOverride="&DisableRotationOverride_50_60;">
+							<GatherObjects>
+								<GatherObject>Unspoiled Mature Tree</GatherObject>
+							</GatherObjects>
+							<ItemNames>
+								<ItemName>Vampire Plant</ItemName>
+							</ItemNames>
+							<GatherRotation>&Rotation_50_60;</GatherRotation>
+							<HotSpots>
+								<HotSpot XYZ="270.1253, 254.1803, 110.5052" Radius="250"/>
 							</HotSpots>
 						</ExGather>
 					</If>
@@ -5011,7 +5054,7 @@
 						</If>
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 						<ExMoveTo XYZ="-350.3127, 232.4916, 22.8831"/>
-						<ExMoveTo XYZ="-284.1622, 191.1834, 373.1395"/>						
+						<ExMoveTo XYZ="-284.1622, 191.1834, 373.1395"/>
 						<ExMoveTo XYZ="-86.97581, 174.4087, 713.7504" Type="RandomPointWithin" Distance="10"/>
 						<ExMoveTo XYZ="-65.78471, 152.4099, 711.3826" Type="RandomPointWithin" Distance="10"/>
 						<ExDisablePlugins Names="Enable Flight"/>
@@ -5035,7 +5078,7 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Armored Catfish : Brute Leech is missing !"/>
 					</If>
 				</If>
-				<!-- Feast or Famine -->
+				<!-- Feast of Famine -->
 				<If Condition="(&NeptoDragon_Psyduck; or &KunotheKiller_Psyduck; or &Shonisaurus_Psyduck; or &Helicoprion_Psyduck; or &Namitaro_Psyduck; or &Endoceras_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 					<!-- Nepto Dragon -->
 					<If Condition="&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
@@ -5803,12 +5846,12 @@
 					</ShopPurchases>
 				</ExTurnInCollectables>
 			</If>
-			<!-- Housing -->
-			<If Condition="(&Housing; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)">
+			<!-- Umbreon -->
+			<If Condition="(&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)">
 				<!-- Gardenning -->
 				<If Condition="&Gardenning;">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Gardenning [START]"/>
-					<TeleportTo AetheryteId="&HousingAetheryteID;"/>
+					<TeleportTo AetheryteId="&UmbreonAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&GardenLocation;"/>
 					<WaitTimer WaitTime="1"/>
 					<Gardenner AlwaysWater="&AlwaysWater;"/>
@@ -5817,7 +5860,7 @@
 				<!-- Retainer -->
 				<If Condition="&Retainer;">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Retainer [START]"/>
-					<TeleportTo AetheryteId="&HousingAetheryteID;"/>
+					<TeleportTo AetheryteId="&UmbreonAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&BellLocation;"/>
 					<Retainer/>
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Retainer [STOP]"/>
@@ -5825,12 +5868,12 @@
 				<!-- Chocobot -->
 				<If Condition="&Chocobot;">
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Chocobot [START]"/>
-					<TeleportTo AetheryteId="&HousingAetheryteID;"/>
+					<TeleportTo AetheryteId="&UmbreonAetheryteID;"/>
 					<ExMoveTo Distance="0.8" XYZ="&StableLocation;"/>
-					<Chocobot PlayerName="&PlayerName;" ChocoboFoodID="&ChocoboFoodID;" ThavnairianOnion="&ThavnairianOnion;" CleanBefore="&CleanBefore;"/>
+					<Chocobot PlayerName="&PlayerName;" ChocoboFoodID="&ChocoboFoodID;" CleanBefore="&CleanBefore;"/>
 					<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Chocobot [STOP]"/>
 				</If>
-				<WaitWhile Condition="IsTimeBetween(&Housing_Hour;,&Housing_Hour;+1)"/>
+				<WaitWhile Condition="IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)"/>
 			</If>
 			<!-- Waiting / Farm -->
 			<If Condition="(&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
@@ -7103,7 +7146,7 @@
 							</If>
 						</If>
 						<!-- The Maker's Quarter -->
-						<If Condition="(ItemCount(12535) &lt; &HardsilverOreOrRawChrysolite; or ItemCount(12535) &lt; &HardsilverOreOrWyrmObsidian; or ItemCount(12535) &lt; &HardsilverOreOrWindCrystal; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12535) &lt; &HardsilverOreOrRawChrysolite; or ItemCount(12535) &lt; &HardsilverOreOrWyrmObsidian; or ItemCount(12535) &lt; &HardsilverOreOrWindCrystal; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; The Maker's Quarter"/>
 							<TeleportTo Force="True" AetheryteId="75"/>
 							<RunCode Name="MIN"/>
@@ -7120,6 +7163,39 @@
 							</If>
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 							<ExFlyTo XYZ="11.32641, 129.841, -243.8127"/>
+							<!-- Hardsilver Ore -->
+							<If Condition="ItemCount(12535) &lt; &HardsilverOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12535) &lt; &HardsilverOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
+										<GatherItem Name="Hardsilver Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots>
+										<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="226.1602, 76.71241, 178.5256" nodeLocation="211.4673, 75.37302, 169.3396"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="False" nodeLocation="59.4164, 54.40149, 160.6752" StealthLocation="61.12149, 54.32081, 169.105"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="False" nodeLocation="47.04347, 53.91698, 164.1816" StealthLocation="45.88089, 53.29337, 168.1437"/>
+										<IndirectApproachGatherSpot ApproachLocation="250.3258, 75.36033, 143.0813" ReturnToApproachLocation="False" nodeLocation="237.4622, 74.67197, 150.8143"/>
+										<IndirectApproachGatherSpot ApproachLocation="235.511, 73.91628, 114.766" ReturnToApproachLocation="False" nodeLocation="231.3517, 74.23511, 112.9807"/>
+										<IndirectApproachGatherSpot ApproachLocation="137.5328, 67.66, 77.90279" ReturnToApproachLocation="False" nodeLocation="138.7979, 69.3564, 76.02666"/>
+										<IndirectApproachGatherSpot ApproachLocation="182.7975, 69.57438, 117.5594" ReturnToApproachLocation="False" nodeLocation="186.0795, 69.36257, 126.6282"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
+										<HotSpot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
+										<HotSpot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [STOP]"/>
+							</If>
 							<!-- Hardsilver Ore or Raw Chrysolite-->
 							<If Condition="ItemCount(12535) &lt; &HardsilverOreOrRawChrysolite; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [START]"/>
@@ -7446,12 +7522,49 @@
 							</If>
 						</If>
 						<!-- Voor Sian Siran -->
-						<If Condition="(ItemCount(12579) &lt; &BirchLogOrBirchBranch; or ItemCount(12579) &lt; &BirchLogOrBirchSap; or ItemCount(12579) &lt; &BirchLogOrWaterCrystal; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12579) &lt; &BirchLog; or ItemCount(12579) &lt; &BirchLogOrBirchBranch; or ItemCount(12579) &lt; &BirchLogOrBirchSap; or ItemCount(12579) &lt; &BirchLogOrWaterCrystal; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Voor Sian Siran"/>
 							<TeleportTo Force="True" AetheryteId="72"/>
 							<RunCode Name="BTN"/>
 							<If Condition="&SpiritBond_Snorlax;">
 								<Equip ItemIds="&Items_SpiritBond_SnorlaxCondition;"/>
+							</If>
+							<!-- Birch Log -->
+							<If Condition="ItemCount(12579) &lt; &BirchLog; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Birch Log(Voor Sian Siran) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12579) &lt; &BirchLog; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
+										<GatherItem Name="Birch Log"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="124.2828, -135.0074, 664.0291" NodeLocation="125.2828, -135, 660.5291" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="239.0889, -147.8377, 562.1637" NodeLocation="240.5389, -147.8377, 560.1057" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="207.4956, -147.8377, 597.161" NodeLocation="206.2956, -147.8377, 599.861" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="81.27682, -146.5234, 640.6451" NodeLocation="73.65515, -145.5559, 640.3448" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="80.38401, -146.5234, 580.8955" NodeLocation="78.89505, -145.5175, 580.6633" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="133.8673, -147.8377, 571.5581" NodeLocation="136.0294, -147.8377, 576.7831" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="100.6749, -147.8656, 505.4717" NodeLocation="100.5335, -147.8377, 502.2275" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="159.7419, -147.8377, 458.0388" NodeLocation="159.2674, -147.0208, 455.2348" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="200.0888, -147.8377, 469.9167" NodeLocation="202.3888, -147.0208, 469.2167" ReturnToApproachLocation="False"/>
+										<IndirectApproachGatherSpot ApproachLocation="309.7932, -118.2533, 530.2704" NodeLocation="310.146, -118.5, 530.895" ReturnToApproachLocation="False"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
+										<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
+										<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
+										<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Birch Log(Voor Sian Siran) [STOP]"/>
 							</If>
 							<!-- Birch Log or Birch Branch -->
 							<If Condition="ItemCount(12579) &lt; &BirchLogOrBirchBranch; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
@@ -8060,7 +8173,7 @@
 							</If>
 						</If>
 						<!-- Gorgane Holding -->
-						<If Condition="(ItemCount(12534) &lt; &MythriteOreOrRawLarimar; or ItemCount(12534) &lt; &MythriteOreOrRawMormorion; or ItemCount(12534) &lt; &MythriteOreOrIceCrystal; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12534) &lt; &MythriteOre; or ItemCount(12534) &lt; &MythriteOreOrRawLarimar; or ItemCount(12534) &lt; &MythriteOreOrRawMormorion; or ItemCount(12534) &lt; &MythriteOreOrIceCrystal; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Gorgane Holding"/>
 							<TeleportTo Force="True" AetheryteId="71"/>
 							<RunCode Name="MIN"/>
@@ -8069,6 +8182,30 @@
 							</If>
 							<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 							<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
+							<!-- Mythrite Ore -->
+							<If Condition="ItemCount(12534) &lt; &MythriteOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12534) &lt; &MythriteOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Mythrite Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots/>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="309.281, 183.1803, -547.3681"/>
+										<HotSpot Radius="50" XYZ="465.0197, 174.61, -423.2626"/>
+										<HotSpot Radius="50" XYZ="530.5591, 177.4541, -530.5399"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [STOP]"/>
+							</If>
 							<!-- Mythrite Ore or Raw Larimar -->
 							<If Condition="ItemCount(12534) &lt; &MythriteOreOrRawLarimar; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythrite Ore(Gorgane Holding) [START]"/>
@@ -8325,7 +8462,7 @@
 							</If>
 						</If>
 						<!-- Chocobo Forest -->
-						<If Condition="(ItemCount(12537) &lt; &TitaniumOreOrRawStarRuby; or ItemCount(12537) &lt; &TitaniumOreOrRawStarSapphire; or ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12537) &lt; &TitaniumOre; or ItemCount(12537) &lt; &TitaniumOreOrRawStarRuby; or ItemCount(12537) &lt; &TitaniumOreOrRawStarSapphire; or ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Chocobo Forest"/>
 							<TeleportTo Force="True" AetheryteId="76"/>
 							<RunCode Name="MIN"/>
@@ -8334,6 +8471,33 @@
 							</If>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
 							<ExFlyTo XYZ="446.2568, 2.897244, -342.4665"/>
+							<!-- Titanium Ore -->
+							<If Condition="ItemCount(12537) &lt; &TitaniumOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12537) &lt; &TitaniumOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Titanium Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="501.5813, -16.52958, -430.0856"/>
+										<HotSpot Radius="50" XYZ="304.3826, -19.23269, -432.1047"/>
+										<HotSpot Radius="50" XYZ="325.427, -26.5851, -270.1526"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [STOP]"/>
+							</If>
 							<!-- Titanium Ore or Raw Star Ruby -->
 							<If Condition="ItemCount(12537) &lt; &TitaniumOreOrRawStarRuby; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [START]"/>
@@ -8584,7 +8748,7 @@
 							</If>
 						</If>
 						<!-- The Smoldering Wastes -->
-						<If Condition="(ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutLog; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnutOrFireCrystal; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12893) &lt; &DarkChestnut; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutLog; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnutOrFireCrystal; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; The Smoldering Wastes"/>
 							<TeleportTo Force="True" AetheryteId="76"/>
 							<RunCode Name="BTN"/>
@@ -8592,6 +8756,30 @@
 								<Equip ItemIds="&Items_SpiritBond_SnorlaxCondition;"/>
 							</If>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
+							<!-- Dark Chestnut -->
+							<If Condition="ItemCount(12893) &lt; &DarkChestnut; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut(The Smoldering Wastes) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12893) &lt; &DarkChestnut; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Dark Chestnut"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots/>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="155.9647, -69.23334, 123.4912"/>
+										<HotSpot Radius="50" XYZ="205.0904, -81.55073, 325.364"/>
+										<HotSpot Radius="50" XYZ="315.5707, -54.62894, 141.258"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut(The Smoldering Wastes) [STOP]"/>
+							</If>
 							<!-- Dark Chestnut or Dark Chestnut Log -->
 							<If Condition="ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutLog; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Dark Chestnut(The Smoldering Wastes) [START]"/>
@@ -8741,7 +8929,7 @@
 							</If>
 						</If>
 						<!-- Chocobo Forest -->
-						<If Condition="(ItemCount(12878) &lt; &CyclopsOnionOrHighlandWheat; or ItemCount(12878) &lt; &CyclopsOnionOrStalkOfRamie; or ItemCount(12878) &lt; &CyclopsOnionOrFireCrystal; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12878) &lt; &CyclopsOnionOrHighlandWheat; or ItemCount(12878) &lt; &CyclopsOnionOrStalkOfRamie; or ItemCount(12878) &lt; &CyclopsOnionOrFireCrystal; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Chocobo Forest"/>
 							<TeleportTo Force="True" AetheryteId="76"/>
 							<RunCode Name="BTN"/>
@@ -8749,6 +8937,30 @@
 								<Equip ItemIds="&Items_SpiritBond_SnorlaxCondition;"/>
 							</If>
 							<ExMoveTo XYZ="520.1194, -51.27571, 40.14129"/>
+							<!-- Cyclops Onion -->
+							<If Condition="ItemCount(12878) &lt; &CyclopsOnion; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cyclops Onion(Chocobo Forest) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12878) &lt; &CyclopsOnion; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Cyclops Onion"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots/>
+									<HotSpots>
+										<HotSpot XYZ="687.7844, -41.19423, -98.61742" Radius="50"/>
+										<HotSpot XYZ="754.7505, -18.42747, -225.437" Radius="50"/>
+										<HotSpot XYZ="802.6219, -21.42761, -105.9763" Radius="50"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cyclops Onion(Chocobo Forest) [STOP]"/>
+							</If>
 							<!-- Cyclops Onion or Highland Wheat -->
 							<If Condition="ItemCount(12878) &lt; &CyclopsOnionOrHighlandWheat; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cyclops Onion(Chocobo Forest) [START]"/>
@@ -8898,12 +9110,36 @@
 							</If>
 						</If>
 						<!-- Landlord Colony -->
-						<If Condition="(ItemCount(12879) &lt; &EmeraldBeansOrMagmaBeet; or ItemCount(12879) &lt; &EmeraldBeansOrEarthCrystal; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+						<If Condition="(ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(12879) &lt; &EmeraldBeansOrMagmaBeet; or ItemCount(12879) &lt; &EmeraldBeansOrEarthCrystal; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Landlord Colony"/>
 							<TeleportTo Force="True" AetheryteId="78"/>
 							<RunCode Name="BTN"/>
 							<If Condition="&SpiritBond_Snorlax;">
 								<Equip ItemIds="&Items_SpiritBond_SnorlaxCondition;"/>
+							</If>
+							<!-- Emerald Beans -->
+							<If Condition="ItemCount(12879) &lt; &EmeraldBeans; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Emerald Beans(Landlord Colony) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" AlwaysGather="False" GatherStrategy="TouchAndGo" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12879) &lt; &EmeraldBeans; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Emerald Beans"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<GatherSpots/>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="-14.15045, -11.85469, 120.4179"/>
+										<HotSpot Radius="50" XYZ="-66.77744, -3.757723, -50.86081"/>
+										<HotSpot Radius="50" XYZ="-21.7109, 4.529562, -94.68143"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Emerald Beans(Landlord Colony) [STOP]"/>
 							</If>
 							<!-- Emerald Beans or Magma Beet -->
 							<If Condition="ItemCount(12879) &lt; &EmeraldBeansOrMagmaBeet; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
@@ -9158,6 +9394,72 @@
 						</If>
 						<!-- A Realm Reborn -->
 						<!-- Botanist -->
+						<!-- Lower Paths -->
+						<If Condition="(ItemCount(4814) &lt; &BloodCurrants;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Lower Paths"/>
+							<TeleportTo Force="True" AetheryteId="6"/>
+							<RunCode Name="BTN"/>
+							<!-- Blood Currants -->
+							<If Condition="ItemCount(4814) &lt; &BloodCurrants; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Blood Currants(Lower Paths) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(4814) &lt; &BloodCurrants; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Blood Currants"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="-12.2049, -0.4348666, 369.0394"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Blood Currants(Lower Paths) [STOP]"/>
+							</If>
+						</If>
+						<!-- Lower Paths -->
+						<If Condition="(ItemCount(4798) &lt; &WhiteTruffle; or ItemCount(5346) &lt; &Flax;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Lower Paths"/>
+							<TeleportTo Force="True" AetheryteId="6"/>
+							<RunCode Name="BTN"/>
+							<!-- White Truffle -->
+							<If Condition="ItemCount(4798) &lt; &WhiteTruffle; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] White Truffle(Lower Paths) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(4798) &lt; &WhiteTruffle; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="White Truffle"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="-182.4983, 1.100798, 356.6032"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] White Truffle(Lower Paths) [STOP]"/>
+							</If>
+							<!-- Flax -->
+							<If Condition="ItemCount(5346) &lt; &Flax; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Flax(Lower Paths) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5346) &lt; &Flax; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Flax"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="-182.4983, 1.100798, 356.6032"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Flax(Lower Paths) [STOP]"/>
+							</If>
+						</If>
 						<!-- Broken Water -->
 						<If Condition="(ItemCount(4790) &lt; &Aloe;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Broken Water"/>
@@ -9184,15 +9486,15 @@
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Aloe(Broken Water) [STOP]"/>
 							</If>
 						</If>
-						<!-- Lower Paths -->
-						<If Condition="(ItemCount(4814) &lt; &BloodCurrants;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
-							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Lower Paths"/>
-							<TeleportTo Force="True" AetheryteId="6"/>
+						<!-- Moraby Bay -->
+						<If Condition="(ItemCount(4784) &lt; &HighlandParsley;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Snorlax ~ Destination ----&gt; Moraby Bay"/>
+							<TeleportTo Force="True" AetheryteId="10"/>
 							<RunCode Name="BTN"/>
-							<!-- Blood Currants -->
-							<If Condition="ItemCount(4814) &lt; &BloodCurrants; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
-								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Blood Currants(Lower Paths) [START]"/>
-								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(4814) &lt; &BloodCurrants; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<!-- Highland Parsley -->
+							<If Condition="ItemCount(4784) &lt; &HighlandParsley; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Highland Parsley(Moraby Bay) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(4784) &lt; &HighlandParsley; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 									<GatherObjects>
 										<GatherObject>Rocky Outcrop</GatherObject>
 										<GatherObject>Mineral Deposit</GatherObject>
@@ -9200,14 +9502,14 @@
 										<GatherObject>Mature Tree</GatherObject>
 									</GatherObjects>
 									<Items>
-										<GatherItem Name="Blood Currants"/>
+										<GatherItem Name="Highland Parsley"/>
 									</Items>
 									<GatherRotation>RegularNode</GatherRotation>
 									<HotSpots>
-										<HotSpot Radius="90" XYZ="-12.2049, -0.4348666, 369.0394"/>
+										<HotSpot Radius="90" XYZ="260.2756, 43.93877, 42.67905"/>
 									</HotSpots>
 								</ExGather>
-								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Blood Currants(Lower Paths) [STOP]"/>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Highland Parsley(Moraby Bay) [STOP]"/>
 							</If>
 						</If>
 						<!-- Three-malm Bend -->
@@ -9493,6 +9795,150 @@
 							</If>
 						</If>
 						<!-- Miner -->
+						<!-- Bluefog -->
+						<If Condition="(ItemCount(5116) &lt; &CobaltOre; or ItemCount(5263) &lt; &BasiliskEgg;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Bluefog"/>
+							<TeleportTo Force="True" AetheryteId="22"/>
+							<RunCode Name="MIN"/>
+							<!-- Cobalt Ore -->
+							<If Condition="ItemCount(5116) &lt; &CobaltOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Cobalt Ore(Bluefog) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5116) &lt; &CobaltOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Cobalt Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="80.69704, 19.70821, 154.0235"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Cobalt Ore(Bluefog) [STOP]"/>
+							</If>
+							<!-- Basilisk Egg -->
+							<If Condition="ItemCount(5263) &lt; &BasiliskEgg; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Basilisk Egg(Bluefog) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5263) &lt; &BasiliskEgg; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Basilisk Egg"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="80.69704, 19.70821, 154.0235"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Basilisk Egg(Bluefog) [STOP]"/>
+							</If>
+						</If>
+						<!-- Bronze Lake -->
+						<If Condition="(ItemCount(5115) &lt; &ElectrumOre;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Bronze Lake"/>
+							<TeleportTo Force="True" AetheryteId="15"/>
+							<RunCode Name="MIN"/>
+							<!-- Electrum Ore -->
+							<If Condition="ItemCount(5115) &lt; &ElectrumOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Electrum Ore(Bronze Lake) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5115) &lt; &ElectrumOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Electrum Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="432.0533, -3.4, 180.1766"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Electrum Ore(Bronze Lake) [STOP]"/>
+							</If>
+						</If>
+						<!-- Sagolii Desert -->
+						<If Condition="(ItemCount(5114) &lt; &MythrilOre;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Sagolii Desert"/>
+							<TeleportTo Force="True" AetheryteId="20"/>
+							<RunCode Name="MIN"/>
+							<!-- Mythril Ore -->
+							<If Condition="ItemCount(5114) &lt; &MythrilOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythril Ore(Sagolii Desert) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5114) &lt; &MythrilOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Mythril Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="183.7247, 3.244954, 964.4326"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Mythril Ore(Sagolii Desert) [STOP]"/>
+							</If>
+						</If>
+						<!-- Upper Paths -->
+						<If Condition="(ItemCount(5113) &lt; &SilverOre; or ItemCount(5491) &lt; &EffervescentWater;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Upper Paths"/>
+							<TeleportTo Force="True" AetheryteId="5"/>
+							<RunCode Name="MIN"/>
+							<!-- Silver Ore -->
+							<If Condition="ItemCount(5113) &lt; &SilverOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Silver Ore(Upper Paths) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5113) &lt; &SilverOre; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Silver Ore"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="-270.718, 13.82767, -95.66123"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Silver Ore(Upper Paths) [STOP]"/>
+							</If>
+							<!-- Effervescent Water -->
+							<If Condition="ItemCount(5491) &lt; &EffervescentWater; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Effervescent Water(Upper Paths) [START]"/>
+								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(5491) &lt; &EffervescentWater; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<GatherItem Name="Effervescent Water"/>
+									</Items>
+									<GatherRotation>RegularNode</GatherRotation>
+									<HotSpots>
+										<HotSpot Radius="90" XYZ="-270.718, 13.82767, -95.66123"/>
+									</HotSpots>
+								</ExGather>
+								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Effervescent Water(Upper Paths) [STOP]"/>
+							</If>
+						</If>
 						<!-- Wellwick Wood -->
 						<If Condition="(ItemCount(2) &lt; &FireShard_MIN; or ItemCount(8) &lt; &FireCrystal_MIN;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Snorlax ~ Destination ----&gt; Wellwick Wood"/>
@@ -11014,17 +11460,21 @@
 						<If Condition="IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [&ResetHour_Magikarp;:&ResetHour_Magikarp;+2] ~ Desynth/Sell Time"/>
 							<If Condition="&Sell_Magikarp; and &Desynth_Magikarp; == 0">
+								<!-- Keep Both -->
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; and &Keep_HinterlandsPerch_Magikarp;">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790"/>
 								</If>
+								<!-- Keep Illuminati Perch -->
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; and &Keep_HinterlandsPerch_Magikarp; == 0">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12819"/>
 								</If>
+								<!-- Keep Hinterlands Perch -->
 								<If Condition="&Keep_HinterlandsPerch_Magikarp; and &Keep_IlluminatiPerch_Magikarp; == 0">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804"/>
 								</If>
+								<!-- Keep None -->
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; == 0 and &Keep_HinterlandsPerch_Magikarp; == 0">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804,12819"/>
+								<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804,12819"/>
 								</If>
 							</If>
 							<If Condition="&Desynth_Magikarp;">
@@ -11034,6 +11484,22 @@
 								<If Condition="not &Use_House_Codechunck;">
 									<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
 								</If>
+								<!-- Maiboi -->
+								<While Condition="HasAtLeast(127288, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12728"/>
+								</While>
+								<!-- Bullfrog -->
+								<While Condition="HasAtLeast(12730, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12730"/>
+								</While>
+								<!-- Cloudfish -->
+								<While Condition="HasAtLeast(12731, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12731"/>
+								</While>
+								<!-- Bubble Eye -->
+								<While Condition="HasAtLeast(12739, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12739"/>
+								</While>
 								<!-- Shipworm -->
 								<While Condition="HasAtLeast(12756, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12756"/>
