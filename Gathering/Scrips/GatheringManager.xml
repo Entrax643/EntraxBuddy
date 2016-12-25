@@ -11015,16 +11015,16 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [&ResetHour_Magikarp;:&ResetHour_Magikarp;+2] ~ Desynth/Sell Time"/>
 							<If Condition="&Sell_Magikarp; and &Desynth_Magikarp; == 0">
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; and &Keep_HinterlandsPerch_Magikarp;">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790"/>
 								</If>
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; and &Keep_HinterlandsPerch_Magikarp; == 0">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804"/>
 								</If>
 								<If Condition="&Keep_HinterlandsPerch_Magikarp; and &Keep_IlluminatiPerch_Magikarp; == 0">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804"/>
 								</If>
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; == 0 and &Keep_HinterlandsPerch_Magikarp; == 0">
-									<SellItem SellTimeout="1" ItemIds="12756,12757,12780,12783,12790,12804,12819"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804,12819"/>
 								</If>
 							</If>
 							<If Condition="&Desynth_Magikarp;">
@@ -11034,6 +11034,22 @@
 								<If Condition="not &Use_House_Codechunck;">
 									<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
 								</If>
+								<!-- Maiboi -->
+								<While Condition="HasAtLeast(127288, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12728"/>
+								</While>
+								<!-- Bullfrog -->
+								<While Condition="HasAtLeast(12730, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12730"/>
+								</While>
+								<!-- Cloudfish -->
+								<While Condition="HasAtLeast(12731, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12731"/>
+								</While>
+								<!-- Bubble Eye -->
+								<While Condition="HasAtLeast(12739, 1)">
+									<Desynth DesynthTimeout="1" ItemIds="12739"/>
+								</While>
 								<!-- Shipworm -->
 								<While Condition="HasAtLeast(12756, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12756"/>
