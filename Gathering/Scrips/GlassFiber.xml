@@ -153,20 +153,20 @@
 		</CodeChunk>
 		<CodeChunk Name="InteractNPCBuy">
 			<![CDATA[
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.Managers.GameObjectManager.GetObjectByNPCId(1012229).Interact();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				if (ff14bot.RemoteWindows.SelectIconString.IsOpen)
 					ff14bot.RemoteWindows.SelectIconString.ClickSlot(6);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="BuyMINlegs">
 			<![CDATA[
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 9);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
 					if(slot.RawItemId == 12841)
@@ -178,17 +178,17 @@
 						slot.Handover();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.RemoteWindows.Request.HandOver();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="BuyMINboots">
 			<![CDATA[
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 12);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
 					if(slot.RawItemId == 12841)
@@ -200,17 +200,17 @@
 						slot.Handover();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.RemoteWindows.Request.HandOver();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="BuyBTNlegs">
 			<![CDATA[
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
 					if(slot.RawItemId == 12841)
@@ -222,17 +222,17 @@
 						slot.Handover();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.RemoteWindows.Request.HandOver();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="BuyBTNboots">
 			<![CDATA[
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 13);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
 					if(slot.RawItemId == 12841)
@@ -244,17 +244,17 @@
 						slot.Handover();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.RemoteWindows.Request.HandOver();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="BuyFSHlegs">
 			<![CDATA[
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 11);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
 					if(slot.RawItemId == 12841)
@@ -266,17 +266,17 @@
 						slot.Handover();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.RemoteWindows.Request.HandOver();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="BuyFSHboots">
 			<![CDATA[
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 14);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				foreach(ff14bot.Managers.BagSlot slot in ff14bot.Managers.InventoryManager.FilledSlots)
 				{
 					if(slot.RawItemId == 12841)
@@ -288,9 +288,9 @@
 						slot.Handover();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 				ff14bot.RemoteWindows.Request.HandOver();
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
 		<CodeChunk Name="TinkersCalm">
@@ -302,7 +302,7 @@
 						slot.UseItem();
 					}
 				}
-				await Buddy.Coroutines.Coroutine.Sleep(1000);
+				await Buddy.Coroutines.Coroutine.Sleep(2000);
 			]]>
 		</CodeChunk>
     </CodeChunks>
