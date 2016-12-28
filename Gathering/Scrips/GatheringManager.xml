@@ -237,6 +237,8 @@
 <!-- -->
 <!ENTITY CordialType_Slowpoke "Auto">
 <!-- -->
+<!-- 3.4 Fish -->
+<!ENTITY AetherochemicalCompound666_Slowpoke "0">
 <!-- 3.3 Fish -->
 <!ENTITY MagicBucket_Slowpoke "0">
 <!ENTITY FatPurse_Slowpoke "0">
@@ -272,7 +274,7 @@
 <!-- You can set it to feed all of them : "All" -->
 <!ENTITY PlayerName "Me">
 <!-- Food Settings -->
-<!-- ID   Name -->
+<!-- ID Name -->
 <!-- 8165 Krakka Root -->
 <!-- 7894 Curiel Root -->
 <!-- 7895 Sylkis Bud -->
@@ -844,7 +846,7 @@
 <!-- -->
 <!ENTITY Version "Umbreon">
 <!-- -->
-<!ENTITY SlowpokeCondition "not(ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1))">
+<!ENTITY SlowpokeCondition "not(ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1) or ItemCount(15632) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1))">
 <!-- -->
 <!ENTITY Items_SpiritBond_SnorlaxCondition "11985,11990,11995,11998,12003,12008">
 <!-- -->
@@ -856,7 +858,7 @@
 <!-- -->
 <!ENTITY PsyduckWaitCondition "not((&HraesvelgrsTear_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 3, 11, 21, 30, 31, 32, 33, 34) and IsTimeBetween(1,6)) or (&Scaleripper_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21)) or (&TheDreamweaver_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 4, 3, 21, 11) and (IsTimeBetween(0,2) or IsTimeBetween(21,24))) or (&Meteortoise_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34)) or (&Vidofnir_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(7,10)) or (&TheSoulOfTheMartyr_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(400, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(3,6)) or (&Inkfish_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(13,16)) or (&TheSecondOne_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(401, 5)) or (&AphoticPirarucu_Psyduck; and SkywatcherPlugin.IsWeatherInZone(402, 3, 21) and (IsTimeBetween(0,2) or IsTimeBetween(21,24))) or (&AmberSalamander_Psyduck; and IsTimeBetween(2,8)) or (&FleeceStingray_Psyduck; and SkywatcherPlugin.IsWeatherInZone(401, 1, 2, 30, 31, 32, 33, 34)) or (&LavaSnail_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34)) or (&OliphantsTrunk_Psyduck; and HasAtLeast(12710,1) and IsTimeBetween(17,24) and SkywatcherPlugin.IsWeatherInZone(402, 9)) or (&ArmoredCatfish_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(399, 3, 4, 21)) or (&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16)) or (&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15)) or (&NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1)) or (&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26)) or (&TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23)) or (&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1)) or (&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21)) or (&Pteranodon_Psyduck; and IsTimeBetween(8,14)) or (&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18)) or (&Tupuxuara_Psyduck; and IsTimeBetween(14,18)) or (&Caiman_Psyduck; and IsTimeBetween(18,20)) or (&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and HasAtLeast(12706,1))) and &Psyduck;">
 <!-- -->
-<!ENTITY UnownWaitCondition "not(((&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll; or &VampirePlant;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&OldGrowthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; or &LaNosceanLeek; or &WaterfowlFeather;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Kidragora; or &TrilliumBulb; or &Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 4">]><!-- TO HERE -->
+<!ENTITY UnownWaitCondition "not(((&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll; or &VampirePlant;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato; or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&OldGrowthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; or &LaNosceanLeek; or &WaterfowlFeather;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Kidragora; or &TrilliumBulb; or &Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 4">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
 	<KillRadius>50</KillRadius>
@@ -882,7 +884,7 @@
 						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -1305,7 +1307,7 @@
 					</If>
 				</If>
 				<!-- 2.00 AM & PM - 2.55 AM & PM -->
-				<If Condition="((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato;  or &DzemaelTomatoSeeds; or &BlackTruffle;)))) and FreeItemSlots() &gt; 4">
+				<If Condition="((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato; or &DzemaelTomatoSeeds; or &BlackTruffle;)))) and FreeItemSlots() &gt; 4">
 					<!-- 2AM -->
 					<!-- Fragrant Log -->
 					<If Condition="&FragrantLog; and IsTimeBetween(1,2)">
@@ -1942,7 +1944,7 @@
 						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(4,5.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -2256,7 +2258,7 @@
 									<GatherObject>Legendary Rocky Outcrop</GatherObject>
 								</GatherObjects>
 								<Collectables>
-									<Collectable Name="Sun Mica" Value="&Collectability_1Star;"  PlusPlus="0"/>
+									<Collectable Name="Sun Mica" Value="&Collectability_1Star;" PlusPlus="0"/>
 								</Collectables>
 								<GatherRotation>NewbCollect</GatherRotation>
 								<GatherSpots>
@@ -3307,7 +3309,7 @@
 						<ExMoveTo XYZ="509.2175, -3.772751, -426.0106" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(8,9.1) or Core.Player.CurrentGP &lt; 500"/>
 						<If Condition="not(ItemCount(5602) &lt; &Grade4_Carbonized_Matter; or ItemCount(14) &lt; &Fire_Cluster; or ItemCount(15) &lt; &Ice_Cluster; or ItemCount(16) &lt; &Wind_Cluster; or ItemCount(17) &lt; &Earth_Cluster; or ItemCount(18) &lt; &Lightning_Cluster; or ItemCount(19) &lt; &Water_Cluster;)">
-							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True"  DiscoverUnknowns="&DiscoverUnknowns;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_50_60;" CordialTime="&Cordial_Time_50_60;" DisableRotationOverride="True" DiscoverUnknowns="&DiscoverUnknowns;">
 								<GatherObjects>
 									<GatherObject>Unspoiled Mature Tree</GatherObject>
 								</GatherObjects>
@@ -4601,7 +4603,7 @@
 					<!-- Moggle Mogpom -->
 					<!-- Cirrostratus-->
 					<!-- Hraesvelgr's Tear -->
-					<If Condition="&HraesvelgrsTear_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 3, 11, 21, 30, 31, 32, 33, 34) and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+					<If Condition="&HraesvelgrsTear_Psyduck; and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; West Mourn ~ Hraesvelgr's Tear !"/>
 						<If Condition="not(HasAtLeast(12709,50))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Hraesvelgr's Tear : Not enough bait available, I'm going to buy you some !"/>
@@ -4621,8 +4623,8 @@
 						<ExMoveTo XYZ="-629.4809, 17.34926, -736.6527"/>
 						<ExMoveTo XYZ="-644.6107, 0.941082, -748.9293" Type="RandomPointWithin" Distance="10"/>
 						<ExDisablePlugins Names="Enable Flight"/>
-						<WaitWhile Condition="IsTimeBetween(1,2)"/>
-						<ExFish Condition="HasAtLeast(12709,1) and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 3, 11, 21, 30, 31, 32, 33, 34) and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Magma Worm">
+						<WaitWhile Condition="IsTimeBetween(1,2) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
+						<ExFish Condition="HasAtLeast(12709,1) and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Magma Worm">
 							<Keepers>
 								<Keeper Name="Hraesvelgr's Tear"/>
 							</Keepers>
@@ -4640,7 +4642,6 @@
 						<RunCode Name="StopFishing"/>
 						<ExEnablePlugins Names="Enable Flight"/>
 					</If>
-					<!-- Aetherochemical Compound #666 -->
 					<!-- Hundred-eyed Axolotl -->
 					<!-- Bobgoblin Bass -->
 					<!-- Merciless -->
@@ -4950,7 +4951,7 @@
 						<ExMoveTo XYZ="-386.3866, -163.5172, 775.7761" Type="RandomPointWithin" Distance="10"/>
 						<ExMoveTo XYZ="-378.4635, -184.5806, 783.9606" Type="RandomPointWithin" Distance="10"/>
 						<ExDisablePlugins Names="Enable Flight"/>
-						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and SkywatcherPlugin.IsWeatherInZone(401, 1, 2, 30, 31, 32, 33, 34) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Giant Crane Fly">
+						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and SkywatcherPlugin.IsWeatherInZone(401, 1, 2, 30, 31, 32, 33, 34) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69">
 							<Baits>
 								<Bait Name="Giant Crane Fly"/>
 								<Bait Name="Red Balloon"/>
@@ -5123,7 +5124,7 @@
 						</If>
 						<TeleportTo Force="True" AetheryteId="24"/>
 						<RunCode Name="FSH"/>
-						<ExFish Condition="HasAtLeast(2599,1) and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and not(Core.Player.HasAura(568)) and IsTimeBetween(8,16)  and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Honey Worm">
+						<ExFish Condition="HasAtLeast(2599,1) and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and not(Core.Player.HasAura(568)) and IsTimeBetween(8,16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Honey Worm">
 							<Keepers>
 								<Keeper Name="Kuno the Killer"/>
 								<Keeper Name="Canavan"/>
@@ -5156,7 +5157,7 @@
 						<RunCode Name="StopFishing"/>
 					</If>
 					<!-- Shonisaurus -->
-					<If Condition="&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+					<If Condition="&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(2), 16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Witchdrop ~ Shonisaurus !"/>
 						<If Condition="not(HasAtLeast(2605,50))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Shonisaurus : Not enough bait available, I'm going to buy you some !"/>
@@ -5167,7 +5168,7 @@
 						<TeleportTo Force="True" AetheryteId="23"/>
 						<RunCode Name="FSH"/>
 						<ExMoveTo XYZ="574.5579, 300.4776, -171.2124" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
-						<If Condition="IsTimeBetween(0,8)">
+						<If Condition="IsTimeBetween(6,8)">
 							<WaitWhile Condition="IsTimeBetween(0,8) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
 							<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(8,16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" SitRate=".69" Bait="Hoverworm">
 								<Keepers>
@@ -5189,7 +5190,7 @@
 								</FishSpots>
 							</ExFish>
 						</If>
-						<If Condition="IsTimeBetween(8,16)">
+						<If Condition="IsTimeBetween(14,16)">
 							<WaitWhile Condition="IsTimeBetween(8,16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
 							<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(16,24) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" SitRate=".69" Bait="Hoverworm">
 								<Keepers>
@@ -5211,7 +5212,7 @@
 								</FishSpots>
 							</ExFish>
 						</If>
-						<If Condition="IsTimeBetween(16,24)">
+						<If Condition="IsTimeBetween(22,24)">
 							<WaitWhile Condition="IsTimeBetween(16,24) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
 							<ExFish Condition="HasAtLeast(2605,1) and IsTimeBetween(0,8) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" SitRate=".69" Bait="Hoverworm">
 								<Keepers>
@@ -5246,7 +5247,7 @@
 							<BuyItem ItemId="2600" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1004430" XYZ="-278.7472, 8, 378.7108"/>
 						</If>
 						<ExMoveTo XYZ="-439.442, -2.663849, 663.779" ForceLanding="True" Type="RandomPointWithin" Distance="10"/>
-						<If Condition="IsTimeBetween(0,8)">
+						<If Condition="IsTimeBetween(6,8)">
 							<WaitWhile Condition="IsTimeBetween(0,8) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
 							<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(8,16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Mooch="1" Bait="Sand Leech">
 								<Keepers>
@@ -5261,7 +5262,7 @@
 								</FishSpots>
 							</ExFish>
 						</If>
-						<If Condition="IsTimeBetween(8,16)">
+						<If Condition="IsTimeBetween(14,16)">
 							<WaitWhile Condition="IsTimeBetween(8,16) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
 							<ExFish Condition="HasAtLeast(2600,1) and IsTimeBetween(16,20) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Mooch="1" Bait="Sand Leech">
 								<Keepers>
@@ -5359,7 +5360,7 @@
 								</FishSpots>
 							</ExFish>
 						</If>
-						<If Condition="IsTimeBetween(16,24)">
+						<If Condition="IsTimeBetween(22,24)">
 							<WaitWhile Condition="IsTimeBetween(16,24) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
 							<ExFish Condition="IsTimeBetween(0,4) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
 								<Baits>
@@ -5397,7 +5398,7 @@
 						<RunCode Name="FSH"/>
 						<ExMoveTo XYZ="-553.6001, 52.34926, -769.0154" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(8,9)"/>
-						<ExFish Condition="HasAtLeast(2613,1) and IsTimeBetween(8,15) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Shrimp Cage Feeder">
+						<ExFish Condition="HasAtLeast(2613,1) and IsTimeBetween(8,15) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Shrimp Cage Feeder">
 							<Keepers>
 								<Keeper Name="Pirate's Bane"/>
 								<Keeper Name="Titanic Sawfish"/>
@@ -5423,7 +5424,7 @@
 						<RunCode Name="FSH"/>
 						<ExMoveTo XYZ="450.6311, 10.53571, 433.3366" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(8,9)"/>
-						<ExFish Condition="HasAtLeast(2628,1) and IsTimeBetween(8,15) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Yumizuno">
+						<ExFish Condition="HasAtLeast(2628,1) and IsTimeBetween(8,15) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="2" SitRate=".69" Bait="Yumizuno">
 							<Keepers>
 								<Keeper Name="Pirate's Bane"/>
 								<Keeper Name="Titanic Sawfish"/>
@@ -5448,7 +5449,7 @@
 					<If Condition="&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Ship Graveyard ~ Frilled Shark !"/>
 						<If Condition="not(HasAtLeast(2613,50)) and not(HasAtLeast(2616,1)) and not(HasAtLeast(2619,1))">
-							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Frilled Shark  : Not enough bait available, I'm going to buy you some !"/>
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Frilled Shark : Not enough bait available, I'm going to buy you some !"/>
 							<ExMoveTo XYZ="56.46388, -3.118286, 64.31471" ForceLanding="True"/>
 							<BuyItem ItemId="2613" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1003266" XYZ="55.3584, -3.11828, 65.76429"/>
 						</If>
@@ -5558,7 +5559,7 @@
 						<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
 						<ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(21,22)"/>
-						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(21,3) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
+						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(21,3) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
 							<Collectables>
 								<Collectable Name="Thunderbolt Eel" Value="813"/>
 							</Collectables>
@@ -5597,7 +5598,7 @@
 						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
 						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
 						<ExMoveTo XYZ="501.6224, -32.29482, -145.8089" Type="RandomPointWithin" Distance="10"/>
-						<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
+						<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
 							<Baits>
 								<Bait Name="Brute Leech"/>
 								<Bait Name="Stonefly Nymph"/>
@@ -5643,7 +5644,7 @@
 						<ExMoveTo XYZ="-420.8228, 111.4044, 674.2472" Type="RandomPointWithin" Distance="10"/>
 						<ExMoveTo XYZ="-290.5473, -13.94905, 828.9244" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(8,9)"/>
-						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(9,14) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(9,14) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 							<Baits>
 								<Bait Name="Giant Crane Fly"/>
 								<Bait Name="Red Balloon"/>
@@ -5686,7 +5687,7 @@
 						<ExMoveTo XYZ="-88.10485, 180.7275, -173.6805" Type="RandomPointWithin" Distance="10"/>
 						<ExMoveTo XYZ="-87.96331, 78.26161, 120.5088" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(14,15)"/>
-						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
+						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
 							<Keepers>
 								<Keeper Name="Thaliak Caiman"/>
 							</Keepers>
@@ -5729,7 +5730,7 @@
 						<ExFlyTo XYZ="150.045, 83.63493, -305.3822"/>
 						<ExMoveTo XYZ="845.9851, 62.37205, -199.7481" Type="RandomPointWithin" Distance="10"/>
 						<WaitWhile Condition="IsTimeBetween(14,15)"/>
-						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 							<Baits>
 								<Bait Name="Giant Crane Fly"/>
 								<Bait Name="Red Balloon"/>
@@ -5761,7 +5762,7 @@
 						<RunCode Name="FSH"/>
 						<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" Type="RandomPointWithin" Distance="5"/>
 						<ExMoveTo XYZ="205.5932, -85.20891, 659.786" Type="RandomPointWithin" Distance="10"/>
-						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Snagging="True" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
+						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
 							<Keepers>
 								<Keeper Name="Caiman"/>
 							</Keepers>
@@ -7189,9 +7190,12 @@
 										<IndirectApproachGatherSpot ApproachLocation="182.7975, 69.57438, 117.5594" ReturnToApproachLocation="False" nodeLocation="186.0795, 69.36257, 126.6282"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot Radius="50" XYZ="144.1487, 81.11399, 54.39318"/>
-										<HotSpot Radius="80" XYZ="221.9516, 86.1501, 161.2957"/>
-										<HotSpot Radius="50" XYZ="53.67305, 61.78543, 169.2949"/>
+										<HotSpot Radius="5" XYZ="120.1556, 70.42133, 30.73328"/>
+										<HotSpot Radius="20" XYZ="142.1345, 73.26503, 54.2835"/>
+										<HotSpot Radius="5" XYZ="231.3517, 74.23511, 112.9807"/>
+										<HotSpot Radius="40" XYZ="235.2324, 74.75814, 163.3758"/>
+										<HotSpot Radius="5" XYZ="31.89844, 54.71996, 173.864"/>
+										<HotSpot Radius="20" XYZ="58.36562, 54.29221, 168.2578"/>
 									</HotSpots>
 								</ExGather>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Hardsilver Ore(The Maker's Quarter) [STOP]"/>
@@ -7558,10 +7562,11 @@
 										<IndirectApproachGatherSpot ApproachLocation="309.7932, -118.2533, 530.2704" NodeLocation="310.146, -118.5, 530.895" ReturnToApproachLocation="False"/>
 									</GatherSpots>
 									<HotSpots>
-										<HotSpot Radius="65" XYZ="117.249428, -137.9418, 613.707947"/>
-										<HotSpot Radius="40" XYZ="100.5221, -137.9418, 504.220642"/>
-										<HotSpot Radius="80" XYZ="218.774689, -124.9265, 500.0145"/>
-										<HotSpot Radius="60" XYZ="294.9306, -111.2702, 521.9253"/>
+										<HotSpot Radius="5" XYZ="78.89505, -145.5175, 580.6633"/>
+										<HotSpot Radius="5" XYZ="100.6698, -146.2578, 502.179"/>
+										<HotSpot Radius="40" XYZ="177.3989, -142.5053, 467.4319"/>
+										<HotSpot Radius="5" XYZ="310.02, -117.2782, 530.663"/>
+										<HotSpot Radius="75" XYZ="139.1571, -135.0074, 629.9597"/>
 									</HotSpots>
 								</ExGather>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Birch Log(Voor Sian Siran) [STOP]"/>
@@ -8554,7 +8559,7 @@
 								</ExGather>
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [STOP]"/>
 							</If>
-							<!-- Titanium Ore or  -->
+							<!-- Titanium Ore or -->
 							<If Condition="ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
 								<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Titanium Ore(Chocobo Forest) [START]"/>
 								<ExGather DisableRotationOverride="&DisableRotationOverride_Snorlax;" GatherIncrease="&GatherIncrease_Snorlax;" DiscoverUnknowns="&DiscoverUnknowns;" While="ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) and (&SpiritBond_Snorlax; == 0 or not(&SpiritBond_SnorlaxCondition;))">
@@ -10258,6 +10263,37 @@
 				<!-- Slowpoke -->
 				<If Condition="&Slowpoke; and (&SnorlaxCondition; or &Snorlax; == 0) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 					<!-- Farming -->
+					<!-- 3.4 Fish -->
+					<If Condition="(ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
+						<!-- Aetherochemical Compound #666 -->
+						<If Condition="&AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Slowpoke ~ Destination ----&gt; Aetherochemical Spill ~ Aetherochemical Compound #666"/>
+							<TeleportTo Force="True" AetheryteId="74"/>
+							<RunCode Name="FSH"/>
+							<ExMoveTo XYZ="-700.808, -188.9359, -589.704"/>
+							<ExMoveTo XYZ="-658.5544, -130.4097, -651.2757" Type="RandomPointWithin" Distance="10"/>
+							<ExMoveTo XYZ="-289.2864, -26.16157, -684.4478" Type="RandomPointWithin" Distance="10"/>
+							<ExMoveTo XYZ="264.3417, 36.46985, -743.344" Type="RandomPointWithin" Distance="10"/>
+							<ExMoveTo XYZ="362.2242, -31.11755, -802.2322" Type="RandomPointWithin" Distance="10"/>
+							<ExFish Condition="HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" FishEyes="True" Stealth="True" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Fiend Worm">
+								<Keepers>
+									<Keeper Name="Aetherochemical Compound #666"/>
+								</Keepers>
+								<FishSpots>
+									<FishSpot XYZ="389.9351, -54.11707, -796.1282" Heading="0.6691883"/>
+									<FishSpot XYZ="400.1159, -54.11707, -798.4655" Heading="0.225174"/>
+									<FishSpot XYZ="404.1349, -54.11707, -801.4324" Heading="6.079007"/>
+									<FishSpot XYZ="403.3704, -54.11707, -793.2297" Heading="5.050659"/>
+									<FishSpot XYZ="381.5509, -54.11706, -762.9072" Heading="2.847353"/>
+									<FishSpot XYZ="377.6221, -54.11706, -768.1039" Heading="2.265112"/>
+									<FishSpot XYZ="375.7015, -54.11707, -774.6771" Heading="1.819007"/>
+									<FishSpot XYZ="377.1834, -54.11707, -781.0836" Heading="1.416884"/>
+									<FishSpot XYZ="383.2096, -54.11707, -781.2633" Heading="1.37709"/>
+								</FishSpots>
+							</ExFish>
+							<RunCode Name="StopFishing"/>
+						</If>
+					</If>
 					<!-- 3.3 Fish -->
 					<If Condition="(ItemCount(15439) &lt; &MagicBucket_Slowpoke; or ItemCount(15626) &lt; &FatPurse_Slowpoke; or ItemCount(15627) &lt; &TheImpaler_Slowpoke; or ItemCount(15628) &lt; &LaReale_Slowpoke; or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 						<!-- Magic Bucket -->
@@ -10327,7 +10363,7 @@
 							<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 							<ExMoveTo XYZ="151.5947, 324.9937, 119.8615"/>
 							<ExMoveTo XYZ="-684.4172, 130.6977, -600.1046"/>
-							<ExFish Condition="ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="25" MaxFish="45" ShuffleFishSpots="false" Snagging="True" SitRate=".69" Bait="Brute Leech">
+							<ExFish Condition="ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="25" MaxFish="45" ShuffleFishSpots="false" SitRate=".69" Bait="Brute Leech">
 								<Keepers>
 									<Keeper Name="The Impaler"/>
 								</Keepers>
@@ -10481,7 +10517,7 @@
 							<ExMoveTo XYZ="-488.7215, 249.4684, -30.1412" Type="RandomPointWithin" Distance="10"/>
 							<ExFish Condition="ItemCount(14212) &lt; &Gnomefish_Slowpoke; and HasAtLeast(12704,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Stonefly Nymph">
 								<Keepers>
-									<Keeper Name="Pteranodon"/>
+									<Keeper Name="Gnomefish"/>
 								</Keepers>
 								<FishSpots>
 									<FishSpot XYZ="-526.5922, 146.8684, 11.23801" Heading="6.217756"/>
@@ -10559,7 +10595,7 @@
 							<ExMoveTo XYZ="-443.6423, 134.8922, -591.2842" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="-450.6763, 91.005, -645.6122" Type="RandomPointWithin" Distance="10"/>
 							<ExDisablePlugins Names="Enable Flight"/>
-							<ExFish Condition="ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Snagging="True" SitRate=".69" Bait="Brute Leech">
+							<ExFish Condition="ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Brute Leech">
 								<Keepers>
 									<Keeper Name="Merciless"/>
 									<Keeper Name="Coerthan Oyster"/>
@@ -11456,7 +11492,7 @@
 							</ExTurnInCollectables>
 							<ExEnablePlugins Names="Enable Flight"/>
 						</If>
-						<!--  Desynth/Sell - Reset Time -->
+						<!-- Desynth/Sell - Reset Time -->
 						<If Condition="IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Magikarp [&ResetHour_Magikarp;:&ResetHour_Magikarp;+2] ~ Desynth/Sell Time"/>
 							<If Condition="&Sell_Magikarp; and &Desynth_Magikarp; == 0">
@@ -11474,18 +11510,21 @@
 								</If>
 								<!-- Keep None -->
 								<If Condition="&Keep_IlluminatiPerch_Magikarp; == 0 and &Keep_HinterlandsPerch_Magikarp; == 0">
-								<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804,12819"/>
+									<SellItem SellTimeout="1" ItemIds="12728,12730,12731,12739,12756,12757,12780,12783,12790,12804,12819"/>
 								</If>
 							</If>
 							<If Condition="&Desynth_Magikarp;">
-								<If Condition="&Use_House_Codechunck;">
-									<RunCode Name="WaitingHouse"/>
-								</If>
-								<If Condition="not &Use_House_Codechunck;">
-									<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
+								<If Condition="&WaitAtWaitingLocation;">
+									<If Condition="&Use_House_Codechunck;">
+										<RunCode Name="WaitingHouse"/>
+									</If>
+									<If Condition="not &Use_House_Codechunck;">
+										<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
+									</If>
+									<RunCode Name="UnStealth"/>
 								</If>
 								<!-- Maiboi -->
-								<While Condition="HasAtLeast(127288, 1)">
+								<While Condition="HasAtLeast(12728, 1)">
 									<Desynth DesynthTimeout="1" ItemIds="12728"/>
 								</While>
 								<!-- Bullfrog -->
@@ -12081,25 +12120,29 @@
 								<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
 							</ShopPurchases>
 						</ExTurnInCollectables>
-						<If Condition="&Use_House_Codechunck;">
-							<RunCode Name="WaitingHouse"/>
+						<If Condition="&WaitAtWaitingLocation;">
+							<If Condition="&Use_House_Codechunck;">
+								<RunCode Name="WaitingHouse"/>
+							</If>
+							<If Condition="not &Use_House_Codechunck;">
+								<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
+							</If>
+							<RunCode Name="UnStealth"/>
 						</If>
-						<If Condition="not &Use_House_Codechunck;">
-							<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
-						</If>
-						<RunCode Name="UnStealth"/>
 					</If>
 				</If>
 			</If>
 			<!-- Full inventory -->
 			<If Condition="FreeItemSlots() &lt; 5">
-				<If Condition="&Use_House_Codechunck;">
-					<RunCode Name="WaitingHouse"/>
+				<If Condition="&WaitAtWaitingLocation;">
+					<If Condition="&Use_House_Codechunck;">
+						<RunCode Name="WaitingHouse"/>
+					</If>
+					<If Condition="not &Use_House_Codechunck;">
+						<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
+					</If>
+					<RunCode Name="UnStealth"/>
 				</If>
-				<If Condition="not &Use_House_Codechunck;">
-					<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
-				</If>
-				<RunCode Name="UnStealth"/>
 				<ExPurify/>
 				<If Condition="&Desynth_Magikarp;">
 					<!-- Shipworm -->
@@ -12146,13 +12189,15 @@
 		</While>
 		<!-- Full inventory -->
 		<If Condition="FreeItemSlots() &lt; 5">
-			<If Condition="&Use_House_Codechunck;">
-				<RunCode Name="WaitingHouse"/>
+			<If Condition="&WaitAtWaitingLocation;">
+				<If Condition="&Use_House_Codechunck;">
+					<RunCode Name="WaitingHouse"/>
+				</If>
+				<If Condition="not &Use_House_Codechunck;">
+					<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
+				</If>
+				<RunCode Name="UnStealth"/>
 			</If>
-			<If Condition="not &Use_House_Codechunck;">
-				<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
-			</If>
-			<RunCode Name="UnStealth"/>
 			<ExLog Color="&Color;" Name="GatherManager &Version;" Message="Not enought Free slot left, stopping the profile ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 		</If>
 	</Order>
@@ -12167,10 +12212,10 @@
 			<![CDATA[ff14bot.Managers.ChatManager.SendChat("/gs change 12"); await Buddy.Coroutines.Coroutine.Sleep(2000);]]>
 		</CodeChunk>
 		<CodeChunk Name="useAethernetEastSide">
-			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(3000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(3000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(2); await Buddy.Coroutines.Coroutine.Sleep(6000); ]]>
+			<![CDATA[ ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(3000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(3000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(2); await Buddy.Coroutines.Coroutine.Sleep(6000); ]]>
 		</CodeChunk>
 		<CodeChunk Name="useAethernetWestSide">
-			<![CDATA[  ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(3000);  if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(3000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(1); await Buddy.Coroutines.Coroutine.Sleep(6000); ]]>
+			<![CDATA[ ff14bot.Managers.GameObjectManager.GetObjectByNPCId(75).Interact(); await Buddy.Coroutines.Coroutine.Sleep(3000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(0); await Buddy.Coroutines.Coroutine.Sleep(3000); if (ff14bot.RemoteWindows.SelectString.IsOpen) ff14bot.RemoteWindows.SelectString.ClickSlot(1); await Buddy.Coroutines.Coroutine.Sleep(6000); ]]>
 		</CodeChunk>
 		<CodeChunk Name="MoveForward">
 			<![CDATA[	await Buddy.Coroutines.Coroutine.Sleep(500);	ff14bot.Managers.MovementManager.MoveForwardStart();	await Buddy.Coroutines.Coroutine.Sleep(2000);	ff14bot.Managers.MovementManager.MoveForwardStop();	await Buddy.Coroutines.Coroutine.Sleep(500);	]]>
