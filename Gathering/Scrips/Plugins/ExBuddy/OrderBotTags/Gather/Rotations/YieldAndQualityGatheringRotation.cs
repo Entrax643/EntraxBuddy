@@ -1,15 +1,13 @@
 ﻿namespace ExBuddy.OrderBotTags.Gather.Rotations
 {
 	using System.Threading.Tasks;
-	using ExBuddy.Attributes;
-	using ExBuddy.Enumerations;
-	using ExBuddy.Helpers;
-	using ExBuddy.Interfaces;
+	using Attributes;
+	using Enumerations;
+	using Helpers;
+	using Interfaces;
 	using ff14bot;
 	using ff14bot.Managers;
-
-
-	
+    	
 	//Name, RequiredTime, RequiredGpBreakpoints
 	[GatheringRotation("YieldAndQuality", 25, 700, 650, 600, 500, 0)]
 	public class YieldAndQualityGatheringRotation : SmartGatheringRotation, IGetOverridePriority

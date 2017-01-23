@@ -134,7 +134,7 @@ namespace ff14bot.NeoProfiles
                     if (item.RawItemId == 12538 && item.Collectability >= 530)
                     {
                         Log("Attempting to Turn In Adamantite Ore");
-                        RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 8);
+                        RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 16);
                         await Coroutine.Sleep(1000);
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
                         await Coroutine.Wait(1000, () => Request.IsOpen);
@@ -147,7 +147,7 @@ namespace ff14bot.NeoProfiles
                     if (item.RawItemId == 12900 && item.Collectability >= 530)
                     {
                         Log("Attempting to Turn In Chysahl Green");
-                        RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 9);
+                        RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 17);
                         await Coroutine.Sleep(1000);
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
                         await Coroutine.Wait(1000, () => Request.IsOpen);
@@ -160,7 +160,7 @@ namespace ff14bot.NeoProfiles
                     if (item.RawItemId == 12828 && item.Collectability >= 834)
                     {
                         Log("Attempting to Turn In Thunderbolt Eel");
-                        RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 10);
+                        RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 18);
                         await Coroutine.Sleep(1000);
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
                         await Coroutine.Wait(1000, () => Request.IsOpen);

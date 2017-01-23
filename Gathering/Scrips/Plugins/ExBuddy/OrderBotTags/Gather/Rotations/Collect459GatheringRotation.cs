@@ -1,13 +1,12 @@
 ﻿namespace ExBuddy.OrderBotTags.Gather.Rotations
 {
 	using System.Threading.Tasks;
-
-	using ExBuddy.Attributes;
-	using ExBuddy.Interfaces;
-
+	using Attributes;
+	using Interfaces;
 	using ff14bot;
-	[GatheringRotation("Ditto459", 30, 600)]
-	public sealed class Ditto459GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
+
+	[GatheringRotation("Collect459", 30, 600)]
+	public sealed class Collect459GatheringRotation : CollectableGatheringRotation, IGetOverridePriority
 	{
 		#region IGetOverridePriority Members
 		int IGetOverridePriority.GetOverridePriority(ExGatherTag tag)
