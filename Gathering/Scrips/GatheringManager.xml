@@ -12040,6 +12040,38 @@
 									<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
 									<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken;"/>
 									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial;"/>
+									<ShopPurchase shopItem="CommercialSurvivalManual" MaxCount="&CommercialSurvivalManual;"/>
+									<ShopPurchase shopItem="TrailblazersScarf" MaxCount="&TrailblazersScarf;"/>
+									<ShopPurchase shopItem="TrailblazersVest" MaxCount="&TrailblazersVest;"/>
+									<ShopPurchase shopItem="TrailblazersWristguards" MaxCount="&TrailblazersWristguards;"/>
+									<ShopPurchase shopItem="TrailblazersSlops" MaxCount="&TrailblazersSlops;"/>
+									<ShopPurchase shopItem="TrailblazersShoes" MaxCount="&TrailblazersShoes;"/>
+									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly;"/>
+									<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm;"/>
+									<ShopPurchase shopItem="MagmaWorm" MaxCount="&MagmaWorm;"/>
+									<ShopPurchase shopItem="RedBalloon" MaxCount="&RedBalloon;"/>
+									<ShopPurchase shopItem="CrownTrout" MaxCount="&CrownTrout;"/>
+									<ShopPurchase shopItem="CrownTroutHQ" MaxCount="&CrownTroutHQ;"/>
+									<ShopPurchase shopItem="RetributionStaff" MaxCount="&RetributionStaff;"/>
+									<ShopPurchase shopItem="RetributionStaffHQ" MaxCount="&RetributionStaffHQ;"/>
+									<ShopPurchase shopItem="ThiefBetta" MaxCount="&ThiefBetta;"/>
+									<ShopPurchase shopItem="ThiefBettaHQ" MaxCount="&ThiefBettaHQ;"/>
+									<ShopPurchase shopItem="GoldsmithCrab" MaxCount="&GoldsmithCrab;"/>
+									<ShopPurchase shopItem="GoldsmithCrabHQ" MaxCount="&GoldsmithCrabHQ;"/>
+									<ShopPurchase shopItem="Pterodactyl" MaxCount="&Pterodactyl;"/>
+									<ShopPurchase shopItem="PterodactylHQ" MaxCount="&PterodactylHQ;"/>
+									<ShopPurchase shopItem="Eurhinosaur" MaxCount="&Eurhinosaur;"/>
+									<ShopPurchase shopItem="EurhinosaurHQ" MaxCount="&EurhinosaurHQ;"/>
+									<ShopPurchase shopItem="GemMarimo" MaxCount="&GemMarimo;"/>
+									<ShopPurchase shopItem="GemMarimoHQ" MaxCount="&GemMarimoHQ;"/>
+									<ShopPurchase shopItem="Sphalerite" MaxCount="&Sphalerite;"/>
+									<ShopPurchase shopItem="SphaleriteHQ" MaxCount="&SphaleriteHQ;"/>
+									<ShopPurchase shopItem="WindSilk" MaxCount="&WindSilk;"/>
+									<ShopPurchase shopItem="CloudCottonBoll" MaxCount="&CloudCottonBoll;"/>
+									<ShopPurchase shopItem="CloudCottonBollHQ" MaxCount="&CloudCottonBollHQ;"/>
+									<ShopPurchase shopItem="DinosaurLeather" MaxCount="&DinosaurLeather;"/>
+									<ShopPurchase shopItem="RoyalMistletoe" MaxCount="&RoyalMistletoe;"/>
+									<ShopPurchase shopItem="RoyalMistletoeHQ" MaxCount="&RoyalMistletoeHQ;"/>
 								</ShopPurchases>
 							</ExTurnInCollectables>
 							<ExEnablePlugins Names="Enable Flight"/>
