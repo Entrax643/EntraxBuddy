@@ -882,7 +882,7 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Umbreon">
+<!ENTITY Version "Firebird">
 <!-- -->
 <!ENTITY SlowpokeCondition "not(ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1) or ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1))">
 <!ENTITY Items_SpiritBond_SnorlaxCondition "11985,11990,11995,11998,12003,12008">
