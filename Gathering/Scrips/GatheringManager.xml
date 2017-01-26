@@ -139,7 +139,6 @@
 <!-- Miner -->
 <!-- 50 -->
 <!ENTITY DragonObsidian_Ditto "0">
-<!ENTITY DragonObsidian_Rate_Ditto "321">
 <!-- 56 -->
 <!ENTITY FossilizedDragonBone_Ditto "0">
 <!ENTITY FossilizedDragonBone_Rate_Ditto "410">
@@ -152,7 +151,6 @@
 <!-- Botaniste -->
 <!-- 50 -->
 <!ENTITY CedarLog_Ditto "0">
-<!ENTITY CedarLog_Rate_Ditto "321">
 <!-- 56 -->
 <!ENTITY WindWidow_Ditto "0">
 <!ENTITY WindWidow_Rate_Ditto "410">
@@ -185,9 +183,9 @@
 <!ENTITY CordialType_Psyduck "Auto">
 <!ENTITY KeepFishing_Psyduck "0">
 <!-- -->
-<!-- 3.4 Big Fish -->
+<!-- 3.4 Fish -->
 <!ENTITY HraesvelgrsTear_Psyduck "0">
-<!-- 3.3 Big Fish -->
+<!-- 3.3 Fish -->
 <!ENTITY Scaleripper_Psyduck "0">
 <!ENTITY TheDreamweaver_Psyduck "0">
 <!ENTITY Meteortoise_Psyduck "0">
@@ -196,29 +194,14 @@
 <!ENTITY Inkfish_Psyduck "0">
 <!ENTITY TheSecondOne_Psyduck "0">
 <!ENTITY AphoticPirarucu_Psyduck "0">
-<!-- 3.2 Big Fish -->
+<!-- 3.2 Fish -->
 <!ENTITY AmberSalamander_Psyduck "0">
 <!ENTITY FleeceStingray_Psyduck "0">
 <!ENTITY LavaSnail_Psyduck "0">
 <!ENTITY OliphantsTrunk_Psyduck "0">
 <!ENTITY ArmoredCatfish_Psyduck "0">
-<!-- Feast or Famine -->
-<!ENTITY NeptoDragon_Psyduck "0">
-<!ENTITY KunotheKiller_Psyduck "0">
-<!ENTITY Shonisaurus_Psyduck "0">
-<!ENTITY Helicoprion_Psyduck "0">
-<!ENTITY Namitaro_Psyduck "0">
-<!ENTITY Endoceras_Psyduck "0">
-<!-- -->
-<!-- The Beast Of Brewer's Beacon -->
-<!ENTITY TitanicSawfish_Psyduck "0">
-<!ENTITY NavigatorsBrand_Psyduck "0">
-<!-- -->
-<!-- Big Fish -->
-<!ENTITY FrilledShark_Psyduck "0">
-<!ENTITY NinjaBetta_Psyduck "0">
-<!ENTITY MagicCarpet_Psyduck "0">
-<!ENTITY TheGreatestBreamInTheWorld_Psyduck "0">
+<!-- 3.0 Fish -->
+<!ENTITY PipiraPira_Psyduck "0">
 <!-- Red scrips Fish -->
 <!ENTITY ThunderboltEel_Psyduck "0">
 <!-- Ephemeral Fish -->
@@ -227,8 +210,22 @@
 <!ENTITY ThaliakCaiman_Psyduck "0">
 <!ENTITY Tupuxuara_Psyduck "0">
 <!ENTITY Caiman_Psyduck "0">
-<!-- Other Fish -->
-<!ENTITY PipiraPira_Psyduck "0">
+<!-- Feast or Famine -->
+<!ENTITY NeptoDragon_Psyduck "0">
+<!ENTITY KunotheKiller_Psyduck "0">
+<!ENTITY Shonisaurus_Psyduck "0">
+<!ENTITY Helicoprion_Psyduck "0">
+<!ENTITY Namitaro_Psyduck "0">
+<!ENTITY Endoceras_Psyduck "0">
+<!-- The Beast Of Brewer's Beacon -->
+<!ENTITY TitanicSawfish_Psyduck "0">
+<!ENTITY NavigatorsBrand_Psyduck "0">
+<!-- 2.4 Fish -->
+<!ENTITY NinjaBetta_Psyduck "0">
+<!-- 2.3 Fish -->
+<!ENTITY FrilledShark_Psyduck "0">
+<!ENTITY MagicCarpet_Psyduck "0">
+<!ENTITY TheGreatestBreamInTheWorld_Psyduck "0">
 <!-- -->
 <!-- -->
 <!-- Slowpoke Settings -->
@@ -291,17 +288,14 @@
 <!-- Gathering Rotation Settings NO Collectable -->
 <!ENTITY Rotation_50_60 "Unspoiled">
 <!ENTITY Rotation_1Star "Unspoiled">
-<!ENTITY Rotation_1StarPlus "Unspoiled">
 <!ENTITY Rotation_3Star "Unspoiled">
 <!-- Gather Increase : Yield : +2 Yield items / +5% or 15% Yield rate | Quality : +30% Quality / +5% or 15% Yield rate | YieldAndQuality : +2 Yield items / +10% Quality rate ( and +5% or 15% Yield rate with my modified rotation) -->
 <!ENTITY GatherIncrease_50_60 "Yield">
 <!ENTITY GatherIncrease_1Star "Yield">
-<!ENTITY GatherIncrease_1StarPlus "Yield">
 <!ENTITY GatherIncrease_3Star "YieldAndQuality">
 <!-- Disable Rotation Override : True / False -->
 <!ENTITY DisableRotationOverride_50_60 "False">
 <!ENTITY DisableRotationOverride_1Star "False">
-<!ENTITY DisableRotationOverride_1StarPlus "False">
 <!ENTITY DisableRotationOverride_3Star "False">
 <!-- -->
 <!ENTITY Collectability_Chysahl "470">
@@ -318,8 +312,6 @@
 <!ENTITY Cordial_Type_1Star "Auto">
 <!ENTITY Cordial_Type_1Star_Collectable "Auto">
 <!-- -->
-<!ENTITY Cordial_Type_1StarPlus "Auto">
-<!-- -->
 <!ENTITY Cordial_Type_3Star "Auto">
 <!-- -->
 <!-- -->
@@ -331,8 +323,6 @@
 <!ENTITY Cordial_Time_1Star "Auto">
 <!ENTITY Cordial_Time_1Star_Collectable "Auto">
 <!-- -->
-<!ENTITY Cordial_Time_1StarPlus "Auto">
-<!-- -->
 <!ENTITY Cordial_Time_3Star "Auto">
 <!-- -->
 <!-- -->
@@ -340,17 +330,53 @@
 <!ENTITY TurnInAfterLoop "0">
 <!-- Idyllshire or MorDhona -->
 <!ENTITY TurnIn_City "Idyllshire">
-<!ENTITY TurnInAfterLoop_free_bag_slots "100">
-<!ENTITY Trade_Counterfoil "0">
+<!ENTITY MinimumFreeSlot_TurnIn "100">
+<!ENTITY TurnIn_Counterfoil "0">
 <!ENTITY Cap_Amount "420">
 <!-- Shop Settings - -->
 <!-- Set the amount of what you want - For instance if BlueGatherToken = 100 and you already have 42, the bot will spend scrips to buy 58 token. -->
-<!ENTITY RedGatherToken_Count "0">
-<!ENTITY GoblinDice_Count "0">
-<!ENTITY BlueGatherToken_Count "0">
-<!ENTITY HiCordial_Count "0">
-<!ENTITY BruteLeech_Count "0">
-<!ENTITY CraneFly_Count "0">
+<!-- Red Gatherer -->
+<!ENTITY RedGatherToken "0">
+<!ENTITY GoblinDice "0">
+<!ENTITY GuerdonIV "0">
+<!ENTITY GuileIV "0">
+<!ENTITY GraspIV "0">
+<!-- Blue Gatherer -->
+<!ENTITY BlueGatherToken "0">
+<!ENTITY HiCordial "0">
+<!ENTITY CommercialSurvivalManual "0">
+<!ENTITY TrailblazersScarf "0">
+<!ENTITY TrailblazersVest "0">
+<!ENTITY TrailblazersWristguards "0">
+<!ENTITY TrailblazersSlops "0">
+<!ENTITY TrailblazersShoes "0">
+<!ENTITY BruteLeech "0">
+<!ENTITY CraneFly "0">
+<!ENTITY FiendWorm "0">
+<!ENTITY MagmaWorm "0">
+<!ENTITY RedBalloon "0">
+<!ENTITY CrownTrout "0">
+<!ENTITY CrownTroutHQ "0">
+<!ENTITY RetributionStaff "0">
+<!ENTITY RetributionStaffHQ "0">
+<!ENTITY ThiefBetta "0">
+<!ENTITY ThiefBettaHQ "0">
+<!ENTITY GoldsmithCrab "0">
+<!ENTITY GoldsmithCrabHQ "0">
+<!ENTITY Pterodactyl "0">
+<!ENTITY PterodactylHQ "0">
+<!ENTITY Eurhinosaur "0">
+<!ENTITY EurhinosaurHQ "0">
+<!ENTITY GemMarimo "0">
+<!ENTITY GemMarimoHQ "0">
+<!ENTITY Sphalerite "0">
+<!ENTITY SphaleriteHQ "0">
+<!ENTITY WindSilk "0">
+<!ENTITY CloudCottonBoll "0">
+<!ENTITY CloudCottonBollHQ "0">
+<!ENTITY DinosaurLeather "0">
+<!ENTITY RoyalMistletoe "0">
+<!ENTITY RoyalMistletoeHQ "0">
 <!-- -->
 <!-- -->
 <!-- Revenant's Toll Settings / Set QUANTITY here -->
@@ -373,278 +399,290 @@
 <!-- ONLY SET 1 ITEM PER TIME SLOT OR ERRORS WILL OCCUR. -->
 <!-- FOR COLLECTABLE FIRST ENTITY HAVE TO BE SET A 1 TOO -->
 <!-- 1.00 AM & PM - 1.55 AM & PM -->
-<!-- AM -->
-<!ENTITY Cluster_1AM "0">
+<!-- 1.00 AM -->
+<!ENTITY Cluster_1AM "0"><!-- 1.00 AM -->
 <!-- -->
-<!ENTITY Meteorite "0">
+<!ENTITY Meteorite "0"><!-- 1.00 AM -->
+<!ENTITY Collect_Meteorite "0">
 <!-- -->
-<!ENTITY SmithsoniteOre "0">
+<!ENTITY SmithsoniteOre "0"><!-- 1.00 AM -->
+<!ENTITY Collect_SmithsoniteOre "0">
 <!-- -->
-<!ENTITY SilkwormCocoon "0">
+<!ENTITY SilkwormCocoon "0"><!-- 1.00 AM -->
 <!-- -->
-<!ENTITY DarksteelOre "0">
+<!ENTITY DarksteelOre "0"><!-- 1.00 AM -->
 <!-- -->
-<!-- PM -->
-<!ENTITY Cluster_1PM "0">
+<!-- 1.00 PM -->
+<!ENTITY Cluster_1PM "0"><!-- 1.00 PM -->
 <!-- -->
-<!ENTITY FrostCottonBoll "0">
+<!ENTITY FrostCottonBoll "0"><!-- 1.00 PM -->
+<!ENTITY Collect_FrostCottonBoll "0">
 <!-- -->
-<!ENTITY VampirePlant "0">
+<!ENTITY VampirePlant "0"><!-- 1.00 PM -->
 <!-- -->
 <!-- -->
 <!-- 2.00 AM & PM - 2.55 AM & PM -->
-<!-- AM -->
-<!ENTITY FragrantLog "0">
+<!-- 2.00 AM -->
+<!ENTITY FragrantLog "0"><!-- 2.00 AM -->
 <!-- -->
-<!ENTITY AntumbralRock "0">
+<!ENTITY AntumbralRock "0"><!-- 2.00 AM -->
 <!-- -->
-<!-- PM -->
-<!ENTITY BlackTruffle "0">
+<!-- 2.00 PM -->
+<!ENTITY BlackTruffle "0"><!-- 2.00 PM -->
 <!-- -->
-<!ENTITY DzemaelTomato "0">
+<!ENTITY DzemaelTomato "0"><!-- 2.00 PM -->
 <!ENTITY DzemaelTomatoSeeds "0">
 <!-- -->
-<!-- AM & PM -->
+<!-- 2.00 AM & PM -->
 <!ENTITY OldWorldFigSeeds "0">
 <!-- -->
-<!ENTITY OldWorldFig "0">
+<!ENTITY OldWorldFig "0"><!-- 2.00 AM & PM -->
 <!ENTITY Collect_OldWorldFig "0">
 <!-- -->
-<!ENTITY YellowQuartz "0">
+<!ENTITY YellowQuartz "0"><!-- 2.00 AM & PM -->
 <!ENTITY Collect_YellowQuartz "0">
 <!-- -->
-<!ENTITY GreenQuartz "0">
+<!ENTITY GreenQuartz "0"><!-- 2.00 AM & PM -->
 <!ENTITY Collect_GreenQuartz "0">
 <!-- -->
-<!ENTITY LightKidneyOre "0">
+<!ENTITY LightKidneyOre "0"><!-- 2.00 AM & PM -->
 <!ENTITY Collect_LightKidneyOre "0">
 <!-- -->
-<!ENTITY Cuprite "0">
+<!ENTITY Cuprite "0"><!-- 2.00 AM & PM -->
 <!ENTITY Collect_Cuprite "0">
 <!-- -->
 <!-- -->
 <!-- 3.00 AM & PM - 3.55 AM & PM -->
 <!-- -->
-<!-- AM -->
-<!ENTITY LumythriteOre "0">
+<!-- 3.00 AM -->
+<!ENTITY LumythriteOre "0"><!-- 3.00 AM -->
+<!ENTITY Collect_LumythriteOre "0">
 <!-- -->
-<!ENTITY Ferberite "0">
+<!ENTITY Ferberite "0"><!-- 3.00 AM -->
 <!-- -->
-<!ENTITY RawTopaz "0">
+<!ENTITY RawTopaz "0"><!-- 3.00 AM -->
 <!-- -->
-<!ENTITY RawIolite "0">
+<!ENTITY RawIolite "0"><!-- 3.00 AM -->
 <!-- -->
-<!-- PM -->
-<!ENTITY OldGrowthCamphorwoodLog "0">
+<!-- 3.00 PM -->
+<!ENTITY OldGrowthCamphorwoodLog "0"><!-- 3.00 PM -->
+<!ENTITY Collect_OldGrowthCamphorwoodLog "0">
 <!-- -->
-<!ENTITY CrystallizedSap "0">
+<!ENTITY CrystallizedSap "0"><!-- 3.00 PM -->
+<!ENTITY Collect_CrystallizedSap "0">
 <!-- -->
 <!-- -->
 <!-- 4.00 AM & PM - 4.55 AM & PM -->
 <!-- -->
-<!-- AM -->
-<!ENTITY PlatinumOre "0">
+<!-- 4.00 AM -->
+<!ENTITY PlatinumOre "0"><!-- 4.00 AM -->
 <!-- -->
-<!ENTITY NativeGold "0">
+<!ENTITY NativeGold "0"><!-- 4.00 AM -->
 <!-- -->
-<!ENTITY RawDiamond "0">
+<!ENTITY RawDiamond "0"><!-- 4.00 AM -->
 <!-- -->
-<!ENTITY RawEmerald "0">
+<!ENTITY RawEmerald "0"><!-- 4.00 AM -->
 <!-- -->
-<!ENTITY LuminiumOre "0">
+<!ENTITY LuminiumOre "0"><!-- 4.00 AM -->
 <!-- -->
-<!-- PM -->
-<!ENTITY BrownMushroom "0">
+<!-- 4.00 PM -->
+<!ENTITY BrownMushroom "0"><!-- 4.00 PM -->
 <!-- -->
 <!-- -->
 <!-- 5.00 AM & PM - 5.55 AM & PM -->
-<!-- AM -->
-<!ENTITY Cluster_5AM "0">
+<!-- 5.00 AM -->
+<!ENTITY Cluster_5AM "0"><!-- 5.00 AM -->
 <!-- -->
-<!ENTITY ThanalanTopsoil3 "0">
+<!ENTITY ThanalanTopsoil3 "0"><!-- 5.00 AM -->
 <!-- -->
-<!ENTITY GoldSand "0">
+<!ENTITY GoldSand "0"><!-- 5.00 AM -->
 <!-- -->
-<!ENTITY EbonyLog "0">
+<!ENTITY EbonyLog "0"><!-- 5.00 AM -->
 <!-- -->
-<!ENTITY Trillium "0">
+<!ENTITY Trillium "0"><!-- 5.00 AM -->
 <!-- -->
-<!ENTITY HoneyLemon "0">
+<!ENTITY HoneyLemon "0"><!-- 5.00 AM -->
 <!-- -->
-<!ENTITY AstralMoraine "0">
+<!ENTITY AstralMoraine "0"><!-- 5.00 AM -->
 <!ENTITY Collect_AstralMoraine "0">
 <!-- -->
-<!ENTITY SunMica "0">
+<!ENTITY SunMica "0"><!-- 5.00 AM -->
 <!ENTITY Collect_SunMica "0">
 <!-- -->
-<!ENTITY AurumRegisOre "0">
+<!ENTITY AurumRegisOre "0"><!-- 5.00 AM -->
 <!ENTITY Collect_AurumRegisOre "0">
-<!-- PM -->
-<!ENTITY ThavnairianMistletoe_5 "0">
+<!-- 5.00 PM -->
+<!ENTITY ThavnairianMistletoe_5 "0"><!-- 5.00 PM -->
 <!-- -->
-<!ENTITY VolcanicRockSalt_5 "0">
+<!ENTITY VolcanicRockSalt_5 "0"><!-- 5.00 PM -->
 <!-- -->
-<!ENTITY Rosemary "0">
+<!ENTITY Rosemary "0"><!-- 5.00 PM -->
 <!-- -->
-<!ENTITY Cluster_5PM "0">
+<!ENTITY Cluster_5PM "0"><!-- 5.00 PM -->
 <!-- -->
-<!ENTITY VanillaBeans "0">
+<!ENTITY VanillaBeans "0"><!-- 5.00 PM -->
 <!ENTITY Collect_VanillaBeans "0">
 <!-- -->
-<!ENTITY HoneydewAlmonds "0">
+<!ENTITY HoneydewAlmonds "0"><!-- 5.00 PM -->
 <!ENTITY Collect_HoneydewAlmonds "0">
 <!-- -->
-<!ENTITY SeventhHeaven "0">
+<!ENTITY SeventhHeaven "0"><!-- 5.00 PM -->
 <!ENTITY Collect_SeventhHeaven "0">
 <!-- -->
 <!-- -->
 <!-- 6.00 AM & PM - 7.55 AM & PM -->
 <!-- -->
-<!-- AM -->
-<!ENTITY ZeoliteOre "0">
+<!-- 6.00 AM -->
+<!ENTITY ZeoliteOre "0"><!-- 6.00 AM -->
 <!-- -->
-<!-- PM -->
-<!ENTITY RawRuby "0">
+<!-- 6.00 PM -->
+<!ENTITY RawRuby "0"><!-- 6.00 PM -->
 <!-- -->
-<!ENTITY RawSapphire "0">
+<!ENTITY RawSapphire "0"><!-- 6.00 PM -->
 <!-- -->
-<!ENTITY Teaklog "0">
+<!ENTITY Teaklog "0"><!-- 6.00 PM -->
 <!-- -->
 <!-- -->
 <!-- 7.00 AM & PM - 7.55 AM & PM -->
-<!-- AM -->
-<!ENTITY UmbralRock "0">
+<!-- 7.00 AM -->
+<!ENTITY UmbralRock "0"><!-- 7.00 AM -->
 <!-- -->
-<!ENTITY RedolentLog "0">
+<!ENTITY RedolentLog "0"><!-- 7.00 AM -->
 <!-- -->
-<!ENTITY ShroudTopsoil3 "0">
+<!ENTITY ShroudTopsoil3 "0"><!-- 7.00 AM -->
 <!-- -->
-<!ENTITY YoungCieldalaesSpinach "0">
+<!ENTITY YoungCieldalaesSpinach "0"><!-- 7.00 AM -->
 <!-- -->
-<!ENTITY VioletQuartz "0">
+<!ENTITY VioletQuartz "0"><!-- 7.00 AM -->
+<!ENTITY Collect_VioletQuartz "0">
 <!-- -->
-<!ENTITY BlueQuartz "0">
+<!ENTITY BlueQuartz "0"><!-- 7.00 AM -->
+<!ENTITY Collect_BlueQuartz "0">
 <!-- -->
-<!ENTITY RedAlumen "0">
-<!-- PM -->
-<!ENTITY LaNosceanTopsoil3 "0">
+<!ENTITY RedAlumen "0"><!-- 7.00 AM -->
+<!ENTITY Collect_RedAlumen "0">
+<!-- 7.00 PM -->
+<!ENTITY LaNosceanTopsoil3 "0"><!-- 7.00 PM -->
 <!-- -->
-<!ENTITY ThavnairianMistletoe_7 "0">
+<!ENTITY ThavnairianMistletoe_7 "0"><!-- 7.00 PM -->
 <!-- -->
-<!ENTITY VolcanicRockSalt_7 "0">
+<!ENTITY VolcanicRockSalt_7 "0"><!-- 7.00 PM -->
 <!-- -->
-<!ENTITY VirginBasiliskEgg "0">
+<!ENTITY VirginBasiliskEgg "0"><!-- 7.00 PM -->
 <!-- -->
-<!ENTITY DravanianPaprika "0">
+<!ENTITY DravanianPaprika "0"><!-- 7.00 PM -->
+<!ENTITY Collect_DravanianPaprika "0">
 <!-- -->
-<!ENTITY WattleBark "0">
+<!ENTITY WattleBark "0"><!-- 7.00 PM -->
+<!ENTITY Collect_WattleBark "0">
 <!-- -->
-<!ENTITY Snurbleberry "0">
+<!ENTITY Snurbleberry "0"><!-- 7.00 PM -->
+<!ENTITY Collect_Snurbleberry "0">
 <!-- -->
 <!-- -->
 <!-- 8.00 AM & PM - 8.55 AM & PM -->
 <!-- -->
-<!-- AM -->
-<!ENTITY Tungstite "0">
+<!-- 8.00 AM -->
+<!ENTITY Tungstite "0"><!-- 8.00 AM -->
 <!-- -->
-<!ENTITY LaNosceanLeek "0">
+<!ENTITY LaNosceanLeek "0"><!-- 8.00 AM -->
 <!-- -->
-<!ENTITY WaterfowlFeather "0">
+<!ENTITY WaterfowlFeather "0"><!-- 8.00 AM -->
 <!-- -->
-<!-- PM -->
-<!ENTITY NobleSage "0">
+<!-- 8.00 PM -->
+<!ENTITY NobleSage "0"><!-- 8.00 PM -->
 <!-- -->
 <!-- -->
 <!-- 9.00 AM & PM - 9.55 AM & PM -->
-<!-- AM -->
-<!ENTITY Cluster_9AM "0">
+<!-- 9.00 AM -->
+<!ENTITY Cluster_9AM "0"><!-- 9.00 AM -->
 <!-- -->
-<!ENTITY SpruceLog "0">
+<!ENTITY SpruceLog "0"><!-- 9.00 AM -->
 <!-- -->
-<!ENTITY GoldOre "0">
+<!ENTITY GoldOre "0"><!-- 9.00 AM -->
 <!-- -->
-<!ENTITY Apricot "0">
+<!ENTITY Apricot "0"><!-- 9.00 AM -->
 <!-- -->
-<!ENTITY PricklyPineapple "0">
+<!ENTITY PricklyPineapple "0"><!-- 9.00 AM -->
 <!ENTITY PricklyPineappleSeeds "0">
 <!-- -->
-<!-- PM -->
-<!ENTITY Cluster_9PM "0">
+<!-- 9.00 PM -->
+<!ENTITY Cluster_9PM "0"><!-- 9.00 PM -->
 <!-- -->
-<!ENTITY Kidragora "0">
+<!ENTITY Kidragora "0"><!-- 9.00 PM -->
 <!-- -->
-<!ENTITY TrilliumBulb "0">
+<!ENTITY TrilliumBulb "0"><!-- 9.00 PM -->
 <!-- -->
-<!-- AM & PM -->
-<!ENTITY Chysahl "0">
+<!-- 9.00 AM & PM -->
+<!ENTITY Chysahl "0"><!-- 9.00 AM & PM -->
 <!ENTITY Collect_Chysahl "0">
 <!-- -->
 <!-- -->
 <!-- 10.00 AM & PM - 10.55 AM & PM -->
-<!-- AM -->
-<!ENTITY CypressLog "0">
+<!-- 10.00 AM -->
+<!ENTITY CypressLog "0"><!-- 10.00 AM -->
 <!-- -->
-<!-- PM -->
-<!-- AM & PM -->
-<!ENTITY PearlSproutSeeds "0">
+<!-- 10.00 PM -->
+<!-- 10.00 AM & PM -->
+<!ENTITY PearlSproutSeeds "0"><!-- 10.00 AM & PM -->
 <!-- -->
-<!ENTITY CoerthanTeaSeeds "0">
+<!ENTITY CoerthanTeaSeeds "0"><!-- 10.00 AM & PM -->
 <!-- -->
-<!ENTITY Pyrite "0">
+<!ENTITY Pyrite "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_Pyrite "0">
 <!-- -->
-<!ENTITY Chalcocite "0">
+<!ENTITY Chalcocite "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_Chalcocite "0">
 <!-- -->
-<!ENTITY Limonite "0">
+<!ENTITY Limonite "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_Limonite "0">
 <!-- -->
-<!ENTITY CoerthanTeaLeaves "0">
+<!ENTITY CoerthanTeaLeaves "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_CoerthanTeaLeaves "0">
 <!-- -->
-<!ENTITY PearlSprouts "0">
+<!ENTITY PearlSprouts "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_PearlSprouts "0">
 <!-- -->
-<!ENTITY Chives "0">
+<!ENTITY Chives "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_Chives "0">
 <!-- -->
-<!ENTITY HeavensLemon "0">
+<!ENTITY HeavensLemon "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_HeavensLemon "0">
 <!-- -->
-<!ENTITY AbalathianMistletoe "0">
+<!ENTITY AbalathianMistletoe "0"><!-- 10.00 AM & PM -->
 <!ENTITY Collect_AbalathianMistletoe "0">
 <!-- -->
 <!-- -->
 <!-- 11.00 AM & PM - 11.55 AM & PM -->
-<!-- AM -->
-<!-- PM -->
-<!-- AM & PM -->
-<!ENTITY Adamantite "0">
+<!-- 11.00 AM -->
+<!-- 11.00 PM -->
+<!-- 11.00 AM & PM -->
+<!ENTITY Adamantite "0"><!-- 11.00 AM & PM -->
 <!ENTITY Collect_Adamantite "0">
 <!-- -->
 <!-- -->
 <!-- 12.00 AM & PM - 12.55 AM & PM -->
-<!-- AM -->
-<!-- PM -->
-<!ENTITY StarCottonBoll "0">
+<!-- 12.00 AM -->
+<!-- 12.00 PM -->
+<!ENTITY StarCottonBoll "0"><!-- 12.00 PM -->
 <!-- -->
-<!-- AM & PM -->
-<!ENTITY Porcini "0">
+<!-- 12.00 AM & PM -->
+<!ENTITY Porcini "0"><!-- 12.00 AM & PM -->
 <!ENTITY Collect_Porcini "0">
 <!-- -->
-<!ENTITY DravanianMistletoe "0">
+<!ENTITY DravanianMistletoe "0"><!-- 12.00 AM & PM -->
 <!ENTITY Collect_DravanianMistletoe "0">
 <!-- -->
-<!ENTITY CloudBanana "0">
+<!ENTITY CloudBanana "0"><!-- 12.00 AM & PM -->
 <!ENTITY Collect_CloudBanana "0">
 <!-- -->
-<!ENTITY Morel "0">
+<!ENTITY Morel "0"><!-- 12.00 AM & PM -->
 <!ENTITY Collect_Morel "0">
 <!-- -->
-<!ENTITY AbalathianRockSalt "0">
+<!ENTITY AbalathianRockSalt "0"><!-- 12.00 AM & PM -->
 <!ENTITY Collect_AbalathianRockSalt "0">
 <!-- -->
-<!ENTITY RedQuartz "0">
+<!ENTITY RedQuartz "0"><!-- 12.00 AM & PM -->
 <!ENTITY Collect_RedQuartz "0">
 <!-- -->
 <!-- -->
@@ -846,18 +884,12 @@
 <!-- -->
 <!ENTITY Version "Umbreon">
 <!-- -->
-<!ENTITY SlowpokeCondition "not(ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1) or ItemCount(15632) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1))">
-<!-- -->
+<!ENTITY SlowpokeCondition "not(ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1) or ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1))">
 <!ENTITY Items_SpiritBond_SnorlaxCondition "11985,11990,11995,11998,12003,12008">
-<!-- -->
 <!ENTITY SpiritBond_SnorlaxCondition "(Condition.IsSpiritBondDone(11985) and Condition.IsSpiritBondDone(11990) and Condition.IsSpiritBondDone(11995) and Condition.IsSpiritBondDone(11998) and Condition.IsSpiritBondDone(12003) and Condition.IsSpiritBondDone(12008)) and HasNqItem(11985) and HasNqItem(11990) and HasNqItem(11995) and HasNqItem(11998) and HasNqItem(12003) and HasNqItem(12008)">
-<!-- -->
 <!ENTITY SnorlaxCondition "not(ItemCount(14160) &lt; &CamphorwoodBranch; or ItemCount(14159) &lt; &CamphorwoodLog; or ItemCount(12557) &lt; &RawCitrine; or ItemCount(9) &lt; &IceCrystal_RedRime; or ItemCount(12632) &lt; &AbalathianSpringWater; or ItemCount(12533) &lt; &AurumRegisSand; or ItemCount(12) &lt; &LightningCrystal_VoorSianSiran_MIN; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_MIN; or ItemCount(14190) &lt; &BeastkinHorn; or ItemCount(12560) &lt; &RawCarnelian; or ItemCount(12556) &lt; &RawOpal; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_MIN; or ItemCount(14955) &lt; &LumythriteSand; or ItemCount(12539) &lt; &CloudMica; or ItemCount(12532) &lt; &HardsilverSand; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_MIN; or ItemCount(12535) &lt; &HardsilverOre; or ItemCount(12535) &lt; &HardsilverOreOrRawChrysolite; or ItemCount(12535) &lt; &HardsilverOreOrWyrmObsidian; or ItemCount(12535) &lt; &HardsilverOreOrWindCrystal; or ItemCount(12558) &lt; &RawChrysolite; or ItemCount(5127) &lt; &WyrmObsidian; or ItemCount(10) &lt; &WindCrystal_TheMakersQuarter; or ItemCount(14956) &lt; &WhitefrostCottonBoll; or ItemCount(12643) &lt; &Coriander; or ItemCount(12642) &lt; &Rue; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN56; or ItemCount(12579) &lt; &BirchLog; or ItemCount(12579) &lt; &BirchLogOrBirchBranch; or ItemCount(12579) &lt; &BirchLogOrBirchSap; or ItemCount(12579) &lt; &BirchLogOrWaterCrystal; or ItemCount(12586) &lt; &BirchBranch; or ItemCount(12891) &lt; &BirchSap; or ItemCount(13) &lt; &WaterCrystal_VoorSianSiran_BTN; or ItemCount(12638) &lt; &Coneflower; or ItemCount(8) &lt; &FireCrystal_AvaloniaFallen_BTN; or ItemCount(12640) &lt; &Dandelion; or ItemCount(11) &lt; &EarthCrystal_FourArms; or ItemCount(12639) &lt; &CowBitter; or ItemCount(12641) &lt; &Gaelicatnip; or ItemCount(10) &lt; &WindCrystal_TheAnsweringQuarter; or ItemCount(12531) &lt; &MythriteSand; or ItemCount(9) &lt; &IceCrystal_Twinpools_MIN51; or ItemCount(12534) &lt; &MythriteOre; or ItemCount(12534) &lt; &MythriteOreOrRawLarimar; or ItemCount(12534) &lt; &MythriteOreOrRawMormorion; or ItemCount(12534) &lt; &MythriteOreOrIceCrystal; or ItemCount(12551) &lt; &RawLarimar; or ItemCount(12559) &lt; &RawMormorion; or ItemCount(9) &lt; &IceCrystal_GorganeHolding; or ItemCount(12553) &lt; &RawAgate; or ItemCount(12552) &lt; &RawTigersEye; or ItemCount(12631) &lt; &DravanianSpringWater; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_MIN; or ItemCount(12537) &lt; &TitaniumOre; or ItemCount(12537) &lt; &TitaniumOreOrRawStarRuby; or ItemCount(12537) &lt; &TitaniumOreOrRawStarSapphire; or ItemCount(12537) &lt; &TitaniumOreOrFireCrystal; or ItemCount(12554) &lt; &RawStarRuby; or ItemCount(12555) &lt; &RawStarSapphire; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_MIN; or ItemCount(12597) &lt; &RainbowCottonBoll; or ItemCount(12883) &lt; &SprigOfMistDill; or ItemCount(9) &lt; &IceCrystal_Twinpools_BTN51; or ItemCount(12893) &lt; &DarkChestnut; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutLog; or ItemCount(12893) &lt; &DarkChestnutOrDarkChestnutBranch; or ItemCount(12893) &lt; &DarkChestnutOrFireCrystal; or ItemCount(12578) &lt; &DarkChestnutLog; or ItemCount(12585) &lt; &DarkChestnutBranch; or ItemCount(8) &lt; &FireCrystal_TheSmolderingWastes_BTN; or ItemCount(12878) &lt; &CyclopsOnion; or ItemCount(12878) &lt; &CyclopsOnionOrHighlandWheat; or ItemCount(12878) &lt; &CyclopsOnionOrStalkOfRamie; or ItemCount(12878) &lt; &CyclopsOnionOrFireCrystal; or ItemCount(12880) &lt; &HighlandWheat; or ItemCount(12598) &lt; &StalkOfRamie; or ItemCount(8) &lt; &FireCrystal_ChocoboForest_BTN; or ItemCount(12879) &lt; &EmeraldBeans; or ItemCount(12879) &lt; &EmeraldBeansOrMagmaBeet; or ItemCount(12879) &lt; &EmeraldBeansOrEarthCrystal; or ItemCount(12885) &lt; &MagmaBeet; or ItemCount(11) &lt; &EarthCrystal_LandlordColony_BTN; or ItemCount(5126) &lt; &DragonObsidian; or ItemCount(9) &lt; &IceCrystal_Riversmeet_MIN; or ItemCount(5384) &lt; &CedarLog; or ItemCount(5403) &lt; &CedarBranch; or ItemCount(9) &lt; &IceCrystal_Riversmeet_BTN; or ItemCount(4814) &lt; &BloodCurrants; or ItemCount(4798) &lt; &WhiteTruffle; or ItemCount(4790) &lt; &Aloe; or ItemCount(5346) &lt; &Flax; or ItemCount(4784) &lt; &HighlandParsley; or ItemCount(2) &lt; &FireShard_BTN; or ItemCount(8) &lt; &FireCrystal_BTN; or ItemCount(3) &lt; &IceShard_BTN; or ItemCount(9) &lt; &IceCrystal_BTN; or ItemCount(4) &lt; &WindShard_BTN; or ItemCount(10) &lt; &WindCrystal_BTN; or ItemCount(5) &lt; &EarthShard_BTN; or ItemCount(11) &lt; &EarthCrystal_BTN; or ItemCount(6) &lt; &LightningShard_BTN; or ItemCount(12) &lt; &LightningCrystal_BTN; or ItemCount(7) &lt; &WaterShard_BTN; or ItemCount(13) &lt; &WaterCrystal_BTN; or ItemCount(5116) &lt; &CobaltOre; or ItemCount(5263) &lt; &BasiliskEgg; or ItemCount(5115) &lt; &ElectrumOre; or ItemCount(5114) &lt; &MythrilOre; or ItemCount(5113) &lt; &SilverOre; or ItemCount(5491) &lt; &EffervescentWater; or ItemCount(2) &lt; &FireShard_MIN; or ItemCount(8) &lt; &FireCrystal_MIN; or ItemCount(3) &lt; &IceShard_MIN; or ItemCount(9) &lt; &IceCrystal_MIN; or ItemCount(4) &lt; &WindShard_MIN; or ItemCount(10) &lt; &WindCrystal_MIN; or ItemCount(5) &lt; &EarthShard_MIN; or ItemCount(11) &lt; &EarthCrystal_MIN; or ItemCount(6) &lt; &LightningShard_MIN; or ItemCount(12) &lt; &LightningCrystal_MIN; or ItemCount(7) &lt; &WaterShard_MIN; or ItemCount(13) &lt; &WaterCrystal_MIN;)">
-<!-- -->
 <!ENTITY TangelaWaitCondition "not((IsTimeBetween(0,4) and &BTN_0_4_Tangela;) or (IsTimeBetween(4,8) and (&MIN_4_8_Tangela; or &BTN_4_8_Tangela;)) or (IsTimeBetween(8,12) and (&MIN_8_12_Tangela; or &BTN_8_12_Tangela;)) or (IsTimeBetween(12,16) and &MIN_12_16_Tangela;) or (IsTimeBetween(16,20) and (&MIN_16_20_Tangela; or &BTN_16_20_Tangela;)) or (IsTimeBetween(20,24) and (&MIN_20_24_Tangela; or &BTN_20_24_Tangela;))) and &Tangela;">
-<!-- -->
-<!ENTITY PsyduckWaitCondition "not((&HraesvelgrsTear_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 3, 11, 21, 30, 31, 32, 33, 34) and IsTimeBetween(1,6)) or (&Scaleripper_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21)) or (&TheDreamweaver_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 4, 3, 21, 11) and (IsTimeBetween(0,2) or IsTimeBetween(21,24))) or (&Meteortoise_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34)) or (&Vidofnir_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(7,10)) or (&TheSoulOfTheMartyr_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(400, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(3,6)) or (&Inkfish_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(13,16)) or (&TheSecondOne_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(401, 5)) or (&AphoticPirarucu_Psyduck; and SkywatcherPlugin.IsWeatherInZone(402, 3, 21) and (IsTimeBetween(0,2) or IsTimeBetween(21,24))) or (&AmberSalamander_Psyduck; and IsTimeBetween(2,8)) or (&FleeceStingray_Psyduck; and SkywatcherPlugin.IsWeatherInZone(401, 1, 2, 30, 31, 32, 33, 34)) or (&LavaSnail_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34)) or (&OliphantsTrunk_Psyduck; and HasAtLeast(12710,1) and IsTimeBetween(17,24) and SkywatcherPlugin.IsWeatherInZone(402, 9)) or (&ArmoredCatfish_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(399, 3, 4, 21)) or (&NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8)) or (&KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16)) or (&Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(1), 16)) or (&Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16)) or (&Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10)) or (&Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24)) or (&TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15)) or (&NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1)) or (&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24))) or (&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24))) or (&MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26)) or (&TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23)) or (&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1)) or (&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21)) or (&Pteranodon_Psyduck; and IsTimeBetween(8,14)) or (&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18)) or (&Tupuxuara_Psyduck; and IsTimeBetween(14,18)) or (&Caiman_Psyduck; and IsTimeBetween(18,20)) or (&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and HasAtLeast(12706,1))) and &Psyduck;">
-<!-- -->
+<!ENTITY PsyduckWaitCondition "not(&HraesvelgrsTear_Psyduck; and IsTimeBetween(1,6) or &Scaleripper_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) or &TheDreamweaver_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 4, 3, 21, 11) and (IsTimeBetween(0,2) or IsTimeBetween(21,24)) or &Meteortoise_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34) or &Vidofnir_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(7,10) or &TheSoulOfTheMartyr_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(400, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(3,6) or &Inkfish_Psyduck; and HasAtLeast(12711,1) and IsTimeBetween(13,16) or &TheSecondOne_Psyduck; and HasAtLeast(12712,1) and SkywatcherPlugin.IsWeatherInZone(401, 5) or &AphoticPirarucu_Psyduck; and SkywatcherPlugin.IsWeatherInZone(402, 3, 21) and (IsTimeBetween(0,2) or IsTimeBetween(21,24)) or &AmberSalamander_Psyduck; and IsTimeBetween(2,8) or &FleeceStingray_Psyduck; and SkywatcherPlugin.IsWeatherInZone(401, 1, 2, 30, 31, 32, 33, 34) or &LavaSnail_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398 , 1, 2, 30, 31, 32, 33, 34) or &OliphantsTrunk_Psyduck; and HasAtLeast(12710,1) and IsTimeBetween(17,24) and SkywatcherPlugin.IsWeatherInZone(402, 9) or &ArmoredCatfish_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(399, 3, 4, 21) or &PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and HasAtLeast(12706,1) or &ThunderboltEel_Psyduck; and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and (HasAtLeast(12707,1) or HasAtLeast(12711,1)) or &DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) or &Pteranodon_Psyduck; and IsTimeBetween(8,14) or &ThaliakCaiman_Psyduck; and IsTimeBetween(14,18) and HasAtLeast(12707,1) or &Tupuxuara_Psyduck; and IsTimeBetween(14,18) or &Caiman_Psyduck; and IsTimeBetween(18,20) and HasAtLeast(12707,1) or &NeptoDragon_Psyduck; and SkywatcherPlugin.IsWeatherInZone(137, 7, 8) or &KunotheKiller_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and IsTimeBetween(8,16) or &Shonisaurus_Psyduck; and SkywatcherPlugin.IsWeatherInZone(155, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(155, TimeSpan.FromHours(2), 16) or &Helicoprion_Psyduck; and SkywatcherPlugin.IsWeatherInZone(146, 4) and SkywatcherPlugin.PredictWeatherInZone(146, TimeSpan.FromHours(2), 14, 26) and IsTimeBetween(0,16) or &Namitaro_Psyduck; and HasAtLeast(2624,1) and SkywatcherPlugin.IsWeatherInZone(153, 9, 10) or &Endoceras_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and SkywatcherPlugin.PredictWeatherInZone(138, TimeSpan.FromHours(2), 4, 5, 6, 28) and IsTimeBetween(14,24) or &TitanicSawfish_Psyduck; and SkywatcherPlugin.IsWeatherInZone(140, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) or &NavigatorsBrand_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 1, 2, 30, 31, 32, 33, 34) and IsTimeBetween(8,15) and HasAtLeast(2628,1) or &FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(16,24) or IsTimeBetween(0,3)) or &NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) or &MagicCarpet_Psyduck; and IsTimeBetween(8,16) and SkywatcherPlugin.IsWeatherInZone(146, 14, 26) or &TheGreatestBreamInTheWorld_Psyduck; and IsTimeBetween(19,23)) and &Psyduck;">
 <!ENTITY UnownWaitCondition "not(((&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll; or &VampirePlant;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato; or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&OldGrowthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &Teaklog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; or &LaNosceanLeek; or &WaterfowlFeather;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Kidragora; or &TrilliumBulb; or &Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 4">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
@@ -1031,21 +1063,60 @@
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
 						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
-							<GatherObjects>
-								<GatherObject>Legendary Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Meteorite</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_Meteorite; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Meteorite" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_Meteorite; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Meteorite</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_Meteorite; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Meteorite</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Smithsonite Ore -->
 					<If Condition="&SmithsoniteOre; and IsTimeBetween(0,1)">
@@ -1058,21 +1129,60 @@
 						<ExMoveTo XYZ="387.4721, -10.09742, -291.2949"/>
 						<ExFlyTo XYZ="742.1635, 3.426399, -399.5402" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(0,1.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
-							<GatherObjects>
-								<GatherObject>Legendary Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Smithsonite Ore</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_SmithsoniteOre; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Smithsonite Ore" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_SmithsoniteOre; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Smithsonite Ore</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_SmithsoniteOre; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Smithsonite Ore</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="774.2298, -11.39684, -447.0446" nodeLocation="756.488, -9.917932, -457.6566"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="742.1635, 3.426399, -399.5402" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Darksteel Ore -->
 					<If Condition="&DarksteelOre; and IsTimeBetween(0,1)">
@@ -1269,21 +1379,60 @@
 						<ExFlyTo XYZ="556.0789, 245.7701, -68.30688"/>
 						<ExFlyTo XYZ="629.4525, 199.0281, -448.9458" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(12,13.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
-							<GatherObjects>
-								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Frost Cotton Boll</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="697.6627, 185.8889, -473.9593" nodeLocation="710.8382, 185.9188, -475.0167"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="629.4525, 199.0281, -448.9458" Radius="250"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_FrostCottonBoll; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Frost Cotton Boll" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="697.6627, 185.8889, -473.9593" nodeLocation="710.8382, 185.9188, -475.0167"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="629.4525, 199.0281, -448.9458" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_FrostCottonBoll; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Frost Cotton Boll</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="697.6627, 185.8889, -473.9593" nodeLocation="710.8382, 185.9188, -475.0167"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="629.4525, 199.0281, -448.9458" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_FrostCottonBoll; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Frost Cotton Boll</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="697.6627, 185.8889, -473.9593" nodeLocation="710.8382, 185.9188, -475.0167"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="629.4525, 199.0281, -448.9458" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Vampire Plant -->
 					<If Condition="&VampirePlant; and IsTimeBetween(12,13)">
@@ -1674,21 +1823,60 @@
 						<ExMoveTo XYZ="-560.9453, 162.0053, 5.935372"/>
 						<ExFlyTo XYZ="-761.2698, 299.2732, -165.5555" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(2,3.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
-							<GatherObjects>
-								<GatherObject>Legendary Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Lumythrite Ore</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-779.605, 261.8743, -222.7212" nodeLocation="-793.147, 263.2028, -216.627"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-761.2698, 299.2732, -165.5555" Radius="250"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_LumythriteOre; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Lumythrite Ore" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-779.605, 261.8743, -222.7212" nodeLocation="-793.147, 263.2028, -216.627"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-761.2698, 299.2732, -165.5555" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_LumythriteOre; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Lumythrite Ore</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-779.605, 261.8743, -222.7212" nodeLocation="-793.147, 263.2028, -216.627"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-761.2698, 299.2732, -165.5555" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_LumythriteOre; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Lumythrite Ore</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-779.605, 261.8743, -222.7212" nodeLocation="-793.147, 263.2028, -216.627"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-761.2698, 299.2732, -165.5555" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Ferberite -->
 					<If Condition="&Ferberite; and IsTimeBetween(2,3)">
@@ -1758,22 +1946,63 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
-							<GatherObjects>
-								<GatherObject>Legendary Mature Tree</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Old-growth Camphorwood Log</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_OldGrowthCamphorwoodLog; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Old-growth Camphorwood Log" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_OldGrowthCamphorwoodLog; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Old-growth Camphorwood Log</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_OldGrowthCamphorwoodLog; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Old-growth Camphorwood Log</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Crystallized Sap -->
 					<If Condition="&CrystallizedSap; and IsTimeBetween(14,15)">
@@ -1782,22 +2011,63 @@
 						<RunCode Name="BTN"/>
 						<ExFlyTo XYZ="-639.786, 291.7949, -665.0966" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(14,15.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1StarPlus;" CordialTime="&Cordial_Time_1StarPlus;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1StarPlus;" DisableRotationOverride="&DisableRotationOverride_1StarPlus;">
-							<GatherObjects>
-								<GatherObject>Legendary Mature Tree</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Crystallized Sap</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1StarPlus;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_CrystallizedSap; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Crystallized Sap" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_CrystallizedSap; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Crystallized Sap</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_CrystallizedSap; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Crystallized Sap</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-743.6409, 257.5789, -679.1989" nodeLocation="-734.9677, 257.7326, -671.1188"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-598.9041, 255.8381, -661.6816" nodeLocation="-599.6603, 256.5238, -655.631"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-639.786, 291.7949, -665.0966" Radius="250"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 				</If>
 				<!-- 4.00 AM & PM - 4.55 AM & PM -->
@@ -2969,18 +3239,51 @@
 						<ExFlyTo XYZ="151.5947, 324.9937, 119.8615"/>
 						<ExFlyTo XYZ="-501.0193, 191.7077, 19.77032" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
-							<GatherObjects>
-								<GatherObject>Legendary Rocky Outcrop</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Violet Quartz</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
-							<HotSpots>
-								<HotSpot XYZ="-501.0193, 191.7077, 19.77032" Radius="200"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_VioletQuartz; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Violet Quartz" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="-501.0193, 191.7077, 19.77032" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_VioletQuartz; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Violet Quartz</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="-501.0193, 191.7077, 19.77032" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_VioletQuartz; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Violet Quartz</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="-501.0193, 191.7077, 19.77032" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Blue Quartz -->
 					<If Condition="&BlueQuartz; and IsTimeBetween(6,7)">
@@ -2998,22 +3301,63 @@
 						<ExMoveTo XYZ="-530.1501, 149.8159, -464.6337" Distance="5"/>
 						<ExFlyTo XYZ="-515.8441, 166.3543, -304.5604" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
-							<GatherObjects>
-								<GatherObject>Legendary Rocky Outcrop</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Blue Quartz</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-558.1887, 142.4569, -315.9558"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_BlueQuartz; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Blue Quartz" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-558.1887, 142.4569, -315.9558"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_BlueQuartz; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Blue Quartz</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-558.1887, 142.4569, -315.9558"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_BlueQuartz; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Rocky Outcrop</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Blue Quartz</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-558.1887, 142.4569, -315.9558"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-554.7424, 140.5116, -302.4076" nodeLocation="-556.2325, 145.0703, -328.6732"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-515.8441, 166.3543, -304.5604" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Red Alumen -->
 					<If Condition="&RedAlumen; and IsTimeBetween(6,7)">
@@ -3025,23 +3369,66 @@
 						<ExFlyTo XYZ="182.2543, 30.27122, -228.4919"/>
 						<ExFlyTo XYZ="663.7568, 5.096725, -343.6298" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(6,7.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
-							<GatherObjects>
-								<GatherObject>Legendary Mineral Deposit</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Red Alumen</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="665.1582, -11.46661, -317.8839" nodeLocation="665.8322, -9.879004, -320.044"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="664.5602, -9.39993, -385.7441"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="695.1707, -9.929892, -368.4551"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="663.7568, 5.096725, -343.6298" Radius="200"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_RedAlumen; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Red Alumen" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="665.1582, -11.46661, -317.8839" nodeLocation="665.8322, -9.879004, -320.044"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="664.5602, -9.39993, -385.7441"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="695.1707, -9.929892, -368.4551"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="663.7568, 5.096725, -343.6298" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_RedAlumen; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Red Alumen</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="665.1582, -11.46661, -317.8839" nodeLocation="665.8322, -9.879004, -320.044"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="664.5602, -9.39993, -385.7441"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="695.1707, -9.929892, -368.4551"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="663.7568, 5.096725, -343.6298" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_RedAlumen; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mineral Deposit</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Red Alumen</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="665.1582, -11.46661, -317.8839" nodeLocation="665.8322, -9.879004, -320.044"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="664.5602, -9.39993, -385.7441"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="677.7279, -11.3306, -377.3739" nodeLocation="695.1707, -9.929892, -368.4551"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="663.7568, 5.096725, -343.6298" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- 7PM -->
 					<!-- Grade 3 La Noscean Topsoil -->
@@ -3133,22 +3520,63 @@
 						<ExMoveTo XYZ="447.5304, 231.6418, 698.439"/>
 						<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
-							<GatherObjects>
-								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Dravanian Paprika</ItemName>
-							</ItemNames>
-							<GatherRotation>Unspoiled</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="173.1689, 223.8338, 505.8753" nodeLocation="165.6344, 223.1127, 487.2748"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="220.8415, 223.6744, 529.7012" nodeLocation="230.707, 223.3473, 529.1682"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_DravanianPaprika; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Dravanian Paprika" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="173.1689, 223.8338, 505.8753" nodeLocation="165.6344, 223.1127, 487.2748"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="220.8415, 223.6744, 529.7012" nodeLocation="230.707, 223.3473, 529.1682"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_DravanianPaprika; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Dravanian Paprika</ItemName>
+								</ItemNames>
+								<GatherRotation>Unspoiled</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="173.1689, 223.8338, 505.8753" nodeLocation="165.6344, 223.1127, 487.2748"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="220.8415, 223.6744, 529.7012" nodeLocation="230.707, 223.3473, 529.1682"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_DravanianPaprika; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Dravanian Paprika</ItemName>
+								</ItemNames>
+								<GatherRotation>Unspoiled</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="173.1689, 223.8338, 505.8753" nodeLocation="165.6344, 223.1127, 487.2748"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="220.8415, 223.6744, 529.7012" nodeLocation="230.707, 223.3473, 529.1682"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="180.2685, 248.9064, 505.7552" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Wattle Bark -->
 					<If Condition="&WattleBark; and IsTimeBetween(18,19)">
@@ -3159,23 +3587,66 @@
 						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
 						<ExFlyTo XYZ="-17.73687, -33.85096, -641.681" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
-							<GatherObjects>
-								<GatherObject>Legendary Mature Tree</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Wattle Bark</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
-							<GatherSpots>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-1.199937, -59.40187, -618.3814" nodeLocation="-10.91034, -59.36309, -622.3934"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.16635, -59.40438, -664.7102" nodeLocation="-43.07934, -59.39474, -660.6113"/>
-								<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.37386, -59.40304, -648.8481" nodeLocation="-38.41836, -59.37169, -646.3403"/>
-							</GatherSpots>
-							<HotSpots>
-								<HotSpot XYZ="-17.73687, -33.85096, -641.681" Radius="200"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_WattleBark; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Wattle Bark" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-1.199937, -59.40187, -618.3814" nodeLocation="-10.91034, -59.36309, -622.3934"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.16635, -59.40438, -664.7102" nodeLocation="-43.07934, -59.39474, -660.6113"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.37386, -59.40304, -648.8481" nodeLocation="-38.41836, -59.37169, -646.3403"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-17.73687, -33.85096, -641.681" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_WattleBark; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Wattle Bark</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-1.199937, -59.40187, -618.3814" nodeLocation="-10.91034, -59.36309, -622.3934"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.16635, -59.40438, -664.7102" nodeLocation="-43.07934, -59.39474, -660.6113"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.37386, -59.40304, -648.8481" nodeLocation="-38.41836, -59.37169, -646.3403"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-17.73687, -33.85096, -641.681" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_WattleBark; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Mature Tree</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Wattle Bark</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<GatherSpots>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-1.199937, -59.40187, -618.3814" nodeLocation="-10.91034, -59.36309, -622.3934"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.16635, -59.40438, -664.7102" nodeLocation="-43.07934, -59.39474, -660.6113"/>
+									<StealthApproachGatherSpot ReturnToStealthLocation="False" StealthLocation="-46.37386, -59.40304, -648.8481" nodeLocation="-38.41836, -59.37169, -646.3403"/>
+								</GatherSpots>
+								<HotSpots>
+									<HotSpot XYZ="-17.73687, -33.85096, -641.681" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 					<!-- Snurbleberry -->
 					<If Condition="&Snurbleberry; and IsTimeBetween(18,19)">
@@ -3193,19 +3664,54 @@
 						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 						<ExFlyTo XYZ="825.7126, 184.8086, 168.9625" RandomFinalSpot="True"/>
 						<WaitWhile Condition="Condition.IsTimeBetween(18,19.1)"/>
-						<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
-							<GatherObjects>
-								<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
-							</GatherObjects>
-							<ItemNames>
-								<ItemName>Snurbleberry</ItemName>
-							</ItemNames>
-							<GatherRotation>&Rotation_1Star;</GatherRotation>
-							<HotSpots>
-								<HotSpot XYZ="825.7126, 184.8086, 168.9625" Radius="200"/>
-								<HotSpot XYZ="775.7224, 169.8624, 25.03258" Radius="200"/>
-							</HotSpots>
-						</ExGather>
+						<!-- Collectable -->
+						<If Condition="&Collect_Snurbleberry; and (not(ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount;) or (ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped; == 0))">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<Collectables>
+									<Collectable Name="Snurbleberry" Value="&Collectability_1Star;" PlusPlus="0"/>
+								</Collectables>
+								<GatherRotation>NewbCollect</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="825.7126, 184.8086, 168.9625" Radius="200"/>
+									<HotSpot XYZ="775.7224, 169.8624, 25.03258" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- Regular If Capped -->
+						<If Condition="&Collect_Snurbleberry; and ExBuddy.Helpers.Memory.Scrips.WeeklyRedGatherer &gt;= &Cap_Amount; and &RegularIfCapped;">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star_Collectable;" CordialTime="&Cordial_Time_1Star_Collectable;" DiscoverUnknowns="&DiscoverUnknowns;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Snurbleberry</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="825.7126, 184.8086, 168.9625" Radius="200"/>
+									<HotSpot XYZ="775.7224, 169.8624, 25.03258" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
+						<!-- NOT Collectable -->
+						<If Condition="&Collect_Snurbleberry; == 0">
+							<ExGather loops="1" SpawnTimeout="5" CordialType="&Cordial_Type_1Star;" CordialTime="&Cordial_Time_1Star;" DiscoverUnknowns="&DiscoverUnknowns;" GatherIncrease="&GatherIncrease_1Star;" DisableRotationOverride="&DisableRotationOverride_1Star;">
+								<GatherObjects>
+									<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
+								</GatherObjects>
+								<ItemNames>
+									<ItemName>Snurbleberry</ItemName>
+								</ItemNames>
+								<GatherRotation>&Rotation_1Star;</GatherRotation>
+								<HotSpots>
+									<HotSpot XYZ="825.7126, 184.8086, 168.9625" Radius="200"/>
+									<HotSpot XYZ="775.7224, 169.8624, 25.03258" Radius="200"/>
+								</HotSpots>
+							</ExGather>
+						</If>
 					</If>
 				</If>
 				<!-- 8.00 AM & PM - 8.55 AM & PM -->
@@ -4591,17 +5097,8 @@
 			</If>
 			<!-- Psyduck -->
 			<If Condition="&Psyduck; and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-				<!-- 3.4 Big Fish -->
+				<!-- 3.4 Fish -->
 				<If Condition="(&HraesvelgrsTear_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-					<!-- Dimorphodon -->
-					<!-- Basking Shark-->
-					<!-- Allagan Bladeshark -->
-					<!-- Hailfinder -->
-					<!-- Flarefish -->
-					<!-- Twin-tongued Carp -->
-					<!-- Madam Butterfly	 -->
-					<!-- Moggle Mogpom -->
-					<!-- Cirrostratus-->
 					<!-- Hraesvelgr's Tear -->
 					<If Condition="&HraesvelgrsTear_Psyduck; and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; West Mourn ~ Hraesvelgr's Tear !"/>
@@ -4624,7 +5121,7 @@
 						<ExMoveTo XYZ="-644.6107, 0.941082, -748.9293" Type="RandomPointWithin" Distance="10"/>
 						<ExDisablePlugins Names="Enable Flight"/>
 						<WaitWhile Condition="IsTimeBetween(1,2) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)"/>
-						<ExFish Condition="HasAtLeast(12709,1) and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Magma Worm">
+						<ExFish Condition="HasAtLeast(12709,1) and IsTimeBetween(1,6) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" FishEyes="True" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Magma Worm">
 							<Keepers>
 								<Keeper Name="Hraesvelgr's Tear"/>
 							</Keepers>
@@ -4642,11 +5139,8 @@
 						<RunCode Name="StopFishing"/>
 						<ExEnablePlugins Names="Enable Flight"/>
 					</If>
-					<!-- Hundred-eyed Axolotl -->
-					<!-- Bobgoblin Bass -->
-					<!-- Merciless -->
 				</If>
-				<!-- 3.3 Big Fish -->
+				<!-- 3.3 Fish -->
 				<If Condition="(&Scaleripper_Psyduck; or &TheDreamweaver_Psyduck; or &Meteortoise_Psyduck; or &Vidofnir_Psyduck; or &TheSoulOfTheMartyr_Psyduck; or &Inkfish_Psyduck; or &TheSecondOne_Psyduck; or &AphoticPirarucu_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 					<!-- Scaleripper -->
 					<If Condition="&Scaleripper_Psyduck; and HasAtLeast(12711,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
@@ -4898,7 +5392,7 @@
 						<RunCode Name="StopFishing"/>
 					</If>
 				</If>
-				<!-- 3.2 Big Fish -->
+				<!-- 3.2 Fish -->
 				<If Condition="(&AmberSalamander_Psyduck; or &FleeceStingray_Psyduck; or &LavaSnail_Psyduck; or &OliphantsTrunk_Psyduck; or &ArmoredCatfish_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 					<!-- Amber Salamander -->
 					<If Condition="&AmberSalamander_Psyduck; and IsTimeBetween(2,8) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
@@ -5077,6 +5571,292 @@
 					</If>
 					<If Condition="&ArmoredCatfish_Psyduck; and not(HasAtLeast(12711,1)) and SkywatcherPlugin.IsWeatherInZone(399, 3, 4, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Armored Catfish : Brute Leech is missing !"/>
+					</If>
+				</If>
+				<!-- 3.0 Fish -->
+				<If Condition="(&PipiraPira_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+					<!-- Pipira Pira -->
+					<If Condition="&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and HasAtLeast(12706,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Hundred Throes ~ Pipira Pira !"/>
+						<TeleportTo Force="True" AetheryteId="76"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
+						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
+						<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
+						<ExMoveTo XYZ="422.0666, 11.53462, -533.5797" Type="RandomPointWithin" Distance="10"/>
+						<ExFish Condition="HasAtLeast(12706,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Goblin Jig">
+							<Keepers>
+								<Keeper Name="Pipira pira"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="397.8219, -26.5559, -510.3493" Heading="2.68"/>
+								<FishSpot XYZ="385.3249, -26.25389, -546.3416" Heading="1.25"/>
+								<FishSpot XYZ="427.1414, -24.97816, -591.9777" Heading="0.92"/>
+								<FishSpot XYZ="497.8525, -26.25389, -586.8606" Heading="5.67"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+					</If>
+					<If Condition="&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and not(HasAtLeast(12706,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Pipira Pira : Goblin Jig is missing !"/>
+					</If>
+				</If>
+				<!-- Red scrips Fish -->
+				<If Condition="(&ThunderboltEel_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+					<!-- Thunderbolt Eel -->
+					<If Condition="&ThunderboltEel_Psyduck; and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and (HasAtLeast(12707,1) or HasAtLeast(12711,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Iron Feast ~ Thunderbolt Eel"/>
+						<TeleportTo Force="True" AetheryteId="76"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
+						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
+						<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
+						<ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="IsTimeBetween(21,22)"/>
+						<ExFish Condition="(HasAtLeast(12707,1) or HasAtLeast(12711,1)) and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
+							<Baits>
+								<Bait Name="Bladed Steel Jig"/>
+								<Bait Name="Brute Leech"/>
+							</Baits>
+							<Collectables>
+								<Collectable Name="Thunderbolt Eel" Value="813"/>
+							</Collectables>
+							<Keepers>
+								<Keeper Name="Thunderbolt Eel"/>
+								<Keeper Name="Pipira Pira"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="424.3322, 58.42915, -794.769" Heading="3.960191"/>
+								<FishSpot XYZ="410.7512, 58.42915, -802.1146" Heading="1.859906"/>
+								<FishSpot XYZ="395.4563, 58.42916, -858.5338" Heading="2.680909"/>
+								<FishSpot XYZ="405.4252, 58.42916, -878.9984" Heading="0.960191"/>
+								<FishSpot XYZ="449.2926, 58.42917, -902.9581" Heading="0.1474183"/>
+								<FishSpot XYZ="483.7453, 58.42917, -892.4057" Heading="5.500691"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+					</If>
+					<If Condition="&ThunderboltEel_Psyduck; and (IsTimeBetween(21,24) or IsTimeBetween(0,3)) and not(HasAtLeast(12707,1) or HasAtLeast(12711,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Thunderbolt Eel : Bladed Steel Jig or Bute leech is missing !"/>
+					</If>
+				</If>
+				<!-- Ephemeral Fish -->
+				<If Condition="(&DravanianBass_Psyduck; or &Pteranodon_Psyduck; or &ThaliakCaiman_Psyduck; or &Tupuxuara_Psyduck; or &Caiman_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+					<!-- Dravanian Bass -->
+					<If Condition="&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Whilom River ~ Dravanian bass"/>
+						<If Condition="not(HasAtLeast(12704,50)) and not(HasAtLeast(12711,50))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Dravanian bass : Not enough bait available, I'm going to buy you some !"/>
+							<TeleportTo Force="True" AetheryteId="72"/>
+							<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
+							<BuyItem ItemId="12704" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
+						</If>
+						<TeleportTo Force="True" AetheryteId="76"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
+						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
+						<ExMoveTo XYZ="501.6224, -32.29482, -145.8089" Type="RandomPointWithin" Distance="10"/>
+						<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
+							<Baits>
+								<Bait Name="Brute Leech"/>
+								<Bait Name="Stonefly Nymph"/>
+							</Baits>
+							<Keepers>
+								<Keeper Name="Dravanian bass"/>
+								<Keeper Name="Pipira Pira"/>
+								<Keeper Name="Rock Mussel"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="485.5983, -47.26224, -109.0832" Heading="1.100356"/>
+								<FishSpot XYZ="488.5600, -47.56875, -113.9030" Heading="1.422894"/>
+								<FishSpot XYZ="488.7822, -47.34535, -120.1376" Heading="1.529708"/>
+								<FishSpot XYZ="503.9654, -45.61895, -98.74464" Heading="4.732039"/>
+								<FishSpot XYZ="502.0965, -46.51406, -104.9351" Heading="4.704813"/>
+								<FishSpot XYZ="499.5227, -46.08968, -113.2701" Heading="4.67968"/>
+								<FishSpot XYZ="503.2207, -45.92988, -127.6554" Heading="4.533074"/>
+								<FishSpot XYZ="505.6837, -46.56329, -134.3122" Heading="4.367618"/>
+								<FishSpot XYZ="508.0856, -46.31738, -140.3035" Heading="4.373901"/>
+								<FishSpot XYZ="481.2375, -47.58531, -173.9437" Heading="1.998857"/>
+								<FishSpot XYZ="485.1159, -47.36900, -167.5814" Heading="2.09101"/>
+								<FishSpot XYZ="490.1713, -45.52129, -162.0285" Heading="2.187351"/>
+								<FishSpot XYZ="500.5733, -45.21974, -173.2509" Heading="5.293341"/>
+								<FishSpot XYZ="503.2174, -43.39398, -165.7304" Heading="5.209563"/>
+								<FishSpot XYZ="493.2678, -45.04844, -179.9007" Heading="5.333132"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+						<ExPurify/>
+					</If>
+					<!-- Pteranodon -->
+					<If Condition="&Pteranodon_Psyduck; and IsTimeBetween(8,14) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Sohm Al Summit ~ Pteranodon"/>
+						<If Condition="not(HasAtLeast(12708,50)) and not(HasAtLeast(12712,50))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Pteranodon : Not enough bait available, I'm going to buy you some !"/>
+							<TeleportTo Force="True" AetheryteId="72"/>
+							<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
+							<BuyItem ItemId="12708" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
+						</If>
+						<TeleportTo Force="True" AetheryteId="79"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="-610.5189, 134.5717, 387.4579" Type="RandomPointWithin" Distance="10"/>
+						<ExMoveTo XYZ="-420.8228, 111.4044, 674.2472" Type="RandomPointWithin" Distance="10"/>
+						<ExMoveTo XYZ="-290.5473, -13.94905, 828.9244" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="IsTimeBetween(8,9)"/>
+						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(9,14) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<Baits>
+								<Bait Name="Giant Crane Fly"/>
+								<Bait Name="Red Balloon"/>
+							</Baits>
+							<Keepers>
+								<Keeper Name="Pteranodon"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="-238.3459, -30.12087, 839.0236" Heading="0.4436085"/>
+								<FishSpot XYZ="-241.8419, -30.2445, 841.9512" Heading="0.512723"/>
+								<FishSpot XYZ="-244.2196, -29.99753, 843.3551" Heading="0.2676797"/>
+								<FishSpot XYZ="-250.8434, -29.73779, 847.2957" Heading="0.5420437"/>
+								<FishSpot XYZ="-254.3391, -29.76101, 849.0473" Heading="0.255111"/>
+								<FishSpot XYZ="-259.4819, -29.03571, 848.6467" Heading="0.1181555"/>
+								<FishSpot XYZ="-271.9398, -30.72771, 849.9665" Heading="0.005059242"/>
+								<FishSpot XYZ="-275.5247, -30.80584, 849.779" Heading="0.03647542"/>
+								<FishSpot XYZ="-278.9211, -31.20651, 850.0005" Heading="0.08674026"/>
+								<FishSpot XYZ="-290.3439, -30.68429, 846.6828" Heading="6.06414"/>
+								<FishSpot XYZ="-295.3916, -30.39245, 845.7479" Heading="6.076707"/>
+								<FishSpot XYZ="-300.5427, -30.09379, 844.7678" Heading="6.114407"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+						<ExPurify/>
+					</If>
+					<!-- Thaliak Caiman -->
+					<If Condition="&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18) and HasAtLeast(12707,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Middle Thaliak River ~ Thaliak Caiman"/>
+						<TeleportTo Force="True" AetheryteId="75"/>
+						<RunCode Name="FSH"/>
+						<If Condition="&Use_Aetheryte_Idyllshire;">
+							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
+							<RunCode Name="useAethernetEastSide"/>
+						</If>
+						<If Condition="&Use_Aetheryte_Idyllshire; == 0">
+							<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
+							<RunCode Name="MoveForward"/>
+						</If>
+						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
+						<ExMoveTo XYZ="-88.10485, 180.7275, -173.6805" Type="RandomPointWithin" Distance="10"/>
+						<ExMoveTo XYZ="-87.96331, 78.26161, 120.5088" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="IsTimeBetween(14,15)"/>
+						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
+							<Keepers>
+								<Keeper Name="Thaliak Caiman"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="-57.11814, 53.44373, 111.4976" Heading="1.325333"/>
+								<FishSpot XYZ="-56.71243, 53.53381, 114.3447" Heading="1.934803"/>
+								<FishSpot XYZ="-55.78923, 53.72738, 117.1822" Heading="2.010201"/>
+								<FishSpot XYZ="-55.3114, 53.95861, 120.6675" Heading="1.578755"/>
+								<FishSpot XYZ="-54.64546, 54.38688, 129.2145" Heading="2.211261"/>
+								<FishSpot XYZ="-52.51092, 54.43087, 131.5402" Heading="2.052086"/>
+								<FishSpot XYZ="-52.46287, 54.31666, 137.6918" Heading="1.256216"/>
+								<FishSpot XYZ="-54.12486, 54.05648, 141.7632" Heading="0.7598433"/>
+								<FishSpot XYZ="-122.7587, 53.20229, 149.8246" Heading="4.579679"/>
+								<FishSpot XYZ="-121.0782, 53.38816, 145.1047" Heading="4.533957"/>
+								<FishSpot XYZ="-119.9353, 53.33672, 140.5009" Heading="3.943338"/>
+								<FishSpot XYZ="-121.3646, 53.38469, 131.5921" Heading="5.769598"/>
+								<FishSpot XYZ="-122.1664, 53.29509, 128.0963" Heading="4.102459"/>
+								<FishSpot XYZ="-118.8033, 53.04623, 125.1412" Heading="4.110361"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+						<ExPurify/>
+					</If>
+					<If Condition="&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18) and not(HasAtLeast(12707,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Thaliak Caiman : Bladed Steel Jig is missing !"/>
+					</If>
+					<!-- Tupuxuara -->
+					<If Condition="&Tupuxuara_Psyduck; and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Habisphere ~ Tupuxuara"/>
+						<If Condition="not(HasAtLeast(12708,50)) and not(HasAtLeast(12712,50))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Tupuxuara : Not enough bait available, I'm going to buy you some !"/>
+							<TeleportTo Force="True" AetheryteId="72"/>
+							<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
+							<BuyItem ItemId="12708" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
+						</If>
+						<TeleportTo Force="True" aetheryteId="74"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="-716.1138, -186.9606, -584.3765"/>
+						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
+						<ExFlyTo XYZ="150.045, 83.63493, -305.3822"/>
+						<ExMoveTo XYZ="845.9851, 62.37205, -199.7481" Type="RandomPointWithin" Distance="10"/>
+						<WaitWhile Condition="IsTimeBetween(14,15)"/>
+						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<Baits>
+								<Bait Name="Giant Crane Fly"/>
+								<Bait Name="Red Balloon"/>
+							</Baits>
+							<Keepers>
+								<Keeper Name="Tupuxuara"/>
+								<Keeper Name="Stupendemys"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="862.0374, 30, -156.5393" Heading="1.34"/>
+								<FishSpot XYZ="878.8062, 30, -194.1158" Heading="1.34"/>
+								<FishSpot XYZ="876.6814, 30, -185.7894" Heading="1.34"/>
+								<FishSpot XYZ="873.9183, 30, -179.4828" Heading="1.34"/>
+								<FishSpot XYZ="871.2634, 30, -173.5322" Heading="1.34"/>
+								<FishSpot XYZ="869.0849, 30, -169.4196" Heading="1.34"/>
+								<FishSpot XYZ="866.287, 30, -164.3894" Heading="1.34"/>
+								<FishSpot XYZ="870.3144, 30, -170.493" Heading="1.34"/>
+								<FishSpot XYZ="877.0106, 30, -187.2638" Heading="1.34"/>
+								<FishSpot XYZ="883.927, 30, -230.4676" Heading="1.34"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+						<ExPurify/>
+					</If>
+					<!-- Caiman -->
+					<If Condition="&Caiman_Psyduck; and IsTimeBetween(18,20) and HasAtLeast(12707,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Voor Sian Siran ~ Caiman"/>
+						<TeleportTo Force="True" AetheryteId="72"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" Type="RandomPointWithin" Distance="5"/>
+						<ExMoveTo XYZ="205.5932, -85.20891, 659.786" Type="RandomPointWithin" Distance="10"/>
+						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
+							<Keepers>
+								<Keeper Name="Caiman"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="215.5034, -125.2895, 671.4525" Heading="0.8439589"/>
+								<FishSpot XYZ="220.0094, -125.2895, 683.9001" Heading="2.001313"/>
+								<FishSpot XYZ="233.3041, -125.2895, 679.2593" Heading="1.982463"/>
+								<FishSpot XYZ="257.0114, -125.2895, 656.9609" Heading="2.229974"/>
+								<FishSpot XYZ="251.9843, -125.2895, 647.0104" Heading="2.904369"/>
+								<FishSpot XYZ="226.2899, -125.2895, 630.4355" Heading="2.778706"/>
+								<FishSpot XYZ="214.4492, -125.2895, 637.9637" Heading="2.72202"/>
+								<FishSpot XYZ="215.0850, -125.2895, 619.5391" Heading="1.934528"/>
+								<FishSpot XYZ="229.5985, -125.2895, 593.8397" Heading="1.149131"/>
+								<FishSpot XYZ="241.6472, -125.2895, 586.194" Heading="0.4600747"/>
+								<FishSpot XYZ="250.7677, -125.2895, 581.091" Heading="2.843857"/>
+								<FishSpot XYZ="300.3447, -125.3065, 606.1286" Heading="0.8210113"/>
+								<FishSpot XYZ="319.6855, -125.2895, 581.2392" Heading="2.57402"/>
+								<FishSpot XYZ="333.9448, -125.2895, 569.9609" Heading="1.022406"/>
+								<FishSpot XYZ="348.5824, -125.2895, 560.7775" Heading="0.3165946"/>
+								<FishSpot XYZ="390.5344, -125.2895, 588.5638" Heading="3.156595"/>
+								<FishSpot XYZ="401.8708, -125.2895, 613.2349" Heading="5.257271"/>
+								<FishSpot XYZ="400.0494, -125.2895, 627.0873" Heading="5.12323"/>
+								<FishSpot XYZ="401.3362, -125.2895, 651.2492" Heading="5.12323"/>
+								<FishSpot XYZ="390.3432, -125.2895, 672.6008" Heading="4.664553"/>
+								<FishSpot XYZ="398.1804, -125.2895, 694.1125" Heading="0.1406596"/>
+								<FishSpot XYZ="415.3872, -125.2895, 694.0579" Heading="1.677946"/>
+								<FishSpot XYZ="404.6691, -125.2895, 712.2839" Heading="5.424819"/>
+								<FishSpot XYZ="384.1033, -125.2895, 735.3852" Heading="4.27093"/>
+								<FishSpot XYZ="351.2265, -125.2895, 755.8721" Heading="3.586322"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+						<ExPurify/>
+					</If>
+					<If Condition="&Caiman_Psyduck; and IsTimeBetween(18,20) and not(HasAtLeast(12707,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Caiman : Bladed Steel Jig is missing !"/>
 					</If>
 				</If>
 				<!-- Feast of Famine -->
@@ -5443,38 +6223,8 @@
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Navigator' s Brand : Yumizuno is missing !"/>
 					</If>
 				</If>
-				<!-- Big Fish -->
-				<If Condition="(&FrilledShark_Psyduck; or &NinjaBetta_Psyduck; or &MagicCarpet_Psyduck; or &TheGreatestBreamInTheWorld_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-					<!-- Frilled Shark -->
-					<If Condition="&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Ship Graveyard ~ Frilled Shark !"/>
-						<If Condition="not(HasAtLeast(2613,50)) and not(HasAtLeast(2616,1)) and not(HasAtLeast(2619,1))">
-							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Frilled Shark : Not enough bait available, I'm going to buy you some !"/>
-							<ExMoveTo XYZ="56.46388, -3.118286, 64.31471" ForceLanding="True"/>
-							<BuyItem ItemId="2613" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1003266" XYZ="55.3584, -3.11828, 65.76429"/>
-						</If>
-						<TeleportTo Force="True" AetheryteId="14"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="317.2209, -36.325, 352.0146" ForceLanding="True"/>
-						<UseTransport Name="The Ship Graveyard" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
-						<ExFish Condition="HasAtLeast(2613,1) and SkywatcherPlugin.IsWeatherInZone(138 , 4, 5, 6, 28) and (IsTimeBetween(0,3) or IsTimeBetween(16,24)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" SitRate=".69">
-							<Baits>
-								<Bait Name="Heavy Steel Jig"/>
-								<Bait Name="Steel Jig"/>
-								<Bait Name="Shrimp Cage Feeder"/>
-							</Baits>
-							<Keepers>
-								<Keeper Name="Frilled Shark"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="-322.6822, -42.27866, 721.9345"/>
-								<FishSpot XYZ="-307.2597, -42.29406, 720.2479"/>
-								<FishSpot XYZ="-291.8653, -42.28838, 715.6382"/>
-								<FishSpot XYZ="-276.7643, -42.25384, 722.0867"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-					</If>
+				<!-- 2.4 Fish -->
+				<If Condition="(&NinjaBetta_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 					<!-- Ninja Betta -->
 					<If Condition="&NinjaBetta_Psyduck; and SkywatcherPlugin.IsWeatherInZone(156, 17, 27) and (IsTimeBetween(0,8) or IsTimeBetween(18,24)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Tangle ~ Ninja Betta !"/>
@@ -5494,6 +6244,39 @@
 								<FishSpot XYZ="-285.3052, -17.23708, -451.3743" Heading="4.857674"/>
 								<FishSpot XYZ="-287.946, -17.1484, -461.318" Heading="5.111095"/>
 								<FishSpot XYZ="-290.9988, -17.14839, -467.3676" Heading="5.354042"/>
+							</FishSpots>
+						</ExFish>
+						<RunCode Name="StopFishing"/>
+					</If>
+				</If>
+				<!-- 2.3 Fish -->
+				<If Condition="(&FrilledShark_Psyduck; or &MagicCarpet_Psyduck; or &TheGreatestBreamInTheWorld_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+					<!-- Frilled Shark -->
+					<If Condition="&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(16,24) or IsTimeBetween(0,3)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Ship Graveyard ~ Frilled Shark !"/>
+						<If Condition="not(HasAtLeast(2613,50)) and not(HasAtLeast(2616,1)) and not(HasAtLeast(2619,1))">
+							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Frilled Shark : Not enough bait available, I'm going to buy you some !"/>
+							<ExMoveTo XYZ="56.46388, -3.118286, 64.31471" ForceLanding="True"/>
+							<BuyItem ItemId="2613" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1003266" XYZ="55.3584, -3.11828, 65.76429"/>
+						</If>
+						<TeleportTo Force="True" AetheryteId="14"/>
+						<RunCode Name="FSH"/>
+						<ExMoveTo XYZ="317.2209, -36.325, 352.0146" ForceLanding="True"/>
+						<UseTransport Name="The Ship Graveyard" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
+						<ExFish Condition="HasAtLeast(2613,1) and SkywatcherPlugin.IsWeatherInZone(138 , 4, 5, 6, 28) and (IsTimeBetween(16,24) or IsTimeBetween(0,3)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="7" SitRate=".69">
+							<Baits>
+								<Bait Name="Heavy Steel Jig"/>
+								<Bait Name="Steel Jig"/>
+								<Bait Name="Shrimp Cage Feeder"/>
+							</Baits>
+							<Keepers>
+								<Keeper Name="Frilled Shark"/>
+							</Keepers>
+							<FishSpots>
+								<FishSpot XYZ="-322.6822, -42.27866, 721.9345"/>
+								<FishSpot XYZ="-307.2597, -42.29406, 720.2479"/>
+								<FishSpot XYZ="-291.8653, -42.28838, 715.6382"/>
+								<FishSpot XYZ="-276.7643, -42.25384, 722.0867"/>
 							</FishSpots>
 						</ExFish>
 						<RunCode Name="StopFishing"/>
@@ -5538,314 +6321,79 @@
 								<Keeper Name="The Greatest Bream in the World"/>
 							</Keepers>
 							<FishSpots>
-								<FishSpot XYZ="541.4666, 8.699846, 593.206"/>
-								<FishSpot XYZ="563.0067, 8.632175, 620.7524"/>
-								<FishSpot XYZ="578.7874, 8.632956, 611.4349"/>
-								<FishSpot XYZ="560.4785, 8.617792, 635.7567"/>
+								<FishSpot XYZ="539.4406, 8.70382, 585.3433" Heading="0.5101616"/>
+								<FishSpot XYZ="562.1884, 8.694009, 592.9235" Heading="1.119631"/>
+								<FishSpot XYZ="556.5947, 8.638924, 621.5564" Heading="5.982814"/>
+								<FishSpot XYZ="571.4009, 8.612335, 627.7327" Heading="1.354201"/>
+								<FishSpot XYZ="556.4284, 8.625983, 630.4688" Heading="0.263025"/>
+								<FishSpot XYZ="550.229, 8.626888, 637.5838" Heading="5.526239"/>
+								<FishSpot XYZ="554.2515, 8.61599, 649.0471" Heading="0.3111947"/>
+								<FishSpot XYZ="537.4819, 8.638415, 665.7783" Heading="4.885351"/>
+								<FishSpot XYZ="520.9631, 8.681173, 660.7037" Heading="2.491457"/>
+								<FishSpot XYZ="530.534, 8.704496, 579.4243" Heading="2.02476"/>
 							</FishSpots>
 						</ExFish>
 						<RunCode Name="StopFishing"/>
-					</If>
-				</If>
-				<!-- Red scrips Fish -->
-				<If Condition="(&ThunderboltEel_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-					<!-- Thunderbolt Eel -->
-					<If Condition="&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and HasAtLeast(12707,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Iron Feast ~ Thunderbolt Eel"/>
-						<TeleportTo Force="True" AetheryteId="76"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
-						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
-						<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
-						<ExMoveTo XYZ="466.7209, 105.2749, -790.7978" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(21,22)"/>
-						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(21,3) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
-							<Collectables>
-								<Collectable Name="Thunderbolt Eel" Value="813"/>
-							</Collectables>
-							<Keepers>
-								<Keeper Name="Thunderbolt Eel"/>
-								<Keeper Name="Pipira Pira"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="424.3322, 58.42915, -794.769" Heading="3.960191"/>
-								<FishSpot XYZ="410.7512, 58.42915, -802.1146" Heading="1.859906"/>
-								<FishSpot XYZ="395.4563, 58.42916, -858.5338" Heading="2.680909"/>
-								<FishSpot XYZ="405.4252, 58.42916, -878.9984" Heading="0.960191"/>
-								<FishSpot XYZ="449.2926, 58.42917, -902.9581" Heading="0.1474183"/>
-								<FishSpot XYZ="483.7453, 58.42917, -892.4057" Heading="5.500691"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-					</If>
-					<If Condition="&ThunderboltEel_Psyduck; and IsTimeBetween(21,3) and not(HasAtLeast(12707,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Thunderbolt Eel : Bladed Steel Jig is missing !"/>
-					</If>
-				</If>
-				<!-- Ephemeral Fish -->
-				<If Condition="(&DravanianBass_Psyduck; or &Pteranodon_Psyduck; or &ThaliakCaiman_Psyduck; or &Tupuxuara_Psyduck; or &Caiman_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-					<!-- Dravanian Bass -->
-					<If Condition="&DravanianBass_Psyduck; and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Whilom River ~ Dravanian bass"/>
-						<If Condition="not(HasAtLeast(12704,50)) and not(HasAtLeast(12711,50))">
-							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Dravanian bass : Not enough bait available, I'm going to buy you some !"/>
-							<TeleportTo Force="True" AetheryteId="72"/>
-							<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
-							<BuyItem ItemId="12704" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
-						</If>
-						<TeleportTo Force="True" AetheryteId="76"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
-						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
-						<ExMoveTo XYZ="501.6224, -32.29482, -145.8089" Type="RandomPointWithin" Distance="10"/>
-						<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12711,1)) and IsTimeBetween(0,6) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69">
-							<Baits>
-								<Bait Name="Brute Leech"/>
-								<Bait Name="Stonefly Nymph"/>
-							</Baits>
-							<Keepers>
-								<Keeper Name="Dravanian bass"/>
-								<Keeper Name="Pipira Pira"/>
-								<Keeper Name="Rock Mussel"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="485.5983, -47.26224, -109.0832" Heading="1.100356"/>
-								<FishSpot XYZ="488.5600, -47.56875, -113.9030" Heading="1.422894"/>
-								<FishSpot XYZ="488.7822, -47.34535, -120.1376" Heading="1.529708"/>
-								<FishSpot XYZ="503.9654, -45.61895, -98.74464" Heading="4.732039"/>
-								<FishSpot XYZ="502.0965, -46.51406, -104.9351" Heading="4.704813"/>
-								<FishSpot XYZ="499.5227, -46.08968, -113.2701" Heading="4.67968"/>
-								<FishSpot XYZ="503.2207, -45.92988, -127.6554" Heading="4.533074"/>
-								<FishSpot XYZ="505.6837, -46.56329, -134.3122" Heading="4.367618"/>
-								<FishSpot XYZ="508.0856, -46.31738, -140.3035" Heading="4.373901"/>
-								<FishSpot XYZ="481.2375, -47.58531, -173.9437" Heading="1.998857"/>
-								<FishSpot XYZ="485.1159, -47.36900, -167.5814" Heading="2.09101"/>
-								<FishSpot XYZ="490.1713, -45.52129, -162.0285" Heading="2.187351"/>
-								<FishSpot XYZ="500.5733, -45.21974, -173.2509" Heading="5.293341"/>
-								<FishSpot XYZ="503.2174, -43.39398, -165.7304" Heading="5.209563"/>
-								<FishSpot XYZ="493.2678, -45.04844, -179.9007" Heading="5.333132"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-						<ExPurify/>
-					</If>
-					<!-- Pteranodon -->
-					<If Condition="&Pteranodon_Psyduck; and IsTimeBetween(8,14) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Sohm Al Summit ~ Pteranodon"/>
-						<If Condition="not(HasAtLeast(12708,50)) and not(HasAtLeast(12712,50))">
-							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Pteranodon : Not enough bait available, I'm going to buy you some !"/>
-							<TeleportTo Force="True" AetheryteId="72"/>
-							<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
-							<BuyItem ItemId="12708" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
-						</If>
-						<TeleportTo Force="True" AetheryteId="79"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="-610.5189, 134.5717, 387.4579" Type="RandomPointWithin" Distance="10"/>
-						<ExMoveTo XYZ="-420.8228, 111.4044, 674.2472" Type="RandomPointWithin" Distance="10"/>
-						<ExMoveTo XYZ="-290.5473, -13.94905, 828.9244" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(8,9)"/>
-						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(9,14) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
-							<Baits>
-								<Bait Name="Giant Crane Fly"/>
-								<Bait Name="Red Balloon"/>
-							</Baits>
-							<Keepers>
-								<Keeper Name="Pteranodon"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="-238.3459, -30.12087, 839.0236" Heading="0.4436085"/>
-								<FishSpot XYZ="-241.8419, -30.2445, 841.9512" Heading="0.512723"/>
-								<FishSpot XYZ="-244.2196, -29.99753, 843.3551" Heading="0.2676797"/>
-								<FishSpot XYZ="-250.8434, -29.73779, 847.2957" Heading="0.5420437"/>
-								<FishSpot XYZ="-254.3391, -29.76101, 849.0473" Heading="0.255111"/>
-								<FishSpot XYZ="-259.4819, -29.03571, 848.6467" Heading="0.1181555"/>
-								<FishSpot XYZ="-271.9398, -30.72771, 849.9665" Heading="0.005059242"/>
-								<FishSpot XYZ="-275.5247, -30.80584, 849.779" Heading="0.03647542"/>
-								<FishSpot XYZ="-278.9211, -31.20651, 850.0005" Heading="0.08674026"/>
-								<FishSpot XYZ="-290.3439, -30.68429, 846.6828" Heading="6.06414"/>
-								<FishSpot XYZ="-295.3916, -30.39245, 845.7479" Heading="6.076707"/>
-								<FishSpot XYZ="-300.5427, -30.09379, 844.7678" Heading="6.114407"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-						<ExPurify/>
-					</If>
-					<!-- Thaliak Caiman -->
-					<If Condition="&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18) and HasAtLeast(12707,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Middle Thaliak River ~ Thaliak Caiman"/>
-						<TeleportTo Force="True" AetheryteId="75"/>
-						<RunCode Name="FSH"/>
-						<If Condition="&Use_Aetheryte_Idyllshire;">
-							<ExMoveTo XYZ="71.70625, 209, -18.7505455" Distance="10"/>
-							<RunCode Name="useAethernetEastSide"/>
-						</If>
-						<If Condition="&Use_Aetheryte_Idyllshire; == 0">
-							<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
-							<RunCode Name="MoveForward"/>
-						</If>
-						<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
-						<ExMoveTo XYZ="-88.10485, 180.7275, -173.6805" Type="RandomPointWithin" Distance="10"/>
-						<ExMoveTo XYZ="-87.96331, 78.26161, 120.5088" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(14,15)"/>
-						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69" Bait="Bladed Steel Jig">
-							<Keepers>
-								<Keeper Name="Thaliak Caiman"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="-57.11814, 53.44373, 111.4976" Heading="1.325333"/>
-								<FishSpot XYZ="-56.71243, 53.53381, 114.3447" Heading="1.934803"/>
-								<FishSpot XYZ="-55.78923, 53.72738, 117.1822" Heading="2.010201"/>
-								<FishSpot XYZ="-55.3114, 53.95861, 120.6675" Heading="1.578755"/>
-								<FishSpot XYZ="-54.64546, 54.38688, 129.2145" Heading="2.211261"/>
-								<FishSpot XYZ="-52.51092, 54.43087, 131.5402" Heading="2.052086"/>
-								<FishSpot XYZ="-52.46287, 54.31666, 137.6918" Heading="1.256216"/>
-								<FishSpot XYZ="-54.12486, 54.05648, 141.7632" Heading="0.7598433"/>
-								<FishSpot XYZ="-122.7587, 53.20229, 149.8246" Heading="4.579679"/>
-								<FishSpot XYZ="-121.0782, 53.38816, 145.1047" Heading="4.533957"/>
-								<FishSpot XYZ="-119.9353, 53.33672, 140.5009" Heading="3.943338"/>
-								<FishSpot XYZ="-121.3646, 53.38469, 131.5921" Heading="5.769598"/>
-								<FishSpot XYZ="-122.1664, 53.29509, 128.0963" Heading="4.102459"/>
-								<FishSpot XYZ="-118.8033, 53.04623, 125.1412" Heading="4.110361"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-						<ExPurify/>
-					</If>
-					<If Condition="&ThaliakCaiman_Psyduck; and IsTimeBetween(14,18) and not(HasAtLeast(12707,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Thaliak Caiman : Bladed Steel Jig is missing !"/>
-					</If>
-					<!-- Tupuxuara -->
-					<If Condition="&Tupuxuara_Psyduck; and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Habisphere ~ Tupuxuara"/>
-						<If Condition="not(HasAtLeast(12708,50)) and not(HasAtLeast(12712,50))">
-							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Tupuxuara : Not enough bait available, I'm going to buy you some !"/>
-							<TeleportTo Force="True" AetheryteId="72"/>
-							<ExMoveTo XYZ="-650.1684, -123.7523, 523.7875" ForceLanding="True"/>
-							<BuyItem ItemId="12708" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1011947" XYZ="-650.1684, -123.7523, 523.7875"/>
-						</If>
-						<TeleportTo Force="True" aetheryteId="74"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="-716.1138, -186.9606, -584.3765"/>
-						<ExFlyTo XYZ="-643.3391, -133.3573, -660.6969"/>
-						<ExFlyTo XYZ="150.045, 83.63493, -305.3822"/>
-						<ExMoveTo XYZ="845.9851, 62.37205, -199.7481" Type="RandomPointWithin" Distance="10"/>
-						<WaitWhile Condition="IsTimeBetween(14,15)"/>
-						<ExFish Condition="(HasAtLeast(12708,1) or HasAtLeast(12712,1)) and IsTimeBetween(14,18) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
-							<Baits>
-								<Bait Name="Giant Crane Fly"/>
-								<Bait Name="Red Balloon"/>
-							</Baits>
-							<Keepers>
-								<Keeper Name="Tupuxuara"/>
-								<Keeper Name="Stupendemys"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="862.0374, 30, -156.5393" Heading="1.34"/>
-								<FishSpot XYZ="878.8062, 30, -194.1158" Heading="1.34"/>
-								<FishSpot XYZ="876.6814, 30, -185.7894" Heading="1.34"/>
-								<FishSpot XYZ="873.9183, 30, -179.4828" Heading="1.34"/>
-								<FishSpot XYZ="871.2634, 30, -173.5322" Heading="1.34"/>
-								<FishSpot XYZ="869.0849, 30, -169.4196" Heading="1.34"/>
-								<FishSpot XYZ="866.287, 30, -164.3894" Heading="1.34"/>
-								<FishSpot XYZ="870.3144, 30, -170.493" Heading="1.34"/>
-								<FishSpot XYZ="877.0106, 30, -187.2638" Heading="1.34"/>
-								<FishSpot XYZ="883.927, 30, -230.4676" Heading="1.34"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-						<ExPurify/>
-					</If>
-					<!-- Caiman -->
-					<If Condition="&Caiman_Psyduck; and IsTimeBetween(18,20) and HasAtLeast(12707,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; Voor Sian Siran ~ Caiman"/>
-						<TeleportTo Force="True" AetheryteId="72"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="-602.2142, -122.2923, 554.533" Type="RandomPointWithin" Distance="5"/>
-						<ExMoveTo XYZ="205.5932, -85.20891, 659.786" Type="RandomPointWithin" Distance="10"/>
-						<ExFish Condition="HasAtLeast(12707,1) and IsTimeBetween(18,20) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" CordialType="&CordialType_Psyduck;" Collect="True" Patience="&Patience_Psyduck;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Bladed Steel Jig">
-							<Keepers>
-								<Keeper Name="Caiman"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="215.5034, -125.2895, 671.4525" Heading="0.8439589"/>
-								<FishSpot XYZ="220.0094, -125.2895, 683.9001" Heading="2.001313"/>
-								<FishSpot XYZ="233.3041, -125.2895, 679.2593" Heading="1.982463"/>
-								<FishSpot XYZ="257.0114, -125.2895, 656.9609" Heading="2.229974"/>
-								<FishSpot XYZ="251.9843, -125.2895, 647.0104" Heading="2.904369"/>
-								<FishSpot XYZ="226.2899, -125.2895, 630.4355" Heading="2.778706"/>
-								<FishSpot XYZ="214.4492, -125.2895, 637.9637" Heading="2.72202"/>
-								<FishSpot XYZ="215.0850, -125.2895, 619.5391" Heading="1.934528"/>
-								<FishSpot XYZ="229.5985, -125.2895, 593.8397" Heading="1.149131"/>
-								<FishSpot XYZ="241.6472, -125.2895, 586.194" Heading="0.4600747"/>
-								<FishSpot XYZ="250.7677, -125.2895, 581.091" Heading="2.843857"/>
-								<FishSpot XYZ="300.3447, -125.3065, 606.1286" Heading="0.8210113"/>
-								<FishSpot XYZ="319.6855, -125.2895, 581.2392" Heading="2.57402"/>
-								<FishSpot XYZ="333.9448, -125.2895, 569.9609" Heading="1.022406"/>
-								<FishSpot XYZ="348.5824, -125.2895, 560.7775" Heading="0.3165946"/>
-								<FishSpot XYZ="390.5344, -125.2895, 588.5638" Heading="3.156595"/>
-								<FishSpot XYZ="401.8708, -125.2895, 613.2349" Heading="5.257271"/>
-								<FishSpot XYZ="400.0494, -125.2895, 627.0873" Heading="5.12323"/>
-								<FishSpot XYZ="401.3362, -125.2895, 651.2492" Heading="5.12323"/>
-								<FishSpot XYZ="390.3432, -125.2895, 672.6008" Heading="4.664553"/>
-								<FishSpot XYZ="398.1804, -125.2895, 694.1125" Heading="0.1406596"/>
-								<FishSpot XYZ="415.3872, -125.2895, 694.0579" Heading="1.677946"/>
-								<FishSpot XYZ="404.6691, -125.2895, 712.2839" Heading="5.424819"/>
-								<FishSpot XYZ="384.1033, -125.2895, 735.3852" Heading="4.27093"/>
-								<FishSpot XYZ="351.2265, -125.2895, 755.8721" Heading="3.586322"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-						<ExPurify/>
-					</If>
-					<If Condition="&Caiman_Psyduck; and IsTimeBetween(18,20) and not(HasAtLeast(12707,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Caiman : Bladed Steel Jig is missing !"/>
-					</If>
-				</If>
-				<!-- Other Fish -->
-				<If Condition="(&PipiraPira_Psyduck;) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-					<!-- Pipira Pira -->
-					<If Condition="&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and HasAtLeast(12706,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Hundred Throes ~ Pipira Pira !"/>
-						<TeleportTo Force="True" AetheryteId="76"/>
-						<RunCode Name="FSH"/>
-						<ExMoveTo XYZ="518.1877, -51.22863, 37.38127"/>
-						<ExMoveTo XYZ="495.2177, -13.59064, -61.63784"/>
-						<ExMoveTo XYZ="408.4273, 4.296432, -406.7819"/>
-						<ExMoveTo XYZ="422.0666, 11.53462, -533.5797" Type="RandomPointWithin" Distance="10"/>
-						<ExFish Condition="HasAtLeast(12706,1) and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Goblin Jig">
-							<Keepers>
-								<Keeper Name="Pipira pira"/>
-							</Keepers>
-							<FishSpots>
-								<FishSpot XYZ="397.8219, -26.5559, -510.3493" Heading="2.68"/>
-								<FishSpot XYZ="385.3249, -26.25389, -546.3416" Heading="1.25"/>
-								<FishSpot XYZ="427.1414, -24.97816, -591.9777" Heading="0.92"/>
-								<FishSpot XYZ="497.8525, -26.25389, -586.8606" Heading="5.67"/>
-							</FishSpots>
-						</ExFish>
-						<RunCode Name="StopFishing"/>
-					</If>
-					<If Condition="&PipiraPira_Psyduck; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11, 21) and not(HasAtLeast(12706,1)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
-						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Pipira Pira : Goblin Jig is missing !"/>
 					</If>
 				</If>
 			</If>
 			<!-- Turn In -->
-			<If Condition="&TurnInAfterLoop; and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-				<ExPurify/>
-				<If Condition="&Trade_Counterfoil;">
+			<If Condition="(&TurnIn_Counterfoil; or &TurnInAfterLoop;) and FreeItemSlots() &lt; &MinimumFreeSlot_TurnIn;">
+				<!-- Turn In Counterfoil -->
+				<If Condition="&TurnIn_Counterfoil;">
+					<ExPurify/>
 					<TurnInCouterfoil/>
 				</If>
-				<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
-					<ShopPurchases>
-						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
-						<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice_Count;"/>
-						<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken_Count;"/>
-						<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
-						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-					</ShopPurchases>
-				</ExTurnInCollectables>
+				<!-- Turn In Rowena -->
+				<If Condition="&TurnInAfterLoop;">
+					<ExPurify/>
+					<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
+						<ShopPurchases>
+							<!-- Red Gatherer -->
+							<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken;"/>
+							<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice;"/>
+							<ShopPurchase shopItem="GuerdonIV" MaxCount="&GuerdonIV;"/>
+							<ShopPurchase shopItem="GuileIV" MaxCount="&GuileIV;"/>
+							<ShopPurchase shopItem="GraspIV" MaxCount="&GraspIV;"/>
+							<!-- Blue Gatherer -->
+							<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken;"/>
+							<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial;"/>
+							<ShopPurchase shopItem="CommercialSurvivalManual" MaxCount="&CommercialSurvivalManual;"/>
+							<ShopPurchase shopItem="TrailblazersScarf" MaxCount="&TrailblazersScarf;"/>
+							<ShopPurchase shopItem="TrailblazersVest" MaxCount="&TrailblazersVest;"/>
+							<ShopPurchase shopItem="TrailblazersWristguards" MaxCount="&TrailblazersWristguards;"/>
+							<ShopPurchase shopItem="TrailblazersSlops" MaxCount="&TrailblazersSlops;"/>
+							<ShopPurchase shopItem="TrailblazersShoes" MaxCount="&TrailblazersShoes;"/>
+							<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech;"/>
+							<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly;"/>
+							<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm;"/>
+							<ShopPurchase shopItem="MagmaWorm" MaxCount="&MagmaWorm;"/>
+							<ShopPurchase shopItem="RedBalloon" MaxCount="&RedBalloon;"/>
+							<ShopPurchase shopItem="CrownTrout" MaxCount="&CrownTrout;"/>
+							<ShopPurchase shopItem="CrownTroutHQ" MaxCount="&CrownTroutHQ;"/>
+							<ShopPurchase shopItem="RetributionStaff" MaxCount="&RetributionStaff;"/>
+							<ShopPurchase shopItem="RetributionStaffHQ" MaxCount="&RetributionStaffHQ;"/>
+							<ShopPurchase shopItem="ThiefBetta" MaxCount="&ThiefBetta;"/>
+							<ShopPurchase shopItem="ThiefBettaHQ" MaxCount="&ThiefBettaHQ;"/>
+							<ShopPurchase shopItem="GoldsmithCrab" MaxCount="&GoldsmithCrab;"/>
+							<ShopPurchase shopItem="GoldsmithCrabHQ" MaxCount="&GoldsmithCrabHQ;"/>
+							<ShopPurchase shopItem="Pterodactyl" MaxCount="&Pterodactyl;"/>
+							<ShopPurchase shopItem="PterodactylHQ" MaxCount="&PterodactylHQ;"/>
+							<ShopPurchase shopItem="Eurhinosaur" MaxCount="&Eurhinosaur;"/>
+							<ShopPurchase shopItem="EurhinosaurHQ" MaxCount="&EurhinosaurHQ;"/>
+							<ShopPurchase shopItem="GemMarimo" MaxCount="&GemMarimo;"/>
+							<ShopPurchase shopItem="GemMarimoHQ" MaxCount="&GemMarimoHQ;"/>
+							<ShopPurchase shopItem="Sphalerite" MaxCount="&Sphalerite;"/>
+							<ShopPurchase shopItem="SphaleriteHQ" MaxCount="&SphaleriteHQ;"/>
+							<ShopPurchase shopItem="WindSilk" MaxCount="&WindSilk;"/>
+							<ShopPurchase shopItem="CloudCottonBoll" MaxCount="&CloudCottonBoll;"/>
+							<ShopPurchase shopItem="CloudCottonBollHQ" MaxCount="&CloudCottonBollHQ;"/>
+							<ShopPurchase shopItem="DinosaurLeather" MaxCount="&DinosaurLeather;"/>
+							<ShopPurchase shopItem="RoyalMistletoe" MaxCount="&RoyalMistletoe;"/>
+							<ShopPurchase shopItem="RoyalMistletoeHQ" MaxCount="&RoyalMistletoeHQ;"/>
+						</ShopPurchases>
+					</ExTurnInCollectables>
+				</If>
 			</If>
 			<!-- Umbreon -->
 			<If Condition="(&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)">
@@ -10266,7 +10814,7 @@
 					<!-- 3.4 Fish -->
 					<If Condition="(ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 						<!-- Aetherochemical Compound #666 -->
-						<If Condition="&AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<If Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Slowpoke ~ Destination ----&gt; Aetherochemical Spill ~ Aetherochemical Compound #666"/>
 							<TeleportTo Force="True" AetheryteId="74"/>
 							<RunCode Name="FSH"/>
@@ -10275,7 +10823,7 @@
 							<ExMoveTo XYZ="-289.2864, -26.16157, -684.4478" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="264.3417, 36.46985, -743.344" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="362.2242, -31.11755, -802.2322" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" FishEyes="True" Stealth="True" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Fiend Worm">
+							<ExFish Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" FishEyes="True" Stealth="True" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Fiend Worm">
 								<Keepers>
 									<Keeper Name="Aetherochemical Compound #666"/>
 								</Keepers>
@@ -10293,6 +10841,9 @@
 							</ExFish>
 							<RunCode Name="StopFishing"/>
 						</If>
+					</If>
+					<If Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and not(HasAtLeast(12710,1)) and ((&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
+						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Slowpoke ~ Aetherochemical Compound #666 : Fiend Worm is missing !"/>
 					</If>
 					<!-- 3.3 Fish -->
 					<If Condition="(ItemCount(15439) &lt; &MagicBucket_Slowpoke; or ItemCount(15626) &lt; &FatPurse_Slowpoke; or ItemCount(15627) &lt; &TheImpaler_Slowpoke; or ItemCount(15628) &lt; &LaReale_Slowpoke; or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
@@ -10392,7 +10943,7 @@
 							<ExDisablePlugins Names="Enable Flight"/>
 							<ExFish Condition="ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="25" MaxFish="45" ShuffleFishSpots="false" SitRate=".69" Bait="Brute Leech">
 								<Keepers>
-									<Keeper Name="The Impaler"/>
+									<Keeper Name="La Reale"/>
 								</Keepers>
 								<FishSpots>
 									<FishSpot XYZ="-417.9137, 89.66232, -323.7871" Heading="4.214839"/>
@@ -10517,6 +11068,7 @@
 							<ExMoveTo XYZ="-488.7215, 249.4684, -30.1412" Type="RandomPointWithin" Distance="10"/>
 							<ExFish Condition="ItemCount(14212) &lt; &Gnomefish_Slowpoke; and HasAtLeast(12704,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" MinFish="21" MaxFish="42" ShuffleFishSpots="True" SitRate=".69" Bait="Stonefly Nymph">
 								<Keepers>
+									<Keeper Name="Madam Butterfly"/>
 									<Keeper Name="Gnomefish"/>
 								</Keepers>
 								<FishSpots>
@@ -11438,7 +11990,7 @@
 							<ExMoveTo XYZ="-216, 103, -584" Distance="2"/>
 							<ExMoveTo XYZ="-61.14677, 100.6723, -152.3772" Type="RandomPointWithin" Distance="10"/>
 							<ExDisablePlugins Names="Enable Flight"/>
-							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12706,1)or HasAtLeast(12711,1)) and not IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" CordialType="&CordialType_Magikarp;" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
+							<ExFish Condition="(HasAtLeast(12704,1) or HasAtLeast(12706,1) or HasAtLeast(12711,1)) and not IsTimeBetween(&ResetHour_Magikarp;,&ResetHour_Magikarp;+2) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" CordialType="&CordialType_Magikarp;" Collect="True" Patience="&Patience_Magikarp;" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="5" SitRate=".69">
 								<Baits>
 									<Bait Name="Brute Leech"/>
 									<Bait Name="Goblin Jig"/>
@@ -11486,8 +12038,40 @@
 								</Collectables>
 								<ShopPurchases>
 									<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count_Magikarp;"/>
-									<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken_Count;"/>
-									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
+									<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken;"/>
+									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial;"/>
+									<ShopPurchase shopItem="CommercialSurvivalManual" MaxCount="&CommercialSurvivalManual;"/>
+									<ShopPurchase shopItem="TrailblazersScarf" MaxCount="&TrailblazersScarf;"/>
+									<ShopPurchase shopItem="TrailblazersVest" MaxCount="&TrailblazersVest;"/>
+									<ShopPurchase shopItem="TrailblazersWristguards" MaxCount="&TrailblazersWristguards;"/>
+									<ShopPurchase shopItem="TrailblazersSlops" MaxCount="&TrailblazersSlops;"/>
+									<ShopPurchase shopItem="TrailblazersShoes" MaxCount="&TrailblazersShoes;"/>
+									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly;"/>
+									<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm;"/>
+									<ShopPurchase shopItem="MagmaWorm" MaxCount="&MagmaWorm;"/>
+									<ShopPurchase shopItem="RedBalloon" MaxCount="&RedBalloon;"/>
+									<ShopPurchase shopItem="CrownTrout" MaxCount="&CrownTrout;"/>
+									<ShopPurchase shopItem="CrownTroutHQ" MaxCount="&CrownTroutHQ;"/>
+									<ShopPurchase shopItem="RetributionStaff" MaxCount="&RetributionStaff;"/>
+									<ShopPurchase shopItem="RetributionStaffHQ" MaxCount="&RetributionStaffHQ;"/>
+									<ShopPurchase shopItem="ThiefBetta" MaxCount="&ThiefBetta;"/>
+									<ShopPurchase shopItem="ThiefBettaHQ" MaxCount="&ThiefBettaHQ;"/>
+									<ShopPurchase shopItem="GoldsmithCrab" MaxCount="&GoldsmithCrab;"/>
+									<ShopPurchase shopItem="GoldsmithCrabHQ" MaxCount="&GoldsmithCrabHQ;"/>
+									<ShopPurchase shopItem="Pterodactyl" MaxCount="&Pterodactyl;"/>
+									<ShopPurchase shopItem="PterodactylHQ" MaxCount="&PterodactylHQ;"/>
+									<ShopPurchase shopItem="Eurhinosaur" MaxCount="&Eurhinosaur;"/>
+									<ShopPurchase shopItem="EurhinosaurHQ" MaxCount="&EurhinosaurHQ;"/>
+									<ShopPurchase shopItem="GemMarimo" MaxCount="&GemMarimo;"/>
+									<ShopPurchase shopItem="GemMarimoHQ" MaxCount="&GemMarimoHQ;"/>
+									<ShopPurchase shopItem="Sphalerite" MaxCount="&Sphalerite;"/>
+									<ShopPurchase shopItem="SphaleriteHQ" MaxCount="&SphaleriteHQ;"/>
+									<ShopPurchase shopItem="WindSilk" MaxCount="&WindSilk;"/>
+									<ShopPurchase shopItem="CloudCottonBoll" MaxCount="&CloudCottonBoll;"/>
+									<ShopPurchase shopItem="CloudCottonBollHQ" MaxCount="&CloudCottonBollHQ;"/>
+									<ShopPurchase shopItem="DinosaurLeather" MaxCount="&DinosaurLeather;"/>
+									<ShopPurchase shopItem="RoyalMistletoe" MaxCount="&RoyalMistletoe;"/>
+									<ShopPurchase shopItem="RoyalMistletoeHQ" MaxCount="&RoyalMistletoeHQ;"/>
 								</ShopPurchases>
 							</ExTurnInCollectables>
 							<ExEnablePlugins Names="Enable Flight"/>
@@ -11622,53 +12206,28 @@
 							<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Dragon Obsidian(Riversmeet) [START]"/>
 							<While Condition="(&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
-								<If Condition="Core.Player.CurrentGP &gt; 599">
-									<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
-										<GatherObjects>
-											<GatherObject>Rocky Outcrop</GatherObject>
-											<GatherObject>Mineral Deposit</GatherObject>
-											<GatherObject>Lush Vegetation patch</GatherObject>
-											<GatherObject>Mature Tree</GatherObject>
-										</GatherObjects>
-										<Items>
-											<Collectable Name="Dragon Obsidian" Value="&DragonObsidian_Rate_Ditto;"/>
-											<GatherItem Name="Grade 5 Carbonized Matter"/>
-											<GatherItem Name="Timeworn Dragonskin Map"/>
-										</Items>
-										<GatherSpots>
-											<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
-											<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
-										</GatherSpots>
-										<HotSpots>
-											<HotSpot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
-											<HotSpot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
-											<HotSpot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
-										</HotSpots>
-									</ExGather>
-								</If>
-								<If Condition="Core.Player.CurrentGP &lt; 600">
-									<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
-										<GatherObjects>
-											<GatherObject>Rocky Outcrop</GatherObject>
-											<GatherObject>Mineral Deposit</GatherObject>
-											<GatherObject>Lush Vegetation patch</GatherObject>
-											<GatherObject>Mature Tree</GatherObject>
-										</GatherObjects>
-										<Items>
-											<GatherItem Name="Grade 5 Carbonized Matter"/>
-											<GatherItem Name="Timeworn Dragonskin Map"/>
-										</Items>
-										<GatherSpots>
-											<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
-											<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
-										</GatherSpots>
-										<HotSpots>
-											<HotSpot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
-											<HotSpot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
-											<HotSpot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
-										</HotSpots>
-									</ExGather>
-								</If>
+								<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="(&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<Collectable Name="Dragon Obsidian" Value="321"/>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
+									</Items>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="412.7319, 174.9148, 352.9007"/>
+										<HotSpot Radius="50" XYZ="264.1442, 179.3597, 332.7052"/>
+										<HotSpot Radius="50" XYZ="340.0508, 175.8774, 166.0221"/>
+									</HotSpots>
+								</ExGather>
 							</While>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[MIN] Dragon Obsidian(Riversmeet) [STOP]"/>
 						</If>
@@ -11680,53 +12239,28 @@
 							<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cedar Log(Riversmeet) [START]"/>
 							<While Condition="(&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
-								<If Condition="Core.Player.CurrentGP &gt; 599">
-									<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &gt; 599 and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
-										<GatherObjects>
-											<GatherObject>Rocky Outcrop</GatherObject>
-											<GatherObject>Mineral Deposit</GatherObject>
-											<GatherObject>Lush Vegetation patch</GatherObject>
-											<GatherObject>Mature Tree</GatherObject>
-										</GatherObjects>
-										<Items>
-											<Collectable Name="Cedar Log" Value="&CedarLog_Rate_Ditto;"/>
-											<GatherItem Name="Grade 5 Carbonized Matter"/>
-											<GatherItem Name="Timeworn Dragonskin Map"/>
-										</Items>
-										<GatherSpots>
-											<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
-											<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
-										</GatherSpots>
-										<HotSpots>
-											<HotSpot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
-											<HotSpot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
-											<HotSpot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
-										</HotSpots>
-									</ExGather>
-								</If>
-								<If Condition="Core.Player.CurrentGP &lt; 600">
-									<ExGather DisableRotationOverride="True" CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="Core.Player.CurrentGP &lt; 600 and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
-										<GatherObjects>
-											<GatherObject>Rocky Outcrop</GatherObject>
-											<GatherObject>Mineral Deposit</GatherObject>
-											<GatherObject>Lush Vegetation patch</GatherObject>
-											<GatherObject>Mature Tree</GatherObject>
-										</GatherObjects>
-										<Items>
-											<GatherItem Name="Grade 5 Carbonized Matter"/>
-											<GatherItem Name="Timeworn Dragonskin Map"/>
-										</Items>
-										<GatherSpots>
-											<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
-											<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
-										</GatherSpots>
-										<HotSpots>
-											<HotSpot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
-											<HotSpot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
-											<HotSpot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
-										</HotSpots>
-									</ExGather>
-								</If>
+								<ExGather CordialType="&CordialType_Ditto;" CordialTime="&CordialTime_Ditto;" DiscoverUnknowns="&DiscoverUnknowns;" While="(&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
+									<GatherObjects>
+										<GatherObject>Rocky Outcrop</GatherObject>
+										<GatherObject>Mineral Deposit</GatherObject>
+										<GatherObject>Lush Vegetation patch</GatherObject>
+										<GatherObject>Mature Tree</GatherObject>
+									</GatherObjects>
+									<Items>
+										<Collectable Name="Cedar Log" Value="321"/>
+										<GatherItem Name="Grade 5 Carbonized Matter"/>
+										<GatherItem Name="Timeworn Dragonskin Map"/>
+									</Items>
+									<GatherSpots>
+										<IndirectApproachGatherSpot ApproachLocation="-453.1555, 120.3001, -274.9049" ReturnToApproachLocation="True" nodeLocation="-460.4598, 120.6998, -282.0876"/>
+										<StealthApproachGatherSpot ReturnToStealthLocation="True" StealthLocation="-454.0193, 122.0814, -456.4791" nodeLocation="-464.1032, 122.1049, -462.4032"/>
+									</GatherSpots>
+									<HotSpots>
+										<HotSpot Radius="50" XYZ="483.4815, 207.804, 566.826"/>
+										<HotSpot Radius="50" XYZ="384.1285, 196.7674, 509.3827"/>
+										<HotSpot Radius="50" XYZ="452.808, 185.8357, 371.4405"/>
+									</HotSpots>
+								</ExGather>
 							</While>
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Cedar Log(Riversmeet) [STOP]"/>
 						</If>
@@ -12106,28 +12640,56 @@
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[BTN] Periwinkle(Avalonia Fallen) [STOP]"/>
 						</If>
 					</While>
-					<If Condition="&TurnInAfterLoop; and FreeItemSlots() &lt; &TurnInAfterLoop_free_bag_slots;">
-						<If Condition="&Trade_Counterfoil;">
+					<!-- Turn In -->
+					<If Condition="(&TurnIn_Counterfoil; or &TurnInAfterLoop;) and FreeItemSlots() &lt; &MinimumFreeSlot_TurnIn;">
+						<!-- Turn In Counterfoil -->
+						<If Condition="&TurnIn_Counterfoil;">
+							<ExPurify/>
 							<TurnInCouterfoil/>
 						</If>
-						<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
-							<ShopPurchases>
-								<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
-								<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice_Count;"/>
-								<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken_Count;"/>
-								<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-								<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
-								<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
-							</ShopPurchases>
-						</ExTurnInCollectables>
-						<If Condition="&WaitAtWaitingLocation;">
-							<If Condition="&Use_House_Codechunck;">
-								<RunCode Name="WaitingHouse"/>
-							</If>
-							<If Condition="not &Use_House_Codechunck;">
-								<TeleportTo AetheryteId="&Waiting_AetheryteId;"/>
-							</If>
-							<RunCode Name="UnStealth"/>
+						<!-- Turn In Rowena -->
+						<If Condition="&TurnInAfterLoop;">
+							<ExPurify/>
+							<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
+								<ShopPurchases>
+									<!-- Blue Gatherer -->
+									<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken;"/>
+									<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial;"/>
+									<ShopPurchase shopItem="CommercialSurvivalManual" MaxCount="&CommercialSurvivalManual;"/>
+									<ShopPurchase shopItem="TrailblazersScarf" MaxCount="&TrailblazersScarf;"/>
+									<ShopPurchase shopItem="TrailblazersVest" MaxCount="&TrailblazersVest;"/>
+									<ShopPurchase shopItem="TrailblazersWristguards" MaxCount="&TrailblazersWristguards;"/>
+									<ShopPurchase shopItem="TrailblazersSlops" MaxCount="&TrailblazersSlops;"/>
+									<ShopPurchase shopItem="TrailblazersShoes" MaxCount="&TrailblazersShoes;"/>
+									<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech;"/>
+									<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly;"/>
+									<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm;"/>
+									<ShopPurchase shopItem="MagmaWorm" MaxCount="&MagmaWorm;"/>
+									<ShopPurchase shopItem="RedBalloon" MaxCount="&RedBalloon;"/>
+									<ShopPurchase shopItem="CrownTrout" MaxCount="&CrownTrout;"/>
+									<ShopPurchase shopItem="CrownTroutHQ" MaxCount="&CrownTroutHQ;"/>
+									<ShopPurchase shopItem="RetributionStaff" MaxCount="&RetributionStaff;"/>
+									<ShopPurchase shopItem="RetributionStaffHQ" MaxCount="&RetributionStaffHQ;"/>
+									<ShopPurchase shopItem="ThiefBetta" MaxCount="&ThiefBetta;"/>
+									<ShopPurchase shopItem="ThiefBettaHQ" MaxCount="&ThiefBettaHQ;"/>
+									<ShopPurchase shopItem="GoldsmithCrab" MaxCount="&GoldsmithCrab;"/>
+									<ShopPurchase shopItem="GoldsmithCrabHQ" MaxCount="&GoldsmithCrabHQ;"/>
+									<ShopPurchase shopItem="Pterodactyl" MaxCount="&Pterodactyl;"/>
+									<ShopPurchase shopItem="PterodactylHQ" MaxCount="&PterodactylHQ;"/>
+									<ShopPurchase shopItem="Eurhinosaur" MaxCount="&Eurhinosaur;"/>
+									<ShopPurchase shopItem="EurhinosaurHQ" MaxCount="&EurhinosaurHQ;"/>
+									<ShopPurchase shopItem="GemMarimo" MaxCount="&GemMarimo;"/>
+									<ShopPurchase shopItem="GemMarimoHQ" MaxCount="&GemMarimoHQ;"/>
+									<ShopPurchase shopItem="Sphalerite" MaxCount="&Sphalerite;"/>
+									<ShopPurchase shopItem="SphaleriteHQ" MaxCount="&SphaleriteHQ;"/>
+									<ShopPurchase shopItem="WindSilk" MaxCount="&WindSilk;"/>
+									<ShopPurchase shopItem="CloudCottonBoll" MaxCount="&CloudCottonBoll;"/>
+									<ShopPurchase shopItem="CloudCottonBollHQ" MaxCount="&CloudCottonBollHQ;"/>
+									<ShopPurchase shopItem="DinosaurLeather" MaxCount="&DinosaurLeather;"/>
+									<ShopPurchase shopItem="RoyalMistletoe" MaxCount="&RoyalMistletoe;"/>
+									<ShopPurchase shopItem="RoyalMistletoeHQ" MaxCount="&RoyalMistletoeHQ;"/>
+								</ShopPurchases>
+							</ExTurnInCollectables>
 						</If>
 					</If>
 				</If>
@@ -12177,12 +12739,48 @@
 				<TurnInCouterfoil/>
 				<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 					<ShopPurchases>
-						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken_Count;"/>
-						<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice_Count;"/>
-						<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken_Count;"/>
-						<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial_Count;"/>
-						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech_Count;"/>
-						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly_Count;"/>
+						<!-- Red Gatherer -->
+						<ShopPurchase shopItem="RedGatherToken" MaxCount="&RedGatherToken;"/>
+						<ShopPurchase shopItem="GoblinDice" MaxCount="&GoblinDice;"/>
+						<ShopPurchase shopItem="GuerdonIV" MaxCount="&GuerdonIV;"/>
+						<ShopPurchase shopItem="GuileIV" MaxCount="&GuileIV;"/>
+						<ShopPurchase shopItem="GraspIV" MaxCount="&GraspIV;"/>
+						<!-- Blue Gatherer -->
+						<ShopPurchase shopItem="BlueGatherToken" MaxCount="&BlueGatherToken;"/>
+						<ShopPurchase shopItem="HiCordial" MaxCount="&HiCordial;"/>
+						<ShopPurchase shopItem="CommercialSurvivalManual" MaxCount="&CommercialSurvivalManual;"/>
+						<ShopPurchase shopItem="TrailblazersScarf" MaxCount="&TrailblazersScarf;"/>
+						<ShopPurchase shopItem="TrailblazersVest" MaxCount="&TrailblazersVest;"/>
+						<ShopPurchase shopItem="TrailblazersWristguards" MaxCount="&TrailblazersWristguards;"/>
+						<ShopPurchase shopItem="TrailblazersSlops" MaxCount="&TrailblazersSlops;"/>
+						<ShopPurchase shopItem="TrailblazersShoes" MaxCount="&TrailblazersShoes;"/>
+						<ShopPurchase shopItem="BruteLeech" MaxCount="&BruteLeech;"/>
+						<ShopPurchase shopItem="CraneFly" MaxCount="&CraneFly;"/>
+						<ShopPurchase shopItem="FiendWorm" MaxCount="&FiendWorm;"/>
+						<ShopPurchase shopItem="MagmaWorm" MaxCount="&MagmaWorm;"/>
+						<ShopPurchase shopItem="RedBalloon" MaxCount="&RedBalloon;"/>
+						<ShopPurchase shopItem="CrownTrout" MaxCount="&CrownTrout;"/>
+						<ShopPurchase shopItem="CrownTroutHQ" MaxCount="&CrownTroutHQ;"/>
+						<ShopPurchase shopItem="RetributionStaff" MaxCount="&RetributionStaff;"/>
+						<ShopPurchase shopItem="RetributionStaffHQ" MaxCount="&RetributionStaffHQ;"/>
+						<ShopPurchase shopItem="ThiefBetta" MaxCount="&ThiefBetta;"/>
+						<ShopPurchase shopItem="ThiefBettaHQ" MaxCount="&ThiefBettaHQ;"/>
+						<ShopPurchase shopItem="GoldsmithCrab" MaxCount="&GoldsmithCrab;"/>
+						<ShopPurchase shopItem="GoldsmithCrabHQ" MaxCount="&GoldsmithCrabHQ;"/>
+						<ShopPurchase shopItem="Pterodactyl" MaxCount="&Pterodactyl;"/>
+						<ShopPurchase shopItem="PterodactylHQ" MaxCount="&PterodactylHQ;"/>
+						<ShopPurchase shopItem="Eurhinosaur" MaxCount="&Eurhinosaur;"/>
+						<ShopPurchase shopItem="EurhinosaurHQ" MaxCount="&EurhinosaurHQ;"/>
+						<ShopPurchase shopItem="GemMarimo" MaxCount="&GemMarimo;"/>
+						<ShopPurchase shopItem="GemMarimoHQ" MaxCount="&GemMarimoHQ;"/>
+						<ShopPurchase shopItem="Sphalerite" MaxCount="&Sphalerite;"/>
+						<ShopPurchase shopItem="SphaleriteHQ" MaxCount="&SphaleriteHQ;"/>
+						<ShopPurchase shopItem="WindSilk" MaxCount="&WindSilk;"/>
+						<ShopPurchase shopItem="CloudCottonBoll" MaxCount="&CloudCottonBoll;"/>
+						<ShopPurchase shopItem="CloudCottonBollHQ" MaxCount="&CloudCottonBollHQ;"/>
+						<ShopPurchase shopItem="DinosaurLeather" MaxCount="&DinosaurLeather;"/>
+						<ShopPurchase shopItem="RoyalMistletoe" MaxCount="&RoyalMistletoe;"/>
+						<ShopPurchase shopItem="RoyalMistletoeHQ" MaxCount="&RoyalMistletoeHQ;"/>
 					</ShopPurchases>
 				</ExTurnInCollectables>
 			</If>
