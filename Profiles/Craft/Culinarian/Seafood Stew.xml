@@ -27,8 +27,7 @@
 <!ENTITY Version "Aerodactyl">
 <!ENTITY WaitCondition "not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">]><Profile>
 	<Name>Seafood Stew</Name>
-	<KillRadius>50</KillRadius>
-	<BehaviorDirectory>CustomTags</BehaviorDirectory>
+	<BehaviorDirectory>..\..\..\Quest Behaviors</BehaviorDirectory>
 	<CodeChunks>
 		<CodeChunk Name="CUL">
 			<![CDATA[ 	ff14bot.Managers.ChatManager.SendChat("/gs change 9");	]]>

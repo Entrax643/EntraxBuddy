@@ -54,7 +54,7 @@
 <!ENTITY IncludeArmory "false">
 <!ENTITY Version "Porygon">]><Profile>
 	<Name>RecipeManager</Name>
-	<BehaviorDirectory>CustomTags</BehaviorDirectory>
+	<BehaviorDirectory>..\..\Quest Behaviors</BehaviorDirectory>
 	<CodeChunks>
 		<CodeChunk name="ToT">
 			<![CDATA[ SpellData data; if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) && Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null))  { Actionmanager.DoAction("Tricks of the Trade", null); await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked); await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked); } await Coroutine.Sleep(500); ]]>

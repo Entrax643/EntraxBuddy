@@ -10,8 +10,7 @@
 ]>
 <Profile>
     <Name>Baked Onion Soup</Name>
-    <KillRadius>50</KillRadius>
-    <BehaviorDirectory>CustomTags</BehaviorDirectory>
+	<BehaviorDirectory>..\..\..\Quest Behaviors</BehaviorDirectory>
     <CodeChunks>
         <CodeChunk Name="CUL">
 		<![CDATA[ 

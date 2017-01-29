@@ -3,7 +3,7 @@
 <!ENTITY BTN_Hinterland "0">
 <!ENTITY Ending_AetheryteId "8">]><Profile>
 	<Name>FavorManager</Name>
-	<KillRadius>50</KillRadius>
+	<BehaviorDirectory>..\..\Quest Behaviors</BehaviorDirectory>
 	<CodeChunks>
 		<CodeChunk name="MIN">
 			<![CDATA[ ff14bot.Managers.ChatManager.SendChat("/gs change 20");	await Buddy.Coroutines.Coroutine.Sleep(2000); ]]>

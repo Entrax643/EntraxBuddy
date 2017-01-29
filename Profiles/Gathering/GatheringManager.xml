@@ -882,7 +882,7 @@
 <!-- DO NOT TOUCH FROM HERE -->
 <!ENTITY Color "#ff33ff">
 <!-- -->
-<!ENTITY Version "Firebird">
+<!ENTITY Version "Firebird 1.1">
 <!-- -->
 <!ENTITY SlowpokeCondition "not(ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) or ItemCount(15439) &lt; &MagicBucket_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15626) &lt; &FatPurse_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15627) &lt; &TheImpaler_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15628) &lt; &LaReale_Slowpoke; and HasAtLeast(12711,1) or ItemCount(15632) &lt; &TheEwerKing_Slowpoke; and HasAtLeast(12707,1) or ItemCount(15637) &lt; &AugmentedHighAllaganHelmet_Slowpoke; and HasAtLeast(12710,1) or ItemCount(14212) &lt; &Gnomefish_Slowpoke; or ItemCount(14214) &lt; &Nyctosaur_Slowpoke; and HasAtLeast(12712,1) or ItemCount(14216) &lt; &Priestfish_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14217) &lt; &CoerthanOyster_Slowpoke; and HasAtLeast(12711,1) or ItemCount(14219) &lt; &MountainKraken_Slowpoke; and HasAtLeast(12711,1))">
 <!ENTITY Items_SpiritBond_SnorlaxCondition "11985,11990,11995,11998,12003,12008">
@@ -893,7 +893,7 @@
 <!ENTITY UnownWaitCondition "not(((&Umbreon; and (&Gardenning; or &Retainer; or &Chocobot;)) and IsTimeBetween(&Umbreon_Hour;,&Umbreon_Hour;+1)) or ((IsTimeBetween(0,1) or IsTimeBetween(12,13)) and ((IsTimeBetween(0,1) and (&Cluster_1AM; or &SmithsoniteOre; or &Meteorite; or &DarksteelOre; or &SilkwormCocoon;)) or (IsTimeBetween(12,13) and (&Cluster_1PM; or &FrostCottonBoll; or &VampirePlant;)))) or ((IsTimeBetween(1,2) or IsTimeBetween(13,14)) and (&OldWorldFig; or &OldWorldFigSeeds; or &Cuprite; or &LightKidneyOre; or &YellowQuartz; or &GreenQuartz; or (IsTimeBetween(1,2) and (&FragrantLog; or &AntumbralRock;)) or (IsTimeBetween(13,14) and (&DzemaelTomato; or &DzemaelTomatoSeeds; or &BlackTruffle;)))) or ((IsTimeBetween(2,3) or IsTimeBetween(14,15)) and ((IsTimeBetween(2,3) and (&LumythriteOre; or &Ferberite; or &RawTopaz; or &RawIolite;)) or (IsTimeBetween(14,15) and (&OldGrowthCamphorwoodLog; or &CrystallizedSap;)))) or ((IsTimeBetween(3,4) or IsTimeBetween(15,16)) and ((IsTimeBetween(3,4) and (&PlatinumOre; or &NativeGold; or &RawDiamond; or &RawEmerald; or &LuminiumOre;)) or (IsTimeBetween(15,16) and (&BrownMushroom;)))) or ((IsTimeBetween(4,5) or IsTimeBetween(16,17)) and ((IsTimeBetween(4,5) and (&AstralMoraine; or &SunMica; or &AurumRegisOre; or &HoneyLemon; or &GoldSand; or &ThanalanTopsoil3; or &EbonyLog; or &Cluster_5AM; or &Trillium;)) or (IsTimeBetween(16,17) and (&VanillaBeans; or &HoneydewAlmonds; or &SeventhHeaven; or &Rosemary; or &ThavnairianMistletoe_5; or &VolcanicRockSalt_5; or &Cluster_5PM;)))) or ((IsTimeBetween(5,6) or IsTimeBetween(17,18)) and ((IsTimeBetween(5,6) and (&ZeoliteOre;)) or (IsTimeBetween(17,18) and (&RawRuby; or &RawSapphire; or &TeakLog;)))) or ((IsTimeBetween(6,7) or IsTimeBetween(18,19)) and ((IsTimeBetween(6,7) and (&BlueQuartz; or &VioletQuartz; or &RedAlumen; or &UmbralRock; or &RedolentLog; or &ShroudTopsoil3; or &YoungCieldalaesSpinach;)) or (IsTimeBetween(18,19) and (&DravanianPaprika; or &WattleBark; or &Snurbleberry; or &VolcanicRockSalt_7; or &ThavnairianMistletoe_7; or &VirginBasiliskEgg; or &LaNosceanTopsoil3;)))) or ((IsTimeBetween(7,8) or IsTimeBetween(19,20)) and ((IsTimeBetween(7,8) and (&Tungstite; or &LaNosceanLeek; or &WaterfowlFeather;)) or (IsTimeBetween(19,20) and (&NobleSage;)))) or ((IsTimeBetween(8,9) or IsTimeBetween(20,21)) and (&Chysahl; or (IsTimeBetween(8,9) and (&GoldOre; or &SpruceLog; or &PricklyPineapple; or &PricklyPineappleSeeds; or &Cluster_9AM; or &Apricot;)) or (IsTimeBetween(20,21) and (&Kidragora; or &TrilliumBulb; or &Cluster_9PM;)))) or ((IsTimeBetween(9,10) or IsTimeBetween(21,22)) and (&PearlSproutSeeds; or &CoerthanTeaSeeds; or &HeavensLemon; or &AbalathianMistletoe; or &CoerthanTeaLeaves; or &PearlSprouts; or &Chives; or &Pyrite; or &Chalcocite; or &Limonite; or (IsTimeBetween(9,10) and (&CypressLog;)))) or ((IsTimeBetween(10,11) or IsTimeBetween(22,23)) and (&Adamantite;)) or ((IsTimeBetween(11,12) or IsTimeBetween(23,24)) and (&AbalathianRockSalt; or &RedQuartz; or &CloudBanana; or &Morel; or &Porcini; or &DravanianMistletoe; or (IsTimeBetween(11,12) and (&StarCottonBoll;))))) and FreeItemSlots() &gt; 4">]><!-- TO HERE -->
 <Profile>
 	<Name>GatheringManager</Name>
-	<KillRadius>50</KillRadius>
+	<BehaviorDirectory>..\..\Quest Behaviors</BehaviorDirectory>
 	<Order>
 		<ExEnablePlugins Names="Skywatcher,Enable Flight"/>
 		<While Condition="FreeItemSlots() &gt; 4">
@@ -6254,12 +6254,12 @@
 					<!-- Frilled Shark -->
 					<If Condition="&FrilledShark_Psyduck; and SkywatcherPlugin.IsWeatherInZone(138, 4, 5, 6, 28) and (IsTimeBetween(16,24) or IsTimeBetween(0,3)) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Destination ----&gt; The Ship Graveyard ~ Frilled Shark !"/>
+						<TeleportTo Force="True" AetheryteId="14"/>
 						<If Condition="not(HasAtLeast(2613,50)) and not(HasAtLeast(2616,1)) and not(HasAtLeast(2619,1))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Psyduck ~ Frilled Shark : Not enough bait available, I'm going to buy you some !"/>
 							<ExMoveTo XYZ="56.46388, -3.118286, 64.31471" ForceLanding="True"/>
 							<BuyItem ItemId="2613" ItemCount="50" DialogOption="1" InteractDistance="3.0" NpcId="1003266" XYZ="55.3584, -3.11828, 65.76429"/>
 						</If>
-						<TeleportTo Force="True" AetheryteId="14"/>
 						<RunCode Name="FSH"/>
 						<ExMoveTo XYZ="317.2209, -36.325, 352.0146" ForceLanding="True"/>
 						<UseTransport Name="The Ship Graveyard" InteractDistance="3.0" NpcId="1003584" DialogOption="2" XYZ="317.4621, -36.325, 352.9146"/>
@@ -10814,7 +10814,7 @@
 					<!-- 3.4 Fish -->
 					<If Condition="(ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke;) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 						<!-- Aetherochemical Compound #666 -->
-						<If Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)">
+						<If Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 							<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Slowpoke ~ Destination ----&gt; Aetherochemical Spill ~ Aetherochemical Compound #666"/>
 							<TeleportTo Force="True" AetheryteId="74"/>
 							<RunCode Name="FSH"/>
@@ -10823,7 +10823,7 @@
 							<ExMoveTo XYZ="-289.2864, -26.16157, -684.4478" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="264.3417, 36.46985, -743.344" Type="RandomPointWithin" Distance="10"/>
 							<ExMoveTo XYZ="362.2242, -31.11755, -802.2322" Type="RandomPointWithin" Distance="10"/>
-							<ExFish Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and ((&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4)) or &KeepFishing_Psyduck;)" FishEyes="True" Stealth="True" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Fiend Worm">
+							<ExFish Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and HasAtLeast(12710,1) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))" FishEyes="True" Stealth="True" MinFish="21" MaxFish="42" ShuffleFishSpots="True" Mooch="1" SitRate=".69" Bait="Fiend Worm">
 								<Keepers>
 									<Keeper Name="Aetherochemical Compound #666"/>
 								</Keepers>
@@ -10842,7 +10842,7 @@
 							<RunCode Name="StopFishing"/>
 						</If>
 					</If>
-					<If Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and not(HasAtLeast(12710,1)) and ((&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
+					<If Condition="ItemCount(16752) &lt; &AetherochemicalCompound666_Slowpoke; and not(HasAtLeast(12710,1)) and (&TangelaWaitCondition; or &Tangela; == 0) and (&PsyduckWaitCondition; or &Psyduck; == 0) and (&UnownWaitCondition; or (&Unown; == 0 and FreeItemSlots() &gt; 4))">
 						<ExLog Color="&Color;" Name="GatherManager &Version;" Message="[FSH] Slowpoke ~ Aetherochemical Compound #666 : Fiend Worm is missing !"/>
 					</If>
 					<!-- 3.3 Fish -->

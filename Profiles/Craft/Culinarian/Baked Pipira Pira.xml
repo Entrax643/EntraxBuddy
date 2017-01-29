@@ -24,8 +24,7 @@
 <!ENTITY Version "Kabuto">
 <!ENTITY WaitCondition "not((ItemCount(12741) &lt; &Baked_Qty; and SkywatcherPlugin.IsWeatherInZone(398, 3, 4, 11)) or (ItemCount(12899) &lt; (&Baked_Qty; * 2) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (&Gather_Salt; != 0 and (ItemCount(12901) &lt; &Baked_Qty;) and (IsTimeBetween(11,12) or IsTimeBetween(23,24))) or (ItemCount(12741) &lt; &Baked_Qty; and (IsTimeBetween(00,1) or IsTimeBetween(12,13))))">]><Profile>
 	<Name>Baked Pipira Pira</Name>
-	<KillRadius>50</KillRadius>
-	<BehaviorDirectory>CustomTags</BehaviorDirectory>
+	<BehaviorDirectory>..\..\..\Quest Behaviors</BehaviorDirectory>
 	<CodeChunks>
 		<CodeChunk name="CBT">
 			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 1");	]]>

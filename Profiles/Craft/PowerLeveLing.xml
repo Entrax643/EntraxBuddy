@@ -102,7 +102,6 @@
 <!-- FR : artisanat -->
 <!ENTITY Version "Slowpoke">]><Profile>
 	<Name>PowerLeveLing</Name>
-	<KillRadius>50</KillRadius>
 	<CodeChunks>
 		<CodeChunk name="CRP">
 			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 2");	]]>
