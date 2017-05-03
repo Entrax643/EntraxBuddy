@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using Buddy.Coroutines;
 using Clio.XmlEngine;
-using ff14bot.Behavior;
-using ff14bot.Enums;
 using ff14bot.Helpers;
 using ff14bot.Managers;
 using TreeSharp;
@@ -76,14 +73,12 @@ namespace ff14bot.NeoProfiles
                 Log("Waiting for gathering window to close");
                 Thread.Sleep(2000);
             }
-
             if (FishingManager.State != FishingState.None)
             {
                 Log("Stop fishing");
                 Actionmanager.DoAction("Quit", Core.Me);
                 await Coroutine.Wait(5000, () => FishingManager.State == FishingState.None);
             }
-
             if (ItemIds != null && ItemIds.Length > 0)
             {
                 foreach (var id in ItemIds)
@@ -91,35 +86,28 @@ namespace ff14bot.NeoProfiles
                     await MoveByItemId((uint)id, NqOnly);
                 }
             }
-
             return _done = true;
         }
 
         protected async Task<bool> MoveAllItems(IEnumerable<BagSlot> bagSlots)
         {
-			Thread.Sleep(500);
-			
+            Thread.Sleep(500);
             foreach (var bagSlot in bagSlots)
             {
                 string name = bagSlot.Name;
-
                 if (bagSlot != null)
                 {
                     var startingId = bagSlot.TrueItemId;
-
                     Dictionary<int, BagSlot> equippedSlot;
                     int i = 0;
-
                     var itemCateg = bagSlot.Item.EquipmentCatagory.ToString();
                     BagSlot equipSlot;
-
                     equippedSlot = new Dictionary<int, BagSlot>();
                     foreach (BagSlot slot in InventoryManager.EquippedItems)
                     {
                         equippedSlot[i] = slot;
                         i++;
                     }
-                    
                     if (itemCateg.Contains("Primary") || itemCateg.Contains("Arm"))
                     {
                         equipSlot = equippedSlot[0];
@@ -175,32 +163,29 @@ namespace ff14bot.NeoProfiles
                                 break;
                         }
                     }
-
-                    if(equipSlot == null)
+                    if (equipSlot == null)
                     {
                         Log("You can not equip {0}.", name);
                     }
                     else
                     {
-						while(equipSlot.TrueItemId != startingId)
-						{
-							Log("Attempting to equip {0}.", name);
-							bagSlot.Move(equipSlot);
-							if (await Coroutine.Wait(MaxWait, () => equipSlot.TrueItemId == startingId))
-							{
-								Log("{0} equipped successfully.", name);
-							}
-							else
-							{
-								Log("Failed to equip {0}.", name);
-							}							
-						}
+                        while (equipSlot.TrueItemId != startingId)
+                        {
+                            Log("Attempting to equip {0}.", name);
+                            bagSlot.Move(equipSlot);
+                            if (await Coroutine.Wait(MaxWait, () => equipSlot.TrueItemId == startingId))
+                            {
+                                Log("{0} equipped successfully.", name);
+                            }
+                            else
+                            {
+                                Log("Failed to equip {0}.", name);
+                            }
+                        }
                     }
                 }
-
                 Thread.Sleep(1500);
             }
-
             return true;
         }
 

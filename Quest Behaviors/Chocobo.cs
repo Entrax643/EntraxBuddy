@@ -21,7 +21,6 @@ namespace ff14bot.NeoProfiles
     public class Chocobot : ProfileBehavior
     {
         private bool _done;
-
         private Dictionary<uint, string> _chocoboFood;
 
         [XmlAttribute("ChocoboFoodID")]
@@ -44,7 +43,6 @@ namespace ff14bot.NeoProfiles
         public bool CleanBefore { get; set; }
 
         internal static Regex TimeRegex = new Regex(@"(?:.*?)(\d+).*", RegexOptions.Compiled);
-
         private static readonly Color MessageColor = Colors.DeepPink;
 
         public new static void Log(string text, params object[] args)
@@ -80,7 +78,6 @@ namespace ff14bot.NeoProfiles
         protected async Task<bool> ChocoTraining()
         {
             InitializeFoodName();
-
             if (CleanBefore)
             {
                 for (var i = 1; i <= 3; i++)
@@ -96,7 +93,6 @@ namespace ff14bot.NeoProfiles
                             }
                         }
                         await Coroutine.Wait(5000, () => SelectString.IsOpen);
-
                         if (SelectString.IsOpen)
                         {
                             SelectString.ClickSlot((uint)SelectString.LineCount - 3);
@@ -113,7 +109,6 @@ namespace ff14bot.NeoProfiles
                     }
                 }
             }
-
             if (!Chocobo.IsStabled)
             {
                 foreach (var unit in GameObjectManager.GameObjects.OrderBy(r => r.Distance()))
@@ -125,7 +120,6 @@ namespace ff14bot.NeoProfiles
                     }
                 }
                 await Coroutine.Wait(5000, () => SelectString.IsOpen);
-
                 if (SelectString.IsOpen)
                 {
                     SelectString.ClickSlot(1);
@@ -138,9 +132,7 @@ namespace ff14bot.NeoProfiles
                     Log("Failed to open menu");
                 }
             }
-
             await Coroutine.Sleep(3000);
-
             foreach (var unit in GameObjectManager.GameObjects.OrderBy(r => r.Distance()))
             {
                 if (unit.NpcId == 131129)
@@ -150,7 +142,6 @@ namespace ff14bot.NeoProfiles
                 }
             }
             await Coroutine.Wait(5000, () => SelectString.IsOpen);
-
             if (SelectString.IsOpen)
             {
                 SelectString.ClickSlot(0);
@@ -160,11 +151,9 @@ namespace ff14bot.NeoProfiles
                 {
                     //Look for our chocobo
                     var items = HousingChocoboList.Items;
-
                     //512 possible chocobos, 14 items per page...
                     for (uint stableSection = 0; stableSection < AgentHousingBuddyList.Instance.TotalPages; stableSection++)
                     {
-
                         if (stableSection != AgentHousingBuddyList.Instance.CurrentPage)
                         {
                             Log("Switching to page {0}", stableSection);
@@ -172,20 +161,16 @@ namespace ff14bot.NeoProfiles
                             await Coroutine.Sleep(5000);
                             items = HousingChocoboList.Items;
                         }
-
                         for (uint i = 0; i < items.Length; i++)
                         {
-
                             if (string.IsNullOrEmpty(items[i].PlayerName))
                                 continue;
-
                             if (i == 0)
                             {
                                 if (items[i].ReadyAt < DateTime.Now)
                                 {
                                     Log("Selecting my Chocobo");
                                     HousingChocoboList.SelectMyChocobo();
-
                                     if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
                                         Log("{0}, {1}'s chocobo is maxed out", items[i].ChocoboName, items[i].PlayerName);
@@ -193,7 +178,6 @@ namespace ff14bot.NeoProfiles
                                         await Coroutine.Sleep(1000);
                                         continue;
                                     }
-
                                     if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && !string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
                                         if (ConditionParser.HasAtLeast(8166, 1))
@@ -202,10 +186,8 @@ namespace ff14bot.NeoProfiles
                                             SelectYesno.ClickNo();
                                             await Coroutine.Wait(1000, () => !SelectYesno.IsOpen);
                                             await Coroutine.Sleep(500);
-
                                             Log("Selecting {0}, {1}'s chocobo on page {2}", items[i].ChocoboName, items[i].PlayerName, stableSection);
                                             HousingChocoboList.SelectMyChocobo();
-
                                             await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
                                             SelectYesno.ClickYes();
                                             ChocoboFoodId = 8166;
@@ -218,7 +200,6 @@ namespace ff14bot.NeoProfiles
                                             continue;
                                         }
                                     }
-
                                     Log("Waiting for inventory menu to appear....");
                                     //Wait for the inventory window to open and be ready
                                     //Technically the inventory windows are always 'open' so we check if their callbackhandler has been set
@@ -227,17 +208,19 @@ namespace ff14bot.NeoProfiles
                                         Log("Inventory menu failed to appear, aborting current iteration.");
                                         continue;
                                     }
-
                                     Log("Feeding Chocobo : Food Name : {0}, Food ID : {1}", _chocoboFood[ChocoboFoodId], ChocoboFoodId);
                                     AgentHousingBuddyList.Instance.Feed(ChocoboFoodId);
-
+									if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen))
+									{
+										SelectYesno.ClickYes();
+										await Coroutine.Sleep(1000);
+									}
                                     Log("Waiting for cutscene to start....");
                                     if (await Coroutine.Wait(5000, () => QuestLogManager.InCutscene))
                                     {
                                         Log("Waiting for cutscene to end....");
                                         await Coroutine.Wait(Timeout.Infinite, () => !QuestLogManager.InCutscene);
                                     }
-
                                     Log("Waiting for menu to reappear....");
                                     await Coroutine.Wait(Timeout.Infinite, () => HousingChocoboList.IsOpen);
                                     await Coroutine.Sleep(1000);
@@ -253,7 +236,6 @@ namespace ff14bot.NeoProfiles
                                 {
                                     Log("Selecting {0}, {1}'s chocobo on page {2}", items[i].ChocoboName, items[i].PlayerName, stableSection);
                                     HousingChocoboList.SelectChocobo(i);
-
                                     //Chocobo is maxed out, don't interact with it again
                                     if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
@@ -262,7 +244,6 @@ namespace ff14bot.NeoProfiles
                                         await Coroutine.Sleep(1000);
                                         continue;
                                     }
-
                                     //Chocobo is maxed out, don't interact with it again
                                     if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("All", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                                     {
@@ -272,10 +253,8 @@ namespace ff14bot.NeoProfiles
                                             SelectYesno.ClickNo();
                                             await Coroutine.Wait(1000, () => !SelectYesno.IsOpen);
                                             await Coroutine.Sleep(500);
-
                                             Log("Selecting {0}, {1}'s chocobo on page {2}", items[i].ChocoboName, items[i].PlayerName, stableSection);
                                             HousingChocoboList.SelectChocobo(i);
-
                                             await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
                                             SelectYesno.ClickYes();
                                             ChocoboFoodId = 8166;
@@ -288,7 +267,6 @@ namespace ff14bot.NeoProfiles
                                             continue;
                                         }
                                     }
-
                                     Log("Waiting for inventory menu to appear....");
                                     //Wait for the inventory window to open and be ready
                                     //Technically the inventory windows are always 'open' so we check if their callbackhandler has been set
@@ -297,17 +275,19 @@ namespace ff14bot.NeoProfiles
                                         Log("Inventory menu failed to appear, aborting current iteration.");
                                         continue;
                                     }
-
                                     Log("Feeding Chocobo : Food Name : {0}, Food ID : {1}", _chocoboFood[ChocoboFoodId], ChocoboFoodId);
                                     AgentHousingBuddyList.Instance.Feed(ChocoboFoodId);
-
+									if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen))
+									{
+										SelectYesno.ClickYes();
+										await Coroutine.Sleep(1000);
+									}
                                     Log("Waiting for cutscene to start....");
                                     if (await Coroutine.Wait(5000, () => QuestLogManager.InCutscene))
                                     {
                                         Log("Waiting for cutscene to end....");
                                         await Coroutine.Wait(Timeout.Infinite, () => !QuestLogManager.InCutscene);
                                     }
-
                                     Log("Waiting for menu to reappear....");
                                     await Coroutine.Wait(Timeout.Infinite, () => HousingChocoboList.IsOpen);
                                     await Coroutine.Sleep(1000);
@@ -325,13 +305,11 @@ namespace ff14bot.NeoProfiles
                 }
                 else if (HousingMyChocobo.IsOpen)
                 {
-
                     var matches = TimeRegex.Match(HousingMyChocobo.Lines[0]);
                     if (!matches.Success)
                     {
                         //We are ready to train now
                         HousingMyChocobo.SelectLine(0);
-
                         //Chocobo is maxed out, don't interact with it again
                         if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && string.Equals("None", ThavnairianOnion, StringComparison.OrdinalIgnoreCase))
                         {
@@ -339,7 +317,6 @@ namespace ff14bot.NeoProfiles
                             SelectYesno.ClickNo();
                             await Coroutine.Sleep(1000);
                         }
-
                         //Chocobo is maxed out, don't interact with it again
                         if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen) && (string.Equals("Me", ThavnairianOnion, StringComparison.OrdinalIgnoreCase) || string.Equals("All", ThavnairianOnion, StringComparison.OrdinalIgnoreCase)))
                         {
@@ -349,9 +326,7 @@ namespace ff14bot.NeoProfiles
                                 SelectYesno.ClickNo();
                                 await Coroutine.Wait(1000, () => !SelectYesno.IsOpen);
                                 await Coroutine.Sleep(500);
-
                                 HousingMyChocobo.SelectLine(0);
-
                                 await Coroutine.Wait(5000, () => SelectYesno.IsOpen);
                                 SelectYesno.ClickYes();
                                 ChocoboFoodId = 8166;
@@ -363,7 +338,6 @@ namespace ff14bot.NeoProfiles
                                 await Coroutine.Sleep(1000);
                             }
                         }
-
                         Log("Waiting for inventory menu to appear....");
                         //Wait for the inventory window to open and be ready
                         //Technically the inventory windows are always 'open' so we check if their callbackhandler has been set
@@ -372,21 +346,22 @@ namespace ff14bot.NeoProfiles
                             Log("Inventory menu failed to appear, aborting current iteration.");
                             return _done = true;
                         }
-
                         Log("Feeding Chocobo : Food Name : {0}, Food ID : {1}", _chocoboFood[ChocoboFoodId], ChocoboFoodId);
                         AgentHousingBuddyList.Instance.Feed(ChocoboFoodId);
-
+						if (await Coroutine.Wait(5000, () => SelectYesno.IsOpen))
+						{
+							SelectYesno.ClickYes();
+							await Coroutine.Sleep(1000);
+						}
                         Log("Waiting for cutscene to start....");
                         if (await Coroutine.Wait(5000, () => QuestLogManager.InCutscene))
                         {
                             Log("Waiting for cutscene to end....");
                             await Coroutine.Wait(Timeout.Infinite, () => !QuestLogManager.InCutscene);
                         }
-
                         Log("Waiting for menu to reappear....");
                         await Coroutine.Wait(Timeout.Infinite, () => HousingMyChocobo.IsOpen);
                         await Coroutine.Sleep(1000);
-
                     }
                     else
                     {
@@ -407,9 +382,7 @@ namespace ff14bot.NeoProfiles
             {
                 Log("Failed to open menu");
             }
-
             await Coroutine.Sleep(3000);
-
             if (FetchAfter)
             {
                 foreach (var unit in GameObjectManager.GameObjects.OrderBy(r => r.Distance()))
@@ -421,7 +394,6 @@ namespace ff14bot.NeoProfiles
                     }
                 }
                 await Coroutine.Wait(5000, () => SelectString.IsOpen);
-
                 if (SelectString.IsOpen)
                 {
                     SelectString.ClickSlot(1);
@@ -444,9 +416,7 @@ namespace ff14bot.NeoProfiles
                 {
                     Log("Failed to open menu");
                 }
-
             }
-
             return _done = true;
         }
 

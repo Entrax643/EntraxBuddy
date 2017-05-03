@@ -14,7 +14,6 @@ namespace ff14bot.NeoProfiles
     public class Retainer : ProfileBehavior
     {
         private bool _done;
-
         private static readonly Color MessageColor = Colors.DeepPink;
 
         public new static void Log(string text, params object[] args)
@@ -22,6 +21,7 @@ namespace ff14bot.NeoProfiles
             text = "[Retainer] " + string.Format(text, args);
             Logging.Write(MessageColor, text);
         }
+		
         protected override void OnStart()
         {
             _done = false;
@@ -67,7 +67,7 @@ namespace ff14bot.NeoProfiles
                     {
                         Log("Checking Retainer n° " + (count + 1));
                         // If Venture Completed
-                        if (retainer.EndsWith("[Tâche terminée]") || retainer.EndsWith("(Venture complete)"))
+                        if (retainer.EndsWith("[探险归来]") || retainer.EndsWith("[Tâche terminée]") || retainer.EndsWith("(Venture complete)"))
                         {
                             Log("Venture Completed !");
                             // Select the retainer
@@ -94,13 +94,12 @@ namespace ff14bot.NeoProfiles
                                                 Talk.Next();
                                                 if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
                                                 {
-                                                    SelectString.ClickSlot((uint)SelectString.LineCount -1);
+                                                    SelectString.ClickSlot((uint)SelectString.LineCount - 1);
                                                     if (await Coroutine.Wait(5000, () => Talk.DialogOpen))
                                                     {
                                                         // Skip Dialog
                                                         Talk.Next();
                                                         await Coroutine.Sleep(3000);
-														
                                                         foreach (var unit in GameObjectManager.GameObjects.OrderBy(r => r.Distance()))
                                                         {
                                                             if (unit.NpcId == 2000401 || unit.NpcId == 2000441)
@@ -109,7 +108,6 @@ namespace ff14bot.NeoProfiles
                                                                 break;
                                                             }
                                                         }
-														
                                                         if (await Coroutine.Wait(5000, () => SelectString.IsOpen))
                                                         {
                                                             count++;

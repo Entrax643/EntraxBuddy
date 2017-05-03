@@ -6,17 +6,23 @@ using Clio.XmlEngine;
 using ff14bot.Helpers;
 using ff14bot.Enums;
 
-namespace ff14bot.NeoProfiles {
+namespace ff14bot.NeoProfiles
+{
     [XmlElement("CraftActionByName")]
-    class CraftActionByNameTag : CraftAction {
+    class CraftActionByNameTag : CraftAction
+    {
         [XmlAttribute("Name")]
         public string Name { get; set; }
 
-        protected override void OnStart() {
+        protected override void OnStart()
+        {
             base.ActionId = 0;
-            if (crossClassActions.ContainsKey(Name)) {
+            if (crossClassActions.ContainsKey(Name))
+            {
                 base.ActionId = crossClassActions[Name];
-            } else if (classActions.ContainsKey(Core.Player.CurrentJob) && classActions[Core.Player.CurrentJob].ContainsKey(Name)) {
+            }
+            else if (classActions.ContainsKey(Core.Player.CurrentJob) && classActions[Core.Player.CurrentJob].ContainsKey(Name))
+            {
                 base.ActionId = classActions[Core.Player.CurrentJob][Name];
             }
             base.OnStart();

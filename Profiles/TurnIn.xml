@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profile>
+	<Name>TurnIn</Name>
+	<Order>
+		<TurnInCollectables location="Idyllshire" forcePurchase="True">
+			<ShopPurchases>
+				<!-- Red Crafter -->
+				<ShopPurchase ShopItem="RedCrafterToken" MaxCount="0"/>
+				<ShopPurchase ShopItem="GoblinCup" MaxCount="0"/>
+				<ShopPurchase ShopItem="CompetenceIV" MaxCount="0"/>
+				<ShopPurchase ShopItem="CunningIV" MaxCount="0"/>
+				<ShopPurchase ShopItem="CommandIV" MaxCount="0"/>
+				<ShopPurchase ShopItem="CompetenceV" MaxCount="0"/>
+				<ShopPurchase ShopItem="CunningV" MaxCount="0"/>
+				<ShopPurchase ShopItem="CommandV" MaxCount="0"/>
+				<!-- Blue Crafter -->
+				<ShopPurchase ShopItem="BlueCrafterToken" MaxCount="0"/>
+				<ShopPurchase ShopItem="CommercialEngineeringManual" MaxCount="0"/>
+				<ShopPurchase ShopItem="SweetCreamMilk" MaxCount="0"/>
+				<ShopPurchase ShopItem="StoneCheese" MaxCount="0"/>
+				<ShopPurchase ShopItem="HeavensEgg" MaxCount="0"/>
+				<ShopPurchase ShopItem="CarbonFiber" MaxCount="0"/>
+				<ShopPurchase ShopItem="LoaghtanFilet" MaxCount="0"/>
+				<ShopPurchase ShopItem="GoldenApple" MaxCount="0"/>
+				<ShopPurchase ShopItem="SolsticeGarlic" MaxCount="0"/>
+				<ShopPurchase ShopItem="MatureOliveOil" MaxCount="0"/>
+				<ShopPurchase ShopItem="PowderedMermanHorn" MaxCount="0"/>
+				<ShopPurchase ShopItem="BouillonCube" MaxCount="0"/>
+				<ShopPurchase ShopItem="BeanSauce" MaxCount="0"/>
+				<ShopPurchase ShopItem="BeanPaste" MaxCount="0"/>
+				<ShopPurchase ShopItem="KukuruPowder" MaxCount="0"/>
+				<ShopPurchase ShopItem="AdeptsHat" MaxCount="0"/>
+				<ShopPurchase ShopItem="AdeptsGown" MaxCount="0"/>
+				<ShopPurchase ShopItem="AdeptsGloves" MaxCount="0"/>
+				<ShopPurchase ShopItem="AdeptsHose" MaxCount="0"/>
+				<ShopPurchase ShopItem="AdeptsThighboots" MaxCount="0"/>
+				<ShopPurchase ShopItem="CrpDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="BsmDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="ArmDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="GsmDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="LtwDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="WvrDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="AlcDelineation" MaxCount="0"/>
+				<ShopPurchase ShopItem="CulDelineation" MaxCount="0"/>
+				<!-- Red Gatherer -->
+				<ShopPurchase ShopItem="RedGatherToken" MaxCount="0"/>
+				<ShopPurchase ShopItem="GoblinDice" MaxCount="0"/>
+				<ShopPurchase ShopItem="GuerdonIV" MaxCount="0"/>
+				<ShopPurchase ShopItem="GuileIV" MaxCount="0"/>
+				<ShopPurchase ShopItem="GraspIV" MaxCount="0"/>
+				<ShopPurchase ShopItem="GuerdonV" MaxCount="0"/>
+				<ShopPurchase ShopItem="GuileV" MaxCount="0"/>
+				<ShopPurchase ShopItem="GraspV" MaxCount="0"/>
+				<!-- Blue Gatherer -->
+				<ShopPurchase ShopItem="BlueGatherToken" MaxCount="0"/>
+				<ShopPurchase ShopItem="BlueToken" MaxCount="0"/>
+				<ShopPurchase ShopItem="HiCordial" MaxCount="0"/>
+				<ShopPurchase ShopItem="CommercialSurvivalManual" MaxCount="0"/>
+				<ShopPurchase ShopItem="TrailblazersScarf" MaxCount="0"/>
+				<ShopPurchase ShopItem="TrailblazersVest" MaxCount="0"/>
+				<ShopPurchase ShopItem="TrailblazersWristguards" MaxCount="0"/>
+				<ShopPurchase ShopItem="TrailblazersSlops" MaxCount="0"/>
+				<ShopPurchase ShopItem="TrailblazersShoes" MaxCount="0"/>
+				<ShopPurchase ShopItem="BruteLeech" MaxCount="0"/>
+				<ShopPurchase ShopItem="CraneFly" MaxCount="0"/>
+				<ShopPurchase ShopItem="FiendWorm" MaxCount="0"/>
+				<ShopPurchase ShopItem="MagmaWorm" MaxCount="0"/>
+				<ShopPurchase ShopItem="RedBalloon" MaxCount="0"/>
+				<ShopPurchase ShopItem="CrownTrout" MaxCount="0"/>
+				<ShopPurchase ShopItem="CrownTroutHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="RetributionStaff" MaxCount="0"/>
+				<ShopPurchase ShopItem="RetributionStaffHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="ThiefBetta" MaxCount="0"/>
+				<ShopPurchase ShopItem="ThiefBettaHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="GoldsmithCrab" MaxCount="0"/>
+				<ShopPurchase ShopItem="GoldsmithCrabHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="Pterodactyl" MaxCount="0"/>
+				<ShopPurchase ShopItem="PterodactylHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="Eurhinosaur" MaxCount="0"/>
+				<ShopPurchase ShopItem="EurhinosaurHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="GemMarimo" MaxCount="0"/>
+				<ShopPurchase ShopItem="GemMarimoHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="Sphalerite" MaxCount="0"/>
+				<ShopPurchase ShopItem="SphaleriteHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="WindSilk" MaxCount="0"/>
+				<ShopPurchase ShopItem="CloudCottonBoll" MaxCount="0"/>
+				<ShopPurchase ShopItem="CloudCottonBollHQ" MaxCount="0"/>
+				<ShopPurchase ShopItem="DinosaurLeather" MaxCount="0"/>
+				<ShopPurchase ShopItem="RoyalMistletoe" MaxCount="0"/>
+				<ShopPurchase ShopItem="RoyalMistletoeHQ" MaxCount="0"/>
+			</ShopPurchases>
+		</TurnInCollectables>
+	</Order>
+</Profile>

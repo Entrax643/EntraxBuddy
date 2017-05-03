@@ -20,7 +20,6 @@ namespace ff14bot.NeoProfiles
         public bool AlwaysWater { get; set; }
 
         private const int PostInteractDelay = 2300;
-
         private static readonly Color MessageColor = Colors.DeepPink;
 
         public new static void Log(string text, params object[] args)
@@ -28,6 +27,7 @@ namespace ff14bot.NeoProfiles
             text = "[Gardenner] " + string.Format(text, args);
             Logging.Write(MessageColor, text);
         }
+		
         protected override void OnStart()
         {
             _done = false;
@@ -93,7 +93,6 @@ namespace ff14bot.NeoProfiles
                     }
                 }
             }
-
             var plants = GardenManager.Plants.Where(r => r.Distance2D(Core.Player) < 5).ToArray();
             foreach (var plant in plants)
             {
@@ -102,7 +101,6 @@ namespace ff14bot.NeoProfiles
                 {
                     Log("Fertilizing {0} {1:X}", GardenManager.GetCrop(plant), plant.ObjectId);
                     plant.Interact();
-
                     if (await Coroutine.Wait(5000, () => Talk.DialogOpen))
                     {
                         Talk.Next();
@@ -121,7 +119,6 @@ namespace ff14bot.NeoProfiles
                                             LogVerbose("Plant with objectId {0:X} was fertilized", plant.ObjectId);
                                             await Coroutine.Sleep(PostInteractDelay);
                                         }
-
                                     }
                                     else
                                     {
@@ -140,6 +137,5 @@ namespace ff14bot.NeoProfiles
             }
             return _done = true;
         }
-
     }
 }

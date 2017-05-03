@@ -2,7 +2,7 @@
 <!DOCTYPE Profile [<!-- Profile Settings -->
 <!-- Where do you want to port while witing / crafting-->
 <!ENTITY Waiting_AetheryteId "8">
-<!ENTITY Seafood_Qty "99">
+<!ENTITY SeafoodStew_Craft_Qty "0">
 <!-- How many collectability to reach while farming sands -->
 <!ENTITY Sand_Collect_Rate "550">
 <!ENTITY CordialType_Sand "Cordial">
@@ -24,53 +24,20 @@
 <!ENTITY Reclaim "1">
 <!--   -->
 <!-- DO NOT TOUCH THIS -->
-<!ENTITY Version "Aerodactyl">
-<!ENTITY WaitCondition "not((ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &Seafood_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&Seafood_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">]><Profile>
+<!ENTITY Version "Mew">
+<!ENTITY Color "#FFFF00">
+<!ENTITY WaitCondition "not((ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(18,19)) or (ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(12,13)) or (ItemCount(19) &lt; &SeafoodStew_Craft_Qty; and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))) or (ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2) and (IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))))">
+]><Profile>
 	<Name>Seafood Stew</Name>
 	<BehaviorDirectory>..\..\..\Quest Behaviors</BehaviorDirectory>
-	<CodeChunks>
-		<CodeChunk Name="CUL">
-			<![CDATA[ 	ff14bot.Managers.ChatManager.SendChat("/gs change 9");	]]>
-		</CodeChunk>
-		<CodeChunk name="MIN">
-			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 10");	await Buddy.Coroutines.Coroutine.Sleep(2000);	if(!Core.Player.HasAura(222))	{	var result = true;	if (MovementManager.IsFlying)	{	result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		if (result && Core.Player.IsMounted)	{	await CommonTasks.StopAndDismount();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		ff14bot.Managers.Actionmanager.DoAction(238, Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
-		</CodeChunk>
-		<CodeChunk name="BTN">
-			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 11");	await Buddy.Coroutines.Coroutine.Sleep(2000);	if(!Core.Player.HasAura(221))	{	var result = true;	if (MovementManager.IsFlying)	{	result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		if (result && Core.Player.IsMounted)	{	Actionmanager.Dismount();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		ff14bot.Managers.Actionmanager.DoAction(221, Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
-		</CodeChunk>
-		<CodeChunk Name="FSH">
-			<![CDATA[ 	ff14bot.Managers.ChatManager.SendChat("/gs change 12");	]]>
-		</CodeChunk>
-		<CodeChunk name="ToT">
-			<![CDATA[	SpellData data;	if ((CraftingManager.Condition == CraftingCondition.Good || CraftingManager.Condition == CraftingCondition.Excellent) &&	Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Tricks of the Trade", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	]]>
-		</CodeChunk>
-		<CodeChunk Name="TrickTouch">
-			<![CDATA[	SpellData data;	if (CraftingManager.Condition == CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 49) 	{	Actionmanager.DoAction("Precise Touch", null);	}else	{	if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data))	{	Actionmanager.DoAction("Hasty Touch", null);	}	}	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
-		</CodeChunk>
-		<CodeChunk Name="TrickTouch2">
-			<![CDATA[	SpellData data;	if (CraftingManager.Condition == CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 57) 	{	Actionmanager.DoAction("Precise Touch", null);	}else	{	if(Core.Player.CurrentCP > 57 && Actionmanager.CurrentActions.TryGetValue("Basic Touch", out data) && Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data))	{	Actionmanager.DoAction("Basic Touch", null);	}else	{	if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data))	{	Actionmanager.DoAction("Hasty Touch", null);	}	}	}	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
-		</CodeChunk>
-		<CodeChunk name="BBCheck">
-			<![CDATA[	SpellData data;	if (CraftingManager.Condition == CraftingCondition.Excellent)	{	if(Actionmanager.CurrentActions.TryGetValue("Byregot's Blessing", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Byregot's Blessing", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Careful Synthesis II", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Careful Synthesis II", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Careful Synthesis II", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	await Coroutine.Sleep(250);        	]]>
-		</CodeChunk>
-		<CodeChunk name="ReclaimCheck">
-			<![CDATA[	SpellData data;	if (Core.Player.CharacterAuras.GetAuraStacksById(251) < 9) 	{	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);                                  	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Reclaim", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Reclaim", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);                                  	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	await Coroutine.Sleep(250);	]]>
-		</CodeChunk>
-		<CodeChunk name="InnovationCheck">
-			<![CDATA[	SpellData data;	if (!(CraftingManager.Condition == CraftingCondition.Excellent || CraftingManager.Condition == CraftingCondition.Good))	{	if (Core.Player.CurrentCP > 41 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Innovation", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	else	{	if (Core.Player.CurrentCP > 37 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Observe", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	}	await Coroutine.Sleep(250);	]]>
-		</CodeChunk>
-		<CodeChunk Name="Dismount">
-			<![CDATA[	ff14bot.Managers.Actionmanager.Dismount();	]]>
-		</CodeChunk>
-	</CodeChunks>
 	<Order>
 		<StopCrafting/>
-		<While Condition="ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;">
+		<While Condition="ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) or ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) or ItemCount(19) &lt; &SeafoodStew_Craft_Qty; or ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2) or ItemCount(12936) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12733) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;">
 			<!-- Dravanian Paprika -->
-			<If Condition="ItemCount(12903) &lt; (&Seafood_Qty;*2)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Dravanian Paprika !"/>
+			<If Condition="ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Dravanian Paprika !"/>
 				<If Condition="not(IsTimeBetween(18,19))">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="But I can't gather them because it's not between 6-7 PM !"/>
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="But I can't gather them because it's not between 6-7 PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(18,19)">
 					<If Condition="not IsOnMap(397)">
@@ -80,8 +47,8 @@
 					</If>
 					<RunCode Name="BTN"/>
 					<ExFlyTo XYZ="180.2685, 248.9064, 505.7552" Radius="3.0" />
-					<WaitWhile Condition ="IsTimeBetween(18,19)" />
-					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
+					<WaitWhile Condition="IsTimeBetween(18,19)" />
+					<ExGather DiscoverUnknowns="true" Loops="1" SpawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
 						<GatherObjects>
 							<GatherObject>Legendary Lush Vegetation Patch</GatherObject>
 						</GatherObjects>
@@ -99,14 +66,14 @@
 					</ExGather>
 				</If>
 			</If>
-			<If Condition="not(ItemCount(12903) &lt; (&Seafood_Qty;*2))">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Dravanian Paprika !"/>
+			<If Condition="not(ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2))">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Dravanian Paprika !"/>
 			</If>
 			<!-- Dzemael Tomato -->
-			<If Condition="ItemCount(6148) &lt; (&Seafood_Qty;*2)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Dzemael Tomato !"/>
+			<If Condition="ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Dzemael Tomato !"/>
 				<If Condition="not(IsTimeBetween(12,13))">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="But I can't gather them because it's not between 12 AM - 1 PM !"/>
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="But I can't gather them because it's not between 12 AM - 1 PM !"/>
 				</If>
 				<If Condition="IsTimeBetween(12,13)">
 					<If Condition="not IsOnMap(137)">
@@ -115,8 +82,8 @@
 					</If>
 					<RunCode Name="BTN"/>
 					<ExMoveTo XYZ="-170.2747, 37.52908, 281.4099"/>
-					<WaitWhile Condition ="IsTimeBetween(12,13)" />
-					<ExGather DiscoverUnknowns="true" loops="1" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
+					<WaitWhile Condition="IsTimeBetween(12,13)" />
+					<ExGather DiscoverUnknowns="true" Loops="1" SpawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="YieldAndQuality">
 						<GatherObjects>
 							<GatherObject>Unspoiled Lush Vegetation Patch</GatherObject>
 						</GatherObjects>
@@ -130,15 +97,15 @@
 					</ExGather>
 				</If>
 			</If>
-			<If Condition="not(ItemCount(6148) &lt; (&Seafood_Qty;*2))">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Dzemael Tomato !"/>
+			<If Condition="not(ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2))">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Dzemael Tomato !"/>
 			</If>
 			<!-- Duskborne Aethersand -->
-			<If Condition="ItemCount(12936) &lt; &Seafood_Qty;">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Duskborne Aethersand !"/>
-				<While Condition="ItemCount(12936) &lt; &Seafood_Qty; and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
+			<If Condition="ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Duskborne Aethersand !"/>
+				<While Condition="ItemCount(12936) &lt; &SeafoodStew_Craft_Qty; and not(ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(18,19))">
 					<ExPurify/>
-					<While Condition="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;">
+					<While Condition="IsTimeBetween(0,4) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;">
 						<ExPurify/>
 						<If Condition="not IsOnMap(397)">
 							<TeleportTo Name="Falcons Nest" AetheryteId="71" />
@@ -146,7 +113,7 @@
 							<MoveTo XYZ="461.7119, 212.5399, 696.9837"/>
 						</If>
 						<RunCode Name="BTN"/>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(0,4) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" While="IsTimeBetween(0,4) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Furymint" Value="&Sand_Collect_Rate;"/>
@@ -160,7 +127,7 @@
 							</HotSpots>
 						</ExGather>
 					</While>
-					<While Condition="IsTimeBetween(4,8) and ItemCount(12936) &lt; &Seafood_Qty;">
+					<While Condition="IsTimeBetween(4,8) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;">
 						<ExPurify/>
 						<If Condition="not IsOnMap(398)">
 							<TeleportTo Name="Tailfeather" AetheryteId="76" />
@@ -170,7 +137,7 @@
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 						</If>
 						<RunCode Name="MIN"/>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(4,8) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" While="IsTimeBetween(4,8) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate;"/>
@@ -184,7 +151,7 @@
 							</HotSpots>
 						</ExGather>
 					</While>
-					<While Condition="IsTimeBetween(8,12) and ItemCount(12936) &lt; &Seafood_Qty;">
+					<While Condition="IsTimeBetween(8,12) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;">
 						<ExPurify/>
 						<If Condition="not IsOnMap(398)">
 							<TeleportTo Name="Tailfeather" AetheryteId="76" />
@@ -194,7 +161,7 @@
 							<ExFlyTo XYZ="-163.8157, 12.11641, 342.2419" Radius="3.0" />
 						</If>
 						<RunCode Name="BTN"/>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(8,12) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" While="IsTimeBetween(8,12) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate;"/>
@@ -208,7 +175,7 @@
 							</HotSpots>
 						</ExGather>
 					</While>
-					<While Condition="IsTimeBetween(12,16) and ItemCount(12936) &lt; &Seafood_Qty; and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13))">
+					<While Condition="IsTimeBetween(12,16) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty; and not(ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(12,13))">
 						<ExPurify/>
 						<If Condition="not IsOnMap(400)">
 							<TeleportTo Name="Moghome" AetheryteId="78" />
@@ -217,7 +184,7 @@
 							<ExFlyTo XYZ="310.1847, -10.75076, -113.7604" Radius="3.0" />
 						</If>
 						<RunCode Name="MIN"/>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(12,16) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" While="IsTimeBetween(12,16) and not(ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(12,13)) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Radiant Fire Moraine" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Bright Fire Rock" Value="&Sand_Collect_Rate;"/>
@@ -231,7 +198,7 @@
 							</HotSpots>
 						</ExGather>
 					</While>
-					<While Condition="IsTimeBetween(16,20) and ItemCount(12936) &lt; &Seafood_Qty; and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
+					<While Condition="IsTimeBetween(16,20) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty; and not(ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(18,19))">
 						<ExPurify/>
 						<If Condition="not IsOnMap(400)">
 							<TeleportTo Name="Moghome" AetheryteId="78" />
@@ -240,7 +207,7 @@
 							<ExFlyTo XYZ="-113.2326, 1.693077, 369.2427" Radius="3.0" />
 						</If>
 						<RunCode Name="BTN"/>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(16,20) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19)) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" While="IsTimeBetween(16,20) and not(ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(18,19)) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Black Soil" Value="&Sand_Collect_Rate;" />
 								<Collectable Name="Peat Moss" Value="&Sand_Collect_Rate;" />
@@ -257,7 +224,7 @@
 							</HotSpots>
 						</ExGather>
 					</While>
-					<While Condition="IsTimeBetween(20,24) and ItemCount(12936) &lt; &Seafood_Qty;">
+					<While Condition="IsTimeBetween(20,24) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;">
 						<ExPurify/>
 						<If Condition="not IsOnMap(401)">
 							<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
@@ -266,7 +233,7 @@
 							<ExFlyTo XYZ="198.9948, -130.0014, 639.3207" Radius="3.0" />
 						</If>
 						<RunCode Name="BTN"/>
-						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" while="IsTimeBetween(20,24) and ItemCount(12936) &lt; &Seafood_Qty;" skipWindowDelay="1500">
+						<ExGather DiscoverUnknowns="true" AlwaysGather="false" GatherStrategy="TouchAndGo" CordialType="&CordialType_Sand;" CordialTime="&CordialTime_Sand;" While="IsTimeBetween(20,24) and ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;" skipWindowDelay="1500">
 							<Collectables>
 								<Collectable Name="Clary Sage" Value="&Sand_Collect_Rate;"/>
 								<Collectable Name="Furymint" Value="&Sand_Collect_Rate;"/>
@@ -282,19 +249,19 @@
 					</While>
 				</While>
 			</If>
-			<If Condition="not(ItemCount(12936) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Duskborne Aethersand !"/>
+			<If Condition="not(ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Duskborne Aethersand !"/>
 			</If>
 			<!-- Fire/Water Cluster -->
-			<If Condition="ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) and not(ItemCount(6148) &lt; (&Seafood_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&Seafood_Qty;*2) and IsTimeBetween(18,19))">
-				<If Condition="ItemCount(19) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Water Cluster !"/>
+			<If Condition="ItemCount(19) &lt; &SeafoodStew_Craft_Qty; or ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2) and not(ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(12,13)) and not(ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) and IsTimeBetween(18,19))">
+				<If Condition="ItemCount(19) &lt; &SeafoodStew_Craft_Qty;">
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Water Cluster !"/>
 				</If>
-				<If Condition="ItemCount(14) &lt; (&Seafood_Qty; * 2)">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Fire Cluster !"/>
+				<If Condition="ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2)">
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Fire Cluster !"/>
 				</If>
 				<If Condition="not(IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23))">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="But I can't gather them yet !"/>
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="But I can't gather them yet !"/>
 				</If>
 				<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11) or IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
 					<If Condition="not IsOnMap(154)">
@@ -302,7 +269,7 @@
 					</If>
 					<If Condition="IsTimeBetween(2,3) or IsTimeBetween(6,7) or IsTimeBetween(10,11)">
 						<RunCode Name="BTN"/>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" Loops="1" While="ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2)" SpawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -314,7 +281,7 @@
 								<HotSpot XYZ="509.2175, -3.772751, -426.0106" Radius="120"/>
 							</HotSpots>
 						</ExGather>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; &Seafood_Qty; and not(ItemCount(14) &lt; (&Seafood_Qty; * 2))" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" Loops="1" While="ItemCount(19) &lt; &SeafoodStew_Craft_Qty; and not(ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2))" SpawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Mature Tree</GatherObject>
 							</GatherObjects>
@@ -327,18 +294,18 @@
 							</HotSpots>
 						</ExGather>
 						<If Condition="IsTimeBetween(2,3)">
-							<WaitWhile Condition ="IsTimeBetween(2,3)" />
+							<WaitWhile Condition="IsTimeBetween(2,3)" />
 						</If>
 						<If Condition="IsTimeBetween(6,7)">
-							<WaitWhile Condition ="IsTimeBetween(6,7)" />
+							<WaitWhile Condition="IsTimeBetween(6,7)" />
 						</If>
 						<If Condition="IsTimeBetween(10,11)">
-							<WaitWhile Condition ="IsTimeBetween(10,11)" />
+							<WaitWhile Condition="IsTimeBetween(10,11)" />
 						</If>
 					</If>
 					<If Condition="IsTimeBetween(14,15) or IsTimeBetween(18,19) or IsTimeBetween(22,23)">
 						<RunCode Name="MIN"/>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(14) &lt; (&Seafood_Qty; * 2)" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" Loops="1" While="ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2)" SpawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -350,7 +317,7 @@
 								<HotSpot XYZ="345.458, -4.698928, -482.9557" Radius="120"/>
 							</HotSpots>
 						</ExGather>
-						<ExGather DiscoverUnknowns="true" loops="1" while="ItemCount(19) &lt; &Seafood_Qty; and not(ItemCount(14) &lt; (&Seafood_Qty; * 2))" spawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
+						<ExGather DiscoverUnknowns="true" Loops="1" While="ItemCount(19) &lt; &SeafoodStew_Craft_Qty; and not(ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2))" SpawnTimeout="15" CordialType="&CordialType;" CordialTime="&CordialTime;" GatherIncrease="Yield" DisableRotationOverride="true">
 							<GatherObjects>
 								<GatherObject>Unspoiled Rocky Outcrop</GatherObject>
 							</GatherObjects>
@@ -363,34 +330,34 @@
 							</HotSpots>
 						</ExGather>
 						<If Condition="IsTimeBetween(14,15)">
-							<WaitWhile Condition ="IsTimeBetween(14,15)" />
+							<WaitWhile Condition="IsTimeBetween(14,15)" />
 						</If>
 						<If Condition="IsTimeBetween(18,19)">
-							<WaitWhile Condition ="IsTimeBetween(18,19)" />
+							<WaitWhile Condition="IsTimeBetween(18,19)" />
 						</If>
 						<If Condition="IsTimeBetween(22,23)">
-							<WaitWhile Condition ="IsTimeBetween(22,23)" />
+							<WaitWhile Condition="IsTimeBetween(22,23)" />
 						</If>
 					</If>
 				</If>
 			</If>
-			<If Condition="not(ItemCount(19) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Water Cluster !"/>
+			<If Condition="not(ItemCount(19) &lt; &SeafoodStew_Craft_Qty;)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Water Cluster !"/>
 			</If>
-			<If Condition="not(ItemCount(14) &lt; (&Seafood_Qty; * 2))">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Fire Cluster !"/>
+			<If Condition="not(ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2))">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Fire Cluster !"/>
 			</If>
 			<!-- Fishing -->
 			<!-- Rock Mussel | Blueclaw Shrimp -->
-			<If Condition="(ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty;) and (IsTimeBetween(1,13) or (IsTimeBetween(14,24) and not(ItemCount(12718) &lt; &Seafood_Qty;))) and &WaitCondition;">
-				<If Condition="ItemCount(12733) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Rock Mussel !"/>
+			<If Condition="(ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12733) &lt; &SeafoodStew_Craft_Qty;) and (IsTimeBetween(1,13) or (IsTimeBetween(14,24) and not(ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;))) and &WaitCondition;">
+				<If Condition="ItemCount(12733) &lt; &SeafoodStew_Craft_Qty;">
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Rock Mussel !"/>
 				</If>
-				<If Condition="ItemCount(12722) &lt; &Seafood_Qty;">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Blueclaw Shrimp !"/>
+				<If Condition="ItemCount(12722) &lt; &SeafoodStew_Craft_Qty;">
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Blueclaw Shrimp !"/>
 				</If>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -402,7 +369,7 @@
 				</If>
 				<RunCode Name="FSH"/>
 				<MoveTo XYZ="516.1227, -51.274, 46.26479"/>
-				<Fish Condition="HasAtLeast(12704,20) and (ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty;) and (IsTimeBetween(1,13) or (IsTimeBetween(14,24) and not(ItemCount(12718) &lt; &Seafood_Qty;))) and &WaitCondition;" snagging="true" minFish="25" maxFish="45" shuffleFishSpots="true" mooch="0" sitRate=".69" Bait="Stonefly Nymph">
+				<Fish Condition="HasAtLeast(12704,20) and (ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12733) &lt; &SeafoodStew_Craft_Qty;) and (IsTimeBetween(1,13) or (IsTimeBetween(14,24) and not(ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;))) and &WaitCondition;" snagging="true" minFish="25" maxFish="45" shuffleFishSpots="true" mooch="0" sitRate=".69" Bait="Stonefly Nymph">
 					<Keepers>
 						<Keeper name="Blueclaw Shrimp"/>
 						<Keeper name="Rock Mussel"/>
@@ -417,17 +384,17 @@
 					</FishSpots>
 				</Fish>
 			</If>
-			<If Condition="not(ItemCount(12733) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Rock Mussel !"/>
+			<If Condition="not(ItemCount(12733) &lt; &SeafoodStew_Craft_Qty;)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Rock Mussel !"/>
 			</If>
-			<If Condition="not(ItemCount(12722) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Blueclaw Shrimp !"/>
+			<If Condition="not(ItemCount(12722) &lt; &SeafoodStew_Craft_Qty;)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Blueclaw Shrimp !"/>
 			</If>
 			<!-- Coerthan Crab -->
-			<If Condition="ItemCount(12718) &lt; &Seafood_Qty; and (IsTimeBetween(14,24) or (IsTimeBetween(1,13) and not(ItemCount(12722) &lt; &Seafood_Qty;))) and &WaitCondition;">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I don't have enough Coerthan Crab !"/>
+			<If Condition="ItemCount(12718) &lt; &SeafoodStew_Craft_Qty; and (IsTimeBetween(14,24) or (IsTimeBetween(1,13) and not(ItemCount(12722) &lt; &SeafoodStew_Craft_Qty;))) and &WaitCondition;">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I don't have enough Coerthan Crab !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -441,7 +408,7 @@
 					<ExFlyTo XYZ="358.4742, 262.5689, 138.6398" Radius="3.0" />
 				</If>
 				<RunCode Name="FSH"/>
-				<Fish Condition="HasAtLeast(12704,20) and ItemCount(12718) &lt; &Seafood_Qty; and (IsTimeBetween(14,24) or (IsTimeBetween(1,13) and not(ItemCount(12722) &lt; &Seafood_Qty;))) and &WaitCondition;" mooch="1" minFish="25" Patience="Patience" maxFish="45" shuffleFishSpots="false" sitRate=".69" Bait="Stonefly Nymph">
+				<Fish Condition="HasAtLeast(12704,20) and ItemCount(12718) &lt; &SeafoodStew_Craft_Qty; and (IsTimeBetween(14,24) or (IsTimeBetween(1,13) and not(ItemCount(12722) &lt; &SeafoodStew_Craft_Qty;))) and &WaitCondition;" mooch="1" minFish="25" Patience="Patience" maxFish="45" shuffleFishSpots="false" sitRate=".69" Bait="Stonefly Nymph">
 					<Keepers>
 						<Keeper name="Coerthan Crab"/>
 					</Keepers>
@@ -453,14 +420,14 @@
 					</FishSpots>
 				</Fish>
 			</If>
-			<If Condition="not(ItemCount(12718) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm done with Coerthan Crab !"/>
+			<If Condition="not(ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm done with Coerthan Crab !"/>
 			</If>
 			<!-- Fish Resetting -->
-			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(13,14)) and (ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="I'm going to reset Fish !"/>
+			<If Condition="(IsTimeBetween(00,1) or IsTimeBetween(13,14)) and (ItemCount(12733) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;)">
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="I'm going to reset Fish !"/>
 				<If Condition="not HasAtLeast(12704,20)">
-					<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
+					<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="Not enough bait available, I'm going to buy you some !"/>
 					<If Condition="not IsOnMap(401)">
 						<TeleportTo Name="Camp Cloudtop" AetheryteId="72" />
 					</If>
@@ -485,19 +452,19 @@
 				</Fish>
 			</If>
 			<!-- Waiting -->
-			<If Condition="&WaitCondition; and not(ItemCount(12733) &lt; &Seafood_Qty;) and not(ItemCount(12722) &lt; &Seafood_Qty;) and not(ItemCount(12718) &lt; &Seafood_Qty;) and not(ItemCount(12936) &lt; &Seafood_Qty;) and(ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(14) &lt; (&Seafood_Qty; * 2) or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
+			<If Condition="&WaitCondition; and not(ItemCount(12733) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12718) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12936) &lt; &SeafoodStew_Craft_Qty;) and (ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) or ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) or ItemCount(19) &lt; &SeafoodStew_Craft_Qty; or ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2) or ItemCount(12936) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12733) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;)">
 				<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 				<RunCode Name="Dismount"/>
-				<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="Nothing to do, waiting for something to spawn !"/>
-				<WaitWhile Condition ="&WaitCondition;" />
+				<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="Nothing to do, waiting for something to spawn !"/>
+				<WaitWhile Condition="&WaitCondition;" />
 			</If>
 		</While>
-		<If Condition="not(ItemCount(12903) &lt; (&Seafood_Qty;*2) or ItemCount(6148) &lt; (&Seafood_Qty;*2) or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(19) &lt; &Seafood_Qty; or ItemCount(12936) &lt; &Seafood_Qty; or ItemCount(12733) &lt; &Seafood_Qty; or ItemCount(12722) &lt; &Seafood_Qty; or ItemCount(12718) &lt; &Seafood_Qty;)">
-			<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="All materials gathered !"/>
+		<If Condition="not(ItemCount(12903) &lt; (&SeafoodStew_Craft_Qty;*2) or ItemCount(6148) &lt; (&SeafoodStew_Craft_Qty;*2) or ItemCount(19) &lt; &SeafoodStew_Craft_Qty; or ItemCount(14) &lt; (&SeafoodStew_Craft_Qty; * 2) or ItemCount(12936) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12733) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12722) &lt; &SeafoodStew_Craft_Qty; or ItemCount(12718) &lt; &SeafoodStew_Craft_Qty;)">
+			<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="All materials gathered !"/>
 		</If>
 		<!-- Crafting -->
 		<If Condition="&Craft; !=0">
-			<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="It's time to craft !"/>
+			<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="It's time to craft !"/>
 			<TeleportTo name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
 			<RunCode Name="CUL" />
 			<RunCode Name="Dismount"/>
@@ -557,6 +524,41 @@
 			<StopCrafting/>
 		</If>
 		<TeleportTo Name="Home Sweet Home" aetheryteId="&Waiting_AetheryteId;" />
-		<ExLog Color="#FFFF00" Name="Seafood Stew &Version;" Message="Seafood Stew Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
+		<ExLog Color="&Color;" Name="Seafood Stew &Version;" Message="Seafood Stew Profile Completed ! ༼ つ ͡◕ Ѿ ͡◕ ༽つ Entrax "/>
 	</Order>
+	<CodeChunks>
+		<CodeChunk Name="CUL">
+			<![CDATA[ 	ff14bot.Managers.ChatManager.SendChat("/gs change 9");	]]>
+		</CodeChunk>
+		<CodeChunk name="MIN">
+			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 10");	await Buddy.Coroutines.Coroutine.Sleep(2000);	if(!Core.Player.HasAura(222))	{	var result = true;	if (MovementManager.IsFlying)	{	result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		if (result && Core.Player.IsMounted)	{	await CommonTasks.StopAndDismount();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		ff14bot.Managers.Actionmanager.DoAction(238, Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
+		</CodeChunk>
+		<CodeChunk name="BTN">
+			<![CDATA[	ff14bot.Managers.ChatManager.SendChat("/gs change 11");	await Buddy.Coroutines.Coroutine.Sleep(2000);	if(!Core.Player.HasAura(221))	{	var result = true;	if (MovementManager.IsFlying)	{	result = await CommonTasks.Land();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		if (result && Core.Player.IsMounted)	{	Actionmanager.Dismount();	await Buddy.Coroutines.Coroutine.Sleep(1000);	}		ff14bot.Managers.Actionmanager.DoAction(221, Core.Player);	await Buddy.Coroutines.Coroutine.Sleep(2000);	}	]]>
+		</CodeChunk>
+		<CodeChunk Name="FSH">
+			<![CDATA[ 	ff14bot.Managers.ChatManager.SendChat("/gs change 12");	]]>
+		</CodeChunk>
+		<CodeChunk name="ToT">
+			<![CDATA[	SpellData data;	if ((CraftingManager.Condition== CraftingCondition.Good || CraftingManager.Condition== CraftingCondition.Excellent) &&	Actionmanager.CurrentActions.TryGetValue("Tricks of the Trade", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Tricks of the Trade", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
+		<CodeChunk Name="TrickTouch">
+			<![CDATA[	SpellData data;	if (CraftingManager.Condition== CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 49) 	{	Actionmanager.DoAction("Precise Touch", null);	}else	{	if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data))	{	Actionmanager.DoAction("Hasty Touch", null);	}	}	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
+		<CodeChunk Name="TrickTouch2">
+			<![CDATA[	SpellData data;	if (CraftingManager.Condition== CraftingCondition.Good && Actionmanager.CurrentActions.TryGetValue("Precise Touch", out data) && Actionmanager.CanCast(data, null) && Core.Player.CurrentCP > 57) 	{	Actionmanager.DoAction("Precise Touch", null);	}else	{	if(Core.Player.CurrentCP > 57 && Actionmanager.CurrentActions.TryGetValue("Basic Touch", out data) && Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data))	{	Actionmanager.DoAction("Basic Touch", null);	}else	{	if(Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data))	{	Actionmanager.DoAction("Hasty Touch", null);	}	}	}	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
+		<CodeChunk name="BBCheck">
+			<![CDATA[	SpellData data;	if (CraftingManager.Condition== CraftingCondition.Excellent)	{	if(Actionmanager.CurrentActions.TryGetValue("Byregot's Blessing", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Byregot's Blessing", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Careful Synthesis II", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Careful Synthesis II", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Careful Synthesis II", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Careful Synthesis II", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	await Coroutine.Sleep(250);        	]]>
+		</CodeChunk>
+		<CodeChunk name="ReclaimCheck">
+			<![CDATA[	SpellData data;	if (Core.Player.CharacterAuras.GetAuraStacksById(251) < 9) 	{	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);                                  	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Reclaim", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Reclaim", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);                                  	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	await Coroutine.Sleep(250);	if (Actionmanager.CurrentActions.TryGetValue("Hasty Touch", out data) && Actionmanager.CanCast(data, null)) 	{	Actionmanager.DoAction("Hasty Touch", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
+		<CodeChunk name="InnovationCheck">
+			<![CDATA[	SpellData data;	if (!(CraftingManager.Condition== CraftingCondition.Excellent || CraftingManager.Condition== CraftingCondition.Good))	{	if (Core.Player.CurrentCP > 41 && Actionmanager.CurrentActions.TryGetValue("Innovation", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Innovation", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	else	{	if (Core.Player.CurrentCP > 37 && Actionmanager.CurrentActions.TryGetValue("Observe", out data) && Actionmanager.CanCast(data, null))	{	Actionmanager.DoAction("Observe", null);	await Coroutine.Wait(10000, () => CraftingManager.AnimationLocked);	await Coroutine.Wait(Timeout.Infinite, () => !CraftingManager.AnimationLocked);	}	}	}	await Coroutine.Sleep(250);	]]>
+		</CodeChunk>
+		<CodeChunk Name="Dismount">
+			<![CDATA[	ff14bot.Managers.Actionmanager.Dismount();	]]>
+		</CodeChunk>
+	</CodeChunks>
 </Profile>

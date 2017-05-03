@@ -73,12 +73,9 @@ namespace ff14bot.NeoProfiles
             if (!Core.Player.DesynthesisUnlocked)
             {
                 Log("You have not unlocked the desynthesis ability.");
-
                 return _done = true;
             }
-
             IEnumerable<BagSlot> desynthables = null;
-
             if (ItemIds != null)
             {
                 desynthables =
@@ -88,38 +85,26 @@ namespace ff14bot.NeoProfiles
             else
             {
                 Log("You didn't specify anything to desynthesize.");
-
                 return _done = true;
             }
-
             var numItems = desynthables.Count();
-
             if (numItems == 0)
             {
                 Log("None of the items you requested can be desynthesized.");
-
                 return _done = true;
             }
-
             var i = 1;
-
             foreach (var bagSlot in desynthables)
             {
                 string name = bagSlot.Name;
-
                 Log("Attempting to desynthesize item {0} (\"{1}\") of {2}.", i++, name, numItems);
-
                 var result = await CommonTasks.Desynthesize(bagSlot, DesynthDelay);
-
                 if (result != DesynthesisResult.Success)
                 {
                     Log("Unable to desynthesize \"{0}\" due to {1}.", name, result);
-
                     continue;
                 }
-
                 await Coroutine.Wait(DesynthTimeout * 1000, () => !bagSlot.IsFilled || !bagSlot.Name.Equals(name));
-
                 if (bagSlot.IsFilled && bagSlot.EnglishName.Equals(name))
                 {
                     Log("Timed out awaiting desynthesis of \"{0}\" ({1} seconds).", name, DesynthTimeout);
@@ -129,7 +114,6 @@ namespace ff14bot.NeoProfiles
                     Log("Desynthed \"{0}\".", name);
                 }
             }
-
             return _done = true;
         }
     }

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE Profile [<!ENTITY Version "Slowking">
+<!DOCTYPE Profile [
 <!ENTITY BTN_Hinterland "0">
-<!ENTITY Ending_AetheryteId "8">]><Profile>
+<!ENTITY Ending_AetheryteId "8">
+<!-- DO NOT TOUCH THIS -->
+<!ENTITY Version "Mew">
+<!ENTITY Color "#FFFF00">
+]><Profile>
 	<Name>FavorManager</Name>
 	<BehaviorDirectory>..\..\Quest Behaviors</BehaviorDirectory>
 	<CodeChunks>
@@ -52,7 +56,7 @@
 		<!-- Western Coerthas Highlands -->
 		<If Condition="ItemCount(10374) != 0 or ItemCount(10380) != 0">
 			<If Condition="ItemCount(10374) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Coerthas Western Highlands [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Coerthas Western Highlands [START]"/>
 				<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 				<RunCode Name="MIN"/>
 				<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
@@ -122,10 +126,10 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Coerthas Western Highlands [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Coerthas Western Highlands [STOP]"/>
 			</If>
 			<If Condition="ItemCount(10380) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Coerthas Western Highlands [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Coerthas Western Highlands [START]"/>
 				<TeleportTo Force="True" Name="Falcons Nest" AetheryteId="71"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="441.3659, 227.2105, 696.4022"/>
@@ -193,13 +197,13 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Coerthas Western Highlands [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Coerthas Western Highlands [STOP]"/>
 			</If>
 		</If>
 		<!-- Hinterlands -->
 		<If Condition="ItemCount(10375) != 0 or (ItemCount(10381) != 0 and &BTN_Hinterland; != 0)">
 			<If Condition="ItemCount(10375) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [START]"/>
 				<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 				<RunCode Name="MIN"/>
 				<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
@@ -284,10 +288,10 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Hinterlands [STOP]"/>
 			</If>
 			<If Condition="ItemCount(10381) != 0 and &BTN_Hinterland; != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [START]"/>
 				<TeleportTo Force="True" Name="Idyllshire" AetheryteId="75"/>
 				<RunCode Name="BTN"/>
 				<ExMoveTo XYZ="145.0915, 207, 115.9509" Distance="1"/>
@@ -369,13 +373,13 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Hinterlands [STOP]"/>
 			</If>
 		</If>
 		<!-- Forelands -->
 		<If Condition="ItemCount(10376) != 0 or ItemCount(10382) != 0">
 			<If Condition="ItemCount(10376) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Forelands [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Forelands [START]"/>
 				<TeleportTo Force="True" Name="Anyx Trine" AetheryteId="77"/>
 				<RunCode Name="MIN"/>
 				<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
@@ -444,10 +448,10 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Forelands [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Forelands [STOP]"/>
 			</If>
 			<If Condition="ItemCount(10382) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Forelands [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Forelands [START]"/>
 				<TeleportTo Force="True" Name="Anyx Trine" AetheryteId="77"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="-289.3234, -3.640372, 60.82505"/>
@@ -513,13 +517,13 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Forelands [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Forelands [STOP]"/>
 			</If>
 		</If>
 		<!-- Churning Mist -->
 		<If Condition="ItemCount(10377) != 0 or ItemCount(10383) != 0">
 			<If Condition="ItemCount(10377) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Churning Mist [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Churning Mist [START]"/>
 				<TeleportTo Force="True" Name="Moghome" AetheryteId="78"/>
 				<RunCode Name="MIN"/>
 				<ExFlyTo XYZ="278.0609, -36.08669, -109.267"/>
@@ -575,10 +579,10 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Churning Mist [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Churning Mist [STOP]"/>
 			</If>
 			<If Condition="ItemCount(10383) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [START]"/>
 				<TeleportTo Force="True" Name="Zenith" AetheryteId="79"/>
 				<RunCode Name="BTN"/>
 				<ExFlyTo XYZ="-514.855, 53.54427, 354.8046"/>
@@ -646,13 +650,13 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Churning Mist [STOP]"/>
 			</If>
 		</If>
 		<!-- Sea of Clouds -->
 		<If Condition="ItemCount(10378) != 0 or ItemCount(10384) != 0">
 			<If Condition="ItemCount(10378) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Sea of Clouds [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Sea of Clouds [START]"/>
 				<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 				<RunCode Name="MIN"/>
 				<ExFlyTo XYZ="125.623, 19.02453, 565.1636"/>
@@ -744,10 +748,10 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[MIN] Sea of Clouds [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[MIN] Sea of Clouds [STOP]"/>
 			</If>
 			<If Condition="ItemCount(10384) != 0">
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [START]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [START]"/>
 				<TeleportTo Force="True" Name="Camp Cloudtop" AetheryteId="72"/>
 				<RunCode Name="BTN"/>
 				<While Condition="ItemCount(10384) != 0">
@@ -842,10 +846,10 @@
 						</ExGather>
 					</If>
 				</While>
-				<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [STOP]"/>
+				<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="[BTN] Sea of Clouds [STOP]"/>
 			</If>
 		</If>
-		<ExLog Color="#FFFF00" Name="FavorManager &Version;"  Message="No more Favor to do"/>
+		<ExLog Color="&Color;" Name="FavorManager &Version;"  Message="No more Favor to do"/>
 		<TeleportTo Name="Waiting Aetheryte" AetheryteId="&Ending_AetheryteId;"/>
 	</Order>
 </Profile>

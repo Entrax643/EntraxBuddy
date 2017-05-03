@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Media;
@@ -13,7 +14,6 @@ using ff14bot.RemoteWindows;
 using ff14bot.Settings;
 using TreeSharp;
 
-
 namespace ff14bot.NeoProfiles
 {
     [XmlElement("TurnInCouterfoil")]
@@ -21,14 +21,17 @@ namespace ff14bot.NeoProfiles
     {
         private bool _done;
         private bool _haveItem;
-
         private static readonly Color MessageColor = Colors.DeepPink;
+
+        [XmlAttribute("ItemIds")]
+        public int[] ItemIds { get; set; }
 
         public new static void Log(string text, params object[] args)
         {
             text = "[TurnInCouterfoil] " + string.Format(text, args);
             Logging.Write(MessageColor, text);
         }
+
         protected override void OnStart()
         {
             _done = false;
@@ -43,9 +46,9 @@ namespace ff14bot.NeoProfiles
         protected override Composite CreateBehavior()
         {
             return
-                new Decorator(
-                    ret => !_done,
-                    new ActionRunCoroutine(r => TurnIn()));
+            new Decorator(
+            ret => !_done,
+            new ActionRunCoroutine(r => TurnIn()));
         }
 
         protected override void OnResetCachedDone()
@@ -60,21 +63,19 @@ namespace ff14bot.NeoProfiles
                 // Adamantite
                 // Chysahl Green
                 // Thunderbolt Eel
-                // Eventite Jade
+                // Eventide Jade
                 // Periwinkle
                 // Tiny Axolotl
-                if ((slot.RawItemId == 12538 && slot.Collectability >= 530) ||
-                    (slot.RawItemId == 12900 && slot.Collectability >= 530) ||
-                    (slot.RawItemId == 12828 && slot.Collectability >= 834) ||
-                    (slot.RawItemId == 13760 && slot.Collectability >= 515) ||
-                    (slot.RawItemId == 13762 && slot.Collectability >= 515) ||
-                    (slot.RawItemId == 12774 && slot.Collectability >= 326))
+                if ((slot.RawItemId == 12538 && slot.Collectability >= 380 && ItemIds.Contains(12538)) ||
+                (slot.RawItemId == 12900 && slot.Collectability >= 380 && ItemIds.Contains(12900)) ||
+                (slot.RawItemId == 12828 && slot.Collectability >= 579 && ItemIds.Contains(12828)) ||
+                (slot.RawItemId == 13760 && slot.Collectability >= 450 && ItemIds.Contains(13760)) ||
+                (slot.RawItemId == 13762 && slot.Collectability >= 450 && ItemIds.Contains(13762)) ||
+                (slot.RawItemId == 12774 && slot.Collectability >= 321 && ItemIds.Contains(12774)))
                 {
                     _haveItem = true;
                 }
-
             }
-
             if (_haveItem)
             {
                 Log("Start");
@@ -83,21 +84,17 @@ namespace ff14bot.NeoProfiles
                     Log("Waiting for gathering window to close");
                     Thread.Sleep(2000);
                 }
-
                 if (FishingManager.State != FishingState.None)
                 {
                     Log("Stop fishing");
                     Actionmanager.DoAction("Quit", Core.Me);
                     await Coroutine.Wait(5000, () => FishingManager.State == FishingState.None);
                 }
-
                 if (WorldManager.ZoneId != 478)
                 {
                     await TeleportTo(478, 75);
                 }
-
                 var destination = new Vector3(-18.48964f, 206.4994f, 53.98175f);
-
                 if (Core.Me.Distance(destination) > CharacterSettings.Instance.MountDistance && !Core.Me.IsMounted)
                 {
                     while (!Core.Me.IsMounted)
@@ -108,10 +105,8 @@ namespace ff14bot.NeoProfiles
                 while (Core.Me.Distance(destination) > 1f)
                 {
                     var sprintDistance = Math.Min(20.0f, CharacterSettings.Instance.MountDistance);
-
                     Navigator.MoveTo(destination);
                     await Coroutine.Yield();
-
                     if (Core.Me.Distance(destination) > sprintDistance && !Core.Me.IsMounted)
                     {
                         Actionmanager.Sprint();
@@ -122,16 +117,14 @@ namespace ff14bot.NeoProfiles
                 {
                     await CommonTasks.StopAndDismount();
                 }
-
                 GameObjectManager.GetObjectByNPCId(1012229).Interact();
                 await Coroutine.Wait(5000, () => SelectIconString.IsOpen);
                 SelectIconString.ClickSlot(0);
                 await Coroutine.Sleep(2000);
-
                 foreach (var item in InventoryManager.FilledSlots)
                 {
                     // Adamantite
-                    if (item.RawItemId == 12538 && item.Collectability >= 530)
+                    if (item.RawItemId == 12538 && item.Collectability >= 380 && ItemIds.Contains(12538))
                     {
                         Log("Attempting to Turn In Adamantite Ore");
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 16);
@@ -144,7 +137,7 @@ namespace ff14bot.NeoProfiles
                         await Coroutine.Sleep(2000);
                     }
                     // Chysahl Green
-                    if (item.RawItemId == 12900 && item.Collectability >= 530)
+                    if (item.RawItemId == 12900 && item.Collectability >= 380 && ItemIds.Contains(12900))
                     {
                         Log("Attempting to Turn In Chysahl Green");
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 17);
@@ -157,7 +150,7 @@ namespace ff14bot.NeoProfiles
                         await Coroutine.Sleep(2000);
                     }
                     // Thunderbolt Eel
-                    if (item.RawItemId == 12828 && item.Collectability >= 834)
+                    if (item.RawItemId == 12828 && item.Collectability >= 579 && ItemIds.Contains(12828))
                     {
                         Log("Attempting to Turn In Thunderbolt Eel");
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 18);
@@ -169,10 +162,10 @@ namespace ff14bot.NeoProfiles
                         Request.HandOver();
                         await Coroutine.Sleep(2000);
                     }
-                    // Eventite Jade
-                    if (item.RawItemId == 13760 && item.Collectability >= 515)
+                    // Eventide Jade
+                    if (item.RawItemId == 13760 && item.Collectability >= 450 && ItemIds.Contains(13760))
                     {
-                        Log("Attempting to Turn In Eventite Jade");
+                        Log("Attempting to Turn In Eventide Jade");
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 19);
                         await Coroutine.Sleep(1000);
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItemDialog").SendAction(1, 0, 0);
@@ -183,7 +176,7 @@ namespace ff14bot.NeoProfiles
                         await Coroutine.Sleep(2000);
                     }
                     // Periwinkle
-                    if (item.RawItemId == 13762 && item.Collectability >= 515)
+                    if (item.RawItemId == 13762 && item.Collectability >= 450 && ItemIds.Contains(13762))
                     {
                         Log("Attempting to Turn In Periwinkle");
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 20);
@@ -196,7 +189,7 @@ namespace ff14bot.NeoProfiles
                         await Coroutine.Sleep(2000);
                     }
                     // Tiny Axolotl
-                    if (item.RawItemId == 12774 && item.Collectability >= 326)
+                    if (item.RawItemId == 12774 && item.Collectability >= 321)
                     {
                         Log("Attempting to Turn In Tiny Axolotl");
                         RaptureAtkUnitManager.GetWindowByName("ShopExchangeItem").SendAction(2, 0, 0, 1, 21);
@@ -228,14 +221,12 @@ namespace ff14bot.NeoProfiles
                 // continue we are in the zone.
                 return false;
             }
-
             var ticks = 0;
             while (MovementManager.IsMoving && ticks++ < 5)
             {
                 Navigator.Stop();
                 await Coroutine.Sleep(240);
             }
-
             var casted = false;
             while (WorldManager.ZoneId != zoneId)
             {
@@ -243,22 +234,17 @@ namespace ff14bot.NeoProfiles
                 {
                     break;
                 }
-
                 if (!Core.Player.IsCasting && !CommonBehaviors.IsLoading)
                 {
                     WorldManager.TeleportById(aetheryteId);
                     await Coroutine.Sleep(500);
                 }
-
                 casted = casted || Core.Player.IsCasting;
                 await Coroutine.Yield();
             }
-			
             await Coroutine.Wait(5000, () => CommonBehaviors.IsLoading);
-            await Coroutine.Wait(20000, () => !CommonBehaviors.IsLoading);
-
+            await Coroutine.Wait(100000, () => !CommonBehaviors.IsLoading);
             return true;
         }
-
     }
 }

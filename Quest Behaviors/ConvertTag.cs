@@ -76,16 +76,13 @@ namespace ff14bot.NeoProfiles
                 Log("Waiting for gathering window to close");
                 Thread.Sleep(2000);
             }
-
             if (FishingManager.State != FishingState.None)
             {
                 Log("Stop fishing");
                 Actionmanager.DoAction("Quit", Core.Me);
                 await Coroutine.Wait(5000, () => FishingManager.State == FishingState.None);
             }
-
             await CommonTasks.StopAndDismount();
-
             if (ItemIds != null && ItemIds.Length > 0)
             {
                 foreach (var id in ItemIds)
@@ -93,7 +90,6 @@ namespace ff14bot.NeoProfiles
                     await ConvertByItemId((uint)id, (ushort)MaxWait, NqOnly);
                 }
             }
-
             return _done = true;
         }
 
@@ -104,18 +100,14 @@ namespace ff14bot.NeoProfiles
             foreach (var bagSlot in bagSlots)
             {
                 string name = bagSlot.Name;
-
                 Log("Attempting to convert {0}.", name);
-
                 if (bagSlot.Item != null && (bagSlot.Item.Unique || bagSlot.Item.Untradeable))
                 {
                     continue;
                 }
-
                 if (bagSlot != null)
                 {
                     var startingId = bagSlot.TrueItemId;
-
                     //Check to make sure the bagslots contents doesn't change
                     while (bagSlot.TrueItemId == startingId && bagSlot.Count > 0)
                     {
@@ -127,10 +119,8 @@ namespace ff14bot.NeoProfiles
                         }
                     }
                 }
-
                 Thread.Sleep(500);
             }
-
             return true;
         }
 
