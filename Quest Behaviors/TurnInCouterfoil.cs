@@ -16,8 +16,8 @@ using TreeSharp;
 
 namespace ff14bot.NeoProfiles
 {
-    [XmlElement("TurnInCouterfoil")]
-    public class TurnInCouterfoil : ProfileBehavior
+    [XmlElement("TurnInCounterfoil")]
+    public class TurnInCounterfoil : ProfileBehavior
     {
         private bool _done;
         private bool _haveItem;
@@ -28,7 +28,7 @@ namespace ff14bot.NeoProfiles
 
         public new static void Log(string text, params object[] args)
         {
-            text = "[TurnInCouterfoil] " + string.Format(text, args);
+            text = "[TurnInCounterfoil] " + string.Format(text, args);
             Logging.Write(MessageColor, text);
         }
 

@@ -11,7 +11,7 @@
 	<Name>Glass Fiber</Name>
 	<BehaviorDirectory>..\..\Quest Behaviors</BehaviorDirectory>
 	<Order>
-		<TurnInCouterfoil/>
+		<TurnInCounterfoil ItemIds="12538,12900,12828,13760,13762,12774"/>
 		<If Condition="&LTW; != 0 or &WVR;">
 			<While Condition="(ItemCount(12982) &gt; 0 or ItemCount(12983) &gt; 0 or ItemCount(12984) &gt; 0) and ItemCount(12841) &gt; 2">
 				<TeleportTo Name="Idyllshire" aetheryteId="75"/>
