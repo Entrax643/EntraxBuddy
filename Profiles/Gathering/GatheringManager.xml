@@ -335,7 +335,7 @@
 <!ENTITY MinimumFreeSlot_TurnIn "100">
 <!ENTITY TurnIn_Counterfoil "0">
 <!ENTITY Cap_Amount "420">
-<!ENTITY DelayTeleportAfter "420">
+<!ENTITY DelayTeleportAfter "0">
 <!-- Shop Settings - -->
 <!-- Set the amount of what you want - For instance if BlueGatherToken = 100 and you already have 42, the bot will spend scrips to buy 58 token. -->
 <!-- Red Gatherer -->
