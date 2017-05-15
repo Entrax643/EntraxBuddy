@@ -101,32 +101,32 @@
 <!-- Zhloe Items -->
 <!-- -->
 <!-- Dated Radz-at-Han Coin -->
-<!ENTITY DatedRadzAtHanCoin_MIN_Ditto "1">
+<!ENTITY DatedRadzAtHanCoin_MIN_Ditto "0">
 <!ENTITY DatedRadzAtHanCoin_Rate_Ditto "459">
-<!ENTITY DatedRadzAtHanCoin_QTY_Ditto "5">
+<!ENTITY DatedRadzAtHanCoin_QTY_Ditto "0">
 <!-- -->
 <!-- Ice Stalagmite -->
-<!ENTITY IceStalagmite_MIN_Ditto "1">
+<!ENTITY IceStalagmite_MIN_Ditto "0">
 <!ENTITY IceStalagmite_BTN_Ditto "0">
 <!ENTITY IceStalagmite_Rate_Ditto "480">
-<!ENTITY IceStalagmite_QTY_Ditto "5">
+<!ENTITY IceStalagmite_QTY_Ditto "0">
 <!-- -->
 <!-- Duskfall Moss -->
-<!ENTITY DuskfallMoss_MIN_Ditto "1">
+<!ENTITY DuskfallMoss_MIN_Ditto "0">
 <!ENTITY DuskfallMoss_BTN_Ditto "0">
 <!ENTITY DuskfallMoss_Rate_Ditto "499">
-<!ENTITY DuskfallMoss_QTY_Ditto "5">
+<!ENTITY DuskfallMoss_QTY_Ditto "0">
 <!-- -->
 <!-- Glass Eye -->
-<!ENTITY GlassEye_MIN_Ditto "1">
+<!ENTITY GlassEye_MIN_Ditto "0">
 <!ENTITY GlassEye_Rate_Ditto "515">
-<!ENTITY GlassEye_QTY_Ditto "5">
+<!ENTITY GlassEye_QTY_Ditto "0">
 <!-- -->
 <!-- Rainbow Pigment -->
-<!ENTITY RainbowPigment_MIN_Ditto "1">
+<!ENTITY RainbowPigment_MIN_Ditto "0">
 <!ENTITY RainbowPigment_BTN_Ditto "0">
 <!ENTITY RainbowPigment_Rate_Ditto "550">
-<!ENTITY RainbowPigment_QTY_Ditto "5">
+<!ENTITY RainbowPigment_QTY_Ditto "0">
 <!-- -->
 <!-- Scrips Items -->
 <!-- Rotations -->
@@ -6427,7 +6427,7 @@
 				<If Condition="&TurnInAfterLoop;">
 					<ExPurify/>
 					<If Condition="&TurnIn_Counterfoil_Ditto;">
-						<TurnInCouterfoil ItemIds="13760,13762" />
+						<TurnInCounterfoil ItemIds="13760,13762" />
 					</If>
 					<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 						<ShopPurchases>
@@ -6479,7 +6479,7 @@
 				</If>
 				<If Condition="&TurnIn_Counterfoil;">
 					<ExPurify/>
-					<TurnInCouterfoil ItemIds="12538,12900,12828,12774" />
+					<TurnInCounterfoil ItemIds="12538,12900,12828,12774" />
 				</If>
 			</If>
 			<!-- Umbreon -->
@@ -12339,7 +12339,7 @@
 						<!-- Turn In Counterfoil -->
 						<If Condition="&TurnIn_Counterfoil_Ditto;">
 							<ExPurify/>
-							<TurnInCouterfoil ItemIds="13760,13762" />
+							<TurnInCounterfoil ItemIds="13760,13762" />
 						</If>
 						<!-- Turn In Rowena -->
 						<If Condition="&TurnInAfterLoop;">
@@ -12439,7 +12439,7 @@
 					</While>
 				</If>
 				<If Condition="&TurnIn_Counterfoil_Ditto;">
-					<TurnInCouterfoil ItemIds="13760,13762" />
+					<TurnInCounterfoil ItemIds="13760,13762" />
 				</If>
 				<ExTurnInCollectables Location="&TurnIn_City;" forcePurchase="False">
 					<ShopPurchases>
@@ -12489,7 +12489,7 @@
 					</ShopPurchases>
 				</ExTurnInCollectables>
 				<If Condition="&TurnIn_Counterfoil;">
-					<TurnInCouterfoil ItemIds="12538,12900,12828,12774" />
+					<TurnInCounterfoil ItemIds="12538,12900,12828,12774" />
 				</If>
 			</If>
 		</While>
