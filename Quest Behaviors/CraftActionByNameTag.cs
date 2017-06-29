@@ -6,23 +6,17 @@ using Clio.XmlEngine;
 using ff14bot.Helpers;
 using ff14bot.Enums;
 
-namespace ff14bot.NeoProfiles
-{
+namespace ff14bot.NeoProfiles {
     [XmlElement("CraftActionByName")]
-    class CraftActionByNameTag : CraftAction
-    {
+    class CraftActionByNameTag : CraftAction {
         [XmlAttribute("Name")]
         public string Name { get; set; }
 
-        protected override void OnStart()
-        {
+        protected override void OnStart() {
             base.ActionId = 0;
-            if (crossClassActions.ContainsKey(Name))
-            {
+            if (crossClassActions.ContainsKey(Name)) {
                 base.ActionId = crossClassActions[Name];
-            }
-            else if (classActions.ContainsKey(Core.Player.CurrentJob) && classActions[Core.Player.CurrentJob].ContainsKey(Name))
-            {
+            } else if (classActions.ContainsKey(Core.Player.CurrentJob) && classActions[Core.Player.CurrentJob].ContainsKey(Name)) {
                 base.ActionId = classActions[Core.Player.CurrentJob][Name];
             }
             base.OnStart();
@@ -43,10 +37,22 @@ namespace ff14bot.NeoProfiles
                 {"Standard Synthesis", 100007},
                 {"Brand of Wind", 100006},
                 {"Advanced Touch", 100008},
-                {"Byregot's Blessing", 100009},
+                {"Byregot's Blessing", 100211},
                 {"Byregot's Brow", 100120},
                 {"Precise Touch", 100128},
-                {"Name Of The Wind", 4568}
+                {"Name Of The Wind", 4568},
+                {"Hasty Touch II", 100195},
+                {"Careful Synthesis III", 100203},
+                {"Rapid Synthesis II", 100211},
+                {"Patient Touch", 100219},
+                {"Manipulation II", 4574},
+                {"Prudent Touch", 100227},
+                {"Focused Synthesis", 100235},
+                {"Focused Touch", 100243},
+                {"Specialty: Reflect", 100275},
+                {"Specialty: Refurbish", 100267},
+                {"Specialty: Reinforce", 100259},
+                {"Initial Preparations", 100251}
             }},{ClassJobType.Blacksmith, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100015},
                 {"Basic Touch", 100016},
@@ -64,7 +70,19 @@ namespace ff14bot.NeoProfiles
                 {"Ingenuity II", 283},
                 {"Byregot's Brow", 100121},
                 {"Precise Touch", 100129},
-                {"Name Of Fire", 4569}
+                {"Name Of Fire", 4569},
+                {"Hasty Touch II", 100196},
+                {"Careful Synthesis III", 100204},
+                {"Rapid Synthesis II", 100212},
+                {"Patient Touch", 100220},
+                {"Manipulation II", 4575},
+                {"Prudent Touch", 100228},
+                {"Focused Synthesis", 100236},
+                {"Focused Touch", 100244},
+                {"Specialty: Reflect", 100276},
+                {"Specialty: Refurbish", 100268},
+                {"Specialty: Reinforce", 100260},
+                {"Initial Preparations", 100252}
             }},{ClassJobType.Armorer, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100030},
                 {"Basic Touch", 100031},
@@ -82,7 +100,19 @@ namespace ff14bot.NeoProfiles
                 {"Piece by Piece", 100039},
                 {"Byregot's Brow", 100122},
                 {"Precise Touch", 100130},
-                {"Name Of Ice", 4570}
+                {"Name Of Ice", 4570},
+                {"Hasty Touch II", 100197},
+                {"Careful Synthesis III", 100205},
+                {"Rapid Synthesis II", 100213},
+                {"Patient Touch", 100221},
+                {"Manipulation II", 4576},
+                {"Prudent Touch", 100229},
+                {"Focused Synthesis", 100237},
+                {"Focused Touch", 100245},
+                {"Specialty: Reflect", 100277},
+                {"Specialty: Refurbish", 100269},
+                {"Specialty: Reinforce", 100261},
+                {"Initial Preparations", 100253}
             }},{ClassJobType.Goldsmith, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100075},
                 {"Basic Touch", 100076},
@@ -100,7 +130,19 @@ namespace ff14bot.NeoProfiles
                 {"Innovation", 284},
                 {"Byregot's Brow", 100123},
                 {"Precise Touch", 100131},
-                {"Maker's Mark", 100178}
+                {"Maker's Mark", 100178},
+                {"Hasty Touch II", 100198},
+                {"Careful Synthesis III", 100206},
+                {"Rapid Synthesis II", 100214},
+                {"Patient Touch", 100222},
+                {"Manipulation II", 4577},
+                {"Prudent Touch", 100230},
+                {"Focused Synthesis", 100238},
+                {"Focused Touch", 100246},
+                {"Specialty: Reflect", 100278},
+                {"Specialty: Refurbish", 100270},
+                {"Specialty: Reinforce", 100262},
+                {"Initial Preparations", 100254}
             }},{ClassJobType.Leatherworker, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100045},
                 {"Basic Touch", 100046},
@@ -118,7 +160,19 @@ namespace ff14bot.NeoProfiles
                 {"Waste Not II", 285},
                 {"Byregot's Brow", 100124},
                 {"Precise Touch", 100132},
-                {"Name Of Earth", 4571}
+                {"Name Of Earth", 4571},
+                {"Hasty Touch II", 100199},
+                {"Careful Synthesis III", 100207},
+                {"Rapid Synthesis II", 100215},
+                {"Patient Touch", 100223},
+                {"Manipulation II", 4578},
+                {"Prudent Touch", 100231},
+                {"Focused Synthesis", 100239},
+                {"Focused Touch", 100247},
+                {"Specialty: Reflect", 100279},
+                {"Specialty: Refurbish", 100261},
+                {"Specialty: Reinforce", 100263},
+                {"Initial Preparations", 100255}
             }},{ClassJobType.Weaver, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100060},
                 {"Basic Touch", 100061},
@@ -136,7 +190,19 @@ namespace ff14bot.NeoProfiles
                 {"Careful Synthesis II", 100069},
                 {"Byregot's Brow", 100125},
                 {"Precise Touch", 100133},
-                {"Name Of Lightning", 4572}
+                {"Name Of Lightning", 4572},
+                {"Hasty Touch II", 100200},
+                {"Careful Synthesis III", 100208},
+                {"Rapid Synthesis II", 100216},
+                {"Patient Touch", 100224},
+                {"Manipulation II", 4579},
+                {"Prudent Touch", 100232},
+                {"Focused Synthesis", 100240},
+                {"Focused Touch", 100248},
+                {"Specialty: Reflect", 100280},
+                {"Specialty: Refurbish", 100272},
+                {"Specialty: Reinforce", 100264},
+                {"Initial Preparations", 100256}
             }},{ClassJobType.Alchemist, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100090},
                 {"Basic Touch", 100091},
@@ -154,7 +220,19 @@ namespace ff14bot.NeoProfiles
                 {"Comfort Zone", 286},
                 {"Byregot's Brow", 100126},
                 {"Precise Touch", 100134},
-                {"Name Of Water", 4573}
+                {"Name Of Water", 4573},
+                {"Hasty Touch II", 100201},
+                {"Careful Synthesis III", 100209},
+                {"Rapid Synthesis II", 100217},
+                {"Patient Touch", 100225},
+                {"Manipulation II", 4580},
+                {"Prudent Touch", 100233},
+                {"Focused Synthesis", 100241},
+                {"Focused Touch", 100249},
+                {"Specialty: Reflect", 100281},
+                {"Specialty: Refurbish", 100273},
+                {"Specialty: Reinforce", 100265},
+                {"Initial Preparations", 100257}
             }},{ClassJobType.Culinarian, new Dictionary<string, uint>() {
                 {"Basic Synthesis", 100105},
                 {"Basic Touch", 100106},
@@ -172,7 +250,19 @@ namespace ff14bot.NeoProfiles
                 {"Reclaim", 287},
                 {"Byregot's Brow", 100127},
                 {"Precise Touch", 100135},
-                {"Muscle Memory", 100136}
+                {"Muscle Memory", 100136},
+                {"Hasty Touch II", 100202},
+                {"Careful Synthesis III", 100210},
+                {"Rapid Synthesis II", 100218},
+                {"Patient Touch", 100226},
+                {"Manipulation II", 4581},
+                {"Prudent Touch", 100234},
+                {"Focused Synthesis", 100242},
+                {"Focused Touch", 100250},
+                {"Specialty: Reflect", 100282},
+                {"Specialty: Refurbish", 100274},
+                {"Specialty: Reinforce", 100266},
+                {"Initial Preparations", 100258}
             }}
         };
 
