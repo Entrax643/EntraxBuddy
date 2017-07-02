@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 using System.Windows.Media;
 using TreeSharp;
 
+#if RB_CN
+    using ActionManager = ff14bot.Managers.Actionmanager;
+#endif
+
 namespace ff14bot.NeoProfiles
 {
 	[XmlElement("Convert")]

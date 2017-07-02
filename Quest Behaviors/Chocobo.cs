@@ -14,6 +14,10 @@ using System.Threading.Tasks;
 using System.Windows.Media;
 using TreeSharp;
 
+#if RB_CN
+    using ChocoboManager = ff14bot.Managers.Chocobo;
+#endif
+
 namespace ff14bot.NeoProfiles
 {
 	[XmlElement("Chocobot")]
